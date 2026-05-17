@@ -1,0 +1,21 @@
+{
+  "common": {
+    "title": "When does this war end?",
+    "subtitle": "Calm, transparent data on the Russia-Ukraine conflict",
+    "lastUpdated": "Last updated {date} UTC",
+    "methodology": "Methodology",
+    "about": "About",
+    "sources": "Sources",
+    "changelog": "Changelog",
+    "language": "Language",
+    "footer": "Non-commercial · Built in Kyiv · CC BY 4.0"
+  },
+  "hero": {
+    "label": "Probability war has ended by date",
+    "median": "Median expected end date",
+    "shift30d": "30-day shift"
+  },
+  "errors": {
+    "dataUnavailable": "Data unavailable, last good {time} ago"
+  }
+}

@@ -1,0 +1,34 @@
+---
+// Homepage for all locales
+// Route: /[lang]/
+import Layout from '@/layouts/Layout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'uk' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const t = (key: string) => {
+  // Placeholder translation getter
+  return key;
+};
+---
+
+<Layout lang={lang} title="When does this war end?">
+  <main class="space-y-12">
+    <section class="text-center py-12">
+      <h1 class="text-4xl font-medium mb-4">When does this war end?</h1>
+      <p class="text-xl text-gray-600">Calm, transparent data on the Russia-Ukraine conflict</p>
+    </section>
+
+    <section class="bg-gray-50 p-8 rounded-lg">
+      <p class="text-gray-600">
+        Phase 0 holding page. Data sources and interactive widgets launching in Phase 1.
+      </p>
+    </section>
+  </main>
+</Layout>

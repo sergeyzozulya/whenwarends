@@ -1,0 +1,88 @@
+---
+// Base layout for all pages
+interface Props {
+  title: string;
+  lang: string;
+}
+
+const { title, lang } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={lang} dir={lang === 'uk' ? 'ltr' : lang === 'ru' ? 'ltr' : 'ltr'}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A dashboard answering: when does this war end?" />
+    <title>{title} — When War Ends</title>
+    <link rel="stylesheet" href="/global.css" />
+  </head>
+  <body class="bg-white text-gray-900">
+    <header class="border-b border-gray-200">
+      <div class="max-w-5xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
+        <h1 class="text-2xl font-medium">
+          <a href={`/${lang}`}>whenwarends.org</a>
+        </h1>
+        <nav class="mt-4 flex gap-6 text-sm">
+          <a href={`/${lang}`}>Home</a>
+          <a href={`/${lang}/methodology`}>Methodology</a>
+          <a href={`/${lang}/about`}>About</a>
+          <a href={`/${lang}/sources`}>Sources</a>
+          <a href={`/${lang}/changelog`}>Changelog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <slot />
+    </main>
+
+    <footer class="border-t border-gray-200 mt-16">
+      <div class="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8 text-sm text-gray-600">
+        <p>Non-commercial · Built in Kyiv · CC BY 4.0</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111827;
+  }
+
+  a {
+    color: #2c5aa0;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+</style>

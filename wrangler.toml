@@ -1,0 +1,42 @@
+name = "whenwarends"
+main = "worker/index.ts"
+compatibility_date = "2025-01-01"
+node_compat = true
+
+# Secrets (TURNSTILE_SECRET_KEY, MAILCHANNELS_API_KEY, ANTHROPIC_API_KEY) are set via:
+#   wrangler secret put <NAME>
+# or in the Cloudflare dashboard → Worker → Settings → Variables.
+[vars]
+CONTACT_TO_EMAIL = "hello@whenwarends.org"
+CONTACT_FROM_EMAIL = "noreply@whenwarends.org"
+CONTACT_FROM_NAME = "When War Ends"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "whenwarends_db"
+database_id = ""  # To be filled after D1 database creation
+
+# KV binding for caching
+[[kv_namespaces]]
+binding = "KV_CACHE"
+id = ""  # To be filled after KV namespace creation
+
+# Cron triggers for data collectors
+[triggers]
+crons = [
+  "0 8 * * 0"  # Sunday 08:00 UTC - weekly data collection
+]
+
+# Static Assets binding
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "404-page"
+
+# Environment-specific configuration
+[env.production]
+routes = [
+  { pattern = "whenwarends.org", zone_name = "whenwarends.org" },
+  { pattern = "www.whenwarends.org", zone_name = "whenwarends.org" }
+]

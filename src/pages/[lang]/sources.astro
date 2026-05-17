@@ -1,0 +1,28 @@
+---
+// Sources page
+import Layout from '@/layouts/Layout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'uk' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+const { lang } = Astro.params;
+---
+
+<Layout lang={lang} title="Sources">
+  <main class="max-w-2xl mx-auto prose">
+    <h1>Data Sources</h1>
+    <p>All data comes from free, open, and publicly accessible sources:</p>
+    <ul>
+      <li>Polymarket & Kalshi — prediction markets</li>
+      <li>GDELT — global event data</li>
+      <li>NASA FIRMS — heat anomalies</li>
+      <li>World Bank, NBU, CBR — economic indicators</li>
+      <li>ISW, Russia Matters — cited for reference</li>
+    </ul>
+  </main>
+</Layout>
