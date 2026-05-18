@@ -1,67 +1,76 @@
 /**
- * Cloudflare Worker entry point
- * Routes API requests, falls back to static assets for everything else
+ * Cloudflare Worker entry point.
+ * Routes /api/*, runs the scheduled collector cron, falls back to static assets.
  */
 
-interface Env {
-  ASSETS: {
-    fetch(request: Request): Promise<Response>;
-  };
-  DB: D1Database;
-  KV_CACHE: KVNamespace;
-  ANTHROPIC_API_KEY: string;
+import type { Env, Lang } from '../src/lib/types';
+import { LANGS } from '../src/lib/types';
+import { runCollectors } from '../src/lib/sources/contract';
+import { allCollectors } from '../src/workers/collectors';
+import { getHomePayload } from '../src/lib/homepage';
+import { invalidateHomepage } from '../src/lib/kv';
+
+const json = (body: unknown, status = 200): Response =>
+  new Response(JSON.stringify(body), {
+    status,
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+function parseLang(url: URL): Lang {
+  const q = url.searchParams.get('lang');
+  return (LANGS as readonly string[]).includes(q ?? '')
+    ? (q as Lang)
+    : 'en';
 }
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 
-    // API routes
     if (url.pathname.startsWith('/api/')) {
-      // /api/health
       if (url.pathname === '/api/health') {
-        return new Response(
-          JSON.stringify({
-            status: 'ok',
-            timestamp: new Date().toISOString(),
-          }),
-          {
+        return json({ status: 'ok', timestamp: new Date().toISOString() });
+      }
+
+      // Live homepage payload (KV-cached, assembled from D1).
+      if (url.pathname === '/api/homepage' && request.method === 'GET') {
+        try {
+          const payload = await getHomePayload(env, parseLang(url));
+          return new Response(JSON.stringify(payload), {
             status: 200,
-            headers: { 'Content-Type': 'application/json' },
-          }
-        );
-      }
-
-      // /api/brief/latest - editor admin endpoint (phase 3)
-      if (url.pathname === '/api/brief/latest' && request.method === 'GET') {
-        return new Response(
-          JSON.stringify({
-            message: 'Brief endpoint — admin API coming in Phase 3',
-          }),
-          {
-            status: 501,
-            headers: { 'Content-Type': 'application/json' },
-          }
-        );
-      }
-
-      // Catch-all for unknown API routes
-      return new Response(
-        JSON.stringify({ error: 'Not found' }),
-        {
-          status: 404,
-          headers: { 'Content-Type': 'application/json' },
+            headers: {
+              'Content-Type': 'application/json',
+              'Cache-Control': 'public, max-age=300',
+            },
+          });
+        } catch (err) {
+          return json(
+            { error: err instanceof Error ? err.message : 'assembly failed' },
+            500
+          );
         }
-      );
+      }
+
+      if (url.pathname === '/api/brief/latest' && request.method === 'GET') {
+        return json({ message: 'Brief endpoint — admin API coming in Phase 3' }, 501);
+      }
+
+      return json({ error: 'Not found' }, 404);
     }
 
-    // Everything else: serve static assets
     return env.ASSETS.fetch(request);
   },
 
-  async scheduled(event: ScheduledEvent, env: Env): Promise<void> {
-    // Cron handler for Sunday 08:00 UTC
-    console.log('Scheduled event triggered');
-    // Collector Workers will be implemented in Phase 1-2
+  async scheduled(_event: ScheduledEvent, env: Env): Promise<void> {
+    // Weekly cron (Sunday 08:00 UTC): pull every source. Each collector is
+    // failure-isolated by runCollectors — one bad source degrades one widget.
+    const summaries = await runCollectors(env, allCollectors);
+    const failed = summaries.filter((s) => !s.ok);
+    if (failed.length) {
+      console.error('collector failures', JSON.stringify(failed));
+    }
+    console.log('collector run', JSON.stringify(summaries));
+    // Fresh data → drop the cached homepage so the next request rebuilds it.
+    await invalidateHomepage(env);
   },
 } satisfies ExportedHandler<Env>;
