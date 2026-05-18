@@ -1,0 +1,19 @@
+# Environment variables for the weekly collector (`npm run collect`).
+# In CI these are GitHub Actions secrets (see .github/workflows/collect.yml).
+# Locally: copy to .dev.vars and `export` them (or use your shell env) before
+# running collect. NEVER commit .dev.vars. The Worker itself is static-only
+# and needs no secrets (data is file-based — no D1/KV).
+
+# NASA FIRMS area-API MAP_KEY (free: https://firms.modaps.eosdis.nasa.gov/api/area/)
+FIRMS_MAP_KEY=your-firms-map-key
+
+# Optional: override the Kalshi series ticker if a canonical war-end market
+# is relisted (collector defaults to a related live ladder otherwise).
+# KALSHI_SERIES_TICKER=KXRUSUKRWAR
+
+# Optional: URL of a fetchable Kiel Ukraine Support Tracker CSV. Kiel has no
+# stable machine endpoint; without this the kiel widget fails in isolation.
+# KIEL_DATASET_URL=https://example.org/kiel-ukraine-support-tracker.csv
+
+# Phase 3 only — Anthropic API key for the AI brief draft step.
+# ANTHROPIC_API_KEY=sk-ant-...
