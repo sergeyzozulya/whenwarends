@@ -42,6 +42,7 @@
     "intensity": "Conflict intensity",
     "aid": "Aid commitments",
     "economy": "Russian economy",
+    "ukEconomy": "Ukrainian economy",
     "confidence": "Confidence",
     "estimateLabel": "ISW-observed estimate"
   },

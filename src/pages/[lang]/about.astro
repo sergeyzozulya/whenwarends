@@ -1,22 +1,142 @@
 ---
-// About page
+// About — what this is, who makes it, and its posture.
 import Layout from '@/layouts/Layout.astro';
+import { getTranslation } from '@i18n/index';
+import type { Lang } from '@lib/types';
 
 export function getStaticPaths() {
-  return [
-    { params: { lang: 'uk' } },
-    { params: { lang: 'en' } },
-    { params: { lang: 'ru' } },
-  ];
+  return [{ params: { lang: 'uk' } }, { params: { lang: 'en' } }, { params: { lang: 'ru' } }];
 }
 
-const { lang } = Astro.params;
+const lang = Astro.params.lang as Lang;
+const t = (key: string) => getTranslation(lang, key);
+const contactEmail = 'hello@whenwarends.org';
+
+interface Block {
+  h: string;
+  p: string[];
+}
+interface Page {
+  lede: string;
+  blocks: Block[];
+}
+
+const CONTENT: Record<Lang, Page> = {
+  en: {
+    lede: 'A non-commercial, Ukrainian-built dashboard that answers one question with calm, transparent data: when does this war end?',
+    blocks: [
+      {
+        h: 'Why it exists',
+        p: [
+          'People who live with this war — at home and abroad — deserve a sober, honest reference point that is neither doom-scrolling nor false comfort. The advocacy is in choosing to build it; the presentation stays restrained and never sensational.',
+        ],
+      },
+      {
+        h: 'What it does',
+        p: [
+          'It shows a market-implied probability distribution for the end of the war, a few supporting indicators, and a short weekly editorial brief that a human reviews before it is published. It never authors its own prediction.',
+        ],
+      },
+      {
+        h: 'How it is built',
+        p: [
+          'A static-first Astro site on Cloudflare\'s free tier, fed only by free and open data sources. No cookies, no third-party tracking scripts, no ads, no accounts, no paid tiers. Cloudflare Web Analytics is cookieless. GDPR-compliant by default.',
+          'The full method is on the methodology page; every data source and licence is on the sources page; every change is logged on the changelog.',
+        ],
+      },
+      {
+        h: 'Licence and contact',
+        p: [
+          `Non-commercial, built in Kyiv, released under CC BY 4.0. Contact: ${contactEmail}.`,
+        ],
+      },
+    ],
+  },
+  uk: {
+    lede: 'Некомерційний інформаційний застосунок, створений в Україні, що відповідає на одне питання спокійними, прозорими даними: коли закінчиться ця війна?',
+    blocks: [
+      {
+        h: 'Навіщо це',
+        p: [
+          'Люди, які живуть із цією війною — удома й за кордоном — заслуговують на тверезий, чесний орієнтир, який не є ані безкінечним негативом, ані фальшивою втіхою. Позиція — у самому рішенні це створити; подача залишається стриманою й несенсаційною.',
+        ],
+      },
+      {
+        h: 'Що він робить',
+        p: [
+          'Показує ринковий розподіл імовірності завершення війни, кілька допоміжних показників і короткий щотижневий редакційний огляд, який перевіряє людина перед публікацією. Сайт ніколи не створює власного прогнозу.',
+        ],
+      },
+      {
+        h: 'Як це побудовано',
+        p: [
+          'Статичний сайт на Astro на безкоштовному тарифі Cloudflare, що живиться лише безкоштовними й відкритими джерелами. Без кук, без сторонніх трекерів, без реклами, без акаунтів, без платних рівнів. Cloudflare Web Analytics не використовує куки. Відповідає GDPR за замовчуванням.',
+          'Повна методологія — на сторінці методології; усі джерела та ліцензії — на сторінці джерел; усі зміни — в історії змін.',
+        ],
+      },
+      {
+        h: 'Ліцензія та контакт',
+        p: [
+          `Некомерційний, створений у Києві, поширюється за CC BY 4.0. Контакт: ${contactEmail}.`,
+        ],
+      },
+    ],
+  },
+  ru: {
+    lede: 'Некоммерческое приложение, созданное в Украине, отвечающее на один вопрос спокойными, прозрачными данными: когда закончится эта война?',
+    blocks: [
+      {
+        h: 'Зачем это',
+        p: [
+          'Люди, живущие с этой войной — дома и за рубежом — заслуживают трезвый, честный ориентир, который не является ни бесконечным негативом, ни ложным утешением. Позиция — в самом решении это создать; подача остаётся сдержанной и несенсационной.',
+        ],
+      },
+      {
+        h: 'Что он делает',
+        p: [
+          'Показывает рыночное распределение вероятности завершения войны, несколько вспомогательных показателей и короткую еженедельную редакционную сводку, которую человек проверяет перед публикацией. Сайт никогда не создаёт собственный прогноз.',
+        ],
+      },
+      {
+        h: 'Как это построено',
+        p: [
+          'Статический сайт на Astro на бесплатном тарифе Cloudflare, питающийся только бесплатными и открытыми источниками. Без кук, без сторонних трекеров, без рекламы, без аккаунтов, без платных уровней. Cloudflare Web Analytics не использует куки. Соответствует GDPR по умолчанию.',
+          'Полная методология — на странице методологии; все источники и лицензии — на странице источников; все изменения — в истории изменений.',
+        ],
+      },
+      {
+        h: 'Лицензия и контакт',
+        p: [
+          `Некоммерческий, создан в Киеве, распространяется по CC BY 4.0. Контакт: ${contactEmail}.`,
+        ],
+      },
+    ],
+  },
+};
+
+const c = CONTENT[lang];
 ---
 
-<Layout lang={lang} title="About">
-  <main class="max-w-2xl mx-auto prose">
-    <h1>About</h1>
-    <p>A non-commercial, Ukrainian-built dashboard that answers a single question with calm, transparent data: when does this war end?</p>
-    <p>Static-first Astro site on Cloudflare's free tier, fed by free and open data sources only.</p>
-  </main>
+<Layout lang={lang} title={t('common.about')}>
+  <article class="max-w-2xl space-y-10">
+    <header class="space-y-2">
+      <h1 class="text-[22px] font-medium">{t('common.about')}</h1>
+      <p class="text-[16px] text-gray-600">{c.lede}</p>
+    </header>
+    {
+      c.blocks.map((b) => (
+        <section class="space-y-3">
+          <h2 class="text-[18px] font-medium">{b.h}</h2>
+          {b.p.map((para) => (
+            <p class="text-[16px]">{para}</p>
+          ))}
+        </section>
+      ))
+    }
+    <nav class="flex flex-wrap gap-6 border-t border-gray-200 pt-4 text-[13px]">
+      <a class="text-[#2c5aa0] hover:underline" href={`/${lang}/methodology`}>{t('common.methodology')}</a>
+      <a class="text-[#2c5aa0] hover:underline" href={`/${lang}/sources`}>{t('common.sources')}</a>
+      <a class="text-[#2c5aa0] hover:underline" href={`/${lang}/changelog`}>{t('common.changelog')}</a>
+    </nav>
+  </article>
 </Layout>
