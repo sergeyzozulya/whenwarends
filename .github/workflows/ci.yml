@@ -84,11 +84,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      # Worker is static-assets only (post-pivot): no runtime D1/KV/secrets.
+      # ANTHROPIC_API_KEY is a GitHub Actions secret used by brief.yml, not a
+      # Worker secret. Deploy needs only the Cloudflare API credentials.
       - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          secrets: |
-            ANTHROPIC_API_KEY
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
