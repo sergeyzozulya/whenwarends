@@ -28,8 +28,9 @@ export const UKRAINE_BBOX = '22.0,44.0,40.3,52.4';
 /** VIIRS S-NPP Near-Real-Time active-fire product. */
 const PRODUCT = 'VIIRS_SNPP_NRT';
 
-/** Area API look-back window in days (FIRMS area API allows 1..10). */
-const LOOKBACK_DAYS = 7;
+/** Area API look-back window in days. FIRMS area CSV accepts only 1..5
+ * ("Invalid day range. Expects [1..5]." otherwise) — verified live. */
+const LOOKBACK_DAYS = 5;
 
 const FIRMS_BASE = 'https://firms.modaps.eosdis.nasa.gov/api/area/csv';
 

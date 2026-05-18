@@ -119,7 +119,7 @@ describe('buildFirmsUrl', () => {
     expect(url).toBe(
       'https://firms.modaps.eosdis.nasa.gov/api/area/csv/abc123/VIIRS_SNPP_NRT/' +
         UKRAINE_BBOX +
-        '/7'
+        '/5'
     );
   });
 
