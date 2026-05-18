@@ -19,6 +19,39 @@ npm run build
 npm run wrangler:deploy
 ```
 
+## Data collection
+
+Data lives in versioned JSON files under [`data/`](data/) (no database). The
+collectors fetch from the public sources and write those files; the static
+build bakes the numbers into the HTML. Git is the history, audit trail, and
+backup.
+
+**Run it locally:**
+
+```bash
+# Put the secrets in .dev.vars (gitignored — copy .dev.vars.example):
+#   FIRMS_MAP_KEY=...            # free: https://firms.modaps.eosdis.nasa.gov/api/area/
+#   KIEL_DATASET_URL=...         # the current Kiel Ukraine Support Tracker .xlsx (rotates per release)
+#   KALSHI_SERIES_TICKER=...     # optional, override the Kalshi series
+#   ANTHROPIC_API_KEY=...        # only needed for the brief
+
+set -a; . ./.dev.vars; set +a     # load secrets into the env
+
+npm run collect        # pull all sources → append data/snapshots.ndjson, data/markets.json
+npm run draft-brief    # draft the weekly brief → data/briefs.json (status: pending_review)
+```
+
+`collect` is failure-isolated: one source failing degrades one widget, never
+the run (it exits non-zero only if *every* source fails). Commit the changed
+`data/` files to publish — the deploy bakes them in.
+
+**Automated (weekly):** `.github/workflows/collect.yml` runs every Sunday
+08:00 UTC and commits `data/`; `.github/workflows/brief.yml` then opens a
+review PR (merging it is the editorial approval). For these to authenticate,
+add the same values as **GitHub Actions repository secrets** (Settings →
+Secrets and variables → Actions): `FIRMS_MAP_KEY`, `KIEL_DATASET_URL`,
+`KALSHI_SERIES_TICKER`, `ANTHROPIC_API_KEY`.
+
 ## Documentation
 
 - **[SPEC.md](docs/SPEC.md)** — Full project specification, architecture, data sources, phased delivery plan
@@ -38,9 +71,9 @@ npm run wrangler:deploy
 ## Tech stack
 
 - **Astro 5** with TypeScript + Tailwind CSS
-- **Cloudflare Workers** + Static Assets (not Pages; Pages is deprecated)
-- **Cloudflare D1** (SQLite) for time-series snapshots
-- **Cloudflare KV** for homepage payload caching
+- **Cloudflare Workers** + Static Assets (static-only; no runtime DB)
+- **Versioned repo JSON** (`data/`) for time-series snapshots — read at build
+- **GitHub Actions** for the weekly collect + brief jobs
 - **Chart.js** for the CDF visualization
 - **Anthropic Claude API** for weekly editorial briefs
 - **Playwright** for E2E testing
