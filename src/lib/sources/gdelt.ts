@@ -79,48 +79,70 @@ export type JsonFetcher = (url: string) => Promise<unknown>;
  * HTML, not JSON, so we check content-type and parse defensively, throwing a
  * typed {@link GdeltResponseError} instead of letting JSON.parse crash opaquely.
  */
-const defaultFetcher: JsonFetcher = async (url) => {
-  const res = await fetchWithRetry(url, {
-    init: {
-      headers: {
-        'User-Agent': USER_AGENT,
-        Accept: 'application/json',
-      },
-    },
-  });
-
-  const body = await res.text();
-
-  if (!res.ok) {
-    throw new GdeltResponseError(
-      `GDELT HTTP ${res.status} for ${url}: ${body.slice(0, 200).trim()}`
-    );
-  }
-
-  const contentType = res.headers.get('content-type') ?? '';
-  const looksJson =
-    contentType.includes('json') || /^\s*[[{]/.test(body);
-  if (!looksJson) {
-    // Most commonly the plain-text rate-limit notice ("Please limit requests
-    // to one every 5 seconds...") or an HTML error page.
-    throw new GdeltResponseError(
-      `GDELT returned non-JSON (content-type "${contentType}"): ${body
-        .slice(0, 200)
-        .trim()}`
-    );
-  }
-
-  try {
-    return JSON.parse(body) as unknown;
-  } catch {
-    throw new GdeltResponseError(
-      `GDELT returned malformed JSON: ${body.slice(0, 200).trim()}`
-    );
-  }
-};
-
+// GDELT enforces ~1 request / 5s per IP and answers a violation with a
+// plain-text notice (HTTP 429, or 200 + "Please limit requests..."). The
+// generic fast backoff in fetchWithRetry stays well under 5s, so it cannot
+// clear this limiter. For a once-weekly job latency is irrelevant, so on a
+// detected rate-limit we wait past the window and retry a few times before
+// giving up (typed error, failure-isolated).
 const sleep = (ms: number): Promise<void> =>
   new Promise((resolve) => setTimeout(resolve, ms));
+
+const RATE_RETRY_ATTEMPTS = 4;
+const RATE_RETRY_WAIT_MS = 7000;
+
+const isRateLimited = (status: number, body: string): boolean =>
+  status === 429 || /limit requests|one every \d+ seconds/i.test(body);
+
+const defaultFetcher: JsonFetcher = async (url) => {
+  for (let attempt = 0; ; attempt++) {
+    const res = await fetchWithRetry(url, {
+      init: {
+        headers: {
+          'User-Agent': USER_AGENT,
+          Accept: 'application/json',
+        },
+      },
+    });
+    const body = await res.text();
+
+    if (isRateLimited(res.status, body)) {
+      if (attempt < RATE_RETRY_ATTEMPTS) {
+        await sleep(RATE_RETRY_WAIT_MS);
+        continue;
+      }
+      throw new GdeltResponseError(
+        `GDELT rate-limited after ${RATE_RETRY_ATTEMPTS + 1} attempts for ${url}: ${body
+          .slice(0, 200)
+          .trim()}`
+      );
+    }
+
+    if (!res.ok) {
+      throw new GdeltResponseError(
+        `GDELT HTTP ${res.status} for ${url}: ${body.slice(0, 200).trim()}`
+      );
+    }
+
+    const contentType = res.headers.get('content-type') ?? '';
+    const looksJson = contentType.includes('json') || /^\s*[[{]/.test(body);
+    if (!looksJson) {
+      throw new GdeltResponseError(
+        `GDELT returned non-JSON (content-type "${contentType}"): ${body
+          .slice(0, 200)
+          .trim()}`
+      );
+    }
+
+    try {
+      return JSON.parse(body) as unknown;
+    } catch {
+      throw new GdeltResponseError(
+        `GDELT returned malformed JSON: ${body.slice(0, 200).trim()}`
+      );
+    }
+  }
+};
 
 /**
  * Normalize a GDELT timeline date to an ISO-8601 UTC string.
