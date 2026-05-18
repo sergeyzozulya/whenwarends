@@ -1,12 +1,37 @@
-// Placeholder: lib/kv.ts — KV cache helpers
-// Implemented in Phase 1
+// Typed KV cache helpers. KV holds the precomputed homepage payload so the
+// public page never blocks on D1. Keys are namespaced by purpose + locale.
 
-export async function getCached(kv: any, key: string) {
-  return await kv.get(key, 'json');
+import type { Env, Lang } from './types';
+
+/** Stable cache keys. Bump the version suffix to invalidate everything at once. */
+export const CACHE_KEYS = {
+  homepage: (lang: Lang) => `home:v1:${lang}`,
+} as const;
+
+export async function getCached<T>(env: Env, key: string): Promise<T | null> {
+  return env.KV_CACHE.get<T>(key, 'json');
 }
 
-export async function setCached(kv: any, key: string, value: any, ttlSeconds: number = 3600) {
-  return await kv.put(key, JSON.stringify(value), {
+export async function setCached<T>(
+  env: Env,
+  key: string,
+  value: T,
+  ttlSeconds = 3600
+): Promise<void> {
+  await env.KV_CACHE.put(key, JSON.stringify(value), {
     expirationTtl: ttlSeconds,
   });
+}
+
+export async function deleteCached(env: Env, key: string): Promise<void> {
+  await env.KV_CACHE.delete(key);
+}
+
+/** Invalidate every locale's homepage payload (called after a brief publishes). */
+export async function invalidateHomepage(env: Env): Promise<void> {
+  await Promise.all(
+    (['uk', 'en', 'ru'] as const).map((lang) =>
+      deleteCached(env, CACHE_KEYS.homepage(lang))
+    )
+  );
 }
