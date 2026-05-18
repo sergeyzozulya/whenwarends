@@ -5,9 +5,9 @@
     "question": "Russia x Ukraine ceasefire agreement by May 31, 2026?",
     "resolution_date": "2026-05-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.026,
-    "liquidity_usd": 39162.61961,
-    "last_updated": "2026-05-18T18:10:41.533Z"
+    "current_price": 0.027,
+    "liquidity_usd": 35065.31505,
+    "last_updated": "2026-05-18T18:23:39.079Z"
   },
   {
     "market_id": "polymarket:2264325",
@@ -16,8 +16,8 @@
     "resolution_date": "2026-05-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.022,
-    "liquidity_usd": 35971.65223,
-    "last_updated": "2026-05-18T18:10:41.533Z"
+    "liquidity_usd": 35020.89223,
+    "last_updated": "2026-05-18T18:23:39.079Z"
   },
   {
     "market_id": "polymarket:1323366",
@@ -26,8 +26,8 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.145,
-    "liquidity_usd": 14159.1213,
-    "last_updated": "2026-05-18T18:10:41.533Z"
+    "liquidity_usd": 14078.5813,
+    "last_updated": "2026-05-18T18:23:39.079Z"
   },
   {
     "market_id": "polymarket:2243895",
@@ -36,8 +36,8 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.125,
-    "liquidity_usd": 52084.0897,
-    "last_updated": "2026-05-18T18:10:41.533Z"
+    "liquidity_usd": 53328.3142,
+    "last_updated": "2026-05-18T18:23:39.079Z"
   },
   {
     "market_id": "polymarket:956449",
@@ -45,9 +45,9 @@
     "question": "Ukraine signs peace deal with Russia by June 30?",
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.0675,
-    "liquidity_usd": 53331.53948,
-    "last_updated": "2026-05-18T18:10:41.533Z"
+    "current_price": 0.0645,
+    "liquidity_usd": 54742.44831,
+    "last_updated": "2026-05-18T18:23:39.079Z"
   },
   {
     "market_id": "polymarket:2264326",
@@ -56,8 +56,8 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.075,
-    "liquidity_usd": 36326.6556,
-    "last_updated": "2026-05-18T18:10:41.533Z"
+    "liquidity_usd": 37887.2351,
+    "last_updated": "2026-05-18T18:23:39.079Z"
   },
   {
     "market_id": "KXZELENSKYYOUT-26JUL01",
@@ -86,8 +86,8 @@
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.375,
-    "liquidity_usd": 93413.3204,
-    "last_updated": "2026-05-18T18:10:41.533Z"
+    "liquidity_usd": 96795.3544,
+    "last_updated": "2026-05-18T18:23:39.079Z"
   },
   {
     "market_id": "polymarket:2264327",
@@ -96,8 +96,8 @@
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.225,
-    "liquidity_usd": 59254.7763,
-    "last_updated": "2026-05-18T18:10:41.533Z"
+    "liquidity_usd": 60571.6653,
+    "last_updated": "2026-05-18T18:23:39.079Z"
   },
   {
     "market_id": "polymarket:2243897",
@@ -106,8 +106,8 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.5,
-    "liquidity_usd": 101058.094,
-    "last_updated": "2026-05-18T18:10:41.533Z"
+    "liquidity_usd": 103882.305,
+    "last_updated": "2026-05-18T18:23:39.079Z"
   },
   {
     "market_id": "polymarket:665224",
@@ -116,8 +116,8 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.28,
-    "liquidity_usd": 42068.0303,
-    "last_updated": "2026-05-18T18:10:41.533Z"
+    "liquidity_usd": 42592.0419,
+    "last_updated": "2026-05-18T18:23:39.079Z"
   },
   {
     "market_id": "polymarket:2264328",
@@ -126,7 +126,7 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.325,
-    "liquidity_usd": 95693.1554,
-    "last_updated": "2026-05-18T18:10:41.533Z"
+    "liquidity_usd": 95801.981,
+    "last_updated": "2026-05-18T18:23:39.079Z"
   }
 ]
