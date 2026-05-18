@@ -1,7 +1,8 @@
 name = "whenwarends"
 main = "worker/index.ts"
 compatibility_date = "2025-01-01"
-node_compat = true
+# No node_compat / nodejs_compat: the Worker only serves static assets +
+# /api/health and uses no Node.js APIs. (node_compat was removed in Wrangler v4.)
 
 # No D1/KV/Cron: data lives in versioned repo JSON files baked into the static
 # build. Weekly collection runs in GitHub Actions (.github/workflows/collect.yml),
