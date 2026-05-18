@@ -42,14 +42,17 @@ if (lastUpdated) {
 <header class="border-b border-gray-200">
   <div class="max-w-5xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
     <div class="flex flex-wrap items-baseline justify-between gap-4">
-      <h1 class="text-[22px] font-medium">
+      {/* Masthead brand — not an <h1>; the page's single <h1> is the hero
+          question in <main> (one-h1-per-document a11y rule). */}
+      <p class="text-[22px] font-medium">
         <a
           href={`/${lang}`}
+          aria-label={t('common.title')}
           class="text-gray-900 hover:text-[#2c5aa0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
         >
           {t('common.title')}
         </a>
-      </h1>
+      </p>
       <nav aria-label={t('common.language')} class="flex items-center gap-3 text-[13px]">
         {
           otherLangs.map((l) => (

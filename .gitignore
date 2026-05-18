@@ -29,9 +29,13 @@ wrangler.toml.prod
 *~
 .DS_Store
 
-# Test coverage
+# Test coverage / e2e artifacts
 coverage/
 .nyc_output/
+test-results/
+playwright-report/
+blob-report/
+.playwright/
 
 # Logs
 *.log

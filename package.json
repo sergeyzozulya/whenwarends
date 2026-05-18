@@ -11,6 +11,7 @@
     "lint": "eslint src --ext .ts,.tsx,.astro",
     "test": "vitest run",
     "test:e2e": "playwright test",
+    "perf": "tsx scripts/check-bundle.ts",
     "collect": "tsx scripts/collect.ts",
     "draft-brief": "tsx scripts/draft-brief.ts",
     "wrangler:dev": "npm run build && wrangler dev",
@@ -27,7 +28,9 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.3",
     "@cloudflare/workers-types": "^4.20260420.1",
+    "@playwright/test": "^1.60.0",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.3.0",
     "@types/node": "^20.10.0",
