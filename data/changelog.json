@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "date": "2026-05-18",
+    "description": "Storage moved from Cloudflare D1/KV to versioned repo JSON files read at build time. Weekly collection runs as a scheduled GitHub Action that commits data/. Editorial approval becomes pull-request review. Data volume (weekly, single-editor) does not justify a database; git provides immutable history, audit trail, and backups.",
+    "category": "methodology update"
+  }
+]

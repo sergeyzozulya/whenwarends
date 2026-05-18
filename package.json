@@ -11,9 +11,9 @@
     "lint": "eslint src --ext .ts,.tsx,.astro",
     "test": "vitest run",
     "test:e2e": "playwright test",
+    "collect": "tsx scripts/collect.ts",
     "wrangler:dev": "npm run build && wrangler dev",
-    "wrangler:deploy": "npm run build && wrangler deploy",
-    "db:migrate": "wrangler d1 migrations apply whenwarends_db --remote"
+    "wrangler:deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
@@ -36,6 +36,7 @@
     "eslint": "^8.55.0",
     "eslint-plugin-astro": "^0.30.0",
     "playwright": "^1.40.1",
+    "tsx": "^4.22.1",
     "typescript": "^5.3.3",
     "vitest": "^1.0.4",
     "wrangler": "^4.0.0"

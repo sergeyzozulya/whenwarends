@@ -3,30 +3,16 @@ main = "worker/index.ts"
 compatibility_date = "2025-01-01"
 node_compat = true
 
-# Secrets (TURNSTILE_SECRET_KEY, MAILCHANNELS_API_KEY, ANTHROPIC_API_KEY, FIRMS_MAP_KEY) are set via:
-#   wrangler secret put <NAME>
-# or in the Cloudflare dashboard → Worker → Settings → Variables.
+# No D1/KV/Cron: data lives in versioned repo JSON files baked into the static
+# build. Weekly collection runs in GitHub Actions (.github/workflows/collect.yml),
+# not a Cron Trigger. The Worker only serves static assets + a health probe.
+
+# Build-time collector secrets (FIRMS_MAP_KEY) and the Phase-3 brief key
+# (ANTHROPIC_API_KEY) are GitHub Actions secrets, not Worker secrets.
 [vars]
 CONTACT_TO_EMAIL = "hello@whenwarends.org"
 CONTACT_FROM_EMAIL = "noreply@whenwarends.org"
 CONTACT_FROM_NAME = "When War Ends"
-
-# D1 Database binding
-[[d1_databases]]
-binding = "DB"
-database_name = "whenwarends_db"
-database_id = ""  # To be filled after D1 database creation
-
-# KV binding for caching
-[[kv_namespaces]]
-binding = "KV_CACHE"
-id = ""  # To be filled after KV namespace creation
-
-# Cron triggers for data collectors
-[triggers]
-crons = [
-  "0 8 * * 0"  # Sunday 08:00 UTC - weekly data collection
-]
 
 # Static Assets binding
 [assets]

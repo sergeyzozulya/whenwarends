@@ -1,10 +1,9 @@
-// Shared collector runtime: HTTP retry/backoff and a runner that persists
-// results. Every collector in this directory is a `Collector` (see types.ts);
-// the runner — not the collector — touches the DB, so each source stays
-// independently unit-testable with a mocked fetch.
+// Shared collector runtime: HTTP retry/backoff and a failure-isolated runner.
+// The runner does NOT persist — it returns each collector's CollectorResult so
+// the caller (the collect script) writes to the repo data files. Collectors
+// stay pure and independently unit-testable with a mocked fetch.
 
-import type { Collector, Env } from '../types';
-import { insertSnapshots, upsertMarkets } from '../db';
+import type { Collector, CollectorResult, Env } from '../types';
 
 export interface FetchRetryOptions {
   retries?: number;
@@ -61,39 +60,28 @@ export async function fetchJson(
   return res.json();
 }
 
-export interface CollectorRunSummary {
+export interface CollectorRunResult {
   source: string;
   ok: boolean;
-  snapshotsAdded: number;
-  marketsUpserted: number;
+  result?: CollectorResult;
   error?: string;
 }
 
 /**
- * Run one collector and persist its result. Failure is isolated: a thrown
- * error is captured in the summary so one bad source degrades one widget,
- * not the whole cron run.
+ * Run one collector. Failure is isolated: a thrown error is captured so one
+ * bad source degrades one widget, not the whole run. Does not persist.
  */
 export async function runCollector(
-  env: Env,
-  collector: Collector
-): Promise<CollectorRunSummary> {
+  collector: Collector,
+  env: Env
+): Promise<CollectorRunResult> {
   try {
     const result = await collector.run(env);
-    const snapshotsAdded = await insertSnapshots(env, result.snapshots);
-    if (result.markets?.length) await upsertMarkets(env, result.markets);
-    return {
-      source: collector.name,
-      ok: true,
-      snapshotsAdded,
-      marketsUpserted: result.markets?.length ?? 0,
-    };
+    return { source: collector.name, ok: true, result };
   } catch (err) {
     return {
       source: collector.name,
       ok: false,
-      snapshotsAdded: 0,
-      marketsUpserted: 0,
       error: err instanceof Error ? err.message : String(err),
     };
   }
@@ -101,8 +89,8 @@ export async function runCollector(
 
 /** Run many collectors concurrently; never throws (per-source isolation). */
 export async function runCollectors(
-  env: Env,
-  collectors: Collector[]
-): Promise<CollectorRunSummary[]> {
-  return Promise.all(collectors.map((c) => runCollector(env, c)));
+  collectors: Collector[],
+  env: Env
+): Promise<CollectorRunResult[]> {
+  return Promise.all(collectors.map((c) => runCollector(c, env)));
 }

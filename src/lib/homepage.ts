@@ -1,18 +1,15 @@
-// Homepage payload assembly. The Worker reads D1 via db.ts, computes the CDF,
-// and caches the result in KV (see kv.ts). The static page renders the empty
-// payload at build time and graceful empty/degraded states; the runtime
-// /api/homepage route serves the live KV-cached payload.
+// Homepage payload assembly. Reads the repo data files at build time (Node)
+// and bakes the numbers into the static HTML — no runtime DB, no client fetch.
+// Collectors write the data files weekly via the collect script.
 
-import type { Env, Lang, EventRow, BriefRow, MarketRow } from './types';
+import type { Lang, EventRow, BriefRow, MarketRow, SnapshotRow } from './types';
 import {
-  getMarkets,
-  getSnapshotSeries,
-  getLatestSnapshot,
-  getRecentEvents,
-  getLatestPublishedBrief,
-} from './db';
+  readSnapshots,
+  readMarkets,
+  readEvents,
+  readBriefs,
+} from './filestore';
 import { computeCDF, type CDFPoint } from './cdf';
-import { CACHE_KEYS, getCached, setCached } from './kv';
 
 export interface CurveSet {
   curve: { date: string; probability: number }[];
@@ -55,7 +52,7 @@ export interface HomePayload {
 
 const EMPTY_INDICATOR: IndicatorData = { value: null };
 
-/** Stable empty payload for the static build (no D1 at build time). */
+/** Stable empty payload (data files absent or empty). */
 export function emptyHomePayload(): HomePayload {
   return {
     lastUpdated: null,
@@ -84,9 +81,34 @@ function hoursSince(iso: string): number {
   return Math.max(0, Math.round((Date.now() - Date.parse(iso)) / HOURS));
 }
 
-/** Snapshot → indicator, flagging staleness past `staleHours`. */
+function latestSnapshot(
+  rows: SnapshotRow[],
+  metric: string,
+  source: string
+): SnapshotRow | null {
+  let best: SnapshotRow | null = null;
+  for (const r of rows) {
+    if (r.metric !== metric || r.source !== source) continue;
+    if (!best || r.ts > best.ts) best = r;
+  }
+  return best;
+}
+
+function snapshotSeries(
+  rows: SnapshotRow[],
+  metric: string,
+  source: string,
+  sinceTs: string
+): SnapshotRow[] {
+  return rows
+    .filter(
+      (r) => r.metric === metric && r.source === source && r.ts >= sinceTs
+    )
+    .sort((a, b) => a.ts.localeCompare(b.ts));
+}
+
 function indicatorFrom(
-  row: { value: number | null; ts: string; confidence: number | null } | null,
+  row: SnapshotRow | null,
   format: (v: number) => string,
   staleHours: number,
   estimateNote = false
@@ -111,26 +133,40 @@ function marketsToCdfPoints(markets: MarketRow[]): CDFPoint[] {
     }));
 }
 
-/** Assemble the live payload from D1. */
-export async function buildHomePayload(
-  env: Env,
-  lang: Lang
-): Promise<HomePayload> {
-  const [markets, events, brief] = await Promise.all([
-    getMarkets(env),
-    getRecentEvents(env, 4),
-    getLatestPublishedBrief(env, lang),
-  ]);
+function latestPublishedBrief(briefs: BriefRow[], lang: Lang): BriefRow | null {
+  let best: BriefRow | null = null;
+  for (const b of briefs) {
+    if (b.lang !== lang || b.status !== 'published' || b.published === null)
+      continue;
+    if (!best || b.date > best.date) best = b;
+  }
+  return best;
+}
+
+/** Assemble the payload from the repo data files (build-time, synchronous). */
+export function loadHomePayload(lang: Lang): HomePayload {
+  const snapshots = readSnapshots();
+  const markets = readMarkets();
+  const events = [...readEvents()]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 4);
+  const brief = latestPublishedBrief(readBriefs(), lang);
+
+  if (snapshots.length === 0 && markets.length === 0 && !brief) {
+    return { ...emptyHomePayload(), events };
+  }
 
   const ceasefire = computeCDF(marketsToCdfPoints(markets));
 
   const sinceTs = new Date(Date.now() - 365 * 24 * HOURS).toISOString();
   const beliefs: BeliefSeries[] = [];
   for (const source of ['polymarket', 'kalshi'] as const) {
-    const series = await getSnapshotSeries(env, 'war_end_probability', {
+    const series = snapshotSeries(
+      snapshots,
+      'war_end_probability',
       source,
-      sinceTs,
-    });
+      sinceTs
+    );
     if (series.length === 0) continue;
     const points = series
       .map((s) => s.value)
@@ -142,13 +178,6 @@ export async function buildHomePayload(
       current: last !== undefined ? fmtPct(last) : null,
     });
   }
-
-  const [fire, intensity, aid, rub] = await Promise.all([
-    getLatestSnapshot(env, 'fire_anomalies', 'firms'),
-    getLatestSnapshot(env, 'conflict_intensity', 'gdelt'),
-    getLatestSnapshot(env, 'aid_commitments_eur', 'kiel'),
-    getLatestSnapshot(env, 'rub_usd_rate', 'cbr'),
-  ]);
 
   const eur = new Intl.NumberFormat('en', {
     style: 'currency',
@@ -176,25 +205,29 @@ export async function buildHomePayload(
     beliefs,
     events,
     ground: {
-      frontline: indicatorFrom(fire, (v) => `${Math.round(v)}`, 48, true),
-      intensity: indicatorFrom(intensity, (v) => v.toFixed(1), 48),
-      aid: indicatorFrom(aid, (v) => eur.format(v), 30 * 24),
-      economy: indicatorFrom(rub, (v) => `${v.toFixed(2)} RUB / USD`, 72),
+      frontline: indicatorFrom(
+        latestSnapshot(snapshots, 'fire_anomalies', 'firms'),
+        (v) => `${Math.round(v)}`,
+        48,
+        true
+      ),
+      intensity: indicatorFrom(
+        latestSnapshot(snapshots, 'conflict_intensity', 'gdelt'),
+        (v) => v.toFixed(1),
+        48
+      ),
+      aid: indicatorFrom(
+        latestSnapshot(snapshots, 'aid_commitments_eur', 'kiel'),
+        (v) => eur.format(v),
+        30 * 24
+      ),
+      economy: indicatorFrom(
+        latestSnapshot(snapshots, 'rub_usd_rate', 'cbr'),
+        (v) => `${v.toFixed(2)} RUB / USD`,
+        72
+      ),
     },
     brief,
     briefStale,
   };
-}
-
-/** KV-cached accessor used by the /api/homepage route. */
-export async function getHomePayload(
-  env: Env,
-  lang: Lang
-): Promise<HomePayload> {
-  const key = CACHE_KEYS.homepage(lang);
-  const cached = await getCached<HomePayload>(env, key);
-  if (cached) return cached;
-  const fresh = await buildHomePayload(env, lang);
-  await setCached(env, key, fresh, 3600);
-  return fresh;
 }

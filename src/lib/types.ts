@@ -6,20 +6,22 @@ export type Lang = 'uk' | 'en' | 'ru';
 
 export const LANGS = ['uk', 'en', 'ru'] as const;
 
-/** Cloudflare Worker bindings. Mirrors wrangler.toml. */
+/**
+ * Runtime/collection environment. The Worker only uses ASSETS; the collect
+ * script supplies the secrets (from process.env) that collectors read. There
+ * is no DB/KV — data lives in versioned repo files (see filestore.ts).
+ */
 export interface Env {
   ASSETS: { fetch(request: Request): Promise<Response> };
-  DB: D1Database;
-  KV_CACHE: KVNamespace;
   ANTHROPIC_API_KEY: string;
-  /** NASA FIRMS area-API MAP_KEY (free). Secret, not a wrangler [vars] entry. */
+  /** NASA FIRMS area-API MAP_KEY (free). GitHub Actions secret. */
   FIRMS_MAP_KEY: string;
   CONTACT_TO_EMAIL: string;
   CONTACT_FROM_EMAIL: string;
   CONTACT_FROM_NAME: string;
 }
 
-// --- D1 row shapes (mirror migrations/0001_initial.sql) ---
+// --- Data record shapes (mirror data/*.json + snapshots.ndjson) ---
 
 export interface SnapshotRow {
   id: number;

@@ -15,7 +15,7 @@ whenwarends/
 ├── tsconfig.json
 ├── astro.config.mjs
 ├── tailwind.config.ts
-├── wrangler.toml                      # Cloudflare Workers + D1 + KV
+├── wrangler.toml                      # Cloudflare Workers (static assets only)
 ├── playwright.config.ts
 ├── src/
 │   ├── pages/
@@ -37,8 +37,8 @@ whenwarends/
 │   │   └── Layout.astro
 │   ├── lib/
 │   │   ├── cdf.ts                     # isotonic regression, PCHIP interpolation
-│   │   ├── db.ts                      # D1 query helpers
-│   │   ├── kv.ts                      # KV cache helpers
+│   │   ├── filestore.ts               # repo-file data store (read/append)
+│   │   ├── homepage.ts                # build-time payload assembly
 │   │   ├── llm.ts                     # Anthropic client wrapper
 │   │   └── sources/
 │   │       ├── polymarket.ts
@@ -55,14 +55,18 @@ whenwarends/
 │   │   ├── glossary/{uk,en,ru}.yaml   # (Phase 3)
 │   │   └── index.ts
 │   ├── workers/
-│   │   ├── collectors/                # one per source, scheduled
-│   │   ├── llm-brief.ts               # weekly brief generator
-│   │   └── admin-api.ts               # editor approval endpoints
+│   │   └── collectors/                # registry + per-source re-exports
 │   └── styles/global.css
+├── scripts/
+│   └── collect.ts                     # weekly collector orchestrator
+├── data/                              # versioned data store (read at build)
+│   ├── snapshots.ndjson               # append-only immutable history
+│   ├── markets.json                   # current market state
+│   ├── events.json                    # editorial events
+│   ├── briefs.json                    # AI briefs (Phase 3)
+│   └── changelog.json
 ├── worker/
-│   └── index.ts                       # Worker entry point (wrangler main)
-├── migrations/
-│   └── 0001_initial.sql               # D1 schema
+│   └── index.ts                       # Worker entry: static assets + health
 ├── tests/
 │   ├── unit/
 │   │   ├── cdf.test.ts
@@ -129,11 +133,19 @@ whenwarends/
 - **Local dev**: Copy `.env.example` → `.env` and `.dev.vars.example` → `.dev.vars`, then fill in your keys.
 - **Anthropic API key**: `ANTHROPIC_API_KEY` in `.dev.vars` (local) or `wrangler secret` (production).
 
-### Database
+### Data storage (no database)
 
-- **D1 schema** in `migrations/0001_initial.sql`. Immutable snapshots (never overwrite a row).
-- **Backups**: Daily to R2 (also free tier). Script in `DEPLOY.md`.
-- **Queries**: Use `src/lib/db.ts` helpers to avoid SQL injection.
+- **No D1/KV.** Data lives in versioned repo files under `data/`, read at
+  build time by `src/lib/homepage.ts`. See `data/changelog.json` (2026-05-18)
+  for the rationale.
+- **Immutable snapshots**: append to `data/snapshots.ndjson`, never rewrite a
+  line. `src/lib/filestore.ts` dedupes on `(metric, source, ts)`.
+- **History / audit / backup**: git. The collect commit is the audit trail.
+- **Collection**: `npm run collect` (or weekly via
+  `.github/workflows/collect.yml`) runs the collectors and commits `data/`;
+  the push triggers a rebuild + deploy.
+- **No SQL**: collectors return typed objects; the runner persists via
+  `filestore.ts`. No injection surface.
 
 ### AI & editorial
 
@@ -198,7 +210,8 @@ whenwarends/
 ## Cost envelope (realistic, weekly cadence)
 
 - Anthropic Claude API: ~$2–8/month (1 brief/week × 3 langs, with prompt caching)
-- Cloudflare (Pages, Workers, D1, KV, Cron, Email, Analytics): $0
+- Cloudflare (Workers + Static Assets, Email, Analytics): $0
+- GitHub Actions (weekly collection + CI): $0 (public repo / free tier)
 - Domain (annualized): ~$1/month
 - GitHub + Sentry: $0
 - **Total**: ~$3–9/month. Easily under $15/month.

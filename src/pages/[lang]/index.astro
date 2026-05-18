@@ -10,7 +10,7 @@ import IndicatorCard from '@/components/IndicatorCard.astro';
 import DailyBrief from '@/components/DailyBrief.astro';
 import { getTranslation } from '@i18n/index';
 import type { Lang } from '@lib/types';
-import { emptyHomePayload } from '@lib/homepage';
+import { loadHomePayload } from '@lib/homepage';
 
 export function getStaticPaths() {
   return [{ params: { lang: 'uk' } }, { params: { lang: 'en' } }, { params: { lang: 'ru' } }];
@@ -19,7 +19,7 @@ export function getStaticPaths() {
 const lang = Astro.params.lang as Lang;
 const t = (key: string) => getTranslation(lang, key);
 
-const data = emptyHomePayload();
+const data = loadHomePayload(lang);
 
 const heroStrings: Record<string, string> = {
   label: t('hero.label'),

@@ -64,23 +64,27 @@ Free tier covers v1 traffic comfortably. Runtime cost under $40/month, dominated
 
 ## 6. Architecture
 
+> **Revised 2026-05-18** (see `data/changelog.json`): D1/KV/Cron replaced by
+> versioned repo JSON files read at build time. Weekly data volume for a
+> single editor does not justify a database; git provides immutable history,
+> audit trail, and backups. Editorial approval becomes pull-request review.
+
 ```
-[Cloudflare Cron Triggers]
+[GitHub Actions — weekly cron]
         ↓
-[Collector Workers] ── pull → [Polymarket, GDELT, Kiel, NBU, FIRMS, …]
+[scripts/collect.ts] ── pull → [Polymarket, GDELT, Kiel, NBU, FIRMS, …]
         ↓
-[Cloudflare D1]  ◄── snapshots: (metric, source, ts, value, raw_blob, confidence)
+[data/ JSON files]  ◄── snapshots.ndjson: (metric, source, ts, value, raw_blob, confidence)
+        ↓                  markets.json · events.json · briefs.json
         ↓                                                    ↑
-[LLM Summary Worker] ── Anthropic API ─────► drafts          │
-        ↓                                                    │
-[Editor admin page] ── approve ────────────► published_briefs
+[Brief draft → pending_review file in a PR] ── editor merges ┘  (Phase 3)
         ↓
-[Astro static build + KV cache]
+[Astro static build reads data/ → numbers baked into HTML]
         ↓
 [Cloudflare Worker + Static Assets] → readers
 ```
 
-Snapshot tables never overwrite. Each collector is idempotent with retry/backoff. One failing source degrades one widget, not the page — affected widgets show "data unavailable, last good X hours ago."
+Snapshots never overwrite (append-only NDJSON, deduped on metric+source+ts). Each collector is idempotent with retry/backoff and failure-isolated. One failing source degrades one widget, not the page — affected widgets show "data unavailable, last good X hours ago." The commit that updates `data/` triggers CI rebuild + deploy.
 
 ## 7. Page structure
 
@@ -232,7 +236,13 @@ whenwarends/
 - **Two font weights** only (400, 500). No 600/700.
 - **No emoji** in UI. No flashing or animated numbers.
 
-## 14. Database schema (D1)
+## 14. Data model
+
+> **Revised 2026-05-18**: no D1. The shapes below now describe the JSON
+> records in `data/` (`snapshots.ndjson`, `markets.json`, `briefs.json`,
+> `events.json`, `changelog.json`); see `src/lib/types.ts` for the
+> authoritative TypeScript types and `src/lib/filestore.ts` for access. The
+> original DDL is retained as documentation of the record shape.
 
 ```sql
 -- Time-series metric snapshots; never overwrite
@@ -356,4 +366,4 @@ Phase work proceeds by Claude Code creating a `phase-N/...` branch, completing t
 
 ---
 
-*Specification version 1.1 · 17 May 2026 · update via PR to this file; track changes in `/changelog`.*
+*Specification version 1.2 · 18 May 2026 · v1.2 replaces D1/KV/Cron with versioned repo files + GitHub Actions collection (§6, §14; rationale in `data/changelog.json`). Update via PR to this file; track changes in `/changelog`.*
