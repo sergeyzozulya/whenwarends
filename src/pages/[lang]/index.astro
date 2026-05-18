@@ -1,34 +1,118 @@
 ---
-// Homepage for all locales
-// Route: /[lang]/
+// Homepage — single-column reading flow (SPEC §7). Static build renders the
+// empty payload with graceful empty/degraded states; the live KV-cached
+// payload is served at runtime from /api/homepage.
 import Layout from '@/layouts/Layout.astro';
+import HeroChart from '@/components/HeroChart';
+import Sparkline from '@/components/Sparkline.astro';
+import EventList from '@/components/EventList.astro';
+import IndicatorCard from '@/components/IndicatorCard.astro';
+import DailyBrief from '@/components/DailyBrief.astro';
+import { getTranslation } from '@i18n/index';
+import type { Lang } from '@lib/types';
+import { loadHomePayload } from '@lib/homepage';
 
 export function getStaticPaths() {
-  return [
-    { params: { lang: 'uk' } },
-    { params: { lang: 'en' } },
-    { params: { lang: 'ru' } },
-  ];
+  return [{ params: { lang: 'uk' } }, { params: { lang: 'en' } }, { params: { lang: 'ru' } }];
 }
 
-const { lang } = Astro.params;
-const t = (key: string) => {
-  // Placeholder translation getter
-  return key;
+const lang = Astro.params.lang as Lang;
+const t = (key: string) => getTranslation(lang, key);
+
+const data = loadHomePayload(lang);
+
+const heroStrings: Record<string, string> = {
+  label: t('hero.label'),
+  median: t('hero.median'),
+  definition: t('hero.definition'),
+  ceasefire: t('hero.ceasefire'),
+  peaceDeal: t('hero.peaceDeal'),
+  either: t('hero.either'),
+  todayMarker: t('hero.todayMarker'),
+  crossing50: t('hero.crossing50'),
+  chartAria: t('hero.chartAria'),
+  tableToggle: t('hero.tableToggle'),
+  tableDate: t('hero.tableDate'),
+  tableProbability: t('hero.tableProbability'),
 };
+
+const dateFmt = new Intl.DateTimeFormat(lang, { dateStyle: 'medium', timeZone: 'UTC' });
+const medianLabel = data.hero.median ? dateFmt.format(new Date(data.hero.median)) : '—';
+
+const groundCards = [
+  { key: 'frontline', d: data.ground.frontline },
+  { key: 'intensity', d: data.ground.intensity },
+  { key: 'aid', d: data.ground.aid },
+  { key: 'economy', d: data.ground.economy },
+] as const;
 ---
 
-<Layout lang={lang} title="When does this war end?">
-  <main class="space-y-12">
-    <section class="text-center py-12">
-      <h1 class="text-4xl font-medium mb-4">When does this war end?</h1>
-      <p class="text-xl text-gray-600">Calm, transparent data on the Russia-Ukraine conflict</p>
+<Layout lang={lang} title={t('common.title')} lastUpdated={data.lastUpdated ?? undefined}>
+  <div class="space-y-16">
+    <section class="space-y-6">
+      <header class="space-y-2">
+        <h1 class="text-[22px] font-medium">{t('common.title')}</h1>
+        <p class="text-[16px] text-gray-600">{t('common.subtitle')}</p>
+      </header>
+
+      <HeroChart
+        client:visible
+        datasets={data.hero.datasets}
+        today={data.hero.today}
+        strings={heroStrings}
+      />
+
+      <div class="grid gap-4 sm:grid-cols-2">
+        <IndicatorCard lang={lang} title={t('hero.median')} value={medianLabel} />
+        <IndicatorCard lang={lang} title={t('hero.shift30d')} value="—" />
+      </div>
     </section>
 
-    <section class="bg-gray-50 p-8 rounded-lg">
-      <p class="text-gray-600">
-        Phase 0 holding page. Data sources and interactive widgets launching in Phase 1.
-      </p>
+    <section class="space-y-4">
+      <h2 class="text-[18px] font-medium">{t('beliefs.heading')}</h2>
+      {
+        data.beliefs.length === 0 ? (
+          <p class="text-[13px] text-gray-500">{t('errors.dataUnavailable').replace('{time}', '—')}</p>
+        ) : (
+          <div class="grid gap-6 sm:grid-cols-3">
+            {data.beliefs.map((b) => (
+              <Sparkline
+                points={b.points}
+                label={b.label}
+                currentValue={b.current ?? undefined}
+                currentLabel={t('beliefs.current')}
+              />
+            ))}
+          </div>
+        )
+      }
     </section>
-  </main>
+
+    <section>
+      <EventList events={data.events} lang={lang} />
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-[18px] font-medium">{t('ground.heading')}</h2>
+      <div class="grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+        {
+          groundCards.map(({ key, d }) => (
+            <IndicatorCard
+              lang={lang}
+              title={t(`ground.${key}`)}
+              value={d.value ?? '—'}
+              sub={d.sub}
+              confidence={d.confidence}
+              degraded={d.degraded}
+              estimateNote={d.estimateNote}
+            />
+          ))
+        }
+      </div>
+    </section>
+
+    <section>
+      <DailyBrief brief={data.brief} isStale={data.briefStale} lang={lang} />
+    </section>
+  </div>
 </Layout>

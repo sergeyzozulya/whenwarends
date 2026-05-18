@@ -1,0 +1,27 @@
+# Locked English terminology for the editorial brief.
+# Reviewed separately from brief approval (SPEC §9). The draft model must use
+# these exact forms for the listed concepts.
+
+countries:
+  ukraine: Ukraine
+  russia: Russia
+
+agencies:
+  isw: Institute for the Study of War (ISW)
+  nbu: National Bank of Ukraine
+  cbr: Central Bank of Russia
+  gdelt: GDELT Project
+  firms: NASA FIRMS
+  kiel: Kiel Institute Ukraine Support Tracker
+
+domain_terms:
+  ceasefire: ceasefire
+  peace_deal: peace deal
+  frontline: front line
+  war_end_probability: market-implied probability the war has ended
+  aid_commitments: military aid commitments
+
+style:
+  - Use "the war" or "the Russia–Ukraine war"; never "the conflict" as a euphemism.
+  - "market-implied" or "market-derived", never "predicted" or "forecast by the site".
+  - Sentence case. No emoji. No exclamation marks.

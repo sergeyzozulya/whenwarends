@@ -1,0 +1,38 @@
+---
+import { getTranslation } from '@i18n/index';
+import type { Lang } from '@lib/types';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const t = (key: string): string => getTranslation(lang, key);
+
+const navItems = [
+  { key: 'common.home', href: `/${lang}` },
+  { key: 'common.methodology', href: `/${lang}/methodology` },
+  { key: 'common.about', href: `/${lang}/about` },
+  { key: 'common.sources', href: `/${lang}/sources` },
+  { key: 'common.changelog', href: `/${lang}/changelog` },
+];
+---
+
+<footer class="border-t border-gray-200 mt-16">
+  <div class="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+    <nav class="flex flex-wrap gap-6 text-[13px]">
+      {
+        navItems.map((item) => (
+          <a
+            href={item.href}
+            class="text-[#2c5aa0] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
+          >
+            {t(item.key)}
+          </a>
+        ))
+      }
+    </nav>
+    <p class="mt-4 text-[13px] text-gray-500">{t('common.footer')}</p>
+  </div>
+</footer>

@@ -1,0 +1,42 @@
+name: Weekly data collection
+
+# Pulls every source and commits the updated data/ files. The push to main
+# triggers CI, which rebuilds the static site (now embedding fresh numbers)
+# and deploys it. Manual runs allowed via the Actions tab.
+on:
+  schedule:
+    - cron: '0 8 * * 0' # Sunday 08:00 UTC (SPEC §10 weekly cadence)
+  workflow_dispatch:
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    name: Collect and commit data
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Run collectors
+        run: npm run collect
+        env:
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+      - name: Commit data changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "chore(data): weekly collection $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "No data changes this run."
+          fi

@@ -1,0 +1,117 @@
+---
+// "What moved the curve" — editorial event list (SPEC §7, item 4).
+// Static .astro: no hydration, no <script>, Tailwind utilities only.
+// Each event shows a localized date, the localized description, and a
+// shift-attribution line derived from `shift_months`. All chrome is
+// localized via i18n; nothing user-visible is hardcoded English.
+
+import type { EventRow, Lang } from '@lib/types';
+import { getTranslation } from '@i18n/index';
+
+interface Props {
+  events: EventRow[];
+  lang: Lang;
+}
+
+const { events, lang } = Astro.props;
+
+const heading = getTranslation(lang, 'events.heading');
+
+// Map UI lang to a BCP-47 tag for Intl. 'uk'/'ru' are valid as-is; 'en'
+// renders an unambiguous numeric-month date so it reads cleanly in any region.
+const localeTag: Record<Lang, string> = {
+  uk: 'uk-UA',
+  en: 'en-GB',
+  ru: 'ru-RU',
+};
+
+const dateFmt = new Intl.DateTimeFormat(localeTag[lang], {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+
+// Format the YYYY-MM-DD string as a UTC calendar date. A bad/missing date
+// must never crash the render; fall back to the raw string.
+function formatDate(iso: string): string {
+  const d = new Date(`${iso}T00:00:00Z`);
+  return Number.isNaN(d.getTime()) ? iso : dateFmt.format(d);
+}
+
+function descriptionFor(e: EventRow): string {
+  if (lang === 'uk') return e.description_uk;
+  if (lang === 'ru') return e.description_ru;
+  return e.description_en;
+}
+
+// {months} is NOT auto-interpolated by getTranslation — replace manually.
+// At most one decimal, and drop a trailing ".0" so "3 months" reads cleanly.
+function formatMonths(n: number): string {
+  const rounded = Math.round(n * 10) / 10;
+  return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
+}
+
+function shiftLine(shift: number | null): string {
+  if (shift === null || shift === 0 || !Number.isFinite(shift)) {
+    return getTranslation(lang, 'events.noShift');
+  }
+  const months = formatMonths(Math.abs(shift));
+  const key = shift > 0 ? 'events.shiftLater' : 'events.shiftEarlier';
+  return getTranslation(lang, key).replace('{months}', months);
+}
+
+const items = (events ?? []).map((e) => ({
+  id: e.id,
+  date: formatDate(e.date),
+  description: descriptionFor(e),
+  shift: shiftLine(e.shift_months),
+  sourceUrl: e.source_url,
+}));
+
+// Quiet neutral fallback when there are no events. Reuse the brief's
+// "nothing fresh" phrase rather than inventing copy or hardcoding English.
+const emptyMessage = getTranslation(lang, 'brief.noBrief');
+
+const accent = '#2c5aa0';
+---
+
+<section aria-labelledby="events-heading" class="mt-12">
+  <h2
+    id="events-heading"
+    class="text-lg font-medium text-gray-900"
+  >
+    {heading}
+  </h2>
+
+  {
+    items.length === 0 ? (
+      <p class="mt-3 text-sm font-normal text-gray-500">{emptyMessage}</p>
+    ) : (
+      <ul class="mt-4 divide-y divide-gray-200">
+        {items.map((item) => (
+          <li class="py-4">
+            <time class="block text-xs font-normal text-gray-500">
+              {item.date}
+            </time>
+            <p class="mt-1 text-sm font-normal text-gray-900">
+              {item.description}
+            </p>
+            <p class="mt-1 text-sm font-normal text-gray-500">{item.shift}</p>
+            {item.sourceUrl && (
+              <a
+                href={item.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-1 inline-block text-xs font-medium underline underline-offset-2 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                style={`color:${accent}`}
+              >
+                {getTranslation(lang, 'brief.sources')}
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</section>

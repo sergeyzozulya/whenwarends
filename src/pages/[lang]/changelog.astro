@@ -1,24 +1,47 @@
 ---
-// Changelog page
+// Changelog page — rendered from data/changelog.json at build time.
 import Layout from '@/layouts/Layout.astro';
+import { getTranslation } from '@i18n/index';
+import type { Lang } from '@lib/types';
+import { readChangelog } from '@lib/filestore';
 
 export function getStaticPaths() {
-  return [
-    { params: { lang: 'uk' } },
-    { params: { lang: 'en' } },
-    { params: { lang: 'ru' } },
-  ];
+  return [{ params: { lang: 'uk' } }, { params: { lang: 'en' } }, { params: { lang: 'ru' } }];
 }
 
-const { lang } = Astro.params;
+const lang = Astro.params.lang as Lang;
+const t = (key: string) => getTranslation(lang, key);
+
+const entries = [...readChangelog()].sort((a, b) =>
+  b.date.localeCompare(a.date)
+);
+const dateFmt = new Intl.DateTimeFormat(lang, {
+  dateStyle: 'medium',
+  timeZone: 'UTC',
+});
 ---
 
-<Layout lang={lang} title="Changelog">
-  <main class="max-w-2xl mx-auto prose">
-    <h1>Changelog</h1>
-    <dl>
-      <dt>2026-05-17</dt>
-      <dd>Phase 0 — Project scaffold, Astro i18n routing, GitHub Actions CI</dd>
-    </dl>
-  </main>
+<Layout lang={lang} title={t('common.changelog')}>
+  <section class="max-w-2xl space-y-6">
+    <h1 class="text-[22px] font-medium">{t('common.changelog')}</h1>
+    {
+      entries.length === 0 ? (
+        <p class="text-[13px] text-gray-500">—</p>
+      ) : (
+        <ul class="space-y-4">
+          {entries.map((e) => (
+            <li class="border-b border-gray-200 pb-4">
+              <div class="flex items-baseline gap-3">
+                <time datetime={e.date} class="text-[13px] text-gray-500">
+                  {dateFmt.format(new Date(e.date + 'T00:00:00Z'))}
+                </time>
+                <span class="text-[13px] text-gray-500">{e.category}</span>
+              </div>
+              <p class="mt-1 text-[16px]">{e.description}</p>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </section>
 </Layout>

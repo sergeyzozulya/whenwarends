@@ -1,0 +1,178 @@
+// Pure, deterministic data-shaping helpers for the hero CDF chart island.
+//
+// These functions take the JSON-serializable CurveSet the page passes to the
+// island and turn it into the numeric series Chart.js consumes. They contain
+// no DOM, no Chart.js, and no Date mutation beyond parsing — fully unit-tested
+// in tests/unit/heroChartData.test.ts. Per CLAUDE.md, extend those tests
+// before changing logic here.
+
+/** Default forward horizon shown on the X-axis (spec §8: 24 months). */
+export const DEFAULT_HORIZON_MONTHS = 24;
+/** Spec §8 allows configuring the horizon up to 36 months. */
+export const MAX_HORIZON_MONTHS = 36;
+/** A horizon below this is meaningless for a multi-month CDF. */
+export const MIN_HORIZON_MONTHS = 1;
+
+/** One point of a probability curve or knot. Mirrors cdf.ts CDFPoint shape. */
+export interface SeriesPoint {
+  date: string; // ISO-8601 UTC
+  probability: number; // 0–1 cumulative
+  liquidity?: number; // USD (knots only)
+}
+
+/**
+ * The per-definition payload the island renders. JSON-serializable so it can
+ * cross the Astro island boundary (no Date objects, no functions).
+ */
+export interface CurveSet {
+  /** Dense interpolated curve for the line. */
+  curve: SeriesPoint[];
+  /** Aggregated market knots the curve passes through (dot markers). */
+  knots: SeriesPoint[];
+  /** ISO date of the 50% crossing, or null if the curve never reaches it. */
+  median: string | null;
+}
+
+/** An (x, y) sample where x is epoch-ms and y is a 0–1 probability. */
+export interface XYPoint {
+  x: number;
+  y: number;
+}
+
+/** Everything the chart needs for one definition, ready for Chart.js. */
+export interface ChartSeries {
+  /** Dense monotone curve as time-scale points. */
+  data: XYPoint[];
+  /** Real market dates as scatter overlay points. */
+  knotPoints: XYPoint[];
+  /** The 50% crossing point, or null if the curve never crosses 0.5. */
+  medianPoint: XYPoint | null;
+  /** Epoch-ms of `today` (vertical dashed marker). */
+  todayMs: number;
+  /** Inclusive X-axis bounds in epoch-ms (today → today + horizon). */
+  xMin: number;
+  xMax: number;
+}
+
+/** Parse an ISO-8601 string to epoch-ms. Throws on an unparseable value. */
+export function isoToMs(iso: string): number {
+  const ms = Date.parse(iso);
+  if (Number.isNaN(ms)) {
+    throw new Error(`heroChartData: unparseable ISO date: ${iso}`);
+  }
+  return ms;
+}
+
+/**
+ * Clamp a requested horizon (in months) into the spec-allowed range and round
+ * to an integer. Non-finite input falls back to the 24-month default.
+ */
+export function clampHorizonMonths(months: number): number {
+  if (!Number.isFinite(months)) return DEFAULT_HORIZON_MONTHS;
+  const rounded = Math.round(months);
+  if (rounded < MIN_HORIZON_MONTHS) return MIN_HORIZON_MONTHS;
+  if (rounded > MAX_HORIZON_MONTHS) return MAX_HORIZON_MONTHS;
+  return rounded;
+}
+
+/**
+ * Add a whole number of calendar months to an epoch-ms instant, in UTC.
+ * Clamps overflowing days (e.g. +1 month from Jan 31 → Feb 28/29).
+ */
+export function addMonthsUtc(ms: number, months: number): number {
+  const d = new Date(ms);
+  const year = d.getUTCFullYear();
+  const month = d.getUTCMonth() + months;
+  const day = d.getUTCDate();
+  const targetYear = year + Math.floor(month / 12);
+  const targetMonth = ((month % 12) + 12) % 12;
+  const daysInTarget = new Date(
+    Date.UTC(targetYear, targetMonth + 1, 0)
+  ).getUTCDate();
+  const clampedDay = Math.min(day, daysInTarget);
+  return Date.UTC(
+    targetYear,
+    targetMonth,
+    clampedDay,
+    d.getUTCHours(),
+    d.getUTCMinutes(),
+    d.getUTCSeconds(),
+    d.getUTCMilliseconds()
+  );
+}
+
+/**
+ * Format a 0–1 probability as a whole-percent string, e.g. 0.567 → "57%".
+ * Values are clamped to [0, 1] and rounded half-up. Non-finite input → "—".
+ */
+export function formatPct(p: number): string {
+  if (!Number.isFinite(p)) return '—';
+  const clamped = Math.min(1, Math.max(0, p));
+  return `${Math.round(clamped * 100)}%`;
+}
+
+/**
+ * Pick the median point to ring on the chart. Prefers the explicit `median`
+ * ISO date from the CDF pipeline, reading its Y from the dense curve. If the
+ * median date is absent or out of curve range, returns null.
+ */
+export function selectMedianPoint(
+  curve: SeriesPoint[],
+  median: string | null
+): XYPoint | null {
+  if (median == null || curve.length === 0) return null;
+  const mx = isoToMs(median);
+  // Exact curve sample match first (the pipeline emits dense samples).
+  for (const pt of curve) {
+    if (isoToMs(pt.date) === mx) {
+      return { x: mx, y: clamp01(pt.probability) };
+    }
+  }
+  // Otherwise interpolate Y linearly between the bracketing curve samples.
+  for (let i = 0; i < curve.length - 1; i++) {
+    const ax = isoToMs(curve[i].date);
+    const bx = isoToMs(curve[i + 1].date);
+    if (mx >= ax && mx <= bx) {
+      const t = bx === ax ? 0 : (mx - ax) / (bx - ax);
+      const y =
+        clamp01(curve[i].probability) +
+        t * (clamp01(curve[i + 1].probability) - clamp01(curve[i].probability));
+      return { x: mx, y };
+    }
+  }
+  // Median date is outside the curve's sampled range.
+  return null;
+}
+
+function clamp01(n: number): number {
+  return Math.min(1, Math.max(0, n));
+}
+
+/**
+ * Shape a CurveSet plus a `today` ISO instant into the numeric series the
+ * Chart.js island renders. Pure and deterministic.
+ */
+export function buildChartSeries(
+  curveSet: CurveSet,
+  today: string,
+  horizonMonths: number = DEFAULT_HORIZON_MONTHS
+): ChartSeries {
+  const todayMs = isoToMs(today);
+  const horizon = clampHorizonMonths(horizonMonths);
+  const xMin = todayMs;
+  const xMax = addMonthsUtc(todayMs, horizon);
+
+  const data: XYPoint[] = curveSet.curve.map((p) => ({
+    x: isoToMs(p.date),
+    y: clamp01(p.probability),
+  }));
+
+  const knotPoints: XYPoint[] = curveSet.knots.map((p) => ({
+    x: isoToMs(p.date),
+    y: clamp01(p.probability),
+  }));
+
+  const medianPoint = selectMedianPoint(curveSet.curve, curveSet.median);
+
+  return { data, knotPoints, medianPoint, todayMs, xMin, xMax };
+}

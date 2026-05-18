@@ -1,0 +1,27 @@
+# Locked Ukrainian terminology for the editorial brief (українська).
+# Reviewed separately from brief approval (SPEC §9). The draft model must use
+# these exact forms for the listed concepts.
+
+countries:
+  ukraine: Україна
+  russia: Росія
+
+agencies:
+  isw: Інститут вивчення війни (ISW)
+  nbu: Національний банк України
+  cbr: Центральний банк Росії
+  gdelt: проєкт GDELT
+  firms: NASA FIRMS
+  kiel: Кільський трекер підтримки України
+
+domain_terms:
+  ceasefire: припинення вогню
+  peace_deal: мирна угода
+  frontline: лінія фронту
+  war_end_probability: ринкова ймовірність завершення війни
+  aid_commitments: зобов'язання щодо військової допомоги
+
+style:
+  - Уживайте «війна» або «російсько-українська війна»; не «конфлікт» як евфемізм.
+  - «ринкова ймовірність», ніколи «прогноз сайту».
+  - Перше слово речення з великої літери. Без емодзі. Без знаків оклику.
