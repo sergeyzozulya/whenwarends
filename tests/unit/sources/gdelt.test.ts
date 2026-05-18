@@ -2,13 +2,22 @@ import { describe, it, expect } from 'vitest';
 import {
   gdeltCollector,
   normalizeGdeltDate,
+  GdeltResponseError,
   type JsonFetcher,
 } from '../../../src/lib/sources/gdelt';
 import { GdeltTimelineResponseSchema } from '../../../src/lib/sources/gdelt.schema';
 
-// Realistic GDELT DOC 2.0 timeline JSON. `timelinevol` and `timelinetone`
-// share the same envelope; only the series name and value scale differ.
+// Real GDELT DOC 2.0 timeline JSON shape (captured live 2026-05-18). The API
+// echoes `query_details` metadata and emits dates as `YYYYMMDDTHHMMSSZ` at
+// 15-minute resolution. `timelinevol` and `timelinetone` share the envelope;
+// only the series name and value scale differ. We keep a couple of legacy
+// date variants here to also exercise normalizeGdeltDate's tolerance.
 const volJson = {
+  query_details: {
+    title:
+      '(Ukraine OR Russia) (war OR military OR offensive OR ceasefire) sourcelang:eng',
+    date_resolution: '15m',
+  },
   timeline: [
     {
       series: 'Volume Intensity',
@@ -22,6 +31,11 @@ const volJson = {
 };
 
 const toneJson = {
+  query_details: {
+    title:
+      '(Ukraine OR Russia) (war OR military OR offensive OR ceasefire) sourcelang:eng',
+    date_resolution: '15m',
+  },
   timeline: [
     {
       series: 'Average Tone',
@@ -149,5 +163,46 @@ describe('gdeltCollector', () => {
     await expect(
       gdeltCollector.runWith(makeFetcher({ bogus: true }, { timeline: [] }))
     ).rejects.toThrow();
+  });
+
+  it('accepts the real envelope including query_details metadata', async () => {
+    const result = await gdeltCollector.runWith(makeFetcher(volJson, toneJson));
+    // 3 vol + 2 tone, query_details ignored but not rejected.
+    expect(result.snapshots).toHaveLength(5);
+  });
+
+  it('percent-encodes the query (spaces => %20, never +)', async () => {
+    const urls: string[] = [];
+    const fetcher: JsonFetcher = (url: string) => {
+      urls.push(url);
+      return Promise.resolve({ timeline: [] });
+    };
+    await gdeltCollector.runWith(fetcher);
+
+    expect(urls).toHaveLength(2);
+    for (const url of urls) {
+      // `+`-for-space encoding is what broke the live call against GDELT.
+      expect(url).not.toContain('+');
+      expect(url).toContain('%20');
+      expect(url).toContain('format=json');
+      expect(url).toContain('timespan=12months');
+      expect(url.startsWith('https://api.gdeltproject.org/api/v2/doc/doc?')).toBe(
+        true
+      );
+    }
+    expect(urls.some((u) => u.includes('mode=timelinevol'))).toBe(true);
+    expect(urls.some((u) => u.includes('mode=timelinetone'))).toBe(true);
+  });
+
+  it('surfaces a typed GdeltResponseError when the fetcher rejects (e.g. 429 text)', async () => {
+    const failing: JsonFetcher = () =>
+      Promise.reject(
+        new GdeltResponseError(
+          'GDELT returned non-JSON (content-type ""): Please limit requests to one every 5 seconds'
+        )
+      );
+    await expect(gdeltCollector.runWith(failing)).rejects.toBeInstanceOf(
+      GdeltResponseError
+    );
   });
 });

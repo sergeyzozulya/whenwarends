@@ -1,22 +1,32 @@
 import { z } from 'zod';
 
-// Zod schema for the Polymarket Gamma API market response.
+// Zod schema for the Polymarket Gamma API EVENTS response.
 //
-// Real endpoint (public, no auth):
-//   GET https://gamma-api.polymarket.com/markets
-//       ?closed=false&limit=100&order=volume&ascending=false
-//       &tag=ukraine            (tag/slug filter narrows to the war markets)
+// Real endpoint (public, no auth, no key — verified live 2026-05-18):
+//   GET https://gamma-api.polymarket.com/events
+//       ?closed=false&active=true&limit=100&order=volume&ascending=false
+//       &tag_slug=ukraine
 //
-// The Gamma API returns an array of market objects. Numeric fields (prices,
-// liquidity, volume) come back as JSON strings, not numbers, so the schema
-// coerces them. `outcomePrices` and `outcomes` arrive as JSON-encoded strings
-// (e.g. "[\"0.62\", \"0.38\"]"), so we accept the raw string and decode it in
-// the collector. We parse defensively: unknown extra fields are ignored, and
-// the few fields the collector actually consumes are required.
+//   IMPORTANT findings from the live API:
+//   - The `tag` query param on /markets is IGNORED (returns unrelated markets).
+//     Tag filtering only works on /events via `tag_slug`. So we query /events
+//     and walk the nested `markets[]` array of each event.
+//   - Numeric fields (liquidity, volume, prices) are returned as JSON STRINGS
+//     for the string-typed fields and as real numbers for the *Num fields
+//     (liquidityNum, volumeNum) and the order-book fields (bestBid/bestAsk/
+//     lastTradePrice). The schema coerces both forms.
+//   - `outcomes` and `outcomePrices` are JSON-ENCODED strings inside the JSON,
+//     e.g. "[\"Yes\", \"No\"]" and "[\"0.505\", \"0.495\"]". We keep them as
+//     raw strings here and decode them in the collector.
+//   - Grouped markets (e.g. "Russia x Ukraine ceasefire agreement by...?")
+//     share ONE event-level `endDate` across every sub-market. The real
+//     per-market resolution date lives in the question text ("by December 31,
+//     2026?") and partially in `groupItemTitle` ("December 31", no year). The
+//     collector derives the true resolution date from those; `endDate` /
+//     `endDateIso` are only a last-resort fallback.
 //
-// Per-market mid price for the binary "Yes" outcome is derived from
-// `outcomePrices[0]` (Polymarket lists [Yes, No] for binary markets) and is
-// already a 0–1 probability.
+// We parse defensively: unknown extra fields are ignored, and only the few
+// fields the collector consumes are required.
 
 /** Polymarket serialises some numerics as strings; coerce them safely. */
 const numericString = z.union([z.number(), z.string()]).transform((v, ctx) => {
@@ -30,24 +40,34 @@ const numericString = z.union([z.number(), z.string()]).transform((v, ctx) => {
 
 const optionalNumericString = z
   .union([z.number(), z.string()])
-  .optional()
+  .nullish()
   .transform((v) => {
-    if (v === undefined || v === '') return undefined;
+    if (v === undefined || v === null || v === '') return undefined;
     const n = typeof v === 'number' ? v : Number(v);
     return Number.isFinite(n) ? n : undefined;
   });
+
+const optionalIsoString = z
+  .string()
+  .nullish()
+  .transform((v) => (v === undefined || v === null || v === '' ? undefined : v));
 
 export const PolymarketMarketSchema = z.object({
   // Gamma uses a numeric id serialised as either number or string.
   id: z.union([z.number(), z.string()]).transform((v) => String(v)),
   question: z.string().min(1),
   slug: z.string().optional(),
-  // Resolution / close timestamps are ISO-8601 strings. `endDate` is the
-  // canonical resolution date for Gamma markets; `closedTime` may also appear.
-  endDate: z.string().optional(),
-  closedTime: z.string().optional(),
-  createdAt: z.string().optional(),
-  updatedAt: z.string().optional(),
+  // For grouped markets this is the per-row label (e.g. "December 31") with
+  // NO year — useful only combined with a year inferred elsewhere.
+  groupItemTitle: z.string().nullish().transform((v) => v ?? undefined),
+  // Resolution / close timestamps. For grouped markets `endDate` is the shared
+  // event close, NOT the per-market resolution — see collector for the real
+  // date derivation. `endDateIso` is a date-only "YYYY-MM-DD" string.
+  endDate: optionalIsoString,
+  endDateIso: optionalIsoString,
+  closedTime: optionalIsoString,
+  createdAt: optionalIsoString,
+  updatedAt: optionalIsoString,
   closed: z.boolean().optional(),
   active: z.boolean().optional(),
   // JSON-encoded string arrays, decoded in the collector.
@@ -57,7 +77,7 @@ export const PolymarketMarketSchema = z.object({
   liquidity: optionalNumericString,
   volumeNum: optionalNumericString,
   volume: optionalNumericString,
-  // Some Gamma responses expose a single best-bid/last price too.
+  // Order-book derived prices (real numbers in the live API).
   lastTradePrice: optionalNumericString,
   bestBid: optionalNumericString,
   bestAsk: optionalNumericString,
@@ -65,13 +85,30 @@ export const PolymarketMarketSchema = z.object({
 
 export type PolymarketMarket = z.infer<typeof PolymarketMarketSchema>;
 
-/** Top-level response is an array of markets. */
-export const PolymarketMarketsResponseSchema = z.array(PolymarketMarketSchema);
+/**
+ * An event groups one or more markets. We filter at the market level, so the
+ * only event field we need is the nested `markets` array; everything else is
+ * tolerated and ignored. `markets` is optional/nullable on the wire for empty
+ * or still-deploying events.
+ */
+export const PolymarketEventSchema = z.object({
+  id: z.union([z.number(), z.string()]).transform((v) => String(v)).optional(),
+  slug: z.string().optional(),
+  title: z.string().optional(),
+  closed: z.boolean().optional(),
+  active: z.boolean().optional(),
+  markets: z.array(PolymarketMarketSchema).nullish().transform((v) => v ?? []),
+});
 
-export type PolymarketMarketsResponse = z.infer<typeof PolymarketMarketsResponseSchema>;
+export type PolymarketEvent = z.infer<typeof PolymarketEventSchema>;
+
+/** Top-level /events response is an array of events. */
+export const PolymarketEventsResponseSchema = z.array(PolymarketEventSchema);
+
+export type PolymarketEventsResponse = z.infer<typeof PolymarketEventsResponseSchema>;
 
 /**
- * Decode a Polymarket JSON-encoded string array, e.g. `"[\"0.62\",\"0.38\"]"`
+ * Decode a Polymarket JSON-encoded string array, e.g. `"[\"0.505\",\"0.495\"]"`
  * or `"[\"Yes\",\"No\"]"`. Returns [] on malformed input rather than throwing,
  * so one bad market never sinks the whole collector run.
  */

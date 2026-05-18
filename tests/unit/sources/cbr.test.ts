@@ -5,62 +5,29 @@ import {
   CBR_DAILY_URL,
   SOURCE,
   METRIC_RUB_USD_RATE,
-  type JsonFetcher,
+  type TextFetcher,
 } from '../../../src/lib/sources/cbr';
 
-// Realistic https://www.cbr-xml-daily.ru/daily_json.js sample.
-// `Date` carries a Moscow +03:00 offset; `Value` is rubles per `Nominal`
-// units. USD has Nominal 1; JPY here uses Nominal 100 to prove the
-// Value/Nominal division is applied (we only emit USD, but parsing the full
-// payload must still succeed).
-const sampleResponse = {
-  Date: '2026-05-18T11:30:00+03:00',
-  PreviousDate: '2026-05-17T11:30:00+03:00',
-  PreviousURL: '//www.cbr-xml-daily.ru/archive/2026/05/17/daily_json.js',
-  Timestamp: '2026-05-17T23:00:00+03:00',
-  Valute: {
-    USD: {
-      ID: 'R01235',
-      NumCode: '840',
-      CharCode: 'USD',
-      Nominal: 1,
-      Name: 'Доллар США',
-      Value: 91.2345,
-      Previous: 90.9876,
-    },
-    EUR: {
-      ID: 'R01239',
-      NumCode: '978',
-      CharCode: 'EUR',
-      Nominal: 1,
-      Name: 'Евро',
-      Value: 99.5012,
-      Previous: 99.1234,
-    },
-    JPY: {
-      ID: 'R01820',
-      NumCode: '392',
-      CharCode: 'JPY',
-      Nominal: 100,
-      Name: 'Японских иен',
-      Value: 61.4321,
-      Previous: 61.2,
-    },
-  },
-};
+// Real captured https://www.cbr.ru/scripts/XML_daily.asp body (16 May 2026,
+// truncated to USD/EUR/AMD). The official feed:
+//   - is windows-1251 XML (the collector's defaultFetcher decodes it; mocks
+//     supply an already-decoded string, as the network layer would yield),
+//   - uses a comma decimal separator ("73,1275"),
+//   - has a Moscow calendar `Date="DD.MM.YYYY"` (no time, no offset),
+//   - quotes some currencies per Nominal 10/100 (AMD here) — proving the
+//     Value/Nominal handling, though we only emit USD.
+const sampleXml = `<?xml version="1.0" encoding="windows-1251"?><ValCurs Date="16.05.2026" name="Foreign Currency Market"><Valute ID="R01060"><NumCode>051</NumCode><CharCode>AMD</CharCode><Nominal>100</Nominal><Name>Армянских драмов</Name><Value>19,8592</Value><VunitRate>0,198592</VunitRate></Valute><Valute ID="R01235"><NumCode>840</NumCode><CharCode>USD</CharCode><Nominal>1</Nominal><Name>Доллар США</Name><Value>73,1275</Value><VunitRate>73,1275</VunitRate></Valute><Valute ID="R01239"><NumCode>978</NumCode><CharCode>EUR</CharCode><Nominal>1</Nominal><Name>Евро</Name><Value>82,4501</Value><VunitRate>82,4501</VunitRate></Valute></ValCurs>`;
 
 const mockFetcher =
-  (payload: unknown): JsonFetcher =>
+  (body: string): TextFetcher =>
   async (url: string) => {
     expect(url).toBe(CBR_DAILY_URL);
-    return payload;
+    return body;
   };
 
 describe('cbr collector', () => {
-  it('parses the payload and emits one rub_usd_rate snapshot', async () => {
-    const { snapshots, markets } = await collectCbr(
-      mockFetcher(sampleResponse)
-    );
+  it('parses the XML and emits one rub_usd_rate snapshot', async () => {
+    const { snapshots, markets } = await collectCbr(mockFetcher(sampleXml));
 
     expect(markets).toBeUndefined();
     expect(snapshots).toHaveLength(1);
@@ -73,79 +40,94 @@ describe('cbr collector', () => {
     expect(snap.confidence).toBe(1);
   });
 
-  it('computes RUB-per-USD as Value / Nominal', async () => {
-    const { snapshots } = await collectCbr(mockFetcher(sampleResponse));
-    // USD Nominal is 1, so value === Value.
-    expect(snapshots[0].value).toBeCloseTo(91.2345, 6);
+  it('normalises the comma decimal and computes RUB-per-USD as Value / Nominal', async () => {
+    const { snapshots } = await collectCbr(mockFetcher(sampleXml));
+    // USD Nominal is 1, so value === Value ("73,1275" → 73.1275).
+    expect(snapshots[0].value).toBeCloseTo(73.1275, 6);
   });
 
   it('applies Nominal in the per-unit computation', async () => {
-    // USD quoted per 100 units → RUB-per-USD must be Value / 100.
-    const payload = structuredClone(sampleResponse);
-    payload.Valute.USD.Nominal = 100;
-    payload.Valute.USD.Value = 9123.45;
+    // Rewrite USD to be quoted per 100 units → RUB-per-USD must be Value / 100.
+    const xml = sampleXml
+      .replace(
+        '<CharCode>USD</CharCode><Nominal>1</Nominal>',
+        '<CharCode>USD</CharCode><Nominal>100</Nominal>'
+      )
+      .replace(
+        '<Name>Доллар США</Name><Value>73,1275</Value>',
+        '<Name>Доллар США</Name><Value>7312,75</Value>'
+      );
 
-    const { snapshots } = await collectCbr(mockFetcher(payload));
-    expect(snapshots[0].value).toBeCloseTo(91.2345, 6);
+    const { snapshots } = await collectCbr(mockFetcher(xml));
+    expect(snapshots[0].value).toBeCloseTo(73.1275, 6);
   });
 
-  it('normalises the Moscow-offset Date to canonical UTC ISO-8601', async () => {
-    const { snapshots } = await collectCbr(mockFetcher(sampleResponse));
+  it('converts the Moscow DD.MM.YYYY date to canonical UTC ISO-8601', async () => {
+    const { snapshots } = await collectCbr(mockFetcher(sampleXml));
     const { ts } = snapshots[0];
 
-    // +03:00 11:30 → 08:30Z, canonical ...Z form.
-    expect(ts).toBe('2026-05-18T08:30:00.000Z');
+    // 16.05.2026 effective 00:00 Moscow (+03:00) → 2026-05-15T21:00:00Z.
+    expect(ts).toBe('2026-05-15T21:00:00.000Z');
     expect(ts).toBe(new Date(ts).toISOString());
     expect(ts.endsWith('Z')).toBe(true);
   });
 
-  it('stores the raw USD entry in raw_blob', async () => {
-    const { snapshots } = await collectCbr(mockFetcher(sampleResponse));
+  it('stores the parsed USD entry in raw_blob', async () => {
+    const { snapshots } = await collectCbr(mockFetcher(sampleXml));
     const blob = JSON.parse(snapshots[0].raw_blob ?? 'null');
     expect(blob.CharCode).toBe('USD');
-    expect(blob.Value).toBe(91.2345);
+    expect(blob.Value).toBeCloseTo(73.1275, 6);
+    expect(blob.Nominal).toBe(1);
   });
 
-  it('throws on an unparseable Date', async () => {
-    const payload = structuredClone(sampleResponse);
-    payload.Date = 'not-a-date';
-    await expect(collectCbr(mockFetcher(payload))).rejects.toThrow(
+  it('throws on an unparseable Date attribute', async () => {
+    const xml = sampleXml.replace('Date="16.05.2026"', 'Date="not-a-date"');
+    await expect(collectCbr(mockFetcher(xml))).rejects.toThrow(
       /unparseable Date/
     );
   });
 
-  it('throws on garbage (non-object) payload', async () => {
-    await expect(
-      collectCbr(mockFetcher('totally not json shaped'))
-    ).rejects.toThrow();
-  });
-
-  it('throws on an empty object payload', async () => {
-    await expect(collectCbr(mockFetcher({}))).rejects.toThrow();
-  });
-
-  it('throws when the USD valute entry is absent', async () => {
-    const payload = structuredClone(sampleResponse);
-    // Remove USD; schema requires only z.record so this parses, then the
-    // collector must reject the missing USD entry explicitly.
-    delete (payload.Valute as Record<string, unknown>).USD;
-    await expect(collectCbr(mockFetcher(payload))).rejects.toThrow(
-      /missing USD/
+  it('throws when the ValCurs Date attribute is absent', async () => {
+    const xml = sampleXml.replace(' Date="16.05.2026"', '');
+    await expect(collectCbr(mockFetcher(xml))).rejects.toThrow(
+      /missing ValCurs Date/
     );
   });
 
-  it('rejects a non-positive Nominal at the schema boundary', async () => {
-    const payload = structuredClone(sampleResponse);
-    payload.Valute.USD.Nominal = 0;
-    await expect(collectCbr(mockFetcher(payload))).rejects.toThrow();
+  it('throws on a garbage (non-XML) body', async () => {
+    await expect(
+      collectCbr(mockFetcher('totally not xml shaped'))
+    ).rejects.toThrow();
   });
 
-  it('rejects a non-finite Value at the schema boundary', async () => {
-    const payload = structuredClone(sampleResponse);
-    // JSON cannot carry NaN/Infinity; an upstream string is the realistic
-    // garbage case and must be rejected by z.number().
-    (payload.Valute.USD as Record<string, unknown>).Value = '91.2345';
-    await expect(collectCbr(mockFetcher(payload))).rejects.toThrow();
+  it('throws on an empty body', async () => {
+    await expect(collectCbr(mockFetcher(''))).rejects.toThrow();
+  });
+
+  it('throws when the USD valute entry is absent', async () => {
+    // Drop the whole USD <Valute> block; EUR/AMD remain so the XML is valid.
+    const xml = sampleXml.replace(
+      /<Valute ID="R01235">[\s\S]*?<\/Valute>/,
+      ''
+    );
+    await expect(collectCbr(mockFetcher(xml))).rejects.toThrow(/missing USD/);
+  });
+
+  it('rejects a non-positive Nominal at the schema boundary', async () => {
+    const xml = sampleXml.replace(
+      '<CharCode>USD</CharCode><Nominal>1</Nominal>',
+      '<CharCode>USD</CharCode><Nominal>0</Nominal>'
+    );
+    await expect(collectCbr(mockFetcher(xml))).rejects.toThrow();
+  });
+
+  it('rejects a non-numeric Value at the schema boundary', async () => {
+    // A malformed Value that cannot be coerced → NaN → schema rejects.
+    const xml = sampleXml.replace(
+      '<Value>73,1275</Value>',
+      '<Value>not-a-number</Value>'
+    );
+    await expect(collectCbr(mockFetcher(xml))).rejects.toThrow();
   });
 
   it('exposes a Collector with the stable name', () => {

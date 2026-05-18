@@ -7,49 +7,55 @@ import {
   type JsonFetcher,
 } from '../../../src/lib/sources/kalshi';
 
-// Realistic Kalshi /trade-api/v2/markets sample payload.
-// Prices are integer cents (0–100); timestamps are ISO-8601 UTC.
+// Real Kalshi /trade-api/v2/markets sample payload, modeled field-for-field on
+// the LIVE response captured 2026-05-18 from external-api.kalshi.com for the
+// KXZELENSKYYOUT ladder. Prices are fixed-point DOLLAR STRINGS in [0,1]
+// (already the implied probability — no /100). volume_fp / liquidity_dollars
+// are fixed-point count strings; timestamps are ISO-8601 UTC.
 const sampleResponse = {
-  cursor: 'CgkI…',
+  cursor: '',
   markets: [
     {
-      ticker: 'KXRUSUKRWAR-26DEC31-Y',
-      event_ticker: 'KXRUSUKRWAR-26DEC31',
-      series_ticker: 'KXRUSUKRWAR',
-      title: 'Will the Russia-Ukraine war end by Dec 31, 2026?',
-      subtitle: 'Yes',
+      ticker: 'KXZELENSKYYOUT-26OCT01',
+      event_ticker: 'KXZELENSKYYOUT',
+      title: 'Will Volodymyr Zelenskyy leave President of Ukraine before Oct 1, 2026?',
+      yes_sub_title: 'Before Oct 1, 2026',
       status: 'active',
-      yes_bid: 22,
-      yes_ask: 26,
-      last_price: 24,
-      open_time: '2025-01-02T15:00:00Z',
-      close_time: '2026-12-31T23:59:59Z',
-      expiration_time: '2027-01-02T15:00:00Z',
-      volume: 184213,
-      liquidity: 90250,
-      category: 'World',
+      yes_bid_dollars: '0.1300',
+      yes_ask_dollars: '0.1700',
+      last_price_dollars: '0.3000',
+      open_time: '2026-01-23T15:00:00Z',
+      close_time: '2026-10-01T03:59:00Z',
+      expiration_time: '2026-10-08T14:00:00Z',
+      latest_expiration_time: '2026-10-08T14:00:00Z',
+      expected_expiration_time: '2026-01-23T15:00:00Z',
+      volume_fp: '18139.17',
+      volume_24h_fp: '1225.83',
+      liquidity_dollars: '0.0000',
     },
     {
-      ticker: 'KXRUSUKRWAR-27JUN30-Y',
-      event_ticker: 'KXRUSUKRWAR-27JUN30',
-      series_ticker: 'KXRUSUKRWAR',
-      title: 'Will the Russia-Ukraine war end by Jun 30, 2027?',
-      // No subtitle; non-Z but still ISO-8601 UTC offset to prove
+      ticker: 'KXZELENSKYYOUT-26JUL01',
+      event_ticker: 'KXZELENSKYYOUT',
+      title: 'Will Volodymyr Zelenskyy leave President of Ukraine before Jul 1, 2026?',
+      yes_sub_title: 'Before Jul 1, 2026',
+      status: 'active',
+      // No two-sided quote: only last price. Non-Z close_time offset proves
       // canonicalisation through Date#toISOString().
-      status: 'open',
-      last_price: 48,
-      close_time: '2027-06-30T23:59:59+00:00',
-      volume: 5120,
+      last_price_dollars: '0.4800',
+      close_time: '2026-07-01T03:59:00+00:00',
+      volume_fp: '12302.50',
     },
     {
-      // Settled market: still parses, but is excluded from snapshots/markets.
-      ticker: 'KXRUSUKRWAR-25DEC31-Y',
-      title: 'Will the Russia-Ukraine war end by Dec 31, 2025?',
-      status: 'settled',
-      yes_bid: 0,
-      yes_ask: 0,
-      last_price: 0,
-      close_time: '2025-12-31T23:59:59Z',
+      // Finalized market: still parses, but excluded from snapshots/markets.
+      ticker: 'KXZELENSKYYOUT-26APR01',
+      event_ticker: 'KXZELENSKYYOUT',
+      title: 'Will Volodymyr Zelenskyy leave President of Ukraine before Apr 1, 2026?',
+      yes_sub_title: 'Before Apr 1, 2026',
+      status: 'finalized',
+      yes_bid_dollars: '0.0000',
+      yes_ask_dollars: '1.0000',
+      last_price_dollars: '0.0100',
+      close_time: '2026-04-01T03:59:00Z',
     },
   ],
 };
@@ -60,10 +66,10 @@ const mockFetcher =
     payload;
 
 describe('kalshi collector', () => {
-  it('parses, filters to live markets, and maps to snapshots', async () => {
+  it('parses, filters to active markets, and maps to snapshots', async () => {
     const result = await collectKalshi(mockFetcher(sampleResponse));
 
-    // Only the 2 live (active/open) markets become snapshots.
+    // Only the 2 active markets become snapshots.
     expect(result.snapshots).toHaveLength(2);
     for (const s of result.snapshots) {
       expect(s.source).toBe(SOURCE);
@@ -85,22 +91,22 @@ describe('kalshi collector', () => {
   it('computes bid/ask mid probability and spread-based confidence', async () => {
     const result = await collectKalshi(mockFetcher(sampleResponse));
     const first = result.snapshots.find((s) =>
-      (s.raw_blob ?? '').includes('26DEC31')
+      (s.raw_blob ?? '').includes('26OCT01')
     );
     expect(first).toBeDefined();
-    // mid of 22/26 cents = 24 cents = 0.24
-    expect(first?.value).toBeCloseTo(0.24, 10);
-    // spread = 4 cents → confidence = 1 - 0.04 = 0.96
+    // mid of 0.13/0.17 dollars = 0.15
+    expect(first?.value).toBeCloseTo(0.15, 10);
+    // spread = 0.04 → confidence = 1 - 0.04 = 0.96
     expect(first?.confidence).toBeCloseTo(0.96, 10);
   });
 
   it('falls back to last_price when no two-sided quote and lowers confidence', async () => {
     const result = await collectKalshi(mockFetcher(sampleResponse));
     const second = result.snapshots.find((s) =>
-      (s.raw_blob ?? '').includes('27JUN30')
+      (s.raw_blob ?? '').includes('26JUL01')
     );
     expect(second).toBeDefined();
-    // last_price 48 cents → 0.48
+    // last_price_dollars 0.48 → 0.48
     expect(second?.value).toBeCloseTo(0.48, 10);
     // no bid/ask → fixed low confidence 0.3
     expect(second?.confidence).toBeCloseTo(0.3, 10);
@@ -112,30 +118,69 @@ describe('kalshi collector', () => {
     expect(result.markets).toHaveLength(2);
 
     const m1 = result.markets?.find(
-      (m) => m.market_id === 'KXRUSUKRWAR-26DEC31-Y'
+      (m) => m.market_id === 'KXZELENSKYYOUT-26OCT01'
     );
     expect(m1).toBeDefined();
     expect(m1?.source).toBe(SOURCE);
-    expect(m1?.question).toContain('—'); // title — subtitle joined
-    expect(m1?.current_price).toBeCloseTo(0.24, 10);
-    expect(m1?.liquidity_usd).toBe(90250);
+    expect(m1?.question).toContain('—'); // title — yes_sub_title joined
+    expect(m1?.current_price).toBeCloseTo(0.15, 10);
+    // liquidity_dollars deprecated ("0.0000") → falls back to volume_fp.
+    expect(m1?.liquidity_usd).toBeCloseTo(18139.17, 6);
+    expect(m1?.category).toBe('war_end');
     // resolution from expiration_time, canonicalised to Z.
-    expect(m1?.resolution_date).toBe('2027-01-02T15:00:00.000Z');
+    expect(m1?.resolution_date).toBe('2026-10-08T14:00:00.000Z');
     expect(m1?.last_updated).toMatch(
       /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/
     );
 
     const m2 = result.markets?.find(
-      (m) => m.market_id === 'KXRUSUKRWAR-27JUN30-Y'
+      (m) => m.market_id === 'KXZELENSKYYOUT-26JUL01'
     );
     // No expiration_time → falls back to close_time, offset → Z.
-    expect(m2?.resolution_date).toBe('2027-06-30T23:59:59.000Z');
-    // No liquidity → falls back to volume.
-    expect(m2?.liquidity_usd).toBe(5120);
+    expect(m2?.resolution_date).toBe('2026-07-01T03:59:00.000Z');
+    // volume_fp coerced from string.
+    expect(m2?.liquidity_usd).toBeCloseTo(12302.5, 6);
+  });
+
+  it('follows cursor pagination across pages', async () => {
+    const page1 = {
+      cursor: 'PAGE2',
+      markets: [
+        {
+          ticker: 'KXZELENSKYYOUT-26OCT01',
+          status: 'active',
+          last_price_dollars: '0.2000',
+          close_time: '2026-10-01T03:59:00Z',
+        },
+      ],
+    };
+    const page2 = {
+      cursor: '',
+      markets: [
+        {
+          ticker: 'KXZELENSKYYOUT-27JAN01',
+          status: 'active',
+          last_price_dollars: '0.6000',
+          close_time: '2027-01-01T03:59:00Z',
+        },
+      ],
+    };
+    let call = 0;
+    const paging: JsonFetcher = async (url) => {
+      call += 1;
+      return url.includes('cursor=PAGE2') ? page2 : page1;
+    };
+    const result = await collectKalshi(paging);
+    expect(call).toBe(2);
+    expect(result.snapshots).toHaveLength(2);
+    expect(result.markets?.map((m) => m.market_id).sort()).toEqual([
+      'KXZELENSKYYOUT-26OCT01',
+      'KXZELENSKYYOUT-27JAN01',
+    ]);
   });
 
   it('handles an empty market list without throwing', async () => {
-    const result = await collectKalshi(mockFetcher({ markets: [] }));
+    const result = await collectKalshi(mockFetcher({ markets: [], cursor: '' }));
     expect(result.snapshots).toEqual([]);
     expect(result.markets).toEqual([]);
   });
@@ -148,7 +193,7 @@ describe('kalshi collector', () => {
     await expect(
       collectKalshi(
         mockFetcher({
-          markets: [{ ticker: 'X', title: 'no status / close_time' }],
+          markets: [{ title: 'no ticker / status' }],
         })
       )
     ).rejects.toThrow();
@@ -157,17 +202,17 @@ describe('kalshi collector', () => {
     await expect(collectKalshi(mockFetcher('not json'))).rejects.toThrow();
   });
 
-  it('rejects out-of-range cents prices (probability invariant)', async () => {
+  it('rejects out-of-range dollar prices (probability invariant)', async () => {
     await expect(
       collectKalshi(
         mockFetcher({
+          cursor: '',
           markets: [
             {
               ticker: 'BAD',
-              title: 'bad price',
               status: 'active',
-              yes_bid: 10,
-              yes_ask: 250, // > 100 cents — must fail Zod
+              yes_bid_dollars: '0.1000',
+              yes_ask_dollars: '2.5000', // > 1.0 — must fail Zod
               close_time: '2026-12-31T23:59:59Z',
             },
           ],

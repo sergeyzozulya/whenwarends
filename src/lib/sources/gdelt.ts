@@ -12,9 +12,20 @@
 // Endpoint + query are documented in gdelt.schema.ts. We parse the JSON at the
 // boundary with Zod, then map to typed SnapshotInput[]. The fetcher is
 // injectable so unit tests run fully offline against mocked GDELT JSON.
+//
+// Live verification (2026-05-18): the failure was twofold:
+//   1. `URLSearchParams.toString()` encodes spaces as `+`, which the GDELT DOC
+//      2.0 API rejects (the `query` grammar needs literal-space => `%20`). We
+//      now percent-encode each param value explicitly.
+//   2. GDELT enforces "one request every 5 seconds" and answers a violation
+//      with a *plain-text* 429 body (content-type absent), so a blind
+//      `res.json()` throws an opaque parse error. We now fetch the two modes
+//      *sequentially* with spacing, send a descriptive User-Agent, and verify
+//      the response is JSON before parsing — surfacing a clear typed error so
+//      this source stays failure-isolated rather than crashing the run.
 
 import type { Collector, CollectorResult, Env, SnapshotInput } from '../types';
-import { fetchJson } from './contract';
+import { fetchWithRetry } from './contract';
 import {
   GdeltTimelineResponseSchema,
   type GdeltTimelineResponse,
@@ -27,20 +38,87 @@ const QUERY =
 
 const BASE = 'https://api.gdeltproject.org/api/v2/doc/doc';
 
+// GDELT asks for "one request every 5 seconds". We space the two mode fetches a
+// touch beyond that to stay clear of the limiter (and its plain-text 429).
+const RATE_LIMIT_GAP_MS = 6000;
+
+// GDELT has no auth/key; a descriptive UA is the polite ask in their docs and
+// avoids being treated as an anonymous scraper.
+const USER_AGENT =
+  'whenwarends-collector/1.0 (+https://whenwarends.org; non-commercial, CC BY 4.0 attribution)';
+
+/** Build a fully percent-encoded GDELT DOC 2.0 timeline URL (spaces => %20). */
 function buildUrl(mode: 'timelinevol' | 'timelinetone'): string {
-  const params = new URLSearchParams({
-    query: QUERY,
-    mode,
-    timespan: '12months',
-    format: 'json',
-  });
-  return `${BASE}?${params.toString()}`;
+  const qs = [
+    ['query', QUERY],
+    ['mode', mode],
+    ['timespan', '12months'],
+    ['format', 'json'],
+  ]
+    .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`)
+    .join('&');
+  return `${BASE}?${qs}`;
+}
+
+/** Raised when GDELT answers with non-JSON (rate-limit text, HTML error). */
+export class GdeltResponseError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'GdeltResponseError';
+  }
 }
 
 /** A fetcher returning already-decoded JSON. Injectable for tests. */
 export type JsonFetcher = (url: string) => Promise<unknown>;
 
-const defaultFetcher: JsonFetcher = (url) => fetchJson(url);
+/**
+ * Default fetcher. Uses the frozen retry/backoff helper (with UA via init),
+ * then guards the body: GDELT signals a rate-limit/error as plain text or
+ * HTML, not JSON, so we check content-type and parse defensively, throwing a
+ * typed {@link GdeltResponseError} instead of letting JSON.parse crash opaquely.
+ */
+const defaultFetcher: JsonFetcher = async (url) => {
+  const res = await fetchWithRetry(url, {
+    init: {
+      headers: {
+        'User-Agent': USER_AGENT,
+        Accept: 'application/json',
+      },
+    },
+  });
+
+  const body = await res.text();
+
+  if (!res.ok) {
+    throw new GdeltResponseError(
+      `GDELT HTTP ${res.status} for ${url}: ${body.slice(0, 200).trim()}`
+    );
+  }
+
+  const contentType = res.headers.get('content-type') ?? '';
+  const looksJson =
+    contentType.includes('json') || /^\s*[[{]/.test(body);
+  if (!looksJson) {
+    // Most commonly the plain-text rate-limit notice ("Please limit requests
+    // to one every 5 seconds...") or an HTML error page.
+    throw new GdeltResponseError(
+      `GDELT returned non-JSON (content-type "${contentType}"): ${body
+        .slice(0, 200)
+        .trim()}`
+    );
+  }
+
+  try {
+    return JSON.parse(body) as unknown;
+  } catch {
+    throw new GdeltResponseError(
+      `GDELT returned malformed JSON: ${body.slice(0, 200).trim()}`
+    );
+  }
+};
+
+const sleep = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
  * Normalize a GDELT timeline date to an ISO-8601 UTC string.
@@ -95,11 +173,16 @@ function seriesToSnapshots(
   return out;
 }
 
-async function collect(fetcher: JsonFetcher): Promise<CollectorResult> {
-  const [volRaw, toneRaw] = await Promise.all([
-    fetcher(buildUrl('timelinevol')),
-    fetcher(buildUrl('timelinetone')),
-  ]);
+async function collect(
+  fetcher: JsonFetcher,
+  paceMs: number
+): Promise<CollectorResult> {
+  // Sequential, not Promise.all: GDELT rate-limits to ~1 req / 5s and answers a
+  // burst with a plain-text 429. Inter-request spacing keeps us under the cap.
+  // `paceMs` is 0 for the injected test fetcher (no real network, no waiting).
+  const volRaw = await fetcher(buildUrl('timelinevol'));
+  if (paceMs > 0) await sleep(paceMs);
+  const toneRaw = await fetcher(buildUrl('timelinetone'));
 
   const vol = GdeltTimelineResponseSchema.parse(volRaw);
   const tone = GdeltTimelineResponseSchema.parse(toneRaw);
@@ -120,9 +203,10 @@ export interface GdeltCollector extends Collector {
 export const gdeltCollector: GdeltCollector = {
   name: SOURCE,
   run(_env: Env): Promise<CollectorResult> {
-    return collect(defaultFetcher);
+    return collect(defaultFetcher, RATE_LIMIT_GAP_MS);
   },
   runWith(fetcher: JsonFetcher): Promise<CollectorResult> {
-    return collect(fetcher);
+    // Tests inject a synchronous fetcher; no network => no pacing delay.
+    return collect(fetcher, 0);
   },
 };
