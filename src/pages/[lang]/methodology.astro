@@ -1,21 +1,209 @@
 ---
-// Metadata page
+// Methodology — how the numbers are produced. Trilingual, content-mapped.
 import Layout from '@/layouts/Layout.astro';
+import { getTranslation } from '@i18n/index';
+import type { Lang } from '@lib/types';
 
 export function getStaticPaths() {
-  return [
-    { params: { lang: 'uk' } },
-    { params: { lang: 'en' } },
-    { params: { lang: 'ru' } },
-  ];
+  return [{ params: { lang: 'uk' } }, { params: { lang: 'en' } }, { params: { lang: 'ru' } }];
 }
 
-const { lang } = Astro.params;
+const lang = Astro.params.lang as Lang;
+const t = (key: string) => getTranslation(lang, key);
+
+interface Block {
+  h: string;
+  p?: string[];
+  ul?: string[];
+}
+interface Page {
+  lede: string;
+  blocks: Block[];
+}
+
+const CONTENT: Record<Lang, Page> = {
+  en: {
+    lede: 'How the numbers on this site are produced — and what they are not.',
+    blocks: [
+      {
+        h: 'What this is, and is not',
+        p: [
+          'This site never authors a prediction of its own. It displays probabilities derived from public prediction markets, observable dated events, and a clearly-labelled, human-reviewed editorial summary.',
+          'No number here is our forecast. Where a figure is an estimate rather than a measurement, it is labelled as such.',
+        ],
+      },
+      {
+        h: 'The hero curve',
+        p: [
+          'The main chart is a cumulative distribution: for each date, the market-implied probability that the war has ended by then. It rises monotonically and asymptotes below 100% — markets rarely price certainty.',
+        ],
+        ul: [
+          'Pull war-end / ceasefire markets from Polymarket and Kalshi.',
+          'Per resolution date, take the liquidity-weighted "yes" price.',
+          'Drop dates whose total liquidity is below $10,000 (thin, unreliable).',
+          'Isotonic regression (weighted pool-adjacent-violators) enforces monotonicity.',
+          'PCHIP interpolation draws a smooth, shape-preserving curve between the market points.',
+          'The 50% crossing (median expected end date) is solved analytically on the curve.',
+        ],
+      },
+      {
+        h: 'Definition toggle',
+        p: [
+          'The end of the war can mean different things. The chart can switch between ceasefire, formal peace deal, or either. The default is ceasefire.',
+        ],
+      },
+      {
+        h: 'Supporting indicators',
+        p: [
+          'The four "today on the ground" cards are context, not forecasts. Conflict intensity comes from GDELT event density and tone. Aid commitments come from the Kiel Ukraine Support Tracker, converted to euros at the daily ECB reference rate. The Russian-economy and Ukrainian-economy cards use official central-bank FX (CBR and NBU). The frontline card is an ISW-observed estimate supported by NASA FIRMS heat anomalies and GDELT — it is labelled "ISW-observed estimate" and carries a conservative confidence indicator.',
+          'When a source is unreachable, its widget shows "data unavailable, last good X hours ago" rather than a stale or invented number. One failing source degrades one widget, never the page.',
+        ],
+      },
+      {
+        h: 'Cadence and editorial control',
+        p: [
+          'Data is collected weekly (Sunday 08:00 UTC). The editorial brief is drafted by an AI model and is never auto-published — a human editor reviews, edits, or rejects it before it appears. If the editor does not act, the previous brief stays with a "no fresh brief this week" notice.',
+        ],
+      },
+      {
+        h: 'Data integrity',
+        p: [
+          "Every snapshot is immutable and version-controlled: the full history, audit trail, and backups are the project's git history. Numbers are never fabricated; when data is missing, the site says so.",
+        ],
+      },
+    ],
+  },
+  uk: {
+    lede: 'Як формуються числа на цьому сайті — і чим вони не є.',
+    blocks: [
+      {
+        h: 'Що це таке і чим не є',
+        p: [
+          'Сайт ніколи не створює власного прогнозу. Він показує ймовірності з публічних ринків передбачень, спостережувані датовані події та чітко позначений, перевірений редактором огляд.',
+          'Жодне число тут не є нашим прогнозом. Якщо показник є оцінкою, а не виміром, він позначений відповідно.',
+        ],
+      },
+      {
+        h: 'Головна крива',
+        p: [
+          'Основний графік — це сукупний розподіл: для кожної дати — ринкова ймовірність того, що війна завершилася до неї. Крива монотонно зростає й асимптотично залишається нижче 100%.',
+        ],
+        ul: [
+          'Беремо ринки завершення війни / припинення вогню з Polymarket і Kalshi.',
+          'Для кожної дати — ціна «так», зважена за ліквідністю.',
+          'Відкидаємо дати із сукупною ліквідністю нижче $10 000.',
+          'Ізотонічна регресія забезпечує монотонність.',
+          'Інтерполяція PCHIP будує плавну криву між ринковими точками.',
+          'Перетин 50% (медіанна очікувана дата) обчислюється аналітично.',
+        ],
+      },
+      {
+        h: 'Перемикач визначення',
+        p: [
+          'Завершення війни можна розуміти по-різному. Графік перемикається між припиненням вогню, офіційною мирною угодою або будь-чим із цього. Типово — припинення вогню.',
+        ],
+      },
+      {
+        h: 'Допоміжні показники',
+        p: [
+          'Чотири картки «сьогодні на місцях» — це контекст, а не прогнози. Інтенсивність бойових дій — з даних GDELT. Зобов’язання щодо допомоги — з Кільського трекера, переведені в євро за денним курсом ЄЦБ. Картки економіки Росії та України використовують офіційні курси центральних банків (ЦБ РФ і НБУ). Картка фронту — оцінка за даними ISW, підкріплена тепловими аномаліями NASA FIRMS і GDELT, з консервативним показником впевненості.',
+          'Якщо джерело недоступне, віджет показує «дані недоступні, останні коректні дані X год тому», а не застаріле чи вигадане число. Одне несправне джерело псує лише один віджет, а не сторінку.',
+        ],
+      },
+      {
+        h: 'Періодичність і редакційний контроль',
+        p: [
+          'Дані збираються щотижня (неділя, 08:00 UTC). Огляд готує модель ШІ, і він ніколи не публікується автоматично — редактор перевіряє, редагує або відхиляє його. Якщо редактор не діє, залишається попередній огляд із приміткою «цього тижня нового огляду немає».',
+        ],
+      },
+      {
+        h: 'Цілісність даних',
+        p: [
+          'Кожен знімок незмінний і під контролем версій: повна історія, аудит і резервні копії — це історія git проєкту. Числа ніколи не вигадуються; якщо даних немає, сайт це повідомляє.',
+        ],
+      },
+    ],
+  },
+  ru: {
+    lede: 'Как формируются числа на этом сайте — и чем они не являются.',
+    blocks: [
+      {
+        h: 'Что это и чем не является',
+        p: [
+          'Сайт никогда не создаёт собственный прогноз. Он показывает вероятности с публичных рынков предсказаний, наблюдаемые датированные события и чётко обозначенную, проверенную редактором сводку.',
+          'Ни одно число здесь не является нашим прогнозом. Если показатель — оценка, а не измерение, он помечен соответственно.',
+        ],
+      },
+      {
+        h: 'Главная кривая',
+        p: [
+          'Основной график — совокупное распределение: для каждой даты — рыночная вероятность того, что война завершилась к ней. Кривая монотонно растёт и асимптотически остаётся ниже 100%.',
+        ],
+        ul: [
+          'Берём рынки завершения войны / прекращения огня с Polymarket и Kalshi.',
+          'Для каждой даты — цена «да», взвешенная по ликвидности.',
+          'Отбрасываем даты с совокупной ликвидностью ниже $10 000.',
+          'Изотоническая регрессия обеспечивает монотонность.',
+          'Интерполяция PCHIP строит плавную кривую между рыночными точками.',
+          'Пересечение 50% (медианная ожидаемая дата) вычисляется аналитически.',
+        ],
+      },
+      {
+        h: 'Переключатель определения',
+        p: [
+          'Завершение войны можно понимать по-разному. График переключается между прекращением огня, официальным мирным соглашением или любым из этого. По умолчанию — прекращение огня.',
+        ],
+      },
+      {
+        h: 'Вспомогательные показатели',
+        p: [
+          'Четыре карточки «сегодня на местах» — это контекст, а не прогнозы. Интенсивность боевых действий — из данных GDELT. Обязательства по помощи — из Кильского трекера, переведённые в евро по дневному курсу ЕЦБ. Карточки экономики России и Украины используют официальные курсы центральных банков (ЦБ РФ и НБУ). Карточка фронта — оценка по данным ISW, подкреплённая тепловыми аномалиями NASA FIRMS и GDELT, с консервативным показателем уверенности.',
+          'Если источник недоступен, виджет показывает «данные недоступны, последние корректные данные X ч назад», а не устаревшее или выдуманное число. Один неисправный источник портит лишь один виджет, а не страницу.',
+        ],
+      },
+      {
+        h: 'Периодичность и редакционный контроль',
+        p: [
+          'Данные собираются еженедельно (воскресенье, 08:00 UTC). Сводку готовит модель ИИ, и она никогда не публикуется автоматически — редактор проверяет, правит или отклоняет её. Если редактор не действует, остаётся предыдущая сводка с пометкой «на этой неделе новой сводки нет».',
+        ],
+      },
+      {
+        h: 'Целостность данных',
+        p: [
+          'Каждый снимок неизменен и под контролем версий: полная история, аудит и резервные копии — это история git проекта. Числа никогда не выдумываются; если данных нет, сайт сообщает об этом.',
+        ],
+      },
+    ],
+  },
+};
+
+const c = CONTENT[lang];
 ---
 
-<Layout lang={lang} title="Methodology">
-  <main class="max-w-2xl mx-auto prose">
-    <h1>Methodology</h1>
-    <p>Coming in Phase 3: detailed methodology for data sources, market aggregation, and CDF computation.</p>
-  </main>
+<Layout lang={lang} title={t('common.methodology')}>
+  <article class="max-w-2xl space-y-10">
+    <header class="space-y-2">
+      <h1 class="text-[22px] font-medium">{t('common.methodology')}</h1>
+      <p class="text-[16px] text-gray-600">{c.lede}</p>
+    </header>
+    {
+      c.blocks.map((b) => (
+        <section class="space-y-3">
+          <h2 class="text-[18px] font-medium">{b.h}</h2>
+          {b.p?.map((para) => <p class="text-[16px]">{para}</p>)}
+          {b.ul && (
+            <ol class="list-decimal space-y-1 pl-5 text-[16px]">
+              {b.ul.map((li) => (
+                <li>{li}</li>
+              ))}
+            </ol>
+          )}
+        </section>
+      ))
+    }
+    <nav class="flex gap-6 border-t border-gray-200 pt-4 text-[13px]">
+      <a class="text-[#2c5aa0] hover:underline" href={`/${lang}/sources`}>{t('common.sources')}</a>
+      <a class="text-[#2c5aa0] hover:underline" href={`/${lang}/changelog`}>{t('common.changelog')}</a>
+    </nav>
+  </article>
 </Layout>

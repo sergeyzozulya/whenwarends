@@ -9,7 +9,7 @@
     "sources": "Sources",
     "changelog": "Changelog",
     "language": "Language",
-    "footer": "Non-commercial · Built in Kyiv · CC BY 4.0"
+    "footer": "Non-commercial · Built in Kharkiv · CC BY 4.0"
   },
   "hero": {
     "label": "Probability war has ended by date",
@@ -42,6 +42,7 @@
     "intensity": "Conflict intensity",
     "aid": "Aid commitments",
     "economy": "Russian economy",
+    "ukEconomy": "Ukrainian economy",
     "confidence": "Confidence",
     "estimateLabel": "ISW-observed estimate"
   },

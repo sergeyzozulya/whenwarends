@@ -18,7 +18,7 @@ In rough order of size: Ukrainians abroad checking for hope or context; Ukrainia
 
 ## 3. Scope
 
-**In:** hero CDF chart of war-end date, multi-market history sparklines, editorial event list, four supporting indicator cards, daily AI-drafted editor-reviewed brief, methodology page, three languages at launch (Ukrainian, English, Russian), full historical snapshots.
+**In:** hero CDF chart of war-end date, multi-market history sparklines, editorial event list, five supporting indicator cards, weekly AI-drafted editor-reviewed brief, methodology page, three languages at launch (Ukrainian, English, Russian), full historical snapshots.
 
 **Out:** casualty counters, real-time air-raid maps, news aggregation, login or accounts, paid tiers or ads, trading, any prediction authored by the site or its AI, any external partnership or outreach, donations (v1.1).
 
@@ -88,17 +88,21 @@ Snapshots never overwrite (append-only NDJSON, deduped on metric+source+ts). Eac
 
 ## 7. Page structure
 
+> **Revised 2026-05-18 (v1.2)** — five ground cards, not four: a Ukrainian-economy
+> card (UAH/USD via NBU) was added alongside the Russian-economy card for
+> even-handedness; the NBU data was already collected.
+
 Single-column reading flow, top to bottom:
 
 1. **Header** — domain, last-updated UTC timestamp, language switcher
 2. **Hero** — title "When does this war end?", CDF chart, two stat cards (median expected end date, 30-day shift)
 3. **How beliefs have moved** — three reference markets with 12-month sparklines and current probability
 4. **What moved the curve** — four recent dated events with shift attribution
-5. **Today on the ground** — four indicator cards (frontline movement, conflict intensity, aid commitments, Russian economy)
+5. **Today on the ground** — five indicator cards (frontline movement, conflict intensity, aid commitments, Russian economy, Ukrainian economy)
 6. **Daily brief** — AI-drafted, editor-reviewed paragraph with source citations
-7. **Footer** — about, methodology, sources, changelog, donate, "Built in Kyiv · Non-commercial · CC BY 4.0"
+7. **Footer** — about, methodology, sources, changelog, donate, "Built in Kharkiv · Non-commercial · CC BY 4.0"
 
-Supporting pages: `/methodology`, `/about`, `/sources`, `/changelog`, optional read-only `/api` JSON endpoint for transparency. Mobile collapses two-column grids; the four ground cards reflow via `repeat(auto-fit, minmax(160px, 1fr))`.
+Supporting pages: `/methodology`, `/about`, `/sources`, `/changelog`, optional read-only `/api` JSON endpoint for transparency. Mobile collapses two-column grids; the five ground cards reflow via `repeat(auto-fit, minmax(160px, 1fr))`.
 
 ## 8. The hero chart
 
@@ -350,7 +354,7 @@ If Anthropic cost becomes a constraint, swap the LLM step to a free-tier provide
 
 1. **Editorial cadence** — **Weekly** (sustainable for solo editor; "no fresh brief this week" path always available).
 2. **Glossary translations** — Claude drafts all three locales (uk, en, ru); human reviewer fixes domain-specific terms and tone. Separate from the approval loop.
-3. **Donation channel** — Postponed to v1.1. Keep footer copy minimal: "Non-commercial · Built in Kyiv".
+3. **Donation channel** — Postponed to v1.1. Keep footer copy minimal: "Non-commercial · Built in Kharkiv".
 4. **End-of-war plan** — Schema supports pivot to reconstruction tracker if needed. No hardcoded "war ongoing" assumptions.
 
 ## 19. Claude Code working agreement

@@ -45,6 +45,7 @@ export interface HomePayload {
     intensity: IndicatorData;
     aid: IndicatorData;
     economy: IndicatorData;
+    ukEconomy: IndicatorData;
   };
   brief: BriefRow | null;
   briefStale: boolean;
@@ -68,6 +69,7 @@ export function emptyHomePayload(): HomePayload {
       intensity: EMPTY_INDICATOR,
       aid: EMPTY_INDICATOR,
       economy: EMPTY_INDICATOR,
+      ukEconomy: EMPTY_INDICATOR,
     },
     brief: null,
     briefStale: false,
@@ -224,6 +226,11 @@ export function loadHomePayload(lang: Lang): HomePayload {
       economy: indicatorFrom(
         latestSnapshot(snapshots, 'rub_usd_rate', 'cbr'),
         (v) => `${v.toFixed(2)} RUB / USD`,
+        72
+      ),
+      ukEconomy: indicatorFrom(
+        latestSnapshot(snapshots, 'uah_usd_rate', 'nbu'),
+        (v) => `${v.toFixed(2)} UAH / USD`,
         72
       ),
     },

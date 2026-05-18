@@ -79,4 +79,4 @@ CC BY 4.0 — non-commercial, transparent, contributor-friendly.
 
 ---
 
-Built in Kyiv. For Ukraine.
+Built in Kharkiv. For Ukraine.

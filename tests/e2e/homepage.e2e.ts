@@ -6,7 +6,13 @@ import { resolve } from 'node:path';
 // Load locale strings via fs (avoids JSON import-attribute friction in the
 // Playwright ESM loader; keeps the test in lock-step with the real UI copy).
 interface UiStrings {
-  common: { title: string; changelog: string };
+  common: {
+    title: string;
+    changelog: string;
+    methodology: string;
+    about: string;
+    sources: string;
+  };
   beliefs: { heading: string };
   events: { heading: string };
   ground: { heading: string };
@@ -89,3 +95,31 @@ test('changelog page renders (entries are data-driven, empty pre-release)', asyn
   // data/changelog.json is intentionally empty until a public release; the
   // page must still render its heading without error.
 });
+
+// Transparency pages — render in every locale with exactly one <h1> and no
+// serious/critical axe violations.
+for (const lang of LOCALES) {
+  const t = ui(lang);
+  for (const [path, heading] of [
+    ['methodology', t.common.methodology],
+    ['about', t.common.about],
+    ['sources', t.common.sources],
+  ] as const) {
+    test(`${path} [${lang}] renders and is accessible`, async ({ page }) => {
+      await page.goto(`/${lang}/${path}/`);
+      await expect(
+        page.getByRole('heading', { level: 1, name: heading })
+      ).toBeVisible();
+      const results = await new AxeBuilder({ page })
+        .withTags(['wcag2a', 'wcag2aa'])
+        .analyze();
+      const blocking = results.violations.filter(
+        (v) => v.impact === 'serious' || v.impact === 'critical'
+      );
+      expect(
+        blocking,
+        blocking.map((v) => `${v.id}: ${v.help}`).join('\n')
+      ).toEqual([]);
+    });
+  }
+}
