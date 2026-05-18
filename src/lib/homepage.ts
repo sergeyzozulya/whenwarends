@@ -209,7 +209,10 @@ export function loadHomePayload(lang: Lang): HomePayload {
     ground: {
       frontline: indicatorFrom(
         latestSnapshot(snapshots, 'fire_anomalies', 'firms'),
-        (v) => `${Math.round(v)}`,
+        (v) => {
+          const n = Math.round(v);
+          return `${n} fire detection${n === 1 ? '' : 's'}`;
+        },
         48,
         true
       ),
