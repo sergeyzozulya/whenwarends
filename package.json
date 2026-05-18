@@ -12,10 +12,12 @@
     "test": "vitest run",
     "test:e2e": "playwright test",
     "collect": "tsx scripts/collect.ts",
+    "draft-brief": "tsx scripts/draft-brief.ts",
     "wrangler:dev": "npm run build && wrangler dev",
     "wrangler:deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.96.0",
     "@astrojs/react": "^4.4.2",
     "astro": "^5.0.0",
     "chart.js": "^4.4.1",

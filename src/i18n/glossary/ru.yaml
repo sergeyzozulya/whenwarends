@@ -1,0 +1,27 @@
+# Locked Russian terminology for the editorial brief (русский).
+# Reviewed separately from brief approval (SPEC §9). The draft model must use
+# these exact forms for the listed concepts. Neutral, non-propagandistic register.
+
+countries:
+  ukraine: Украина
+  russia: Россия
+
+agencies:
+  isw: Институт изучения войны (ISW)
+  nbu: Национальный банк Украины
+  cbr: Центральный банк России
+  gdelt: проект GDELT
+  firms: NASA FIRMS
+  kiel: Кильский трекер поддержки Украины
+
+domain_terms:
+  ceasefire: прекращение огня
+  peace_deal: мирное соглашение
+  frontline: линия фронта
+  war_end_probability: рыночная вероятность завершения войны
+  aid_commitments: обязательства по военной помощи
+
+style:
+  - Используйте «война» или «российско-украинская война»; не «конфликт» как эвфемизм.
+  - «рыночная вероятность», никогда «прогноз сайта».
+  - Первое слово предложения с заглавной буквы. Без эмодзи. Без восклицательных знаков.
