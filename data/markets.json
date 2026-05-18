@@ -6,8 +6,8 @@
     "resolution_date": "2026-05-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.026,
-    "liquidity_usd": 42620.65819,
-    "last_updated": "2026-05-18T17:59:20.280Z"
+    "liquidity_usd": 39162.61961,
+    "last_updated": "2026-05-18T18:10:41.533Z"
   },
   {
     "market_id": "polymarket:2264325",
@@ -16,8 +16,8 @@
     "resolution_date": "2026-05-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.022,
-    "liquidity_usd": 35969.54223,
-    "last_updated": "2026-05-18T17:59:20.280Z"
+    "liquidity_usd": 35971.65223,
+    "last_updated": "2026-05-18T18:10:41.533Z"
   },
   {
     "market_id": "polymarket:1323366",
@@ -26,8 +26,8 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.145,
-    "liquidity_usd": 14344.6813,
-    "last_updated": "2026-05-18T17:59:20.280Z"
+    "liquidity_usd": 14159.1213,
+    "last_updated": "2026-05-18T18:10:41.533Z"
   },
   {
     "market_id": "polymarket:2243895",
@@ -36,8 +36,8 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.125,
-    "liquidity_usd": 53295.2581,
-    "last_updated": "2026-05-18T17:59:20.280Z"
+    "liquidity_usd": 52084.0897,
+    "last_updated": "2026-05-18T18:10:41.533Z"
   },
   {
     "market_id": "polymarket:956449",
@@ -45,9 +45,9 @@
     "question": "Ukraine signs peace deal with Russia by June 30?",
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.0635,
-    "liquidity_usd": 54045.09567,
-    "last_updated": "2026-05-18T17:59:20.280Z"
+    "current_price": 0.0675,
+    "liquidity_usd": 53331.53948,
+    "last_updated": "2026-05-18T18:10:41.533Z"
   },
   {
     "market_id": "polymarket:2264326",
@@ -56,8 +56,28 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.075,
-    "liquidity_usd": 35934.3656,
-    "last_updated": "2026-05-18T17:59:20.280Z"
+    "liquidity_usd": 36326.6556,
+    "last_updated": "2026-05-18T18:10:41.533Z"
+  },
+  {
+    "market_id": "KXZELENSKYYOUT-26JUL01",
+    "source": "kalshi",
+    "question": "Will Volodymyr Zelenskyy leave President of Ukraine before Jul 1, 2026? — Before Jul 1, 2026",
+    "resolution_date": "2026-07-08T14:00:00.000Z",
+    "category": "war_end",
+    "current_price": 0.0385,
+    "liquidity_usd": 12353.63,
+    "last_updated": "2026-05-18T18:07:57.642Z"
+  },
+  {
+    "market_id": "KXZELENSKYYOUT-26OCT01",
+    "source": "kalshi",
+    "question": "Will Volodymyr Zelenskyy leave President of Ukraine before Oct 1, 2026? — Before Oct 1, 2026",
+    "resolution_date": "2026-10-08T14:00:00.000Z",
+    "category": "war_end",
+    "current_price": 0.14500000000000002,
+    "liquidity_usd": 18139.17,
+    "last_updated": "2026-05-18T18:07:57.642Z"
   },
   {
     "market_id": "polymarket:2243896",
@@ -66,8 +86,8 @@
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.375,
-    "liquidity_usd": 93749.2108,
-    "last_updated": "2026-05-18T17:59:20.280Z"
+    "liquidity_usd": 93413.3204,
+    "last_updated": "2026-05-18T18:10:41.533Z"
   },
   {
     "market_id": "polymarket:2264327",
@@ -76,8 +96,8 @@
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.225,
-    "liquidity_usd": 59439.3359,
-    "last_updated": "2026-05-18T17:59:20.280Z"
+    "liquidity_usd": 59254.7763,
+    "last_updated": "2026-05-18T18:10:41.533Z"
   },
   {
     "market_id": "polymarket:2243897",
@@ -85,9 +105,9 @@
     "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.505,
-    "liquidity_usd": 99942.863,
-    "last_updated": "2026-05-18T17:59:20.280Z"
+    "current_price": 0.5,
+    "liquidity_usd": 101058.094,
+    "last_updated": "2026-05-18T18:10:41.533Z"
   },
   {
     "market_id": "polymarket:665224",
@@ -95,9 +115,9 @@
     "question": "Ukraine signs peace deal with Russia before 2027?",
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.26,
-    "liquidity_usd": 45683.9461,
-    "last_updated": "2026-05-18T17:59:20.280Z"
+    "current_price": 0.28,
+    "liquidity_usd": 42068.0303,
+    "last_updated": "2026-05-18T18:10:41.533Z"
   },
   {
     "market_id": "polymarket:2264328",
@@ -106,7 +126,7 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.325,
-    "liquidity_usd": 97485.2759,
-    "last_updated": "2026-05-18T17:59:20.280Z"
+    "liquidity_usd": 95693.1554,
+    "last_updated": "2026-05-18T18:10:41.533Z"
   }
 ]
