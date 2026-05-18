@@ -29,6 +29,8 @@ jobs:
         run: npm run collect
         env:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+          KIEL_DATASET_URL: ${{ secrets.KIEL_DATASET_URL }}
+          KALSHI_SERIES_TICKER: ${{ secrets.KALSHI_SERIES_TICKER }}
       - name: Commit data changes
         run: |
           git config user.name "github-actions[bot]"
