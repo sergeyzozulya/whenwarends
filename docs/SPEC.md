@@ -100,7 +100,7 @@ Single-column reading flow, top to bottom:
 4. **What moved the curve** — four recent dated events with shift attribution
 5. **Today on the ground** — five indicator cards (frontline movement, conflict intensity, aid commitments, Russian economy, Ukrainian economy)
 6. **Daily brief** — AI-drafted, editor-reviewed paragraph with source citations
-7. **Footer** — about, methodology, sources, changelog, donate, "Built in Kyiv · Non-commercial · CC BY 4.0"
+7. **Footer** — about, methodology, sources, changelog, donate, "Built in Kharkiv · Non-commercial · CC BY 4.0"
 
 Supporting pages: `/methodology`, `/about`, `/sources`, `/changelog`, optional read-only `/api` JSON endpoint for transparency. Mobile collapses two-column grids; the five ground cards reflow via `repeat(auto-fit, minmax(160px, 1fr))`.
 
@@ -354,7 +354,7 @@ If Anthropic cost becomes a constraint, swap the LLM step to a free-tier provide
 
 1. **Editorial cadence** — **Weekly** (sustainable for solo editor; "no fresh brief this week" path always available).
 2. **Glossary translations** — Claude drafts all three locales (uk, en, ru); human reviewer fixes domain-specific terms and tone. Separate from the approval loop.
-3. **Donation channel** — Postponed to v1.1. Keep footer copy minimal: "Non-commercial · Built in Kyiv".
+3. **Donation channel** — Postponed to v1.1. Keep footer copy minimal: "Non-commercial · Built in Kharkiv".
 4. **End-of-war plan** — Schema supports pivot to reconstruction tracker if needed. No hardcoded "war ongoing" assumptions.
 
 ## 19. Claude Code working agreement
