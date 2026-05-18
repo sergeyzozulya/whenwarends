@@ -44,7 +44,8 @@
     "economy": "Russian economy",
     "ukEconomy": "Ukrainian economy",
     "confidence": "Confidence",
-    "estimateLabel": "ISW-observed estimate"
+    "estimateLabel": "ISW-observed estimate",
+    "fireDetections": "fire/heat detections, last 5 days"
   },
   "brief": {
     "heading": "Daily brief",

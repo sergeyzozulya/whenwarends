@@ -10,6 +10,7 @@ import {
   readBriefs,
 } from './filestore';
 import { computeCDF, type CDFPoint } from './cdf';
+import { getTranslation } from '../i18n/index';
 
 export interface CurveSet {
   curve: { date: string; probability: number }[];
@@ -197,6 +198,18 @@ export function loadHomePayload(lang: Lang): HomePayload {
     ? hoursSince(brief.date + 'T00:00:00Z') > 8 * 24
     : false;
 
+  // Frontline: a locale-neutral count as the value; the localized descriptor
+  // goes in `sub` (a noun phrase, so no per-language plural agreement needed).
+  const frontline = indicatorFrom(
+    latestSnapshot(snapshots, 'fire_anomalies', 'firms'),
+    (v) => `${Math.round(v)}`,
+    48,
+    true
+  );
+  if (frontline.value !== null) {
+    frontline.sub = getTranslation(lang, 'ground.fireDetections');
+  }
+
   return {
     lastUpdated,
     hero: {
@@ -207,15 +220,7 @@ export function loadHomePayload(lang: Lang): HomePayload {
     beliefs,
     events,
     ground: {
-      frontline: indicatorFrom(
-        latestSnapshot(snapshots, 'fire_anomalies', 'firms'),
-        (v) => {
-          const n = Math.round(v);
-          return `${n} fire detection${n === 1 ? '' : 's'}`;
-        },
-        48,
-        true
-      ),
+      frontline,
       intensity: indicatorFrom(
         latestSnapshot(snapshots, 'conflict_intensity', 'gdelt'),
         (v) => v.toFixed(1),

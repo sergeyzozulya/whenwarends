@@ -44,7 +44,8 @@
     "economy": "Економіка Росії",
     "ukEconomy": "Економіка України",
     "confidence": "Впевненість",
-    "estimateLabel": "Оцінка за даними ISW"
+    "estimateLabel": "Оцінка за даними ISW",
+    "fireDetections": "виявлення пожеж/тепла за останні 5 днів"
   },
   "brief": {
     "heading": "Щоденний огляд",
