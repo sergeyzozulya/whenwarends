@@ -28,15 +28,18 @@ backup.
 
 **Run it locally:**
 
+Copy `.dev.vars.example` → `.dev.vars` (gitignored) and fill in:
+
+```
+FIRMS_MAP_KEY=...          # free: https://firms.modaps.eosdis.nasa.gov/api/area/
+KIEL_DATASET_URL=...       # current Kiel Ukraine Support Tracker .xlsx (rotates per release)
+KALSHI_SERIES_TICKER=...   # optional, override the Kalshi series
+ANTHROPIC_API_KEY=...      # only needed for the brief
+```
+
+The scripts auto-load `.dev.vars` — no manual `export` needed:
+
 ```bash
-# Put the secrets in .dev.vars (gitignored — copy .dev.vars.example):
-#   FIRMS_MAP_KEY=...            # free: https://firms.modaps.eosdis.nasa.gov/api/area/
-#   KIEL_DATASET_URL=...         # the current Kiel Ukraine Support Tracker .xlsx (rotates per release)
-#   KALSHI_SERIES_TICKER=...     # optional, override the Kalshi series
-#   ANTHROPIC_API_KEY=...        # only needed for the brief
-
-set -a; . ./.dev.vars; set +a     # load secrets into the env
-
 npm run collect        # pull all sources → append data/snapshots.ndjson, data/markets.json
 npm run draft-brief    # draft the weekly brief → data/briefs.json (status: pending_review)
 ```

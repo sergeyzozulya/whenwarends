@@ -7,6 +7,7 @@
 // runs weekly in CI. Per-language failure is isolated: one language failing
 // does not block the others; exits 1 only if every language failed.
 
+import './loadEnv'; // must be first: populates process.env from .dev.vars
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { LANGS, type Lang, type Citation, type BriefRow } from '../src/lib/types';

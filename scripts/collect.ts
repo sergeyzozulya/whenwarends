@@ -7,6 +7,7 @@
 // widget, not the run — the process still exits 0 on partial success so the
 // good data is committed; it exits 1 only if every source failed.
 
+import './loadEnv'; // must be first: populates process.env from .dev.vars
 import type { Env } from '../src/lib/types';
 import { runCollectors } from '../src/lib/sources/contract';
 import { allCollectors } from '../src/workers/collectors';
