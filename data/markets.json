@@ -6,8 +6,8 @@
     "resolution_date": "2026-05-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.026,
-    "liquidity_usd": 39019.5247,
-    "last_updated": "2026-05-18T17:49:14.155Z"
+    "liquidity_usd": 42620.65819,
+    "last_updated": "2026-05-18T17:59:20.280Z"
   },
   {
     "market_id": "polymarket:2264325",
@@ -16,8 +16,8 @@
     "resolution_date": "2026-05-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.022,
-    "liquidity_usd": 35973.84423,
-    "last_updated": "2026-05-18T17:49:14.155Z"
+    "liquidity_usd": 35969.54223,
+    "last_updated": "2026-05-18T17:59:20.280Z"
   },
   {
     "market_id": "polymarket:1323366",
@@ -26,8 +26,8 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.145,
-    "liquidity_usd": 14319.9913,
-    "last_updated": "2026-05-18T17:49:14.155Z"
+    "liquidity_usd": 14344.6813,
+    "last_updated": "2026-05-18T17:59:20.280Z"
   },
   {
     "market_id": "polymarket:2243895",
@@ -36,8 +36,8 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.125,
-    "liquidity_usd": 53752.6026,
-    "last_updated": "2026-05-18T17:49:14.155Z"
+    "liquidity_usd": 53295.2581,
+    "last_updated": "2026-05-18T17:59:20.280Z"
   },
   {
     "market_id": "polymarket:956449",
@@ -46,8 +46,8 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.0635,
-    "liquidity_usd": 54045.74109,
-    "last_updated": "2026-05-18T17:49:14.155Z"
+    "liquidity_usd": 54045.09567,
+    "last_updated": "2026-05-18T17:59:20.280Z"
   },
   {
     "market_id": "polymarket:2264326",
@@ -56,8 +56,8 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.075,
-    "liquidity_usd": 35502.2856,
-    "last_updated": "2026-05-18T17:49:14.155Z"
+    "liquidity_usd": 35934.3656,
+    "last_updated": "2026-05-18T17:59:20.280Z"
   },
   {
     "market_id": "polymarket:2243896",
@@ -66,8 +66,8 @@
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.375,
-    "liquidity_usd": 95093.7601,
-    "last_updated": "2026-05-18T17:49:14.155Z"
+    "liquidity_usd": 93749.2108,
+    "last_updated": "2026-05-18T17:59:20.280Z"
   },
   {
     "market_id": "polymarket:2264327",
@@ -76,8 +76,8 @@
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.225,
-    "liquidity_usd": 57727.9759,
-    "last_updated": "2026-05-18T17:49:14.155Z"
+    "liquidity_usd": 59439.3359,
+    "last_updated": "2026-05-18T17:59:20.280Z"
   },
   {
     "market_id": "polymarket:2243897",
@@ -86,8 +86,8 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.505,
-    "liquidity_usd": 99850.8413,
-    "last_updated": "2026-05-18T17:49:14.155Z"
+    "liquidity_usd": 99942.863,
+    "last_updated": "2026-05-18T17:59:20.280Z"
   },
   {
     "market_id": "polymarket:665224",
@@ -96,8 +96,8 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.26,
-    "liquidity_usd": 45493.8841,
-    "last_updated": "2026-05-18T17:49:14.155Z"
+    "liquidity_usd": 45683.9461,
+    "last_updated": "2026-05-18T17:59:20.280Z"
   },
   {
     "market_id": "polymarket:2264328",
@@ -106,7 +106,7 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.325,
-    "liquidity_usd": 95340.8443,
-    "last_updated": "2026-05-18T17:49:14.155Z"
+    "liquidity_usd": 97485.2759,
+    "last_updated": "2026-05-18T17:59:20.280Z"
   }
 ]

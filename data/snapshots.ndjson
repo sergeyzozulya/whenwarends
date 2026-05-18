@@ -60,3 +60,4 @@
 {"metric":"fire_anomalies","source":"firms","ts":"2026-05-16T00:00:00Z","value":133,"raw_blob":null,"confidence":1}
 {"metric":"fire_anomalies","source":"firms","ts":"2026-05-17T00:00:00Z","value":52,"raw_blob":null,"confidence":1}
 {"metric":"fire_anomalies","source":"firms","ts":"2026-05-18T00:00:00Z","value":5,"raw_blob":null,"confidence":1}
+{"metric":"war_end_probability","source":"polymarket","ts":"2026-05-18T17:59:20.280Z","value":0.25190072337840613,"raw_blob":"{\"markets\":11,\"liquidityWeighted\":true}","confidence":1}
