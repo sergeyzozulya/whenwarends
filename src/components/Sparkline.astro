@@ -1,0 +1,117 @@
+---
+// Pure-SVG sparkline. No hydration, no client directive, no <script>.
+// All geometry is computed deterministically in the frontmatter from `points`.
+// Per CLAUDE.md, inline CSS is allowed only inside <svg>; everything outside
+// uses Tailwind utilities. Accent stroke #2c5aa0, grayscale baseline.
+
+interface Props {
+  /** Chronological series, e.g. 0–1 probabilities. */
+  points: number[];
+  /** Accessible name of the series (already localized, passed in). */
+  label: string;
+  /** Pre-formatted current probability, e.g. "57%". */
+  currentValue?: string;
+  /** Localized caption, e.g. "Current probability". */
+  currentLabel?: string;
+  /** SVG width in px. */
+  width?: number;
+  /** SVG height in px. */
+  height?: number;
+}
+
+const {
+  points,
+  label,
+  currentValue,
+  currentLabel,
+  width = 160,
+  height = 40,
+} = Astro.props;
+
+// Inner padding keeps the 2px stroke from clipping at the viewbox edges.
+const pad = 3;
+const innerW = Math.max(1, width - pad * 2);
+const innerH = Math.max(1, height - pad * 2);
+
+// Only finite numbers contribute to geometry; anything else is dropped so a
+// stray NaN/Infinity can never crash the render.
+const series = (points ?? []).filter((n) => Number.isFinite(n));
+
+// Vertical center of the viewbox, used as the baseline for empty/flat series.
+const baselineY = pad + innerH / 2;
+
+let polylinePoints = '';
+let lastX = pad + innerW;
+let lastY = baselineY;
+
+if (series.length === 0) {
+  // Empty: a flat baseline across the full width. Not a crash.
+  polylinePoints = `${pad},${baselineY} ${pad + innerW},${baselineY}`;
+} else if (series.length === 1) {
+  // Single point: a flat line at its (clamped) value so it reads as steady.
+  const only = series[0]!;
+  const norm = Math.min(1, Math.max(0, only));
+  const y = pad + innerH - norm * innerH;
+  polylinePoints = `${pad},${y} ${pad + innerW},${y}`;
+  lastY = y;
+} else {
+  const min = Math.min(...series);
+  const max = Math.max(...series);
+  const range = max - min;
+  const n = series.length;
+
+  const coords = series.map((v, i) => {
+    const x = pad + (i / (n - 1)) * innerW;
+    // Equal-value series (range === 0) renders as a flat mid-height line
+    // rather than dividing by zero.
+    const t = range === 0 ? 0.5 : (v - min) / range;
+    const y = pad + innerH - t * innerH;
+    return { x, y };
+  });
+
+  polylinePoints = coords.map((c) => `${c.x},${c.y}`).join(' ');
+  const last = coords[n - 1]!;
+  lastX = last.x;
+  lastY = last.y;
+}
+
+const hasCurrent = typeof currentValue === 'string' && currentValue.length > 0;
+const accent = '#2c5aa0';
+---
+
+<div class="flex items-center gap-3">
+  <svg
+    role="img"
+    aria-label={label}
+    width={width}
+    height={height}
+    viewBox={`0 0 ${width} ${height}`}
+    preserveAspectRatio="none"
+    style="display:block;overflow:visible"
+  >
+    <title>{label}</title>
+    <polyline
+      points={polylinePoints}
+      fill="none"
+      stroke={accent}
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    {
+      series.length > 0 && (
+        <circle cx={lastX} cy={lastY} r="2.5" fill={accent} stroke="none" />
+      )
+    }
+  </svg>
+  {
+    hasCurrent && (
+      <div class="flex flex-col leading-tight">
+        <span class="text-base font-medium text-gray-900">{currentValue}</span>
+        {currentLabel && (
+          <span class="text-xs font-normal text-gray-500">{currentLabel}</span>
+        )}
+      </div>
+    )
+  }
+</div>

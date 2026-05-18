@@ -3,6 +3,7 @@
     "title": "When does this war end?",
     "subtitle": "Calm, transparent data on the Russia-Ukraine conflict",
     "lastUpdated": "Last updated {date} UTC",
+    "home": "Home",
     "methodology": "Methodology",
     "about": "About",
     "sources": "Sources",
@@ -13,7 +14,42 @@
   "hero": {
     "label": "Probability war has ended by date",
     "median": "Median expected end date",
-    "shift30d": "30-day shift"
+    "shift30d": "30-day shift",
+    "definition": "Definition",
+    "ceasefire": "Ceasefire",
+    "peaceDeal": "Formal peace deal",
+    "either": "Either",
+    "todayMarker": "Today",
+    "crossing50": "50% crossing",
+    "chartAria": "Cumulative probability that the war has ended, by date",
+    "tableToggle": "Show data table",
+    "tableDate": "Date",
+    "tableProbability": "Probability"
+  },
+  "beliefs": {
+    "heading": "How beliefs have moved",
+    "current": "Current probability"
+  },
+  "events": {
+    "heading": "What moved the curve",
+    "shiftLater": "pushed the date {months} months later",
+    "shiftEarlier": "pulled the date {months} months earlier",
+    "noShift": "no measurable shift"
+  },
+  "ground": {
+    "heading": "Today on the ground",
+    "frontline": "Frontline movement",
+    "intensity": "Conflict intensity",
+    "aid": "Aid commitments",
+    "economy": "Russian economy",
+    "confidence": "Confidence",
+    "estimateLabel": "ISW-observed estimate"
+  },
+  "brief": {
+    "heading": "Daily brief",
+    "noBrief": "No fresh brief this week.",
+    "sources": "Sources",
+    "reviewed": "Human-reviewed"
   },
   "errors": {
     "dataUnavailable": "Data unavailable, last good {time} ago"

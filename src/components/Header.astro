@@ -1,0 +1,88 @@
+---
+import { getTranslation, getLang } from '@i18n/index';
+import type { Lang } from '@lib/types';
+import { LANGS } from '@lib/types';
+
+interface Props {
+  lang: Lang;
+  lastUpdated?: string; // ISO-8601 UTC
+}
+
+const { lang, lastUpdated } = Astro.props;
+
+const t = (key: string): string => getTranslation(lang, key);
+
+const navItems = [
+  { key: 'common.home', href: `/${lang}` },
+  { key: 'common.methodology', href: `/${lang}/methodology` },
+  { key: 'common.about', href: `/${lang}/about` },
+  { key: 'common.sources', href: `/${lang}/sources` },
+  { key: 'common.changelog', href: `/${lang}/changelog` },
+];
+
+const otherLangs = LANGS.filter((l) => l !== lang);
+
+let lastUpdatedLabel: string | null = null;
+if (lastUpdated) {
+  const parsed = new Date(lastUpdated);
+  if (!Number.isNaN(parsed.getTime())) {
+    const formatted = new Intl.DateTimeFormat(lang, {
+      timeZone: 'UTC',
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    }).format(parsed);
+    lastUpdatedLabel = t('common.lastUpdated').replace('{date}', formatted);
+  }
+}
+---
+
+<header class="border-b border-gray-200">
+  <div class="max-w-5xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap items-baseline justify-between gap-4">
+      <h1 class="text-[22px] font-medium">
+        <a
+          href={`/${lang}`}
+          class="text-gray-900 hover:text-[#2c5aa0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
+        >
+          {t('common.title')}
+        </a>
+      </h1>
+      <nav aria-label={t('common.language')} class="flex items-center gap-3 text-[13px]">
+        {
+          otherLangs.map((l) => (
+            <a
+              href={`/${l}`}
+              hreflang={l}
+              class="text-[#2c5aa0] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
+            >
+              {getLang(l)}
+            </a>
+          ))
+        }
+        <span aria-current="true" class="text-gray-500">{getLang(lang)}</span>
+      </nav>
+    </div>
+
+    <nav class="mt-4 flex flex-wrap gap-6 text-[16px]">
+      {
+        navItems.map((item) => (
+          <a
+            href={item.href}
+            class="text-[#2c5aa0] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
+          >
+            {t(item.key)}
+          </a>
+        ))
+      }
+    </nav>
+
+    {
+      lastUpdatedLabel && (
+        <p class="mt-3 text-[13px] text-gray-500">{lastUpdatedLabel}</p>
+      )
+    }
+  </div>
+</header>
