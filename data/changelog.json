@@ -1,14 +1,1 @@
-[
-  {
-    "id": 1,
-    "date": "2026-05-18",
-    "description": "Storage moved from Cloudflare D1/KV to versioned repo JSON files read at build time. Weekly collection runs as a scheduled GitHub Action that commits data/. Editorial approval becomes pull-request review. Data volume (weekly, single-editor) does not justify a database; git provides immutable history, audit trail, and backups.",
-    "category": "methodology update"
-  },
-  {
-    "id": 2,
-    "date": "2026-05-18",
-    "description": "Sentry dropped. SPEC §4 named Sentry for client error tracking, but §11 guarantees no third-party script loads and GDPR-compliance by default. The privacy guarantee takes precedence: no error-tracking script ships. SPEC §4's Sentry line is superseded by §11.",
-    "category": "methodology update"
-  }
-]
+[]

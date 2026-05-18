@@ -71,10 +71,13 @@ for (const lang of LOCALES) {
   });
 }
 
-test('changelog renders entries from data/changelog.json', async ({ page }) => {
+test('changelog page renders (entries are data-driven, empty pre-release)', async ({
+  page,
+}) => {
   await page.goto('/en/changelog/');
   await expect(
     page.getByRole('heading', { level: 1, name: ui('en').common.changelog })
   ).toBeVisible();
-  await expect(page.getByText(/versioned repo JSON files/i)).toBeVisible();
+  // data/changelog.json is intentionally empty until a public release; the
+  // page must still render its heading without error.
 });
