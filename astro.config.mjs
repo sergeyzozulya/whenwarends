@@ -4,6 +4,11 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   output: 'static',
+  // Pages live at /uk /en /ru only — without this, the bare root 404s
+  // (in dev and in production). Send / to the default locale.
+  redirects: {
+    '/': '/en/',
+  },
   integrations: [react()],
   i18n: {
     defaultLocale: 'en',

@@ -71,6 +71,14 @@ for (const lang of LOCALES) {
   });
 }
 
+test('root redirects to the default locale', async ({ page }) => {
+  await page.goto('/');
+  await page.waitForURL(/\/en\/$/);
+  await expect(
+    page.getByRole('heading', { level: 1, name: ui('en').common.title })
+  ).toBeVisible();
+});
+
 test('changelog page renders (entries are data-driven, empty pre-release)', async ({
   page,
 }) => {
