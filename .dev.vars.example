@@ -11,9 +11,10 @@ FIRMS_MAP_KEY=your-firms-map-key
 # is relisted (collector defaults to a related live ladder otherwise).
 # KALSHI_SERIES_TICKER=KXRUSUKRWAR
 
-# Optional: URL of a fetchable Kiel Ukraine Support Tracker CSV. Kiel has no
-# stable machine endpoint; without this the kiel widget fails in isolation.
-# KIEL_DATASET_URL=https://example.org/kiel-ukraine-support-tracker.csv
+# Optional: URL of the Kiel Ukraine Support Tracker .xlsx workbook. The URL
+# rotates each release (embeds Release_NN + a UUID); update it per release.
+# Without it the kiel widget fails in isolation (never fabricates data).
+# KIEL_DATASET_URL=https://www.kielinstitut.de/fileadmin/Dateiverwaltung/IfW-Publications/fis-import/<uuid>-Ukraine_Support_Tracker_Release_NN.xlsx
 
 # Phase 3 only — Anthropic API key for the AI brief draft step.
 # ANTHROPIC_API_KEY=sk-ant-...
