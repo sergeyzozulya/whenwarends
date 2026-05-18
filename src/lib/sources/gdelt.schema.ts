@@ -8,14 +8,14 @@ import { z } from 'zod';
 //   https://api.gdeltproject.org/api/v2/doc/doc
 //     ?query=(Ukraine OR Russia) (war OR military OR offensive OR ceasefire) sourcelang:eng
 //     &mode=timelinevol
-//     &timespan=12months
+//     &timespan=12m
 //     &format=json
 //
 //   Conflict tone (average article tone timeline):
 //   https://api.gdeltproject.org/api/v2/doc/doc
 //     ?query=(Ukraine OR Russia) (war OR military OR offensive OR ceasefire) sourcelang:eng
 //     &mode=timelinetone
-//     &timespan=12months
+//     &timespan=12m
 //     &format=json
 //
 // Both modes return the same envelope shape: a `timeline` array of series, each

@@ -52,7 +52,9 @@ function buildUrl(mode: 'timelinevol' | 'timelinetone'): string {
   const qs = [
     ['query', QUERY],
     ['mode', mode],
-    ['timespan', '12months'],
+    // GDELT DOC 2.0 timespan grammar is <n><unit> (min/H/d/w/m). "12months"
+    // is invalid and yields no timeline; 12 months is "12m" (verified live).
+    ['timespan', '12m'],
     ['format', 'json'],
   ]
     .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`)

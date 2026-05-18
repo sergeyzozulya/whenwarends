@@ -185,7 +185,7 @@ describe('gdeltCollector', () => {
       expect(url).not.toContain('+');
       expect(url).toContain('%20');
       expect(url).toContain('format=json');
-      expect(url).toContain('timespan=12months');
+      expect(url).toContain('timespan=12m'); // GDELT grammar: <n><unit>, not "12months"
       expect(url.startsWith('https://api.gdeltproject.org/api/v2/doc/doc?')).toBe(
         true
       );
