@@ -26,20 +26,20 @@ In rough order of size: Ukrainians abroad checking for hope or context; Ukrainia
 
 **Frontend.** Astro 5+ with TypeScript and Tailwind. Static-first; islands hydrated only for interactive charts. Astro's built-in i18n routing produces `/uk`, `/en`, `/ru`. Chart.js for the CDF; pure SVG sparklines. Locale bundles split — only active locale ships.
 
+> **Revised 2026-05-18 (v1.2)** — see §6/§14 and `data/changelog.json`. No
+> D1/KV/Cron; data is versioned repo JSON read at build. No Sentry (see §11).
+
 **Hosting and infrastructure, all Cloudflare free tier:**
 
-- Cloudflare Workers with Static Assets — Astro static build served by Worker, git-based deployment via `wrangler deploy`
-- Cloudflare D1 — SQLite for time-series snapshots
-- Cloudflare KV — homepage payload cache
-- Cloudflare Cron Triggers — schedule data jobs
+- Cloudflare Workers with Static Assets — Astro static build served by Worker, git-based deployment via `wrangler deploy`. The Worker is static-assets only (no runtime DB/secrets).
 - Cloudflare Email Routing — `hello@whenwarends.org`
 - Cloudflare Web Analytics — cookieless
 
-Free tier covers v1 traffic comfortably. Runtime cost under $40/month, dominated by the Anthropic API for the daily brief.
+Data lives in versioned repo JSON files (`data/`) read at build time; the weekly collector and brief jobs run as GitHub Actions, not Cloudflare Cron. Git is the time-series history, audit trail, and backup. Free tier covers v1 traffic comfortably; runtime cost is dominated by the weekly Anthropic API brief.
 
-**AI layer.** Anthropic Claude API. Drafts persist in D1 as `pending_review`; the editor approves to `published`. Never auto-publishes. If the editor doesn't act, yesterday's brief remains with a quiet "no fresh brief today" notice.
+**AI layer.** Anthropic Claude API (Opus 4.7, prompt caching). The weekly draft is written to `data/briefs.json` as `pending_review`; the editor approves by reviewing/merging the brief PR (§10) — this is the publish step. Never auto-publishes. If the editor doesn't act, the previous brief remains with a quiet "no fresh brief this week" notice.
 
-**Build and ops.** GitHub source. GitHub Actions runs typecheck, lint, build, Playwright E2E. Cloudflare Workers deployment via `wrangler deploy` from `main`. Sentry free tier for client errors.
+**Build and ops.** GitHub source. GitHub Actions runs typecheck, lint, build, perf budget, unit + Playwright E2E, plus the scheduled collect/brief jobs. Cloudflare Workers deployment via `wrangler deploy` from `main`. No third-party error-tracking script (§11 privacy supersedes the original Sentry plan).
 
 ## 5. Data sources — free and open only
 
@@ -126,17 +126,19 @@ Date and number formatting through `Intl`.
 
 ## 10. Editorial workflow
 
+> **Revised 2026-05-18 (v1.2)** — the admin page/API is replaced by GitHub
+> PR review; "approve" means "merge the brief PR". No D1/KV.
+
 Solo editor. Weekly cadence. Target: under 30 minutes per review. Sustainable indefinitely.
 
-1. Every Sunday 08:00 UTC, Cron pulls fresh data into D1.
-2. LLM Worker drafts the weekly brief in all three languages with citations.
-3. Editor receives email link to admin page.
-4. Admin page shows each draft beside underlying data and previous week's brief.
-5. Editor approves, edits, or rejects per language.
-6. Approved briefs publish; KV cache invalidates. Changes logged for `/changelog`.
-7. If editor doesn't act by Tuesday 23:59 UTC, the page shows previous week's brief with a "no fresh brief this week" notice.
+1. Every Sunday 08:00 UTC, the `collect` GitHub Action pulls fresh data and commits `data/`.
+2. At 08:30 UTC the `brief` GitHub Action drafts the weekly brief in all three languages with citations and opens a pull request (`data/briefs.json` entries set to `pending_review`).
+3. Editor reviews the PR — each draft is in the diff alongside the data the build will use and the previous week's brief.
+4. To approve a language: edit its entry in the PR (set `status: published`, copy the possibly-edited text into `published`, set `reviewed_at`), then merge. To reject: set `status: rejected` (or leave `pending_review` and close).
+5. Merging triggers CI rebuild + deploy; the published brief is baked into the static site. Changes are tracked in git history and `/changelog`.
+6. If the editor doesn't act by Tuesday 23:59 UTC, the page keeps showing the previous week's brief with a "no fresh brief this week" notice.
 
-Never auto-publishes.
+Never auto-publishes — nothing is public until a human merges the PR.
 
 ## 11. Non-functional requirements
 
@@ -151,6 +153,14 @@ Never auto-publishes.
 **Brand.** One accent color (muted blue), grayscale otherwise. No emoji. Sentence case throughout. Typography: 22/16/13 px, two weights (400, 500).
 
 ## 12. Repository structure
+
+> **Revised 2026-05-18 (v1.2)** — the tree below is the original design.
+> `CLAUDE.md` holds the authoritative current structure. Key deltas: removed
+> `migrations/`, `src/lib/db.ts`, `src/lib/kv.ts`, `src/workers/llm-brief.ts`,
+> `src/workers/admin-api.ts`; added `data/`, `scripts/collect.ts`,
+> `scripts/draft-brief.ts`, `scripts/check-bundle.ts`, `src/lib/filestore.ts`,
+> `src/lib/homepage.ts`, `src/i18n/glossary/`, and
+> `.github/workflows/{collect,brief}.yml`.
 
 ```
 whenwarends/
@@ -313,8 +323,8 @@ Each phase ends with a deployable, runnable state.
 | 0 — Foundations | 1 week | Holding page live on `whenwarends.org` | Repo + CI + Astro skeleton + i18n routing + Cloudflare Pages + Tailwind + CLAUDE.md |
 | 1 — First vertical slice | 3 weeks | Hero CDF chart live with real data in UK + EN | D1 schema + Polymarket + Kalshi collectors + `cdf.ts` + HeroChart island + stat cards |
 | 2 — Supporting widgets | 3 weeks | All four "ground" cards live, history sparklines populated | GDELT + Kiel + NBU + CBR + WorldBank + FIRMS collectors; Sparkline, EventList, IndicatorCard |
-| 3 — Narrative + editorial | 2 weeks | Daily brief generates, editor approves, page publishes | LLM Worker + admin API + admin page + methodology + changelog |
-| 4 — Polish + launch | 2 weeks | Public v1 | A11y audit + perf budget + RU locale + Playwright E2E + Cloudflare Web Analytics + Sentry |
+| 3 — Narrative + editorial | 2 weeks | Weekly brief generates, editor approves via PR, page publishes | brief draft script + brief PR workflow + glossaries + methodology + changelog |
+| 4 — Polish + launch | 2 weeks | Public v1 | A11y audit (axe in E2E) + perf budget + RU locale + Playwright E2E + Cloudflare Web Analytics (no Sentry — §11) |
 
 About 11 weeks of focused work, faster if Claude Code is doing the bulk of the implementation.
 
@@ -322,10 +332,10 @@ About 11 weeks of focused work, faster if Claude Code is doing the bulk of the i
 
 | Item | Monthly |
 |---|---|
-| Cloudflare (Pages, Workers, D1, KV, Cron, Email, Analytics) | $0 |
+| Cloudflare (Workers + Static Assets, Email, Analytics) | $0 |
+| GitHub (Actions: CI + weekly collect/brief) | $0 |
 | Anthropic Claude API — weekly brief × 3 languages, with prompt caching | $2–8 |
 | Domains (annualized) | ~$5 |
-| Sentry, GitHub | $0 |
 | **Total** | **under $15/month** |
 
 If Anthropic cost becomes a constraint, swap the LLM step to a free-tier provider (Groq, Together) — the workflow is provider-agnostic.
