@@ -198,16 +198,27 @@ export function loadHomePayload(lang: Lang): HomePayload {
     ? hoursSince(brief.date + 'T00:00:00Z') > 8 * 24
     : false;
 
-  // Frontline: a locale-neutral count as the value; the localized descriptor
-  // goes in `sub` (a noun phrase, so no per-language plural agreement needed).
-  const frontline = indicatorFrom(
-    latestSnapshot(snapshots, 'fire_anomalies', 'firms'),
-    (v) => `${Math.round(v)}`,
-    48,
-    true
+  // Combat-zone fire activity: NASA FIRMS emits one detection count per UTC
+  // day. The headline is the SUM over the last 5 days (matching the look-back
+  // and the sub label) — not one arbitrary partial NRT day. Honest source
+  // attribution lives in `sub`; this is measured FIRMS data, not an estimate,
+  // so there is no ISW label.
+  const fireWindow = snapshotSeries(
+    snapshots,
+    'fire_anomalies',
+    'firms',
+    new Date(Date.now() - 5 * 24 * 3600 * 1000).toISOString()
   );
-  if (frontline.value !== null) {
-    frontline.sub = getTranslation(lang, 'ground.fireDetections');
+  let frontline: IndicatorData = { value: null };
+  if (fireWindow.length > 0) {
+    const total = fireWindow.reduce((s, r) => s + (r.value ?? 0), 0);
+    const latestTs = fireWindow[fireWindow.length - 1].ts;
+    const age = hoursSince(latestTs);
+    frontline = {
+      value: String(Math.round(total)),
+      sub: getTranslation(lang, 'ground.fireActivity'),
+      degraded: age > 72 ? { sinceHours: age } : undefined,
+    };
   }
 
   return {

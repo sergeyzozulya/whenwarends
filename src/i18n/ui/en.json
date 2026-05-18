@@ -38,14 +38,14 @@
   },
   "ground": {
     "heading": "Today on the ground",
-    "frontline": "Frontline movement",
+    "frontline": "Combat-zone fire activity",
     "intensity": "Conflict intensity",
     "aid": "Aid commitments",
     "economy": "Russian economy",
     "ukEconomy": "Ukrainian economy",
     "confidence": "Confidence",
     "estimateLabel": "ISW-observed estimate",
-    "fireDetections": "fire/heat detections, last 5 days"
+    "fireActivity": "VIIRS fire/heat detections over Ukraine, last 5 days · NASA FIRMS"
   },
   "brief": {
     "heading": "Daily brief",
