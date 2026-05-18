@@ -30,6 +30,8 @@ export interface IndicatorData {
   confidence?: number;
   degraded?: { sinceHours: number };
   estimateNote?: boolean;
+  /** Explanatory caption rendered below the confidence bar. */
+  note?: string;
 }
 
 export interface HomePayload {
@@ -221,6 +223,19 @@ export function loadHomePayload(lang: Lang): HomePayload {
     };
   }
 
+  // Conflict intensity: GDELT "volume intensity" — the share of monitored
+  // global news coverage matching the war query (latest day). It's a
+  // normalized index, not a count, so label the unit and explain it.
+  const intensity = indicatorFrom(
+    latestSnapshot(snapshots, 'conflict_intensity', 'gdelt'),
+    (v) => v.toFixed(1),
+    48
+  );
+  if (intensity.value !== null) {
+    intensity.sub = getTranslation(lang, 'ground.intensityUnit');
+    intensity.note = getTranslation(lang, 'ground.intensityNote');
+  }
+
   return {
     lastUpdated,
     hero: {
@@ -232,11 +247,7 @@ export function loadHomePayload(lang: Lang): HomePayload {
     events,
     ground: {
       frontline,
-      intensity: indicatorFrom(
-        latestSnapshot(snapshots, 'conflict_intensity', 'gdelt'),
-        (v) => v.toFixed(1),
-        48
-      ),
+      intensity,
       aid: indicatorFrom(
         latestSnapshot(snapshots, 'aid_commitments_eur', 'kiel'),
         (v) => eur.format(v),

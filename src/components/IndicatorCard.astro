@@ -15,10 +15,12 @@ interface Props {
   degraded?: { sinceHours: number };
   /** If true, show the ISW-observed estimate note. */
   estimateNote?: boolean;
+  /** Optional explanatory caption rendered below the confidence bar. */
+  note?: string;
   lang: Lang;
 }
 
-const { title, value, sub, confidence, degraded, estimateNote, lang } =
+const { title, value, sub, confidence, degraded, estimateNote, note, lang } =
   Astro.props;
 
 const confidenceLabel = getTranslation(lang, 'ground.confidence');
@@ -98,6 +100,12 @@ const isDegraded = degraded != null;
           ))}
         </div>
       </div>
+    )
+  }
+
+  {
+    note && (
+      <p class="text-xs font-normal leading-snug text-gray-500">{note}</p>
     )
   }
 

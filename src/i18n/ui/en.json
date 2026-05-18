@@ -45,7 +45,9 @@
     "ukEconomy": "Ukrainian economy",
     "confidence": "Confidence",
     "estimateLabel": "ISW-observed estimate",
-    "fireActivity": "VIIRS fire/heat detections over Ukraine, last 5 days · NASA FIRMS"
+    "fireActivity": "VIIRS fire/heat detections over Ukraine, last 5 days · NASA FIRMS",
+    "intensityUnit": "news-volume intensity index",
+    "intensityNote": "GDELT volume intensity: the share of monitored global news coverage matching the war query, latest day. Not a count."
   },
   "brief": {
     "heading": "Daily brief",
