@@ -134,8 +134,9 @@ export const GET: APIRoute = async ({ params }) => {
           'div',
           {
             display: 'flex',
-            fontSize: 46,
+            fontSize: 34,
             fontWeight: 600,
+            whiteSpace: 'nowrap',
             color: m ? probColor(m.y) : '#161b20',
           },
           fmt(m)
@@ -176,11 +177,11 @@ export const GET: APIRoute = async ({ params }) => {
             'div',
             {
               display: 'flex',
-              fontSize: 60,
+              fontSize: 56,
               fontWeight: 600,
-              lineHeight: 1.05,
-              letterSpacing: -1.4,
-              maxWidth: 820,
+              lineHeight: 1.1,
+              letterSpacing: -1.2,
+              whiteSpace: 'nowrap',
             },
             t('common.title')
           ),
