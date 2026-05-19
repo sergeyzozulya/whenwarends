@@ -5,6 +5,7 @@ import {
   cellText,
   cellNumber,
   cellDate,
+  extractCumulativeAllocated,
   AID_COMMITMENTS_METRIC,
   KielSourceError,
   KIEL_SHEET,
@@ -158,5 +159,46 @@ describe('createKielCollector', () => {
     await expect(collector.run(envWith('https://x/kiel.xlsx'))).rejects.toBeInstanceOf(
       KielSourceError
     );
+  });
+});
+
+describe('extractCumulativeAllocated (Fig A22)', () => {
+  // Transposed sheet: a date-axis row + a labelled cumulative row. The label
+  // cell on the value row must NOT misalign the zip (sequence, not column).
+  const a22 = (): unknown[][] => [
+    ['Cumulative Allocations per month, total (€ billion)'],
+    [1, 2, 3, 4], // an index row (no dates)
+    ['2022-01-01', '2022-02-01', '2022-03-01', '2022-04-01'],
+    ['Military Aid Allocated', 1.0, 2.0, 3.0, 4.0],
+    ['Total Aid Allocated', 1.56, 4.78, 9.88, 19.28],
+    ['Humanitarian Aid Allocated', 0.04, 0.24, 1.51, 2.88],
+  ];
+
+  it('zips the date axis with the Total-Aid-Allocated row by sequence', () => {
+    const out = extractCumulativeAllocated(a22());
+    expect(out).toHaveLength(4);
+    expect(out[0]).toEqual({
+      monthIso: '2022-01-01T00:00:00.000Z',
+      eur: 1.56e9,
+    });
+    expect(out[3]).toEqual({
+      monthIso: '2022-04-01T00:00:00.000Z',
+      eur: 19.28e9,
+    });
+    const v = out.map((r) => r.eur);
+    expect(v).toEqual([...v].sort((x, y) => x - y)); // monotonic cumulative
+  });
+
+  it('returns [] when the Total-Aid-Allocated row is absent (no fabrication)', () => {
+    const rows = a22().filter(
+      (r) => cellText((r as unknown[])[0]) !== 'Total Aid Allocated'
+    );
+    expect(extractCumulativeAllocated(rows)).toEqual([]);
+  });
+
+  it('returns [] when there is no date axis', () => {
+    expect(
+      extractCumulativeAllocated([['Total Aid Allocated', 1, 2, 3]])
+    ).toEqual([]);
   });
 });

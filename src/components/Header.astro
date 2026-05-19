@@ -1,14 +1,13 @@
 ---
-import { getTranslation, getLang } from '@i18n/index';
+import { getTranslation } from '@i18n/index';
 import type { Lang } from '@lib/types';
 import { LANGS } from '@lib/types';
 
 interface Props {
   lang: Lang;
-  lastUpdated?: string; // ISO-8601 UTC
 }
 
-const { lang, lastUpdated } = Astro.props;
+const { lang } = Astro.props;
 
 const t = (key: string): string => getTranslation(lang, key);
 
@@ -19,73 +18,54 @@ const navItems = [
   { key: 'common.sources', href: `/${lang}/sources` },
   { key: 'common.changelog', href: `/${lang}/changelog` },
 ];
-
-const otherLangs = LANGS.filter((l) => l !== lang);
-
-let lastUpdatedLabel: string | null = null;
-if (lastUpdated) {
-  const parsed = new Date(lastUpdated);
-  if (!Number.isNaN(parsed.getTime())) {
-    const formatted = new Intl.DateTimeFormat(lang, {
-      timeZone: 'UTC',
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit',
-    }).format(parsed);
-    lastUpdatedLabel = t('common.lastUpdated').replace('{date}', formatted);
-  }
-}
 ---
 
 <header class="border-b border-gray-200">
-  <div class="max-w-5xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
-    <div class="flex flex-wrap items-baseline justify-between gap-4">
-      {/* Masthead brand — not an <h1>; the page's single <h1> is the hero
-          question in <main> (one-h1-per-document a11y rule). */}
-      <p class="text-[22px] font-medium">
-        <a
-          href={`/${lang}`}
-          aria-label={t('common.title')}
-          class="text-gray-900 hover:text-[#2c5aa0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
-        >
-          {t('common.title')}
-        </a>
-      </p>
-      <nav aria-label={t('common.language')} class="flex items-center gap-3 text-[13px]">
+  <div class="w-full px-4 py-4 sm:px-6 lg:px-12 xl:px-16">
+    {/* One nav row, mobile-first: page links wrap on the left, the short
+        language switcher stays pinned to the right. No masthead title —
+        the page's single <h1> in <main> carries the brand. */}
+    <div
+      class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3"
+    >
+      <nav
+        aria-label="Primary"
+        class="flex flex-wrap gap-x-6 gap-y-2 text-[16px]"
+      >
         {
-          otherLangs.map((l) => (
+          navItems.map((item) => (
             <a
-              href={`/${l}`}
-              hreflang={l}
+              href={item.href}
               class="text-[#2c5aa0] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
             >
-              {getLang(l)}
+              {t(item.key)}
             </a>
           ))
         }
-        <span aria-current="true" class="text-gray-500">{getLang(lang)}</span>
+      </nav>
+
+      <nav
+        aria-label={t('common.language')}
+        class="ml-auto flex items-center gap-3 text-[13px] lowercase"
+      >
+        {
+          LANGS.map((l) =>
+            l === lang ? (
+              <span aria-current="true" class="text-gray-500">
+                {l}
+              </span>
+            ) : (
+              <a
+                href={`/${l}`}
+                hreflang={l}
+                class="text-[#2c5aa0] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
+              >
+                {l}
+              </a>
+            )
+          )
+        }
       </nav>
     </div>
-
-    <nav class="mt-4 flex flex-wrap gap-6 text-[16px]">
-      {
-        navItems.map((item) => (
-          <a
-            href={item.href}
-            class="text-[#2c5aa0] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
-          >
-            {t(item.key)}
-          </a>
-        ))
-      }
-    </nav>
-
-    {
-      lastUpdatedLabel && (
-        <p class="mt-3 text-[13px] text-gray-500">{lastUpdatedLabel}</p>
-      )
-    }
   </div>
 </header>

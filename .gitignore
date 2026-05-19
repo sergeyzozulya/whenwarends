@@ -46,3 +46,9 @@ yarn-error.log*
 # OS
 Thumbs.db
 .DS_Store
+
+# Claude Code local config
+.claude/
+
+# Raw FIRMS archive downloads (distilled into data/snapshots.ndjson)
+data/archive/

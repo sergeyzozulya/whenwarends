@@ -160,7 +160,6 @@ export function buildChartSeries(
   const todayMs = isoToMs(today);
   const horizon = clampHorizonMonths(horizonMonths);
   const xMin = todayMs;
-  const xMax = addMonthsUtc(todayMs, horizon);
 
   const data: XYPoint[] = curveSet.curve.map((p) => ({
     x: isoToMs(p.date),
@@ -172,7 +171,51 @@ export function buildChartSeries(
     y: clamp01(p.probability),
   }));
 
+  // End at the latest data we actually have (furthest priced market), not a
+  // fixed forward horizon. Fall back to the horizon only when there's no data.
+  const lastData = Math.max(
+    todayMs,
+    ...data.map((p) => p.x),
+    ...knotPoints.map((p) => p.x)
+  );
+  const xMax =
+    lastData > todayMs ? lastData : addMonthsUtc(todayMs, horizon);
+
   const medianPoint = selectMedianPoint(curveSet.curve, curveSet.median);
 
   return { data, knotPoints, medianPoint, todayMs, xMin, xMax };
+}
+
+// --- Individual prediction markets (shown on the hero, styled per bucket) ---
+
+/** Stable bucket keys; the page maps these to localized legend labels. */
+export type MarketBucket =
+  | 'ceasefireAgreement'
+  | 'ceasefire'
+  | 'peaceDeal'
+  | 'framework'
+  | 'leadership'
+  | 'other';
+
+/** Classify a market by its question text — pure, deterministic, tested. */
+export function marketBucket(question: string): MarketBucket {
+  const q = question.toLowerCase();
+  if (q.includes('peace deal') || q.includes('peace agreement'))
+    return 'peaceDeal';
+  if (q.includes('framework')) return 'framework';
+  if (q.includes('zelensky') || q.includes('leave president'))
+    return 'leadership';
+  if (q.includes('ceasefire agreement')) return 'ceasefireAgreement';
+  if (q.includes('ceasefire')) return 'ceasefire';
+  return 'other';
+}
+
+/** One market point for the hero scatter. JSON-serializable (island prop). */
+export interface HeroMarket {
+  x: number; // resolution date, epoch ms
+  y: number; // current price, 0–1 probability
+  bucket: MarketBucket;
+  source: string; // 'polymarket' (hero markets come from markets.json)
+  question: string;
+  liquidity: number | null; // USD, for the tooltip
 }

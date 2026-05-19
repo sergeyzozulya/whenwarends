@@ -8,7 +8,7 @@ Static-first Astro site on Cloudflare's free tier, fed by free and open data sou
 
 ## 1. Mission and editorial posture
 
-The site presents a daily-updated, market-implied probability distribution for the end of the Russia-Ukraine war, surrounded by supporting indicators (frontline activity, conflict intensity, aid, Russian economy) and a human-reviewed AI narrative.
+The site presents a market-implied probability distribution for the end of the Russia-Ukraine war, surrounded by a scrubbable timeline of measured indicators (conflict intensity/tone/fire, currency, GDP, inflation) and an auto-published, integrity-guarded AI narrative.
 
 Tone is sober, restrained, never casino. The site never authors a prediction of its own — only displays market-derived numbers, observable events, and clearly-labeled editorial summary. Advocacy lives in the choice to build it, not in the presentation.
 
@@ -18,7 +18,7 @@ In rough order of size: Ukrainians abroad checking for hope or context; Ukrainia
 
 ## 3. Scope
 
-**In:** hero CDF chart of war-end date, multi-market history sparklines, editorial event list, five supporting indicator cards, weekly AI-drafted editor-reviewed brief, methodology page, three languages at launch (Ukrainian, English, Russian), full historical snapshots.
+**In:** hero CDF chart of war-end date, two summary cards (closest-to-consensus, most-optimistic), a scrubbable "war in data" timeline (conflict intensity/tone/fire, currency vs USD, real GDP % y/y, CPI % y/y for Russia and Ukraine), weekly AI-drafted auto-published brief (integrity-guarded, no human gate), methodology page, three languages (Ukrainian, English, Russian), full historical snapshots.
 
 **Out:** casualty counters, real-time air-raid maps, news aggregation, login or accounts, paid tiers or ads, trading, any prediction authored by the site or its AI, any external partnership or outreach, donations (v1.1).
 
@@ -28,6 +28,16 @@ In rough order of size: Ukrainians abroad checking for hope or context; Ukrainia
 
 > **Revised 2026-05-18 (v1.2)** — see §6/§14 and `data/changelog.json`. No
 > D1/KV/Cron; data is versioned repo JSON read at build. No Sentry (see §11).
+>
+> **Revised 2026-05-19 (v1.3)** — supersedes editor-approval throughout
+> (§1/§3/§4/§10): the brief is **auto-published** on each data refresh;
+> integrity guards in `src/lib/llm.ts` (citation allow-list, refusal,
+> truncation, per-language isolation) replace human review. Prediction
+> markets are **Polymarket + Manifold** (Kalshi/Metaculus dropped). The
+> homepage is the hero CDF + two summary cards + a scrubbable timeline;
+> the "today on the ground" cards, the editorial event list, and the
+> in-page brief panel were removed. UCDP/Oryx/ISW/Russia Matters/IMF are
+> not collected. See `data/changelog.json`.
 
 **Hosting and infrastructure, all Cloudflare free tier:**
 
@@ -37,7 +47,7 @@ In rough order of size: Ukrainians abroad checking for hope or context; Ukrainia
 
 Data lives in versioned repo JSON files (`data/`) read at build time; the weekly collector and brief jobs run as GitHub Actions, not Cloudflare Cron. Git is the time-series history, audit trail, and backup. Free tier covers v1 traffic comfortably; runtime cost is dominated by the weekly Anthropic API brief.
 
-**AI layer.** Anthropic Claude API (Opus 4.7, prompt caching). The weekly draft is written to `data/briefs.json` as `pending_review`; the editor approves by reviewing/merging the brief PR (§10) — this is the publish step. Never auto-publishes. If the editor doesn't act, the previous brief remains with a quiet "no fresh brief this week" notice.
+**AI layer.** Anthropic Claude API (Opus 4.7, prompt caching). On each data refresh the brief is drafted and written to `data/briefs.json` as `published` — there is no `pending_review` hop and no editor PR. Integrity is enforced in `src/lib/llm.ts` (enforced citation allow-list, refusal guard, truncation guard) and generation is per-language isolated, so a failing language cannot overwrite a good brief. Briefs reconstructed for past dates carry `reconstructed: true`, are labelled in the UI, and are grounded strictly in `data/snapshots.ndjson` as of their date.
 
 **Build and ops.** GitHub source. GitHub Actions runs typecheck, lint, build, perf budget, unit + Playwright E2E, plus the scheduled collect/brief jobs. Cloudflare Workers deployment via `wrangler deploy` from `main`. No third-party error-tracking script (§11 privacy supersedes the original Sentry plan).
 
@@ -45,22 +55,22 @@ Data lives in versioned repo JSON files (`data/`) read at build time; the weekly
 
 | Source | Use | License | Auth |
 |---|---|---|---|
-| Polymarket Gamma + Data API | Primary forecast probabilities, history | Public, viewable globally | None |
-| Kalshi public market data | Secondary forecast signal | Public | None |
-| GDELT 2.0 | Conflict intensity, event density, tone | CC BY | Free BigQuery |
-| UCDP Georeferenced Events | Academic baseline for intensity | CC BY 4.0 | None |
-| Kiel Ukraine Support Tracker | Aid commitments curve | CC BY 4.0 | None |
+| Polymarket Gamma + Data API | Primary war-end probabilities + history | Public, viewable globally | None |
+| Manifold Markets API | Secondary forecast signal; per-bet history | Public (CC BY 4.0) | None |
+| GDELT 2.0 DOC API | Conflict volume intensity + tone | CC BY | None |
+| Kiel Ukraine Support Tracker | Aid commitments (.xlsx) | CC BY 4.0 | None |
 | NASA FIRMS | Fire/heat anomalies as combat-zone proxy | Public domain | Free API key |
-| World Bank + IMF | Russian macro indicators | Public | None |
-| Russian CBR, Ukrainian NBU | FX rates, reserves | Public | None |
-| ISW daily assessments | Cite and link only; observe to derive own metrics | Standard copyright | None |
-| Russia Matters War Report Card | Cite and link only | Standard copyright | None |
-| Oryx open dataset | Equipment losses (attributed) | CC BY-NC | None |
+| World Bank (Indicators + Global Economic Monitor) | RU annual macro; RU monthly CPI; RU/UA quarterly real GDP | Public | None |
+| National Bank of Ukraine | UAH/USD FX; Ukraine monthly headline CPI | Public | None |
+| Central Bank of Russia | RUB/USD FX (official daily) | Public | None |
+| European Central Bank (via Frankfurter) | Daily reference rates for EUR conversion | Public | None |
 
-**Explicitly excluded:**
+Implemented collectors only; the registry is `src/workers/collectors/index.ts`.
 
-- **ACLED** — EULA forbids dashboards re-presenting their data and restricts LLM use. GDELT + UCDP cover the conceptual gap at lower temporal granularity.
-- **DeepStateMap** — requires per-project approval. This project does no outreach, so it's out. Frontline widget derives from ISW daily assessments observed and recorded as our own time-series, plus NASA FIRMS heat anomalies and GDELT event density.
+**Explicitly excluded / not collected:**
+
+- **ACLED** — EULA forbids dashboards re-presenting their data and restricts LLM use.
+- **UCDP, Oryx, IMF, ISW, Russia Matters, Kalshi, Metaculus, DeepStateMap** — considered earlier; not implemented (no collector). Conflict signal comes from GDELT + NASA FIRMS; macro from World Bank + NBU; FX from CBR + NBU.
 
 ## 6. Architecture
 

@@ -33,7 +33,7 @@ Copy `.dev.vars.example` → `.dev.vars` (gitignored) and fill in:
 ```
 FIRMS_MAP_KEY=...          # free: https://firms.modaps.eosdis.nasa.gov/api/area/
 KIEL_DATASET_URL=...       # current Kiel Ukraine Support Tracker .xlsx (rotates per release)
-KALSHI_SERIES_TICKER=...   # optional, override the Kalshi series
+MANIFOLD_MARKET_ID=...     # optional, override the tracked Manifold market
 ANTHROPIC_API_KEY=...      # only needed for the brief
 ```
 
@@ -41,7 +41,7 @@ The scripts auto-load `.dev.vars` — no manual `export` needed:
 
 ```bash
 npm run collect        # pull all sources → append data/snapshots.ndjson, data/markets.json
-npm run draft-brief    # draft the weekly brief → data/briefs.json (status: pending_review)
+npm run draft-brief    # draft + auto-publish the weekly brief → data/briefs.json
 ```
 
 `collect` is failure-isolated: one source failing degrades one widget, never
@@ -49,11 +49,12 @@ the run (it exits non-zero only if *every* source fails). Commit the changed
 `data/` files to publish — the deploy bakes them in.
 
 **Automated (weekly):** `.github/workflows/collect.yml` runs every Sunday
-08:00 UTC and commits `data/`; `.github/workflows/brief.yml` then opens a
-review PR (merging it is the editorial approval). For these to authenticate,
-add the same values as **GitHub Actions repository secrets** (Settings →
-Secrets and variables → Actions): `FIRMS_MAP_KEY`, `KIEL_DATASET_URL`,
-`KALSHI_SERIES_TICKER`, `ANTHROPIC_API_KEY`.
+08:00 UTC, drafts + auto-publishes the brief when the data changed (integrity
+guards in `src/lib/llm.ts` replace human review), and commits `data/` — one
+push, rebuild + deploy. For it to authenticate, add the same values as
+**GitHub Actions repository secrets** (Settings → Secrets and variables →
+Actions): `FIRMS_MAP_KEY`, `KIEL_DATASET_URL`, `ANTHROPIC_API_KEY`
+(`MANIFOLD_MARKET_ID` optional).
 
 ## Documentation
 
@@ -63,13 +64,13 @@ Secrets and variables → Actions): `FIRMS_MAP_KEY`, `KIEL_DATASET_URL`,
 
 ## Project phases
 
-| Phase | Duration | Status | Deliverable |
-|-------|----------|--------|-------------|
-| **0** | 1 week | In progress | Repo + CI + Astro skeleton + i18n + Workers |
-| **1** | 3 weeks | Blocked | Hero CDF chart live with real data (UK + EN) |
-| **2** | 3 weeks | Blocked | Supporting widgets + collectors |
-| **3** | 2 weeks | Blocked | Weekly brief + editor approval workflow |
-| **4** | 2 weeks | Blocked | Polish + public launch |
+| Phase | Status | Deliverable |
+|-------|--------|-------------|
+| **0** | Done | Repo + CI + Astro skeleton + i18n + Workers |
+| **1** | Done | Hero CDF chart live with real data (uk/en/ru) |
+| **2** | Done | Secondary timeline + collectors |
+| **3** | Done | Weekly brief — auto-published behind integrity guards |
+| **4** | Done | Polish + public launch (initial version) |
 
 ## Tech stack
 
@@ -84,15 +85,16 @@ Secrets and variables → Actions): `FIRMS_MAP_KEY`, `KIEL_DATASET_URL`,
 
 ## Data sources
 
-Nine free, open sources:
+Free, open, publicly accessible sources only:
 
-- **Polymarket + Kalshi** — prediction markets
-- **GDELT 2.0** — global events
-- **NASA FIRMS** — heat anomalies (combat proxy)
+- **Polymarket + Manifold** — prediction markets (war-end CDF)
+- **GDELT 2.0** — conflict volume intensity + tone
+- **NASA FIRMS** — fire/heat anomalies (combat proxy)
 - **Kiel Ukraine Support Tracker** — aid commitments
-- **World Bank + IMF** — economic data
-- **Ukrainian NBU + Russian CBR** — FX rates
-- **ISW + Russia Matters** — cited for reference
+- **World Bank** (Indicators + Global Economic Monitor) — RU annual macro, RU monthly CPI, RU/UA quarterly real GDP
+- **National Bank of Ukraine** — UAH/USD FX + Ukraine monthly CPI
+- **Central Bank of Russia** — RUB/USD FX
+- **European Central Bank** (via Frankfurter) — daily rates for EUR conversion
 
 ## Cost envelope
 
@@ -105,7 +107,11 @@ Nine free, open sources:
 
 ## Editorial
 
-Weekly cadence (Sunday 08:00 UTC pull, Tuesday deadline for approval). If no decision, previous week's brief displays with "no fresh brief this week" notice. Never auto-publishes.
+Weekly cadence (Sunday 08:00 UTC pull). When the data changed, the AI brief is
+drafted and **auto-published** on the same push — no human approval gate.
+Integrity is enforced in code (`src/lib/llm.ts`): citation allow-list, refusal
+guard, truncation guard, per-language isolation. Briefs reconstructed for past
+dates are labelled and grounded only in the snapshots as of their date.
 
 Glossary review (separate, async). Three languages from day one: Ukrainian, English, Russian.
 

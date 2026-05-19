@@ -4,13 +4,11 @@
 // payload is served at runtime from /api/homepage.
 import Layout from '@/layouts/Layout.astro';
 import HeroChart from '@/components/HeroChart';
-import Sparkline from '@/components/Sparkline.astro';
-import EventList from '@/components/EventList.astro';
-import IndicatorCard from '@/components/IndicatorCard.astro';
-import DailyBrief from '@/components/DailyBrief.astro';
+import HistoryTimeline from '@/components/HistoryTimeline';
 import { getTranslation } from '@i18n/index';
 import type { Lang } from '@lib/types';
 import { loadHomePayload } from '@lib/homepage';
+import { isoToMs, type HeroMarket } from '@lib/heroChartData';
 
 export function getStaticPaths() {
   return [{ params: { lang: 'uk' } }, { params: { lang: 'en' } }, { params: { lang: 'ru' } }];
@@ -31,21 +29,112 @@ const heroStrings: Record<string, string> = {
   todayMarker: t('hero.todayMarker'),
   crossing50: t('hero.crossing50'),
   chartAria: t('hero.chartAria'),
-  tableToggle: t('hero.tableToggle'),
-  tableDate: t('hero.tableDate'),
-  tableProbability: t('hero.tableProbability'),
+  bkt_ceasefireAgreement: t('hero.bktCeasefireAgreement'),
+  bkt_ceasefire: t('hero.bktCeasefire'),
+  bkt_peaceDeal: t('hero.bktPeaceDeal'),
+  bkt_framework: t('hero.bktFramework'),
+  bkt_leadership: t('hero.bktLeadership'),
+  bkt_other: t('hero.bktOther'),
 };
 
-const dateFmt = new Intl.DateTimeFormat(lang, { dateStyle: 'medium', timeZone: 'UTC' });
-const medianLabel = data.hero.median ? dateFmt.format(new Date(data.hero.median)) : '—';
+const localeByLang: Record<Lang, string> = {
+  uk: 'uk-UA',
+  en: 'en-US',
+  ru: 'ru-RU',
+};
 
-const groundCards = [
-  { key: 'frontline', d: data.ground.frontline },
-  { key: 'intensity', d: data.ground.intensity },
-  { key: 'aid', d: data.ground.aid },
-  { key: 'economy', d: data.ground.economy },
-  { key: 'ukEconomy', d: data.ground.ukEconomy },
-] as const;
+const historyStrings: Record<string, string> = {
+  heading: t('history.heading'),
+  scrubAria: t('history.scrubAria'),
+  intensity: t('ground.intensity'),
+  aid: t('history.aidCumulative'),
+  rub: t('ground.economy'),
+  uah: t('ground.ukEconomy'),
+  economy: t('history.economy'),
+  conflict: t('history.conflict'),
+  fire: t('ground.frontline'),
+  gdp: t('history.gdp'),
+  inflation: t('history.inflation'),
+  ruGdp: t('history.ruLine'),
+  uaGdp: t('history.uaLine'),
+  ruCpi: t('history.ruLine'),
+  uaCpi: t('history.uaLine'),
+  tone: t('history.tone'),
+  reconstructed: t('brief.reconstructed'),
+  aiLabel: t('brief.reviewed'),
+  sources: t('brief.sources'),
+  noBrief: t('brief.noBrief'),
+  locale: localeByLang[lang],
+};
+
+// Two summary cards above the hero, derived from the same individual
+// prediction markets the CDF is fitted through.
+//   • closest    — the market point sitting nearest the fitted consensus
+//                   curve (the most "representative" prediction)
+//   • optimistic  — the market most bullish that the war is over (the
+//                    highest end-probability; ties broken by earlier date)
+const mkts: HeroMarket[] = data.hero.markets ?? [];
+
+const curvePts = (data.hero.datasets.ceasefire?.curve ?? [])
+  .map((c) => ({ x: isoToMs(c.date), p: c.probability }))
+  .filter((c) => Number.isFinite(c.x))
+  .sort((a, b) => a.x - b.x);
+
+function consensusAt(x: number): number | null {
+  if (curvePts.length === 0) return null;
+  if (x <= curvePts[0].x) return curvePts[0].p;
+  const last = curvePts[curvePts.length - 1];
+  if (x >= last.x) return last.p;
+  for (let i = 0; i < curvePts.length - 1; i++) {
+    const a = curvePts[i];
+    const b = curvePts[i + 1];
+    if (x >= a.x && x <= b.x) {
+      const tt = b.x === a.x ? 0 : (x - a.x) / (b.x - a.x);
+      return a.p + tt * (b.p - a.p);
+    }
+  }
+  return last.p;
+}
+
+let closestM: HeroMarket | null = null;
+let bestDist = Infinity;
+for (const m of mkts) {
+  const c = consensusAt(m.x);
+  if (c === null) continue;
+  const d = Math.abs(m.y - c);
+  if (d < bestDist) {
+    bestDist = d;
+    closestM = m;
+  }
+}
+
+const nowMs = Date.now();
+const futureM = mkts.filter((m) => m.x >= nowMs);
+let optimisticM: HeroMarket | null = null;
+for (const m of futureM.length > 0 ? futureM : mkts) {
+  if (
+    optimisticM === null ||
+    m.y > optimisticM.y ||
+    (m.y === optimisticM.y && m.x < optimisticM.x)
+  ) {
+    optimisticM = m;
+  }
+}
+
+const fmtMonthYear = new Intl.DateTimeFormat(localeByLang[lang], {
+  year: 'numeric',
+  month: 'short',
+  timeZone: 'UTC',
+});
+
+function predValue(m: HeroMarket | null): string {
+  if (!m) return '—';
+  return `${Math.round(m.y * 100)}% · ${fmtMonthYear.format(new Date(m.x))}`;
+}
+
+const closestValue = predValue(closestM);
+const optimisticValue = predValue(optimisticM);
+
 ---
 
 <Layout lang={lang} title={t('common.title')} lastUpdated={data.lastUpdated ?? undefined}>
@@ -56,65 +145,43 @@ const groundCards = [
         <p class="text-[16px] text-gray-600">{t('common.subtitle')}</p>
       </header>
 
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <article class="rounded border border-gray-200 bg-white p-4">
+          <h2 class="text-base font-medium text-gray-700">
+            {t('hero.closest')}
+          </h2>
+          <p class="mt-1 text-2xl font-normal leading-tight text-gray-900">
+            {closestValue}
+          </p>
+        </article>
+        <article class="rounded border border-gray-200 bg-white p-4">
+          <h2 class="text-base font-medium text-gray-700">
+            {t('hero.optimistic')}
+          </h2>
+          <p class="mt-1 text-2xl font-normal leading-tight text-gray-900">
+            {optimisticValue}
+          </p>
+        </article>
+      </div>
+
       <HeroChart
         client:visible
         datasets={data.hero.datasets}
         today={data.hero.today}
+        markets={data.hero.markets}
         strings={heroStrings}
       />
-
-      <div class="grid gap-4 sm:grid-cols-2">
-        <IndicatorCard lang={lang} title={t('hero.median')} value={medianLabel} />
-        <IndicatorCard lang={lang} title={t('hero.shift30d')} value="—" />
-      </div>
     </section>
 
-    <section class="space-y-4">
-      <h2 class="text-[18px] font-medium">{t('beliefs.heading')}</h2>
-      {
-        data.beliefs.length === 0 ? (
-          <p class="text-[13px] text-gray-500">{t('errors.dataUnavailable').replace('{time}', '—')}</p>
-        ) : (
-          <div class="grid gap-6 sm:grid-cols-3">
-            {data.beliefs.map((b) => (
-              <Sparkline
-                points={b.points}
-                label={b.label}
-                currentValue={b.current ?? undefined}
-                currentLabel={t('beliefs.current')}
-              />
-            ))}
-          </div>
-        )
-      }
-    </section>
-
+    {/* Secondary timelines — one by one, with scrub + brief. */}
     <section>
-      <EventList events={data.events} lang={lang} />
+      <HistoryTimeline
+        client:visible
+        history={data.history}
+        entries={data.briefArchive}
+        strings={historyStrings}
+      />
     </section>
 
-    <section class="space-y-4">
-      <h2 class="text-[18px] font-medium">{t('ground.heading')}</h2>
-      <div class="grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
-        {
-          groundCards.map(({ key, d }) => (
-            <IndicatorCard
-              lang={lang}
-              title={t(`ground.${key}`)}
-              value={d.value ?? '—'}
-              sub={d.sub}
-              confidence={d.confidence}
-              degraded={d.degraded}
-              estimateNote={d.estimateNote}
-              note={d.note}
-            />
-          ))
-        }
-      </div>
-    </section>
-
-    <section>
-      <DailyBrief brief={data.brief} isStale={data.briefStale} lang={lang} />
-    </section>
   </div>
 </Layout>

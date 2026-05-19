@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import {
   gdeltCollector,
+  collectGdeltHistory,
   normalizeGdeltDate,
   GdeltResponseError,
   type JsonFetcher,
@@ -179,13 +180,17 @@ describe('gdeltCollector', () => {
     };
     await gdeltCollector.runWith(fetcher);
 
+    // Recurring path: one recent window × 2 modes — exactly 2 requests.
     expect(urls).toHaveLength(2);
     for (const url of urls) {
       // `+`-for-space encoding is what broke the live call against GDELT.
       expect(url).not.toContain('+');
       expect(url).toContain('%20');
       expect(url).toContain('format=json');
-      expect(url).toContain('timespan=12m'); // GDELT grammar: <n><unit>, not "12months"
+      // Explicit date range replaces the old timespan=12m history cap.
+      expect(url).toContain('startdatetime=');
+      expect(url).toContain('enddatetime=');
+      expect(url).not.toContain('timespan=');
       expect(url.startsWith('https://api.gdeltproject.org/api/v2/doc/doc?')).toBe(
         true
       );
@@ -202,6 +207,47 @@ describe('gdeltCollector', () => {
         )
       );
     await expect(gdeltCollector.runWith(failing)).rejects.toBeInstanceOf(
+      GdeltResponseError
+    );
+  });
+});
+
+describe('collectGdeltHistory (one-time backfill)', () => {
+  it('walks yearly windows back to 2022 and dedupes repeated points', async () => {
+    const urls: string[] = [];
+    const fetcher: JsonFetcher = (url) => {
+      urls.push(url);
+      return Promise.resolve(url.includes('timelinevol') ? volJson : toneJson);
+    };
+    const { snapshots } = await collectGdeltHistory(fetcher, 0);
+
+    // ≥ (2022..now) years × 2 modes; always even; reaches the war run-up.
+    expect(urls.length).toBeGreaterThanOrEqual(8);
+    expect(urls.length % 2).toBe(0);
+    expect(urls.some((u) => u.includes('startdatetime=2022'))).toBe(true);
+    // Same stub per window → dedupe to the distinct points (3 vol + 2 tone).
+    expect(
+      snapshots.filter((s) => s.metric === 'conflict_intensity')
+    ).toHaveLength(3);
+    expect(
+      snapshots.filter((s) => s.metric === 'conflict_tone')
+    ).toHaveLength(2);
+  });
+
+  it('is resilient: a failing window is skipped, survivors kept', async () => {
+    let n = 0;
+    const flaky: JsonFetcher = (url) => {
+      n += 1;
+      if (n % 3 === 0) return Promise.reject(new Error('429-ish'));
+      return Promise.resolve(url.includes('timelinevol') ? volJson : toneJson);
+    };
+    const { snapshots } = await collectGdeltHistory(flaky, 0);
+    expect(snapshots.length).toBeGreaterThan(0); // didn't abort on a skip
+  });
+
+  it('throws only when every window fails', async () => {
+    const allDead: JsonFetcher = () => Promise.reject(new Error('down'));
+    await expect(collectGdeltHistory(allDead, 0)).rejects.toBeInstanceOf(
       GdeltResponseError
     );
   });

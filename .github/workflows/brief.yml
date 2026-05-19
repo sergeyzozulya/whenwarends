@@ -1,51 +1,26 @@
-name: Weekly brief draft
+name: Weekly brief draft (RETIRED)
 
-# Drafts the editorial brief in all three languages and opens a PR for the
-# editor to review, edit, or reject. Merging the PR is the approval step
-# (SPEC §10). Nothing is published until a human merges. Runs after the
-# Sunday data collection so the draft reflects fresh numbers.
+# RETIRED 2026-05-18 (owner decision — see data/changelog.json and CLAUDE.md).
+#
+# This workflow drafted the brief and opened a PR for human review/merge.
+# That review gate was removed: brief generation now runs inside collect.yml
+# right after data collection and AUTO-PUBLISHES (no PR). Keeping a second
+# pipeline here would double-spend the API and open PRs of already-published
+# rows. Left as an inert, manual-only no-op (not deleted) so the retirement
+# is visible in history rather than silently vanishing.
+#
+# Do not re-enable. To change brief behaviour, edit scripts/draft-brief.ts /
+# scripts/backfill-briefs.ts and collect.yml.
 on:
-  schedule:
-    - cron: '30 8 * * 0' # Sunday 08:30 UTC (after collect.yml at 08:00)
   workflow_dispatch:
 
-concurrency:
-  group: brief
-  cancel-in-progress: false
-
 jobs:
-  draft:
-    name: Draft brief and open PR
+  retired:
+    name: Retired — see collect.yml
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-      - run: npm ci
-      - name: Draft briefs
-        run: npm run draft-brief
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      - name: Open review PR
-        uses: peter-evans/create-pull-request@v6
-        with:
-          add-paths: data/briefs.json
-          branch: brief/${{ github.run_id }}
-          commit-message: 'chore(brief): weekly draft for editor review'
-          title: 'Weekly brief — editor review'
-          body: |
-            AI-drafted weekly brief in uk/en/ru, status `pending_review`.
-
-            **To approve:** edit `data/briefs.json` in this PR — set the
-            entry's `status` to `published`, copy the (optionally edited)
-            text into `published`, set `reviewed_at`, then merge. Merging
-            triggers the rebuild + deploy. To reject a language, set its
-            `status` to `rejected` (or leave `pending_review` and close).
-
-            Nothing is published until this PR is merged.
-          labels: editorial
+      - name: Explain
+        run: |
+          echo "brief.yml is retired. Brief generation + auto-publish now"
+          echo "runs in collect.yml after data collection. Historical"
+          echo "backfill: npm run backfill-briefs (manual). No-op; exiting."

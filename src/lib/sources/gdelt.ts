@@ -47,14 +47,51 @@ const RATE_LIMIT_GAP_MS = 6000;
 const USER_AGENT =
   'whenwarends-collector/1.0 (+https://whenwarends.org; non-commercial, CC BY 4.0 attribution)';
 
+// Full-war history. GDELT DOC 2.0 serves explicit date ranges (verified live
+// 2026-05-19: a 2022 startdatetime/enddatetime returns real daily data) but
+// rejects very long single ranges ("contact … for larger queries"). So we
+// fetch in YEARLY windows — each ~365 day-resolution points — paced under the
+// 1-req/5s limiter. The old `timespan=12m` is exactly why intensity history
+// only reached back ~12 months; this replaces it.
+const HISTORY_START_UTC = Date.UTC(2022, 0, 1); // war run-up; GDELT has data
+
+/** Date(ms) → GDELT's `YYYYMMDDHHMMSS` (UTC) start/enddatetime grammar. */
+export function fmtGdelt(ms: number): string {
+  const d = new Date(ms);
+  const p = (n: number) => String(n).padStart(2, '0');
+  return (
+    `${d.getUTCFullYear()}${p(d.getUTCMonth() + 1)}${p(d.getUTCDate())}` +
+    `${p(d.getUTCHours())}${p(d.getUTCMinutes())}${p(d.getUTCSeconds())}`
+  );
+}
+
+/** Chronological yearly {start,end} windows spanning [startMs, endMs). */
+export function gdeltWindows(
+  startMs: number,
+  endMs: number
+): { start: string; end: string }[] {
+  const out: { start: string; end: string }[] = [];
+  let s = startMs;
+  while (s < endMs) {
+    const nextYear = Date.UTC(new Date(s).getUTCFullYear() + 1, 0, 1);
+    const e = Math.min(nextYear, endMs);
+    out.push({ start: fmtGdelt(s), end: fmtGdelt(e) });
+    s = e;
+  }
+  return out;
+}
+
 /** Build a fully percent-encoded GDELT DOC 2.0 timeline URL (spaces => %20). */
-function buildUrl(mode: 'timelinevol' | 'timelinetone'): string {
+function buildUrl(
+  mode: 'timelinevol' | 'timelinetone',
+  startdatetime: string,
+  enddatetime: string
+): string {
   const qs = [
     ['query', QUERY],
     ['mode', mode],
-    // GDELT DOC 2.0 timespan grammar is <n><unit> (min/H/d/w/m). "12months"
-    // is invalid and yields no timeline; 12 months is "12m" (verified live).
-    ['timespan', '12m'],
+    ['startdatetime', startdatetime],
+    ['enddatetime', enddatetime],
     ['format', 'json'],
   ]
     .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`)
@@ -173,8 +210,7 @@ export function normalizeGdeltDate(raw: string): string | null {
 
 function seriesToSnapshots(
   parsed: GdeltTimelineResponse,
-  metric: string,
-  rawBlob: string
+  metric: string
 ): SnapshotInput[] {
   const out: SnapshotInput[] = [];
   for (const series of parsed.timeline) {
@@ -187,7 +223,10 @@ function seriesToSnapshots(
         source: SOURCE,
         ts,
         value: point.value,
-        raw_blob: rawBlob,
+        // Per-point blob only. With full-war history a per-response blob
+        // would repeat the entire timeline on every row and explode the
+        // ndjson; the point itself is the auditable raw datum.
+        raw_blob: JSON.stringify({ date: point.date, value: point.value }),
         // GDELT global news monitoring is dense and stable; treat the
         // normalized timeline as high-confidence.
         confidence: 0.9,
@@ -201,22 +240,95 @@ async function collect(
   fetcher: JsonFetcher,
   paceMs: number
 ): Promise<CollectorResult> {
-  // Sequential, not Promise.all: GDELT rate-limits to ~1 req / 5s and answers a
-  // burst with a plain-text 429. Inter-request spacing keeps us under the cap.
-  // `paceMs` is 0 for the injected test fetcher (no real network, no waiting).
-  const volRaw = await fetcher(buildUrl('timelinevol'));
-  if (paceMs > 0) await sleep(paceMs);
-  const toneRaw = await fetcher(buildUrl('timelinetone'));
-
-  const vol = GdeltTimelineResponseSchema.parse(volRaw);
-  const tone = GdeltTimelineResponseSchema.parse(toneRaw);
-
-  const snapshots: SnapshotInput[] = [
-    ...seriesToSnapshots(vol, 'conflict_intensity', JSON.stringify(volRaw)),
-    ...seriesToSnapshots(tone, 'conflict_tone', JSON.stringify(toneRaw)),
+  // Recurring path: recent edge only, 2 requests, STRICT (a bad/rate-limited
+  // response throws → runner marks the source failed, failure-isolated).
+  // `paceMs` is 0 for the injected test fetcher (no network, no waiting).
+  // Recurring weekly job: only the recent edge. History is immutable and
+  // already in the snapshot store; the one-time backfill (collectGdeltHistory)
+  // handles 2022→. One window keeps the weekly run to 2 requests, clear of
+  // GDELT's 1-req/5s limiter — cramming full history here is what rate-limited
+  // and failed it.
+  const RECENT_DAYS = 120;
+  const nowMs = Date.now();
+  const wins = [
+    {
+      start: fmtGdelt(nowMs - RECENT_DAYS * 24 * 3600 * 1000),
+      end: fmtGdelt(nowMs),
+    },
   ];
 
-  return { snapshots };
+  // (metric,ts)-dedupe, keep first: window boundaries can repeat an edge
+  // point, and a stubbed test fetcher returns the same payload per window.
+  const byKey = new Map<string, SnapshotInput>();
+  const modes: { mode: 'timelinevol' | 'timelinetone'; metric: string }[] = [
+    { mode: 'timelinevol', metric: 'conflict_intensity' },
+    { mode: 'timelinetone', metric: 'conflict_tone' },
+  ];
+
+  for (const { mode, metric } of modes) {
+    for (const w of wins) {
+      if (paceMs > 0) await sleep(paceMs);
+      const raw = await fetcher(buildUrl(mode, w.start, w.end));
+      const parsed = GdeltTimelineResponseSchema.parse(raw);
+      for (const s of seriesToSnapshots(parsed, metric)) {
+        const key = `${s.metric} ${s.ts}`;
+        if (!byKey.has(key)) byKey.set(key, s);
+      }
+    }
+  }
+
+  return { snapshots: [...byKey.values()] };
+}
+
+/**
+ * One-time historical backfill: yearly windows from the war start to now.
+ * RESILIENT — a failed window (rate-limit, transport, or garbage) is logged
+ * and skipped so a single hiccup never discards the years that did succeed;
+ * throws only if EVERY window of EVERY mode failed. Paces generously: this is
+ * run once, manually, from a non-rate-limited IP (latency is irrelevant). The
+ * recurring weekly `collect` deliberately does NOT do this.
+ */
+export async function collectGdeltHistory(
+  fetcher: JsonFetcher = defaultFetcher,
+  paceMs = RATE_LIMIT_GAP_MS
+): Promise<CollectorResult> {
+  const wins = gdeltWindows(HISTORY_START_UTC, Date.now());
+  const modes: { mode: 'timelinevol' | 'timelinetone'; metric: string }[] = [
+    { mode: 'timelinevol', metric: 'conflict_intensity' },
+    { mode: 'timelinetone', metric: 'conflict_tone' },
+  ];
+  const byKey = new Map<string, SnapshotInput>();
+  let attempted = 0;
+  let failed = 0;
+
+  for (const { mode, metric } of modes) {
+    for (const w of wins) {
+      attempted++;
+      if (paceMs > 0) await sleep(paceMs);
+      try {
+        const raw = await fetcher(buildUrl(mode, w.start, w.end));
+        const parsed = GdeltTimelineResponseSchema.parse(raw);
+        for (const s of seriesToSnapshots(parsed, metric)) {
+          const key = `${s.metric} ${s.ts}`;
+          if (!byKey.has(key)) byKey.set(key, s);
+        }
+      } catch (err) {
+        failed++;
+        console.error(
+          `gdelt-history: skip ${mode} ${w.start}-${w.end}: ${
+            err instanceof Error ? err.message : String(err)
+          }`
+        );
+      }
+    }
+  }
+
+  if (byKey.size === 0 && attempted > 0 && failed === attempted) {
+    throw new GdeltResponseError(
+      `GDELT history: all ${attempted} windowed requests failed`
+    );
+  }
+  return { snapshots: [...byKey.values()] };
 }
 
 export interface GdeltCollector extends Collector {

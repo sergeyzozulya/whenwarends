@@ -66,6 +66,13 @@ export interface BriefRow {
   created_at: string; // ISO-8601 UTC
   reviewed_at: string | null;
   citations: string; // JSON-encoded Citation[]
+  /**
+   * True when this brief was reconstructed after the fact from archived
+   * snapshot data (scripts/backfill-briefs.ts) rather than written at the
+   * time. The UI labels these "reconstructed from archived data" so they are
+   * never presented as contemporaneous editorial. Absent = written live.
+   */
+  reconstructed?: boolean;
 }
 
 export interface Citation {

@@ -1,7 +1,7 @@
 {
   "common": {
     "title": "When does this war end?",
-    "subtitle": "Calm, transparent data on the Russia-Ukraine conflict",
+    "subtitle": "AI-written analysis, grounded in real, open data on the Russia-Ukraine war",
     "lastUpdated": "Last updated {date} UTC",
     "home": "Home",
     "methodology": "Methodology",
@@ -14,7 +14,8 @@
   "hero": {
     "label": "Probability war has ended by date",
     "median": "Median expected end date",
-    "shift30d": "30-day shift",
+    "closest": "Closest date",
+    "optimistic": "Most optimistic",
     "definition": "Definition",
     "ceasefire": "Ceasefire",
     "peaceDeal": "Formal peace deal",
@@ -22,9 +23,24 @@
     "todayMarker": "Today",
     "crossing50": "50% crossing",
     "chartAria": "Cumulative probability that the war has ended, by date",
-    "tableToggle": "Show data table",
-    "tableDate": "Date",
-    "tableProbability": "Probability"
+    "bktCeasefireAgreement": "Ceasefire agreement",
+    "bktCeasefire": "Ceasefire",
+    "bktPeaceDeal": "Peace deal",
+    "bktFramework": "US-backed framework",
+    "bktLeadership": "Leadership change",
+    "bktOther": "Other"
+  },
+  "history": {
+    "heading": "The war in data",
+    "scrubAria": "Scrub the timeline to a date",
+    "tone": "Coverage tone",
+    "gdp": "GDP — real, % y/y (quarterly)",
+    "inflation": "Inflation — CPI, % y/y (monthly)",
+    "ruLine": "Russia",
+    "uaLine": "Ukraine",
+    "aidCumulative": "Cumulative allocated aid (€)",
+    "economy": "Currency vs USD",
+    "conflict": "Conflict intensity, tone & fire"
   },
   "beliefs": {
     "heading": "How beliefs have moved",
@@ -40,20 +56,22 @@
     "heading": "Today on the ground",
     "frontline": "Combat-zone fire activity",
     "intensity": "Conflict intensity",
-    "aid": "Aid commitments",
+    "aid": "Aid allocated",
     "economy": "Russian economy",
     "ukEconomy": "Ukrainian economy",
     "confidence": "Confidence",
-    "estimateLabel": "ISW-observed estimate",
     "fireActivity": "VIIRS fire/heat detections over Ukraine, last 5 days · NASA FIRMS",
     "intensityUnit": "news-volume intensity index",
-    "intensityNote": "GDELT volume intensity: the share of monitored global news coverage matching the war query, latest day. Not a count."
+    "intensityNote": "GDELT volume intensity: the share of monitored global news coverage matching the war query, latest day. Not a count.",
+    "aidTotal": "allocated to date · Kiel"
   },
   "brief": {
     "heading": "Daily brief",
     "noBrief": "No fresh brief this week.",
     "sources": "Sources",
-    "reviewed": "Human-reviewed"
+    "reviewed": "AI-generated · auto-published",
+    "reconstructed": "Reconstructed from archived data",
+    "archiveHeading": "Past briefs"
   },
   "errors": {
     "dataUnavailable": "Data unavailable, last good {time} ago"

@@ -1,6 +1,5 @@
 ---
 import type { Lang } from '@lib/types';
-import { getTranslation } from '@i18n/index';
 
 interface Props {
   /** Already-localized card title. */
@@ -13,38 +12,15 @@ interface Props {
   confidence?: number;
   /** If present, show the data-unavailable notice and de-emphasize the value. */
   degraded?: { sinceHours: number };
-  /** If true, show the ISW-observed estimate note. */
-  estimateNote?: boolean;
   /** Optional explanatory caption rendered below the confidence bar. */
   note?: string;
   lang: Lang;
 }
 
-const { title, value, sub, confidence, degraded, estimateNote, note, lang } =
-  Astro.props;
-
-const confidenceLabel = getTranslation(lang, 'ground.confidence');
-const estimateLabel = getTranslation(lang, 'ground.estimateLabel');
-
-// getTranslation does not interpolate; substitute {time} manually.
-const degradedNotice = degraded
-  ? getTranslation(lang, 'errors.dataUnavailable').replace(
-      '{time}',
-      `${degraded.sinceHours} hours`,
-    )
-  : null;
-
-// Clamp to 0–1 and bucket into quintiles (1–5) for an accessible,
-// non-color-only confidence indicator.
-const hasConfidence = typeof confidence === 'number';
-const clampedConfidence = hasConfidence
-  ? Math.min(1, Math.max(0, confidence as number))
-  : 0;
-const confidencePct = Math.round(clampedConfidence * 100);
-const filledQuintiles = hasConfidence
-  ? Math.min(5, Math.max(1, Math.ceil(clampedConfidence * 5)))
-  : 0;
-const quintiles = [1, 2, 3, 4, 5];
+// Card simplified to title + value. `sub`/`confidence`/`note`/`lang` stay in
+// Props (callers still pass them) but are no longer rendered; `degraded`
+// only de-emphasizes the value.
+const { title, value, degraded } = Astro.props;
 
 const isDegraded = degraded != null;
 ---
@@ -61,65 +37,4 @@ const isDegraded = degraded != null;
     {value}
   </p>
 
-  {
-    sub && (
-      <p
-        class:list={[
-          'text-sm font-normal',
-          isDegraded ? 'text-gray-400' : 'text-gray-600',
-        ]}
-      >
-        {sub}
-      </p>
-    )
-  }
-
-  {
-    hasConfidence && (
-      <div class="mt-1 flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-2">
-          <span class="text-xs font-medium text-gray-600">
-            {confidenceLabel}
-          </span>
-          <span class="text-xs font-normal text-gray-600">
-            {confidencePct}%
-          </span>
-        </div>
-        <div
-          class="flex gap-1"
-          role="img"
-          aria-label={`${confidenceLabel}: ${confidencePct}%`}
-        >
-          {quintiles.map((q) => (
-            <span
-              class:list={[
-                'h-1.5 flex-1 rounded-sm',
-                q <= filledQuintiles ? 'bg-[#2c5aa0]' : 'bg-gray-200',
-              ]}
-            />
-          ))}
-        </div>
-      </div>
-    )
-  }
-
-  {
-    note && (
-      <p class="text-xs font-normal leading-snug text-gray-500">{note}</p>
-    )
-  }
-
-  {
-    estimateNote && (
-      <p class="text-xs font-normal text-gray-500">{estimateLabel}</p>
-    )
-  }
-
-  {
-    degradedNotice && (
-      <p class="text-xs font-medium text-gray-600" role="status">
-        {degradedNotice}
-      </p>
-    )
-  }
 </article>

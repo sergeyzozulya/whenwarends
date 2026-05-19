@@ -1,8 +1,15 @@
-name: Weekly data collection
+name: Weekly data collection and brief
 
-# Pulls every source and commits the updated data/ files. The push to main
-# triggers CI, which rebuilds the static site (now embedding fresh numbers)
-# and deploys it. Manual runs allowed via the Actions tab.
+# Pulls every source, and — when the collection actually changed something —
+# regenerates and AUTO-PUBLISHES the editorial brief against the fresh
+# numbers, then commits data/ (snapshots + briefs) in one push. The push to
+# main triggers CI, which rebuilds the static site (embedding the new numbers
+# and the new brief) and deploys it. Manual runs allowed via the Actions tab.
+#
+# There is no human review gate (owner decision, 2026-05-18 — see
+# data/changelog.json and CLAUDE.md). draft-brief.ts keeps the integrity
+# safeguards (citation allow-list, refusal/truncation guards, per-language
+# isolation); the git commit is the audit trail.
 on:
   schedule:
     - cron: '0 8 * * 0' # Sunday 08:00 UTC (SPEC §10 weekly cadence)
@@ -14,7 +21,7 @@ concurrency:
 
 jobs:
   collect:
-    name: Collect and commit data
+    name: Collect data, publish brief, commit
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -30,14 +37,29 @@ jobs:
         env:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
           KIEL_DATASET_URL: ${{ secrets.KIEL_DATASET_URL }}
-          KALSHI_SERIES_TICKER: ${{ secrets.KALSHI_SERIES_TICKER }}
+          # Manifold needs no key; MANIFOLD_MARKET_ID is optional operator
+          # config (defaults baked into the collector). Kalshi retired.
+          MANIFOLD_MARKET_ID: ${{ secrets.MANIFOLD_MARKET_ID }}
+      # Only spend on generation when the numbers actually moved — an
+      # unchanged dataset would produce an equivalent brief. This is the
+      # "when data changes, run draft-brief" trigger.
+      - name: Draft and publish brief (only if data changed)
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            echo "Data changed — regenerating and publishing the brief."
+            npm run draft-brief
+          else
+            echo "No data changes this run — skipping brief regeneration."
+          fi
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - name: Commit data changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if [ -n "$(git status --porcelain data/)" ]; then
             git add data/
-            git commit -m "chore(data): weekly collection $(date -u +%Y-%m-%d)"
+            git commit -m "chore(data): weekly collection + brief $(date -u +%Y-%m-%d)"
             git push
           else
             echo "No data changes this run."

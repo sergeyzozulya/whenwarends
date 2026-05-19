@@ -2,7 +2,7 @@
 
 ## One-paragraph summary
 
-A non-commercial, Ukrainian-built dashboard that answers a single question with calm, transparent data: **when does this war end?** Static-first Astro site on Cloudflare's free tier (Workers + Static Assets), fed by free and open data sources only. Single-editor weekly cadence. Served in three languages (Ukrainian, English, Russian). Total cost under $15/month dominated by Anthropic API for the weekly AI-drafted, human-reviewed editorial brief.
+A non-commercial, Ukrainian-built dashboard that answers a single question with calm, transparent data: **when does this war end?** Static-first Astro site on Cloudflare's free tier (Workers + Static Assets), fed by free and open data sources only. Single-editor weekly cadence. Served in three languages (Ukrainian, English, Russian). Total cost under $15/month dominated by Anthropic API for the weekly AI-drafted, auto-published (integrity-guarded) editorial brief.
 
 ## Repository structure
 
@@ -43,12 +43,14 @@ whenwarends/
 │   │   └── sources/
 │   │       ├── polymarket.ts
 │   │       ├── polymarket.schema.ts   # Zod
-│   │       ├── kalshi.ts
+│   │       ├── manifold.ts
+│   │       ├── manifold.schema.ts     # Zod
 │   │       ├── gdelt.ts
 │   │       ├── kiel.ts
 │   │       ├── firms.ts
-│   │       ├── worldbank.ts
-│   │       ├── nbu.ts
+│   │       ├── worldbank.ts           # annual + Global Economic Monitor
+│   │       ├── nbu.ts                 # UAH/USD FX
+│   │       ├── nbuCpi.ts              # Ukraine monthly CPI
 │   │       └── cbr.ts
 │   ├── i18n/
 │   │   ├── ui/{uk,en,ru}.json
@@ -149,28 +151,44 @@ whenwarends/
 
 ### AI & editorial
 
-- **Never** auto-publish AI output. Always require human approval.
-- **Drafts** go to `briefs.status = 'pending_review'`. Editor approves to `published`.
+- **Auto-publish, no human review gate** (owner decision, 2026-05-18; see
+  `data/changelog.json`). `scripts/draft-brief.ts` writes briefs straight to
+  `briefs.status = 'published'` on each data refresh; `scripts/backfill-briefs.ts`
+  publishes reconstructed historical briefs the same way. There is no
+  `pending_review` hop. This **replaces** the former "never auto-publish /
+  require human approval" rule — that rule is retired, not merely waived.
+- **Integrity safeguards are non-negotiable and replace review.** A brief may
+  only ship if it passes the `src/lib/llm.ts` guards: enforced citation
+  allow-list (never cite a URL not supplied), refusal guard, and truncation
+  (`max_tokens`) guard. Generation is per-language isolated — a language that
+  throws is skipped, so a prior good brief survives rather than being
+  overwritten with garbage. The git commit is the audit trail.
+- **Reconstructed briefs must be labelled.** Backfilled briefs carry
+  `reconstructed: true` and the UI labels them "reconstructed from archived
+  data" — never presented as written at the time. They are grounded strictly
+  in `data/snapshots.ndjson` as of their date; never fabricated or
+  forward-looking.
 - **Glossary**: Separate `.yaml` per locale. AI prompt includes glossary to ensure consistent terminology.
 - **Citations**: Every claim in the brief must have a source URL. Stored in `briefs.citations` as JSON.
 
 ### Licensing
 
-- **ISW daily assessments**: Cite and link. Fair-use summary only; never republish the full assessment.
-- **Russia Matters**: Same — cite, link, summarize, don't republish.
-- **GDELT, UCDP, Kiel, Oryx, NASA FIRMS**: CC BY or public domain. Always credit.
+- **GDELT, Kiel, NASA FIRMS, Manifold, World Bank**: CC BY or public domain. Always credit.
 
 ### Phase structure
 
-**Phase 0**: Repo + CI + Astro skeleton + i18n routing + Workers + Tailwind. **Status**: In progress.
+**Phase 0** (done): Repo + CI + Astro skeleton + i18n routing + Workers + Tailwind.
 
-**Phase 1**: Hero CDF chart live with real data (UK + EN). Polymarket + Kalshi collectors, CDF computation, HeroChart island, stat cards.
+**Phase 1** (done): Hero CDF chart live with real data (uk/en/ru). Polymarket + Manifold collectors, CDF computation, HeroChart island, two summary cards (closest-to-consensus, most-optimistic).
 
-**Phase 2**: Supporting widgets (GDELT, Kiel, NBU, CBR, World Bank, FIRMS collectors; Sparkline, EventList, IndicatorCard).
+**Phase 2** (done): Secondary "war in data" timeline + collectors (GDELT, Kiel, NBU FX, NBU CPI, CBR, World Bank Indicators + Global Economic Monitor, FIRMS). The earlier "today on the ground" cards and editorial event list were removed.
 
-**Phase 3**: Weekly brief generation (LLM Worker, admin page, glossary review).
+**Phase 3**: Brief generation — auto-published on data refresh
+(`draft-brief.ts`), historical backfill (`backfill-briefs.ts`), inline brief
+timeline, glossary review. No admin/review page (auto-publish; integrity
+guards in `llm.ts` replace review).
 
-**Phase 4**: Polish + launch (A11y audit, perf budget, RU locale, Playwright E2E, analytics, Sentry).
+**Phase 4** (done): Polish + launch — initial public version (see `data/changelog.json`).
 
 ### Always do
 
@@ -183,8 +201,11 @@ whenwarends/
 ### Never do
 
 - Commit `.dev.vars`, `.env`, secrets, or private keys.
-- Auto-publish AI-generated content. No exceptions.
-- Republish ISW or Russia Matters content beyond fair-use citation.
+- Ship a brief that bypasses the `src/lib/llm.ts` integrity guards (citation
+  allow-list, refusal, truncation) — these replace human review and are not
+  optional. (Auto-publishing itself is now intended; see "AI & editorial".)
+- Present a reconstructed (backfilled) brief as if written at the time, or
+  ground one in anything other than `data/snapshots.ndjson` as of its date.
 - Add emoji to the UI.
 - Use `any` without an inline justification comment.
 - Ship hardcoded "war is ongoing" assumptions. Schema must support "war ended" pivot.
@@ -193,19 +214,17 @@ whenwarends/
 
 | Source | Use | License | Notes |
 |---|---|---|---|
-| Polymarket Gamma + Data API | Primary forecast probabilities | Public, viewable globally | Free, no auth required |
-| Kalshi public market data | Secondary forecast signal | Public | Free, no auth required |
-| GDELT 2.0 | Conflict intensity, event density | CC BY | Free BigQuery tier ~6TB/month |
-| UCDP Georeferenced Events | Academic baseline for intensity | CC BY 4.0 | Free download |
-| Kiel Ukraine Support Tracker | Aid commitments curve | CC BY 4.0 | Free download |
-| NASA FIRMS | Fire/heat anomalies (combat proxy) | Public domain | Free API key; rate limits: 100k events/month |
-| World Bank | Russian macro indicators | Public | Free API |
-| IMF | Russian macro indicators | Public | Free API |
-| Russian CBR | FX rates, reserves | Public | Free website scrape |
-| Ukrainian NBU | FX rates, reserves | Public | Free API |
-| ISW daily assessments | Cite & link only | Standard copyright | Fair-use citation only |
-| Russia Matters | Cite & link only | Standard copyright | Fair-use citation only |
-| Oryx open dataset | Equipment losses (attributed) | CC BY-NC | Free download; non-commercial use |
+| Polymarket Gamma + Data API | Primary war-end probabilities + history | Public, viewable globally | Free, no auth |
+| Manifold Markets API | Secondary forecast signal; per-bet history | Public (CC BY 4.0) | Free, no auth |
+| GDELT 2.0 DOC API | Conflict volume intensity + tone | CC BY | Free; ~1 req / 5 s rate limit |
+| Kiel Ukraine Support Tracker | Aid commitments (.xlsx) | CC BY 4.0 | Free download; `KIEL_DATASET_URL` |
+| NASA FIRMS | Fire/heat anomalies (combat proxy) | Public domain | Free API key (`FIRMS_MAP_KEY`) |
+| World Bank (Indicators + Global Economic Monitor) | RU annual macro; RU monthly CPI; RU/UA quarterly real GDP | Public | Free API |
+| National Bank of Ukraine | UAH/USD FX; Ukraine monthly headline CPI | Public | Free API |
+| Central Bank of Russia | RUB/USD FX (official daily) | Public | Free |
+| European Central Bank (via Frankfurter) | Daily reference rates for EUR conversion | Public | Free |
+
+Implemented collectors only — registry: `src/workers/collectors/index.ts`. UCDP, IMF, Oryx, Kalshi, Metaculus, ISW, Russia Matters were considered but are not collected.
 
 ## Cost envelope (realistic, weekly cadence)
 
@@ -218,7 +237,10 @@ whenwarends/
 
 ## Editorial calendar (Phase 3+)
 
-**Weekly cadence**: Sunday 08:00 UTC data pull → LLM draft → Editor review by Tuesday 23:59 UTC → Publish or "no brief this week" notice.
+**Weekly cadence**: Sunday 08:00 UTC data pull → if the data changed, LLM
+draft → integrity guards (`llm.ts`) → auto-publish + commit (one push →
+rebuild + deploy). No editor step. Historical archive backfilled on demand
+via `npm run backfill-briefs` (manual, not CI; idempotent).
 
 **Glossary review** (separate, async): Weekly review of AI-generated terminology for accuracy and tone per language.
 

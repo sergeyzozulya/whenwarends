@@ -59,3 +59,17 @@ export const CbrDailySchema = z.object({
 });
 
 export type CbrDaily = z.infer<typeof CbrDailySchema>;
+
+// XML_dynamic.asp — historical single-currency series. Real captured shape
+// (2026-05-19): `<ValCurs ID="R01235" DateRange1=... DateRange2=...>` with
+// `<Record Date="DD.MM.YYYY" Id="R01235"><Nominal>1</Nominal>
+// <Value>86,9288</Value><VunitRate>86,9288</VunitRate></Record>` rows — no
+// CharCode/NumCode (single currency). Validates one post-extraction record,
+// already normalised (comma→dot, DD.MM.YYYY→ISO) by the collector.
+export const CbrHistoryRecordSchema = z.object({
+  DateIso: z.string().datetime(),
+  Nominal: z.number().int().positive(),
+  Value: z.number().finite(),
+});
+
+export type CbrHistoryRecord = z.infer<typeof CbrHistoryRecordSchema>;

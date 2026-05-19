@@ -2,6 +2,8 @@ import { describe, it, expect } from 'vitest';
 import type { Env } from '../../../src/lib/types';
 import {
   createNbuCollector,
+  collectNbuHistory,
+  nbuHistoryUrl,
   nbuDateToIsoUtc,
   NBU_UAH_USD_METRIC,
   NBU_EXCHANGE_URL,
@@ -125,5 +127,72 @@ describe('nbuCollector', () => {
     await expect(
       createNbuCollector(fetcherReturning(payload)).run(fakeEnv)
     ).rejects.toThrow();
+  });
+});
+
+describe('nbu history (monthly per-date)', () => {
+  it('builds the single-currency per-date URL', () => {
+    const u = nbuHistoryUrl(Date.UTC(2022, 1, 1));
+    expect(u).toContain('valcode=USD');
+    expect(u).toContain('date=20220201');
+    expect(u).toContain('json');
+    expect(
+      u.startsWith(
+        'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?'
+      )
+    ).toBe(true);
+  });
+
+  // Echoes a USD row whose exchangedate matches the requested ?date=, so each
+  // month yields a distinct ts (mirrors real NBU behaviour).
+  const byDate =
+    (rate = 40) =>
+    async (url: string): Promise<unknown> => {
+      const m = /date=(\d{4})(\d{2})(\d{2})/.exec(url);
+      if (!m) return [];
+      const [, y, mo, d] = m;
+      return [
+        {
+          r030: 840,
+          txt: 'Долар США',
+          rate,
+          cc: 'USD',
+          exchangedate: `${d}.${mo}.${y}`,
+        },
+      ];
+    };
+
+  it('emits one ascending monthly snapshot per month in range', async () => {
+    const { snapshots } = await collectNbuHistory(
+      Date.UTC(2022, 0, 1),
+      Date.UTC(2022, 2, 1),
+      byDate(38.5)
+    );
+    expect(snapshots).toHaveLength(3); // Jan, Feb, Mar 2022
+    expect(snapshots.every((s) => s.metric === NBU_UAH_USD_METRIC)).toBe(true);
+    expect(snapshots.every((s) => s.source === 'nbu')).toBe(true);
+    expect(snapshots.every((s) => s.value === 38.5)).toBe(true);
+    const ts = snapshots.map((s) => s.ts);
+    expect([...ts]).toEqual([...ts].sort());
+    expect(ts[0]).toBe(nbuDateToIsoUtc('01.01.2022'));
+  });
+
+  it('skips months with no official rate, never fabricating', async () => {
+    const fetcher = async (url: string): Promise<unknown> =>
+      url.includes('date=20220201') ? [] : byDate()(url);
+    const { snapshots } = await collectNbuHistory(
+      Date.UTC(2022, 0, 1),
+      Date.UTC(2022, 2, 1),
+      fetcher
+    );
+    expect(snapshots).toHaveLength(2); // Feb skipped (empty), not invented
+  });
+
+  it('throws only when every month fails', async () => {
+    await expect(
+      collectNbuHistory(Date.UTC(2022, 0, 1), Date.UTC(2022, 1, 1), async () => {
+        throw new Error('network');
+      })
+    ).rejects.toThrow(/every monthly request failed/);
   });
 });

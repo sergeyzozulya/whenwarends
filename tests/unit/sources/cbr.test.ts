@@ -1,8 +1,11 @@
 import { describe, it, expect } from 'vitest';
 import {
   collectCbr,
+  collectCbrHistory,
   cbrCollector,
+  cbrDynamicUrl,
   CBR_DAILY_URL,
+  CBR_USD_VAL_NM,
   SOURCE,
   METRIC_RUB_USD_RATE,
   type TextFetcher,
@@ -133,5 +136,55 @@ describe('cbr collector', () => {
   it('exposes a Collector with the stable name', () => {
     expect(cbrCollector.name).toBe(SOURCE);
     expect(typeof cbrCollector.run).toBe('function');
+  });
+});
+
+// Real captured https://www.cbr.ru/scripts/XML_dynamic.asp shape (2026-05-19):
+// single-currency series, `<Record Date="DD.MM.YYYY">` rows with comma
+// decimals and no CharCode/NumCode.
+const dynamicXml = `<?xml version="1.0" encoding="windows-1251"?><ValCurs ID="R01235" DateRange1="24.02.2022" DateRange2="01.03.2022" name="Foreign Currency Market Dynamic"><Record Date="25.02.2022" Id="R01235"><Nominal>1</Nominal><Value>86,9288</Value><VunitRate>86,9288</VunitRate></Record><Record Date="26.02.2022" Id="R01235"><Nominal>1</Nominal><Value>83,5485</Value><VunitRate>83,5485</VunitRate></Record></ValCurs>`;
+
+describe('cbr history (XML_dynamic)', () => {
+  const FROM = Date.UTC(2022, 1, 24);
+  const TO = Date.UTC(2022, 2, 1);
+
+  it('builds a DD/MM/YYYY USD dynamic URL', () => {
+    const u = cbrDynamicUrl(FROM, TO);
+    expect(u).toContain('date_req1=24/02/2022');
+    expect(u).toContain('date_req2=01/03/2022');
+    expect(u).toContain(`VAL_NM_RQ=${CBR_USD_VAL_NM}`);
+    expect(u.startsWith('https://www.cbr.ru/scripts/XML_dynamic.asp?')).toBe(
+      true
+    );
+  });
+
+  it('maps every Record to a rub_usd_rate snapshot, comma-decimals normalised', async () => {
+    const fetcher: TextFetcher = async () => dynamicXml;
+    const { snapshots } = await collectCbrHistory(FROM, TO, fetcher);
+    expect(snapshots).toHaveLength(2);
+    expect(snapshots.every((s) => s.metric === METRIC_RUB_USD_RATE)).toBe(true);
+    expect(snapshots.every((s) => s.source === SOURCE)).toBe(true);
+    expect(snapshots[0].value).toBeCloseTo(86.9288, 6);
+    expect(snapshots[1].value).toBeCloseTo(83.5485, 6);
+    // 25.02.2022 00:00 Moscow (+03:00) → 24.02.2022 21:00Z.
+    expect(snapshots[0].ts).toBe('2022-02-24T21:00:00.000Z');
+    expect(new Date(snapshots[0].ts).toISOString()).toBe(snapshots[0].ts);
+  });
+
+  it('skips malformed rows but never fabricates, and fails on an empty body', async () => {
+    const partial = dynamicXml.replace(
+      '<Record Date="26.02.2022" Id="R01235"><Nominal>1</Nominal><Value>83,5485</Value><VunitRate>83,5485</VunitRate></Record>',
+      '<Record Date="26.02.2022" Id="R01235"><Nominal>1</Nominal></Record>'
+    );
+    const { snapshots } = await collectCbrHistory(
+      FROM,
+      TO,
+      async () => partial
+    );
+    expect(snapshots).toHaveLength(1); // the partial row is skipped, not faked
+
+    await expect(
+      collectCbrHistory(FROM, TO, async () => '<ValCurs></ValCurs>')
+    ).rejects.toThrow(/no parseable Record/);
   });
 });

@@ -1,11 +1,19 @@
-// Weekly editorial brief drafting (Phase 3). Reads the current data files,
-// asks Claude to draft one brief per language, and writes them to
-// data/briefs.json as `pending_review`. NEVER publishes — a human approves by
-// reviewing/merging the PR that .github/workflows/brief.yml opens.
+// Editorial brief generation (Phase 3). Reads the current data files, asks
+// Claude to draft one brief per language, and AUTO-PUBLISHES each directly to
+// data/briefs.json (status `published`).
+//
+// Editorial policy (owner decision, 2026-05-18; see data/changelog.json and
+// CLAUDE.md): there is NO human review gate. The integrity safeguards in
+// llm.ts remain load-bearing and are what makes this safe enough to ship
+// unattended — enforced citation allow-list, refusal + truncation guards, and
+// per-language isolation: a language whose generation throws is simply not
+// (re)published, so a prior good brief for that language stays live rather
+// than being overwritten with garbage. The git commit is the audit trail.
 //
 // Node-only. Run locally with `npm run draft-brief` (needs ANTHROPIC_API_KEY);
-// runs weekly in CI. Per-language failure is isolated: one language failing
-// does not block the others; exits 1 only if every language failed.
+// runs in CI right after data collection. Per-language failure is isolated:
+// one language failing does not block the others; exits 1 only if every
+// language failed.
 
 import './loadEnv'; // must be first: populates process.env from .dev.vars
 import { readFileSync } from 'node:fs';
@@ -14,19 +22,7 @@ import { LANGS, type Lang, type Citation, type BriefRow } from '../src/lib/types
 import { readBriefs, writeBriefs } from '../src/lib/filestore';
 import { loadHomePayload } from '../src/lib/homepage';
 import { generateBrief } from '../src/lib/llm';
-
-// Standing data provenance. The brief may cite only these URLs (plus event
-// source URLs); llm.ts enforces the allow-list.
-const DATA_SOURCES: Citation[] = [
-  { source: 'Polymarket', url: 'https://polymarket.com', title: 'Market-implied war-end probabilities' },
-  { source: 'Kalshi', url: 'https://kalshi.com', title: 'Secondary forecast market' },
-  { source: 'GDELT Project', url: 'https://www.gdeltproject.org', title: 'Conflict intensity and tone' },
-  { source: 'Kiel Institute Ukraine Support Tracker', url: 'https://www.ifw-kiel.de/topics/war-against-ukraine/ukraine-support-tracker/', title: 'Aid commitments' },
-  { source: 'National Bank of Ukraine', url: 'https://bank.gov.ua', title: 'UAH exchange rate' },
-  { source: 'Central Bank of Russia', url: 'https://www.cbr.ru', title: 'RUB exchange rate' },
-  { source: 'World Bank', url: 'https://data.worldbank.org/country/russian-federation', title: 'Russian macro indicators' },
-  { source: 'NASA FIRMS', url: 'https://firms.modaps.eosdis.nasa.gov', title: 'Fire/heat anomalies' },
-];
+import { DATA_SOURCES } from '../src/lib/briefContext';
 
 function glossaryFor(lang: Lang): string {
   try {
@@ -56,7 +52,7 @@ function buildDataContext(): string {
   const ind = (name: string, d: typeof g.frontline) =>
     d.value === null
       ? `${name}: data unavailable${d.degraded ? ` (last good ${d.degraded.sinceHours}h ago)` : ''}.`
-      : `${name}: ${d.value}${d.estimateNote ? ' (ISW-observed estimate)' : ''}${d.degraded ? ` (stale, last good ${d.degraded.sinceHours}h ago)` : ''}.`;
+      : `${name}: ${d.value}${d.degraded ? ` (stale, last good ${d.degraded.sinceHours}h ago)` : ''}.`;
   lines.push(ind('Frontline / fire anomalies', g.frontline));
   lines.push(ind('Conflict intensity', g.intensity));
   lines.push(ind('Aid commitments (EUR)', g.aid));
@@ -115,27 +111,33 @@ async function main(): Promise<void> {
 
       const key = `${lang}|${weekOf}`;
       const priorId = byKey.get(key)?.id;
+      // Owner policy: auto-publish. The draft is published verbatim; there is
+      // no pending_review hop. `published` carries the live text, `status` is
+      // published, and reviewed_at is stamped now to mean "auto-approved at
+      // generation time". A throw above means this language is skipped
+      // entirely, so its previous published row survives untouched.
+      const now = new Date().toISOString();
       const row: BriefRow = {
         id: priorId ?? nextId++,
         lang,
         date: weekOf,
         draft,
-        published: null,
-        status: 'pending_review',
-        created_at: new Date().toISOString(),
-        reviewed_at: null,
+        published: draft,
+        status: 'published',
+        created_at: now,
+        reviewed_at: now,
         citations: JSON.stringify(citations),
       };
       byKey.set(key, row);
       ok++;
-      console.log(`✓ ${lang}: drafted (${citations.length} citations)`);
+      console.log(`✓ ${lang}: drafted & published (${citations.length} citations)`);
     } catch (err) {
       console.error(`✗ ${lang}: ${err instanceof Error ? err.message : String(err)}`);
     }
   }
 
   writeBriefs([...byKey.values()]);
-  console.log(`\ndraft-brief done — ${ok}/${LANGS.length} languages drafted for ${weekOf}`);
+  console.log(`\ndraft-brief done — ${ok}/${LANGS.length} languages published for ${weekOf}`);
   if (ok === 0) {
     console.error('every language failed — exiting non-zero');
     process.exit(1);

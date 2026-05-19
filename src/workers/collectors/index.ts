@@ -4,21 +4,25 @@
 
 import type { Collector } from '../../lib/types';
 import { polymarketCollector } from './polymarket';
-import { kalshiCollector } from './kalshi';
+import { manifoldCollector } from './manifold';
 import { gdeltCollector } from './gdelt';
 import { kielCollector } from './kiel';
 import { firmsCollector } from './firms';
 import { worldbankCollector } from './worldbank';
+import { worldbankGemCollector } from './worldbankGem';
 import { nbuCollector } from './nbu';
+import { nbuCpiCollector } from './nbuCpi';
 import { cbrCollector } from './cbr';
 
 export const allCollectors: Collector[] = [
   polymarketCollector,
-  kalshiCollector,
+  manifoldCollector,
   gdeltCollector,
   kielCollector,
   firmsCollector,
   worldbankCollector,
+  worldbankGemCollector,
   nbuCollector,
+  nbuCpiCollector,
   cbrCollector,
 ];

@@ -30,13 +30,13 @@ const FEEDS: Source[] = [
     },
   },
   {
-    name: 'Kalshi (public market data)',
-    url: 'https://kalshi.com',
-    license: 'Public',
+    name: 'Manifold Markets',
+    url: 'https://manifold.markets',
+    license: 'Public (CC BY 4.0)',
     use: {
-      en: 'Secondary forecast signal.',
-      uk: 'Додатковий сигнал прогнозу.',
-      ru: 'Дополнительный сигнал прогноза.',
+      en: 'Secondary forecast signal; per-bet history reconstructed.',
+      uk: 'Додатковий сигнал прогнозу; історія відновлена з кожної ставки.',
+      ru: 'Дополнительный сигнал прогноза; история восстановлена по ставкам.',
     },
   },
   {
@@ -70,13 +70,13 @@ const FEEDS: Source[] = [
     },
   },
   {
-    name: 'World Bank',
-    url: 'https://data.worldbank.org/country/russian-federation',
+    name: 'World Bank (Indicators + Global Economic Monitor)',
+    url: 'https://data.worldbank.org',
     license: 'Public',
     use: {
-      en: 'Russian macro indicators.',
-      uk: 'Макропоказники Росії.',
-      ru: 'Макропоказатели России.',
+      en: 'Russian annual macro, plus monthly CPI (Russia) and quarterly real GDP (Russia and Ukraine), % y/y.',
+      uk: 'Річні макропоказники Росії, а також місячний ІСЦ (Росія) та квартальний реальний ВВП (Росія й Україна), % р/р.',
+      ru: 'Годовые макропоказатели России, а также месячный ИПЦ (Россия) и квартальный реальный ВВП (Россия и Украина), % г/г.',
     },
   },
   {
@@ -84,9 +84,9 @@ const FEEDS: Source[] = [
     url: 'https://bank.gov.ua',
     license: 'Public',
     use: {
-      en: 'UAH exchange rate.',
-      uk: 'Курс гривні.',
-      ru: 'Курс гривны.',
+      en: 'UAH/USD exchange rate and Ukraine monthly headline CPI (% y/y).',
+      uk: 'Курс гривні до USD та місячний базовий ІСЦ України (% р/р).',
+      ru: 'Курс гривны к USD и месячный основной ИПЦ Украины (% г/г).',
     },
   },
   {
@@ -111,53 +111,28 @@ const FEEDS: Source[] = [
   },
 ];
 
-const CITED: Source[] = [
-  {
-    name: 'Institute for the Study of War (ISW)',
-    url: 'https://www.understandingwar.org',
-    license: 'Cited & linked only',
-    use: {
-      en: 'Basis for the frontline estimate; fair-use citation, never republished.',
-      uk: 'Основа оцінки фронту; цитування за принципом добросовісного використання, без передруку.',
-      ru: 'Основа оценки фронта; цитирование по принципу добросовестного использования, без перепечатки.',
-    },
-  },
-  {
-    name: 'Russia Matters',
-    url: 'https://www.russiamatters.org',
-    license: 'Cited & linked only',
-    use: {
-      en: 'Contextual reference; fair-use citation, never republished.',
-      uk: 'Контекстне посилання; цитування за принципом добросовісного використання.',
-      ru: 'Контекстная ссылка; цитирование по принципу добросовестного использования.',
-    },
-  },
-];
 
-const STR: Record<Lang, { lede: string; feeds: string; cited: string; useCol: string; licenceCol: string; footer: string }> = {
+const STR: Record<Lang, { lede: string; feeds: string; useCol: string; licenceCol: string; footer: string }> = {
   en: {
     lede: 'Every figure is traceable to a free, open, publicly accessible source. Nothing here is paid, scraped against terms, or behind a login.',
     feeds: 'Data feeds',
-    cited: 'Cited references (not ingested)',
     useCol: 'Use',
     licenceCol: 'Licence',
-    footer: 'This project is non-commercial and released under CC BY 4.0. Attributed datasets are credited above; ISW and Russia Matters are cited and linked only, never republished beyond fair use.',
+    footer: 'This project is non-commercial and released under CC BY 4.0. Attributed datasets are credited above.',
   },
   uk: {
     lede: 'Кожен показник простежується до безкоштовного, відкритого, публічно доступного джерела. Нічого платного, зібраного всупереч умовам чи за входом.',
     feeds: 'Джерела даних',
-    cited: 'Цитовані джерела (не імпортуються)',
     useCol: 'Використання',
     licenceCol: 'Ліцензія',
-    footer: 'Проєкт некомерційний і поширюється за CC BY 4.0. Набори даних атрибутовано вище; ISW і Russia Matters лише цитуються та лінкуються, без передруку поза добросовісним використанням.',
+    footer: 'Проєкт некомерційний і поширюється за CC BY 4.0. Набори даних атрибутовано вище.',
   },
   ru: {
     lede: 'Каждый показатель прослеживается до бесплатного, открытого, публично доступного источника. Ничего платного, собранного вопреки условиям или за логином.',
     feeds: 'Источники данных',
-    cited: 'Цитируемые источники (не импортируются)',
     useCol: 'Использование',
     licenceCol: 'Лицензия',
-    footer: 'Проект некоммерческий и распространяется по CC BY 4.0. Наборы данных атрибутированы выше; ISW и Russia Matters только цитируются и линкуются, без перепечатки за пределами добросовестного использования.',
+    footer: 'Проект некоммерческий и распространяется по CC BY 4.0. Наборы данных атрибутированы выше.',
   },
 };
 
@@ -182,7 +157,6 @@ const renderRows = (rows: Source[]) =>
     {
       [
         { title: s.feeds, rows: renderRows(FEEDS) },
-        { title: s.cited, rows: renderRows(CITED) },
       ].map((group) => (
         <section class="space-y-3">
           <h2 class="text-[18px] font-medium">{group.title}</h2>

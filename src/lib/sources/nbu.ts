@@ -82,7 +82,8 @@ async function run(_env: Env, fetcher: JsonFetcher): Promise<CollectorResult> {
 
 /**
  * Build an NBU collector. Pass a fetcher in tests to inject mock JSON; the
- * default uses the retry-aware shared `fetchJson`.
+ * default uses the retry-aware shared `fetchJson`. This is the CURRENT-only
+ * collector (one call to the all-currencies endpoint).
  */
 export function createNbuCollector(
   fetcher: JsonFetcher = defaultFetcher
@@ -93,4 +94,107 @@ export function createNbuCollector(
   };
 }
 
-export const nbuCollector: Collector = createNbuCollector();
+// Full-war history. NBU's statdirectory exposes only a single-`date` form
+// (verified live 2026-05-19: the `start`/`end` range form is ignored and
+// returns today's rate), so we sample one request per MONTH from the war
+// start to now — ~50 small public JSON calls, no auth, no rate-limit key.
+const NBU_HISTORY_START_UTC = Date.UTC(2022, 0, 1);
+
+/** Per-date single-currency endpoint for the 1st of the month at `ms`. */
+export function nbuHistoryUrl(ms: number): string {
+  const d = new Date(ms);
+  const p = (n: number) => String(n).padStart(2, '0');
+  const ymd = `${d.getUTCFullYear()}${p(d.getUTCMonth() + 1)}${p(
+    d.getUTCDate()
+  )}`;
+  return (
+    'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange' +
+    `?valcode=USD&date=${ymd}&json`
+  );
+}
+
+/** First-of-month UTC markers across [startMs, nowMs], oldest-first. */
+function monthlyMarkers(startMs: number, nowMs: number): number[] {
+  const out: number[] = [];
+  const s = new Date(startMs);
+  let y = s.getUTCFullYear();
+  let m = s.getUTCMonth();
+  for (;;) {
+    const ms = Date.UTC(y, m, 1);
+    if (ms > nowMs) break;
+    out.push(ms);
+    m += 1;
+    if (m > 11) {
+      m = 0;
+      y += 1;
+    }
+  }
+  return out;
+}
+
+/**
+ * Monthly UAH-per-USD history. One request per month; a month with no
+ * official rate (weekend/holiday 1st, or NBU gap) is skipped — never
+ * fabricated. Per-month fetch/parse errors are isolated; throws only if
+ * EVERY month failed, so the source stays failure-isolated at the runner.
+ */
+export async function collectNbuHistory(
+  fromMs: number,
+  nowMs: number,
+  fetcher: JsonFetcher = defaultFetcher
+): Promise<CollectorResult> {
+  const markers = monthlyMarkers(fromMs, nowMs);
+  const snapshots: SnapshotInput[] = [];
+  let attempted = 0;
+  let failed = 0;
+
+  for (const ms of markers) {
+    attempted++;
+    try {
+      const raw = await fetcher(nbuHistoryUrl(ms));
+      const rows = NbuExchangeResponseSchema.parse(raw);
+      const usd = rows.find((r) => r.cc.toUpperCase() === 'USD');
+      if (!usd || !Number.isFinite(usd.rate) || usd.rate <= 0) continue;
+      snapshots.push({
+        metric: NBU_UAH_USD_METRIC,
+        source: 'nbu',
+        ts: nbuDateToIsoUtc(usd.exchangedate),
+        value: usd.rate,
+        raw_blob: JSON.stringify(usd),
+        confidence: 1,
+      });
+    } catch {
+      failed++; // bad/empty month must not abort the whole series
+    }
+  }
+
+  if (attempted > 0 && failed === attempted) {
+    throw new Error('NBU history: every monthly request failed');
+  }
+  return { snapshots };
+}
+
+export const nbuCollector: Collector = {
+  name: 'nbu',
+  async run(env: Env): Promise<CollectorResult> {
+    // History (monthly, war start → now) is the substantive series; the
+    // current all-currencies call adds today's freshest point. Merge and
+    // de-dupe on ts (filestore also dedupes on (metric,source,ts)).
+    const hist = await collectNbuHistory(
+      NBU_HISTORY_START_UTC,
+      Date.now()
+    );
+    let current: CollectorResult = { snapshots: [] };
+    try {
+      current = await run(env, defaultFetcher);
+    } catch {
+      // The historical series alone is sufficient; a transient current-feed
+      // failure must not drop the already-fetched history.
+    }
+    const byTs = new Map<string, SnapshotInput>();
+    for (const s of [...hist.snapshots, ...current.snapshots]) {
+      byTs.set(s.ts, s);
+    }
+    return { snapshots: [...byTs.values()] };
+  },
+};

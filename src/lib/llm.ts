@@ -142,25 +142,42 @@ function userContent(input: BriefInput): string {
   ].join('\n');
 }
 
+/**
+ * Injectable message creator so unit tests never hit the network (mirrors the
+ * collectors' injectable-fetcher pattern). Defaults to the real Anthropic
+ * client; tests pass a stub returning a crafted Message.
+ */
+export type CreateMessage = (
+  params: Anthropic.MessageCreateParamsNonStreaming
+) => Promise<Anthropic.Message>;
+
 let cachedClient: Anthropic | null = null;
-function client(): Anthropic {
+const defaultCreateMessage: CreateMessage = (params) => {
   if (!process.env.ANTHROPIC_API_KEY) {
     throw new Error(
       'ANTHROPIC_API_KEY is not set — required to draft the weekly brief.'
     );
   }
   cachedClient ??= new Anthropic();
-  return cachedClient;
-}
+  return cachedClient.messages.create(params);
+};
 
 /**
- * Draft one brief for one language. Throws on refusal or if the model returns
- * no structured output, so the caller can isolate the failure per language.
+ * Draft one brief for one language. Throws on refusal, truncation, or if the
+ * model returns no structured output, so the caller can isolate the failure
+ * per language.
  */
-export async function generateBrief(input: BriefInput): Promise<BriefResult> {
-  const response = await client().messages.create({
+export async function generateBrief(
+  input: BriefInput,
+  createMessage: CreateMessage = defaultCreateMessage
+): Promise<BriefResult> {
+  const response = await createMessage({
     model: MODEL,
-    max_tokens: 8000,
+    // Adaptive thinking + effort:'high' on Opus 4.7 spends thinking tokens
+    // against this cap; the visible brief is short but the reasoning is not,
+    // so keep generous headroom (skill guidance: ~16000 non-streaming) — too
+    // low and the JSON answer truncates and JSON.parse throws opaquely.
+    max_tokens: 16000,
     thinking: { type: 'adaptive' },
     output_config: {
       effort: 'high',
@@ -184,6 +201,14 @@ export async function generateBrief(input: BriefInput): Promise<BriefResult> {
   if (response.stop_reason === 'refusal') {
     throw new Error(
       `brief[${input.lang}]: model refused (${response.stop_details?.explanation ?? 'no detail'})`
+    );
+  }
+
+  // Truncated output is unparseable JSON — fail explicitly per language
+  // rather than letting JSON.parse throw an opaque SyntaxError below.
+  if (response.stop_reason === 'max_tokens') {
+    throw new Error(
+      `brief[${input.lang}]: output truncated at max_tokens — raise max_tokens or lower effort`
     );
   }
 

@@ -32,6 +32,15 @@ const PRODUCT = 'VIIRS_SNPP_NRT';
  * ("Invalid day range. Expects [1..5]." otherwise) — verified live. */
 const LOOKBACK_DAYS = 5;
 
+// CURRENT-ONLY, by deliberate decision (2026-05-19). GDELT/CBR/NBU were
+// extended to real war-start history; FIRMS is intentionally NOT. Rationale:
+// the NRT product has no archive, and historical VIIRS would require hundreds
+// of ≤5-day chunked requests against the 100k-events/month budget — the
+// highest quota cost of any source for the weakest signal (a daily fire
+// count). So fire stays a recent-window proxy; reconstructed historical
+// briefs honestly report it as unavailable rather than burn the quota. This
+// is a documented choice, not an oversight (cf. CBR/NBU reserves omissions).
+
 const FIRMS_BASE = 'https://firms.modaps.eosdis.nasa.gov/api/area/csv';
 
 /** Injectable fetcher so tests can supply CSV text without a network. */

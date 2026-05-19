@@ -28,8 +28,8 @@ const CONTENT: Record<Lang, Page> = {
       {
         h: 'What this is, and is not',
         p: [
-          'This site never authors a prediction of its own. It displays probabilities derived from public prediction markets, observable dated events, and a clearly-labelled, human-reviewed editorial summary.',
-          'No number here is our forecast. Where a figure is an estimate rather than a measurement, it is labelled as such.',
+          'This site never authors a prediction of its own. It displays probabilities derived from public prediction markets and a timeline of measured indicators, alongside a clearly-labelled editorial summary that is auto-published behind code-level integrity guards.',
+          'No number here is our forecast. Where a figure is an estimate, or a brief reconstructed after the fact from archived data, it is labelled as such.',
         ],
       },
       {
@@ -38,7 +38,7 @@ const CONTENT: Record<Lang, Page> = {
           'The main chart is a cumulative distribution: for each date, the market-implied probability that the war has ended by then. It rises monotonically and asymptotes below 100% — markets rarely price certainty.',
         ],
         ul: [
-          'Pull war-end / ceasefire markets from Polymarket and Kalshi.',
+          'Pull war-end / ceasefire markets from Polymarket and Manifold.',
           'Per resolution date, take the liquidity-weighted "yes" price.',
           'Drop dates whose total liquidity is below $10,000 (thin, unreliable).',
           'Isotonic regression (weighted pool-adjacent-violators) enforces monotonicity.',
@@ -47,22 +47,33 @@ const CONTENT: Record<Lang, Page> = {
         ],
       },
       {
-        h: 'Definition toggle',
+        h: 'Two summary cards',
         p: [
-          'The end of the war can mean different things. The chart can switch between ceasefire, formal peace deal, or either. The default is ceasefire.',
+          'Above the curve, two cards read the individual markets directly. "Closest date" is the single market point sitting nearest the fitted consensus curve — the most representative bet. "Most optimistic" is the live market assigning the highest probability that the war has ended, with its date.',
         ],
       },
       {
-        h: 'Supporting indicators',
+        h: 'The war in data',
         p: [
-          'The five "today on the ground" cards are context, not forecasts. Conflict intensity comes from GDELT event density and tone. Aid commitments come from the Kiel Ukraine Support Tracker, converted to euros at the daily ECB reference rate. The Russian-economy and Ukrainian-economy cards use official central-bank FX (CBR and NBU). The combat-zone fire-activity card is the count of NASA FIRMS VIIRS fire/heat detections over Ukraine, summed across the last five days — a measured combat-activity proxy, not an ISW estimate and not a literal frontline position.',
-          'When a source is unreachable, its widget shows "data unavailable, last good X hours ago" rather than a stale or invented number. One failing source degrades one widget, never the page.',
+          'Below the curve, a scrubbable timeline shares one date axis from the full-scale invasion to the latest data. Drag the cursor to read every series as of that date.',
+        ],
+        ul: [
+          'Conflict intensity, tone & fire — GDELT volume intensity (share of monitored global news matching the war query) and average tone, over a white→red NASA FIRMS fire/heat density band.',
+          'Currency vs USD — official daily central-bank rates: RUB from the Central Bank of Russia, UAH from the National Bank of Ukraine.',
+          'GDP — real, % y/y, quarterly — Russia and Ukraine, derived as the four-quarter ratio of the World Bank Global Economic Monitor seasonally-adjusted level series (no interpolation between quarters).',
+          'Inflation — CPI, % y/y, monthly — Russia from the World Bank Global Economic Monitor; Ukraine from the National Bank of Ukraine headline series.',
+        ],
+      },
+      {
+        h: 'Honest gaps',
+        p: [
+          'Series are drawn as step lines: a value holds until the next real observation — no straight-line interpolation that would invent figures between sparse points. A month or quarter the source never published is skipped, never fabricated. When a source is unreachable its series simply does not extend; one failing source degrades one row, never the page.',
         ],
       },
       {
         h: 'Cadence and editorial control',
         p: [
-          'Data is collected weekly (Sunday 08:00 UTC). The editorial brief is drafted by an AI model and is never auto-published — a human editor reviews, edits, or rejects it before it appears. If the editor does not act, the previous brief stays with a "no fresh brief this week" notice.',
+          'Data is collected weekly (Sunday 08:00 UTC). The editorial brief is drafted by an AI model and auto-published on each data refresh — there is no human approval gate. Integrity is enforced in code instead: an enforced citation allow-list (a URL never supplied is never cited), a refusal guard, and a truncation guard; generation is per-language isolated so one failing language cannot overwrite a good brief. Briefs reconstructed for past dates are labelled "reconstructed from archived data" and are grounded strictly in the snapshots as of their date.',
         ],
       },
       {
@@ -79,8 +90,8 @@ const CONTENT: Record<Lang, Page> = {
       {
         h: 'Що це таке і чим не є',
         p: [
-          'Сайт ніколи не створює власного прогнозу. Він показує ймовірності з публічних ринків передбачень, спостережувані датовані події та чітко позначений, перевірений редактором огляд.',
-          'Жодне число тут не є нашим прогнозом. Якщо показник є оцінкою, а не виміром, він позначений відповідно.',
+          'Сайт ніколи не створює власного прогнозу. Він показує ймовірності з публічних ринків передбачень і хронологію виміряних показників, поряд із чітко позначеним оглядом, що публікується автоматично під захистом програмних запобіжників цілісності.',
+          'Жодне число тут не є нашим прогнозом. Якщо показник є оцінкою або оглядом, відновленим заднім числом з архівних даних, він позначений відповідно.',
         ],
       },
       {
@@ -89,7 +100,7 @@ const CONTENT: Record<Lang, Page> = {
           'Основний графік — це сукупний розподіл: для кожної дати — ринкова ймовірність того, що війна завершилася до неї. Крива монотонно зростає й асимптотично залишається нижче 100%.',
         ],
         ul: [
-          'Беремо ринки завершення війни / припинення вогню з Polymarket і Kalshi.',
+          'Беремо ринки завершення війни / припинення вогню з Polymarket і Manifold.',
           'Для кожної дати — ціна «так», зважена за ліквідністю.',
           'Відкидаємо дати із сукупною ліквідністю нижче $10 000.',
           'Ізотонічна регресія забезпечує монотонність.',
@@ -98,22 +109,33 @@ const CONTENT: Record<Lang, Page> = {
         ],
       },
       {
-        h: 'Перемикач визначення',
+        h: 'Дві зведені картки',
         p: [
-          'Завершення війни можна розуміти по-різному. Графік перемикається між припиненням вогню, офіційною мирною угодою або будь-чим із цього. Типово — припинення вогню.',
+          'Над кривою дві картки читають окремі ринки напряму. «Найближча дата» — це ринкова точка, найближча до підігнаної кривої консенсусу, тобто найрепрезентативніша ставка. «Найоптимістичніший» — це активний ринок із найвищою ймовірністю того, що війна завершилася, із його датою.',
         ],
       },
       {
-        h: 'Допоміжні показники',
+        h: 'Війна в даних',
         p: [
-          'П’ять карток «сьогодні на місцях» — це контекст, а не прогнози. Інтенсивність бойових дій — з даних GDELT. Зобов’язання щодо допомоги — з Кільського трекера, переведені в євро за денним курсом ЄЦБ. Картки економіки Росії та України використовують офіційні курси центральних банків (ЦБ РФ і НБУ). Картка пожежної активності — це сума виявлень пожеж/тепла VIIRS NASA FIRMS над Україною за останні п’ять днів: вимірюваний проксі бойової активності, а не оцінка ISW і не буквальне положення фронту.',
-          'Якщо джерело недоступне, віджет показує «дані недоступні, останні коректні дані X год тому», а не застаріле чи вигадане число. Одне несправне джерело псує лише один віджет, а не сторінку.',
+          'Під кривою — хронологія з прокручуванням, що має спільну вісь дат від повномасштабного вторгнення до останніх даних. Перетягуйте курсор, щоб читати кожен ряд станом на цю дату.',
+        ],
+        ul: [
+          'Інтенсивність конфлікту, тональність і пожежі — обсягова інтенсивність GDELT (частка моніторингових світових новин за запитом про війну) і середня тональність поверх смуги щільності пожеж/тепла NASA FIRMS (білий→червоний).',
+          'Курс валют до USD — офіційні денні курси центральних банків: рубль від ЦБ РФ, гривня від НБУ.',
+          'ВВП — реальний, % р/р, поквартально — Росія та Україна, обчислено як відношення чотирьох кварталів сезонно скоригованих рівнів World Bank Global Economic Monitor (без інтерполяції між кварталами).',
+          'Інфляція — ІСЦ, % р/р, щомісяця — Росія з World Bank Global Economic Monitor; Україна з основного ряду НБУ.',
+        ],
+      },
+      {
+        h: 'Чесні пропуски',
+        p: [
+          'Ряди малюються східчастими лініями: значення тримається до наступного реального спостереження — без прямолінійної інтерполяції, яка вигадувала б числа між рідкісними точками. Місяць чи квартал, який джерело не публікувало, пропускається, а не вигадується. Якщо джерело недоступне, його ряд просто не продовжується; одне несправне джерело псує один рядок, а не сторінку.',
         ],
       },
       {
         h: 'Періодичність і редакційний контроль',
         p: [
-          'Дані збираються щотижня (неділя, 08:00 UTC). Огляд готує модель ШІ, і він ніколи не публікується автоматично — редактор перевіряє, редагує або відхиляє його. Якщо редактор не діє, залишається попередній огляд із приміткою «цього тижня нового огляду немає».',
+          'Дані збираються щотижня (неділя, 08:00 UTC). Огляд готує модель ШІ, і він публікується автоматично під час кожного оновлення даних — без етапу людського затвердження. Натомість цілісність забезпечується в коді: примусовий перелік дозволених посилань (URL, який не було надано, ніколи не цитується), запобіжник відмови та запобіжник обрізання; генерація ізольована за мовами, тож одна збійна мова не може перезаписати якісний огляд. Огляди, відновлені для минулих дат, позначені «відновлено з архівних даних» і ґрунтуються виключно на знімках станом на їхню дату.',
         ],
       },
       {
@@ -130,8 +152,8 @@ const CONTENT: Record<Lang, Page> = {
       {
         h: 'Что это и чем не является',
         p: [
-          'Сайт никогда не создаёт собственный прогноз. Он показывает вероятности с публичных рынков предсказаний, наблюдаемые датированные события и чётко обозначенную, проверенную редактором сводку.',
-          'Ни одно число здесь не является нашим прогнозом. Если показатель — оценка, а не измерение, он помечен соответственно.',
+          'Сайт никогда не создаёт собственный прогноз. Он показывает вероятности с публичных рынков предсказаний и хронологию измеренных показателей, рядом с чётко обозначенной сводкой, которая публикуется автоматически под защитой программных гарантий целостности.',
+          'Ни одно число здесь не является нашим прогнозом. Если показатель — оценка или сводка, восстановленная задним числом из архивных данных, он помечен соответственно.',
         ],
       },
       {
@@ -140,7 +162,7 @@ const CONTENT: Record<Lang, Page> = {
           'Основной график — совокупное распределение: для каждой даты — рыночная вероятность того, что война завершилась к ней. Кривая монотонно растёт и асимптотически остаётся ниже 100%.',
         ],
         ul: [
-          'Берём рынки завершения войны / прекращения огня с Polymarket и Kalshi.',
+          'Берём рынки завершения войны / прекращения огня с Polymarket и Manifold.',
           'Для каждой даты — цена «да», взвешенная по ликвидности.',
           'Отбрасываем даты с совокупной ликвидностью ниже $10 000.',
           'Изотоническая регрессия обеспечивает монотонность.',
@@ -149,22 +171,33 @@ const CONTENT: Record<Lang, Page> = {
         ],
       },
       {
-        h: 'Переключатель определения',
+        h: 'Две сводные карточки',
         p: [
-          'Завершение войны можно понимать по-разному. График переключается между прекращением огня, официальным мирным соглашением или любым из этого. По умолчанию — прекращение огня.',
+          'Над кривой две карточки читают отдельные рынки напрямую. «Ближайшая дата» — рыночная точка, ближайшая к подогнанной кривой консенсуса, то есть наиболее репрезентативная ставка. «Самый оптимистичный» — активный рынок с наибольшей вероятностью того, что война завершилась, с его датой.',
         ],
       },
       {
-        h: 'Вспомогательные показатели',
+        h: 'Война в данных',
         p: [
-          'Пять карточек «сегодня на местах» — это контекст, а не прогнозы. Интенсивность боевых действий — из данных GDELT. Обязательства по помощи — из Кильского трекера, переведённые в евро по дневному курсу ЕЦБ. Карточки экономики России и Украины используют официальные курсы центральных банков (ЦБ РФ и НБУ). Карточка пожарной активности — это сумма обнаружений пожаров/тепла VIIRS NASA FIRMS над Украиной за последние пять дней: измеряемый прокси боевой активности, а не оценка ISW и не буквальное положение фронта.',
-          'Если источник недоступен, виджет показывает «данные недоступны, последние корректные данные X ч назад», а не устаревшее или выдуманное число. Один неисправный источник портит лишь один виджет, а не страницу.',
+          'Под кривой — прокручиваемая хронология с общей осью дат от полномасштабного вторжения до последних данных. Перетаскивайте курсор, чтобы читать каждый ряд по состоянию на эту дату.',
+        ],
+        ul: [
+          'Интенсивность конфликта, тональность и пожары — объёмная интенсивность GDELT (доля мониторинговых мировых новостей по запросу о войне) и средняя тональность поверх полосы плотности пожаров/тепла NASA FIRMS (белый→красный).',
+          'Курс валют к USD — официальные дневные курсы центральных банков: рубль от ЦБ РФ, гривна от НБУ.',
+          'ВВП — реальный, % г/г, поквартально — Россия и Украина, вычислено как отношение четырёх кварталов сезонно скорректированных уровней World Bank Global Economic Monitor (без интерполяции между кварталами).',
+          'Инфляция — ИПЦ, % г/г, помесячно — Россия из World Bank Global Economic Monitor; Украина из основного ряда НБУ.',
+        ],
+      },
+      {
+        h: 'Честные пропуски',
+        p: [
+          'Ряды рисуются ступенчатыми линиями: значение держится до следующего реального наблюдения — без прямолинейной интерполяции, которая выдумывала бы числа между редкими точками. Месяц или квартал, который источник не публиковал, пропускается, а не выдумывается. Если источник недоступен, его ряд просто не продолжается; один неисправный источник портит одну строку, а не страницу.',
         ],
       },
       {
         h: 'Периодичность и редакционный контроль',
         p: [
-          'Данные собираются еженедельно (воскресенье, 08:00 UTC). Сводку готовит модель ИИ, и она никогда не публикуется автоматически — редактор проверяет, правит или отклоняет её. Если редактор не действует, остаётся предыдущая сводка с пометкой «на этой неделе новой сводки нет».',
+          'Данные собираются еженедельно (воскресенье, 08:00 UTC). Сводку готовит модель ИИ, и она публикуется автоматически при каждом обновлении данных — без этапа человеческого одобрения. Вместо этого целостность обеспечивается в коде: принудительный список разрешённых ссылок (URL, который не был предоставлен, никогда не цитируется), предохранитель отказа и предохранитель усечения; генерация изолирована по языкам, поэтому один сбойный язык не может перезаписать качественную сводку. Сводки, восстановленные для прошлых дат, помечены «восстановлено из архивных данных» и основаны исключительно на снимках по состоянию на их дату.',
         ],
       },
       {
@@ -201,9 +234,5 @@ const c = CONTENT[lang];
         </section>
       ))
     }
-    <nav class="flex gap-6 border-t border-gray-200 pt-4 text-[13px]">
-      <a class="text-[#2c5aa0] hover:underline" href={`/${lang}/sources`}>{t('common.sources')}</a>
-      <a class="text-[#2c5aa0] hover:underline" href={`/${lang}/changelog`}>{t('common.changelog')}</a>
-    </nav>
   </article>
 </Layout>

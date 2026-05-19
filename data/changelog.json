@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "id": 1,
+    "date": "2026-05-19",
+    "category": "release",
+    "description": "Initial public version. Market-implied war-end CDF (Polymarket + Manifold) with closest-to-consensus and most-optimistic summary cards; a scrubbable \"war in data\" timeline of conflict intensity/tone/fire (GDELT + NASA FIRMS), currency vs USD (CBR + NBU), and real GDP and CPI year-on-year for Russia and Ukraine (World Bank Global Economic Monitor + NBU). AI-drafted weekly briefs are auto-published behind integrity guards; reconstructed historical briefs are labelled. Three languages (uk, en, ru), static-first on Cloudflare's free tier."
+  }
+]

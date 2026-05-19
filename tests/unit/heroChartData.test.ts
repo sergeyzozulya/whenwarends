@@ -9,6 +9,7 @@ import {
   MAX_HORIZON_MONTHS,
   MIN_HORIZON_MONTHS,
   selectMedianPoint,
+  marketBucket,
   type CurveSet,
 } from '../../src/lib/heroChartData';
 
@@ -142,15 +143,17 @@ describe('buildChartSeries', () => {
     expect(s.knotPoints[1].x).toBe(isoToMs('2027-01-01T00:00:00Z'));
   });
 
-  it('sets X bounds from today across the default horizon', () => {
+  it('X starts at today and ends at the latest data we have', () => {
     const s = buildChartSeries(curveSet, today);
     expect(s.todayMs).toBe(isoToMs(today));
     expect(s.xMin).toBe(isoToMs(today));
-    expect(s.xMax).toBe(addMonthsUtc(isoToMs(today), DEFAULT_HORIZON_MONTHS));
+    // Furthest priced point (curve reaches 2027-05-18), not a fixed horizon.
+    expect(s.xMax).toBe(isoToMs('2027-05-18T00:00:00Z'));
   });
 
-  it('respects a custom (clamped) horizon', () => {
-    const s = buildChartSeries(curveSet, today, 1000);
+  it('falls back to the clamped horizon only when there is no data', () => {
+    const empty: CurveSet = { curve: [], knots: [], median: null };
+    const s = buildChartSeries(empty, today, 1000);
     expect(s.xMax).toBe(addMonthsUtc(isoToMs(today), MAX_HORIZON_MONTHS));
   });
 
@@ -182,5 +185,26 @@ describe('buildChartSeries', () => {
     );
     expect(s.data[0].y).toBe(0);
     expect(s.data[1].y).toBe(1);
+  });
+});
+
+describe('marketBucket', () => {
+  it('classifies real market questions by type', () => {
+    expect(
+      marketBucket('Russia x Ukraine ceasefire agreement by May 31, 2026?')
+    ).toBe('ceasefireAgreement');
+    expect(marketBucket('Russia x Ukraine ceasefire by June 30, 2026?')).toBe(
+      'ceasefire'
+    );
+    expect(marketBucket('Ukraine signs peace deal with Russia by June 30?')).toBe(
+      'peaceDeal'
+    );
+    expect(
+      marketBucket('Ukraine officially agrees to a US backed ceasefire framework')
+    ).toBe('framework');
+    expect(
+      marketBucket('Will Volodymyr Zelenskyy leave President of Ukraine before Jul 1, 2026')
+    ).toBe('leadership');
+    expect(marketBucket('Some unrelated question')).toBe('other');
   });
 });

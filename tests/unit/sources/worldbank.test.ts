@@ -154,40 +154,26 @@ describe('indicatorUrl', () => {
 });
 
 describe('mapWorldBankResponse', () => {
-  it('picks the latest non-null observation and emits a UTC ISO ts', () => {
-    const snap = mapWorldBankResponse(gdpResponse, 'ru_gdp_growth');
-    expect(snap).not.toBeNull();
-    expect(snap?.metric).toBe('ru_gdp_growth');
-    expect(snap?.source).toBe(WORLDBANK_SOURCE);
-    // 2024 is null -> latest real observation is 2023.
-    expect(snap?.ts).toBe('2023-01-01T00:00:00.000Z');
-    expect(snap?.value).toBe(3.6);
-    expect(snap?.confidence).toBe(1);
+  it('emits one snapshot per non-null year as a UTC ISO ts', () => {
+    const snaps = mapWorldBankResponse(gdpResponse, 'ru_gdp_growth');
+    expect(Array.isArray(snaps)).toBe(true);
+    expect(snaps.length).toBeGreaterThanOrEqual(2); // 2023, 2022, …
+    expect(snaps.every((s) => s.metric === 'ru_gdp_growth')).toBe(true);
+    expect(snaps.every((s) => s.source === WORLDBANK_SOURCE)).toBe(true);
+    expect(snaps.every((s) => s.confidence === 1)).toBe(true);
+    // 2024 is null → skipped, never fabricated.
+    expect(snaps.some((s) => s.ts === '2024-01-01T00:00:00.000Z')).toBe(false);
+    const y2023 = snaps.find((s) => s.ts === '2023-01-01T00:00:00.000Z');
+    expect(y2023?.value).toBe(3.6);
+    const y2022 = snaps.find((s) => s.ts === '2022-01-01T00:00:00.000Z');
+    expect(y2022?.value).toBe(-1.2); // negatives kept (not clamped 0–1)
   });
 
-  it('keeps negative macro percentages as-is (not clamped to 0–1)', () => {
-    const onlyNegative = [
-      gdpResponse[0],
-      [
-        {
-          indicator: { id: 'NY.GDP.MKTP.KD.ZG', value: 'GDP growth (annual %)' },
-          country: { id: 'RU', value: 'Russian Federation' },
-          countryiso3code: 'RUS',
-          date: '2022',
-          value: -1.2,
-        },
-      ],
-    ];
-    const snap = mapWorldBankResponse(onlyNegative, 'ru_gdp_growth');
-    expect(snap?.value).toBe(-1.2);
-    expect(snap?.ts).toBe('2022-01-01T00:00:00.000Z');
+  it('returns [] when the data element is null (no series)', () => {
+    expect(mapWorldBankResponse(emptyResponse, 'ru_gdp_growth')).toEqual([]);
   });
 
-  it('returns null when the data element is null (no series)', () => {
-    expect(mapWorldBankResponse(emptyResponse, 'ru_gdp_growth')).toBeNull();
-  });
-
-  it('returns null when all observations are null', () => {
+  it('returns [] when every observation is null', () => {
     const allNull = [
       gdpResponse[0],
       [
@@ -195,7 +181,7 @@ describe('mapWorldBankResponse', () => {
         { indicator: { id: 'X', value: 'X' }, country: { id: 'RU' }, date: '2023', value: null },
       ],
     ];
-    expect(mapWorldBankResponse(allNull, 'ru_gdp_growth')).toBeNull();
+    expect(mapWorldBankResponse(allNull, 'ru_gdp_growth')).toEqual([]);
   });
 
   it('throws on garbage input (Zod boundary)', () => {
@@ -205,7 +191,7 @@ describe('mapWorldBankResponse', () => {
 });
 
 describe('createWorldBankCollector', () => {
-  it('fetches each indicator URL and emits one snapshot per indicator', async () => {
+  it('fetches each indicator URL and emits its full annual series', async () => {
     const seen: string[] = [];
     const fetcher: JsonFetcher = async (url) => {
       seen.push(url);
@@ -220,15 +206,17 @@ describe('createWorldBankCollector', () => {
     const result = await collector.run({} as never);
     expect(seen).toHaveLength(2);
 
-    const metrics = result.snapshots.map((s) => s.metric).sort();
-    expect(metrics).toEqual(['ru_gdp_growth', 'ru_inflation']);
+    const metrics = new Set(result.snapshots.map((s) => s.metric));
+    expect(metrics).toEqual(new Set(['ru_gdp_growth', 'ru_inflation']));
 
-    const gdp = result.snapshots.find((s) => s.metric === 'ru_gdp_growth');
-    const cpi = result.snapshots.find((s) => s.metric === 'ru_inflation');
-    expect(gdp?.value).toBe(3.6);
-    expect(gdp?.ts).toBe('2023-01-01T00:00:00.000Z');
-    expect(cpi?.value).toBe(5.9);
-    expect(cpi?.ts).toBe('2023-01-01T00:00:00.000Z');
+    const gdp2023 = result.snapshots.find(
+      (s) => s.metric === 'ru_gdp_growth' && s.ts === '2023-01-01T00:00:00.000Z'
+    );
+    const cpi2023 = result.snapshots.find(
+      (s) => s.metric === 'ru_inflation' && s.ts === '2023-01-01T00:00:00.000Z'
+    );
+    expect(gdp2023?.value).toBe(3.6);
+    expect(cpi2023?.value).toBe(5.9);
     expect(result.markets).toBeUndefined();
   });
 
@@ -242,9 +230,11 @@ describe('createWorldBankCollector', () => {
     const collector = createWorldBankCollector(fetcher);
     const result = await collector.run({} as never);
 
-    // CPI payload is garbage -> dropped; GDP still produced.
-    expect(result.snapshots).toHaveLength(1);
-    expect(result.snapshots[0]?.metric).toBe('ru_gdp_growth');
+    // CPI payload is garbage → dropped; GDP series still produced.
+    expect(result.snapshots.length).toBeGreaterThan(0);
+    expect(result.snapshots.every((s) => s.metric === 'ru_gdp_growth')).toBe(
+      true
+    );
   });
 
   it('skips an indicator whose series is empty (null data)', async () => {
@@ -257,7 +247,9 @@ describe('createWorldBankCollector', () => {
     const collector = createWorldBankCollector(fetcher);
     const result = await collector.run({} as never);
 
-    expect(result.snapshots).toHaveLength(1);
-    expect(result.snapshots[0]?.metric).toBe('ru_inflation');
+    expect(result.snapshots.length).toBeGreaterThan(0);
+    expect(result.snapshots.every((s) => s.metric === 'ru_inflation')).toBe(
+      true
+    );
   });
 });

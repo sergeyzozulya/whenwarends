@@ -4,35 +4,41 @@ import type { Lang } from '@lib/types';
 
 interface Props {
   lang: Lang;
+  lastUpdated?: string; // ISO-8601 UTC
 }
 
-const { lang } = Astro.props;
+const { lang, lastUpdated } = Astro.props;
 
 const t = (key: string): string => getTranslation(lang, key);
 
-const navItems = [
-  { key: 'common.home', href: `/${lang}` },
-  { key: 'common.methodology', href: `/${lang}/methodology` },
-  { key: 'common.about', href: `/${lang}/about` },
-  { key: 'common.sources', href: `/${lang}/sources` },
-  { key: 'common.changelog', href: `/${lang}/changelog` },
-];
+let lastUpdatedLabel: string | null = null;
+if (lastUpdated) {
+  const parsed = new Date(lastUpdated);
+  if (!Number.isNaN(parsed.getTime())) {
+    const formatted = new Intl.DateTimeFormat(lang, {
+      timeZone: 'UTC',
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    }).format(parsed);
+    lastUpdatedLabel = t('common.lastUpdated').replace('{date}', formatted);
+  }
+}
 ---
 
 <footer class="border-t border-gray-200 mt-16">
-  <div class="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
-    <nav class="flex flex-wrap gap-6 text-[13px]">
+  <div class="w-full px-4 py-8 sm:px-6 lg:px-12 xl:px-16">
+    <div class="flex flex-wrap items-baseline justify-between gap-2">
+      <p class="text-[13px] text-gray-500">{t('common.footer')}</p>
       {
-        navItems.map((item) => (
-          <a
-            href={item.href}
-            class="text-[#2c5aa0] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
-          >
-            {t(item.key)}
-          </a>
-        ))
+        lastUpdatedLabel && (
+          <p class="ml-auto text-right text-[13px] text-gray-500">
+            {lastUpdatedLabel}
+          </p>
+        )
       }
-    </nav>
-    <p class="mt-4 text-[13px] text-gray-500">{t('common.footer')}</p>
+    </div>
   </div>
 </footer>

@@ -42,7 +42,7 @@
 //     value = RUB per USD (Value / Nominal), ts = UTC ISO-8601 from `Date`.
 
 import { fetchWithRetry } from './contract';
-import { CbrDailySchema } from './cbr.schema';
+import { CbrDailySchema, CbrHistoryRecordSchema } from './cbr.schema';
 import type {
   Collector,
   CollectorResult,
@@ -53,8 +53,33 @@ import type {
 export const CBR_DAILY_URL =
   'https://www.cbr.ru/scripts/XML_daily.asp';
 
+// CBR's internal currency id for USD (used by the dynamic/history feed).
+export const CBR_USD_VAL_NM = 'R01235' as const;
+// Full-war history start (aligns with the other collectors / Kiel earliest).
+const HISTORY_START_UTC = Date.UTC(2022, 0, 1);
+
 export const SOURCE = 'cbr' as const;
 export const METRIC_RUB_USD_RATE = 'rub_usd_rate' as const;
+
+/** Date → CBR's `DD/MM/YYYY` (UTC) used by XML_dynamic date_req params. */
+function ddmmyyyySlashUtc(ms: number): string {
+  const d = new Date(ms);
+  const p = (n: number) => String(n).padStart(2, '0');
+  return `${p(d.getUTCDate())}/${p(d.getUTCMonth() + 1)}/${d.getUTCFullYear()}`;
+}
+
+/** Historical single-currency series URL for [from, to] (USD by default). */
+export function cbrDynamicUrl(
+  fromMs: number,
+  toMs: number,
+  valNm: string = CBR_USD_VAL_NM
+): string {
+  const qs =
+    `date_req1=${ddmmyyyySlashUtc(fromMs)}` +
+    `&date_req2=${ddmmyyyySlashUtc(toMs)}` +
+    `&VAL_NM_RQ=${valNm}`;
+  return `https://www.cbr.ru/scripts/XML_dynamic.asp?${qs}`;
+}
 
 // cbr.ru blocks header-less requests; a UA is mandatory. Accept advertises XML.
 const CBR_FETCH_INIT: RequestInit = {
@@ -183,9 +208,80 @@ export async function collectCbr(
   return { snapshots: [snapshot] };
 }
 
+/**
+ * Pull the full RUB-per-USD daily series from CBR's XML_dynamic feed for
+ * [from, to] and map every `<Record>` to a snapshot. One request returns the
+ * whole war-to-now history (verified live 2026-05-19). Same windows-1251 /
+ * comma-decimal / DD.MM.YYYY conventions as the daily feed; the `<Record>`
+ * rows carry no CharCode (single-currency series). Throws on a
+ * missing/garbage body or zero parseable records so the source stays
+ * failure-isolated.
+ */
+export async function collectCbrHistory(
+  fromMs: number,
+  toMs: number,
+  fetcher: TextFetcher = defaultFetcher
+): Promise<CollectorResult> {
+  const xml = await fetcher(cbrDynamicUrl(fromMs, toMs));
+
+  const snapshots: SnapshotInput[] = [];
+  const re = /<Record\b[^>]*\bDate="([^"]+)"[^>]*>([\s\S]*?)<\/Record>/gi;
+  for (const m of xml.matchAll(re)) {
+    const dateAttr = m[1];
+    const block = m[2];
+    const rawNominal = tagText(block, 'Nominal');
+    const rawValue = tagText(block, 'Value');
+    if (rawNominal === null || rawValue === null) continue; // skip partial row
+    const dateIso = moscowDateToIsoUtc(dateAttr);
+    if (dateIso === null) continue; // skip unparseable date, never fabricate
+
+    const rec = CbrHistoryRecordSchema.safeParse({
+      DateIso: dateIso,
+      Nominal: parseCbrNumber(rawNominal),
+      Value: parseCbrNumber(rawValue),
+    });
+    if (!rec.success) continue; // a malformed row must not poison the series
+
+    snapshots.push({
+      metric: METRIC_RUB_USD_RATE,
+      source: SOURCE,
+      ts: rec.data.DateIso,
+      value: rec.data.Value / rec.data.Nominal,
+      raw_blob: JSON.stringify({
+        Date: dateAttr,
+        Value: rec.data.Value,
+        Nominal: rec.data.Nominal,
+      }),
+      confidence: 1,
+    });
+  }
+
+  if (snapshots.length === 0) {
+    throw new Error(
+      `CBR XML_dynamic returned no parseable Record rows for ${cbrDynamicUrl(fromMs, toMs)}`
+    );
+  }
+  return { snapshots };
+}
+
 export const cbrCollector: Collector = {
   name: SOURCE,
   async run(_env: Env): Promise<CollectorResult> {
-    return collectCbr();
+    // History (war start → now) is the substantive series; the daily feed
+    // adds the freshest business day in case XML_dynamic lags by one. Merge
+    // and de-dupe on ts (filestore also dedupes on (metric,source,ts)).
+    const hist = await collectCbrHistory(HISTORY_START_UTC, Date.now());
+    let daily: CollectorResult = { snapshots: [] };
+    try {
+      daily = await collectCbr();
+    } catch {
+      // The historical series alone is sufficient; a transient daily-feed
+      // failure must not drop the whole (already-fetched) history.
+    }
+    const byTs = new Map<string, SnapshotInput>();
+    for (const s of [...hist.snapshots, ...daily.snapshots]) {
+      byTs.set(s.ts, s);
+    }
+    return { snapshots: [...byTs.values()] };
   },
 };
