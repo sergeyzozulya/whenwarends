@@ -16,5 +16,11 @@
     "date": "2026-05-19",
     "category": "redesign",
     "description": "Editorial redesign: centred layout, system-ui type, warm slate palette and bordered cards. The hero CDF is now probability-colour-coded (0% red → 50% blue → 100% green) on the curve, market markers and the two summary cards. \"The war in data\" became a scrub-by-date indicator grid with Play/Now controls; added an \"Aid to Ukraine\" indicator (cumulative euros allocated, Kiel Ukraine Support Tracker) and an on-page note explaining why personnel losses are not shown. Language now auto-selects from the browser on first visit and an explicit choice persists in local storage. Methodology and Sources pages updated to match."
+  },
+  {
+    "id": 4,
+    "date": "2026-05-19",
+    "category": "privacy",
+    "description": "Owner decision: Google Analytics 4 added for coarse traffic insight — one third-party script, run cookieless. Under Consent Mode v2 analytics_storage is permanently denied (never granted), so no _ga cookie, no client identifier and no cross-site/cross-session tracking are ever set; consequently there is no consent banner. This still reverses the earlier no-third-party / cookieless-Cloudflare-Analytics posture, so About, the SPEC privacy section and the changelog were rewritten — the site no longer claims to avoid third-party analytics entirely. Also: a Ukrainian-flag favicon and per-locale, build-time Open Graph / Twitter share images that show the current headline and the two live summary cards."
   }
 ]

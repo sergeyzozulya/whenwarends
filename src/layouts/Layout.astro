@@ -84,6 +84,31 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
         } catch (e) {}
       })();
     </script>
+
+    {/* Google Analytics 4, Consent Mode v2 — analytics_storage stays
+        DENIED permanently (no consent is ever granted), so GA runs
+        cookieless: no _ga cookie, no client identifier, only coarse
+        aggregate pings. No consent banner is needed because nothing
+        consent-triggering is ever stored on the device. */}
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KN7G44T186"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+      });
+      gtag('config', 'G-KN7G44T186');
+    </script>
   </head>
   <body>
     <Header lang={locale} />

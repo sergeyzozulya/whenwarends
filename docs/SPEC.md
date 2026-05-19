@@ -38,12 +38,23 @@ In rough order of size: Ukrainians abroad checking for hope or context; Ukrainia
 > the "today on the ground" cards, the editorial event list, and the
 > in-page brief panel were removed. UCDP/Oryx/ISW/Russia Matters/IMF are
 > not collected. See `data/changelog.json`.
+>
+> **Revised 2026-05-19 (v1.4)** — owner decision: **Google Analytics 4**
+> added (one third-party script) under **Consent Mode v2** with
+> `analytics_storage` permanently **denied** and never granted, so GA runs
+> cookieless — no `_ga` cookie, no client identifier, only coarse
+> aggregate pings. **No consent banner** (nothing consent-triggering is
+> ever stored, so none is required). This **supersedes** the earlier
+> "no third-party / cookieless Cloudflare Web Analytics" claims in §4/§11;
+> the site no longer claims to avoid tracking entirely. Equipment losses
+> (Oryx) and Aid to Ukraine (Kiel) added as indicators; see
+> `data/changelog.json`.
 
 **Hosting and infrastructure, all Cloudflare free tier:**
 
 - Cloudflare Workers with Static Assets — Astro static build served by Worker, git-based deployment via `wrangler deploy`. The Worker is static-assets only (no runtime DB/secrets).
 - Cloudflare Email Routing — `hello@whenwarends.org`
-- Cloudflare Web Analytics — cookieless
+- Google Analytics 4 — cookieless (Consent Mode v2, `analytics_storage` permanently denied; no cookies/identifiers, no consent banner)
 
 Data lives in versioned repo JSON files (`data/`) read at build time; the weekly collector and brief jobs run as GitHub Actions, not Cloudflare Cron. Git is the time-series history, audit trail, and backup. Free tier covers v1 traffic comfortably; runtime cost is dominated by the weekly Anthropic API brief.
 
@@ -160,7 +171,7 @@ Never auto-publishes — nothing is public until a human merges the PR.
 
 **Accessibility.** WCAG AA contrast. `aria-label` data summaries on every chart. Full keyboard nav. Data-table fallbacks behind every visualization for screen readers.
 
-**Privacy.** No cookies. System fonts only. No third-party script loads. Cloudflare Web Analytics is cookieless. GDPR-compliant by default.
+**Privacy.** Self-hosted fonts; no ads, accounts or paid tiers. Google Analytics 4 is the one third-party script; it loads under Consent Mode v2 with `analytics_storage` **permanently denied** (never granted), so it runs cookieless — no `_ga` cookie, no client identifier, no cross-site/cross-session tracking, only coarse aggregate pings. No consent banner: nothing consent-triggering is stored on the device. *(v1.1–v1.3 claimed "no third-party / cookieless Cloudflare Web Analytics" — superseded by v1.4 when GA was added.)*
 
 **Reliability.** Each collector independently retries with backoff. Daily D1 backup to R2 (also free tier).
 
