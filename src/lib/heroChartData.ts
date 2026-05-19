@@ -219,3 +219,20 @@ export interface HeroMarket {
   question: string;
   liquidity: number | null; // USD, for the tooltip
 }
+
+/**
+ * Probability → colour, for the hero curve / markers / stat cards.
+ * Diverging scale: 0% red → 50% blue → 100% green. `p` is 0–1 (clamped).
+ */
+export function probColor(p: number): string {
+  const t = Math.min(1, Math.max(0, Number.isFinite(p) ? p : 0));
+  // anchors match the palette tokens (down / accent / up)
+  const RED = [181, 82, 78];
+  const BLUE = [59, 107, 151];
+  const GREEN = [79, 122, 82];
+  const lerp = (a: number[], b: number[], k: number) =>
+    a.map((v, i) => Math.round(v + (b[i] - v) * k));
+  const c =
+    t <= 0.5 ? lerp(RED, BLUE, t / 0.5) : lerp(BLUE, GREEN, (t - 0.5) / 0.5);
+  return `rgb(${c[0]}, ${c[1]}, ${c[2]})`;
+}

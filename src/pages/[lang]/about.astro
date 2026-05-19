@@ -47,7 +47,7 @@ const CONTENT: Record<Lang, Page> = {
       {
         h: 'Licence and contact',
         p: [
-          `Non-commercial, built in Kharkiv, released under CC BY 4.0. Contact: ${contactEmail}.`,
+          `Non-commercial, built in Kharkiv by {ITSUA}, released under CC BY 4.0. Contact: ${contactEmail}.`,
         ],
       },
     ],
@@ -77,7 +77,7 @@ const CONTENT: Record<Lang, Page> = {
       {
         h: 'Ліцензія та контакт',
         p: [
-          `Некомерційний, створений у Харкові, поширюється за CC BY 4.0. Контакт: ${contactEmail}.`,
+          `Некомерційний, створений у Харкові командою {ITSUA}, поширюється за CC BY 4.0. Контакт: ${contactEmail}.`,
         ],
       },
     ],
@@ -107,7 +107,7 @@ const CONTENT: Record<Lang, Page> = {
       {
         h: 'Лицензия и контакт',
         p: [
-          `Некоммерческий, создан в Харькове, распространяется по CC BY 4.0. Контакт: ${contactEmail}.`,
+          `Некоммерческий, создан в Харькове командой {ITSUA}, распространяется по CC BY 4.0. Контакт: ${contactEmail}.`,
         ],
       },
     ],
@@ -128,7 +128,22 @@ const c = CONTENT[lang];
         <section class="space-y-3">
           <h2 class="text-[18px] font-medium">{b.h}</h2>
           {b.p.map((para) => (
-            <p class="text-[16px]">{para}</p>
+            <p class="text-[16px]">
+              {para.split('{ITSUA}').flatMap((seg, i) =>
+                i === 0
+                  ? [seg]
+                  : [
+                      <a
+                        href="https://itsua.com/"
+                        rel="noopener noreferrer"
+                        class="text-[var(--color-accent)] hover:no-underline"
+                      >
+                        ITSUA
+                      </a>,
+                      seg,
+                    ]
+              )}
+            </p>
           ))}
         </section>
       ))

@@ -1,102 +1,74 @@
-// Main timeline — an Astro island (client:visible). Replaces the old forward
-// CDF. Plots EVERY metric we actually retain (2022→now) as small pure-SVG
-// sparklines sharing one continuous time axis, with a single scrub cursor.
-// Moving/clicking the cursor (or arrow keys) picks a date; each metric shows
-// its value as-of that date and the brief panel shows the nearest brief at or
-// before it.
+// "The war in data" — an Astro island (client:visible).
 //
-// No charting lib — pure SVG. Server-rendered at the latest date, so no-JS
-// users still see current values + the latest brief; hydration only adds the
-// scrub interaction. Honest: a sparkline spans only the dates that series
-// actually has — no fabricated bridge across gaps.
+// A scrub handle picks a date from the full-scale invasion to the latest
+// data; every indicator reads its value as of that date, its 12-month
+// delta, and a small step sparkline. Pure SVG, no chart lib. Honest: a
+// value holds until the next real observation (step line); a missing
+// month/quarter is skipped, never interpolated.
 
-import { useMemo, useRef, useState } from 'react';
-import type { BriefArchiveEntry, HistorySeries } from '@lib/homepage';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import type { HistorySeries } from '@lib/homepage';
 
-const ACCENT = '#2c5aa0';
+const ACCENT = '#3b6b97';
+const SLIDER = '#255b7d';
+const TRACK = '#dee2e5';
+const UP = '#4f7a52';
+const DOWN = '#b5524e';
+const WAR_START = Date.UTC(2022, 1, 24);
+const YEAR = 365 * 24 * 3600 * 1000;
+const PLAY_MS = 9000;
 
 export interface HistoryTimelineProps {
-  /** Dense per-metric series (any order); the component fixes display order. */
   history: HistorySeries[];
-  /** Brief archive, any order; used for the panel (nearest brief ≤ date). */
-  entries: BriefArchiveEntry[];
-  /** Pre-resolved i18n + locale from the .astro page. */
   strings: Record<string, string>;
 }
 
-// Secondary-timeline layout, top → bottom. `prob` is absent (war-end
-// probability is the prominent hero above). Related metrics that share a
-// theme but differ in magnitude are drawn as ONE multi-line graph, each line
-// independently scaled to its own range + distinctly coloured:
-//   • conflict   — intensity (blue) + fire activity (amber) + tone (purple)
-//   • economy    — RUB (red) + UAH (blue)
-//   • gdp        — Russia (red) + Ukraine (blue), real % y/y, quarterly
-//   • inflation  — Russia (red) + Ukraine (blue), CPI % y/y, monthly
-// `draw`: 'line' (default) = scaled polyline; 'heat' = full-height background
-// columns, white at the series min → light red at its max (a density band).
-type LineSpec = {
-  key: string;
-  color: string;
-  fmt: (v: number) => string;
-  draw?: 'line' | 'heat';
-};
-type LayoutItem =
-  | { kind: 'single'; key: string; fmt: (v: number) => string }
-  // `sharedScale`: all lines share one y-domain (only meaningful when the
-  // lines are the same unit — e.g. % y/y — so the two are visually
-  // comparable). Default = each line scaled to its own range.
-  | {
-      kind: 'combo';
-      key: string;
-      lines: LineSpec[];
-      sharedScale?: boolean;
-    };
+type Fmt = (v: number) => string;
+type Ind = { key: string; source: string; unit: string; val: Fmt; dlt: Fmt };
 
-const LAYOUT: LayoutItem[] = [
+const signed1 = (v: number) => `${v >= 0 ? '+' : ''}${v.toFixed(1)}`;
+const eurC = new Intl.NumberFormat('en-US', {
+  notation: 'compact',
+  style: 'currency',
+  currency: 'EUR',
+  maximumFractionDigits: 1,
+});
+
+const INDICATORS: Ind[] = [
+  { key: 'intensity', source: 'GDELT', unit: 'index', val: (v) => v.toFixed(1), dlt: (d) => d.toFixed(1) },
+  { key: 'tone', source: 'GDELT', unit: '', val: (v) => v.toFixed(2), dlt: (d) => d.toFixed(2) },
+  { key: 'fire', source: 'NASA FIRMS', unit: '/day', val: (v) => String(Math.round(v)), dlt: (d) => String(Math.round(d)) },
   {
-    kind: 'combo',
-    key: 'conflict',
-    lines: [
-      // fire drawn first as a white→light-red density band behind the lines
-      { key: 'fire', color: '#f0a0a0', fmt: (v) => String(Math.round(v)), draw: 'heat' },
-      { key: 'intensity', color: '#FF0000', fmt: (v) => v.toFixed(1) },
-      { key: 'tone', color: '#7a5ea8', fmt: (v) => v.toFixed(1) },
-    ],
-  },
-  // aid chart removed for now (data still collected; ground card unaffected)
-  {
-    kind: 'combo',
-    key: 'economy',
-    lines: [
-      { key: 'rub', color: '#c0392b', fmt: (v) => `${v.toFixed(2)} RUB/USD` },
-      { key: 'uah', color: '#0057b7', fmt: (v) => `${v.toFixed(2)} UAH/USD` },
-    ],
-  },
-  {
-    kind: 'combo',
-    key: 'gdp',
-    sharedScale: true,
-    lines: [
-      { key: 'ruGdp', color: '#c0392b', fmt: (v) => `${v.toFixed(1)}%` },
-      { key: 'uaGdp', color: '#0057b7', fmt: (v) => `${v.toFixed(1)}%` },
-    ],
+    key: 'aid',
+    source: 'Kiel',
+    unit: 'allocated',
+    val: (v) => eurC.format(v),
+    dlt: (d) => eurC.format(d),
   },
   {
-    kind: 'combo',
-    key: 'inflation',
-    sharedScale: true,
-    lines: [
-      { key: 'ruCpi', color: '#c0392b', fmt: (v) => `${v.toFixed(1)}%` },
-      { key: 'uaCpi', color: '#0057b7', fmt: (v) => `${v.toFixed(1)}%` },
-    ],
+    key: 'uaLoss',
+    source: 'Oryx',
+    unit: 'confirmed',
+    val: (v) => Math.round(v).toLocaleString('en-US'),
+    dlt: (d) => Math.round(d).toLocaleString('en-US'),
   },
+  {
+    key: 'ruLoss',
+    source: 'Oryx',
+    unit: 'confirmed',
+    val: (v) => Math.round(v).toLocaleString('en-US'),
+    dlt: (d) => Math.round(d).toLocaleString('en-US'),
+  },
+  { key: 'uah', source: 'NBU', unit: 'UAH/USD', val: (v) => v.toFixed(2), dlt: (d) => d.toFixed(2) },
+  { key: 'rub', source: 'CBR', unit: 'RUB/USD', val: (v) => v.toFixed(1), dlt: (d) => d.toFixed(1) },
+  { key: 'uaGdp', source: 'World Bank', unit: '% y/y', val: signed1, dlt: signed1 },
+  { key: 'ruGdp', source: 'World Bank', unit: '% y/y', val: signed1, dlt: signed1 },
+  { key: 'uaCpi', source: 'NBU', unit: '% y/y', val: signed1, dlt: signed1 },
+  { key: 'ruCpi', source: 'World Bank', unit: '% y/y', val: signed1, dlt: signed1 },
 ];
 
-/** Latest point with t ≤ at; points are sorted ascending by t. */
-function valueAsOf(
-  points: { t: number; v: number }[],
-  at: number
-): number | null {
+/** Latest value with t ≤ at (points sorted ascending). */
+function asOf(points: { t: number; v: number }[], at: number): number | null {
   let lo = 0;
   let hi = points.length - 1;
   let ans: number | null = null;
@@ -105,136 +77,87 @@ function valueAsOf(
     if (points[mid].t <= at) {
       ans = points[mid].v;
       lo = mid + 1;
-    } else {
-      hi = mid - 1;
-    }
+    } else hi = mid - 1;
   }
   return ans;
 }
 
-type Pt = { t: number; v: number };
-type Row =
-  | {
-      kind: 'single';
-      key: string;
-      label: string;
-      points: Pt[];
-      fmt: (v: number) => string;
+function HistoryTimeline({ history, strings }: HistoryTimelineProps) {
+  const byKey = useMemo(() => {
+    const m = new Map<string, { t: number; v: number }[]>();
+    for (const h of history)
+      m.set(h.key, [...h.points].sort((a, b) => a.t - b.t));
+    return m;
+  }, [history]);
+
+  const tMax = useMemo(() => {
+    let mx = WAR_START + 1;
+    for (const pts of byKey.values()) {
+      const last = pts[pts.length - 1];
+      if (last && last.t > mx) mx = last.t;
     }
-  | {
-      kind: 'combo';
-      key: string;
-      label: string;
-      sharedScale?: boolean;
-      lines: {
-        label: string;
-        color: string;
-        points: Pt[];
-        fmt: (v: number) => string;
-        draw?: 'line' | 'heat';
-      }[];
-    };
+    return mx;
+  }, [byKey]);
 
-function HistoryTimeline({ history, entries, strings }: HistoryTimelineProps) {
-  const series = useMemo<Row[]>(() => {
-    const pointsOf = (k: string): Pt[] =>
-      history.find((h) => h.key === k)?.points ?? [];
-
-    const rows: Row[] = [];
-    for (const item of LAYOUT) {
-      if (item.kind === 'single') {
-        const pts = pointsOf(item.key);
-        if (pts.length > 0) {
-          rows.push({
-            kind: 'single',
-            key: item.key,
-            label: strings[item.key] ?? item.key,
-            fmt: item.fmt,
-            points: pts,
-          });
-        }
-      } else {
-        const lines = item.lines
-          .map((e) => ({
-            label: strings[e.key] ?? e.key,
-            color: e.color,
-            fmt: e.fmt,
-            draw: e.draw,
-            points: pointsOf(e.key),
-          }))
-          .filter((l) => l.points.length > 0);
-        if (lines.length > 0) {
-          rows.push({
-            kind: 'combo',
-            key: item.key,
-            label: strings[item.key] ?? item.key,
-            sharedScale: item.sharedScale,
-            lines,
-          });
-        }
-      }
-    }
-    return rows;
-  }, [history, strings]);
-
-  const briefs = useMemo(
-    () =>
-      [...entries]
-        .filter((e) => e.text.trim() !== '')
-        .sort((a, b) => a.date.localeCompare(b.date))
-        .map((e) => ({ ...e, t: Date.parse(`${e.date}T00:00:00Z`) })),
-    [entries]
-  );
-
-  // Secondary timelines start at the full-scale invasion (some series, e.g.
-  // World Bank macro, run back to the 1990s — irrelevant pre-war history that
-  // would crush the in-war signal). End at the latest data we actually have.
-  const WAR_START = Date.parse('2022-02-24T00:00:00Z');
-  const [t0, t1] = useMemo(() => {
-    const ts: number[] = [];
-    for (const s of series) {
-      const ptsArrs =
-        s.kind === 'combo' ? s.lines.map((l) => l.points) : [s.points];
-      for (const p of ptsArrs) if (p.length) ts.push(p[p.length - 1].t);
-    }
-    for (const b of briefs) ts.push(b.t);
-    const hi = ts.length ? Math.max(...ts) : WAR_START + 1;
-    return [WAR_START, hi <= WAR_START ? WAR_START + 1 : hi];
-  }, [series, briefs]);
-
-  const [frac, setFrac] = useState(1); // default = latest (no-JS shows now)
+  const [frac, setFrac] = useState(1);
+  const [playing, setPlaying] = useState(false);
   const trackRef = useRef<HTMLDivElement | null>(null);
+  const selT = WAR_START + frac * (tMax - WAR_START);
+
+  // Play: sweep frac → 1, then stop. rAF so it's smooth and pauses cleanly.
+  useEffect(() => {
+    if (!playing) return;
+    if (frac >= 1) {
+      setPlaying(false);
+      return;
+    }
+    let raf = 0;
+    let last = performance.now();
+    const tick = (now: number) => {
+      const dt = now - last;
+      last = now;
+      setFrac((f) => {
+        const nf = f + dt / PLAY_MS;
+        if (nf >= 1) return 1;
+        return nf;
+      });
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [playing, frac]);
 
   const locale = strings.locale || 'en-US';
-  const fmtDate = useMemo(
-    () =>
-      new Intl.DateTimeFormat(locale, {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        timeZone: 'UTC',
-      }),
+  const fmtMonth = useMemo(
+    () => new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', timeZone: 'UTC' }),
     [locale]
   );
+  // Intl returns lowercase month names for uk/ru ("лютий 2022 р.") — the
+  // design wants them capitalized ("Лютий 2022 р.").
+  const monthLabel = (ms: number) => {
+    const s = fmtMonth.format(new Date(ms));
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  };
 
-  if (series.length === 0 && briefs.length === 0) {
-    return (
-      <p className="text-sm font-normal text-gray-500">{strings.noBrief}</p>
-    );
-  }
+  const years: number[] = [];
+  for (let y = 2022; y <= new Date(tMax).getUTCFullYear(); y++) years.push(y);
 
-  const selT = t0 + frac * (t1 - t0);
-  const selectedDate = fmtDate.format(new Date(selT));
+  const cards = INDICATORS.map((ind) => ({
+    ind,
+    pts: byKey.get(ind.key) ?? [],
+  })).filter((c) => c.pts.length > 0);
 
-  function fracFromClientX(clientX: number): number {
+  if (cards.length === 0)
+    return <p className="text-[13px] text-[var(--color-faint)]">—</p>;
+
+  const fracFromX = (clientX: number): number => {
     const el = trackRef.current;
     if (!el) return frac;
     const r = el.getBoundingClientRect();
     if (r.width <= 0) return frac;
     return Math.min(1, Math.max(0, (clientX - r.left) / r.width));
-  }
-
-  function onKey(e: React.KeyboardEvent) {
+  };
+  const onKey = (e: React.KeyboardEvent) => {
     let f = frac;
     if (e.key === 'ArrowLeft') f = Math.max(0, frac - 0.02);
     else if (e.key === 'ArrowRight') f = Math.min(1, frac + 0.02);
@@ -242,336 +165,210 @@ function HistoryTimeline({ history, entries, strings }: HistoryTimelineProps) {
     else if (e.key === 'End') f = 1;
     else return;
     e.preventDefault();
+    setPlaying(false);
     setFrac(f);
-  }
+  };
 
-  // Brief at or before the selected date (else the earliest, so the panel is
-  // never blank once any brief exists).
-  const curBrief =
-    [...briefs].reverse().find((b) => b.t <= selT) ?? briefs[0] ?? null;
+  const W = 240;
+  const H = 44;
+  const pad = 2;
 
-  const W = 600;
-  const H = 34;
-  const pad = 3;
-  const innerW = W - pad * 2;
-  const innerH = H - pad * 2;
-  const xOf = (t: number) => pad + ((t - t0) / (t1 - t0)) * innerW;
-  const cursorX = pad + frac * innerW;
-
-  function spark(
-    points: { t: number; v: number }[],
-    // Explicit y-domain for shared-scale combos; omitted = scale to own range.
-    domain?: [number, number]
-  ): {
-    line: string;
-    dotY: number | null;
-  } {
-    // Only the in-window slice scales and draws — pre-war points (e.g. 1993
-    // hyperinflation) must not crush the in-war signal or spill off-canvas.
-    const win = points.filter((p) => p.t >= t0 && p.t <= t1);
-    if (win.length === 0) return { line: '', dotY: null };
-    const vs = win.map((p) => p.v);
-    const min = domain ? domain[0] : Math.min(...vs);
-    const max = domain ? domain[1] : Math.max(...vs);
-    const span = max - min;
-    const yOf = (v: number) =>
-      pad + innerH - (span === 0 ? 0.5 : (v - min) / span) * innerH;
-    // STEP line: a value holds until the next observation (no straight-line
-    // interpolation between sparse points — that would invent figures the
-    // source never published). This keeps the dot and the legend, which both
-    // read the last-known value as-of the cursor, exactly ON the line.
-    const seg: string[] = [];
-    for (let i = 0; i < win.length; i++) {
-      const x = xOf(win[i].t);
-      if (i > 0) {
-        // horizontal carry at the previous value to this point's x
-        seg.push(`${x.toFixed(1)},${yOf(win[i - 1].v).toFixed(1)}`);
-      }
-      seg.push(`${x.toFixed(1)},${yOf(win[i].v).toFixed(1)}`);
-    }
-    // carry the last-known value flat to the right edge (it's still the
-    // current reading until a newer observation arrives).
-    seg.push(
-      `${(pad + innerW).toFixed(1)},${yOf(win[win.length - 1].v).toFixed(1)}`
-    );
-    const line = seg.join(' ');
-    const cv = valueAsOf(win, selT);
-    return { line, dotY: cv === null ? null : yOf(cv) };
-  }
-
-  // Shared chart chrome for every minor chart: a tiny border, vertical-axis
-  // tick marks on BOTH edges (top & bottom = the value range), and an
-  // optional dashed zero baseline (passed only for the % y/y combos).
-  function chartFrame(zeroY: number | null) {
-    return (
-      <>
-        {zeroY !== null && (
-          <line
-            x1={pad}
-            y1={zeroY}
-            x2={W - pad}
-            y2={zeroY}
-            stroke="#9ca3af"
-            strokeWidth={1}
-            strokeDasharray="3 3"
-            vectorEffect="non-scaling-stroke"
-          />
-        )}
-        <rect
-          x={pad}
-          y={pad}
-          width={innerW}
-          height={innerH}
-          fill="none"
-          stroke="#e5e7eb"
-          strokeWidth={1}
-          vectorEffect="non-scaling-stroke"
-        />
-        {[pad, H - pad].map((y) => (
-          <g key={y}>
-            <line x1={pad} y1={y} x2={pad + 8} y2={y} stroke="#cbd5e1" strokeWidth={1} vectorEffect="non-scaling-stroke" />
-            <line x1={W - pad} y1={y} x2={W - pad - 8} y2={y} stroke="#cbd5e1" strokeWidth={1} vectorEffect="non-scaling-stroke" />
-          </g>
-        ))}
-      </>
-    );
-  }
+  const ctrlCls =
+    'cursor-pointer rounded-[2px] border border-[#dee2e5] px-2.5 py-1.5 text-[13px] text-[var(--color-muted)] hover:text-[var(--color-ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-[#3b6b97]';
 
   return (
-    <section
-      aria-labelledby="history-heading"
-      className="space-y-4"
-    >
-      <h2
-        id="history-heading"
-        className="text-[18px] font-medium text-gray-900"
-      >
-        {strings.heading}
-      </h2>
+    <div>
+      <div className="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p className="eyebrow">{strings.asOf ?? 'Showing data as of'}</p>
+          <p className="mt-1 text-[28px] font-normal leading-none text-[var(--color-ink)]">
+            {monthLabel(selT)}
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            className={ctrlCls}
+            onClick={() => {
+              setPlaying(false);
+              setFrac(0);
+            }}
+          >
+            {monthLabel(WAR_START)}
+          </button>
+          <button
+            type="button"
+            className={ctrlCls}
+            aria-pressed={playing}
+            onClick={() =>
+              setPlaying((p) => {
+                if (!p && frac >= 1) setFrac(0);
+                return !p;
+              })
+            }
+          >
+            {playing ? (strings.pause ?? 'Pause') : (strings.play ?? 'Play')}
+          </button>
+          <button
+            type="button"
+            className={ctrlCls}
+            onClick={() => {
+              setPlaying(false);
+              setFrac(1);
+            }}
+          >
+            {strings.now ?? 'Now'}
+          </button>
+        </div>
+      </div>
 
       <div
         ref={trackRef}
         role="slider"
         tabIndex={0}
-        aria-label={strings.scrubAria}
+        aria-label={strings.scrubAria ?? 'Scrub the timeline to a date'}
         aria-valuemin={0}
         aria-valuemax={100}
         aria-valuenow={Math.round(frac * 100)}
-        aria-valuetext={selectedDate}
+        aria-valuetext={monthLabel(selT)}
         onKeyDown={onKey}
-        onClick={(e) => setFrac(fracFromClientX(e.clientX))}
-        onPointerMove={(e) => {
-          if (e.buttons === 1 || e.pointerType === 'mouse')
-            setFrac(fracFromClientX(e.clientX));
+        onPointerDown={(e) => {
+          (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
+          setPlaying(false);
+          setFrac(fracFromX(e.clientX));
         }}
-        className="cursor-ew-resize select-none rounded outline-none focus-visible:ring-2 focus-visible:ring-[#2c5aa0]"
+        onPointerMove={(e) => {
+          if (e.buttons === 1) setFrac(fracFromX(e.clientX));
+        }}
+        className="relative mt-7 h-5 cursor-ew-resize select-none outline-none"
       >
-        <div className="flex items-baseline justify-between">
-          <span className="text-sm font-medium text-gray-900">
-            {selectedDate}
-          </span>
-          {curBrief && (
-            <span className="text-xs font-normal text-gray-500">
-              {curBrief.reconstructed
-                ? strings.reconstructed
-                : strings.aiLabel}
-            </span>
-          )}
-        </div>
-
-        <div className="mt-3 space-y-4">
-          {series.map((s) => {
-            if (s.kind === 'combo') {
-              const drawn = s.lines.filter((ln) => ln.draw !== 'heat');
-              // Shared y-domain across the drawn lines (same unit) so the two
-              // are directly comparable; otherwise each scales to its own.
-              let dom: [number, number] | undefined;
-              if (s.sharedScale) {
-                const vs = drawn.flatMap((ln) =>
-                  ln.points
-                    .filter((p) => p.t >= t0 && p.t <= t1)
-                    .map((p) => p.v)
-                );
-                if (vs.length > 0) {
-                  const lo = Math.min(...vs);
-                  const hi = Math.max(...vs);
-                  if (hi > lo) dom = [lo, hi];
-                }
-              }
-              // Zero baseline only when the shared domain straddles 0
-              // (the % y/y combos: GDP & inflation).
-              let zeroY: number | null = null;
-              if (dom && dom[0] <= 0 && dom[1] >= 0) {
-                zeroY =
-                  pad + innerH - ((0 - dom[0]) / (dom[1] - dom[0])) * innerH;
-              }
-              return (
-                <div key={s.key}>
-                  <div className="flex items-baseline justify-between gap-x-4">
-                    <span className="text-xs font-normal text-gray-500">
-                      {s.label}
-                    </span>
-                    <div className="flex flex-wrap items-baseline justify-end gap-x-4 gap-y-1">
-                      {s.lines.map((ln) => {
-                        const v = valueAsOf(ln.points, selT);
-                        return (
-                          <span
-                            key={ln.label}
-                            className="text-xs font-medium"
-                            style={{ color: ln.color }}
-                          >
-                            {ln.label}: {v === null ? '—' : ln.fmt(v)}
-                          </span>
-                        );
-                      })}
-                    </div>
-                  </div>
-                  <svg
-                    viewBox={`0 0 ${W} ${H}`}
-                    preserveAspectRatio="none"
-                    className="mt-1 block h-[4.5rem] w-full"
-                    aria-hidden="true"
-                  >
-                    {/* heat lines first: white→light-red full-height columns */}
-                    {s.lines
-                      .filter((ln) => ln.draw === 'heat')
-                      .map((ln) => {
-                        const win = ln.points.filter(
-                          (p) => p.t >= t0 && p.t <= t1
-                        );
-                        if (win.length === 0) return null;
-                        const vs = win.map((p) => p.v);
-                        const min = Math.min(...vs);
-                        const max = Math.max(...vs);
-                        const span = max - min;
-                        const barW = Math.max(
-                          1.2,
-                          innerW / Math.max(1, win.length)
-                        );
-                        return (
-                          <g key={ln.label}>
-                            {win.map((p, i) => {
-                              const tN =
-                                span === 0 ? 0 : (p.v - min) / span;
-                              // white (255,255,255) → light red (240,120,120)
-                              const g = Math.round(255 - 135 * tN);
-                              return (
-                                <line
-                                  key={i}
-                                  x1={xOf(p.t)}
-                                  y1={0}
-                                  x2={xOf(p.t)}
-                                  y2={H}
-                                  stroke={`rgb(255,${g},${g})`}
-                                  strokeWidth={barW}
-                                />
-                              );
-                            })}
-                          </g>
-                        );
-                      })}
-                    {chartFrame(zeroY)}
-                    {drawn.map((ln) => {
-                      const { line, dotY } = spark(ln.points, dom);
-                      return (
-                        <g key={ln.label}>
-                          <polyline
-                            points={line}
-                            fill="none"
-                            stroke={ln.color}
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            vectorEffect="non-scaling-stroke"
-                          />
-                          {dotY !== null && (
-                            // zero-length line + round cap + non-scaling
-                            // stroke = a true round dot, immune to the
-                            // non-uniform viewBox scaling.
-                            <line
-                              x1={cursorX}
-                              y1={dotY}
-                              x2={cursorX}
-                              y2={dotY}
-                              stroke={ln.color}
-                              strokeWidth={7}
-                              strokeLinecap="round"
-                              vectorEffect="non-scaling-stroke"
-                            />
-                          )}
-                        </g>
-                      );
-                    })}
-                    <line
-                      x1={cursorX}
-                      y1={0}
-                      x2={cursorX}
-                      y2={H}
-                      stroke={ACCENT}
-                      strokeWidth="1.5"
-                      vectorEffect="non-scaling-stroke"
-                    />
-                  </svg>
-                </div>
-              );
-            }
-            const { line, dotY } = spark(s.points);
-            const cv = valueAsOf(s.points, selT);
-            return (
-              <div key={s.key}>
-                <div className="flex items-baseline justify-between gap-2">
-                  <span className="text-xs font-normal text-gray-500">
-                    {s.label}
-                  </span>
-                  <span className="text-xs font-medium text-gray-800">
-                    {cv === null ? '—' : s.fmt(cv)}
-                  </span>
-                </div>
-                <svg
-                  viewBox={`0 0 ${W} ${H}`}
-                  preserveAspectRatio="none"
-                  className="mt-1 block h-[4.5rem] w-full"
-                  aria-hidden="true"
-                >
-                  {chartFrame(null)}
-                  <polyline
-                    points={line}
-                    fill="none"
-                    stroke="#9ca3af"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    vectorEffect="non-scaling-stroke"
-                  />
-                  <line
-                    x1={cursorX}
-                    y1={0}
-                    x2={cursorX}
-                    y2={H}
-                    stroke={ACCENT}
-                    strokeWidth="1.5"
-                    vectorEffect="non-scaling-stroke"
-                  />
-                  {dotY !== null && (
-                    <line
-                      x1={cursorX}
-                      y1={dotY}
-                      x2={cursorX}
-                      y2={dotY}
-                      stroke={ACCENT}
-                      strokeWidth={7}
-                      strokeLinecap="round"
-                      vectorEffect="non-scaling-stroke"
-                    />
-                  )}
-                </svg>
-              </div>
-            );
-          })}
-        </div>
+        <div
+          className="absolute left-0 right-0 top-1/2 h-1 -translate-y-1/2 rounded-[2px]"
+          style={{ background: TRACK }}
+        />
+        <div
+          className="absolute left-0 top-1/2 h-1 -translate-y-1/2 rounded-[2px]"
+          style={{ background: SLIDER, width: `${frac * 100}%` }}
+        />
+        <div
+          className="absolute top-1/2 h-[14px] w-[14px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white"
+          style={{ left: `${frac * 100}%`, border: `2px solid ${SLIDER}` }}
+        />
+      </div>
+      <div className="mt-2 flex justify-between text-[11px] text-[var(--color-faint)]">
+        {years.map((y) => (
+          <span key={y}>{y}</span>
+        ))}
       </div>
 
-    </section>
+      <div className="mt-9 grid grid-cols-1 border-l border-t border-[var(--color-line)] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {cards.map(({ ind, pts }) => {
+          const cur = asOf(pts, selT);
+          const prev = asOf(pts, selT - YEAR);
+          const delta = cur !== null && prev !== null ? cur - prev : null;
+          const win = pts.filter((p) => p.t >= WAR_START && p.t <= selT);
+
+          let line = '';
+          let dotY: number | null = null;
+          if (win.length > 0) {
+            const vs = win.map((p) => p.v);
+            const lo = Math.min(...vs);
+            const hi = Math.max(...vs);
+            const span = hi - lo;
+            const xOf = (t: number) =>
+              pad +
+              ((t - WAR_START) / Math.max(1, selT - WAR_START)) *
+                (W - pad * 2);
+            const yOf = (v: number) =>
+              pad +
+              (H - pad * 2) -
+              (span === 0 ? 0.5 : (v - lo) / span) * (H - pad * 2);
+            const seg: string[] = [];
+            for (let i = 0; i < win.length; i++) {
+              const x = xOf(win[i].t);
+              if (i > 0)
+                seg.push(`${x.toFixed(1)},${yOf(win[i - 1].v).toFixed(1)}`);
+              seg.push(`${x.toFixed(1)},${yOf(win[i].v).toFixed(1)}`);
+            }
+            seg.push(
+              `${(W - pad).toFixed(1)},${yOf(win[win.length - 1].v).toFixed(1)}`
+            );
+            line = seg.join(' ');
+            if (cur !== null) dotY = yOf(cur);
+          }
+
+          const up = delta !== null && delta >= 0;
+          return (
+            <div
+              key={ind.key}
+              className="border-b border-r border-[var(--color-line)] p-4"
+            >
+              <div className="flex items-baseline justify-between gap-2">
+                <span className="text-[13px] leading-snug text-[var(--color-ink)]">
+                  {strings[ind.key] ?? ind.key}
+                </span>
+                <span className="eyebrow shrink-0">{ind.source}</span>
+              </div>
+              <p className="mt-3 text-[22px] font-normal leading-none tracking-[-0.01em] text-[var(--color-ink)]">
+                {cur === null ? '—' : ind.val(cur)}
+                {cur !== null && ind.unit && (
+                  <span className="ml-1 text-[11px] text-[var(--color-faint)]">
+                    {ind.unit}
+                  </span>
+                )}
+              </p>
+              <p className="mt-2 h-4 text-[11px]">
+                {delta === null ? (
+                  <span className="text-[var(--color-faint)]">—</span>
+                ) : (
+                  <span style={{ color: up ? UP : DOWN }}>
+                    {up ? '▲' : '▼'} {ind.dlt(Math.abs(delta))}
+                    <span className="text-[var(--color-faint)]">
+                      {' '}
+                      · {strings.per12m ?? '12m'}
+                    </span>
+                  </span>
+                )}
+              </p>
+              <svg
+                viewBox={`0 0 ${W} ${H}`}
+                preserveAspectRatio="none"
+                className="mt-3 block h-9 w-full"
+                aria-hidden="true"
+              >
+                <polyline
+                  points={line}
+                  fill="none"
+                  stroke={ACCENT}
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  vectorEffect="non-scaling-stroke"
+                />
+                {dotY !== null && (
+                  <line
+                    x1={W - pad}
+                    y1={dotY}
+                    x2={W - pad}
+                    y2={dotY}
+                    stroke={ACCENT}
+                    strokeWidth={6}
+                    strokeLinecap="round"
+                    vectorEffect="non-scaling-stroke"
+                  />
+                )}
+              </svg>
+            </div>
+          );
+        })}
+      </div>
+
+      {strings.lossNote && (
+        <p className="mt-6 text-[12px] leading-[1.55] text-[var(--color-faint)]">
+          {strings.lossNote}
+        </p>
+      )}
+    </div>
   );
 }
 

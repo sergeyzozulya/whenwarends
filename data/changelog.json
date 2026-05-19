@@ -4,5 +4,17 @@
     "date": "2026-05-19",
     "category": "release",
     "description": "Initial public version. Market-implied war-end CDF (Polymarket + Manifold) with closest-to-consensus and most-optimistic summary cards; a scrubbable \"war in data\" timeline of conflict intensity/tone/fire (GDELT + NASA FIRMS), currency vs USD (CBR + NBU), and real GDP and CPI year-on-year for Russia and Ukraine (World Bank Global Economic Monitor + NBU). AI-drafted weekly briefs are auto-published behind integrity guards; reconstructed historical briefs are labelled. Three languages (uk, en, ru), static-first on Cloudflare's free tier."
+  },
+  {
+    "id": 2,
+    "date": "2026-05-19",
+    "category": "new source",
+    "description": "Added confirmed equipment losses for Russia and Ukraine, from the Oryx visually-confirmed, photo-attributed dataset (CC BY-NC; used non-commercially and credited). Two new cumulative indicators in the \"war in data\" grid. Personnel losses were considered and deliberately excluded — no neutral, symmetric source exists, so any figure would be a belligerent claim, which the project's no-fabrication rule forbids."
+  },
+  {
+    "id": 3,
+    "date": "2026-05-19",
+    "category": "redesign",
+    "description": "Editorial redesign: centred layout, system-ui type, warm slate palette and bordered cards. The hero CDF is now probability-colour-coded (0% red → 50% blue → 100% green) on the curve, market markers and the two summary cards. \"The war in data\" became a scrub-by-date indicator grid with Play/Now controls; added an \"Aid to Ukraine\" indicator (cumulative euros allocated, Kiel Ukraine Support Tracker) and an on-page note explaining why personnel losses are not shown. Language now auto-selects from the browser on first visit and an explicit choice persists in local storage. Methodology and Sources pages updated to match."
   }
 ]

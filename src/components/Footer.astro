@@ -8,37 +8,125 @@ interface Props {
 }
 
 const { lang, lastUpdated } = Astro.props;
-
 const t = (key: string): string => getTranslation(lang, key);
+
+// Blurb carries an {ITSUA} token so the studio name renders as a link.
+const blurbParts = t('site.blurb').split('{ITSUA}');
+
+const REPO = 'https://github.com/sergeyzozulya/whenwarends';
+const EMAIL = 'hello@whenwarends.org';
+
+const dataLinks = [
+  { label: t('common.methodology'), href: `/${lang}/methodology` },
+  { label: t('common.sources'), href: `/${lang}/sources` },
+];
 
 let lastUpdatedLabel: string | null = null;
 if (lastUpdated) {
   const parsed = new Date(lastUpdated);
   if (!Number.isNaN(parsed.getTime())) {
-    const formatted = new Intl.DateTimeFormat(lang, {
+    const formatted = new Intl.DateTimeFormat('en-CA', {
       timeZone: 'UTC',
       year: 'numeric',
-      month: 'short',
-      day: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
       hour: '2-digit',
       minute: '2-digit',
-    }).format(parsed);
+      hour12: false,
+    })
+      .format(parsed)
+      .replace(',', '');
     lastUpdatedLabel = t('common.lastUpdated').replace('{date}', formatted);
   }
 }
+
+const linkCls =
+  'text-[var(--color-muted)] hover:text-[var(--color-accent)] hover:no-underline';
 ---
 
-<footer class="border-t border-gray-200 mt-16">
-  <div class="w-full px-4 py-8 sm:px-6 lg:px-12 xl:px-16">
-    <div class="flex flex-wrap items-baseline justify-between gap-2">
-      <p class="text-[13px] text-gray-500">{t('common.footer')}</p>
-      {
-        lastUpdatedLabel && (
-          <p class="ml-auto text-right text-[13px] text-gray-500">
-            {lastUpdatedLabel}
-          </p>
-        )
-      }
+<footer class="mt-20 border-t border-[var(--color-line)]">
+  <div class="mx-auto max-w-[1180px] px-6 py-12 sm:px-12">
+    <div class="grid grid-cols-2 gap-x-8 gap-y-10 md:gap-x-9 md:[grid-template-columns:2fr_1fr_1fr_1fr]">
+      <div class="col-span-2 md:col-span-1">
+        <a
+          href={`/${lang}`}
+          class="flex items-center gap-2 text-[var(--color-ink)] hover:no-underline"
+        >
+          <span
+            class="inline-block h-3 w-3 rounded-[2px] bg-[var(--color-accent)]"
+            aria-hidden="true"></span>
+          <span class="text-[14px] font-medium tracking-tight">
+            whenwarends.org
+          </span>
+        </a>
+        <p
+          class="mt-3 max-w-[28ch] text-[13px] leading-relaxed text-[var(--color-muted)]"
+        >
+          {blurbParts[0]}
+          {
+            blurbParts.length > 1 && (
+              <>
+                <a
+                  href="https://itsua.com/"
+                  rel="noopener noreferrer"
+                  class="text-[var(--color-accent)] hover:no-underline"
+                >
+                  ITSUA
+                </a>
+                {blurbParts[1]}
+              </>
+            )
+          }
+        </p>
+      </div>
+
+      <div>
+        <p class="eyebrow">{t('site.colData')}</p>
+        <ul class="mt-3 space-y-2 text-[14px]">
+          {
+            dataLinks.map((l) => (
+              <li>
+                <a href={l.href} class={linkCls}>
+                  {l.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div>
+        <p class="eyebrow">{t('site.colAbout')}</p>
+        <ul class="mt-3 space-y-2 text-[14px]">
+          <li>
+            <a href={`/${lang}/about`} class={linkCls}>{t('common.about')}</a>
+          </li>
+          <li>
+            <a href={`/${lang}/changelog`} class={linkCls}>
+              {t('common.changelog')}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="eyebrow">{t('site.colContact')}</p>
+        <ul class="mt-3 space-y-2 text-[14px]">
+          <li>
+            <a href={`mailto:${EMAIL}`} class={linkCls}>{EMAIL}</a>
+          </li>
+          <li>
+            <a href={REPO} rel="noopener noreferrer" class={linkCls}>GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="mt-12 flex flex-wrap items-baseline justify-between gap-3 border-t border-[var(--color-line)] pt-6 text-[12px] text-[var(--color-faint)]"
+    >
+      <span>{t('site.openData')}</span>
+      {lastUpdatedLabel && <span class="figure">{lastUpdatedLabel}</span>}
     </div>
   </div>
 </footer>

@@ -111,9 +111,11 @@ whenwarends/
 ### Styling
 
 - **Tailwind utility classes** only. No inline CSS except within `<svg>` tags.
-- **Typography**: 22px (h1/lg), 16px (body/sm), 13px (caption/xs). Two weights only: 400 (normal), 500 (medium).
-- **Color**: One accent (#2c5aa0), grayscale otherwise. No emoji anywhere.
-- **Sentence case** for all UI copy. No Title Case, no ALL CAPS.
+- **Typeface**: Inter (self-hosted via `@fontsource-variable/inter` — no third-party request; privacy posture). System stack is the fallback.
+- **Typography**: 24px (hero h1), 22px (h1/lg), 18px (h2), 16px (body/sm), 13px (caption/xs). Two weights only: 400 (normal), 600 (medium).
+- **Color**: One accent (#2c5aa0), grayscale otherwise. No tints, no fills. No emoji anywhere.
+- **Sentence case** everywhere — body, headings, nav, labels, buttons. No Title Case, no ALL CAPS.
+- **Quiet editorial**: white background, generous whitespace, strong type hierarchy. Structure with hairline `border-gray-200` rules/dividers — no card shadows, no background fills, no rounded "panels". A single thin accent rule may mark the masthead. Restraint is the identity; never sensational.
 
 ### Testing
 

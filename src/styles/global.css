@@ -2,46 +2,66 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
-/* Design tokens (spec §11 brand): one accent, grayscale otherwise,
-   typography 22/16/13px, two weights only. */
+/* Design system — matches docs/whenwarends - standalone.html.
+   Warm paper background, slate ink, one muted-blue accent, hairline
+   borders, system-ui for prose, monospace for figures. Centered editorial
+   layout. Two weights (400/500); restrained, never sensational. */
 @theme {
-  --color-accent: #2c5aa0;
+  /* exact values from docs/whenwarends - standalone.html (oklch→hex) */
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-ink: #161b20;
+  --color-ink-soft: #3d4348;
+  --color-muted: #6c7378;
+  --color-faint: #99a1ab;
+  --color-line: #e3e6ea;
+  --color-accent: #3b6b97;
+  --color-accent-soft: #e7eef4;
+  --color-up: #4f7a52;
+  --color-down: #b5524e;
+
   --text-xs: 13px;
   --text-sm: 16px;
   --text-base: 16px;
   --text-lg: 22px;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
+
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas,
+    monospace;
 }
 
 @layer base {
   html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: var(--font-sans);
     font-size: 16px;
     line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   body {
-    background-color: white;
-    color: #111827;
+    background-color: var(--color-bg);
+    color: var(--color-ink);
   }
 
   h1,
   h2,
   h3 {
     font-weight: 500;
+    letter-spacing: -0.02em;
   }
 
-  h1 {
-    font-size: 22px;
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
   }
 
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 16px;
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   small {
@@ -49,16 +69,19 @@
   }
 }
 
-@utility accent {
-  color: #2c5aa0;
+/* Tabular sans figures (stat values, deltas) — aligned digits, not mono. */
+@utility figure {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
 }
 
-@utility stat-card {
-  background-color: white;
-  border: 1px solid var(--color-gray-200);
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+/* Tiny uppercase eyebrow / source tag. */
+@utility eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-faint);
 }
 
 /* Utility: hide scrollbar but keep scrolling */

@@ -19,62 +19,73 @@ const locale = lang as Lang;
 ---
 
 <!DOCTYPE html>
-<html lang={lang} dir={lang === 'uk' ? 'ltr' : lang === 'ru' ? 'ltr' : 'ltr'}>
+<html lang={lang} dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A dashboard answering: when does this war end?" />
-    <title>{title} — When War Ends</title>
+    <meta
+      name="description"
+      content="A market-implied probability for the end of the Russia-Ukraine war, surrounded by the measured data moving the curve."
+    />
+    <title>{title} — whenwarends.org</title>
+    {/* Language preference: a saved choice wins; otherwise auto-detect
+        from the browser (saved choice is only written when the user
+        explicitly switches — see the [data-set-lang] handler). Runs
+        before paint to avoid a flash. */}
+    <script is:inline>
+      (function () {
+        try {
+          var sup = ['uk', 'en', 'ru'];
+          var parts = location.pathname.split('/').filter(Boolean);
+          var cur = parts[0];
+          if (sup.indexOf(cur) === -1) return;
+          var stored = localStorage.getItem('lang');
+          var target = null;
+          if (stored && sup.indexOf(stored) !== -1) {
+            target = stored;
+          } else if (!stored) {
+            var navs = navigator.languages || [navigator.language || 'en'];
+            for (var i = 0; i < navs.length; i++) {
+              var l = (navs[i] || '').toLowerCase();
+              if (l.indexOf('uk') === 0) { target = 'uk'; break; }
+              if (l.indexOf('ru') === 0) { target = 'ru'; break; }
+              if (l.indexOf('en') === 0) { target = 'en'; break; }
+            }
+            if (!target) target = 'en';
+          }
+          if (target && target !== cur) {
+            parts[0] = target;
+            location.replace(
+              '/' + parts.join('/') + location.search + location.hash
+            );
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
-  <body class="bg-white text-gray-900">
+  <body>
     <Header lang={locale} />
 
-    <main class="w-full px-4 py-6 sm:px-6 sm:py-8 lg:px-12 xl:px-16">
+    <main
+      class="mx-auto w-full max-w-[1180px] px-6 pb-20 pt-[88px] sm:px-12"
+    >
       <slot />
     </main>
 
     <Footer lang={locale} lastUpdated={lastUpdated} />
+
+    {/* Persist an explicit language choice (the switcher carries
+        data-set-lang); the head script then honours it on later visits. */}
+    <script is:inline>
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest
+          ? e.target.closest('[data-set-lang]')
+          : null;
+        if (!a) return;
+        try {
+          localStorage.setItem('lang', a.getAttribute('data-set-lang'));
+        } catch (err) {}
+      });
+    </script>
   </body>
 </html>
-
-<style is:global>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111827;
-  }
-
-  a {
-    color: #2c5aa0;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  h1,
-  h2,
-  h3 {
-    font-weight: 500;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-</style>

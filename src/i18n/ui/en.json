@@ -1,7 +1,7 @@
 {
   "common": {
     "title": "When does this war end?",
-    "subtitle": "AI-written analysis, grounded in real, open data on the Russia-Ukraine war",
+    "subtitle": "A market-implied probability for the end of the Russia–Ukraine war, surrounded by the measured data moving the curve. No prediction is authored here — only what markets and indicators say, as of this moment.",
     "lastUpdated": "Last updated {date} UTC",
     "home": "Home",
     "methodology": "Methodology",
@@ -15,10 +15,10 @@
     "label": "Probability war has ended by date",
     "median": "Median expected end date",
     "closest": "Closest date",
-    "optimistic": "Most optimistic",
+    "optimistic": "Most optimistic active market",
     "definition": "Definition",
     "ceasefire": "Ceasefire",
-    "peaceDeal": "Formal peace deal",
+    "peaceDeal": "Formal peace",
     "either": "Either",
     "todayMarker": "Today",
     "crossing50": "50% crossing",
@@ -28,7 +28,17 @@
     "bktPeaceDeal": "Peace deal",
     "bktFramework": "US-backed framework",
     "bktLeadership": "Leadership change",
-    "bktOther": "Other"
+    "bktOther": "Other",
+    "caption": "Liquidity-weighted across listed markets · monotone PCHIP interpolation",
+    "legendCurve": "Consensus CDF",
+    "legendMarket": "Market resolution date",
+    "legendCrossing": "50% crossing",
+    "nMarkets": "{n} markets · liquidity ≥ $10k",
+    "medianTag": "consensus",
+    "medianNote": "50% probability crossing of the consensus CDF",
+    "optimisticTag": "optimistic",
+    "implied": "Implied probability {p} · liquidity {liq}",
+    "noMarket": "No active market"
   },
   "history": {
     "heading": "The war in data",
@@ -40,7 +50,26 @@
     "uaLine": "Ukraine",
     "aidCumulative": "Cumulative allocated aid (€)",
     "economy": "Currency vs USD",
-    "conflict": "Conflict intensity, tone & fire"
+    "conflict": "Conflict intensity, tone & fire",
+    "scrubIntro": "Drag the handle to scrub through measured indicators since 24 February 2022. Every figure shown is a snapshot from a free, open source.",
+    "asOf": "Showing data as of",
+    "now": "Now",
+    "per12m": "12m",
+    "iConflict": "Conflict volume",
+    "iTone": "Media tone",
+    "iFire": "Active fire detections",
+    "iUah": "Hryvnia · UAH per USD",
+    "iRub": "Ruble · RUB per USD",
+    "iUaGdp": "Ukraine real GDP",
+    "iRuGdp": "Russia real GDP",
+    "iUaCpi": "Ukraine CPI",
+    "iRuCpi": "Russia CPI",
+    "play": "Play",
+    "pause": "Pause",
+    "iRuLoss": "Russia equipment losses",
+    "iUaLoss": "Ukraine equipment losses",
+    "lossNote": "Personnel losses are not shown — no neutral, symmetric source exists; any figure would be a belligerent claim.",
+    "iAid": "Aid to Ukraine"
   },
   "beliefs": {
     "heading": "How beliefs have moved",
@@ -75,5 +104,14 @@
   },
   "errors": {
     "dataUnavailable": "Data unavailable, last good {time} ago"
+  },
+  "site": {
+    "blurb": "A non-commercial, Ukrainian-built project. Built in Kharkiv by {ITSUA}.",
+    "colData": "Data",
+    "colAbout": "About",
+    "colContact": "Contact",
+    "openSource": "Open source",
+    "editorial": "Editorial posture",
+    "openData": "CC BY 4.0 · open data, open source"
   }
 }

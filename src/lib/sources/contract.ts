@@ -60,6 +60,16 @@ export async function fetchJson(
   return res.json();
 }
 
+/** Fetch text with retry (e.g. CSV). Caller parses/validates the body. */
+export async function fetchText(
+  url: string,
+  opts: FetchRetryOptions = {}
+): Promise<string> {
+  const res = await fetchWithRetry(url, opts);
+  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+  return res.text();
+}
+
 export interface CollectorRunResult {
   source: string;
   ok: boolean;

@@ -8,64 +8,53 @@ interface Props {
 }
 
 const { lang } = Astro.props;
-
 const t = (key: string): string => getTranslation(lang, key);
 
-const navItems = [
-  { key: 'common.home', href: `/${lang}` },
-  { key: 'common.methodology', href: `/${lang}/methodology` },
-  { key: 'common.about', href: `/${lang}/about` },
-  { key: 'common.sources', href: `/${lang}/sources` },
-  { key: 'common.changelog', href: `/${lang}/changelog` },
-];
+// Language label in its own script, matching the design (УК / EN / РУ).
+const LABEL: Record<Lang, string> = { uk: 'УК', en: 'EN', ru: 'РУ' };
 ---
 
-<header class="border-b border-gray-200">
-  <div class="w-full px-4 py-4 sm:px-6 lg:px-12 xl:px-16">
-    {/* One nav row, mobile-first: page links wrap on the left, the short
-        language switcher stays pinned to the right. No masthead title —
-        the page's single <h1> in <main> carries the brand. */}
-    <div
-      class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3"
+<header class="border-b border-[var(--color-line)]">
+  <div
+    class="mx-auto flex max-w-[1180px] items-center justify-between px-6 py-4 sm:px-12"
+  >
+    <a
+      href={`/${lang}`}
+      class="flex items-center gap-2 text-[var(--color-ink)] hover:no-underline"
     >
-      <nav
-        aria-label="Primary"
-        class="flex flex-wrap gap-x-6 gap-y-2 text-[16px]"
-      >
-        {
-          navItems.map((item) => (
-            <a
-              href={item.href}
-              class="text-[#2c5aa0] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
-            >
-              {t(item.key)}
-            </a>
-          ))
-        }
-      </nav>
+      <span
+        class="inline-block h-3 w-3 rounded-[2px] bg-[var(--color-accent)]"
+        aria-hidden="true"></span>
+      <span class="text-[14px] font-medium tracking-tight">
+        whenwarends.org
+      </span>
+    </a>
 
-      <nav
-        aria-label={t('common.language')}
-        class="ml-auto flex items-center gap-3 text-[13px] lowercase"
-      >
-        {
-          LANGS.map((l) =>
-            l === lang ? (
-              <span aria-current="true" class="text-gray-500">
-                {l}
-              </span>
-            ) : (
-              <a
-                href={`/${l}`}
-                hreflang={l}
-                class="text-[#2c5aa0] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
-              >
-                {l}
-              </a>
-            )
+    <nav
+      aria-label={t('common.language')}
+      class="inline-flex overflow-hidden rounded-[3px] border border-[#e3e6ea] text-[13px]"
+    >
+      {
+        LANGS.map((l, i) =>
+          l === lang ? (
+            <span
+              aria-current="true"
+              class={`bg-[#eef1f5] px-2.5 py-1 text-[var(--color-ink)] ${i > 0 ? 'border-l border-[#e3e6ea]' : ''}`}
+            >
+              {LABEL[l]}
+            </span>
+          ) : (
+            <a
+              href={`/${l}`}
+              hreflang={l}
+              data-set-lang={l}
+              class={`px-2.5 py-1 text-[var(--color-muted)] hover:bg-[#f1f3f6] hover:text-[var(--color-ink)] hover:no-underline ${i > 0 ? 'border-l border-[#e3e6ea]' : ''}`}
+            >
+              {LABEL[l]}
+            </a>
           )
-        }
-      </nav>
-    </div>
+        )
+      }
+    </nav>
   </div>
 </header>

@@ -217,6 +217,9 @@ const HISTORY_SPECS: { key: string; metric: string; source?: string }[] = [
   { key: 'uaGdp', metric: 'ua_gdp_yoy', source: 'worldbank' },
   { key: 'ruCpi', metric: 'ru_cpi_yoy', source: 'worldbank' },
   { key: 'uaCpi', metric: 'ua_cpi_yoy', source: 'nbu' },
+  { key: 'ruLoss', metric: 'ru_equipment_losses', source: 'oryx' },
+  { key: 'uaLoss', metric: 'ua_equipment_losses', source: 'oryx' },
+  { key: 'aid', metric: 'aid_allocated_cumulative_eur', source: 'kiel' },
   { key: 'prob', metric: 'war_end_probability' }, // mean across sources/ts
 ];
 

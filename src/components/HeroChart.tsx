@@ -1,54 +1,26 @@
-// Hero CDF chart — an Astro island (use with client:visible on the page).
+// Hero CDF chart — an Astro island (client:load on the page).
 //
-// Renders the cumulative-probability-that-the-war-has-ended curve with a
-// definition toggle (ceasefire / formal peace deal / either), real market
-// dot markers, a ringed 50% crossing with a drop-line, and a vertical dashed
-// "today" marker. The chart's aria-label carries a text data summary for
-// screen readers.
-//
-// Chart.js is imported dynamically inside an effect so it only ships when the
-// island actually hydrates (spec §11: chart JS lazy-loaded). The Chart
-// instance is destroyed on unmount and rebuilt on definition change.
+// Cumulative-probability-that-the-war-has-ended curve with a light area
+// fill, hollow market-resolution markers, a ringed 50% crossing with a
+// drop-line, and a dashed "today" marker. Editorial palette (one muted-blue
+// accent, warm hairlines). Chart.js is imported dynamically so it only
+// ships when the island hydrates.
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import {
   buildChartSeries,
   formatPct,
+  probColor,
   type CurveSet,
   type HeroMarket,
-  type MarketBucket,
 } from '../lib/heroChartData';
 
-const ACCENT = '#2c5aa0';
-const GRID = '#e5e7eb';
-const AXIS_TEXT = '#4b5563';
-const MUTED = '#9ca3af';
-
-// Per-bucket colour + point shape. CLAUDE.md prefers a single accent, but the
-// operator explicitly asked for distinct style/colour per market type; this
-// is a restrained qualitative palette + varied point shapes so buckets stay
-// distinguishable even in greyscale.
-const BUCKET_ORDER: MarketBucket[] = [
-  'ceasefireAgreement',
-  'ceasefire',
-  'peaceDeal',
-  'framework',
-  'leadership',
-  'other',
-];
-const BUCKET_STYLE: Record<
-  MarketBucket,
-  { color: string; pointStyle: string }
-> = {
-  ceasefireAgreement: { color: '#2c5aa0', pointStyle: 'circle' },
-  ceasefire: { color: '#5b8def', pointStyle: 'triangle' },
-  peaceDeal: { color: '#2e7d5b', pointStyle: 'rect' },
-  framework: { color: '#b5651d', pointStyle: 'rectRot' },
-  leadership: { color: '#7a5ea8', pointStyle: 'star' },
-  other: { color: '#6b7280', pointStyle: 'crossRot' },
-};
-
-type DefinitionKey = 'ceasefire' | 'peaceDeal' | 'either';
+const ACCENT = '#3b6b97';
+const FILL = 'rgba(59,107,151,0.10)';
+const LINE = '#dcdcd6';
+const AXIS_TEXT = '#9b9b96';
+const MUTED = '#b7b8b1';
+const SURFACE = '#ffffff';
 
 export interface HeroChartProps {
   datasets: {
@@ -56,70 +28,23 @@ export interface HeroChartProps {
     peaceDeal?: CurveSet;
     either?: CurveSet;
   };
-  /** ISO-8601 UTC; vertical dashed marker and X-axis origin. */
   today: string;
-  /** Individual prediction markets, plotted distinctly over the curve. */
   markets: HeroMarket[];
-  /** Pre-resolved hero.* i18n strings from the .astro page. */
   strings: Record<string, string>;
 }
 
-const DEFINITION_ORDER: DefinitionKey[] = ['ceasefire', 'peaceDeal', 'either'];
-
 function HeroChart({ datasets, today, markets, strings }: HeroChartProps) {
-  // Only offer toggles for definitions that actually have a dataset.
-  const available = useMemo<DefinitionKey[]>(
-    () =>
-      DEFINITION_ORDER.filter(
-        (k) => datasets[k] != null
-      ) as DefinitionKey[],
-    [datasets]
-  );
-
-  const [active, setActive] = useState<DefinitionKey>('ceasefire');
-
-  const activeSet: CurveSet = datasets[active] ?? datasets.ceasefire;
-
   const series = useMemo(
-    () => buildChartSeries(activeSet, today),
-    [activeSet, today]
+    () => buildChartSeries(datasets.ceasefire, today),
+    [datasets, today]
   );
 
-  // One Chart.js scatter dataset per market bucket present, distinctly
-  // styled. Each point carries the raw market for the tooltip.
-  const marketDatasets = useMemo(() => {
-    return BUCKET_ORDER.filter((b) =>
-      markets.some((m) => m.bucket === b)
-    ).map((b) => {
-      const st = BUCKET_STYLE[b];
-      return {
-        isMarket: true,
-        label: strings[`bkt_${b}`] ?? b,
-        data: markets
-          .filter((m) => m.bucket === b)
-          .map((m) => ({
-            x: m.x,
-            y: m.y,
-            q: m.question,
-            src: m.source,
-            liq: m.liquidity,
-          })),
-        parsing: false,
-        showLine: false,
-        borderColor: st.color,
-        backgroundColor: st.color,
-        pointStyle: st.pointStyle,
-        pointRadius: 5,
-        pointHoverRadius: 7,
-        order: 1,
-      };
-    });
-  }, [markets, strings]);
+  const marketPoints = useMemo(
+    () => markets.map((m) => ({ x: m.x, y: m.y, q: m.question, src: m.source, liq: m.liquidity })),
+    [markets]
+  );
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  // Chart.js has no ambient types available in this project; the instance is
-  // held loosely and only ever .update()/.destroy()'d. Justified `any`:
-  // chart.js types are not part of the strict graph here.
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const chartRef = useRef<any>(null);
 
@@ -140,6 +65,10 @@ function HeroChart({ datasets, today, markets, strings }: HeroChartProps) {
               { x: series.medianPoint.x, y: series.medianPoint.y },
             ]
           : [];
+      const todayLine = [
+        { x: series.todayMs, y: 0 },
+        { x: series.todayMs, y: 1 },
+      ];
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const config: any = {
@@ -147,35 +76,77 @@ function HeroChart({ datasets, today, markets, strings }: HeroChartProps) {
         data: {
           datasets: [
             {
-              label: strings.label ?? '',
+              label: 'curve',
               data: series.data,
               parsing: false,
-              borderColor: ACCENT,
-              backgroundColor: 'transparent',
+              // diverging by probability: 0% red → 50% blue → 100% green
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              borderColor: (c: any) => {
+                const ch = c.chart;
+                const area = ch.chartArea;
+                if (!area || !ch.scales?.y) return ACCENT;
+                const g = ch.ctx.createLinearGradient(
+                  0,
+                  ch.scales.y.getPixelForValue(0),
+                  0,
+                  ch.scales.y.getPixelForValue(1)
+                );
+                g.addColorStop(0, probColor(0));
+                g.addColorStop(0.5, probColor(0.5));
+                g.addColorStop(1, probColor(1));
+                return g;
+              },
+              backgroundColor: FILL,
               borderWidth: 2,
+              fill: 'origin',
               pointRadius: 0,
               tension: 0,
+              order: 4,
+            },
+            {
+              label: 'today',
+              data: todayLine,
+              parsing: false,
+              borderColor: MUTED,
+              borderWidth: 1,
+              borderDash: [2, 3],
+              pointRadius: 0,
               order: 3,
             },
             {
-              label: strings.crossing50 ?? '',
+              label: 'crossing',
               data: dropLine,
               parsing: false,
-              borderColor: MUTED,
+              borderColor: ACCENT,
               borderWidth: 1,
               borderDash: [3, 3],
               pointRadius: 0,
               order: 2,
             },
-            ...marketDatasets,
             {
-              label: strings.crossing50 ?? '',
+              label: 'markets',
+              data: marketPoints,
+              parsing: false,
+              showLine: false,
+              pointBorderColor: marketPoints.map((m) => probColor(m.y)),
+              pointBackgroundColor: 'transparent',
+              pointStyle: 'circle',
+              pointRadius: 4,
+              pointHoverRadius: 6,
+              pointBorderWidth: 1.5,
+              order: 1,
+            },
+            {
+              label: 'median',
               data: series.medianPoint ? [series.medianPoint] : [],
               parsing: false,
               showLine: false,
-              borderColor: ACCENT,
-              backgroundColor: '#ffffff',
-              pointRadius: 7,
+              pointBorderColor: series.medianPoint
+                ? probColor(series.medianPoint.y)
+                : ACCENT,
+              backgroundColor: SURFACE,
+              pointBackgroundColor: SURFACE,
+              pointRadius: 6,
               pointBorderWidth: 3,
               pointStyle: 'circle',
               order: 0,
@@ -185,24 +156,20 @@ function HeroChart({ datasets, today, markets, strings }: HeroChartProps) {
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          // No flashing/animated numbers (CLAUDE.md).
           animation: false,
           interaction: { mode: 'nearest', intersect: false },
           scales: {
             x: {
               type: 'linear',
               min: series.xMin,
-              // Pad the right edge by ~4% of the span so the latest
-              // marker/point doesn't sit flush against the axis.
-              max:
-                series.xMax + (series.xMax - series.xMin) * 0.04,
-              grid: { color: GRID, drawTicks: false },
-              border: { color: GRID },
+              max: series.xMax + (series.xMax - series.xMin) * 0.04,
+              grid: { color: LINE, drawTicks: false },
+              border: { color: LINE },
               ticks: {
                 color: AXIS_TEXT,
-                font: { size: 13, weight: 400 },
+                font: { size: 12, weight: 400 },
                 maxRotation: 0,
-                autoSkipPadding: 24,
+                autoSkipPadding: 28,
                 callback: (value: number) =>
                   new Date(value).toLocaleDateString(undefined, {
                     month: 'short',
@@ -214,57 +181,22 @@ function HeroChart({ datasets, today, markets, strings }: HeroChartProps) {
             y: {
               min: 0,
               max: 1,
-              grid: { color: GRID, drawTicks: false },
-              border: { color: GRID },
+              grid: { color: LINE, drawTicks: false },
+              border: { color: LINE },
               ticks: {
                 color: AXIS_TEXT,
-                font: { size: 13, weight: 400 },
-                stepSize: 0.2,
-                // Hide the 0% tick: it sits in the bottom corner and
-                // collides with the first date label on the x-axis.
-                callback: (value: number) =>
-                  value === 0 ? '' : formatPct(value),
-              },
-            },
-            // Mirror of `y` on the right edge — same scale, labels only.
-            // No dataset binds to it (datasets use the default `y`); grid is
-            // suppressed so gridlines aren't drawn twice.
-            y1: {
-              display: true,
-              position: 'right',
-              min: 0,
-              max: 1,
-              grid: { display: false },
-              border: { color: GRID },
-              ticks: {
-                color: AXIS_TEXT,
-                font: { size: 13, weight: 400 },
-                stepSize: 0.2,
-                // Hide the 0% tick: it sits in the bottom corner and
-                // collides with the first date label on the x-axis.
+                font: { size: 12, weight: 400 },
+                stepSize: 0.25,
                 callback: (value: number) =>
                   value === 0 ? '' : formatPct(value),
               },
             },
           },
           plugins: {
-            // Legend explains the per-bucket styling; show only the market
-            // bucket datasets (skip the curve / drop-line / median entries).
-            legend: {
-              display: true,
-              position: 'bottom',
-              labels: {
-                usePointStyle: true,
-                color: AXIS_TEXT,
-                font: { size: 13, weight: 400 },
-                // Only the per-bucket market datasets carry `isMarket`.
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                filter: (li: any, data: any) =>
-                  data.datasets[li.datasetIndex]?.isMarket === true,
-              },
-            },
+            legend: { display: false },
             tooltip: {
               displayColors: false,
+              backgroundColor: '#22262b',
               callbacks: {
                 // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 title: (items: any[]) =>
@@ -296,6 +228,47 @@ function HeroChart({ datasets, today, markets, strings }: HeroChartProps) {
         },
       };
 
+      const crossingLabel = series.medianPoint
+        ? `${strings.legendCrossing ?? '50% crossing'} · ${new Date(
+            series.medianPoint.x
+          ).toLocaleDateString(undefined, {
+            month: 'short',
+            year: 'numeric',
+            timeZone: 'UTC',
+          })}`
+        : '';
+      const todayText = strings.todayMarker ?? 'today';
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const annPlugin: any = {
+        id: 'ann',
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        afterDatasetsDraw(chart: any) {
+          const { ctx, chartArea, scales } = chart;
+          ctx.save();
+          ctx.font =
+            '12px ui-monospace, SFMono-Regular, Menlo, monospace';
+          // "today"
+          const tx = scales.x.getPixelForValue(series.todayMs);
+          if (tx >= chartArea.left && tx <= chartArea.right) {
+            ctx.fillStyle = AXIS_TEXT;
+            ctx.textAlign = 'left';
+            ctx.fillText(todayText, tx + 4, chartArea.top + 12);
+          }
+          // "50% crossing · Mon Year"
+          if (series.medianPoint && crossingLabel) {
+            const mx = scales.x.getPixelForValue(series.medianPoint.x);
+            const my = scales.y.getPixelForValue(series.medianPoint.y);
+            ctx.fillStyle = ACCENT;
+            ctx.textAlign = mx > chartArea.right - 140 ? 'right' : 'left';
+            const ox = mx > chartArea.right - 140 ? -10 : 12;
+            ctx.fillText(crossingLabel, mx + ox, my - 10);
+          }
+          ctx.restore();
+        },
+      };
+      config.plugins = [annPlugin];
+
+      Chart.getChart(canvas)?.destroy();
       chartRef.current = new Chart(canvas, config);
     })();
 
@@ -306,70 +279,52 @@ function HeroChart({ datasets, today, markets, strings }: HeroChartProps) {
         chartRef.current = null;
       }
     };
-  }, [series, strings]);
+  }, [series, marketPoints]);
 
-  const todayLabel = new Date(series.todayMs).toLocaleDateString(undefined, {
-    dateStyle: 'medium',
-    timeZone: 'UTC',
-  });
+  const legend: { label: string; kind: 'line' | 'ring' | 'dash' | 'dot' }[] = [
+    { label: strings.legendCurve ?? 'Consensus CDF', kind: 'line' },
+    { label: strings.legendMarket ?? 'Market resolution date', kind: 'ring' },
+    { label: strings.legendCrossing ?? '50% crossing', kind: 'dot' },
+    { label: strings.todayMarker ?? 'Today', kind: 'dash' },
+  ];
 
   return (
     <div className="w-full">
-      {/* Definition toggle: segmented control. */}
-      {available.length > 1 && (
-        <div
-          role="group"
-          aria-label={strings.definition ?? 'Definition'}
-          className="mb-4 inline-flex rounded border border-gray-300"
-        >
-          {available.map((key, i) => {
-            const isActive = key === active;
-            return (
-              <button
-                key={key}
-                type="button"
-                aria-pressed={isActive}
-                onClick={() => setActive(key)}
-                className={[
-                  'px-3 py-1.5 text-sm font-normal focus:outline-none',
-                  'focus-visible:ring-2 focus-visible:ring-[#2c5aa0]',
-                  i > 0 ? 'border-l border-gray-300' : '',
-                  isActive
-                    ? 'bg-[#2c5aa0] text-white font-medium'
-                    : 'bg-white text-gray-700 hover:bg-gray-50',
-                ].join(' ')}
-              >
-                {strings[key] ?? key}
-              </button>
-            );
-          })}
-        </div>
-      )}
 
-      {/* Chart. The aria-label carries the text data summary for SR users. */}
       <div
         role="img"
-        aria-label={strings.chartAria ?? strings.label ?? ''}
-        className="relative h-72 w-full sm:h-96"
+        aria-label={strings.chartAria ?? ''}
+        className="relative h-[300px] w-full sm:h-[386px]"
       >
         <canvas ref={canvasRef} />
       </div>
 
-      <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-500">
-        <span>
-          {(strings.todayMarker ?? 'Today')}: {todayLabel}
-        </span>
-        {activeSet.median && (
-          <span>
-            {(strings.median ?? 'Median expected end date')}:{' '}
-            {new Date(activeSet.median).toLocaleDateString(undefined, {
-              dateStyle: 'medium',
-              timeZone: 'UTC',
-            })}
-          </span>
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-t border-[var(--color-line)] pt-4 text-[13px] text-[var(--color-muted)]">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+          {legend.map((l) => (
+            <span key={l.label} className="inline-flex items-center gap-2">
+              <svg width="22" height="10" aria-hidden="true">
+                {l.kind === 'line' && (
+                  <line x1="0" y1="5" x2="22" y2="5" stroke={ACCENT} strokeWidth="2" />
+                )}
+                {l.kind === 'dash' && (
+                  <line x1="0" y1="5" x2="22" y2="5" stroke={MUTED} strokeWidth="1" strokeDasharray="2 3" />
+                )}
+                {l.kind === 'ring' && (
+                  <circle cx="11" cy="5" r="3.5" fill="none" stroke={ACCENT} strokeWidth="1.5" />
+                )}
+                {l.kind === 'dot' && (
+                  <circle cx="11" cy="5" r="4" fill={SURFACE} stroke={ACCENT} strokeWidth="2.5" />
+                )}
+              </svg>
+              {l.label}
+            </span>
+          ))}
+        </div>
+        {strings.nMarkets && (
+          <span className="text-[var(--color-faint)]">{strings.nMarkets}</span>
         )}
       </div>
-
     </div>
   );
 }

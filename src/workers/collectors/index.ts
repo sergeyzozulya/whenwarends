@@ -13,6 +13,7 @@ import { worldbankGemCollector } from './worldbankGem';
 import { nbuCollector } from './nbu';
 import { nbuCpiCollector } from './nbuCpi';
 import { cbrCollector } from './cbr';
+import { oryxCollector } from './oryx';
 
 export const allCollectors: Collector[] = [
   polymarketCollector,
@@ -25,4 +26,5 @@ export const allCollectors: Collector[] = [
   nbuCollector,
   nbuCpiCollector,
   cbrCollector,
+  oryxCollector,
 ];
