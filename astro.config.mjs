@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   output: 'static',
+  site: 'https://whenwarends.org',
   // Pages live at /uk /en /ru only — without this, the bare root 404s
   // (in dev and in production). Send / to the default locale.
   redirects: {
@@ -20,7 +21,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
     ssr: {
-      external: ['better-sqlite3'],
+      // native addon — must not be bundled by the build's SSR step
+      external: ['better-sqlite3', '@resvg/resvg-js'],
     },
   },
 });

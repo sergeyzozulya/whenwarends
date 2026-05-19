@@ -3,6 +3,7 @@
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
 import type { Lang } from '@lib/types';
+import { getTranslation } from '@i18n/index';
 import '@/styles/global.css';
 
 interface Props {
@@ -16,6 +17,14 @@ const { title, lang, lastUpdated } = Astro.props;
 // `lang` is typed as string for backward compatibility with existing pages;
 // Header/Footer require the Lang union. Pages only ever pass a valid locale.
 const locale = lang as Lang;
+
+// Social-share metadata. og:image is the per-locale build-time PNG, so it
+// always carries the latest numbers; URLs are absolute (Astro.site).
+const og = (k: string) => getTranslation(locale, k);
+const ogTitle = og('common.title');
+const ogDesc = og('common.subtitle');
+const ogImage = new URL(`/${locale}/og.png`, Astro.site).href;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <!DOCTYPE html>
@@ -23,11 +32,24 @@ const locale = lang as Lang;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="A market-implied probability for the end of the Russia-Ukraine war, surrounded by the measured data moving the curve."
-    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content={ogDesc} />
+    <link rel="canonical" href={canonical} />
     <title>{title} — whenwarends.org</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="whenwarends.org" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDesc} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle} />
+    <meta name="twitter:description" content={ogDesc} />
+    <meta name="twitter:image" content={ogImage} />
     {/* Language preference: a saved choice wins; otherwise auto-detect
         from the browser (saved choice is only written when the user
         explicitly switches — see the [data-set-lang] handler). Runs
