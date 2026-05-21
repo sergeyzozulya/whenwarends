@@ -1,5 +1,5 @@
 ---
-import { getTranslation } from '@i18n/index';
+import { getTranslation, localizedPath } from '@i18n/index';
 import type { Lang } from '@lib/types';
 import { LANGS } from '@lib/types';
 
@@ -10,8 +10,15 @@ interface Props {
 const { lang } = Astro.props;
 const t = (key: string): string => getTranslation(lang, key);
 
-// Language label in its own script, matching the design (УК / EN / РУ).
-const LABEL: Record<Lang, string> = { uk: 'УК', en: 'EN', ru: 'РУ' };
+// Latin labels read clearly internationally (UA avoids the УК/UK confusion).
+const LABEL: Record<Lang, string> = { uk: 'UA', en: 'EN', ru: 'RU' };
+
+// Switching language keeps the reader on the SAME page. en lives at the root
+// (no prefix), so only strip a locale segment when the current page is prefixed.
+const segs = Astro.url.pathname.split('/').filter(Boolean);
+const rest = (lang === 'en' ? segs : segs.slice(1)).join('/');
+const hrefFor = (l: Lang): string => localizedPath(l, rest ? `/${rest}` : '');
+const homeHref = localizedPath(lang);
 ---
 
 <header class="border-b border-[var(--color-line)]">
@@ -19,7 +26,7 @@ const LABEL: Record<Lang, string> = { uk: 'УК', en: 'EN', ru: 'РУ' };
     class="mx-auto flex max-w-[1180px] items-center justify-between px-6 py-4 sm:px-12"
   >
     <a
-      href={`/${lang}`}
+      href={homeHref}
       class="flex items-center gap-2 text-[var(--color-ink)] hover:no-underline"
     >
       <span
@@ -45,7 +52,7 @@ const LABEL: Record<Lang, string> = { uk: 'УК', en: 'EN', ru: 'РУ' };
             </span>
           ) : (
             <a
-              href={`/${l}`}
+              href={hrefFor(l)}
               hreflang={l}
               data-set-lang={l}
               class={`px-2.5 py-1 text-[var(--color-muted)] hover:bg-[#f1f3f6] hover:text-[var(--color-ink)] hover:no-underline ${i > 0 ? 'border-l border-[#e3e6ea]' : ''}`}

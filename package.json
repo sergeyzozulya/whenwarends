@@ -13,6 +13,7 @@
     "test:e2e": "playwright test",
     "perf": "tsx scripts/check-bundle.ts",
     "collect": "tsx scripts/collect.ts",
+    "seed-card-metrics": "tsx scripts/seed-card-metrics.ts",
     "draft-brief": "tsx scripts/draft-brief.ts",
     "backfill-briefs": "tsx scripts/backfill-briefs.ts",
     "import:firms-archive": "tsx scripts/import-firms-archive.ts",

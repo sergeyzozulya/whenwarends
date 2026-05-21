@@ -171,6 +171,7 @@ function toMarketRow(m: KalshiMarket, observedAt: string): MarketRow {
     category: 'war_end',
     current_price: impliedProbability(m),
     liquidity_usd: liquidityUsd,
+    liquidity_mana: null,
     last_updated: observedAt,
   };
 }

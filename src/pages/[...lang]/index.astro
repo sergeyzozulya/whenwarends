@@ -1,0 +1,252 @@
+---
+// Homepage — editorial layout matching docs/whenwarends - standalone.html.
+import Layout from '@/layouts/Layout.astro';
+import HeroChart from '@/components/HeroChart';
+import HistoryTimeline from '@/components/HistoryTimeline';
+import StatCard from '@/components/StatCard.astro';
+import { getTranslation } from '@i18n/index';
+import type { Lang } from '@lib/types';
+import { loadHomePayload } from '@lib/homepage';
+import type { HeroMarket } from '@lib/heroChartData';
+
+export function getStaticPaths() {
+  // en is the default locale, served at the root (no /en prefix); uk/ru prefixed.
+  return [
+    { params: { lang: undefined } },
+    { params: { lang: 'uk' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+const lang = (Astro.params.lang ?? 'en') as Lang;
+const t = (key: string) => getTranslation(lang, key);
+const data = loadHomePayload(lang);
+
+const localeByLang: Record<Lang, string> = {
+  uk: 'uk-UA',
+  en: 'en-US',
+  ru: 'ru-RU',
+};
+const loc = localeByLang[lang];
+
+const heroStrings: Record<string, string> = {
+  label: t('hero.label'),
+  definition: t('hero.definition'),
+  ceasefire: t('hero.ceasefire'),
+  peaceDeal: t('hero.peaceDeal'),
+  either: t('hero.either'),
+  todayMarker: t('hero.todayMarker'),
+  crossing50: t('hero.crossing50'),
+  chartAria: t('hero.chartAria'),
+  consensusLabel: t('hero.consensus'),
+  consensusMeta: t('hero.consensusCaption'),
+  bkt_ceasefireAgreement: t('hero.bktCeasefireAgreement'),
+  bkt_ceasefire: t('hero.bktCeasefire'),
+  bkt_peaceDeal: t('hero.bktPeaceDeal'),
+  bkt_framework: t('hero.bktFramework'),
+  bkt_leadership: t('hero.bktLeadership'),
+  bkt_other: t('hero.bktOther'),
+};
+
+const historyStrings: Record<string, string> = {
+  heading: t('history.heading'),
+  scrubIntro: t('history.scrubIntro'),
+  scrubAria: t('history.scrubAria'),
+  asOf: t('history.asOf'),
+  now: t('history.now'),
+  play: t('history.play'),
+  pause: t('history.pause'),
+  per12m: t('history.per12m'),
+  intensity: t('history.iConflict'),
+  tone: t('history.iTone'),
+  fire: t('history.iFire'),
+  uah: t('history.iUah'),
+  rub: t('history.iRub'),
+  uaGdp: t('history.iUaGdp'),
+  ruGdp: t('history.iRuGdp'),
+  uaCpi: t('history.iUaCpi'),
+  ruCpi: t('history.iRuCpi'),
+  ruLoss: t('history.iRuLoss'),
+  uaLoss: t('history.iUaLoss'),
+  aid: t('history.iAid'),
+  lossNote: t('history.lossNote'),
+  locale: loc,
+};
+
+// --- Stat cards: closest-to-consensus + most-optimistic active market ---
+// Both picks are derived once in the payload (src/lib/cards.ts) so the values
+// rendered here match exactly the snapshots the collect script persists for
+// the per-card trend.
+const mkts: HeroMarket[] = data.hero.markets ?? [];
+const nMarkets = mkts.length;
+const { closest: closestM, optimistic: optimisticM } = data.cards;
+
+// 3-char month, no trailing dots (uk/ru add them), capitalized; year separate.
+const fmtMonthFmt = new Intl.DateTimeFormat(loc, {
+  month: 'short',
+  timeZone: 'UTC',
+});
+const monthOf = (ms: number): string =>
+  fmtMonthFmt.format(new Date(ms)).replace(/\./g, '').toUpperCase();
+const yearOf = (ms: number): string => String(new Date(ms).getUTCFullYear());
+
+const fmtPctView = (p: number): string => `${Math.round(p * 100)}%`;
+
+const fmtLiq = (v: number | null, unit: 'usd' | 'mana'): string => {
+  if (v == null || !Number.isFinite(v)) return '—';
+  if (unit === 'mana') return `${Math.round(v).toLocaleString(loc)} ${t('hero.mana')}`;
+  if (v >= 1000) return `$${Math.round(v / 1000)}k`;
+  return `$${Math.round(v)}`;
+};
+
+const impliedFor = (m: {
+  price: number;
+  liquidity: number | null;
+  liquidityUnit: 'usd' | 'mana';
+}): string =>
+  t('hero.implied')
+    .replace('{p}', fmtPctView(m.price))
+    .replace('{liq}', fmtLiq(m.liquidity, m.liquidityUnit));
+
+const closestPct = closestM ? fmtPctView(closestM.price) : '—';
+const closestMonth = closestM ? monthOf(closestM.dateMs) : '';
+const closestYear = closestM ? yearOf(closestM.dateMs) : '';
+const closestMeta = closestM
+  ? `${closestM.source} · ${closestM.question}`
+  : t('hero.noMarket');
+const closestImplied = closestM ? impliedFor(closestM) : '';
+
+const optimisticPct = optimisticM ? fmtPctView(optimisticM.price) : '—';
+const optimisticMonth = optimisticM ? monthOf(optimisticM.dateMs) : '';
+const optimisticYear = optimisticM ? yearOf(optimisticM.dateMs) : '';
+const optimisticMeta = optimisticM
+  ? `${optimisticM.source} · ${optimisticM.question}`
+  : t('hero.noMarket');
+const optimisticImplied = optimisticM ? impliedFor(optimisticM) : '';
+
+const nMarketsLabel = t('hero.nMarkets').replace('{n}', String(nMarkets));
+
+const trendStrings = {
+  pts: t('trend.pts'),
+  daysAgo: t('trend.daysAgo'),
+};
+const consensusTrend = data.trends.consensus;
+const consensus = data.consensus;
+const consensusPct = consensus ? fmtPctView(consensus.probability) : '—';
+const consensusMonth = consensus ? monthOf(consensus.dateMs) : '';
+const consensusYear = consensus ? yearOf(consensus.dateMs) : '';
+
+const cardCls =
+  'rounded-xl border border-[var(--color-line)] bg-[var(--color-surface)]';
+---
+
+<Layout
+  lang={lang}
+  title={t('common.title')}
+  lastUpdated={data.lastUpdated ?? undefined}
+>
+  <div class="space-y-10">
+    {/* Hero */}
+    <section>
+      <h1
+        class="text-[clamp(40px,6vw,72px)] font-normal leading-[1.02] tracking-[-0.025em] text-[var(--color-ink)]"
+      >
+        {t('common.title')}
+      </h1>
+      <p
+        class="mt-5 text-[18px] leading-[1.55] text-[var(--color-ink-soft)]"
+      >
+        {t('common.subtitle')}
+      </p>
+    </section>
+
+    {/* Probability card */}
+    <section class={`${cardCls} p-8`}>
+      <h2
+        class="text-[22px] font-medium leading-[1.5] tracking-[-0.005em] text-[var(--color-ink)]"
+      >
+        {t('hero.label')}
+      </h2>
+      <p class="mt-1 text-[13px] text-[var(--color-muted)]">
+        {nMarketsLabel}
+      </p>
+      <div class="mt-7">
+        <HeroChart
+          client:load
+          datasets={data.hero.datasets}
+          today={data.hero.today}
+          markets={data.hero.markets}
+          consensus={consensus
+            ? { x: consensus.dateMs, y: consensus.probability, history: consensusTrend.points }
+            : null}
+          closestId={closestM?.marketId ?? null}
+          optimisticId={optimisticM?.marketId ?? null}
+          strings={heroStrings}
+        />
+      </div>
+    </section>
+
+    {/* Three stat cards: closest · consensus · optimistic */}
+    <section class="grid grid-cols-1 items-stretch gap-5 md:grid-cols-3">
+      <StatCard
+        label={t('hero.closest')}
+        tag={t('hero.closestTag')}
+        kind="soonest"
+        price={closestM?.price ?? null}
+        pct={closestPct}
+        month={closestMonth}
+        year={closestYear}
+        meta={closestMeta}
+        implied={closestImplied}
+        trend={data.trends.closest}
+        trendStrings={trendStrings}
+      />
+      <StatCard
+        label={t('hero.consensus')}
+        tag={t('hero.averageTag')}
+        kind="average"
+        price={consensus?.probability ?? null}
+        pct={consensusPct}
+        month={consensusMonth}
+        year={consensusYear}
+        meta={t('hero.consensusCaption')}
+        trend={consensusTrend}
+        trendStrings={trendStrings}
+      />
+      <StatCard
+        label={t('hero.optimistic')}
+        tag={t('hero.optimisticTag')}
+        kind="optimistic"
+        price={optimisticM?.price ?? null}
+        pct={optimisticPct}
+        month={optimisticMonth}
+        year={optimisticYear}
+        meta={optimisticMeta}
+        implied={optimisticImplied}
+        trend={data.trends.optimistic}
+        trendStrings={trendStrings}
+      />
+    </section>
+
+    {/* The war in data */}
+    <section>
+      <h2
+        class="text-[22px] font-medium leading-[1.5] tracking-[-0.005em] text-[var(--color-ink)]"
+      >
+        {t('history.heading')}
+      </h2>
+      <p
+        class="mt-1 text-[16px] leading-[1.5] text-[var(--color-ink-soft)]"
+      >
+        {t('history.scrubIntro')}
+      </p>
+      <div class={`${cardCls} mt-7 p-8`}>
+        <HistoryTimeline
+          client:visible
+          history={data.history}
+          strings={historyStrings}
+        />
+      </div>
+    </section>
+  </div>
+</Layout>

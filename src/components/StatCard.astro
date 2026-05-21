@@ -1,0 +1,114 @@
+---
+// One stat card below the hero chart (closest · consensus · optimistic).
+// Big colour-coded percent over a half-size short date, a colour-coded tag chip
+// with the matching marker icon, optional implied line, and a bottom-aligned
+// trend (graph + separator) so all three cards line up.
+
+import { probColor } from '@lib/heroChartData';
+import { OPTIMISTIC_PATH, AVERAGE_PATH } from '@lib/icons';
+import TrendBadge from './TrendBadge.astro';
+import type { TrendData } from '@lib/homepage';
+
+interface Props {
+  label: string;
+  tag: string;
+  kind: 'soonest' | 'average' | 'optimistic';
+  /** 0–1 probability that drives the colour coding; null ⇒ no market. */
+  price: number | null;
+  pct: string; // "24%" / "—"
+  month: string; // 3-char, no dot, e.g. "Dec" / ""
+  year: string; // "2026" / ""
+  meta: string;
+  implied?: string;
+  trend: TrendData;
+  trendStrings: { pts: string; daysAgo: string };
+}
+
+const { label, tag, kind, price, pct, month, year, meta, implied, trend, trendStrings } =
+  Astro.props;
+
+const color = price !== null ? probColor(price) : 'var(--color-ink)';
+const tagBorder =
+  price !== null
+    ? probColor(price).replace('rgb(', 'rgba(').replace(')', ',0.3)')
+    : 'var(--color-line)';
+---
+
+<article
+  class="@container flex flex-col rounded-xl border border-[var(--color-line)] bg-[var(--color-surface)] p-8"
+>
+  <div class="flex flex-col items-start gap-1.5">
+    <span
+      class="inline-flex items-center gap-1 rounded-[2px] border px-1.5 py-px text-[11px] tracking-[0.44px]"
+      style={`color:${color};border-color:${tagBorder}`}
+    >
+      {
+        kind === 'soonest' && (
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+            <path d="M12 12V7M12 12h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        )
+      }
+      {
+        kind === 'average' && (
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d={AVERAGE_PATH}
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        )
+      }
+      {
+        kind === 'optimistic' && (
+          <svg width="12" height="12" viewBox="0 0 56 56" aria-hidden="true">
+            <path d={OPTIMISTIC_PATH} fill="currentColor" />
+          </svg>
+        )
+      }
+      {tag}
+    </span>
+    <h2 class="text-[13px] text-[var(--color-muted)]">{label}</h2>
+  </div>
+
+  <div class="mt-2 flex items-center gap-3" style={`color:${color}`}>
+    <span class="text-[clamp(2.25rem,22cqi,4.5rem)] font-normal leading-none tracking-[-0.025em] tabular-nums">
+      {pct}
+    </span>
+    {
+      month && (
+        <div class="flex flex-col text-[clamp(1rem,9cqi,1.6rem)] font-normal leading-[1.05] tabular-nums">
+          <span>{month}</span>
+          <span>{year}</span>
+        </div>
+      )
+    }
+  </div>
+
+  <p class="mt-6 text-[13px] leading-[1.5] text-[var(--color-muted)]">{meta}</p>
+  {
+    implied && (
+      <p class="mt-4 mb-4 flex gap-2 text-[13px] text-[var(--color-muted)]">
+        <span aria-hidden="true">→</span>
+        <span>{implied}</span>
+      </p>
+    )
+  }
+  {
+    trend.count > 0 && (
+      <div class="mt-auto border-t border-[var(--color-line)] pt-3">
+        <TrendBadge
+          points={trend.points}
+          deltaPts={trend.deltaPts}
+          deltaDays={trend.deltaDays}
+          count={trend.count}
+          strings={trendStrings}
+        />
+      </div>
+    )
+  }
+</article>

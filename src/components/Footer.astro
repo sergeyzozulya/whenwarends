@@ -1,5 +1,5 @@
 ---
-import { getTranslation } from '@i18n/index';
+import { getTranslation, localizedPath } from '@i18n/index';
 import type { Lang } from '@lib/types';
 
 interface Props {
@@ -17,8 +17,8 @@ const REPO = 'https://github.com/sergeyzozulya/whenwarends';
 const EMAIL = 'hello@whenwarends.org';
 
 const dataLinks = [
-  { label: t('common.methodology'), href: `/${lang}/methodology` },
-  { label: t('common.sources'), href: `/${lang}/sources` },
+  { label: t('common.methodology'), href: localizedPath(lang, '/methodology') },
+  { label: t('common.sources'), href: localizedPath(lang, '/sources') },
 ];
 
 let lastUpdatedLabel: string | null = null;
@@ -32,7 +32,8 @@ if (lastUpdated) {
       day: '2-digit',
       hour: '2-digit',
       minute: '2-digit',
-      hour12: false,
+      // h23 renders midnight as 00:00; hour12:false can yield "24:00" on some ICU.
+      hourCycle: 'h23',
     })
       .format(parsed)
       .replace(',', '');
@@ -49,7 +50,7 @@ const linkCls =
     <div class="grid grid-cols-2 gap-x-8 gap-y-10 md:gap-x-9 md:[grid-template-columns:2fr_1fr_1fr_1fr]">
       <div class="col-span-2 md:col-span-1">
         <a
-          href={`/${lang}`}
+          href={localizedPath(lang)}
           class="flex items-center gap-2 text-[var(--color-ink)] hover:no-underline"
         >
           <span
@@ -99,10 +100,10 @@ const linkCls =
         <p class="eyebrow">{t('site.colAbout')}</p>
         <ul class="mt-3 space-y-2 text-[14px]">
           <li>
-            <a href={`/${lang}/about`} class={linkCls}>{t('common.about')}</a>
+            <a href={localizedPath(lang, '/about')} class={linkCls}>{t('common.about')}</a>
           </li>
           <li>
-            <a href={`/${lang}/changelog`} class={linkCls}>
+            <a href={localizedPath(lang, '/changelog')} class={linkCls}>
               {t('common.changelog')}
             </a>
           </li>

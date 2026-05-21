@@ -50,7 +50,10 @@ export interface MarketRow {
   resolution_date: string; // ISO-8601 UTC
   category: string;
   current_price: number | null; // 0–1 probability
+  /** USD liquidity (Polymarket, real money). Null for play-money sources. */
   liquidity_usd: number | null;
+  /** Mana liquidity (Manifold, play money). Null for USD sources. */
+  liquidity_mana: number | null;
   last_updated: string; // ISO-8601 UTC
 }
 
@@ -94,8 +97,11 @@ export interface EventRow {
 export interface ChangelogRow {
   id: number;
   date: string; // YYYY-MM-DD
-  description: string;
+  /** Stable category key, localized in the page: release | new-source | redesign | privacy. */
   category: string;
+  description_uk: string;
+  description_en: string;
+  description_ru: string;
 }
 
 // --- Collector contract ---

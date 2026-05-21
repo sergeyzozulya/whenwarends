@@ -5,11 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   output: 'static',
   site: 'https://whenwarends.org',
-  // Pages live at /uk /en /ru only — without this, the bare root 404s
-  // (in dev and in production). Send / to the default locale.
-  redirects: {
-    '/': '/en/',
-  },
+  // English (default locale) is served at the root via [...lang] optional-prefix
+  // routes; uk/ru are prefixed (/uk, /ru). No root redirect needed.
   integrations: [react()],
   i18n: {
     defaultLocale: 'en',

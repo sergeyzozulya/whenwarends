@@ -59,7 +59,7 @@ Actions): `FIRMS_MAP_KEY`, `KIEL_DATASET_URL`, `ANTHROPIC_API_KEY`
 ## Documentation
 
 - **[SPEC.md](docs/SPEC.md)** — Full project specification, architecture, data sources, phased delivery plan
-- **[CLAUDE.md](CLAUDE.md)** — Conventions for Claude Code: repository structure, TypeScript style, database schema, always/never checklists
+- **[CLAUDE.md](CLAUDE.md)** — Conventions for Claude Code: repository structure, TypeScript style, routing & i18n, data storage, always/never checklists
 - **[DEPLOY.md](DEPLOY.md)** — One-time Cloudflare setup, local dev, manual deploy, troubleshooting
 
 ## Project phases
@@ -77,19 +77,20 @@ Actions): `FIRMS_MAP_KEY`, `KIEL_DATASET_URL`, `ANTHROPIC_API_KEY`
 - **Astro 5** with TypeScript + Tailwind CSS
 - **Cloudflare Workers** + Static Assets (static-only; no runtime DB)
 - **Versioned repo JSON** (`data/`) for time-series snapshots — read at build
-- **GitHub Actions** for the weekly collect + brief jobs
 - **Chart.js** for the CDF visualization
+- **satori + @resvg/resvg-js** for build-time per-locale OG share images
 - **Anthropic Claude API** for weekly editorial briefs
 - **Playwright** for E2E testing
-- **GitHub Actions** for CI/CD
+- **GitHub Actions** for CI + the weekly collect/brief jobs
 
 ## Data sources
 
 Free, open, publicly accessible sources only:
 
-- **Polymarket + Manifold** — prediction markets (war-end CDF)
+- **Polymarket + Manifold** — prediction markets (war-end CDF; normalized per source, combined 50/50)
 - **GDELT 2.0** — conflict volume intensity + tone
 - **NASA FIRMS** — fire/heat anomalies (combat proxy)
+- **Oryx** — visually-confirmed RU/UA equipment losses (CC BY-NC)
 - **Kiel Ukraine Support Tracker** — aid commitments
 - **World Bank** (Indicators + Global Economic Monitor) — RU annual macro, RU monthly CPI, RU/UA quarterly real GDP
 - **National Bank of Ukraine** — UAH/USD FX + Ukraine monthly CPI

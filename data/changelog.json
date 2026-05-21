@@ -1,26 +1,42 @@
 [
   {
+    "id": 5,
+    "date": "2026-05-21",
+    "category": "redesign",
+    "description_en": "Reworked the main chart: predictions now combine Polymarket and Manifold, each market sized by how much is staked on it, with three marked points — soonest, the calculated consensus, and most optimistic. Every market now keeps its own history.",
+    "description_uk": "Оновлено головний графік: прогнози тепер поєднують Polymarket і Manifold, розмір кожного ринку залежить від ставок на нього, і виділено три точки — найближчу, розрахований консенсус і найоптимістичнішу. Кожен ринок тепер веде власну історію.",
+    "description_ru": "Обновлён главный график: прогнозы теперь объединяют Polymarket и Manifold, размер каждого рынка зависит от ставок на него, и выделены три точки — ближайшая, расчётный консенсус и самая оптимистичная. Каждый рынок теперь ведёт собственную историю."
+  },
+  {
     "id": 1,
     "date": "2026-05-19",
     "category": "release",
-    "description": "Initial public version. Market-implied war-end CDF (Polymarket + Manifold) with closest-to-consensus and most-optimistic summary cards; a scrubbable \"war in data\" timeline of conflict intensity/tone/fire (GDELT + NASA FIRMS), currency vs USD (CBR + NBU), and real GDP and CPI year-on-year for Russia and Ukraine (World Bank Global Economic Monitor + NBU). AI-drafted weekly briefs are auto-published behind integrity guards; reconstructed historical briefs are labelled. Three languages (uk, en, ru), static-first on Cloudflare's free tier."
+    "description_en": "Launched: a market-based estimate of when the war ends, surrounded by the data behind it — fighting intensity, the economy, aid, and equipment losses. In Ukrainian, English and Russian.",
+    "description_uk": "Запуск: ринкова оцінка того, коли закінчиться війна, разом із даними за нею — інтенсивність боїв, економіка, допомога та втрати техніки. Українською, англійською та російською.",
+    "description_ru": "Запуск: рыночная оценка того, когда закончится война, вместе с данными за ней — интенсивность боёв, экономика, помощь и потери техники. На украинском, английском и русском."
   },
   {
     "id": 2,
     "date": "2026-05-19",
-    "category": "new source",
-    "description": "Added confirmed equipment losses for Russia and Ukraine, from the Oryx visually-confirmed, photo-attributed dataset (CC BY-NC; used non-commercially and credited). Two new cumulative indicators in the \"war in data\" grid. Personnel losses were considered and deliberately excluded — no neutral, symmetric source exists, so any figure would be a belligerent claim, which the project's no-fabrication rule forbids."
+    "category": "new-source",
+    "description_en": "Added confirmed equipment losses for both sides, from Oryx's photo-verified count. We don't show personnel losses: there is no neutral source, so any number would be one side's claim.",
+    "description_uk": "Додано підтверджені втрати техніки обох сторін за фотопідтвердженими даними Oryx. Втрати особового складу не показуємо: нейтрального джерела немає, тож будь-яка цифра була б заявою однієї зі сторін.",
+    "description_ru": "Добавлены подтверждённые потери техники обеих сторон по фотоподтверждённым данным Oryx. Потери личного состава не показываем: нейтрального источника нет, поэтому любая цифра была бы заявлением одной из сторон."
   },
   {
     "id": 3,
     "date": "2026-05-19",
     "category": "redesign",
-    "description": "Editorial redesign: centred layout, system-ui type, warm slate palette and bordered cards. The hero CDF is now probability-colour-coded (0% red → 50% blue → 100% green) on the curve, market markers and the two summary cards. \"The war in data\" became a scrub-by-date indicator grid with Play/Now controls; added an \"Aid to Ukraine\" indicator (cumulative euros allocated, Kiel Ukraine Support Tracker) and an on-page note explaining why personnel losses are not shown. Language now auto-selects from the browser on first visit and an explicit choice persists in local storage. Methodology and Sources pages updated to match."
+    "description_en": "Refreshed the design: cleaner layout, colour-coded probabilities, and a timeline you can scrub through by date. Added aid to Ukraine, and the site now picks your language automatically on the first visit.",
+    "description_uk": "Оновлено дизайн: чистіший вигляд, кольорове кодування ймовірностей і хронологія, яку можна гортати за датами. Додано допомогу Україні; сайт тепер сам обирає мову під час першого візиту.",
+    "description_ru": "Обновлён дизайн: чище вид, цветовое кодирование вероятностей и хронология, которую можно листать по датам. Добавлена помощь Украине; сайт теперь сам выбирает язык при первом визите."
   },
   {
     "id": 4,
     "date": "2026-05-19",
     "category": "privacy",
-    "description": "Owner decision: Google Analytics 4 added for coarse traffic insight — one third-party script, run cookieless. Under Consent Mode v2 analytics_storage is permanently denied (never granted), so no _ga cookie, no client identifier and no cross-site/cross-session tracking are ever set; consequently there is no consent banner. This still reverses the earlier no-third-party / cookieless-Cloudflare-Analytics posture, so About, the SPEC privacy section and the changelog were rewritten — the site no longer claims to avoid third-party analytics entirely. Also: a Ukrainian-flag favicon and per-locale, build-time Open Graph / Twitter share images that show the current headline and the two live summary cards."
+    "description_en": "Added basic, cookieless analytics for rough visitor counts — no cookie, no identifier, no banner — so we no longer claim to use zero third-party scripts. Also added a flag favicon and social-share images.",
+    "description_uk": "Додано базову аналітику без кукі для приблизного підрахунку відвідувачів — без кукі, без ідентифікаторів, без банера, — тож ми більше не стверджуємо, що зовсім не використовуємо сторонні скрипти. Також додано фавікон із прапором і зображення для соцмереж.",
+    "description_ru": "Добавлена базовая аналитика без кук для приблизного подсчёта посетителей — без кук, без идентификаторов, без баннера, — поэтому мы больше не утверждаем, что совсем не используем сторонние скрипты. Также добавлены фавикон с флагом и изображения для соцсетей."
   }
 ]

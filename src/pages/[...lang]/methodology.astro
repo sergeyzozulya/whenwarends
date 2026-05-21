@@ -1,0 +1,245 @@
+---
+// Methodology — how the numbers are produced. Trilingual, content-mapped.
+import Layout from '@/layouts/Layout.astro';
+import { getTranslation } from '@i18n/index';
+import type { Lang } from '@lib/types';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } },
+    { params: { lang: 'uk' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+const lang = (Astro.params.lang ?? 'en') as Lang;
+const t = (key: string) => getTranslation(lang, key);
+
+interface Block {
+  h: string;
+  p?: string[];
+  ul?: string[];
+}
+interface Page {
+  lede: string;
+  blocks: Block[];
+}
+
+const CONTENT: Record<Lang, Page> = {
+  en: {
+    lede: 'How the numbers on this site are produced — and what they are not.',
+    blocks: [
+      {
+        h: 'What this is, and is not',
+        p: [
+          'This site never authors a prediction of its own. It displays probabilities derived from public prediction markets and a timeline of measured indicators, alongside a clearly-labelled editorial summary that is auto-published behind code-level integrity guards.',
+          'No number here is our forecast. Where a figure is an estimate, or a brief reconstructed after the fact from archived data, it is labelled as such.',
+        ],
+      },
+      {
+        h: 'The hero curve',
+        p: [
+          'The main chart is a cumulative distribution: for each date, the market-implied probability that the war has ended by then. It rises monotonically and asymptotes below 100% — markets rarely price certainty.',
+        ],
+        ul: [
+          'Pull active war-end / ceasefire markets from Polymarket (real money) and Manifold (play money).',
+          'Keep only quality markets — Polymarket above $10k liquidity, Manifold above a volume floor — and drop any resolving more than ~3 years out.',
+          'Per resolution date, take the liquidity-weighted "yes" price; within each source markets are weighted by liquidity, and the two sources are combined equally.',
+          'Isotonic regression (weighted pool-adjacent-violators) enforces monotonicity.',
+          'PCHIP interpolation draws a smooth, shape-preserving curve; each market is plotted as a dot sized by its liquidity.',
+        ],
+      },
+      {
+        h: 'Three summary cards',
+        p: [
+          'Below the curve, three cards read the markets directly. "Closest" is the market whose resolution date is nearest today. "Consensus" is the liquidity-weighted centre of all markets — both a probability and a date that move as the markets do. "Most optimistic" is the market assigning the highest probability that the war has ended. Each is marked on the curve with its own icon.',
+        ],
+      },
+      {
+        h: 'The war in data',
+        p: [
+          'Below the curve, a scrubbable timeline shares one date axis from the full-scale invasion to the latest data. Drag the cursor to read every series as of that date.',
+        ],
+        ul: [
+          'Conflict intensity, tone & fire — GDELT volume intensity (share of monitored global news matching the war query) and average tone, over a white→red NASA FIRMS fire/heat density band.',
+          'Currency vs USD — official daily central-bank rates: RUB from the Central Bank of Russia, UAH from the National Bank of Ukraine.',
+          'GDP — real, % y/y, quarterly — Russia and Ukraine, derived as the four-quarter ratio of the World Bank Global Economic Monitor seasonally-adjusted level series (no interpolation between quarters).',
+          'Inflation — CPI, % y/y, monthly — Russia from the World Bank Global Economic Monitor; Ukraine from the National Bank of Ukraine headline series.',
+          'Equipment losses — cumulative visually-confirmed, photo-attributed equipment for Russia and Ukraine, from Oryx. Personnel losses are deliberately excluded: no neutral, symmetric source exists, so any figure would be a belligerent claim.',
+          'Aid to Ukraine — cumulative allocated support in euros, from the Kiel Ukraine Support Tracker.',
+        ],
+      },
+      {
+        h: 'Honest gaps',
+        p: [
+          'Series are drawn as step lines: a value holds until the next real observation — no straight-line interpolation that would invent figures between sparse points. A month or quarter the source never published is skipped, never fabricated. When a source is unreachable its series simply does not extend; one failing source degrades one row, never the page.',
+        ],
+      },
+      {
+        h: 'Cadence and editorial control',
+        p: [
+          'Data is collected weekly (Sunday 08:00 UTC). The editorial brief is drafted by an AI model and auto-published on each data refresh — there is no human approval gate. Integrity is enforced in code instead: an enforced citation allow-list (a URL never supplied is never cited), a refusal guard, and a truncation guard; generation is per-language isolated so one failing language cannot overwrite a good brief. Briefs reconstructed for past dates are labelled "reconstructed from archived data" and are grounded strictly in the snapshots as of their date.',
+        ],
+      },
+      {
+        h: 'Data integrity',
+        p: [
+          "Every snapshot is immutable and version-controlled: the full history, audit trail, and backups are the project's git history. Numbers are never fabricated; when data is missing, the site says so.",
+        ],
+      },
+    ],
+  },
+  uk: {
+    lede: 'Як формуються числа на цьому сайті — і чим вони не є.',
+    blocks: [
+      {
+        h: 'Що це таке і чим не є',
+        p: [
+          'Сайт ніколи не створює власного прогнозу. Він показує ймовірності з публічних ринків передбачень і хронологію виміряних показників, поряд із чітко позначеним оглядом, що публікується автоматично під захистом програмних запобіжників цілісності.',
+          'Жодне число тут не є нашим прогнозом. Якщо показник є оцінкою або оглядом, відновленим заднім числом з архівних даних, він позначений відповідно.',
+        ],
+      },
+      {
+        h: 'Головна крива',
+        p: [
+          'Основний графік — це сукупний розподіл: для кожної дати — ринкова ймовірність того, що війна завершилася до неї. Крива монотонно зростає й асимптотично залишається нижче 100%.',
+        ],
+        ul: [
+          'Беремо активні ринки завершення війни / припинення вогню з Polymarket (реальні гроші) і Manifold (ігрові гроші).',
+          'Залишаємо лише якісні ринки — Polymarket із ліквідністю понад $10 000, Manifold понад поріг обсягу — і відкидаємо ті, що завершуються пізніше ніж за ~3 роки.',
+          'Для кожної дати — ціна «так», зважена за ліквідністю; усередині кожного джерела ринки зважуються за ліквідністю, а два джерела поєднуються порівну.',
+          'Ізотонічна регресія забезпечує монотонність.',
+          'Інтерполяція PCHIP будує плавну криву між ринковими точками; кожен ринок показано точкою, розмір якої залежить від ліквідності.',
+        ],
+      },
+      {
+        h: 'Три зведені картки',
+        p: [
+          'Під кривою три картки читають ринки напряму. «Найближчий» — ринок, дата завершення якого найближча до сьогодні. «Консенсус» — зважений за ліквідністю центр усіх ринків: і ймовірність, і дата, що змінюються разом із ринками. «Найоптимістичніший» — ринок із найвищою ймовірністю того, що війна завершилася. Кожен позначений на кривій власною іконкою.',
+        ],
+      },
+      {
+        h: 'Війна в даних',
+        p: [
+          'Під кривою — хронологія з прокручуванням, що має спільну вісь дат від повномасштабного вторгнення до останніх даних. Перетягуйте курсор, щоб читати кожен ряд станом на цю дату.',
+        ],
+        ul: [
+          'Інтенсивність конфлікту, тональність і пожежі — обсягова інтенсивність GDELT (частка моніторингових світових новин за запитом про війну) і середня тональність поверх смуги щільності пожеж/тепла NASA FIRMS (білий→червоний).',
+          'Курс валют до USD — офіційні денні курси центральних банків: рубль від ЦБ РФ, гривня від НБУ.',
+          'ВВП — реальний, % р/р, поквартально — Росія та Україна, обчислено як відношення чотирьох кварталів сезонно скоригованих рівнів World Bank Global Economic Monitor (без інтерполяції між кварталами).',
+          'Інфляція — ІСЦ, % р/р, щомісяця — Росія з World Bank Global Economic Monitor; Україна з основного ряду НБУ.',
+          'Втрати техніки — накопичені візуально підтверджені, прив’язані до фото втрати техніки Росії та України за даними Oryx. Втрати особового складу свідомо не показуємо: нейтрального симетричного джерела немає, тож будь-яка цифра була б заявою однієї зі сторін.',
+          'Допомога Україні — накопичена виділена підтримка в євро за Кільським трекером підтримки України.',
+        ],
+      },
+      {
+        h: 'Чесні пропуски',
+        p: [
+          'Ряди малюються східчастими лініями: значення тримається до наступного реального спостереження — без прямолінійної інтерполяції, яка вигадувала б числа між рідкісними точками. Місяць чи квартал, який джерело не публікувало, пропускається, а не вигадується. Якщо джерело недоступне, його ряд просто не продовжується; одне несправне джерело псує один рядок, а не сторінку.',
+        ],
+      },
+      {
+        h: 'Періодичність і редакційний контроль',
+        p: [
+          'Дані збираються щотижня (неділя, 08:00 UTC). Огляд готує модель ШІ, і він публікується автоматично під час кожного оновлення даних — без етапу людського затвердження. Натомість цілісність забезпечується в коді: примусовий перелік дозволених посилань (URL, який не було надано, ніколи не цитується), запобіжник відмови та запобіжник обрізання; генерація ізольована за мовами, тож одна збійна мова не може перезаписати якісний огляд. Огляди, відновлені для минулих дат, позначені «відновлено з архівних даних» і ґрунтуються виключно на знімках станом на їхню дату.',
+        ],
+      },
+      {
+        h: 'Цілісність даних',
+        p: [
+          'Кожен знімок незмінний і під контролем версій: повна історія, аудит і резервні копії — це історія git проєкту. Числа ніколи не вигадуються; якщо даних немає, сайт це повідомляє.',
+        ],
+      },
+    ],
+  },
+  ru: {
+    lede: 'Как формируются числа на этом сайте — и чем они не являются.',
+    blocks: [
+      {
+        h: 'Что это и чем не является',
+        p: [
+          'Сайт никогда не создаёт собственный прогноз. Он показывает вероятности с публичных рынков предсказаний и хронологию измеренных показателей, рядом с чётко обозначенной сводкой, которая публикуется автоматически под защитой программных гарантий целостности.',
+          'Ни одно число здесь не является нашим прогнозом. Если показатель — оценка или сводка, восстановленная задним числом из архивных данных, он помечен соответственно.',
+        ],
+      },
+      {
+        h: 'Главная кривая',
+        p: [
+          'Основной график — совокупное распределение: для каждой даты — рыночная вероятность того, что война завершилась к ней. Кривая монотонно растёт и асимптотически остаётся ниже 100%.',
+        ],
+        ul: [
+          'Берём активные рынки завершения войны / прекращения огня с Polymarket (реальные деньги) и Manifold (игровые деньги).',
+          'Оставляем только качественные рынки — Polymarket с ликвидностью выше $10 000, Manifold выше порога объёма — и отбрасываем те, что завершаются позже чем через ~3 года.',
+          'Для каждой даты — цена «да», взвешенная по ликвидности; внутри каждого источника рынки взвешиваются по ликвидности, а два источника объединяются поровну.',
+          'Изотоническая регрессия обеспечивает монотонность.',
+          'Интерполяция PCHIP строит плавную кривую между рыночными точками; каждый рынок показан точкой, размер которой зависит от ликвидности.',
+        ],
+      },
+      {
+        h: 'Три сводные карточки',
+        p: [
+          'Под кривой три карточки читают рынки напрямую. «Ближайший» — рынок, дата завершения которого ближе всего к сегодняшнему дню. «Консенсус» — взвешенный по ликвидности центр всех рынков: и вероятность, и дата, меняющиеся вместе с рынками. «Самый оптимистичный» — рынок с наибольшей вероятностью того, что война завершилась. Каждый отмечен на кривой собственным значком.',
+        ],
+      },
+      {
+        h: 'Война в данных',
+        p: [
+          'Под кривой — прокручиваемая хронология с общей осью дат от полномасштабного вторжения до последних данных. Перетаскивайте курсор, чтобы читать каждый ряд по состоянию на эту дату.',
+        ],
+        ul: [
+          'Интенсивность конфликта, тональность и пожары — объёмная интенсивность GDELT (доля мониторинговых мировых новостей по запросу о войне) и средняя тональность поверх полосы плотности пожаров/тепла NASA FIRMS (белый→красный).',
+          'Курс валют к USD — официальные дневные курсы центральных банков: рубль от ЦБ РФ, гривна от НБУ.',
+          'ВВП — реальный, % г/г, поквартально — Россия и Украина, вычислено как отношение четырёх кварталов сезонно скорректированных уровней World Bank Global Economic Monitor (без интерполяции между кварталами).',
+          'Инфляция — ИПЦ, % г/г, помесячно — Россия из World Bank Global Economic Monitor; Украина из основного ряда НБУ.',
+          'Потери техники — накопленные визуально подтверждённые, привязанные к фото потери техники России и Украины по данным Oryx. Потери личного состава намеренно не показываем: нейтрального симметричного источника нет, поэтому любая цифра была бы заявлением одной из сторон.',
+          'Помощь Украине — накопленная выделенная поддержка в евро по Кильскому трекеру поддержки Украины.',
+        ],
+      },
+      {
+        h: 'Честные пропуски',
+        p: [
+          'Ряды рисуются ступенчатыми линиями: значение держится до следующего реального наблюдения — без прямолинейной интерполяции, которая выдумывала бы числа между редкими точками. Месяц или квартал, который источник не публиковал, пропускается, а не выдумывается. Если источник недоступен, его ряд просто не продолжается; один неисправный источник портит одну строку, а не страницу.',
+        ],
+      },
+      {
+        h: 'Периодичность и редакционный контроль',
+        p: [
+          'Данные собираются еженедельно (воскресенье, 08:00 UTC). Сводку готовит модель ИИ, и она публикуется автоматически при каждом обновлении данных — без этапа человеческого одобрения. Вместо этого целостность обеспечивается в коде: принудительный список разрешённых ссылок (URL, который не был предоставлен, никогда не цитируется), предохранитель отказа и предохранитель усечения; генерация изолирована по языкам, поэтому один сбойный язык не может перезаписать качественную сводку. Сводки, восстановленные для прошлых дат, помечены «восстановлено из архивных данных» и основаны исключительно на снимках по состоянию на их дату.',
+        ],
+      },
+      {
+        h: 'Целостность данных',
+        p: [
+          'Каждый снимок неизменен и под контролем версий: полная история, аудит и резервные копии — это история git проекта. Числа никогда не выдумываются; если данных нет, сайт сообщает об этом.',
+        ],
+      },
+    ],
+  },
+};
+
+const c = CONTENT[lang];
+---
+
+<Layout lang={lang} title={t('common.methodology')}>
+  <article class="max-w-2xl space-y-10">
+    <header class="space-y-2">
+      <h1 class="text-[22px] font-medium">{t('common.methodology')}</h1>
+      <p class="text-[16px] text-gray-600">{c.lede}</p>
+    </header>
+    {
+      c.blocks.map((b) => (
+        <section class="space-y-3">
+          <h2 class="text-[18px] font-medium">{b.h}</h2>
+          {b.p?.map((para) => <p class="text-[16px]">{para}</p>)}
+          {b.ul && (
+            <ol class="list-decimal space-y-1 pl-5 text-[16px]">
+              {b.ul.map((li) => (
+                <li>{li}</li>
+              ))}
+            </ol>
+          )}
+        </section>
+      ))
+    }
+  </article>
+</Layout>

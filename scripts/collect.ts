@@ -11,7 +11,12 @@ import './loadEnv'; // must be first: populates process.env from .dev.vars
 import type { Env } from '../src/lib/types';
 import { runCollectors } from '../src/lib/sources/contract';
 import { allCollectors } from '../src/workers/collectors';
-import { appendSnapshots, upsertMarkets } from '../src/lib/filestore';
+import {
+  appendSnapshots,
+  upsertMarkets,
+  readMarkets,
+} from '../src/lib/filestore';
+import { allDerivedSnapshots } from '../src/lib/cards';
 
 // Node shim for the Worker Env. Collectors only read string secrets (e.g.
 // FIRMS_MAP_KEY); DB/KV/ASSETS are never touched in collection, so they are
@@ -56,6 +61,17 @@ async function main(): Promise<void> {
     console.log(
       `✓ ${r.source}: +${added} snapshots, ${r.result.markets?.length ?? 0} markets`
     );
+  }
+
+  // Derive the hero consensus + two stat cards from the merged current market
+  // state and append one snapshot each. markets.json is overwritten every run,
+  // so these derived snapshots are the only stored history the trends grow from.
+  const derivedAdded = appendSnapshots(
+    allDerivedSnapshots(readMarkets(), new Date().toISOString())
+  );
+  if (derivedAdded > 0) {
+    snapshotsAdded += derivedAdded;
+    console.log(`✓ derived metrics: +${derivedAdded} snapshots`);
   }
 
   const failed = results.filter((r) => !r.ok);

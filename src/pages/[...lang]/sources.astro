@@ -1,0 +1,202 @@
+---
+// Data sources — what feeds each part of the site, and under what licence.
+import Layout from '@/layouts/Layout.astro';
+import { getTranslation } from '@i18n/index';
+import type { Lang } from '@lib/types';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } },
+    { params: { lang: 'uk' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+const lang = (Astro.params.lang ?? 'en') as Lang;
+const t = (key: string) => getTranslation(lang, key);
+
+interface Source {
+  name: string;
+  url: string;
+  license: string;
+  use: Record<Lang, string>;
+}
+
+const FEEDS: Source[] = [
+  {
+    name: 'Polymarket (Gamma + Data API)',
+    url: 'https://polymarket.com',
+    license: 'Public',
+    use: {
+      en: 'Primary war-end probabilities and history.',
+      uk: 'Основні ймовірності завершення війни та історія.',
+      ru: 'Основные вероятности завершения войны и история.',
+    },
+  },
+  {
+    name: 'Manifold Markets',
+    url: 'https://manifold.markets',
+    license: 'Public (CC BY 4.0)',
+    use: {
+      en: 'Secondary war-end / ceasefire markets (play money), shown alongside Polymarket.',
+      uk: 'Додаткові ринки завершення війни / припинення вогню (ігрові гроші), поряд із Polymarket.',
+      ru: 'Дополнительные рынки завершения войны / прекращения огня (игровые деньги), рядом с Polymarket.',
+    },
+  },
+  {
+    name: 'GDELT 2.0',
+    url: 'https://www.gdeltproject.org',
+    license: 'CC BY',
+    use: {
+      en: 'Conflict intensity and tone.',
+      uk: 'Інтенсивність бойових дій і тональність.',
+      ru: 'Интенсивность боевых действий и тональность.',
+    },
+  },
+  {
+    name: 'Kiel Ukraine Support Tracker',
+    url: 'https://www.ifw-kiel.de/topics/war-against-ukraine/ukraine-support-tracker/',
+    license: 'CC BY 4.0',
+    use: {
+      en: 'Aid commitments, converted to EUR at the daily ECB rate.',
+      uk: 'Зобов’язання щодо допомоги, переведені в євро за курсом ЄЦБ.',
+      ru: 'Обязательства по помощи, переведённые в евро по курсу ЕЦБ.',
+    },
+  },
+  {
+    name: 'NASA FIRMS',
+    url: 'https://firms.modaps.eosdis.nasa.gov',
+    license: 'Public domain',
+    use: {
+      en: 'Fire/heat anomalies as a combat-zone proxy.',
+      uk: 'Теплові аномалії як непрямий показник бойової зони.',
+      ru: 'Тепловые аномалии как косвенный показатель боевой зоны.',
+    },
+  },
+  {
+    name: 'World Bank (Indicators + Global Economic Monitor)',
+    url: 'https://data.worldbank.org',
+    license: 'Public',
+    use: {
+      en: 'Russian annual macro, plus monthly CPI (Russia) and quarterly real GDP (Russia and Ukraine), % y/y.',
+      uk: 'Річні макропоказники Росії, а також місячний ІСЦ (Росія) та квартальний реальний ВВП (Росія й Україна), % р/р.',
+      ru: 'Годовые макропоказатели России, а также месячный ИПЦ (Россия) и квартальный реальный ВВП (Россия и Украина), % г/г.',
+    },
+  },
+  {
+    name: 'National Bank of Ukraine',
+    url: 'https://bank.gov.ua',
+    license: 'Public',
+    use: {
+      en: 'UAH/USD exchange rate and Ukraine monthly headline CPI (% y/y).',
+      uk: 'Курс гривні до USD та місячний базовий ІСЦ України (% р/р).',
+      ru: 'Курс гривны к USD и месячный основной ИПЦ Украины (% г/г).',
+    },
+  },
+  {
+    name: 'Central Bank of Russia',
+    url: 'https://www.cbr.ru',
+    license: 'Public',
+    use: {
+      en: 'RUB exchange rate (official daily feed).',
+      uk: 'Курс рубля (офіційний денний фід).',
+      ru: 'Курс рубля (официальный дневной фид).',
+    },
+  },
+  {
+    name: 'European Central Bank (via Frankfurter)',
+    url: 'https://www.ecb.europa.eu',
+    license: 'Public',
+    use: {
+      en: 'Daily reference rates for currency conversion.',
+      uk: 'Денні довідкові курси для конвертації валют.',
+      ru: 'Дневные справочные курсы для конвертации валют.',
+    },
+  },
+  {
+    name: 'Oryx',
+    url: 'https://www.oryxspioenkop.com',
+    license: 'CC BY-NC (non-commercial)',
+    use: {
+      en: 'Visually-confirmed, photo-attributed equipment losses for Russia and Ukraine (cumulative). Personnel losses are deliberately not shown — no neutral source exists.',
+      uk: 'Візуально підтверджені, прив’язані до фото втрати техніки Росії та України (накопичено). Втрати особового складу свідомо не показуємо — нейтрального джерела немає.',
+      ru: 'Визуально подтверждённые, привязанные к фото потери техники России и Украины (накопительно). Потери личного состава намеренно не показываем — нейтрального источника нет.',
+    },
+  },
+];
+
+
+const STR: Record<Lang, { lede: string; feeds: string; useCol: string; licenceCol: string; footer: string }> = {
+  en: {
+    lede: 'Every figure is traceable to a free, open, publicly accessible source. Nothing here is paid, scraped against terms, or behind a login.',
+    feeds: 'Data feeds',
+    useCol: 'Use',
+    licenceCol: 'Licence',
+    footer: 'This project is non-commercial and released under CC BY 4.0. Attributed datasets are credited above.',
+  },
+  uk: {
+    lede: 'Кожен показник простежується до безкоштовного, відкритого, публічно доступного джерела. Нічого платного, зібраного всупереч умовам чи за входом.',
+    feeds: 'Джерела даних',
+    useCol: 'Використання',
+    licenceCol: 'Ліцензія',
+    footer: 'Проєкт некомерційний і поширюється за CC BY 4.0. Набори даних атрибутовано вище.',
+  },
+  ru: {
+    lede: 'Каждый показатель прослеживается до бесплатного, открытого, публично доступного источника. Ничего платного, собранного вопреки условиям или за логином.',
+    feeds: 'Источники данных',
+    useCol: 'Использование',
+    licenceCol: 'Лицензия',
+    footer: 'Проект некоммерческий и распространяется по CC BY 4.0. Наборы данных атрибутированы выше.',
+  },
+};
+
+const s = STR[lang];
+
+const renderRows = (rows: Source[]) =>
+  rows.map((r) => ({
+    name: r.name,
+    url: r.url,
+    license: r.license,
+    use: r.use[lang],
+  }));
+---
+
+<Layout lang={lang} title={t('common.sources')}>
+  <article class="max-w-2xl space-y-8">
+    <header class="space-y-2">
+      <h1 class="text-[22px] font-medium">{t('common.sources')}</h1>
+      <p class="text-[16px] text-gray-600">{s.lede}</p>
+    </header>
+
+    {
+      [
+        { title: s.feeds, rows: renderRows(FEEDS) },
+      ].map((group) => (
+        <section class="space-y-3">
+          <h2 class="text-[18px] font-medium">{group.title}</h2>
+          <ul class="divide-y divide-gray-200 border-t border-gray-200">
+            {group.rows.map((r) => (
+              <li class="py-3">
+                <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                  <a
+                    class="text-[16px] text-[#2c5aa0] hover:underline"
+                    href={r.url}
+                    rel="noopener noreferrer"
+                  >
+                    {r.name}
+                  </a>
+                  <span class="text-[13px] text-gray-500">
+                    {s.licenceCol}: {r.license}
+                  </span>
+                </div>
+                <p class="mt-1 text-[16px] text-gray-700">{r.use}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <p class="border-t border-gray-200 pt-4 text-[13px] text-gray-500">{s.footer}</p>
+  </article>
+</Layout>

@@ -19,16 +19,21 @@ whenwarends/
 ├── playwright.config.ts
 ├── src/
 │   ├── pages/
-│   │   └── [lang]/
+│   │   └── [...lang]/                  # optional locale prefix: en at root, /uk, /ru
 │   │       ├── index.astro
 │   │       ├── methodology.astro
 │   │       ├── about.astro
 │   │       ├── sources.astro
-│   │       └── changelog.astro
+│   │       ├── changelog.astro
+│   │       └── og.png.ts               # build-time per-locale OG share image (satori+resvg)
 │   ├── components/
 │   │   ├── Header.astro
 │   │   ├── Footer.astro
-│   │   ├── HeroChart.tsx              # interactive island (Chart.js)
+│   │   ├── HeroChart.tsx              # interactive island (Chart.js) — all markets, 3 marked picks
+│   │   ├── StatCard.astro             # closest / consensus / optimistic summary card
+│   │   ├── TrendBadge.astro           # ▲/▼ trend pill (renders only with ≥2 points)
+│   │   ├── HistoryTimeline.tsx        # "war in data" timeline island
+│   │   ├── BriefTimeline.astro        # inline brief archive
 │   │   ├── Sparkline.astro            # pure SVG, no hydration
 │   │   ├── EventList.astro
 │   │   ├── IndicatorCard.astro
@@ -37,14 +42,22 @@ whenwarends/
 │   │   └── Layout.astro
 │   ├── lib/
 │   │   ├── cdf.ts                     # isotonic regression, PCHIP interpolation
+│   │   ├── cards.ts                   # qualify/weight markets, closest/consensus/optimistic picks
+│   │   ├── heroChartData.ts           # chart payload shaping + probColor
+│   │   ├── icons.ts                   # shared SVG path constants (chart + cards + OG)
 │   │   ├── filestore.ts               # repo-file data store (read/append)
 │   │   ├── homepage.ts                # build-time payload assembly
+│   │   ├── briefContext.ts            # snapshot context for the brief prompt
 │   │   ├── llm.ts                     # Anthropic client wrapper
 │   │   └── sources/
+│   │       ├── warEndFilter.ts        # shared war-end market filter + resolution-date parse
+│   │       ├── contract.ts            # fetch helpers (shared by collectors)
 │   │       ├── polymarket.ts
 │   │       ├── polymarket.schema.ts   # Zod
 │   │       ├── manifold.ts
 │   │       ├── manifold.schema.ts     # Zod
+│   │       ├── oryx.ts                # equipment losses (CC BY-NC)
+│   │       ├── kalshi.ts              # prepared collector, not yet in active registry
 │   │       ├── gdelt.ts
 │   │       ├── kiel.ts
 │   │       ├── firms.ts
@@ -60,13 +73,16 @@ whenwarends/
 │   │   └── collectors/                # registry + per-source re-exports
 │   └── styles/global.css
 ├── scripts/
-│   └── collect.ts                     # weekly collector orchestrator
+│   ├── collect.ts                     # weekly collector orchestrator
+│   ├── draft-brief.ts                 # draft + auto-publish the weekly brief
+│   ├── backfill-briefs.ts             # reconstruct + publish historical briefs
+│   └── ...                            # history importers, seeds, bundle check
 ├── data/                              # versioned data store (read at build)
 │   ├── snapshots.ndjson               # append-only immutable history
-│   ├── markets.json                   # current market state
-│   ├── events.json                    # editorial events
+│   ├── markets.json                   # current market state (derived picks + per-market)
+│   ├── events.json                    # legacy editorial events (read, not rendered in UI)
 │   ├── briefs.json                    # AI briefs (Phase 3)
-│   └── changelog.json
+│   └── changelog.json                 # per-locale change log (id, date, category, description_{uk,en,ru})
 ├── worker/
 │   └── index.ts                       # Worker entry: static assets + health
 ├── tests/
@@ -107,6 +123,23 @@ whenwarends/
 - **`.astro` files**: Static; no hydration needed. Use for layout, lists, static text.
 - **`.tsx` files**: Only when interactivity required (charts, forms). Mark with `client:visible` or `client:idle`.
 - **No `client:only`**: Always pre-render on the server if possible.
+
+### Routing & i18n
+
+- **Optional locale prefix**: pages live under `src/pages/[...lang]/` with
+  `prefixDefaultLocale: false`. English (the default locale) is served at the
+  **root** (`/`, `/methodology`); uk/ru are prefixed (`/uk`, `/ru`). There is
+  **no `/en` prefix** and no root redirect.
+- **getStaticPaths** returns the three locales as
+  `[{ params: { lang: undefined } }, { params: { lang: 'uk' } }, { params: { lang: 'ru' } }]`;
+  derive the locale with `const lang = (Astro.params.lang ?? 'en') as Lang`.
+- **Always build links with `localizedPath(lang, path)`** (`src/i18n/index.ts`) —
+  it returns root-relative paths for en and prefixed paths for uk/ru. Never
+  hardcode a locale segment.
+- **Layout** emits canonical + hreflang alternates (uk/en/ru + `x-default`→en)
+  and a per-locale `og:image` (`/og.png`, `/uk/og.png`, `/ru/og.png`).
+- **Language preference**: a head script auto-detects from the browser on first
+  visit and honours an explicit switch saved to `localStorage` thereafter.
 
 ### Styling
 
@@ -176,12 +209,13 @@ whenwarends/
 ### Licensing
 
 - **GDELT, Kiel, NASA FIRMS, Manifold, World Bank**: CC BY or public domain. Always credit.
+- **Oryx**: CC BY-**NC** — usable only because this project is non-commercial; always credit. Do not reuse Oryx data in any commercial context.
 
 ### Phase structure
 
 **Phase 0** (done): Repo + CI + Astro skeleton + i18n routing + Workers + Tailwind.
 
-**Phase 1** (done): Hero CDF chart live with real data (uk/en/ru). Polymarket + Manifold collectors, CDF computation, HeroChart island, two summary cards (closest-to-consensus, most-optimistic).
+**Phase 1** (done): Hero CDF chart live with real data (uk/en/ru). Polymarket + Manifold collectors, CDF computation, HeroChart island plotting all qualifying markets sized by liquidity, and three labelled summary cards — **closest** (nearest resolution date), **consensus** (liquidity-weighted centroid of probability and date), **optimistic** (highest probability). See `src/lib/cards.ts` and `docs/SPEC.md` §8.
 
 **Phase 2** (done): Secondary "war in data" timeline + collectors (GDELT, Kiel, NBU FX, NBU CPI, CBR, World Bank Indicators + Global Economic Monitor, FIRMS). The earlier "today on the ground" cards and editorial event list were removed.
 
@@ -198,7 +232,7 @@ guards in `llm.ts` replace review).
 - Add a Zod schema before parsing any external API response.
 - Add a unit test before changing `src/lib/cdf.ts`.
 - Use `npm run wrangler:dev` locally to test Worker routes.
-- Verify i18n pages render in all three locales (`/uk/`, `/en/`, `/ru/`).
+- Verify i18n pages render in all three locales: en at the root (`/`, `/methodology`, …), uk/ru prefixed (`/uk/`, `/ru/`). Never hardcode locale prefixes — always build hrefs with `localizedPath(lang, path)`.
 
 ### Never do
 
@@ -216,17 +250,25 @@ guards in `llm.ts` replace review).
 
 | Source | Use | License | Notes |
 |---|---|---|---|
-| Polymarket Gamma + Data API | Primary war-end probabilities + history | Public, viewable globally | Free, no auth |
-| Manifold Markets API | Secondary forecast signal; per-bet history | Public (CC BY 4.0) | Free, no auth |
+| Polymarket Gamma + Data API | War-end probabilities + per-market history (one of two market sources) | Public, viewable globally | Free, no auth |
+| Manifold Markets API | War-end / ceasefire markets (play money); per-bet history (second market source) | Public (CC BY 4.0) | Free, no auth |
 | GDELT 2.0 DOC API | Conflict volume intensity + tone | CC BY | Free; ~1 req / 5 s rate limit |
 | Kiel Ukraine Support Tracker | Aid commitments (.xlsx) | CC BY 4.0 | Free download; `KIEL_DATASET_URL` |
 | NASA FIRMS | Fire/heat anomalies (combat proxy) | Public domain | Free API key (`FIRMS_MAP_KEY`) |
+| Oryx (machine-readable mirror) | Visually-confirmed RU/UA equipment losses (cumulative) | CC BY-NC | Free; non-commercial use only |
 | World Bank (Indicators + Global Economic Monitor) | RU annual macro; RU monthly CPI; RU/UA quarterly real GDP | Public | Free API |
 | National Bank of Ukraine | UAH/USD FX; Ukraine monthly headline CPI | Public | Free API |
 | Central Bank of Russia | RUB/USD FX (official daily) | Public | Free |
 | European Central Bank (via Frankfurter) | Daily reference rates for EUR conversion | Public | Free |
 
-Implemented collectors only — registry: `src/workers/collectors/index.ts`. UCDP, IMF, Oryx, Kalshi, Metaculus, ISW, Russia Matters were considered but are not collected.
+Both market sources feed the war-end CDF: probabilities are normalized **per
+source**, then combined **50/50** (no source dominates on raw liquidity). See
+`src/lib/cards.ts` (qualify → weight → derive) and `docs/SPEC.md` §8.
+
+Implemented collectors only — registry: `src/workers/collectors/index.ts`. A
+Kalshi collector exists (`src/lib/sources/kalshi.ts`) but is not yet in the
+active registry. UCDP, IMF, Metaculus, ISW, Russia Matters were considered but
+are not collected.
 
 ## Cost envelope (realistic, weekly cadence)
 
@@ -250,4 +292,4 @@ via `npm run backfill-briefs` (manual, not CI; idempotent).
 
 ---
 
-**Last updated**: 17 May 2026 · Update via PR to this file · Track changes in `/changelog`.
+**Last updated**: 20 May 2026 · Update via PR to this file · Track changes in `/changelog`.

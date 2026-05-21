@@ -1,14 +1,33 @@
 import { z } from 'zod';
 
-// Manifold Markets API — Zod schemas for the two endpoints we consume.
+// Manifold Markets API — Zod schemas for the endpoints we consume.
 //
 // Real endpoints (public, no auth, free):
+//   GET https://api.manifold.markets/v0/search-markets?term=<q>&filter=open&contractType=BINARY&limit=<n>&sort=<s>
 //   GET https://api.manifold.markets/v0/market/<id>
 //   GET https://api.manifold.markets/v0/bets?contractId=<id>&limit=1000[&before=<betId>]
 //
-// `probability` / `probAfter` are 0–1. Times are epoch MILLISECONDS. Manifold
-// is a play-money community market, so we treat it as a lower-confidence
-// forecast signal than the real-money Polymarket. Extra fields are ignored.
+// `probability` / `probAfter` are 0–1. Times are epoch MILLISECONDS.
+// `totalLiquidity` / `volume` are in mana (play money). Manifold is a
+// play-money community market. Extra fields are ignored (passthrough).
+
+/** One market from /v0/search-markets (a "LiteMarket"). */
+export const ManifoldSearchMarketSchema = z
+  .object({
+    id: z.string(),
+    question: z.string(),
+    outcomeType: z.string().optional(),
+    probability: z.number().optional(),
+    closeTime: z.number().optional(), // epoch ms
+    isResolved: z.boolean().optional(),
+    totalLiquidity: z.number().optional(), // mana
+    volume: z.number().optional(), // mana
+  })
+  .passthrough();
+
+export type ManifoldSearchMarket = z.infer<typeof ManifoldSearchMarketSchema>;
+
+export const ManifoldSearchResponseSchema = z.array(ManifoldSearchMarketSchema);
 
 export const ManifoldMarketSchema = z
   .object({

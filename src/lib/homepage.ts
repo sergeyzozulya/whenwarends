@@ -6,7 +6,6 @@ import type {
   Lang,
   EventRow,
   BriefRow,
-  MarketRow,
   SnapshotRow,
   Citation,
 } from './types';
@@ -16,8 +15,20 @@ import {
   readEvents,
   readBriefs,
 } from './filestore';
-import { computeCDF, type CDFPoint } from './cdf';
+import { computeCDF } from './cdf';
 import { marketBucket, isoToMs, type HeroMarket } from './heroChartData';
+import {
+  deriveSelections,
+  deriveConsensus,
+  qualifyMarkets,
+  marketLiquidity,
+  marketsToCdfPoints,
+  CARD_SOURCE,
+  CONSENSUS_PROB_METRIC,
+  MARKET_PRICE_METRIC,
+  type CardPicks,
+  type ConsensusPoint,
+} from './cards';
 import { asOfMetrics, type AsOfMetrics } from './briefContext';
 import { getTranslation } from '../i18n/index';
 
@@ -41,6 +52,20 @@ export interface BeliefSeries {
   current: string | null;
 }
 
+/** A compact trend for a sparkline + signed delta (the stat-card / hero trend). */
+export interface TrendData {
+  /** Chronological 0–1 values for the sparkline (windowed + downsampled). */
+  points: number[];
+  /** Latest value, 0–1, or null when no data. */
+  current: number | null;
+  /** Signed change in percentage points vs the comparison point, or null. */
+  deltaPts: number | null;
+  /** Days between the comparison point and the latest (honest delta window). */
+  deltaDays: number | null;
+  /** Total stored points all-time (distinguishes "collecting" from a real trend). */
+  count: number;
+}
+
 export interface IndicatorData {
   value: string | null;
   sub?: string;
@@ -62,6 +87,12 @@ export interface HomePayload {
   /** Secondary timelines: every metric we actually have, dense, 2022→now. */
   history: HistorySeries[];
   beliefs: BeliefSeries[];
+  /** The two stat-card selections (closest, optimistic). */
+  cards: CardPicks;
+  /** Hero consensus: liquidity-weighted centroid (probability + date). */
+  consensus: ConsensusPoint | null;
+  /** Trend (sparkline + delta) for the consensus and each selected card market. */
+  trends: { consensus: TrendData; closest: TrendData; optimistic: TrendData };
   events: EventRow[];
   ground: {
     frontline: IndicatorData;
@@ -88,6 +119,13 @@ export interface BriefArchiveEntry {
 }
 
 const EMPTY_INDICATOR: IndicatorData = { value: null };
+const EMPTY_TREND: TrendData = {
+  points: [],
+  current: null,
+  deltaPts: null,
+  deltaDays: null,
+  count: 0,
+};
 
 /** Stable empty payload (data files absent or empty). */
 export function emptyHomePayload(): HomePayload {
@@ -101,6 +139,13 @@ export function emptyHomePayload(): HomePayload {
     },
     history: [],
     beliefs: [],
+    cards: { closest: null, optimistic: null },
+    consensus: null,
+    trends: {
+      consensus: EMPTY_TREND,
+      closest: EMPTY_TREND,
+      optimistic: EMPTY_TREND,
+    },
     events: [],
     ground: {
       frontline: EMPTY_INDICATOR,
@@ -246,14 +291,70 @@ function buildHistory(rows: SnapshotRow[]): HistorySeries[] {
   return out;
 }
 
-function marketsToCdfPoints(markets: MarketRow[]): CDFPoint[] {
-  return markets
-    .filter((m) => m.current_price !== null)
-    .map((m) => ({
-      date: m.resolution_date,
-      probability: m.current_price as number, // filtered non-null above
-      liquidity: m.liquidity_usd ?? undefined,
-    }));
+/** Evenly sample a series down to at most `max` points, keeping first + last. */
+function downsample<T>(pts: T[], max: number): T[] {
+  if (pts.length <= max) return pts;
+  const out: T[] = [];
+  const step = (pts.length - 1) / (max - 1);
+  for (let i = 0; i < max; i++) out.push(pts[Math.round(i * step)]);
+  return out;
+}
+
+const DAY = 24 * HOURS;
+
+/**
+ * Build a compact trend for one metric: the chronological (mean-per-ts) values
+ * windowed for a sparkline, plus a signed percentage-point delta vs the stored
+ * point nearest to `windowDays` ago. No fabrication — only stored values.
+ */
+function buildTrend(
+  rows: SnapshotRow[],
+  metric: string,
+  source: string | undefined,
+  sinceMs: number,
+  windowDays: number
+): TrendData {
+  const byTs = new Map<string, { sum: number; n: number }>();
+  for (const r of rows) {
+    if (r.metric !== metric || r.value === null) continue;
+    if (source && r.source !== source) continue;
+    const a = byTs.get(r.ts) ?? { sum: 0, n: 0 };
+    a.sum += r.value;
+    a.n += 1;
+    byTs.set(r.ts, a);
+  }
+  const all = [...byTs.entries()]
+    .map(([ts, a]) => ({ t: Date.parse(ts), v: a.sum / a.n }))
+    .filter((p) => Number.isFinite(p.t) && Number.isFinite(p.v))
+    .sort((x, y) => x.t - y.t);
+
+  const count = all.length;
+  if (count === 0) return { ...EMPTY_TREND };
+
+  const last = all[count - 1];
+  let windowed = all.filter((p) => p.t >= sinceMs);
+  if (windowed.length < 2) windowed = all;
+  const points = downsample(windowed, 60).map((p) => p.v);
+
+  let deltaPts: number | null = null;
+  let deltaDays: number | null = null;
+  const earlier = all.filter((p) => p.t < last.t);
+  if (earlier.length > 0) {
+    const target = last.t - windowDays * DAY;
+    let base = earlier[0];
+    let bestD = Math.abs(base.t - target);
+    for (const p of earlier) {
+      const d = Math.abs(p.t - target);
+      if (d < bestD) {
+        bestD = d;
+        base = p;
+      }
+    }
+    deltaPts = (last.v - base.v) * 100;
+    deltaDays = Math.round((last.t - base.t) / DAY);
+  }
+
+  return { points, current: last.v, deltaPts, deltaDays, count };
 }
 
 function latestPublishedBrief(briefs: BriefRow[], lang: Lang): BriefRow | null {
@@ -282,20 +383,62 @@ export function loadHomePayload(lang: Lang): HomePayload {
 
   const briefArchive = buildBriefArchive(allBriefs, lang, snapshots);
   const history = buildHistory(snapshots);
-  const ceasefire = computeCDF(marketsToCdfPoints(markets));
+  // CDF over the qualified, cross-source-weighted markets (quality filtered
+  // upstream, so the curve's own USD floor is disabled — see cards.ts §8.3).
+  const ceasefire = computeCDF(marketsToCdfPoints(markets), {
+    liquidityFloorUsd: 0,
+  });
 
-  // The individual markets, plotted distinctly on the hero (the CDF curve is
-  // the aggregate; these are the raw bets it's fitted through).
-  const heroMarkets: HeroMarket[] = markets
-    .filter((m) => m.current_price !== null)
-    .map((m) => ({
+  const nowMs = Date.now();
+  // The two card selections + the consensus centroid (SPEC §8.5).
+  const cards = deriveSelections(markets, nowMs);
+  const consensus = deriveConsensus(markets);
+
+  // Per-market price history (metric market_price, source = market_id), for the
+  // card sparklines and per-point tooltips.
+  const historyByMarket = new Map<string, number[]>();
+  {
+    const acc = new Map<string, { t: number; v: number }[]>();
+    for (const r of snapshots) {
+      if (r.metric !== MARKET_PRICE_METRIC || r.value === null) continue;
+      const arr = acc.get(r.source) ?? [];
+      arr.push({ t: Date.parse(r.ts), v: r.value });
+      acc.set(r.source, arr);
+    }
+    for (const [id, arr] of acc) {
+      arr.sort((a, b) => a.t - b.t);
+      historyByMarket.set(id, arr.map((p) => p.v));
+    }
+  }
+
+  const trends = {
+    // Consensus trend from the tracked centroid probability.
+    consensus: buildTrend(snapshots, CONSENSUS_PROB_METRIC, CARD_SOURCE, 0, 30),
+    // Each card's trend is the SELECTED market's own price history.
+    closest: cards.closest
+      ? buildTrend(snapshots, MARKET_PRICE_METRIC, cards.closest.marketId, 0, 30)
+      : { ...EMPTY_TREND },
+    optimistic: cards.optimistic
+      ? buildTrend(snapshots, MARKET_PRICE_METRIC, cards.optimistic.marketId, 0, 30)
+      : { ...EMPTY_TREND },
+  };
+
+  // Every qualified market (both sources) plotted on the hero, each carrying
+  // its own history for the tooltip sparkline.
+  const heroMarkets: HeroMarket[] = qualifyMarkets(markets).map((m) => {
+    const liq = marketLiquidity(m);
+    return {
+      id: m.market_id,
       x: isoToMs(m.resolution_date),
       y: m.current_price as number,
       bucket: marketBucket(m.question),
       source: m.source,
       question: m.question,
-      liquidity: m.liquidity_usd ?? null,
-    }));
+      liquidity: liq.value,
+      liquidityUnit: liq.unit,
+      history: downsample(historyByMarket.get(m.market_id) ?? [], 60),
+    };
+  });
 
   const sinceTs = new Date(Date.now() - 365 * 24 * HOURS).toISOString();
   const beliefs: BeliefSeries[] = [];
@@ -396,6 +539,9 @@ export function loadHomePayload(lang: Lang): HomePayload {
     },
     history,
     beliefs,
+    cards,
+    consensus,
+    trends,
     events,
     ground: {
       frontline,

@@ -3,7 +3,7 @@
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
 import type { Lang } from '@lib/types';
-import { getTranslation } from '@i18n/index';
+import { getTranslation, localizedPath } from '@i18n/index';
 import '@/styles/global.css';
 
 interface Props {
@@ -23,8 +23,16 @@ const locale = lang as Lang;
 const og = (k: string) => getTranslation(locale, k);
 const ogTitle = og('common.title');
 const ogDesc = og('common.subtitle');
-const ogImage = new URL(`/${locale}/og.png`, Astro.site).href;
+const ogImage = new URL(localizedPath(locale, '/og.png'), Astro.site).href;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+
+// hreflang alternates: the same page in each locale (en is unprefixed, so only
+// strip a locale segment when the current page is prefixed). x-default → en.
+const segs = Astro.url.pathname.split('/').filter(Boolean);
+const pageRest = (locale === 'en' ? segs : segs.slice(1)).join('/');
+const altHref = (l: Lang) =>
+  new URL(localizedPath(l, pageRest ? `/${pageRest}` : ''), Astro.site).href;
+const ALT_LANGS = ['uk', 'en', 'ru'] as const;
 ---
 
 <!DOCTYPE html>
@@ -35,6 +43,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content={ogDesc} />
     <link rel="canonical" href={canonical} />
+    {ALT_LANGS.map((l) => (
+      <link rel="alternate" hreflang={l} href={altHref(l)} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={altHref('en')} />
     <title>{title} — whenwarends.org</title>
 
     <meta property="og:type" content="website" />
@@ -57,10 +69,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <script is:inline>
       (function () {
         try {
-          var sup = ['uk', 'en', 'ru'];
+          // en is served at the root (no prefix); uk/ru are prefixed.
           var parts = location.pathname.split('/').filter(Boolean);
-          var cur = parts[0];
-          if (sup.indexOf(cur) === -1) return;
+          var first = parts[0];
+          var cur = first === 'uk' || first === 'ru' ? first : 'en';
+          var rest = cur === 'en' ? parts : parts.slice(1);
+          var sup = ['uk', 'en', 'ru'];
           var stored = localStorage.getItem('lang');
           var target = null;
           if (stored && sup.indexOf(stored) !== -1) {
@@ -76,10 +90,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
             if (!target) target = 'en';
           }
           if (target && target !== cur) {
-            parts[0] = target;
-            location.replace(
-              '/' + parts.join('/') + location.search + location.hash
-            );
+            var base = target === 'en' ? '' : '/' + target;
+            var path = rest.length ? '/' + rest.join('/') : '';
+            var dest = base + path || '/';
+            location.replace(dest + location.search + location.hash);
           }
         } catch (e) {}
       })();

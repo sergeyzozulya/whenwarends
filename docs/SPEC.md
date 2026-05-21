@@ -18,13 +18,13 @@ In rough order of size: Ukrainians abroad checking for hope or context; Ukrainia
 
 ## 3. Scope
 
-**In:** hero CDF chart of war-end date, two summary cards (closest-to-consensus, most-optimistic), a scrubbable "war in data" timeline (conflict intensity/tone/fire, currency vs USD, real GDP % y/y, CPI % y/y for Russia and Ukraine), weekly AI-drafted auto-published brief (integrity-guarded, no human gate), methodology page, three languages (Ukrainian, English, Russian), full historical snapshots.
+**In:** hero CDF chart of war-end date plotting all qualifying markets sized by liquidity, three summary cards (closest, consensus, optimistic), a scrubbable "war in data" timeline (conflict intensity/tone/fire, currency vs USD, real GDP % y/y, CPI % y/y for Russia and Ukraine, equipment losses, aid to Ukraine), weekly AI-drafted auto-published brief (integrity-guarded, no human gate), methodology page, three languages (Ukrainian, English, Russian), full historical snapshots.
 
 **Out:** casualty counters, real-time air-raid maps, news aggregation, login or accounts, paid tiers or ads, trading, any prediction authored by the site or its AI, any external partnership or outreach, donations (v1.1).
 
 ## 4. Tech stack
 
-**Frontend.** Astro 5+ with TypeScript and Tailwind. Static-first; islands hydrated only for interactive charts. Astro's built-in i18n routing produces `/uk`, `/en`, `/ru`. Chart.js for the CDF; pure SVG sparklines. Locale bundles split — only active locale ships.
+**Frontend.** Astro 5+ with TypeScript and Tailwind. Static-first; islands hydrated only for interactive charts. Astro i18n with `prefixDefaultLocale: false` over `[...lang]` optional-prefix routes: English (default) is served at the root (`/`, `/methodology`), uk/ru are prefixed (`/uk`, `/ru`) — there is no `/en` prefix. Chart.js for the CDF; pure SVG sparklines. Locale bundles split — only active locale ships.
 
 > **Revised 2026-05-18 (v1.2)** — see §6/§14 and `data/changelog.json`. No
 > D1/KV/Cron; data is versioned repo JSON read at build. No Sentry (see §11).
@@ -49,6 +49,22 @@ In rough order of size: Ukrainians abroad checking for hope or context; Ukrainia
 > the site no longer claims to avoid tracking entirely. Equipment losses
 > (Oryx) and Aid to Ukraine (Kiel) added as indicators; see
 > `data/changelog.json`.
+>
+> **Revised 2026-05-21 (v1.5)** — hero chart reworked (see §8, §14). Markets
+> are now collected from **both** Polymarket and Manifold under one shared
+> selection filter, **each market's price history is tracked per collect run**,
+> and the chart exposes three labelled selections — **closest**, **consensus**,
+> **optimistic** — shown as a row of three cards below the chart, each marked on
+> the graph with a small inline-SVG icon. Consensus is the liquidity-weighted
+> centroid of all markets (probability *and* date, both tracked). Cross-source
+> weighting is normalized per source and combined 50/50 so play-money Manifold
+> counts equally with real-money Polymarket. Trends render only once ≥2 history
+> points exist (no "collecting…" placeholder). This supersedes the v1.0
+> "median expected end date / 50% crossing" cards in §7/§8 and the earlier
+> single-market Manifold feed. **Routing**: the `/en` prefix was removed —
+> English (the default locale) is now served at the root and the former
+> `/ → /en` redirect is gone (`[lang]` → `[...lang]`, `prefixDefaultLocale:
+> false`); supersedes the `/uk`, `/en`, `/ru` description in §4.
 
 **Hosting and infrastructure, all Cloudflare free tier:**
 
@@ -67,7 +83,7 @@ Data lives in versioned repo JSON files (`data/`) read at build time; the weekly
 | Source | Use | License | Auth |
 |---|---|---|---|
 | Polymarket Gamma + Data API | Primary war-end probabilities + history | Public, viewable globally | None |
-| Manifold Markets API | Secondary forecast signal; per-bet history | Public (CC BY 4.0) | None |
+| Manifold Markets API | Secondary war-end markets (discovered set, same filter as Polymarket) + per-market history | Public (CC BY 4.0) | None |
 | GDELT 2.0 DOC API | Conflict volume intensity + tone | CC BY | None |
 | Kiel Ukraine Support Tracker | Aid commitments (.xlsx) | CC BY 4.0 | None |
 | NASA FIRMS | Fire/heat anomalies as combat-zone proxy | Public domain | Free API key |
@@ -125,19 +141,118 @@ Single-column reading flow, top to bottom:
 
 Supporting pages: `/methodology`, `/about`, `/sources`, `/changelog`, optional read-only `/api` JSON endpoint for transparency. Mobile collapses two-column grids; the five ground cards reflow via `repeat(auto-fit, minmax(160px, 1fr))`.
 
-## 8. The hero chart
+## 8. The hero chart and market selections
 
-A CDF for the end-of-war date:
+> **Revised 2026-05-21 (v1.5).** Supersedes the original "median expected end
+> date / 50% crossing" framing here and the hero bullets in §7.
 
-- X-axis: 24-month forward horizon, configurable up to 36
-- Y-axis: cumulative probability war has ended by that date; asymptotes near 80–85%, never reaches 100%
-- Curve: monotonic cubic spline between liquidity-weighted market points
-- Markers: dots at real market dates; distinct circle at the 50% crossing with drop-line
-- Vertical dashed marker at today
+The hero is a CDF for the end-of-war date, plotting every collected market and
+surfacing three labelled selections.
 
-Pipeline: pull markets → per resolution date, liquidity-weighted YES price → filter under $10k liquidity → isotonic regression for monotonicity → PCHIP interpolation → compute median crossing analytically. Implemented in `src/lib/cdf.ts`, fully unit-tested.
+### 8.1 Markets — collected from two sources
 
-Definition toggle: ceasefire / formal peace deal / either. Default: ceasefire.
+Each `npm run collect` run pulls war-end markets from **Polymarket and
+Manifold** under one shared selection filter (the same conditions on both):
+
+- **Match** — question matches the shared war-end / ceasefire / peace regex
+  **and** the Russia–Ukraine conflict regex, and does **not** match the
+  exclusion regex. The exclusions cover off-topic subjects (territory/control,
+  Crimea, casualties, deal terms, personalities) **and conditional framings**
+  where the war's end is a deadline/clause for something else ("X before the
+  war ends", "by the time a ceasefire…", leading "If a peace deal…"). The
+  conditional class is the dominant noise on Manifold; Polymarket's curated
+  grid is unaffected. Regexes live in one shared module (`warEndFilter.ts`)
+  consumed by both collectors, so "Manifold quality" == "Polymarket quality".
+- **Active** — open / unresolved only.
+- **Resolution date** — derived from the question text first ("by December 31,
+  2026", "before 2027", "in 2026"), falling back to the platform close date
+  (`endDate` / `closeTime`). Markets with no derivable date are dropped. The
+  date parser is shared between collectors.
+- **Quality floor** — Polymarket: ≥ $10k USD liquidity (existing). Manifold:
+  ≥ a tunable mana liquidity threshold (`MANI_FLOOR_MANA`, default 100 —
+  calibrate against live data).
+- **Horizon cap** — markets resolving more than `MAX_HORIZON_MONTHS` (36) out
+  are dropped: a "war ends in 2040" market is not a timing market regardless of
+  phrasing, and far-dated noise otherwise drags the weighted-centroid
+  consensus. `qualifyMarkets` also **re-validates** the question, so stale rows
+  in `markets.json` from an older/looser filter cannot linger on the chart.
+
+Each surviving market carries `market_id` (`<platform>:<id>`), source platform,
+question, resolution date, current YES probability (0–1), and a liquidity figure
+(USD for Polymarket, mana for Manifold).
+
+### 8.2 Per-market history
+
+Each run appends one immutable snapshot **per market**:
+`metric = "market_price"`, `source = market_id` (carries the platform prefix),
+`value = YES probability`, `raw_blob = { platform, question, resolution_date,
+liquidity }`. `markets.json` stays current-only; this NDJSON series is the only
+stored per-market trajectory and feeds the card sparklines and the per-point
+tooltip history.
+
+### 8.3 Cross-source weighting
+
+Manifold is play-money with no USD liquidity, so a single dollar pool would
+erase or distort it. Every market instead gets a **normalized weight**: weight
+by its share of its **own** source's liquidity, then give each source an equal
+half.
+
+```
+w_i = 0.5 · ( liq_i / Σ_{markets in same source} liq )      ⇒   Σ all w_i = 1
+```
+
+If only one source has qualifying markets, that source takes the full weight
+(equivalent to the pre-v1.5 behaviour). These weights drive **both** the
+consensus and the CDF curve; the absolute $10k floor formerly inside `cdf.ts`
+is removed — quality is filtered upstream (§8.1), and the curve aggregates by
+date using `w_i` in place of raw USD liquidity.
+
+### 8.4 The CDF curve
+
+Retained as the chart's backbone. Pipeline (`src/lib/cdf.ts`, unit-tested):
+markets → per resolution date, **weight-weighted** YES price → isotonic
+regression for monotonicity → PCHIP interpolation → dense curve. X-axis runs
+from today to the furthest priced date; a dashed "today" marker is drawn. The
+50% crossing is still computed when it exists, but is no longer a headline (it
+is frequently never reached). The ceasefire / peace / either definition toggle
+is deferred — markets are pooled, default basis is ceasefire+peace.
+
+### 8.5 The three selections
+
+All markets are drawn as points on/around the curve. Three are marked with small
+**inline-SVG** icons (never emoji — §13 brand rule):
+
+1. **Closest** — clock. The market whose resolution date is **nearest today**
+   (nearest future-dated; if none are future, nearest overall); ties broken by
+   **higher probability**.
+2. **Consensus** — question-mark-in-circle (⊙). The **liquidity-weighted
+   centroid** of all markets, using §8.3 weights:
+   `date = Σ w_i·date_i`, `probability = Σ w_i·p_i`. Both move over time and are
+   **tracked**: each run appends `war_end_consensus_probability` (value =
+   probability) and `war_end_consensus_date` (value = epoch ms), `source =
+   "derived"`. The icon marks (date, probability) on the curve.
+3. **Optimistic** — star. The market with the **highest probability**; ties
+   broken by **nearest to today**.
+
+These three render as a row of cards directly below the chart, in the order
+**closest · consensus · optimistic**, each marked on the graph by its icon. A
+card shows its value ("P% · &lt;Month Year&gt;"), a descriptor, and — once
+available — its trend sparkline + delta (§8.7): the closest/optimistic cards
+show the selected market's own price history (the selected market can change
+run-to-run); the consensus card shows the tracked centroid-probability trend.
+
+### 8.6 Tooltips
+
+Hovering any market point shows its details (probability, question, source,
+liquidity) **plus a mini history sparkline** built from that market's
+`market_price` series (§8.2). Implemented as a custom HTML tooltip so the
+sparkline can render inside it.
+
+### 8.7 Trend display rule
+
+A sparkline + signed delta appears **only when ≥ 2 history points exist** for
+that series (a market, or the consensus). Before that, show the value alone —
+**no sparkline and no "collecting…" text**.
 
 ## 9. Multilanguage strategy
 
@@ -278,6 +393,25 @@ whenwarends/
 > `events.json`, `changelog.json`); see `src/lib/types.ts` for the
 > authoritative TypeScript types and `src/lib/filestore.ts` for access. The
 > original DDL is retained as documentation of the record shape.
+>
+> **Revised 2026-05-21 (v1.5)** — snapshot conventions for the reworked hero
+> (§8). All keyed by the existing `UNIQUE(metric, source, ts)`:
+>
+> | metric | source | value | raw_blob |
+> |---|---|---|---|
+> | `market_price` | `<market_id>` (e.g. `polymarket:0x…`, `manifold:abc`) | YES probability (0–1) | `{ platform, question, resolution_date, liquidity }` |
+> | `war_end_consensus_probability` | `derived` | centroid probability (0–1) | `{}` |
+> | `war_end_consensus_date` | `derived` | centroid resolution date (epoch ms) | `{}` |
+>
+> One `market_price` row per market per run (the per-market trajectory);
+> `source` is overloaded to the market id so each market keys uniquely. The two
+> `consensus` rows track the moving centroid. The v1.4-era derived metrics
+> `war_end_consensus_price`, `war_end_optimistic_price`, and
+> `war_end_horizon_probability` are **retired** — cards now read the selected
+> market's own `market_price` history, and the headline reads the consensus
+> centroid. The per-source `war_end_probability` aggregate may be deprecated in
+> favour of the consensus once the AI brief context (`src/lib/briefContext.ts`)
+> is repointed.
 
 ```sql
 -- Time-series metric snapshots; never overwrite
@@ -401,4 +535,4 @@ Phase work proceeds by Claude Code creating a `phase-N/...` branch, completing t
 
 ---
 
-*Specification version 1.2 · 18 May 2026 · v1.2 replaces D1/KV/Cron with versioned repo files + GitHub Actions collection (§6, §14; rationale in `data/changelog.json`). Update via PR to this file; track changes in `/changelog`.*
+*Specification version 1.5 · 21 May 2026 · v1.5 reworks the hero chart (§8, §14): two-source markets under one filter, per-market history, and consensus/closest/optimistic selections with on-chart icons. v1.2 replaced D1/KV/Cron with versioned repo files + GitHub Actions collection (§6, §14). Update via PR to this file; track changes in `/changelog`.*

@@ -45,6 +45,7 @@ import {
   decodeJsonStringArray,
   type PolymarketMarket,
 } from './polymarket.schema';
+import { isWarEndMarket, deriveResolutionDate } from './warEndFilter';
 
 export const POLYMARKET_SOURCE = 'polymarket';
 export const WAR_END_METRIC = 'war_end_probability';
@@ -53,141 +54,22 @@ const GAMMA_EVENTS_URL =
   'https://gamma-api.polymarket.com/events' +
   '?closed=false&active=true&limit=100&order=volume&ascending=false&tag_slug=ukraine';
 
-/**
- * Intent terms for "the Russia–Ukraine war ends / ceasefire / peace deal".
- * Broad on phrasing so the live markets ("ceasefire agreement by...",
- * "signs peace deal with Russia", "war end") all match.
- */
-const WAR_END_PATTERN =
-  /\b(war ends?|end of (?:the )?war|end the war|ceasefire|cease-fire|truce|armistice|peace deal|peace agreement|peace treaty|peace settlement|peace plan|invasion ends?|end of (?:the )?invasion)\b/i;
-
-/** Must clearly be the Russia–Ukraine conflict, not some other war. */
-const CONFLICT_PATTERN =
-  /\b(ukrain\w*|russia\w*|russo[- ]ukrainian|kyiv|kremlin|putin|zelensk\w*)\b/i;
-
-/**
- * Exclusions: markets that mention ceasefire/peace tangentially but are NOT a
- * "when does the war end" forecast (so they don't pollute the CDF). Tuned to
- * the real live Ukraine tag: territory captures, troop deployments, summit
- * locations, and "referendum scheduled" markets.
- */
-const EXCLUDE_PATTERN =
-  /\b(referendum (?:scheduled|called)|calls a referendum|capture|captures?|recaptur\w*|troops fighting|enter ukraine|meet next|where will|nobel|nuclear weapon|drone strike|how many)\b/i;
-
 /** Injectable HTTP layer so tests can supply a mock payload. */
 export type JsonFetcher = (url: string) => Promise<unknown>;
 
 const defaultFetcher: JsonFetcher = (url) => fetchJson(url);
 
-function isWarEndMarket(question: string): boolean {
-  if (EXCLUDE_PATTERN.test(question)) return false;
-  return WAR_END_PATTERN.test(question) && CONFLICT_PATTERN.test(question);
-}
-
-const MONTHS: Record<string, number> = {
-  january: 0,
-  february: 1,
-  march: 2,
-  april: 3,
-  may: 4,
-  june: 5,
-  july: 6,
-  august: 7,
-  september: 8,
-  october: 9,
-  november: 10,
-  december: 11,
-};
-
-/** UTC ISO-8601 (`...Z`) for a given Y/M/D at midnight, or undefined. */
-function isoUtcDate(year: number, monthIdx: number, day: number): string | undefined {
-  if (!Number.isInteger(year) || year < 2022 || year > 2100) return undefined;
-  if (monthIdx < 0 || monthIdx > 11) return undefined;
-  if (day < 1 || day > 31) return undefined;
-  const t = Date.UTC(year, monthIdx, day);
-  if (Number.isNaN(t)) return undefined;
-  return new Date(t).toISOString();
-}
-
-/**
- * Best-effort ISO-8601 UTC normalisation of an already-timestamped string.
- * Re-serialises through Date to guarantee a valid UTC `Z` string and reject
- * garbage. Returns undefined when unparseable.
- */
-function toIsoUtc(raw: string | undefined): string | undefined {
-  if (!raw) return undefined;
-  const t = Date.parse(raw);
-  if (Number.isNaN(t)) return undefined;
-  return new Date(t).toISOString();
-}
-
-/**
- * Derive the TRUE per-market resolution date. Priority:
- *  1. A full date in the question text: "by December 31, 2026", "before 2027",
- *     "by June 30" (year then inferred from any explicit year nearby or the
- *     event endDate).
- *  2. groupItemTitle ("December 31") + a year inferred from the question or
- *     the event-level endDate.
- *  3. endDateIso / endDate (event-level fallback — coarse for grouped markets).
- */
+/** Per-market resolution date via the shared parser (grouped markets share an
+ *  event-level endDate, so the true date is in the question/groupItemTitle). */
 function resolveResolutionDate(
   m: PolymarketMarket,
   fallbackIso: string
 ): string {
-  const q = m.question;
-
-  // Year hint: an explicit 4-digit year anywhere in the question, else the
-  // year of the event endDate, else the fallback (now) year.
-  const yearFromText = q.match(/\b(20\d{2})\b/);
-  const endYear = m.endDate ? new Date(m.endDate).getUTCFullYear() : undefined;
-  const fallbackYear = new Date(fallbackIso).getUTCFullYear();
-
-  // "before 2027" / "by end of 2026" → end of the prior boundary. We treat
-  // "before <Y>" as Dec 31 of <Y-1> (i.e. by the end of the year before).
-  const beforeYear = q.match(/\bbefore\s+(20\d{2})\b/i);
-  if (beforeYear) {
-    const y = Number(beforeYear[1]) - 1;
-    const iso = isoUtcDate(y, 11, 31);
-    if (iso) return iso;
-  }
-
-  // "<Month> <Day>" (optionally followed by a year): "by December 31, 2026?"
-  // or grouped row text "December 31".
-  const md =
-    q.match(
-      /\b(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{1,2})(?:,?\s*(20\d{2}))?/i
-    ) ??
-    (m.groupItemTitle
-      ? m.groupItemTitle.match(
-          /\b(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{1,2})(?:,?\s*(20\d{2}))?/i
-        )
-      : null);
-  if (md) {
-    const monthIdx = MONTHS[md[1].toLowerCase()];
-    const day = Number(md[2]);
-    const year = md[3]
-      ? Number(md[3])
-      : yearFromText
-        ? Number(yearFromText[1])
-        : endYear ?? fallbackYear;
-    const iso = isoUtcDate(year, monthIdx, day);
-    if (iso) return iso;
-  }
-
-  // "in 2026" / "by 2027" with no month → end of that year.
-  const bareYear = q.match(/\b(?:in|by|during)\s+(20\d{2})\b/i);
-  if (bareYear) {
-    const iso = isoUtcDate(Number(bareYear[1]), 11, 31);
-    if (iso) return iso;
-  }
-
-  // Event-level timestamps as a last resort (coarse for grouped markets).
-  return (
-    toIsoUtc(m.endDate) ??
-    toIsoUtc(m.endDateIso) ??
-    toIsoUtc(m.closedTime) ??
-    fallbackIso
-  );
+  return deriveResolutionDate(m.question, {
+    groupItemTitle: m.groupItemTitle,
+    closeIso: m.endDate ?? m.endDateIso ?? m.closedTime,
+    fallbackIso,
+  });
 }
 
 /** "Yes" probability for a binary market, clamped to [0, 1]. */
@@ -261,6 +143,7 @@ export function mapPolymarketResponse(raw: unknown, nowIso: string): CollectorRe
         category: 'war_end',
         current_price: prob,
         liquidity_usd: liq,
+        liquidity_mana: null,
         last_updated: nowIso,
       });
 

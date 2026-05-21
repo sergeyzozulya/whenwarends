@@ -212,12 +212,15 @@ export function marketBucket(question: string): MarketBucket {
 
 /** One market point for the hero scatter. JSON-serializable (island prop). */
 export interface HeroMarket {
+  id: string; // market_id, e.g. "polymarket:0x…" / "manifold:abc"
   x: number; // resolution date, epoch ms
   y: number; // current price, 0–1 probability
   bucket: MarketBucket;
-  source: string; // 'polymarket' (hero markets come from markets.json)
+  source: string; // platform: 'polymarket' | 'manifold'
   question: string;
-  liquidity: number | null; // USD, for the tooltip
+  liquidity: number | null; // native amount, for the tooltip
+  liquidityUnit: 'usd' | 'mana';
+  history: number[]; // chronological YES prices, for the tooltip sparkline
 }
 
 /**

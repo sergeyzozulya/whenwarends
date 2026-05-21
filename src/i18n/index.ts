@@ -16,6 +16,17 @@ export function getLang(lang: keyof typeof languages): string {
   return languages[lang];
 }
 
+/**
+ * Build a path for a locale. The default locale (en) is served at the root with
+ * no prefix; uk/ru are prefixed. localizedPath('en', '/methodology') →
+ * '/methodology'; localizedPath('uk', '/methodology') → '/uk/methodology';
+ * localizedPath('en') → '/'.
+ */
+export function localizedPath(lang: keyof typeof languages, path = ''): string {
+  const p = path && !path.startsWith('/') ? `/${path}` : path;
+  return lang === defaultLang ? p || '/' : `/${lang}${p}`;
+}
+
 export function getTranslation(lang: keyof typeof languages, key: string): string {
   const keys = key.split('.');
   let value: any = translations[lang];

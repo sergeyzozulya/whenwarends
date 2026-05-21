@@ -15,7 +15,7 @@
     "label": "Probability war has ended by date",
     "median": "Median expected end date",
     "closest": "Closest date",
-    "optimistic": "Most optimistic active market",
+    "optimistic": "Most optimistic",
     "definition": "Definition",
     "ceasefire": "Ceasefire",
     "peaceDeal": "Formal peace",
@@ -33,12 +33,18 @@
     "legendCurve": "Consensus CDF",
     "legendMarket": "Market resolution date",
     "legendCrossing": "50% crossing",
-    "nMarkets": "{n} markets · liquidity ≥ $10k",
+    "nMarkets": "{n} markets · Polymarket + Manifold",
+    "consensusTag": "consensus",
+    "mana": "mana",
     "medianTag": "consensus",
     "medianNote": "50% probability crossing of the consensus CDF",
     "optimisticTag": "optimistic",
     "implied": "Implied probability {p} · liquidity {liq}",
-    "noMarket": "No active market"
+    "noMarket": "No active market",
+    "consensus": "Calculated consensus",
+    "consensusCaption": "liquidity-weighted across all listed markets",
+    "closestTag": "soonest",
+    "averageTag": "average"
   },
   "history": {
     "heading": "The war in data",
@@ -74,6 +80,18 @@
   "beliefs": {
     "heading": "How beliefs have moved",
     "current": "Current probability"
+  },
+  "trend": {
+    "pts": "pts",
+    "daysAgo": "{n}d"
+  },
+  "changelog": {
+    "cat": {
+      "release": "Launch",
+      "new-source": "New data",
+      "redesign": "Redesign",
+      "privacy": "Privacy"
+    }
   },
   "events": {
     "heading": "What moved the curve",

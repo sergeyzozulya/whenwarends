@@ -15,7 +15,7 @@
     "label": "Імовірність завершення війни на дату",
     "median": "Медіанна очікувана дата завершення",
     "closest": "Найближча дата",
-    "optimistic": "Найоптимістичніший активний ринок",
+    "optimistic": "Найоптимістичніший",
     "definition": "Визначення",
     "ceasefire": "Припинення вогню",
     "peaceDeal": "Офіційний мир",
@@ -33,12 +33,18 @@
     "legendCurve": "Консенсусна CDF",
     "legendMarket": "Дата розв’язання ринку",
     "legendCrossing": "Перетин 50%",
-    "nMarkets": "{n} ринків · ліквідність ≥ $10k",
+    "nMarkets": "{n} ринків · Polymarket + Manifold",
+    "consensusTag": "консенсус",
+    "mana": "мана",
     "medianTag": "консенсус",
     "medianNote": "Перетин 50% імовірності консенсусної CDF",
     "optimisticTag": "оптимістичний",
     "implied": "Імовірність {p} · ліквідність {liq}",
-    "noMarket": "Немає активного ринку"
+    "noMarket": "Немає активного ринку",
+    "consensus": "Розрахований консенсус",
+    "consensusCaption": "зважено за ліквідністю по всіх наведених ринках",
+    "closestTag": "найближче",
+    "averageTag": "середнє"
   },
   "history": {
     "heading": "Війна в даних",
@@ -74,6 +80,18 @@
   "beliefs": {
     "heading": "Як змінювалися очікування",
     "current": "Поточна імовірність"
+  },
+  "trend": {
+    "pts": "в.п.",
+    "daysAgo": "{n} дн."
+  },
+  "changelog": {
+    "cat": {
+      "release": "Запуск",
+      "new-source": "Нові дані",
+      "redesign": "Дизайн",
+      "privacy": "Приватність"
+    }
   },
   "events": {
     "heading": "Що змінило криву",
