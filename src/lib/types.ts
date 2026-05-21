@@ -84,6 +84,55 @@ export interface Citation {
   title?: string;
 }
 
+/** A raw candidate article from GDELT, before selection/translation. */
+export interface NewsArticle {
+  /** Original-language title as returned by GDELT. */
+  title: string;
+  url: string;
+  /** Originating domain, e.g. "reuters.com" (may be empty). */
+  domain: string;
+  /** ISO-8601 UTC timestamp GDELT first saw the article, or '' if unknown. */
+  seenAt: string;
+  /** GDELT source-country label, when present. */
+  sourceCountry?: string;
+  /** GDELT language label of the article, when present (e.g. "English"). */
+  language?: string;
+  /** Publisher share/OG image URL (GDELT socialimage), hotlinked, if any. */
+  image?: string;
+  /** True if the source is a flagged Tier-2 amplifier (shown with a warning). */
+  flagged?: boolean;
+}
+
+/** A title rendered in each of the three site locales. */
+export type LocalizedTitle = Record<Lang, string>;
+
+/**
+ * A selected, display-ready news item: a curated GDELT article whose title has
+ * been translated into all three site locales by the news-selection LLM pass.
+ */
+export interface NewsItem {
+  url: string;
+  domain: string;
+  seenAt: string;
+  sourceCountry?: string;
+  image?: string;
+  /** True if the source is a flagged Tier-2 amplifier (shown with a warning). */
+  flagged?: boolean;
+  /** Original-language title (provenance + fallback). */
+  original: string;
+  /** Title translated into each site locale. */
+  title: LocalizedTitle;
+}
+
+/** Current related-news snapshot (data/news.json). Overwritten each refresh. */
+export interface NewsFile {
+  /** YYYY-MM-DD (UTC) the list was collected. */
+  asOf: string;
+  /** Provenance, e.g. "gdelt". */
+  source: string;
+  articles: NewsItem[];
+}
+
 export interface EventRow {
   id: number;
   date: string; // YYYY-MM-DD

@@ -1,5 +1,13 @@
 [
   {
+    "id": 6,
+    "date": "2026-05-21",
+    "category": "new-source",
+    "description_en": "Added a related-news panel beside the brief: a short list of recent war coverage from GDELT, automatically selected and translated into all three languages. State and sanctioned outlets and known spoof networks are filtered out; sources flagged as propaganda amplifiers are labelled. Article images are downscaled and cached on our own servers, so the page makes no request to outside publishers.",
+    "description_uk": "Додано панель пов’язаних новин поруч з оглядом: короткий список свіжого висвітлення війни з GDELT, автоматично відібраний і перекладений усіма трьома мовами. Державні та підсанкційні видання й відомі мережі підробок відфільтровано; джерела, позначені як підсилювачі пропаганди, марковано. Зображення статей зменшено й кешовано на наших серверах, тож сторінка не звертається до сторонніх видань.",
+    "description_ru": "Добавлена панель связанных новостей рядом со сводкой: короткий список свежего освещения войны из GDELT, автоматически отобранный и переведённый на все три языка. Государственные и подсанкционные издания и известные сети подделок отфильтрованы; источники, помеченные как усилители пропаганды, маркированы. Изображения статей уменьшены и кешированы на наших серверах, поэтому страница не обращается к сторонним изданиям."
+  },
+  {
     "id": 5,
     "date": "2026-05-21",
     "category": "redesign",

@@ -8,12 +8,14 @@ import type {
   BriefRow,
   SnapshotRow,
   Citation,
+  NewsItem,
 } from './types';
 import {
   readSnapshots,
   readMarkets,
   readEvents,
   readBriefs,
+  readNews,
 } from './filestore';
 import { computeCDF } from './cdf';
 import { marketBucket, isoToMs, type HeroMarket } from './heroChartData';
@@ -106,6 +108,10 @@ export interface HomePayload {
   /** Every published brief for this lang, newest-first, with the metric
    *  picture as it stood on that brief's date. Drives the inline timeline. */
   briefArchive: BriefArchiveEntry[];
+  /** Selected, locale-translated related news (GDELT), shown beside the brief. */
+  news: NewsItem[];
+  /** YYYY-MM-DD the news list was collected, or null. */
+  newsAsOf: string | null;
 }
 
 export interface BriefArchiveEntry {
@@ -157,6 +163,8 @@ export function emptyHomePayload(): HomePayload {
     brief: null,
     briefStale: false,
     briefArchive: [],
+    news: [],
+    newsAsOf: null,
   };
 }
 
@@ -376,9 +384,12 @@ export function loadHomePayload(lang: Lang): HomePayload {
     .slice(0, 4);
   const allBriefs = readBriefs();
   const brief = latestPublishedBrief(allBriefs, lang);
+  const newsFile = readNews();
+  const news = newsFile?.articles ?? [];
+  const newsAsOf = newsFile?.asOf ?? null;
 
   if (snapshots.length === 0 && markets.length === 0 && !brief) {
-    return { ...emptyHomePayload(), events };
+    return { ...emptyHomePayload(), events, news, newsAsOf };
   }
 
   const briefArchive = buildBriefArchive(allBriefs, lang, snapshots);
@@ -561,5 +572,7 @@ export function loadHomePayload(lang: Lang): HomePayload {
     brief,
     briefStale,
     briefArchive,
+    news,
+    newsAsOf,
   };
 }

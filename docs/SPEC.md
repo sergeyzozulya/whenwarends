@@ -84,7 +84,7 @@ Data lives in versioned repo JSON files (`data/`) read at build time; the weekly
 |---|---|---|---|
 | Polymarket Gamma + Data API | Primary war-end probabilities + history | Public, viewable globally | None |
 | Manifold Markets API | Secondary war-end markets (discovered set, same filter as Polymarket) + per-market history | Public (CC BY 4.0) | None |
-| GDELT 2.0 DOC API | Conflict volume intensity + tone | CC BY | None |
+| GDELT 2.0 DOC API | Conflict volume intensity + tone (timeline); related-news article list (artlist, denylist-filtered, AI-selected + translated) | CC BY | None |
 | Kiel Ukraine Support Tracker | Aid commitments (.xlsx) | CC BY 4.0 | None |
 | NASA FIRMS | Fire/heat anomalies as combat-zone proxy | Public domain | Free API key |
 | World Bank (Indicators + Global Economic Monitor) | RU annual macro; RU monthly CPI; RU/UA quarterly real GDP | Public | None |
@@ -93,6 +93,19 @@ Data lives in versioned repo JSON files (`data/`) read at build time; the weekly
 | European Central Bank (via Frankfurter) | Daily reference rates for EUR conversion | Public | None |
 
 Implemented collectors only; the registry is `src/workers/collectors/index.ts`.
+
+**Related news (shown beside the brief).** GDELT's `artlist` mode supplies a
+multilingual pool of recent war coverage. `src/lib/sources/denylist.ts` removes
+state-controlled, sanctioned, and spoof-network domains (Tier 1, plus the
+Pravda/Portal-Kombat and Doppelganger pattern matchers) and *flags* Tier-2
+"amplifier" outlets rather than dropping them; one AI pass
+(`selectAndTranslateNews` in `src/lib/llm.ts`, Sonnet) picks the top stories and
+translates each headline into all three locales. Thumbnails are downscaled to
+≤100px and cached under `public/news/` (`src/lib/newsImages.ts`) so the page
+makes no third-party image request. Flagged sources render a "flagged source"
+warning linking to the methodology. `scripts/collect-news.ts` produces
+`data/news.json`; `npm run collect` runs it (and the brief) after data
+collection.
 
 **Explicitly excluded / not collected:**
 
@@ -104,19 +117,22 @@ Implemented collectors only; the registry is `src/workers/collectors/index.ts`.
 > **Revised 2026-05-18** (see `data/changelog.json`): D1/KV/Cron replaced by
 > versioned repo JSON files read at build time. Weekly data volume for a
 > single editor does not justify a database; git provides immutable history,
-> audit trail, and backups. Editorial approval becomes pull-request review.
+> audit trail, and backups. The editorial brief is auto-published behind the
+> `llm.ts` integrity guards (citation allow-list, refusal, truncation) — there
+> is no human review gate; the git commit is the audit trail.
 
 ```
 [GitHub Actions — weekly cron]
         ↓
 [scripts/collect.ts] ── pull → [Polymarket, GDELT, Kiel, NBU, FIRMS, …]
+        ↓   then, in the same run:
+        ├── collect-news  (GDELT artlist → denylist → AI select/translate → news.json)
+        └── draft-brief   (data + news → AI brief, auto-published, integrity-guarded)
         ↓
 [data/ JSON files]  ◄── snapshots.ndjson: (metric, source, ts, value, raw_blob, confidence)
-        ↓                  markets.json · events.json · briefs.json
-        ↓                                                    ↑
-[Brief draft → pending_review file in a PR] ── editor merges ┘  (Phase 3)
+        ↓                  markets.json · events.json · briefs.json · news.json
         ↓
-[Astro static build reads data/ → numbers baked into HTML]
+[Astro static build reads data/ → numbers baked into HTML; public/news/ thumbnails]
         ↓
 [Cloudflare Worker + Static Assets] → readers
 ```
@@ -300,7 +316,11 @@ Never auto-publishes — nothing is public until a human merges the PR.
 > `src/workers/admin-api.ts`; added `data/`, `scripts/collect.ts`,
 > `scripts/draft-brief.ts`, `scripts/check-bundle.ts`, `src/lib/filestore.ts`,
 > `src/lib/homepage.ts`, `src/i18n/glossary/`, and
-> `.github/workflows/{collect,brief}.yml`.
+> `.github/workflows/{collect,brief}.yml`. The related-news pipeline (2026-05-21)
+> added `scripts/collect-news.ts`, `scripts/isEntrypoint.ts`,
+> `src/lib/sources/gdeltArticles.ts` (+`.schema.ts`), `src/lib/sources/denylist.ts`,
+> `src/lib/newsImages.ts`, `src/components/RelatedNews.astro`, `data/news.json`,
+> and cached thumbnails under `public/news/`.
 
 ```
 whenwarends/

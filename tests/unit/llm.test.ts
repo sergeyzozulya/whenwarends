@@ -1,8 +1,12 @@
 import { describe, it, expect } from 'vitest';
 import type Anthropic from '@anthropic-ai/sdk';
-import { generateBrief, type CreateMessage } from '../../src/lib/llm';
+import {
+  generateBrief,
+  selectAndTranslateNews,
+  type CreateMessage,
+} from '../../src/lib/llm';
 import type { BriefInput } from '../../src/lib/llm';
-import type { Citation } from '../../src/lib/types';
+import type { Citation, NewsArticle } from '../../src/lib/types';
 
 // The brief may cite only these. The model is told to reuse the URLs verbatim;
 // llm.ts enforces the allow-list as defence in depth.
@@ -117,5 +121,111 @@ describe('generateBrief', () => {
     await expect(generateBrief(baseInput, stub)).rejects.toThrow(
       /brief\[en\]: no text output/
     );
+  });
+});
+
+const CANDIDATES: NewsArticle[] = [
+  {
+    title: 'Talks resume in Geneva',
+    url: 'https://reuters.com/a',
+    domain: 'reuters.com',
+    seenAt: '2026-05-21T12:00:00.000Z',
+    sourceCountry: 'United Kingdom',
+    language: 'English',
+    image: 'https://reuters.com/a.jpg',
+  },
+  {
+    title: 'Front-line shelling continues',
+    url: 'https://apnews.com/b',
+    domain: 'apnews.com',
+    seenAt: '2026-05-21T09:00:00.000Z',
+  },
+  {
+    title: 'Переговоры в Женеве',
+    url: 'https://example.fr/c',
+    domain: 'example.fr',
+    seenAt: '2026-05-20T18:00:00.000Z',
+    language: 'Russian',
+  },
+];
+
+const picksMsg = (picks: unknown): Anthropic.Message =>
+  textMsg(JSON.stringify({ picks }));
+
+describe('selectAndTranslateNews', () => {
+  it('maps picked indices to NewsItems with localized titles, salient order kept', async () => {
+    const stub: CreateMessage = async () =>
+      picksMsg([
+        { index: 1, uk: 'Обстріли тривають', en: 'Shelling continues', ru: 'Обстрелы продолжаются' },
+        { index: 0, uk: 'Переговори в Женеві', en: 'Talks in Geneva', ru: 'Переговоры в Женеве' },
+      ]);
+
+    const out = await selectAndTranslateNews(CANDIDATES, { count: 10 }, stub);
+    expect(out.map((i) => i.url)).toEqual([
+      'https://apnews.com/b',
+      'https://reuters.com/a',
+    ]);
+    expect(out[0].title).toEqual({
+      uk: 'Обстріли тривають',
+      en: 'Shelling continues',
+      ru: 'Обстрелы продолжаются',
+    });
+    expect(out[0].original).toBe('Front-line shelling continues');
+    // Trusted candidate fields are carried over, not taken from the model.
+    expect(out[1].image).toBe('https://reuters.com/a.jpg');
+  });
+
+  it('drops out-of-range and duplicate indices', async () => {
+    const stub: CreateMessage = async () =>
+      picksMsg([
+        { index: 0, uk: 'а', en: 'a', ru: 'а' },
+        { index: 99, uk: 'x', en: 'x', ru: 'x' },
+        { index: 0, uk: 'dup', en: 'dup', ru: 'dup' },
+      ]);
+    const out = await selectAndTranslateNews(CANDIDATES, {}, stub);
+    expect(out).toHaveLength(1);
+    expect(out[0].url).toBe('https://reuters.com/a');
+  });
+
+  it('falls back to the original title when a translation is blank', async () => {
+    const stub: CreateMessage = async () =>
+      picksMsg([{ index: 0, uk: 'ок', en: '   ', ru: 'ок' }]);
+    const out = await selectAndTranslateNews(CANDIDATES, {}, stub);
+    expect(out[0].title.en).toBe('Talks resume in Geneva');
+  });
+
+  it('returns [] without calling the model when there are no candidates', async () => {
+    let called = false;
+    const stub: CreateMessage = async () => {
+      called = true;
+      return picksMsg([]);
+    };
+    expect(await selectAndTranslateNews([], {}, stub)).toEqual([]);
+    expect(called).toBe(false);
+  });
+
+  it('runs on Sonnet with json_schema structured output and a cached system block', async () => {
+    let seen: Anthropic.MessageCreateParamsNonStreaming | undefined;
+    const stub: CreateMessage = async (params) => {
+      seen = params;
+      return picksMsg([]);
+    };
+    await selectAndTranslateNews(CANDIDATES, {}, stub);
+    expect(seen?.model).toBe('claude-sonnet-4-6');
+    expect(seen?.output_config?.format?.type).toBe('json_schema');
+    const sys = seen?.system as Anthropic.TextBlockParam[];
+    expect(sys).toHaveLength(1);
+    expect(sys[0].cache_control?.type).toBe('ephemeral');
+  });
+
+  it('carries the Tier-2 flagged marker through to the NewsItem', async () => {
+    const stub: CreateMessage = async () =>
+      picksMsg([{ index: 0, uk: 'а', en: 'a', ru: 'а' }]);
+    const out = await selectAndTranslateNews(
+      [{ ...CANDIDATES[0], flagged: true }],
+      {},
+      stub
+    );
+    expect(out[0].flagged).toBe(true);
   });
 });

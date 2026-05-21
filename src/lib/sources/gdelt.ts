@@ -131,9 +131,14 @@ const RATE_RETRY_WAIT_MS = 7000;
 const isRateLimited = (status: number, body: string): boolean =>
   status === 429 || /limit requests|one every \d+ seconds/i.test(body);
 
-const defaultFetcher: JsonFetcher = async (url) => {
+export const defaultFetcher: JsonFetcher = async (url) => {
   for (let attempt = 0; ; attempt++) {
     const res = await fetchWithRetry(url, {
+      // GDELT is genuinely slow — relevance-ranked artlist or multi-year
+      // timeline windows routinely take 20–40s. The 15s default aborts mid-
+      // flight and surfaces as an opaque "fetch failed". This is a weekly job,
+      // so trade latency for reliability with a long per-attempt timeout.
+      timeoutMs: 60000,
       init: {
         headers: {
           'User-Agent': USER_AGENT,
@@ -330,6 +335,12 @@ export async function collectGdeltHistory(
   }
   return { snapshots: [...byKey.values()] };
 }
+
+/**
+ * The rate-limit-aware GDELT JSON fetcher, shared with the artlist collector
+ * (gdeltArticles.ts) so both hit GDELT through the same 1-req/5s-safe path.
+ */
+export const gdeltJsonFetcher: JsonFetcher = defaultFetcher;
 
 export interface GdeltCollector extends Collector {
   /** Test seam: run with an injected JSON fetcher (no network). */

@@ -1,0 +1,133 @@
+{
+  "asOf": "2026-05-21",
+  "source": "gdelt",
+  "articles": [
+    {
+      "url": "https://www.dailysabah.com/world/europe/kremlin-says-no-clear-roadmap-to-end-ukraine-war-despite-putins-words",
+      "domain": "dailysabah.com",
+      "seenAt": "2026-05-12T20:15:00.000Z",
+      "sourceCountry": "Turkey",
+      "image": "/news/9b17c477b832ec93.webp",
+      "original": "Kremlin says no clear roadmap to end Ukraine war despite Putin words",
+      "title": {
+        "uk": "Кремль визнає відсутність чіткого плану завершення війни в Україні, попри слова Путіна",
+        "en": "Kremlin says no clear roadmap to end Ukraine war despite Putin's words",
+        "ru": "Кремль признаёт отсутствие чёткого плана завершения войны в Украине вопреки словам Путина"
+      }
+    },
+    {
+      "url": "https://www.newsweek.com/putin-zelensky-declare-competing-ceasefires-what-it-means-war-11912628",
+      "domain": "newsweek.com",
+      "seenAt": "2026-05-05T13:30:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Putin And Zelensky Declare Competing 2 Day Ceasefires – What It Means For War",
+      "title": {
+        "uk": "Путін і Зеленський оголосили конкуруючі дводенні перемир'я — що це означає для війни",
+        "en": "Putin and Zelensky declare competing two-day ceasefires — what it means for the war",
+        "ru": "Путин и Зеленский объявили конкурирующие двухдневные перемирия — что это значит для войны"
+      }
+    },
+    {
+      "url": "https://www.scmp.com/news/world/europe/article/3347764/4-dead-russia-fires-nearly-400-drones-ukraine-signs-spring-offensive-has-begun",
+      "domain": "scmp.com",
+      "seenAt": "2026-03-24T17:30:00.000Z",
+      "sourceCountry": "China",
+      "image": "/news/4b62c8726bc99a86.webp",
+      "original": "4 dead as Russia fires nearly 400 drones at Ukraine with signs spring offensive has begun",
+      "title": {
+        "uk": "4 загиблих: Росія вдарила майже 400 дронами по Україні — ознаки початку весняного наступу",
+        "en": "4 dead as Russia fires nearly 400 drones at Ukraine with signs spring offensive has begun",
+        "ru": "4 погибших: Россия нанесла удар почти 400 дронами по Украине — признаки начала весеннего наступления"
+      }
+    },
+    {
+      "url": "https://focus.ua/uk/voennye-novosti/753860-peremir-ya-z-rf-vorog-vikoristav-pauzu-dlya-perekidannya-rezerviv-ta-atak-isw",
+      "domain": "focus.ua",
+      "seenAt": "2026-05-12T07:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Перемир  я з РФ ворог використав « паузу » для перекидання резервів та атак ISW",
+      "title": {
+        "uk": "Перемир'я з РФ: ворог використав «паузу» для перекидання резервів та атак — ISW",
+        "en": "Ceasefire with Russia: enemy used the \"pause\" to redeploy reserves and launch attacks — ISW",
+        "ru": "Перемирие с РФ: враг использовал «паузу» для переброски резервов и атак — ISW"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/76048",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-05-13T15:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/aa212d166108c9b0.webp",
+      "original": "Kremlin Demands Ukraine Leave Donbas Before Talks Can Start",
+      "title": {
+        "uk": "Кремль вимагає від України залишити Донбас до початку переговорів",
+        "en": "Kremlin demands Ukraine leave Donbas before talks can start",
+        "ru": "Кремль требует от Украины покинуть Донбасс до начала переговоров"
+      }
+    },
+    {
+      "url": "https://www.radiosvoboda.org/a/news-isw-putin-tramp/33745916.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-04-30T11:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/ccf36a8873f19e53.webp",
+      "original": "ISW : Путін у розмові з Трампом намагався переконати його змусити Україну до капітуляції",
+      "title": {
+        "uk": "ISW: Путін у розмові з Трампом намагався переконати його змусити Україну до капітуляції",
+        "en": "ISW: Putin tried to convince Trump in their call to force Ukraine into capitulation",
+        "ru": "ISW: Путин в разговоре с Трампом пытался убедить его заставить Украину капитулировать"
+      }
+    },
+    {
+      "url": "https://www.seattletimes.com/nation-world/world/iran-war-deflects-attention-from-ukraine-as-an-emboldened-russia-starts-spring-offensive/",
+      "domain": "seattletimes.com",
+      "seenAt": "2026-03-26T06:45:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Iran war deflects attention from Ukraine as an emboldened Russia starts spring offensive",
+      "title": {
+        "uk": "Війна з Іраном відволікає увагу від України, поки посміліла Росія розпочинає весняний наступ",
+        "en": "Iran war deflects attention from Ukraine as an emboldened Russia starts spring offensive",
+        "ru": "Война с Ираном отвлекает внимание от Украины, пока Россия начинает весеннее наступление"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/75870",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-05-11T12:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/c392641373fb6a50.webp",
+      "original": "Turning Point in Ukraine ? Kyiv Seizes Initiative as Russia Falters on Battlefield",
+      "title": {
+        "uk": "Переломний момент в Україні? Київ перехоплює ініціативу, поки Росія пробуксовує на полі бою",
+        "en": "Turning point in Ukraine? Kyiv seizes initiative as Russia falters on the battlefield",
+        "ru": "Перелом на Украине? Киев перехватывает инициативу, пока Россия буксует на поле боя"
+      }
+    },
+    {
+      "url": "https://fakti.bg/world/1053071-isw-iztekli-dokumenti-pokazaha-viziata-na-rusia-sled-kraa-na-voinata",
+      "domain": "fakti.bg",
+      "seenAt": "2026-05-08T07:00:00.000Z",
+      "sourceCountry": "Bulgaria",
+      "image": "/news/9b798090213488c8.webp",
+      "original": "ISW : Изтекли документи показаха визията на Русия след края на войната ᐉ Новини от Fakti . bg - Свят",
+      "title": {
+        "uk": "ISW: витік документів розкрив бачення Росії щодо ситуації після закінчення війни",
+        "en": "ISW: leaked documents revealed Russia's vision for after the war ends",
+        "ru": "ISW: утечка документов раскрыла видение России относительно ситуации после окончания войны"
+      }
+    },
+    {
+      "url": "https://www.khaama.com/trump-says-russia-ukraine-ceasefire-may-be-extended/",
+      "domain": "khaama.com",
+      "seenAt": "2026-05-09T06:00:00.000Z",
+      "sourceCountry": "Afghanistan",
+      "image": "/news/308277ed970e3731.webp",
+      "original": "Trump says Russia - Ukraine ceasefire may be extended",
+      "title": {
+        "uk": "Трамп заявив, що перемир'я між Росією та Україною може бути продовжено",
+        "en": "Trump says Russia-Ukraine ceasefire may be extended",
+        "ru": "Трамп заявил, что перемирие между Россией и Украиной может быть продлено"
+      }
+    }
+  ]
+}

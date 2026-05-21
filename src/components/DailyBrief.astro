@@ -1,5 +1,5 @@
 ---
-import type { BriefRow, Citation, Lang } from '@lib/types';
+import type { BriefRow, Lang } from '@lib/types';
 import { getTranslation } from '@i18n/index';
 
 interface Props {
@@ -12,9 +12,11 @@ interface Props {
 
 const { brief, isStale = false, lang } = Astro.props;
 
+const sectionHeading = getTranslation(lang, 'brief.sectionHeading');
+const sectionIntro = getTranslation(lang, 'brief.sectionIntro');
+const disclaimer = getTranslation(lang, 'brief.disclaimer');
 const headingLabel = getTranslation(lang, 'brief.heading');
 const noBriefLabel = getTranslation(lang, 'brief.noBrief');
-const sourcesLabel = getTranslation(lang, 'brief.sources');
 const reviewedLabel = getTranslation(lang, 'brief.reviewed');
 
 // Drafts are never public. Only render published text; if it is null, the
@@ -26,27 +28,6 @@ const hasBrief = publishedText != null;
 // Per SPEC §10: when stale, the previous week's brief stays visible but with
 // the "no fresh brief this week" notice above it.
 const showNoBriefNotice = !hasBrief || (isStale && hasBrief);
-
-// Parse citations defensively. Malformed or non-conforming JSON yields [].
-function parseCitations(raw: string | undefined): Citation[] {
-  if (!raw) return [];
-  try {
-    const parsed: unknown = JSON.parse(raw);
-    if (!Array.isArray(parsed)) return [];
-    return parsed.filter(
-      // Narrow each entry to the Citation contract; drop anything malformed.
-      (c): c is Citation =>
-        typeof c === 'object' &&
-        c !== null &&
-        typeof (c as { source?: unknown }).source === 'string' &&
-        typeof (c as { url?: unknown }).url === 'string',
-    );
-  } catch {
-    return [];
-  }
-}
-
-const citations: Citation[] = hasBrief ? parseCitations(brief?.citations) : [];
 
 // Localized published date, fixed to UTC per project time conventions.
 const localeByLang: Record<Lang, string> = {
@@ -68,76 +49,77 @@ function formatDate(date: string | undefined): string | null {
 }
 
 const publishedDate = hasBrief ? formatDate(brief?.date) : null;
+
+const paragraphs = (publishedText ?? '')
+  .split(/\n{2,}/)
+  .map((para) => para.trim())
+  .filter((para) => para.length > 0);
 ---
 
-<section
-  class="mx-auto max-w-prose px-4 py-8"
-  aria-labelledby="daily-brief-heading"
->
+<section aria-labelledby="brief-section-heading">
   <h2
-    id="daily-brief-heading"
-    class="text-[22px] font-medium leading-tight text-gray-900"
+    id="brief-section-heading"
+    class="text-[22px] font-medium leading-[1.5] tracking-[-0.005em] text-[var(--color-ink)]"
   >
-    {headingLabel}
+    {sectionHeading}
   </h2>
+  <p class="mt-1 text-[16px] leading-[1.5] text-[var(--color-ink-soft)]">
+    {sectionIntro}
+  </p>
+  <p class="mt-2 text-[13px] leading-[1.5] text-[var(--color-muted)]">
+    {disclaimer}
+  </p>
 
-  {
-    showNoBriefNotice && (
-      <p class="mt-3 text-sm font-normal text-gray-500" role="status">
-        {noBriefLabel}
-      </p>
-    )
-  }
+  {/* Two columns: the brief on the left, related news on the right. */}
+  <div
+    class="mt-7 rounded-xl border border-[var(--color-line)] bg-[var(--color-surface)] p-6 sm:p-8"
+  >
+    <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
+      <div>
+        <h3
+          id="daily-brief-heading"
+          class="text-[16px] font-medium leading-[1.5] text-[var(--color-ink)]"
+        >
+          {headingLabel}
+        </h3>
 
-  {
-    hasBrief && (
-      <>
-        <div class="mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          {publishedDate && (
-            <time
-              datetime={brief?.date}
-              class="text-xs font-normal text-gray-500"
-            >
-              {publishedDate}
-            </time>
-          )}
-          <span class="text-xs font-medium text-gray-600">
-            {reviewedLabel}
-          </span>
-        </div>
+        {
+          hasBrief && (
+            <p class="mt-1 text-[13px] text-[var(--color-muted)]">
+              {publishedDate && (
+                <>
+                  <time datetime={brief?.date}>{publishedDate}</time>
+                  <span> · </span>
+                </>
+              )}
+              <span class="font-medium">{reviewedLabel}</span>
+            </p>
+          )
+        }
+
+        {
+          showNoBriefNotice && (
+            <p class="mt-1 text-[13px] text-[var(--color-muted)]" role="status">
+              {noBriefLabel}
+            </p>
+          )
+        }
 
         <div class="mt-4 space-y-4">
-          {publishedText
-            ?.split(/\n{2,}/)
-            .map((para) => para.trim())
-            .filter((para) => para.length > 0)
-            .map((para) => (
-              <p class="text-base font-normal leading-relaxed text-gray-800">
+          {
+            paragraphs.map((para) => (
+              <p class="text-[16px] leading-[1.55] text-[var(--color-ink-soft)]">
                 {para}
               </p>
-            ))}
+            ))
+          }
         </div>
-
-        {citations.length > 0 && (
-          <div class="mt-6">
-            <h3 class="text-sm font-medium text-gray-700">{sourcesLabel}</h3>
-            <ul class="mt-2 space-y-1">
-              {citations.map((citation) => (
-                <li class="text-sm font-normal text-gray-700">
-                  <a
-                    href={citation.url}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    class="text-[#2c5aa0] underline underline-offset-2 hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2c5aa0]"
-                  >
-                    {citation.title || citation.source}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </>
-    )
-  }
+      </div>
+      <aside
+        class="border-t border-[var(--color-line)] pt-6 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0"
+      >
+        <slot name="aside" />
+      </aside>
+    </div>
+  </div>
 </section>

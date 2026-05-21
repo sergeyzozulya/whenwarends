@@ -4,6 +4,8 @@ import Layout from '@/layouts/Layout.astro';
 import HeroChart from '@/components/HeroChart';
 import HistoryTimeline from '@/components/HistoryTimeline';
 import StatCard from '@/components/StatCard.astro';
+import DailyBrief from '@/components/DailyBrief.astro';
+import RelatedNews from '@/components/RelatedNews.astro';
 import { getTranslation } from '@i18n/index';
 import type { Lang } from '@lib/types';
 import { loadHomePayload } from '@lib/homepage';
@@ -248,5 +250,15 @@ const cardCls =
         />
       </div>
     </section>
+
+    {/* Editorial brief (left) + related GDELT news (right), two columns */}
+    <DailyBrief brief={data.brief} isStale={data.briefStale} lang={lang}>
+      <RelatedNews
+        slot="aside"
+        articles={data.news}
+        asOf={data.newsAsOf}
+        lang={lang}
+      />
+    </DailyBrief>
   </div>
 </Layout>

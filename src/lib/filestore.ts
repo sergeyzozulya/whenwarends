@@ -15,6 +15,7 @@ import type {
   EventRow,
   ChangelogRow,
   BriefRow,
+  NewsFile,
 } from './types';
 
 const DATA_DIR = resolve(process.cwd(), 'data');
@@ -24,6 +25,7 @@ const P = {
   events: resolve(DATA_DIR, 'events.json'),
   changelog: resolve(DATA_DIR, 'changelog.json'),
   briefs: resolve(DATA_DIR, 'briefs.json'),
+  news: resolve(DATA_DIR, 'news.json'),
 };
 
 function ensureDir(): void {
@@ -125,6 +127,16 @@ export function readChangelog(): ChangelogRow[] {
 
 export function readBriefs(): BriefRow[] {
   return readJson<BriefRow[]>(P.briefs, []);
+}
+
+/** Current related-news snapshot, or null if not yet collected. */
+export function readNews(): NewsFile | null {
+  return readJson<NewsFile | null>(P.news, null);
+}
+
+/** Overwrite the related-news file (current state, like markets.json). */
+export function writeNews(file: NewsFile): void {
+  writeJson(P.news, file);
 }
 
 /** Overwrite the briefs file. The draft script upserts; PR review publishes. */

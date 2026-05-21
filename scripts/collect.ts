@@ -17,6 +17,8 @@ import {
   readMarkets,
 } from '../src/lib/filestore';
 import { allDerivedSnapshots } from '../src/lib/cards';
+import { runCollectNews } from './collect-news';
+import { runDraftBrief } from './draft-brief';
 
 // Node shim for the Worker Env. Collectors only read string secrets (e.g.
 // FIRMS_MAP_KEY); DB/KV/ASSETS are never touched in collection, so they are
@@ -79,8 +81,30 @@ async function main(): Promise<void> {
     `\ncollect done — ${snapshotsAdded} new snapshots, ${marketsTouched} markets, ` +
       `${failed.length}/${results.length} sources failed`
   );
+
+  // One command updates everything: data -> related news -> editorial brief.
+  // Both downstream steps are failure-isolated (they keep prior files on
+  // error) and never throw out here, but guard anyway so one can't abort the
+  // other or mask the collector exit code. News runs first — the brief reads
+  // news.json. Skipped when SKIP_DOWNSTREAM is set (e.g. a data-only refresh).
+  if (!process.env.SKIP_DOWNSTREAM) {
+    console.log('\n--- related news ---');
+    try {
+      await runCollectNews();
+    } catch (err) {
+      console.error(`news step failed: ${err instanceof Error ? err.message : String(err)}`);
+    }
+
+    console.log('\n--- editorial brief ---');
+    try {
+      await runDraftBrief();
+    } catch (err) {
+      console.error(`brief step failed: ${err instanceof Error ? err.message : String(err)}`);
+    }
+  }
+
   if (failed.length === results.length) {
-    console.error('every source failed — exiting non-zero');
+    console.error('every data source failed — exiting non-zero');
     process.exit(1);
   }
 }

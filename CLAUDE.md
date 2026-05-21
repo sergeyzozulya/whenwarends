@@ -37,7 +37,8 @@ whenwarends/
 │   │   ├── Sparkline.astro            # pure SVG, no hydration
 │   │   ├── EventList.astro
 │   │   ├── IndicatorCard.astro
-│   │   └── DailyBrief.astro
+│   │   ├── DailyBrief.astro           # "This week": brief (left) + news (right)
+│   │   └── RelatedNews.astro          # related-news column, locale-translated titles
 │   ├── layouts/
 │   │   └── Layout.astro
 │   ├── lib/
@@ -48,7 +49,8 @@ whenwarends/
 │   │   ├── filestore.ts               # repo-file data store (read/append)
 │   │   ├── homepage.ts                # build-time payload assembly
 │   │   ├── briefContext.ts            # snapshot context for the brief prompt
-│   │   ├── llm.ts                     # Anthropic client wrapper
+│   │   ├── llm.ts                     # Anthropic wrapper: brief + news select/translate
+│   │   ├── newsImages.ts              # download/downscale/cache article thumbnails
 │   │   └── sources/
 │   │       ├── warEndFilter.ts        # shared war-end market filter + resolution-date parse
 │   │       ├── contract.ts            # fetch helpers (shared by collectors)
@@ -59,6 +61,9 @@ whenwarends/
 │   │       ├── oryx.ts                # equipment losses (CC BY-NC)
 │   │       ├── kalshi.ts              # prepared collector, not yet in active registry
 │   │       ├── gdelt.ts
+│   │       ├── gdeltArticles.ts        # related-news artlist collector (pool)
+│   │       ├── gdeltArticles.schema.ts # Zod
+│   │       ├── denylist.ts             # state-media / propaganda source policy
 │   │       ├── kiel.ts
 │   │       ├── firms.ts
 │   │       ├── worldbank.ts           # annual + Global Economic Monitor
@@ -73,15 +78,18 @@ whenwarends/
 │   │   └── collectors/                # registry + per-source re-exports
 │   └── styles/global.css
 ├── scripts/
-│   ├── collect.ts                     # weekly collector orchestrator
+│   ├── collect.ts                     # weekly orchestrator (data → collect-news → draft-brief)
+│   ├── collect-news.ts                # GDELT pool → AI select/translate → news.json
 │   ├── draft-brief.ts                 # draft + auto-publish the weekly brief
 │   ├── backfill-briefs.ts             # reconstruct + publish historical briefs
+│   ├── isEntrypoint.ts                # run-as-CLI vs imported guard
 │   └── ...                            # history importers, seeds, bundle check
 ├── data/                              # versioned data store (read at build)
 │   ├── snapshots.ndjson               # append-only immutable history
 │   ├── markets.json                   # current market state (derived picks + per-market)
 │   ├── events.json                    # legacy editorial events (read, not rendered in UI)
 │   ├── briefs.json                    # AI briefs (Phase 3)
+│   ├── news.json                      # current related-news selection (locale-translated)
 │   └── changelog.json                 # per-locale change log (id, date, category, description_{uk,en,ru})
 ├── worker/
 │   └── index.ts                       # Worker entry: static assets + health
@@ -252,7 +260,7 @@ guards in `llm.ts` replace review).
 |---|---|---|---|
 | Polymarket Gamma + Data API | War-end probabilities + per-market history (one of two market sources) | Public, viewable globally | Free, no auth |
 | Manifold Markets API | War-end / ceasefire markets (play money); per-bet history (second market source) | Public (CC BY 4.0) | Free, no auth |
-| GDELT 2.0 DOC API | Conflict volume intensity + tone | CC BY | Free; ~1 req / 5 s rate limit |
+| GDELT 2.0 DOC API | Conflict volume intensity + tone (timeline); related-news article list (artlist) | CC BY | Free; ~1 req / 5 s rate limit |
 | Kiel Ukraine Support Tracker | Aid commitments (.xlsx) | CC BY 4.0 | Free download; `KIEL_DATASET_URL` |
 | NASA FIRMS | Fire/heat anomalies (combat proxy) | Public domain | Free API key (`FIRMS_MAP_KEY`) |
 | Oryx (machine-readable mirror) | Visually-confirmed RU/UA equipment losses (cumulative) | CC BY-NC | Free; non-commercial use only |
@@ -269,6 +277,18 @@ Implemented collectors only — registry: `src/workers/collectors/index.ts`. A
 Kalshi collector exists (`src/lib/sources/kalshi.ts`) but is not yet in the
 active registry. UCDP, IMF, Metaculus, ISW, Russia Matters were considered but
 are not collected.
+
+**Related news (shown beside the brief).** GDELT's `artlist` mode (no language
+filter, relevance-sorted) supplies a multilingual candidate pool. Source policy
+lives in `src/lib/sources/denylist.ts` — `isBlockedSource()` hard-drops Tier-1
+state/sanctioned media and the Pravda/Doppelganger swarm patterns, and *flags*
+Tier-2 amplifiers (kept, shown with a "flagged source" warning that links to
+the methodology). One Sonnet pass (`selectAndTranslateNews` in `llm.ts`) picks
+the top ~10 by index and translates each title into uk/en/ru; thumbnails are
+downscaled (≤100px WebP) and cached under `public/news/` (`newsImages.ts`) so
+no third-party image request is made. `scripts/collect-news.ts` writes
+`data/news.json`; the brief consumes the picked headlines as cite-able context
+(numbers stay the backbone). `npm run collect` runs data → news → brief.
 
 ## Cost envelope (realistic, weekly cadence)
 

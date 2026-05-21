@@ -1,0 +1,140 @@
+---
+// Related news (GDELT) — the actual articles behind the conflict-intensity
+// curve, shown as the right-hand column inside the brief. Static .astro: no
+// hydration. Renders an empty-state line when there are no articles so the
+// column never collapses to blank.
+//
+// Titles are translated per locale by the selection pass; only the date and
+// chrome are localized here. Images are cached locally at collect time (served
+// from our origin); a neutral placeholder stands in when none was downloaded.
+// Tier-2 "amplifier" sources are not dropped but flagged — they render a
+// warning before the domain, linked to the methodology's source policy.
+
+import type { NewsItem, Lang } from '@lib/types';
+import { getTranslation, localizedPath } from '@i18n/index';
+
+interface Props {
+  articles: NewsItem[];
+  /** YYYY-MM-DD the list was collected, or null. */
+  asOf: string | null;
+  lang: Lang;
+}
+
+const { articles, lang } = Astro.props;
+
+const heading = getTranslation(lang, 'news.heading');
+const via = getTranslation(lang, 'news.via');
+const empty = getTranslation(lang, 'news.empty');
+const flaggedLabel = getTranslation(lang, 'news.flagged');
+const flaggedHref = `${localizedPath(lang, '/methodology')}#related-news`;
+
+const localeByLang: Record<Lang, string> = {
+  uk: 'uk-UA',
+  en: 'en-GB',
+  ru: 'ru-RU',
+};
+
+const dateFmt = new Intl.DateTimeFormat(localeByLang[lang], {
+  month: 'short',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+
+function formatSeen(iso: string): string | null {
+  if (!iso) return null;
+  const d = new Date(iso);
+  return Number.isNaN(d.getTime()) ? null : dateFmt.format(d);
+}
+
+const items = articles.map((a) => ({
+  title: a.title[lang] || a.original,
+  url: a.url,
+  domain: a.domain,
+  seen: formatSeen(a.seenAt),
+  image: a.image,
+  flagged: a.flagged === true,
+}));
+---
+
+<div aria-labelledby="related-news-heading">
+  <h3
+    id="related-news-heading"
+    class="text-[16px] font-medium leading-[1.5] text-[var(--color-ink)]"
+  >
+    {heading}
+  </h3>
+  <p class="mt-1 text-[13px] text-[var(--color-muted)]">{via}</p>
+
+  {
+    items.length === 0 ? (
+      <p class="mt-4 text-[13px] text-[var(--color-muted)]">{empty}</p>
+    ) : (
+      <ul class="mt-4 space-y-4">
+        {items.map((item) => (
+          <li class="flex gap-3">
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex-none"
+              aria-hidden="true"
+              tabindex="-1"
+            >
+              {item.image ? (
+                /* Locally cached at collect time (served from our origin); a
+                   failed download leaves image undefined -> placeholder below. */
+                <img
+                  src={item.image}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width="96"
+                  height="60"
+                  class="h-[60px] w-[96px] border border-[var(--color-line)] object-cover"
+                />
+              ) : (
+                <span class="flex h-[60px] w-[96px] items-center justify-center border border-[var(--color-line)] bg-[var(--color-line)]">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    class="h-5 w-5 text-[var(--color-muted)]"
+                  >
+                    <rect x="3" y="4" width="18" height="16" rx="1" />
+                    <circle cx="8.5" cy="9" r="1.5" />
+                    <path d="M21 16l-5-5L5 20" />
+                  </svg>
+                </span>
+              )}
+            </a>
+            <div class="min-w-0">
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[14px] leading-[1.45] text-[var(--color-accent)] underline underline-offset-2 hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
+              >
+                {item.title}
+              </a>
+              <p class="mt-0.5 text-[12px] text-[var(--color-muted)]">
+                {item.flagged && (
+                  <>
+                    <a
+                      href={flaggedHref}
+                      class="font-medium text-[var(--color-accent)] underline underline-offset-2 hover:no-underline"
+                    >
+                      {flaggedLabel}
+                    </a>
+                    <span> · </span>
+                  </>
+                )}
+                {[item.domain, item.seen].filter(Boolean).join(' · ')}
+              </p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</div>

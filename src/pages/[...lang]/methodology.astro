@@ -17,6 +17,8 @@ const t = (key: string) => getTranslation(lang, key);
 
 interface Block {
   h: string;
+  /** Optional anchor id, so other pages can deep-link to this section. */
+  id?: string;
   p?: string[];
   ul?: string[];
 }
@@ -79,6 +81,15 @@ const CONTENT: Record<Lang, Page> = {
         h: 'Cadence and editorial control',
         p: [
           'Data is collected weekly (Sunday 08:00 UTC). The editorial brief is drafted by an AI model and auto-published on each data refresh — there is no human approval gate. Integrity is enforced in code instead: an enforced citation allow-list (a URL never supplied is never cited), a refusal guard, and a truncation guard; generation is per-language isolated so one failing language cannot overwrite a good brief. Briefs reconstructed for past dates are labelled "reconstructed from archived data" and are grounded strictly in the snapshots as of their date.',
+        ],
+      },
+      {
+        h: 'Related news',
+        id: 'related-news',
+        p: [
+          "Beside the brief we show a short list of recent news on the war, drawn from GDELT's article index. A separate AI pass picks the most salient, non-duplicate stories from a multilingual pool and translates each headline into all three languages — the selection and the translations are machine-made, like the brief.",
+          'State-controlled and sanctioned outlets, and the automated Pravda and Doppelganger spoof networks, are removed from the pool entirely. Independent outlets that monitors repeatedly flag as Kremlin-narrative amplifiers are not removed but marked "flagged source", so you can weigh them yourself. Article thumbnails are downscaled and cached on our own servers, so viewing the page sends no request to the original publishers.',
+          'The brief may reference one of these headlines to name a likely driver and cite the article, but it never asserts more than the headline states; the measured numbers remain its backbone.',
         ],
       },
       {
@@ -145,6 +156,15 @@ const CONTENT: Record<Lang, Page> = {
         ],
       },
       {
+        h: 'Пов’язані новини',
+        id: 'related-news',
+        p: [
+          'Поруч з оглядом ми показуємо короткий список свіжих новин про війну з індексу статей GDELT. Окремий прохід ШІ обирає найважливіші, неповторювані сюжети з багатомовного набору й перекладає кожен заголовок усіма трьома мовами — добір і переклади згенеровані машиною, як і огляд.',
+          'Державні та підсанкційні видання, а також автоматизовані мережі підробок Pravda і Doppelganger повністю вилучаються з набору. Незалежні видання, які моніторингові організації неодноразово позначають як підсилювачів кремлівських наративів, не вилучаються, але мають позначку «позначене джерело», щоб ви могли оцінити їх самостійно. Мініатюри зображень зменшуються й кешуються на наших серверах, тож перегляд сторінки не надсилає запитів до видань-першоджерел.',
+          'Огляд може послатися на один із цих заголовків, щоб назвати ймовірний чинник, із посиланням на статтю, але ніколи не стверджує більше, ніж сказано в заголовку; основою залишаються виміряні числа.',
+        ],
+      },
+      {
         h: 'Цілісність даних',
         p: [
           'Кожен знімок незмінний і під контролем версій: повна історія, аудит і резервні копії — це історія git проєкту. Числа ніколи не вигадуються; якщо даних немає, сайт це повідомляє.',
@@ -208,6 +228,15 @@ const CONTENT: Record<Lang, Page> = {
         ],
       },
       {
+        h: 'Связанные новости',
+        id: 'related-news',
+        p: [
+          'Рядом со сводкой мы показываем короткий список свежих новостей о войне из индекса статей GDELT. Отдельный проход ИИ выбирает наиболее значимые, неповторяющиеся сюжеты из многоязычного набора и переводит каждый заголовок на все три языка — подбор и переводы сделаны машиной, как и сводка.',
+          'Государственные и подсанкционные издания, а также автоматизированные сети подделок Pravda и Doppelganger полностью удаляются из набора. Независимые издания, которые мониторинговые организации неоднократно отмечают как усилителей кремлёвских нарративов, не удаляются, но помечаются «помеченный источник», чтобы вы могли оценить их сами. Миниатюры изображений уменьшаются и кешируются на наших серверах, поэтому просмотр страницы не отправляет запросов к изданиям-первоисточникам.',
+          'Сводка может сослаться на один из этих заголовков, чтобы назвать вероятный фактор, со ссылкой на статью, но никогда не утверждает больше, чем сказано в заголовке; основой остаются измеренные числа.',
+        ],
+      },
+      {
         h: 'Целостность данных',
         p: [
           'Каждый снимок неизменен и под контролем версий: полная история, аудит и резервные копии — это история git проекта. Числа никогда не выдумываются; если данных нет, сайт сообщает об этом.',
@@ -228,7 +257,7 @@ const c = CONTENT[lang];
     </header>
     {
       c.blocks.map((b) => (
-        <section class="space-y-3">
+        <section class="space-y-3" id={b.id} style={b.id ? 'scroll-margin-top:88px' : undefined}>
           <h2 class="text-[18px] font-medium">{b.h}</h2>
           {b.p?.map((para) => <p class="text-[16px]">{para}</p>)}
           {b.ul && (
