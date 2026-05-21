@@ -13,7 +13,10 @@
   --color-ink: #161b20;
   --color-ink-soft: #3d4348;
   --color-muted: #6c7378;
-  --color-faint: #99a1ab;
+  /* Tertiary text (eyebrows, axis ticks, source tags). Kept at ~4.6:1 on the
+     #f8fafc background to meet WCAG AA — a lighter gray cannot pass on this
+     near-white surface, so faint sits just at/below muted. */
+  --color-faint: #6b7177;
   --color-line: #e3e6ea;
   --color-accent: #3b6b97;
   --color-accent-soft: #e7eef4;

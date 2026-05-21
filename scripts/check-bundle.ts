@@ -8,7 +8,9 @@ import { gzipSync } from 'node:zlib';
 
 const BUDGET_BYTES = 250 * 1024;
 const DIST = resolve(process.cwd(), 'dist');
-const HOMEPAGE = join(DIST, 'en', 'index.html'); // locale bundles are split; en is representative
+// Locale bundles are split; en (the default locale, served at the root) is
+// representative. en lives at dist/index.html — there is no /en prefix.
+const HOMEPAGE = join(DIST, 'index.html');
 
 // Chart JS is lazy-loaded and explicitly excluded from the budget.
 const isChartAsset = (p: string) => /chart|herochart/i.test(p);
@@ -34,7 +36,7 @@ function main(): void {
 
   const rows: { asset: string; gzip: number; counted: boolean }[] = [];
   let total = gz(html);
-  rows.push({ asset: 'en/index.html', gzip: gz(html), counted: true });
+  rows.push({ asset: 'index.html', gzip: gz(html), counted: true });
 
   for (const ref of unique) {
     const file = join(DIST, ref.replace(/^\//, ''));

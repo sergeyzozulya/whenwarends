@@ -1,0 +1,5 @@
+# Legacy /en locale prefix removed — English is now served at the root.
+# Permanently redirect old /en and /en/* links (shared URLs, indexed pages)
+# to their unprefixed path. Cloudflare preserves the query string.
+/en/* /:splat 301
+/en / 301

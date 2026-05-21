@@ -13,10 +13,14 @@ interface UiStrings {
     about: string;
     sources: string;
   };
-  beliefs: { heading: string };
-  events: { heading: string };
-  ground: { heading: string };
-  brief: { heading: string };
+  // Section + card headings actually rendered on the homepage (src/pages/[...lang]/index.astro).
+  hero: {
+    label: string;
+    closest: string;
+    consensus: string;
+    optimistic: string;
+  };
+  history: { heading: string };
 }
 const ui = (lang: string): UiStrings =>
   JSON.parse(
@@ -24,6 +28,26 @@ const ui = (lang: string): UiStrings =>
   ) as UiStrings;
 
 const LOCALES = ['en', 'uk', 'ru'] as const;
+
+// en (default locale) is served at the root; uk/ru are prefixed (no /en).
+const homePath = (lang: string): string => (lang === 'en' ? '/' : `/${lang}/`);
+const subPath = (lang: string, path: string): string =>
+  lang === 'en' ? `/${path}/` : `/${lang}/${path}/`;
+
+// Navigate while pinning the requested locale. The Layout head script
+// auto-detects language on first visit and would otherwise redirect a
+// prefixed page to the browser default (en in CI), so seed the saved
+// preference first to keep the test on the locale under test.
+async function visit(page: Page, lang: string, path: string): Promise<void> {
+  await page.addInitScript((l) => {
+    try {
+      localStorage.setItem('lang', l as string);
+    } catch {
+      /* localStorage unavailable — ignore */
+    }
+  }, lang);
+  await page.goto(path);
+}
 
 function collectErrors(page: Page): string[] {
   const errors: string[] = [];
@@ -39,17 +63,20 @@ for (const lang of LOCALES) {
   test.describe(`homepage [${lang}]`, () => {
     test('renders the reading flow with no console errors', async ({ page }) => {
       const errors = collectErrors(page);
-      await page.goto(`/${lang}/`);
+      await visit(page, lang, homePath(lang));
 
       await expect(
         page.getByRole('heading', { level: 1, name: t.common.title })
       ).toBeVisible();
 
+      // The homepage flow: probability section, the three stat cards
+      // (closest · consensus · optimistic), then "the war in data".
       for (const heading of [
-        t.beliefs.heading,
-        t.events.heading,
-        t.ground.heading,
-        t.brief.heading,
+        t.hero.label,
+        t.hero.closest,
+        t.hero.consensus,
+        t.hero.optimistic,
+        t.history.heading,
       ]) {
         await expect(
           page.getByRole('heading', { name: heading })
@@ -62,7 +89,7 @@ for (const lang of LOCALES) {
     test('has no serious or critical accessibility violations', async ({
       page,
     }) => {
-      await page.goto(`/${lang}/`);
+      await visit(page, lang, homePath(lang));
       const results = await new AxeBuilder({ page })
         .withTags(['wcag2a', 'wcag2aa'])
         .analyze();
@@ -77,18 +104,19 @@ for (const lang of LOCALES) {
   });
 }
 
-test('root redirects to the default locale', async ({ page }) => {
+test('root serves the default locale (en) without redirect', async ({ page }) => {
   await page.goto('/');
-  await page.waitForURL(/\/en\/$/);
   await expect(
     page.getByRole('heading', { level: 1, name: ui('en').common.title })
   ).toBeVisible();
+  // en lives at the root now — there is no /en redirect.
+  expect(new URL(page.url()).pathname).toBe('/');
 });
 
 test('changelog page renders (entries are data-driven, empty pre-release)', async ({
   page,
 }) => {
-  await page.goto('/en/changelog/');
+  await page.goto('/changelog/');
   await expect(
     page.getByRole('heading', { level: 1, name: ui('en').common.changelog })
   ).toBeVisible();
@@ -106,7 +134,7 @@ for (const lang of LOCALES) {
     ['sources', t.common.sources],
   ] as const) {
     test(`${path} [${lang}] renders and is accessible`, async ({ page }) => {
-      await page.goto(`/${lang}/${path}/`);
+      await visit(page, lang, subPath(lang, path));
       await expect(
         page.getByRole('heading', { level: 1, name: heading })
       ).toBeVisible();

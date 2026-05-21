@@ -35,8 +35,8 @@ export default defineConfig({
   webServer: {
     // Static build served by Astro's preview server (default port 4321).
     command: 'npm run build && npm run preview',
-    // No root route — locales live at /en/ /uk/ /ru/. Health-check a real page.
-    url: 'http://localhost:4321/en/',
+    // en (default locale) is served at the root; uk/ru are prefixed.
+    url: 'http://localhost:4321/',
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
   },
