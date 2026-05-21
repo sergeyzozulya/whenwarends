@@ -18,6 +18,18 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 
+    // The /en locale prefix was removed — English is served at the root.
+    // Cloudflare Static Assets does not honour a `_redirects` file in this
+    // Worker+Assets setup (it serves the file verbatim), so do the 301 here:
+    // permanently redirect legacy /en and /en/* URLs to the unprefixed path,
+    // preserving the query string. These paths have no matching asset, so the
+    // request reaches the Worker.
+    const legacyEn = url.pathname.match(/^\/en(\/.*)?$/);
+    if (legacyEn) {
+      url.pathname = legacyEn[1] ?? '/';
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname.startsWith('/api/')) {
       if (url.pathname === '/api/health') {
         return json({ status: 'ok', timestamp: new Date().toISOString() });
