@@ -123,6 +123,11 @@
   "errors": {
     "dataUnavailable": "Data unavailable, last good {time} ago"
   },
+  "notFound": {
+    "title": "Page not found",
+    "lede": "This page does not exist, or it has moved. Everything — the probability curve, the indicators, and the briefs — is reachable from the home page.",
+    "home": "Return to the dashboard"
+  },
   "site": {
     "blurb": "A non-commercial, Ukrainian-built project. Built in Kharkiv by {ITSUA}.",
     "colData": "Data",

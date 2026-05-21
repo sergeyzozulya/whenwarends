@@ -1,0 +1,75 @@
+---
+// 404 — page not found.
+//
+// Cloudflare Static Assets serves this single file (built to dist/404.html,
+// with a 404 status) for any unmatched path — see wrangler.toml
+// `not_found_handling = "404-page"`. Because it is one static file it cannot be
+// pre-rendered per locale like the [...lang] pages, so it renders in English
+// (the default locale) and a small inline script swaps the body copy to uk/ru
+// when the reader's locale is known from the URL prefix or a saved choice — the
+// same signal the rest of the site localises from (see Layout's head script,
+// which has already normalised the prefix before this runs).
+import Layout from '@/layouts/Layout.astro';
+import { getTranslation } from '@i18n/index';
+import { LANGS, type Lang } from '@lib/types';
+
+const en = (key: string): string => getTranslation('en', key);
+
+// Localised copy for the client-side swap (heading, lede, home-link label).
+const COPY = Object.fromEntries(
+  LANGS.map((l) => [
+    l,
+    {
+      title: getTranslation(l, 'notFound.title'),
+      lede: getTranslation(l, 'notFound.lede'),
+      home: getTranslation(l, 'notFound.home'),
+    },
+  ])
+) as Record<Lang, { title: string; lede: string; home: string }>;
+---
+
+<Layout lang="en" title={en('notFound.title')}>
+  <article class="max-w-2xl space-y-6">
+    <p class="figure text-[13px] text-[var(--color-faint)]">404</p>
+    <header class="space-y-3">
+      <h1 data-nf="title" class="text-[22px] font-medium">{en('notFound.title')}</h1>
+      <p data-nf="lede" class="text-[16px] text-gray-600">{en('notFound.lede')}</p>
+    </header>
+    <p>
+      <a
+        data-nf="home"
+        href="/"
+        class="text-[var(--color-accent)] hover:no-underline"
+      >{en('notFound.home')}</a>
+    </p>
+  </article>
+
+  <script is:inline define:vars={{ COPY }}>
+    (function () {
+      try {
+        var parts = location.pathname.split('/').filter(Boolean);
+        var first = parts[0];
+        var stored = localStorage.getItem('lang');
+        var lang =
+          first === 'uk' || first === 'ru'
+            ? first
+            : stored === 'uk' || stored === 'ru'
+              ? stored
+              : 'en';
+        if (lang === 'en' || !COPY[lang]) return;
+        var c = COPY[lang];
+        var set = function (sel, text) {
+          var el = document.querySelector('[data-nf="' + sel + '"]');
+          if (el) el.textContent = text;
+        };
+        set('title', c.title);
+        set('lede', c.lede);
+        set('home', c.home);
+        var home = document.querySelector('[data-nf="home"]');
+        if (home) home.setAttribute('href', '/' + lang);
+        document.documentElement.lang = lang;
+        document.title = c.title + ' — whenwarends.org';
+      } catch (e) {}
+    })();
+  </script>
+</Layout>
