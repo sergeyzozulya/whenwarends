@@ -4,7 +4,12 @@ import {
   collectGdeltHistory,
   normalizeGdeltDate,
   GdeltResponseError,
+  makeGdeltFetcher,
+  createGdeltPacer,
+  describeFetchError,
   type JsonFetcher,
+  type ResponseFetcher,
+  type GdeltPacer,
 } from '../../../src/lib/sources/gdelt';
 import { GdeltTimelineResponseSchema } from '../../../src/lib/sources/gdelt.schema';
 
@@ -219,7 +224,7 @@ describe('collectGdeltHistory (one-time backfill)', () => {
       urls.push(url);
       return Promise.resolve(url.includes('timelinevol') ? volJson : toneJson);
     };
-    const { snapshots } = await collectGdeltHistory(fetcher, 0);
+    const { snapshots } = await collectGdeltHistory(fetcher);
 
     // ≥ (2022..now) years × 2 modes; always even; reaches the war run-up.
     expect(urls.length).toBeGreaterThanOrEqual(8);
@@ -241,14 +246,159 @@ describe('collectGdeltHistory (one-time backfill)', () => {
       if (n % 3 === 0) return Promise.reject(new Error('429-ish'));
       return Promise.resolve(url.includes('timelinevol') ? volJson : toneJson);
     };
-    const { snapshots } = await collectGdeltHistory(flaky, 0);
+    const { snapshots } = await collectGdeltHistory(flaky);
     expect(snapshots.length).toBeGreaterThan(0); // didn't abort on a skip
   });
 
   it('throws only when every window fails', async () => {
     const allDead: JsonFetcher = () => Promise.reject(new Error('down'));
-    await expect(collectGdeltHistory(allDead, 0)).rejects.toBeInstanceOf(
+    await expect(collectGdeltHistory(allDead)).rejects.toBeInstanceOf(
       GdeltResponseError
     );
+  });
+});
+
+describe('describeFetchError', () => {
+  it('unwraps Node’s opaque "fetch failed" cause chain (with code)', () => {
+    const cause = Object.assign(new Error('other side closed'), {
+      code: 'UND_ERR_SOCKET',
+    });
+    const err = Object.assign(new TypeError('fetch failed'), { cause });
+    expect(describeFetchError(err)).toBe(
+      'fetch failed ← other side closed (UND_ERR_SOCKET)'
+    );
+  });
+
+  it('handles a plain error and a non-error', () => {
+    expect(describeFetchError(new Error('boom'))).toBe('boom');
+    expect(describeFetchError('nope')).toBe('nope');
+  });
+});
+
+describe('makeGdeltFetcher (retry budget)', () => {
+  // No-op pacer so the retry-branch tests run instantly; spacing is verified
+  // separately in the createGdeltPacer block below.
+  const noPacer: GdeltPacer = { acquire: () => Promise.resolve() };
+  const jsonRes = (obj: unknown): Response =>
+    new Response(JSON.stringify(obj), {
+      status: 200,
+      headers: { 'content-type': 'application/json' },
+    });
+  const textRes = (text: string, status = 200): Response =>
+    new Response(text, { status, headers: { 'content-type': 'text/plain' } });
+  const transportError = (): Error =>
+    Object.assign(new TypeError('fetch failed'), {
+      cause: Object.assign(new Error('other side closed'), {
+        code: 'UND_ERR_SOCKET',
+      }),
+    });
+
+  it('retries a transport failure ("fetch failed") and then succeeds', async () => {
+    let calls = 0;
+    const fetchImpl: ResponseFetcher = () => {
+      calls += 1;
+      return calls < 3
+        ? Promise.reject(transportError())
+        : Promise.resolve(jsonRes(volJson));
+    };
+    const fetcher = makeGdeltFetcher({ fetchImpl, pacer: noPacer });
+    const json = await fetcher('https://api.gdeltproject.org/x');
+    expect(calls).toBe(3); // failed twice, succeeded on the third attempt
+    expect(() => GdeltTimelineResponseSchema.parse(json)).not.toThrow();
+  });
+
+  it('rides out a rate-limit notice and then succeeds', async () => {
+    let calls = 0;
+    const fetchImpl: ResponseFetcher = () => {
+      calls += 1;
+      return calls === 1
+        ? Promise.resolve(textRes('Please limit requests to one every 5 seconds'))
+        : Promise.resolve(jsonRes({ timeline: [] }));
+    };
+    const fetcher = makeGdeltFetcher({ fetchImpl, pacer: noPacer });
+    const json = await fetcher('https://api.gdeltproject.org/x');
+    expect(calls).toBe(2);
+    expect(json).toEqual({ timeline: [] });
+  });
+
+  it('paces every request — initial AND retry — through the gate', async () => {
+    let acquires = 0;
+    const pacer: GdeltPacer = {
+      acquire: () => {
+        acquires += 1;
+        return Promise.resolve();
+      },
+    };
+    let calls = 0;
+    const seenRetries: (number | undefined)[] = [];
+    const fetchImpl: ResponseFetcher = (_url, opts) => {
+      calls += 1;
+      seenRetries.push(opts.retries);
+      return calls < 3
+        ? Promise.reject(transportError())
+        : Promise.resolve(jsonRes({ timeline: [] }));
+    };
+    await makeGdeltFetcher({ fetchImpl, pacer })(
+      'https://api.gdeltproject.org/x'
+    );
+    expect(acquires).toBe(3); // one acquire before each of the 3 attempts
+    // Inner retries MUST be 0 so fetchWithRetry never fires an un-paced retry.
+    expect(seenRetries).toEqual([0, 0, 0]);
+  });
+
+  it('retries a 5xx but fails fast (no retry) on a 4xx', async () => {
+    let calls = 0;
+    const fetchImpl: ResponseFetcher = () => {
+      calls += 1;
+      return Promise.resolve(textRes('bad query', 400));
+    };
+    const fetcher = makeGdeltFetcher({ fetchImpl, pacer: noPacer });
+    await expect(
+      fetcher('https://api.gdeltproject.org/x')
+    ).rejects.toBeInstanceOf(GdeltResponseError);
+    expect(calls).toBe(1); // 4xx is not retried
+  });
+
+  it('throws a typed error unwrapping the cause after exhausting retries', async () => {
+    let calls = 0;
+    const fetchImpl: ResponseFetcher = () => {
+      calls += 1;
+      return Promise.reject(transportError());
+    };
+    const fetcher = makeGdeltFetcher({
+      fetchImpl,
+      pacer: noPacer,
+      maxRetries: 2,
+    });
+    await expect(fetcher('https://api.gdeltproject.org/x')).rejects.toThrow(
+      /fetch failed.*other side closed.*UND_ERR_SOCKET/
+    );
+    expect(calls).toBe(3); // 1 initial + 2 retries
+  });
+});
+
+describe('createGdeltPacer (1-req/5s gate)', () => {
+  it('does not delay the first request, then spaces each subsequent one', async () => {
+    const waits: number[] = [];
+    const pacer = createGdeltPacer(6000, (ms) => {
+      waits.push(ms);
+      return Promise.resolve();
+    });
+    await pacer.acquire();
+    await pacer.acquire();
+    await pacer.acquire();
+    // First acquire has no prior request → no wait. The next two each wait ~gap.
+    expect(waits).toHaveLength(2);
+    expect(Math.min(...waits)).toBeGreaterThanOrEqual(5000);
+  });
+
+  it('serializes concurrent acquires in FIFO order (no overlap)', async () => {
+    const order: string[] = [];
+    const pacer = createGdeltPacer(0, () => Promise.resolve());
+    const a = pacer.acquire().then(() => order.push('a'));
+    const b = pacer.acquire().then(() => order.push('b'));
+    const c = pacer.acquire().then(() => order.push('c'));
+    await Promise.all([a, b, c]);
+    expect(order).toEqual(['a', 'b', 'c']);
   });
 });
