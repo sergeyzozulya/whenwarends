@@ -27,7 +27,7 @@ const rows: SnapshotRow[] = [
   snap('war_end_probability', 'polymarket', '2025-06-10T00:00:00Z', 0.42),
   // a later point that must be EXCLUDED for an as-of of 2025-06-30
   snap('war_end_probability', 'polymarket', '2025-09-01T00:00:00Z', 0.55),
-  snap('war_end_probability', 'kalshi', '2025-05-01T00:00:00Z', 0.38),
+  snap('war_end_probability', 'manifold', '2025-05-01T00:00:00Z', 0.38),
   snap('conflict_intensity', 'gdelt', '2025-06-20T00:00:00Z', 7.3),
   snap('aid_commitments_eur', 'kiel', '2025-04-01T00:00:00Z', 1.2e11),
   snap('rub_usd_rate', 'cbr', '2025-06-29T00:00:00Z', 92.4),
@@ -39,7 +39,7 @@ describe('asOfMetrics', () => {
   it('takes the latest value at or before the as-of bound, per source', () => {
     const m = asOfMetrics(rows, '2025-06-30T23:59:59.999Z');
     expect(m.warEndProbability).toEqual([
-      { source: 'kalshi', value: 0.38 },
+      { source: 'manifold', value: 0.38 },
       { source: 'polymarket', value: 0.42 }, // 0.55 is after the bound
     ]);
     expect(m.conflictIntensity).toBe(7.3);

@@ -29,7 +29,6 @@ const env = {
   ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY ?? '',
   // Operator config some collectors read off `env` (not the typed contract):
   KIEL_DATASET_URL: process.env.KIEL_DATASET_URL ?? '',
-  KALSHI_SERIES_TICKER: process.env.KALSHI_SERIES_TICKER ?? '',
   CONTACT_TO_EMAIL: '',
   CONTACT_FROM_EMAIL: '',
   CONTACT_FROM_NAME: '',

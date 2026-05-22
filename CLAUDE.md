@@ -59,7 +59,6 @@ whenwarends/
 │   │       ├── manifold.ts
 │   │       ├── manifold.schema.ts     # Zod
 │   │       ├── oryx.ts                # equipment losses (CC BY-NC)
-│   │       ├── kalshi.ts              # prepared collector, not yet in active registry
 │   │       ├── gdelt.ts
 │   │       ├── gdeltArticles.ts        # related-news artlist collector (pool)
 │   │       ├── gdeltArticles.schema.ts # Zod
@@ -273,10 +272,9 @@ Both market sources feed the war-end CDF: probabilities are normalized **per
 source**, then combined **50/50** (no source dominates on raw liquidity). See
 `src/lib/cards.ts` (qualify → weight → derive) and `docs/SPEC.md` §8.
 
-Implemented collectors only — registry: `src/workers/collectors/index.ts`. A
-Kalshi collector exists (`src/lib/sources/kalshi.ts`) but is not yet in the
-active registry. UCDP, IMF, Metaculus, ISW, Russia Matters were considered but
-are not collected.
+Implemented collectors only — registry: `src/workers/collectors/index.ts`.
+UCDP, IMF, Metaculus, Kalshi, ISW, Russia Matters were considered but are not
+collected.
 
 **Related news (shown beside the brief).** GDELT's `artlist` mode (no language
 filter, relevance-sorted) supplies a multilingual candidate pool. Source policy

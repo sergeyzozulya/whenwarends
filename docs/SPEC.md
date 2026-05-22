@@ -356,7 +356,6 @@ whenwarends/
 │   │   └── sources/
 │   │       ├── polymarket.ts
 │   │       ├── polymarket.schema.ts   # Zod
-│   │       ├── kalshi.ts
 │   │       ├── gdelt.ts
 │   │       ├── kiel.ts
 │   │       ├── firms.ts

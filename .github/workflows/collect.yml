@@ -38,7 +38,7 @@ jobs:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
           KIEL_DATASET_URL: ${{ secrets.KIEL_DATASET_URL }}
           # Manifold needs no key; MANIFOLD_MARKET_ID is optional operator
-          # config (defaults baked into the collector). Kalshi retired.
+          # config (defaults baked into the collector).
           MANIFOLD_MARKET_ID: ${{ secrets.MANIFOLD_MARKET_ID }}
       # Only spend on generation when the numbers actually moved — an
       # unchanged dataset would produce an equivalent brief. This is the
