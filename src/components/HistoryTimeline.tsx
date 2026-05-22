@@ -387,6 +387,8 @@ export interface HistoryTimelineLoaderProps {
 function HistoryTimeline({ strings, version }: HistoryTimelineLoaderProps) {
   const [history, setHistory] = useState<HistorySeries[] | null>(null);
   const [failed, setFailed] = useState(false);
+  const [ready, setReady] = useState(false); // view painted → start the reveal
+  const [revealed, setRevealed] = useState(false); // fade done → drop skeleton
 
   useEffect(() => {
     let cancelled = false;
@@ -398,8 +400,11 @@ function HistoryTimeline({ strings, version }: HistoryTimelineLoaderProps) {
     };
   }, [version]);
 
-  if (history !== null)
-    return <HistoryTimelineView history={history} strings={strings} />;
+  // The view renders synchronously (pure SVG), so once history is set it has
+  // painted by the next commit — safe to crossfade the skeleton out then.
+  useEffect(() => {
+    if (history !== null) setReady(true);
+  }, [history]);
 
   if (failed)
     return (
@@ -410,7 +415,24 @@ function HistoryTimeline({ strings, version }: HistoryTimelineLoaderProps) {
       </div>
     );
 
-  return <ChartSkeleton label={strings.loading} className="h-64" />;
+  return (
+    <div className="relative min-h-64 w-full">
+      {history !== null && (
+        <HistoryTimelineView history={history} strings={strings} />
+      )}
+      {!revealed && (
+        <div
+          aria-hidden={ready}
+          onTransitionEnd={() => ready && setRevealed(true)}
+          className={`pointer-events-none absolute inset-0 flex items-center justify-center bg-[var(--color-surface)] transition-opacity duration-500 ${
+            ready ? 'opacity-0' : 'opacity-100'
+          }`}
+        >
+          <ChartSkeleton label={strings.loading} />
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default HistoryTimeline;

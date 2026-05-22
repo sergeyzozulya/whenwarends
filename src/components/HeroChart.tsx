@@ -35,6 +35,8 @@ export interface HeroChartProps {
   closestId: string | null;
   optimisticId: string | null;
   strings: Record<string, string>;
+  /** Called once the Chart.js chart has been created/drawn (drives the reveal). */
+  onReady?: () => void;
 }
 
 interface MarketPoint {
@@ -198,6 +200,7 @@ function HeroChartView({
   closestId,
   optimisticId,
   strings,
+  onReady,
 }: HeroChartProps) {
   const series = useMemo(
     () => buildChartSeries(datasets.ceasefire, today),
@@ -510,6 +513,9 @@ function HeroChartView({
 
       Chart.getChart(canvas)?.destroy();
       chartRef.current = new Chart(canvas, config);
+      // animation:false → the chart is drawn synchronously here, so it's safe
+      // to reveal it (fade the skeleton out) now without an empty-canvas flash.
+      onReady?.();
     })();
 
     return () => {
@@ -551,11 +557,14 @@ export interface HeroChartLoaderProps {
 }
 
 // Loader: fetch the prebuilt series (kept out of the page HTML), then render
-// the chart. A height-matched placeholder holds the layout while the small
-// fetch resolves; on failure the area stays empty rather than throwing.
+// the chart. The skeleton overlays the (mounting) chart on an opaque surface
+// and stays until the chart has actually drawn (onReady), then crossfades out
+// to reveal it — no empty-canvas flash. On failure: a quiet muted line.
 function HeroChart(props: HeroChartLoaderProps) {
   const [data, setData] = useState<ChartData | null>(null);
   const [failed, setFailed] = useState(false);
+  const [ready, setReady] = useState(false); // chart drawn → start the reveal
+  const [revealed, setRevealed] = useState(false); // fade done → drop skeleton
 
   useEffect(() => {
     let cancelled = false;
@@ -567,25 +576,6 @@ function HeroChart(props: HeroChartLoaderProps) {
     };
   }, [props.version]);
 
-  if (data) {
-    return (
-      <HeroChartView
-        datasets={data.hero.datasets}
-        today={props.today}
-        markets={data.hero.markets}
-        consensus={
-          props.consensus
-            ? { ...props.consensus, history: data.consensusHistory }
-            : null
-        }
-        closestId={props.closestId}
-        optimisticId={props.optimisticId}
-        strings={props.strings}
-      />
-    );
-  }
-
-  // Failure: quiet muted line, no chrome. Otherwise the pulsing chart skeleton.
   if (failed) {
     return (
       <div
@@ -601,10 +591,35 @@ function HeroChart(props: HeroChartLoaderProps) {
   }
 
   return (
-    <ChartSkeleton
-      label={props.strings.loading}
-      className="h-[300px] sm:h-[386px]"
-    />
+    <div className="relative h-[300px] w-full sm:h-[386px]">
+      {data && (
+        <HeroChartView
+          datasets={data.hero.datasets}
+          today={props.today}
+          markets={data.hero.markets}
+          consensus={
+            props.consensus
+              ? { ...props.consensus, history: data.consensusHistory }
+              : null
+          }
+          closestId={props.closestId}
+          optimisticId={props.optimisticId}
+          strings={props.strings}
+          onReady={() => setReady(true)}
+        />
+      )}
+      {!revealed && (
+        <div
+          aria-hidden={ready}
+          onTransitionEnd={() => ready && setRevealed(true)}
+          className={`pointer-events-none absolute inset-0 flex items-center justify-center bg-[var(--color-surface)] transition-opacity duration-500 ${
+            ready ? 'opacity-0' : 'opacity-100'
+          }`}
+        >
+          <ChartSkeleton label={props.strings.loading} />
+        </div>
+      )}
+    </div>
   );
 }
 
