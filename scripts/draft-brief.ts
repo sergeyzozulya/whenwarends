@@ -309,16 +309,24 @@ export async function runDraftBrief(): Promise<number> {
   }
   const baseSources = [...DATA_SOURCES, ...eventSources()];
 
+  // Latest-only storage: keep exactly one published row per language (the most
+  // recent), overwriting on each run. The page shows only the latest brief, so
+  // an accumulating archive of near-identical daily briefs is dead weight —
+  // git is the audit trail for past briefs. Per-language failure isolation is
+  // intact: a language whose generation throws keeps its prior row untouched.
   const existing = readBriefs();
-  const byKey = new Map(existing.map((b) => [`${b.lang}|${b.date}`, b]));
+  const latestByLang = new Map<Lang, BriefRow>();
+  for (const b of existing) {
+    if (b.status !== 'published' || b.published === null) continue;
+    const cur = latestByLang.get(b.lang);
+    if (!cur || b.date > cur.date) latestByLang.set(b.lang, b);
+  }
   let nextId = existing.reduce((m, b) => Math.max(m, b.id), 0) + 1;
 
   let ok = 0;
   for (const lang of LANGS) {
     try {
-      const prev = existing
-        .filter((b) => b.lang === lang && b.status === 'published' && b.published)
-        .sort((a, b) => b.date.localeCompare(a.date))[0];
+      const prev = latestByLang.get(lang);
 
       const { draft, citations } = await generateBrief({
         lang,
@@ -329,8 +337,6 @@ export async function runDraftBrief(): Promise<number> {
         previousBrief: prev?.published ?? undefined,
       });
 
-      const key = `${lang}|${weekOf}`;
-      const priorId = byKey.get(key)?.id;
       // Owner policy: auto-publish. The draft is published verbatim; there is
       // no pending_review hop. `published` carries the live text, `status` is
       // published, and reviewed_at is stamped now to mean "auto-approved at
@@ -338,7 +344,7 @@ export async function runDraftBrief(): Promise<number> {
       // entirely, so its previous published row survives untouched.
       const now = new Date().toISOString();
       const row: BriefRow = {
-        id: priorId ?? nextId++,
+        id: prev?.id ?? nextId++,
         lang,
         date: weekOf,
         draft,
@@ -348,7 +354,7 @@ export async function runDraftBrief(): Promise<number> {
         reviewed_at: now,
         citations: JSON.stringify(citations),
       };
-      byKey.set(key, row);
+      latestByLang.set(lang, row); // overwrite — only the latest survives
       ok++;
       console.log(`✓ ${lang}: drafted & published (${citations.length} citations)`);
     } catch (err) {
@@ -356,7 +362,7 @@ export async function runDraftBrief(): Promise<number> {
     }
   }
 
-  writeBriefs([...byKey.values()]);
+  writeBriefs([...latestByLang.values()]);
   console.log(`\ndraft-brief done — ${ok}/${LANGS.length} languages published for ${weekOf}`);
   return ok;
 }

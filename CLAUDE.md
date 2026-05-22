@@ -33,7 +33,6 @@ whenwarends/
 │   │   ├── StatCard.astro             # closest / consensus / optimistic summary card
 │   │   ├── TrendBadge.astro           # ▲/▼ trend pill (renders only with ≥2 points)
 │   │   ├── HistoryTimeline.tsx        # "war in data" timeline island
-│   │   ├── BriefTimeline.astro        # inline brief archive
 │   │   ├── Sparkline.astro            # pure SVG, no hydration
 │   │   ├── EventList.astro
 │   │   ├── IndicatorCard.astro
@@ -79,8 +78,7 @@ whenwarends/
 ├── scripts/
 │   ├── collect.ts                     # weekly orchestrator (data → collect-news → draft-brief)
 │   ├── collect-news.ts                # GDELT pool → AI select/translate → news.json
-│   ├── draft-brief.ts                 # draft + auto-publish the weekly brief
-│   ├── backfill-briefs.ts             # reconstruct + publish historical briefs
+│   ├── draft-brief.ts                 # draft + auto-publish the latest brief
 │   ├── isEntrypoint.ts                # run-as-CLI vs imported guard
 │   └── ...                            # history importers, seeds, bundle check
 ├── data/                              # versioned data store (read at build)
@@ -195,21 +193,19 @@ whenwarends/
 
 - **Auto-publish, no human review gate** (owner decision, 2026-05-18; see
   `data/changelog.json`). `scripts/draft-brief.ts` writes briefs straight to
-  `briefs.status = 'published'` on each data refresh; `scripts/backfill-briefs.ts`
-  publishes reconstructed historical briefs the same way. There is no
+  `briefs.status = 'published'` on each data refresh. There is no
   `pending_review` hop. This **replaces** the former "never auto-publish /
   require human approval" rule — that rule is retired, not merely waived.
+- **Latest brief only.** `draft-brief.ts` keeps exactly one published row per
+  language (the most recent), overwriting on each run — the page shows only the
+  latest brief, so an accumulating archive of near-identical daily briefs is
+  dead weight. Git is the audit trail for past briefs.
 - **Integrity safeguards are non-negotiable and replace review.** A brief may
   only ship if it passes the `src/lib/llm.ts` guards: enforced citation
   allow-list (never cite a URL not supplied), refusal guard, and truncation
   (`max_tokens`) guard. Generation is per-language isolated — a language that
   throws is skipped, so a prior good brief survives rather than being
   overwritten with garbage. The git commit is the audit trail.
-- **Reconstructed briefs must be labelled.** Backfilled briefs carry
-  `reconstructed: true` and the UI labels them "reconstructed from archived
-  data" — never presented as written at the time. They are grounded strictly
-  in `data/snapshots.ndjson` as of their date; never fabricated or
-  forward-looking.
 - **Glossary**: Separate `.yaml` per locale. AI prompt includes glossary to ensure consistent terminology.
 - **Citations**: Every claim in the brief must have a source URL. Stored in `briefs.citations` as JSON.
 
@@ -227,9 +223,9 @@ whenwarends/
 **Phase 2** (done): Secondary "war in data" timeline + collectors (GDELT, Kiel, NBU FX, NBU CPI, CBR, World Bank Indicators + Global Economic Monitor, FIRMS). The earlier "today on the ground" cards and editorial event list were removed.
 
 **Phase 3**: Brief generation — auto-published on data refresh
-(`draft-brief.ts`), historical backfill (`backfill-briefs.ts`), inline brief
-timeline, glossary review. No admin/review page (auto-publish; integrity
-guards in `llm.ts` replace review).
+(`draft-brief.ts`), latest-only (one published row per language), glossary
+review. No admin/review page (auto-publish; integrity guards in `llm.ts`
+replace review).
 
 **Phase 4** (done): Polish + launch — initial public version (see `data/changelog.json`).
 
@@ -247,8 +243,6 @@ guards in `llm.ts` replace review).
 - Ship a brief that bypasses the `src/lib/llm.ts` integrity guards (citation
   allow-list, refusal, truncation) — these replace human review and are not
   optional. (Auto-publishing itself is now intended; see "AI & editorial".)
-- Present a reconstructed (backfilled) brief as if written at the time, or
-  ground one in anything other than `data/snapshots.ndjson` as of its date.
 - Add emoji to the UI.
 - Use `any` without an inline justification comment.
 - Ship hardcoded "war is ongoing" assumptions. Schema must support "war ended" pivot.
@@ -301,8 +295,7 @@ no third-party image request is made. `scripts/collect-news.ts` writes
 
 **Weekly cadence**: Sunday 08:00 UTC data pull → if the data changed, LLM
 draft → integrity guards (`llm.ts`) → auto-publish + commit (one push →
-rebuild + deploy). No editor step. Historical archive backfilled on demand
-via `npm run backfill-briefs` (manual, not CI; idempotent).
+rebuild + deploy). No editor step.
 
 **Glossary review** (separate, async): Weekly review of AI-generated terminology for accuracy and tone per language.
 

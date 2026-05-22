@@ -2,14 +2,7 @@
 // and bakes the numbers into the static HTML — no runtime DB, no client fetch.
 // Collectors write the data files weekly via the collect script.
 
-import type {
-  Lang,
-  EventRow,
-  BriefRow,
-  SnapshotRow,
-  Citation,
-  NewsItem,
-} from './types';
+import type { Lang, EventRow, BriefRow, SnapshotRow, NewsItem } from './types';
 import {
   readSnapshots,
   readMarkets,
@@ -31,7 +24,6 @@ import {
   type CardPicks,
   type ConsensusPoint,
 } from './cards';
-import { asOfMetrics, type AsOfMetrics } from './briefContext';
 import { getTranslation } from '../i18n/index';
 
 export interface CurveSet {
@@ -105,23 +97,10 @@ export interface HomePayload {
   };
   brief: BriefRow | null;
   briefStale: boolean;
-  /** Every published brief for this lang, newest-first, with the metric
-   *  picture as it stood on that brief's date. Drives the inline timeline. */
-  briefArchive: BriefArchiveEntry[];
   /** Selected, locale-translated related news (GDELT), shown beside the brief. */
   news: NewsItem[];
   /** YYYY-MM-DD the news list was collected, or null. */
   newsAsOf: string | null;
-}
-
-export interface BriefArchiveEntry {
-  date: string; // YYYY-MM-DD (UTC editorial date)
-  text: string; // the published text
-  citations: Citation[];
-  /** True = reconstructed after the fact from archived data (labelled). */
-  reconstructed: boolean;
-  /** Numbers as of `date`, for the "what the data showed then" column. */
-  metrics: AsOfMetrics;
 }
 
 const EMPTY_INDICATOR: IndicatorData = { value: null };
@@ -162,49 +141,9 @@ export function emptyHomePayload(): HomePayload {
     },
     brief: null,
     briefStale: false,
-    briefArchive: [],
     news: [],
     newsAsOf: null,
   };
-}
-
-/** Defensive Citation[] parse (mirrors DailyBrief): drop anything malformed. */
-function parseCitations(raw: string | undefined): Citation[] {
-  if (!raw) return [];
-  try {
-    const parsed: unknown = JSON.parse(raw);
-    if (!Array.isArray(parsed)) return [];
-    return parsed.filter(
-      (c): c is Citation =>
-        typeof c === 'object' &&
-        c !== null &&
-        typeof (c as { source?: unknown }).source === 'string' &&
-        typeof (c as { url?: unknown }).url === 'string'
-    );
-  } catch {
-    return [];
-  }
-}
-
-/** Published briefs for `lang`, newest-first, each with as-of metrics. */
-function buildBriefArchive(
-  briefs: BriefRow[],
-  lang: Lang,
-  snapshots: SnapshotRow[]
-): BriefArchiveEntry[] {
-  return briefs
-    .filter(
-      (b) => b.lang === lang && b.status === 'published' && b.published !== null
-    )
-    .sort((a, b) => b.date.localeCompare(a.date))
-    .map((b) => ({
-      date: b.date,
-      text: b.published as string,
-      citations: parseCitations(b.citations),
-      reconstructed: b.reconstructed === true,
-      // Inclusive end-of-day: the metric picture as it stood on that date.
-      metrics: asOfMetrics(snapshots, `${b.date}T23:59:59.999Z`),
-    }));
 }
 
 const HOURS = 3600_000;
@@ -392,7 +331,6 @@ export function loadHomePayload(lang: Lang): HomePayload {
     return { ...emptyHomePayload(), events, news, newsAsOf };
   }
 
-  const briefArchive = buildBriefArchive(allBriefs, lang, snapshots);
   const history = buildHistory(snapshots);
   // CDF over the qualified, cross-source-weighted markets (quality filtered
   // upstream, so the curve's own USD floor is disabled — see cards.ts §8.3).
@@ -571,7 +509,6 @@ export function loadHomePayload(lang: Lang): HomePayload {
     },
     brief,
     briefStale,
-    briefArchive,
     news,
     newsAsOf,
   };
