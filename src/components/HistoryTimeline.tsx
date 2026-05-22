@@ -9,6 +9,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { HistorySeries } from '@lib/homepage';
 import { fetchChartData } from '../lib/chartData';
+import ChartSkeleton from './ChartSkeleton';
 
 const ACCENT = '#3b6b97';
 const SLIDER = '#255b7d';
@@ -386,41 +387,30 @@ export interface HistoryTimelineLoaderProps {
 function HistoryTimeline({ strings, version }: HistoryTimelineLoaderProps) {
   const [history, setHistory] = useState<HistorySeries[] | null>(null);
   const [failed, setFailed] = useState(false);
-  // Surface "Loading…" only once the fetch is actually slow (no flash on the
-  // fast CDN-cached path).
-  const [slow, setSlow] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
-    const timer = setTimeout(() => !cancelled && setSlow(true), 250);
     fetchChartData(version)
       .then((d) => !cancelled && setHistory(d.history))
       .catch(() => !cancelled && setFailed(true));
     return () => {
       cancelled = true;
-      clearTimeout(timer);
     };
   }, [version]);
 
   if (history !== null)
     return <HistoryTimelineView history={history} strings={strings} />;
 
-  return (
-    <div
-      aria-busy={!failed}
-      className="flex h-64 w-full items-center justify-center"
-    >
-      {failed ? (
+  if (failed)
+    return (
+      <div className="flex h-64 w-full items-center justify-center">
         <span className="text-[13px] text-[var(--color-faint)]">
           {strings.unavailable ?? ''}
         </span>
-      ) : slow ? (
-        <span className="text-[13px] text-[var(--color-muted)]">
-          {strings.loading ?? ''}
-        </span>
-      ) : null}
-    </div>
-  );
+      </div>
+    );
+
+  return <ChartSkeleton label={strings.loading} className="h-64" />;
 }
 
 export default HistoryTimeline;

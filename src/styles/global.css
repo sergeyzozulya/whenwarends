@@ -97,6 +97,30 @@
   display: none;
 }
 
+/* Chart loading skeleton — a faint chart-shaped placeholder that slowly pulses
+   while a chart island fetches its series (src/components/ChartSkeleton.tsx).
+   Stilled for users who prefer reduced motion. */
+@keyframes chart-skeleton-pulse {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.chart-skeleton-line {
+  animation: chart-skeleton-pulse 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chart-skeleton-line {
+    animation: none;
+    opacity: 0.4;
+  }
+}
+
 @media print {
   a[href]::after {
     content: '';
