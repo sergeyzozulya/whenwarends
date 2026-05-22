@@ -175,15 +175,14 @@ const cardCls =
       <div class="mt-7">
         <HeroChart
           client:load
-          datasets={data.hero.datasets}
           today={data.hero.today}
-          markets={data.hero.markets}
           consensus={consensus
-            ? { x: consensus.dateMs, y: consensus.probability, history: consensusTrend.points }
+            ? { x: consensus.dateMs, y: consensus.probability }
             : null}
           closestId={closestM?.marketId ?? null}
           optimisticId={optimisticM?.marketId ?? null}
           strings={heroStrings}
+          version={data.lastUpdated}
         />
       </div>
     </section>
@@ -245,8 +244,8 @@ const cardCls =
       <div class={`${cardCls} mt-7 p-8`}>
         <HistoryTimeline
           client:visible
-          history={data.history}
           strings={historyStrings}
+          version={data.lastUpdated}
         />
       </div>
     </section>

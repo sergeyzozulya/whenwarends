@@ -8,7 +8,7 @@
 // mark. Chart.js is imported dynamically so it only ships when the island
 // hydrates.
 
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   buildChartSeries,
   formatPct,
@@ -16,6 +16,7 @@ import {
   type CurveSet,
   type HeroMarket,
 } from '../lib/heroChartData';
+import { fetchChartData, type ChartData } from '../lib/chartData';
 import { OPTIMISTIC_PATH, OPTIMISTIC_VIEWBOX, AVERAGE_PATH } from '../lib/icons';
 
 const ACCENT = '#3b6b97';
@@ -188,7 +189,7 @@ function drawAverage(
   drawStrokedIcon(ctx, x, y, color, hover, 22, 2, [AVERAGE_PATH]);
 }
 
-function HeroChart({
+function HeroChartView({
   datasets,
   today,
   markets,
@@ -534,6 +535,62 @@ function HeroChart({
         />
       </div>
     </div>
+  );
+}
+
+export interface HeroChartLoaderProps {
+  today: string;
+  closestId: string | null;
+  optimisticId: string | null;
+  /** Consensus centroid: epoch-ms x, 0–1 y. Its history comes from the JSON. */
+  consensus: { x: number; y: number } | null;
+  strings: Record<string, string>;
+  /** Cache-bust version (the page's lastUpdated). */
+  version: string | null;
+}
+
+// Loader: fetch the prebuilt series (kept out of the page HTML), then render
+// the chart. A height-matched placeholder holds the layout while the small
+// fetch resolves; on failure the area stays empty rather than throwing.
+function HeroChart(props: HeroChartLoaderProps) {
+  const [data, setData] = useState<ChartData | null>(null);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetchChartData(props.version)
+      .then((d) => !cancelled && setData(d))
+      .catch(() => !cancelled && setFailed(true));
+    return () => {
+      cancelled = true;
+    };
+  }, [props.version]);
+
+  if (data) {
+    return (
+      <HeroChartView
+        datasets={data.hero.datasets}
+        today={props.today}
+        markets={data.hero.markets}
+        consensus={
+          props.consensus
+            ? { ...props.consensus, history: data.consensusHistory }
+            : null
+        }
+        closestId={props.closestId}
+        optimisticId={props.optimisticId}
+        strings={props.strings}
+      />
+    );
+  }
+
+  return (
+    <div
+      role="img"
+      aria-label={props.strings.chartAria ?? ''}
+      aria-busy={!failed}
+      className="h-[300px] w-full sm:h-[386px]"
+    />
   );
 }
 

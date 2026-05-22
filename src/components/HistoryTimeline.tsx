@@ -8,6 +8,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { HistorySeries } from '@lib/homepage';
+import { fetchChartData } from '../lib/chartData';
 
 const ACCENT = '#3b6b97';
 const SLIDER = '#255b7d';
@@ -82,7 +83,7 @@ function asOf(points: { t: number; v: number }[], at: number): number | null {
   return ans;
 }
 
-function HistoryTimeline({ history, strings }: HistoryTimelineProps) {
+function HistoryTimelineView({ history, strings }: HistoryTimelineProps) {
   const byKey = useMemo(() => {
     const m = new Map<string, { t: number; v: number }[]>();
     for (const h of history)
@@ -370,6 +371,34 @@ function HistoryTimeline({ history, strings }: HistoryTimelineProps) {
       )}
     </div>
   );
+}
+
+export interface HistoryTimelineLoaderProps {
+  strings: Record<string, string>;
+  /** Cache-bust version (the page's lastUpdated). */
+  version: string | null;
+}
+
+// Loader: fetch the prebuilt history series (kept out of the page HTML), then
+// render the timeline. client:visible, so this only fetches once scrolled into
+// view. A height-matched placeholder holds the layout while it loads; on
+// failure it renders the view's own empty state.
+function HistoryTimeline({ strings, version }: HistoryTimelineLoaderProps) {
+  const [history, setHistory] = useState<HistorySeries[] | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetchChartData(version)
+      .then((d) => !cancelled && setHistory(d.history))
+      .catch(() => !cancelled && setHistory([]));
+    return () => {
+      cancelled = true;
+    };
+  }, [version]);
+
+  if (history === null) return <div aria-busy="true" className="h-64 w-full" />;
+
+  return <HistoryTimelineView history={history} strings={strings} />;
 }
 
 export default HistoryTimeline;
