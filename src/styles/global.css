@@ -114,21 +114,36 @@
 .chart-skeleton-line-wrap {
   overflow: hidden;
   width: 100%;
-  max-width: 240px;
-  height: 56px;
+  max-width: 280px;
+  height: 48px;
+  /* Fade the flowing line out at the left and right edges. */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 16%,
+    #000 84%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 16%,
+    #000 84%,
+    transparent 100%
+  );
 }
 
 .chart-skeleton-line {
   display: block;
   width: 200%;
   height: 100%;
-  animation: chart-skeleton-flow 1.6s linear infinite;
+  animation: chart-skeleton-flow 1.8s linear infinite;
 }
 
 .chart-skeleton-line polyline {
   fill: none;
   stroke: var(--color-accent);
-  stroke-width: 2;
+  stroke-width: 1.5;
   stroke-linecap: round;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
