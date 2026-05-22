@@ -97,27 +97,46 @@
   display: none;
 }
 
-/* Chart loading skeleton — a faint chart-shaped placeholder that slowly pulses
-   while a chart island fetches its series (src/components/ChartSkeleton.tsx).
-   Stilled for users who prefer reduced motion. */
-@keyframes chart-skeleton-pulse {
-  0%,
-  100% {
-    opacity: 0.25;
+/* Chart loading skeleton — a sparkline-style accent line that flows leftward in
+   a seamless loop while a chart island fetches its series
+   (src/components/ChartSkeleton.tsx), matching the site's mini charts. The SVG
+   holds two identical tiles and translates by one tile, so the loop is
+   invisible. Stilled for users who prefer reduced motion. */
+@keyframes chart-skeleton-flow {
+  from {
+    transform: translateX(0);
   }
-  50% {
-    opacity: 0.6;
+  to {
+    transform: translateX(-50%);
   }
 }
 
+.chart-skeleton-line-wrap {
+  overflow: hidden;
+  width: 100%;
+  max-width: 240px;
+  height: 56px;
+}
+
 .chart-skeleton-line {
-  animation: chart-skeleton-pulse 2.4s ease-in-out infinite;
+  display: block;
+  width: 200%;
+  height: 100%;
+  animation: chart-skeleton-flow 1.6s linear infinite;
+}
+
+.chart-skeleton-line polyline {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .chart-skeleton-line {
     animation: none;
-    opacity: 0.4;
   }
 }
 
