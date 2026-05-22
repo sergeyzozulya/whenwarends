@@ -3,6 +3,8 @@
     "title": "When does this war end?",
     "subtitle": "A market-implied probability for the end of the Russia–Ukraine war, surrounded by the measured data moving the curve. No prediction is authored here — only what markets and indicators say, as of this moment.",
     "lastUpdated": "Last updated {date} UTC",
+    "chartLoading": "Loading…",
+    "chartUnavailable": "Chart unavailable",
     "home": "Home",
     "methodology": "Methodology",
     "about": "About",

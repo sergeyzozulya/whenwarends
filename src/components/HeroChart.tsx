@@ -555,14 +555,19 @@ export interface HeroChartLoaderProps {
 function HeroChart(props: HeroChartLoaderProps) {
   const [data, setData] = useState<ChartData | null>(null);
   const [failed, setFailed] = useState(false);
+  // Only surface "Loading…" once the fetch is actually slow, so the common
+  // fast (CDN-cached) path shows the chart with no flash of loader text.
+  const [slow, setSlow] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
+    const timer = setTimeout(() => !cancelled && setSlow(true), 250);
     fetchChartData(props.version)
       .then((d) => !cancelled && setData(d))
       .catch(() => !cancelled && setFailed(true));
     return () => {
       cancelled = true;
+      clearTimeout(timer);
     };
   }, [props.version]);
 
@@ -589,8 +594,18 @@ function HeroChart(props: HeroChartLoaderProps) {
       role="img"
       aria-label={props.strings.chartAria ?? ''}
       aria-busy={!failed}
-      className="h-[300px] w-full sm:h-[386px]"
-    />
+      className="flex h-[300px] w-full items-center justify-center sm:h-[386px]"
+    >
+      {failed ? (
+        <span className="text-[13px] text-[var(--color-faint)]">
+          {props.strings.unavailable ?? ''}
+        </span>
+      ) : slow ? (
+        <span className="text-[13px] text-[var(--color-muted)]">
+          {props.strings.loading ?? ''}
+        </span>
+      ) : null}
+    </div>
   );
 }
 
