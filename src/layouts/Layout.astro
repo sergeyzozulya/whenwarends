@@ -123,6 +123,17 @@ const ALT_LANGS = ['uk', 'en', 'ru'] as const;
       });
       gtag('config', 'G-KN7G44T186');
     </script>
+
+    {/* Cloudflare Web Analytics — cookieless, privacy-first beacon. No cookie,
+        no identifier, no consent banner needed; gives a second, independent
+        visitor count alongside GA. The token is public by design (it is exposed
+        in the page HTML), so it is hardcoded like the GA measurement ID. */}
+    <script
+      is:inline
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "f600c5d50d2c4341aca69d988c78460b"}'
+    ></script>
   </head>
   <body>
     <Header lang={locale} />

@@ -1,5 +1,13 @@
 [
   {
+    "id": 8,
+    "date": "2026-05-22",
+    "category": "privacy",
+    "description_en": "Added Cloudflare Web Analytics alongside the existing analytics — also cookieless, with no cookie, identifier, or consent banner — for a second, independent visitor count.",
+    "description_uk": "Додано Cloudflare Web Analytics на додачу до наявної аналітики — також без кук, без ідентифікаторів і без банера згоди — для другого, незалежного підрахунку відвідувачів.",
+    "description_ru": "Добавлена Cloudflare Web Analytics в дополнение к имеющейся аналитике — также без кук, без идентификаторов и без баннера согласия — для второго, независимого подсчёта посетителей."
+  },
+  {
     "id": 7,
     "date": "2026-05-22",
     "category": "cadence",
