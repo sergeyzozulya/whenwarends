@@ -39,6 +39,16 @@ In rough order of size: Ukrainians abroad checking for hope or context; Ukrainia
 > in-page brief panel were removed. UCDP/Oryx/ISW/Russia Matters/IMF are
 > not collected. See `data/changelog.json`.
 >
+> **Revised 2026-05-22 (v1.4)** — supersedes the weekly cadence (§10): the
+> collect+brief job runs **daily** (08:00 UTC), refreshing data, related news,
+> and the brief each day; the news refresh now runs in CI (previously it only
+> ran locally). Only the **latest** brief is kept and shown — the brief archive
+> (BriefTimeline) and historical backfill were removed. Chart time-series are
+> served as a single static `/chart-data.json` the islands fetch, instead of
+> inlined island props (homepage HTML ~612 KB → ~38 KB raw). Daily cadence puts
+> the Anthropic cost (~$10–25/mo) above the original <$15 target — accepted for
+> daily freshness. See `data/changelog.json`.
+>
 > **Revised 2026-05-19 (v1.4)** — owner decision: **Google Analytics 4**
 > added (one third-party script) under **Consent Mode v2** with
 > `analytics_storage` permanently **denied** and never granted, so GA runs

@@ -1,18 +1,21 @@
-name: Weekly data collection and brief
+name: Daily data collection and brief
 
-# Pulls every source, and — when the collection actually changed something —
-# regenerates and AUTO-PUBLISHES the editorial brief against the fresh
-# numbers, then commits data/ (snapshots + briefs) in one push. The push to
-# main triggers CI, which rebuilds the static site (embedding the new numbers
-# and the new brief) and deploys it. Manual runs allowed via the Actions tab.
+# Pulls every source daily; when the collection actually changed something,
+# refreshes the related-news selection and AUTO-PUBLISHES the editorial brief
+# against the fresh numbers, then commits data/ + public/news/ in one push. The
+# push to main triggers CI, which rebuilds the static site (embedding the new
+# numbers, news and brief) and deploys it. Manual runs allowed via the Actions
+# tab.
 #
-# There is no human review gate (owner decision, 2026-05-18 — see
-# data/changelog.json and CLAUDE.md). draft-brief.ts keeps the integrity
-# safeguards (citation allow-list, refusal/truncation guards, per-language
-# isolation); the git commit is the audit trail.
+# Two-stage so the Anthropic spend only happens when the data moved: the data
+# collectors run keyless (SKIP_DOWNSTREAM), then — only if data/ changed — the
+# news + brief steps run with the API key. There is no human review gate (owner
+# decision, 2026-05-18 — see data/changelog.json and CLAUDE.md). draft-brief.ts
+# keeps the integrity safeguards (citation allow-list, refusal/truncation
+# guards, per-language isolation); the git commit is the audit trail.
 on:
   schedule:
-    - cron: '0 8 * * 0' # Sunday 08:00 UTC (SPEC §10 weekly cadence)
+    - cron: '0 8 * * *' # 08:00 UTC daily (SPEC §10 daily cadence)
   workflow_dispatch:
 
 concurrency:
@@ -21,7 +24,7 @@ concurrency:
 
 jobs:
   collect:
-    name: Collect data, publish brief, commit
+    name: Collect data, refresh news + brief, commit
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -32,34 +35,42 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - name: Run collectors
-        run: npm run collect
+      # Data only (keyless). SKIP_DOWNSTREAM skips the news + brief steps inside
+      # collect.ts; those run separately below, with the key, only if data moved.
+      - name: Collect data
+        run: SKIP_DOWNSTREAM=1 npm run collect
         env:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
           KIEL_DATASET_URL: ${{ secrets.KIEL_DATASET_URL }}
           # Manifold needs no key; MANIFOLD_MARKET_ID is optional operator
           # config (defaults baked into the collector).
           MANIFOLD_MARKET_ID: ${{ secrets.MANIFOLD_MARKET_ID }}
-      # Only spend on generation when the numbers actually moved — an
-      # unchanged dataset would produce an equivalent brief. This is the
-      # "when data changes, run draft-brief" trigger.
-      - name: Draft and publish brief (only if data changed)
+      # Only spend on generation when the numbers actually moved — an unchanged
+      # dataset would produce an equivalent news selection and brief. A news
+      # hiccup must not block the brief, so it is allowed to fail soft (the
+      # prior news.json stays); a total brief failure surfaces the step.
+      - name: Refresh news and brief (only if data changed)
         run: |
           if [ -n "$(git status --porcelain data/)" ]; then
-            echo "Data changed — regenerating and publishing the brief."
+            echo "Data changed — refreshing related news and the brief."
+            npm run collect-news || echo "::warning::news refresh failed — keeping prior news.json"
             npm run draft-brief
           else
-            echo "No data changes this run — skipping brief regeneration."
+            echo "No data changes this run — skipping news + brief."
           fi
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      - name: Commit data changes
+      # always(): commit whatever was collected even if the brief step failed,
+      # so a transient API problem never loses a day's data. The status check
+      # below no-ops when nothing changed.
+      - name: Commit data + news changes
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain data/)" ]; then
-            git add data/
-            git commit -m "chore(data): weekly collection + brief $(date -u +%Y-%m-%d)"
+          if [ -n "$(git status --porcelain data/ public/news/)" ]; then
+            git add data/ public/news/
+            git commit -m "chore(data): daily collection + brief $(date -u +%Y-%m-%d)"
             git push
           else
             echo "No data changes this run."

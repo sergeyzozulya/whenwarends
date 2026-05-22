@@ -1,5 +1,13 @@
 [
   {
+    "id": 7,
+    "date": "2026-05-22",
+    "category": "cadence",
+    "description_en": "The dashboard now updates daily instead of weekly: data, related news, and the editorial brief refresh every day. Only the latest brief is kept and shown. Chart time-series now load from a separate cached file, so pages are much lighter to open.",
+    "description_uk": "Інформаційна панель тепер оновлюється щодня замість щотижня: дані, пов’язані новини та редакційний огляд оновлюються щодня. Зберігається й показується лише останній огляд. Часові ряди графіків тепер завантажуються з окремого кешованого файлу, тож сторінки відкриваються значно легше.",
+    "description_ru": "Панель теперь обновляется ежедневно вместо еженедельно: данные, связанные новости и редакционная сводка обновляются каждый день. Сохраняется и показывается только последняя сводка. Временные ряды графиков теперь загружаются из отдельного кешированного файла, поэтому страницы открываются заметно легче."
+  },
+  {
     "id": 6,
     "date": "2026-05-21",
     "category": "new-source",

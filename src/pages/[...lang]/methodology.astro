@@ -35,7 +35,7 @@ const CONTENT: Record<Lang, Page> = {
         h: 'What this is, and is not',
         p: [
           'This site never authors a prediction of its own. It displays probabilities derived from public prediction markets and a timeline of measured indicators, alongside a clearly-labelled editorial summary that is auto-published behind code-level integrity guards.',
-          'No number here is our forecast. Where a figure is an estimate, or a brief reconstructed after the fact from archived data, it is labelled as such.',
+          'No number here is our forecast. Where a figure is an estimate, it is labelled as such.',
         ],
       },
       {
@@ -80,7 +80,7 @@ const CONTENT: Record<Lang, Page> = {
       {
         h: 'Cadence and editorial control',
         p: [
-          'Data is collected weekly (Sunday 08:00 UTC). The editorial brief is drafted by an AI model and auto-published on each data refresh — there is no human approval gate. Integrity is enforced in code instead: an enforced citation allow-list (a URL never supplied is never cited), a refusal guard, and a truncation guard; generation is per-language isolated so one failing language cannot overwrite a good brief. Briefs reconstructed for past dates are labelled "reconstructed from archived data" and are grounded strictly in the snapshots as of their date.',
+          'Data is collected daily (08:00 UTC). The editorial brief is drafted by an AI model and auto-published on each data refresh — there is no human approval gate. Integrity is enforced in code instead: an enforced citation allow-list (a URL never supplied is never cited), a refusal guard, and a truncation guard; generation is per-language isolated so one failing language cannot overwrite a good brief. Only the latest brief is shown.',
         ],
       },
       {
@@ -107,7 +107,7 @@ const CONTENT: Record<Lang, Page> = {
         h: 'Що це таке і чим не є',
         p: [
           'Сайт ніколи не створює власного прогнозу. Він показує ймовірності з публічних ринків передбачень і хронологію виміряних показників, поряд із чітко позначеним оглядом, що публікується автоматично під захистом програмних запобіжників цілісності.',
-          'Жодне число тут не є нашим прогнозом. Якщо показник є оцінкою або оглядом, відновленим заднім числом з архівних даних, він позначений відповідно.',
+          'Жодне число тут не є нашим прогнозом. Якщо показник є оцінкою, він позначений відповідно.',
         ],
       },
       {
@@ -152,7 +152,7 @@ const CONTENT: Record<Lang, Page> = {
       {
         h: 'Періодичність і редакційний контроль',
         p: [
-          'Дані збираються щотижня (неділя, 08:00 UTC). Огляд готує модель ШІ, і він публікується автоматично під час кожного оновлення даних — без етапу людського затвердження. Натомість цілісність забезпечується в коді: примусовий перелік дозволених посилань (URL, який не було надано, ніколи не цитується), запобіжник відмови та запобіжник обрізання; генерація ізольована за мовами, тож одна збійна мова не може перезаписати якісний огляд. Огляди, відновлені для минулих дат, позначені «відновлено з архівних даних» і ґрунтуються виключно на знімках станом на їхню дату.',
+          'Дані збираються щодня (08:00 UTC). Огляд готує модель ШІ, і він публікується автоматично під час кожного оновлення даних — без етапу людського затвердження. Натомість цілісність забезпечується в коді: примусовий перелік дозволених посилань (URL, який не було надано, ніколи не цитується), запобіжник відмови та запобіжник обрізання; генерація ізольована за мовами, тож одна збійна мова не може перезаписати якісний огляд. Показується лише останній огляд.',
         ],
       },
       {
@@ -179,7 +179,7 @@ const CONTENT: Record<Lang, Page> = {
         h: 'Что это и чем не является',
         p: [
           'Сайт никогда не создаёт собственный прогноз. Он показывает вероятности с публичных рынков предсказаний и хронологию измеренных показателей, рядом с чётко обозначенной сводкой, которая публикуется автоматически под защитой программных гарантий целостности.',
-          'Ни одно число здесь не является нашим прогнозом. Если показатель — оценка или сводка, восстановленная задним числом из архивных данных, он помечен соответственно.',
+          'Ни одно число здесь не является нашим прогнозом. Если показатель — оценка, он помечен соответственно.',
         ],
       },
       {
@@ -224,7 +224,7 @@ const CONTENT: Record<Lang, Page> = {
       {
         h: 'Периодичность и редакционный контроль',
         p: [
-          'Данные собираются еженедельно (воскресенье, 08:00 UTC). Сводку готовит модель ИИ, и она публикуется автоматически при каждом обновлении данных — без этапа человеческого одобрения. Вместо этого целостность обеспечивается в коде: принудительный список разрешённых ссылок (URL, который не был предоставлен, никогда не цитируется), предохранитель отказа и предохранитель усечения; генерация изолирована по языкам, поэтому один сбойный язык не может перезаписать качественную сводку. Сводки, восстановленные для прошлых дат, помечены «восстановлено из архивных данных» и основаны исключительно на снимках по состоянию на их дату.',
+          'Данные собираются ежедневно (08:00 UTC). Сводку готовит модель ИИ, и она публикуется автоматически при каждом обновлении данных — без этапа человеческого одобрения. Вместо этого целостность обеспечивается в коде: принудительный список разрешённых ссылок (URL, который не был предоставлен, никогда не цитируется), предохранитель отказа и предохранитель усечения; генерация изолирована по языкам, поэтому один сбойный язык не может перезаписать качественную сводку. Показывается только последняя сводка.',
         ],
       },
       {

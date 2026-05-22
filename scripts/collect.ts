@@ -1,6 +1,6 @@
-// Weekly data collection. Runs every collector (failure-isolated), appends
+// Daily data collection. Runs every collector (failure-isolated), appends
 // new immutable snapshots and upserts current market state into the repo
-// data/ files. Run locally with `npm run collect`; runs in CI weekly via
+// data/ files. Run locally with `npm run collect`; runs in CI daily via
 // .github/workflows/collect.yml, which commits the changed data files.
 //
 // Live APIs are hit here (Node, not Workers). One failing source degrades one

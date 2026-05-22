@@ -293,7 +293,7 @@ function articleCitations(items: NewsItem[], lang: Lang): Citation[] {
 }
 
 /**
- * Draft + auto-publish the weekly brief for every language. Never calls
+ * Draft + auto-publish the latest brief for every language. Never calls
  * process.exit, so it can be awaited from the collect orchestrator. Returns the
  * number of languages published, or -1 for a BRIEF_CONTEXT_ONLY dry run.
  */

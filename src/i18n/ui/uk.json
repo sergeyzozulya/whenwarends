@@ -89,6 +89,7 @@
     "cat": {
       "release": "Запуск",
       "new-source": "Нові дані",
+      "cadence": "Періодичність",
       "redesign": "Дизайн",
       "privacy": "Приватність"
     }

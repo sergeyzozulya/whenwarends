@@ -162,10 +162,12 @@ let cachedClient: Anthropic | null = null;
 const defaultCreateMessage: CreateMessage = (params) => {
   if (!process.env.ANTHROPIC_API_KEY) {
     throw new Error(
-      'ANTHROPIC_API_KEY is not set — required to draft the weekly brief.'
+      'ANTHROPIC_API_KEY is not set — required to draft the brief.'
     );
   }
-  cachedClient ??= new Anthropic();
+  // maxRetries 4 (SDK default is 2): a daily unattended job hits transient
+  // Anthropic overloads (HTTP 529) more often; the SDK retries with backoff.
+  cachedClient ??= new Anthropic({ maxRetries: 4 });
   return cachedClient.messages.create(params);
 };
 

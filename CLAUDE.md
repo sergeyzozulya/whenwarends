@@ -2,7 +2,7 @@
 
 ## One-paragraph summary
 
-A non-commercial, Ukrainian-built dashboard that answers a single question with calm, transparent data: **when does this war end?** Static-first Astro site on Cloudflare's free tier (Workers + Static Assets), fed by free and open data sources only. Single-editor weekly cadence. Served in three languages (Ukrainian, English, Russian). Total cost under $15/month dominated by Anthropic API for the weekly AI-drafted, auto-published (integrity-guarded) editorial brief.
+A non-commercial, Ukrainian-built dashboard that answers a single question with calm, transparent data: **when does this war end?** Static-first Astro site on Cloudflare's free tier (Workers + Static Assets), fed by free and open data sources only. Single-editor daily cadence. Served in three languages (Ukrainian, English, Russian). Running cost ~$10–25/month, dominated by the Anthropic API for the daily AI-drafted, auto-published (integrity-guarded) editorial brief — above the original <$15 target, the accepted trade for daily freshness (owner decision, 2026-05-22).
 
 ## Repository structure
 
@@ -76,7 +76,7 @@ whenwarends/
 │   │   └── collectors/                # registry + per-source re-exports
 │   └── styles/global.css
 ├── scripts/
-│   ├── collect.ts                     # weekly orchestrator (data → collect-news → draft-brief)
+│   ├── collect.ts                     # daily orchestrator (data → collect-news → draft-brief)
 │   ├── collect-news.ts                # GDELT pool → AI select/translate → news.json
 │   ├── draft-brief.ts                 # draft + auto-publish the latest brief
 │   ├── isEntrypoint.ts                # run-as-CLI vs imported guard
@@ -183,7 +183,7 @@ whenwarends/
 - **Immutable snapshots**: append to `data/snapshots.ndjson`, never rewrite a
   line. `src/lib/filestore.ts` dedupes on `(metric, source, ts)`.
 - **History / audit / backup**: git. The collect commit is the audit trail.
-- **Collection**: `npm run collect` (or weekly via
+- **Collection**: `npm run collect` (or daily via
   `.github/workflows/collect.yml`) runs the collectors and commits `data/`;
   the push triggers a rebuild + deploy.
 - **No SQL**: collectors return typed objects; the runner persists via
@@ -282,20 +282,23 @@ no third-party image request is made. `scripts/collect-news.ts` writes
 `data/news.json`; the brief consumes the picked headlines as cite-able context
 (numbers stay the backbone). `npm run collect` runs data → news → brief.
 
-## Cost envelope (realistic, weekly cadence)
+## Cost envelope (realistic, daily cadence)
 
-- Anthropic Claude API: ~$2–8/month (1 brief/week × 3 langs, with prompt caching)
+- Anthropic Claude API: ~$10–25/month (1 brief/day × 3 langs on Opus, only when
+  the data changed; daily runs are 24h apart so there is no cross-run prompt-cache
+  reuse). This dominates the bill and is the cost of daily cadence.
 - Cloudflare (Workers + Static Assets, Email, Analytics): $0
-- GitHub Actions (weekly collection + CI): $0 (public repo / free tier)
+- GitHub Actions (daily collection + CI): $0 (public repo / free tier)
 - Domain (annualized): ~$1/month
 - GitHub + Sentry: $0
-- **Total**: ~$3–9/month. Easily under $15/month.
+- **Total**: ~$11–27/month, dominated by the daily brief — above the original
+  <$15 target, the accepted trade for daily freshness (owner decision, 2026-05-22).
 
 ## Editorial calendar (Phase 3+)
 
-**Weekly cadence**: Sunday 08:00 UTC data pull → if the data changed, LLM
-draft → integrity guards (`llm.ts`) → auto-publish + commit (one push →
-rebuild + deploy). No editor step.
+**Daily cadence**: 08:00 UTC data pull → if the data changed, refresh related
+news + LLM draft → integrity guards (`llm.ts`) → auto-publish + commit (one push
+→ rebuild + deploy). No editor step. Only the latest brief is kept/shown.
 
 **Glossary review** (separate, async): Weekly review of AI-generated terminology for accuracy and tone per language.
 

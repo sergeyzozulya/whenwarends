@@ -89,6 +89,7 @@
     "cat": {
       "release": "Launch",
       "new-source": "New data",
+      "cadence": "Cadence",
       "redesign": "Redesign",
       "privacy": "Privacy"
     }
