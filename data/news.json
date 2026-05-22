@@ -1,132 +1,134 @@
 {
-  "asOf": "2026-05-21",
+  "asOf": "2026-05-22",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.dailysabah.com/world/europe/kremlin-says-no-clear-roadmap-to-end-ukraine-war-despite-putins-words",
-      "domain": "dailysabah.com",
-      "seenAt": "2026-05-12T20:15:00.000Z",
-      "sourceCountry": "Turkey",
-      "image": "/news/9b17c477b832ec93.webp",
-      "original": "Kremlin says no clear roadmap to end Ukraine war despite Putin words",
+      "url": "https://glavcom.ua/country/incidents/najbilshi-uspikhi-z-chasiv-kurskoji-operatsiji-ukrajina-vidnovljuje-initsiativu-na-fronti-isw-1120877.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-05-21T06:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Найбільші успіхи з часів курської операції . Україна відновлює ініціативу на фронті – ISW",
       "title": {
-        "uk": "Кремль визнає відсутність чіткого плану завершення війни в Україні, попри слова Путіна",
-        "en": "Kremlin says no clear roadmap to end Ukraine war despite Putin's words",
-        "ru": "Кремль признаёт отсутствие чёткого плана завершения войны в Украине вопреки словам Путина"
+        "uk": "Найбільші успіхи з часів курської операції: Україна відновлює ініціативу на фронті — ISW",
+        "en": "Biggest gains since the Kursk operation: Ukraine reclaims the front-line initiative — ISW",
+        "ru": "Наибольшие успехи со времён курской операции: Украина восстанавливает инициативу на фронте — ISW"
       }
     },
     {
-      "url": "https://www.newsweek.com/putin-zelensky-declare-competing-ceasefires-what-it-means-war-11912628",
-      "domain": "newsweek.com",
-      "seenAt": "2026-05-05T13:30:00.000Z",
+      "url": "https://24tv.ua/rosiya-zminyuye-svoyi-plani-viynu-proti-ukrayini-yak-situatsiyu_n3072323",
+      "domain": "24tv.ua",
+      "seenAt": "2026-05-21T14:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/45d8f79422e7c16e.webp",
+      "original": "Росія змінює свої плани на війну проти України - як ситуацію коментує Буданов",
+      "title": {
+        "uk": "Росія змінює свої плани щодо війни проти України — як ситуацію коментує Буданов",
+        "en": "Russia changes its war plans against Ukraine — Budanov comments on the situation",
+        "ru": "Россия меняет свои планы в войне против Украины — как ситуацию комментирует Буданов"
+      }
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/news/defence/ukraine-strengthens-border-security-amid-growing-fears-of-belarusian-attack/articleshow/131248889.cms",
+      "domain": "economictimes.indiatimes.com",
+      "seenAt": "2026-05-21T16:30:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/f6d1d0616350d42a.webp",
+      "original": "Ukraine boosts border security with Belarus over attack fears",
+      "title": {
+        "uk": "Україна посилює безпеку кордону з Білоруссю через побоювання нападу",
+        "en": "Ukraine boosts border security with Belarus over attack fears",
+        "ru": "Украина усиливает безопасность границы с Беларусью из-за опасений нападения"
+      }
+    },
+    {
+      "url": "https://www.yahoo.com/news/articles/ukraine-says-drones-hit-another-095305093.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-05-21T11:00:00.000Z",
       "sourceCountry": "United States",
-      "original": "Putin And Zelensky Declare Competing 2 Day Ceasefires – What It Means For War",
+      "image": "/news/1b2350595e12881c.webp",
+      "original": "Ukraine says its drones hit another refinery deep inside Russia as long - range strikes escalate",
       "title": {
-        "uk": "Путін і Зеленський оголосили конкуруючі дводенні перемир'я — що це означає для війни",
-        "en": "Putin and Zelensky declare competing two-day ceasefires — what it means for the war",
-        "ru": "Путин и Зеленский объявили конкурирующие двухдневные перемирия — что это значит для войны"
+        "uk": "Україна заявляє, що її дрони вдарили по черговому нафтопереробному заводу вглиб Росії на тлі ескалації далекобійних ударів",
+        "en": "Ukraine says its drones hit another refinery deep inside Russia as long-range strikes escalate",
+        "ru": "Украина заявляет, что её дроны ударили по очередному нефтеперерабатывающему заводу вглубь России на фоне эскалации дальнобойных ударов"
       }
     },
     {
-      "url": "https://www.scmp.com/news/world/europe/article/3347764/4-dead-russia-fires-nearly-400-drones-ukraine-signs-spring-offensive-has-begun",
-      "domain": "scmp.com",
-      "seenAt": "2026-03-24T17:30:00.000Z",
-      "sourceCountry": "China",
-      "image": "/news/4b62c8726bc99a86.webp",
-      "original": "4 dead as Russia fires nearly 400 drones at Ukraine with signs spring offensive has begun",
-      "title": {
-        "uk": "4 загиблих: Росія вдарила майже 400 дронами по Україні — ознаки початку весняного наступу",
-        "en": "4 dead as Russia fires nearly 400 drones at Ukraine with signs spring offensive has begun",
-        "ru": "4 погибших: Россия нанесла удар почти 400 дронами по Украине — признаки начала весеннего наступления"
-      }
-    },
-    {
-      "url": "https://focus.ua/uk/voennye-novosti/753860-peremir-ya-z-rf-vorog-vikoristav-pauzu-dlya-perekidannya-rezerviv-ta-atak-isw",
-      "domain": "focus.ua",
-      "seenAt": "2026-05-12T07:30:00.000Z",
+      "url": "https://tsn.ua/ato/ukrayina-vykhodyt-z-pastky-dozvoliv-ssha-iaki-problemy-tse-stvoriuye-dlia-putina-newsweek-3088235.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-05-21T06:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Перемир  я з РФ ворог використав « паузу » для перекидання резервів та атак ISW",
+      "image": "/news/ad8bace1e8495f9e.webp",
+      "original": "Україна отримує незалежність для ударів по Росії",
       "title": {
-        "uk": "Перемир'я з РФ: ворог використав «паузу» для перекидання резервів та атак — ISW",
-        "en": "Ceasefire with Russia: enemy used the \"pause\" to redeploy reserves and launch attacks — ISW",
-        "ru": "Перемирие с РФ: враг использовал «паузу» для переброски резервов и атак — ISW"
+        "uk": "Україна отримує незалежність для ударів по Росії",
+        "en": "Ukraine gains autonomy for strikes against Russia",
+        "ru": "Украина получает независимость для ударов по России"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/76048",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-05-13T15:45:00.000Z",
+      "url": "https://24tv.ua/vtrati-voroga-zbilshuyutsya-sirskiy-zayaviv-shho-rosiya-vtrachaye_n3071485",
+      "domain": "24tv.ua",
+      "seenAt": "2026-05-20T13:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/aa212d166108c9b0.webp",
-      "original": "Kremlin Demands Ukraine Leave Donbas Before Talks Can Start",
+      "image": "/news/03a4528c0d59b7c9.webp",
+      "original": "Втрати ворога збільшуються - Сирський заявив , що Росія втрачає більше солдатів , ніж мобілізує",
       "title": {
-        "uk": "Кремль вимагає від України залишити Донбас до початку переговорів",
-        "en": "Kremlin demands Ukraine leave Donbas before talks can start",
-        "ru": "Кремль требует от Украины покинуть Донбасс до начала переговоров"
+        "uk": "Втрати ворога збільшуються — Сирський заявив, що Росія втрачає більше солдатів, ніж мобілізує",
+        "en": "Enemy losses growing — Syrsky says Russia is losing more soldiers than it mobilises",
+        "ru": "Потери врага растут — Сырский заявил, что Россия теряет больше солдат, чем мобилизует"
       }
     },
     {
-      "url": "https://www.radiosvoboda.org/a/news-isw-putin-tramp/33745916.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-04-30T11:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/ccf36a8873f19e53.webp",
-      "original": "ISW : Путін у розмові з Трампом намагався переконати його змусити Україну до капітуляції",
-      "title": {
-        "uk": "ISW: Путін у розмові з Трампом намагався переконати його змусити Україну до капітуляції",
-        "en": "ISW: Putin tried to convince Trump in their call to force Ukraine into capitulation",
-        "ru": "ISW: Путин в разговоре с Трампом пытался убедить его заставить Украину капитулировать"
-      }
-    },
-    {
-      "url": "https://www.seattletimes.com/nation-world/world/iran-war-deflects-attention-from-ukraine-as-an-emboldened-russia-starts-spring-offensive/",
-      "domain": "seattletimes.com",
-      "seenAt": "2026-03-26T06:45:00.000Z",
+      "url": "https://www.cnn.com/2026/05/20/politics/russia-losing-ukraine-mcgurk-analysis",
+      "domain": "cnn.com",
+      "seenAt": "2026-05-20T04:45:00.000Z",
       "sourceCountry": "United States",
-      "original": "Iran war deflects attention from Ukraine as an emboldened Russia starts spring offensive",
+      "image": "/news/5216435fb824b68b.webp",
+      "original": "Russia is losing in Ukraine . Xi has noticed Trump should too",
       "title": {
-        "uk": "Війна з Іраном відволікає увагу від України, поки посміліла Росія розпочинає весняний наступ",
-        "en": "Iran war deflects attention from Ukraine as an emboldened Russia starts spring offensive",
-        "ru": "Война с Ираном отвлекает внимание от Украины, пока Россия начинает весеннее наступление"
+        "uk": "Росія програє в Україні. Сі це помітив — Трамп теж повинен",
+        "en": "Russia is losing in Ukraine. Xi has noticed — Trump should too",
+        "ru": "Россия проигрывает в Украине. Си это заметил — Трамп тоже должен"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/75870",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-05-11T12:30:00.000Z",
+      "url": "https://www.volynnews.com/news/all/u-kremli-hotuiut-rosiian-do-zavershennia-viyny-bez-velykoyi-peremohy-The-Telegraph-/",
+      "domain": "volynnews.com",
+      "seenAt": "2026-05-19T15:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/c392641373fb6a50.webp",
-      "original": "Turning Point in Ukraine ? Kyiv Seizes Initiative as Russia Falters on Battlefield",
+      "image": "/news/c2a368ac68d98d3b.webp",
+      "original": "У Кремлі готують росіян до завершення війни без « великої перемоги », – The Telegraph",
       "title": {
-        "uk": "Переломний момент в Україні? Київ перехоплює ініціативу, поки Росія пробуксовує на полі бою",
-        "en": "Turning point in Ukraine? Kyiv seizes initiative as Russia falters on the battlefield",
-        "ru": "Перелом на Украине? Киев перехватывает инициативу, пока Россия буксует на поле боя"
+        "uk": "У Кремлі готують росіян до завершення війни без «великої перемоги» — The Telegraph",
+        "en": "Kremlin is preparing Russians for the end of the war without a \"great victory\" — The Telegraph",
+        "ru": "В Кремле готовят россиян к завершению войны без «великой победы» — The Telegraph"
       }
     },
     {
-      "url": "https://fakti.bg/world/1053071-isw-iztekli-dokumenti-pokazaha-viziata-na-rusia-sled-kraa-na-voinata",
-      "domain": "fakti.bg",
-      "seenAt": "2026-05-08T07:00:00.000Z",
-      "sourceCountry": "Bulgaria",
-      "image": "/news/9b798090213488c8.webp",
-      "original": "ISW : Изтекли документи показаха визията на Русия след края на войната ᐉ Новини от Fakti . bg - Свят",
+      "url": "https://pt.euronews.com/2026/05/20/china-treina-em-segredo-militares-russos-para-guerra-na-ucrania",
+      "domain": "pt.euronews.com",
+      "seenAt": "2026-05-20T10:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/b7d399643f89a452.webp",
+      "original": "China treina em segredo militares russos para guerra na Ucrânia",
       "title": {
-        "uk": "ISW: витік документів розкрив бачення Росії щодо ситуації після закінчення війни",
-        "en": "ISW: leaked documents revealed Russia's vision for after the war ends",
-        "ru": "ISW: утечка документов раскрыла видение России относительно ситуации после окончания войны"
+        "uk": "Китай таємно тренує російських військових для війни в Україні",
+        "en": "China secretly training Russian military personnel for the war in Ukraine",
+        "ru": "Китай тайно тренирует российских военных для войны в Украине"
       }
     },
     {
-      "url": "https://www.khaama.com/trump-says-russia-ukraine-ceasefire-may-be-extended/",
-      "domain": "khaama.com",
-      "seenAt": "2026-05-09T06:00:00.000Z",
-      "sourceCountry": "Afghanistan",
-      "image": "/news/308277ed970e3731.webp",
-      "original": "Trump says Russia - Ukraine ceasefire may be extended",
+      "url": "https://www.straitstimes.com/business/economy/russias-economy-posts-first-quarterly-decline-in-three-years",
+      "domain": "straitstimes.com",
+      "seenAt": "2026-05-15T18:45:00.000Z",
+      "sourceCountry": "Singapore",
+      "image": "/news/0962034d4f26dc47.webp",
+      "original": "Russia economy posts first quarterly decline in three years",
       "title": {
-        "uk": "Трамп заявив, що перемир'я між Росією та Україною може бути продовжено",
-        "en": "Trump says Russia-Ukraine ceasefire may be extended",
-        "ru": "Трамп заявил, что перемирие между Россией и Украиной может быть продлено"
+        "uk": "Економіка Росії фіксує перший квартальний спад за три роки",
+        "en": "Russia's economy posts first quarterly decline in three years",
+        "ru": "Экономика России фиксирует первый квартальный спад за три года"
       }
     }
   ]

@@ -24,14 +24,25 @@ const BASE = 'https://api.gdeltproject.org/api/v2/doc/doc';
 // English-leaning, but we no longer exclude other matches.)
 const QUERY = '(Ukraine OR Russia) (war OR military OR offensive OR ceasefire)';
 
+// Restrict the candidate pool to the recent window. Without a timespan, GDELT
+// searches ~3 months and `hybridrel` relevance favours older, heavily-covered
+// stories — so the pool (and the picks) skewed weeks stale even though fresh
+// coverage exists. A 7-day window keeps candidates recent AND lets relevance
+// surface the salient ones; it matches the weekly brief's span. (Verified live
+// 2026-05-22: 7d → ~200 articles spread evenly across the last week.)
+const NEWS_WINDOW = '7d';
+
 /** Build a fully percent-encoded GDELT artlist URL (spaces => %20). */
 function buildUrl(maxRecords: number): string {
   const qs = [
     ['query', QUERY],
     ['mode', 'artlist'],
     ['maxrecords', String(maxRecords)],
-    // Relevance ranking ("best"), not freshest, so the pool is salient rather
-    // than just the latest 15-minute batch.
+    // Recent window only — see NEWS_WINDOW. Combined with relevance ranking
+    // below, the pool is both fresh and salient (not weeks-stale, not just the
+    // latest 15-minute batch).
+    ['timespan', NEWS_WINDOW],
+    // Relevance ranking ("best") within the window, not pure freshness.
     ['sort', 'hybridrel'],
     ['format', 'json'],
   ]

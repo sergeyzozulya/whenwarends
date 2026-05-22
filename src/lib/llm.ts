@@ -291,6 +291,7 @@ function newsSelectionSystem(count: number): string {
 From the supplied candidate articles, choose the ${count} most useful for a reader tracking the war's trajectory and the question of when it ends. Then translate each chosen title into Ukrainian, English, and Russian.
 
 Selection rules:
+- Prefer recent reporting. Each candidate line is tagged with its publication date (YYYY-MM-DD) and the pool already covers roughly the past week; favour the freshest substantive stories, and choose an older item only when it is a genuinely major development still unfolding. Do not pick a stale story when comparable fresher coverage is present.
 - Prefer substantive, credible reporting on the war and directly related diplomacy, economy, sanctions, or front-line developments. Drop off-topic, clickbait, thin-opinion, or duplicate items.
 - Treat near-duplicates as one: if several candidates cover the same event (including the same story across different outlets or languages), keep only the single best and skip the rest.
 - Favour a diversity of outlets and angles over many takes on one story.
@@ -308,14 +309,15 @@ Return only structured output: the chosen articles as { index (0-based, into the
 function buildNewsUserContent(candidates: NewsArticle[], count: number): string {
   const list = candidates
     .map((c, i) => {
+      const date = c.seenAt ? c.seenAt.slice(0, 10) : 'date unknown';
       const meta = [c.domain, c.sourceCountry, c.language]
         .filter(Boolean)
         .join(' · ');
-      return `[${i}] ${c.title}${meta ? ` — ${meta}` : ''}`;
+      return `[${i}] (${date}) ${c.title}${meta ? ` — ${meta}` : ''}`;
     })
     .join('\n');
   return [
-    `Candidate articles (${candidates.length}); each line is "[index] title — domain · country · language":`,
+    `Candidate articles (${candidates.length}); each line is "[index] (YYYY-MM-DD) title — domain · country · language":`,
     '',
     list,
     '',

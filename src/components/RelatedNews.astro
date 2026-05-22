@@ -46,14 +46,23 @@ function formatSeen(iso: string): string | null {
   return Number.isNaN(d.getTime()) ? null : dateFmt.format(d);
 }
 
-const items = articles.map((a) => ({
-  title: a.title[lang] || a.original,
-  url: a.url,
-  domain: a.domain,
-  seen: formatSeen(a.seenAt),
-  image: a.image,
-  flagged: a.flagged === true,
-}));
+// Show newest first. The selection pass returns "most salient" order, which
+// mixes dates; for a "this week" column, recency is the natural reading order.
+// Undated entries (rare) sink to the bottom; ties keep their incoming order.
+function seenMs(iso: string): number {
+  const t = iso ? new Date(iso).getTime() : NaN;
+  return Number.isNaN(t) ? -Infinity : t;
+}
+const items = [...articles]
+  .sort((a, b) => seenMs(b.seenAt) - seenMs(a.seenAt))
+  .map((a) => ({
+    title: a.title[lang] || a.original,
+    url: a.url,
+    domain: a.domain,
+    seen: formatSeen(a.seenAt),
+    image: a.image,
+    flagged: a.flagged === true,
+  }));
 ---
 
 <div aria-labelledby="related-news-heading">
