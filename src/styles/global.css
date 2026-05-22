@@ -114,8 +114,8 @@
 .chart-skeleton-line-wrap {
   overflow: hidden;
   width: 100%;
-  max-width: 280px;
-  height: 48px;
+  max-width: 140px;
+  height: 24px;
   /* Fade the flowing line out at the left and right edges. */
   -webkit-mask-image: linear-gradient(
     to right,
