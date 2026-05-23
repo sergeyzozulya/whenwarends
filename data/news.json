@@ -1,31 +1,30 @@
 {
-  "asOf": "2026-05-22",
+  "asOf": "2026-05-23",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://news.liga.net/war/news/bloomberg-pishet-chto-putin-hochet-zakonchit-voinu-v-etom-godu-no-peskov-govorit-dedlainov-net",
-      "domain": "news.liga.net",
-      "seenAt": "2026-05-22T08:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/ca1a94a80e29758d.webp",
-      "original": "Путин заговорил об окончании войны – Bloomberg | Новости Украины",
+      "url": "https://foreignpolicy.com/2026/05/18/ukraine-russia-war-strategy-attack/",
+      "domain": "foreignpolicy.com",
+      "seenAt": "2026-05-19T00:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/57f3458aa3666ce7.webp",
+      "original": "Ukraine Has a New War Strategy Against Russia and It Working",
       "title": {
-        "uk": "Путін заговорив про закінчення війни — Bloomberg",
-        "en": "Putin spoke about ending the war — Bloomberg",
-        "ru": "Путин заговорил об окончании войны — Bloomberg"
+        "uk": "Україна має нову воєнну стратегію проти Росії, і вона спрацьовує",
+        "en": "Ukraine has a new war strategy against Russia and it's working",
+        "ru": "У Украины есть новая военная стратегия против России, и она работает"
       }
     },
     {
-      "url": "https://www.euronews.com/my-europe/2026/05/22/lukashenka-offers-to-meet-zelenskyy-as-ukraine-warns-of-russias-new-offensive-through-bela",
-      "domain": "euronews.com",
-      "seenAt": "2026-05-22T11:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/d530275d4815a877.webp",
-      "original": "Lukashenka offers to meet Zelenskyy as Ukraine warns of Russia new offensive through Belarus",
+      "url": "https://glavcom.ua/country/incidents/najbilshi-uspikhi-z-chasiv-kurskoji-operatsiji-ukrajina-vidnovljuje-initsiativu-na-fronti-isw-1120877.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-05-21T06:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Найбільші успіхи з часів курської операції . Україна відновлює ініціативу на фронті – ISW",
       "title": {
-        "uk": "Лукашенко пропонує зустріч із Зеленським, оскільки Україна попереджає про новий наступ Росії через Білорусь",
-        "en": "Lukashenka offers to meet Zelenskyy as Ukraine warns of Russia's new offensive through Belarus",
-        "ru": "Лукашенко предлагает встретиться с Зеленским, поскольку Украина предупреждает о новом наступлении России через Беларусь"
+        "uk": "Найбільші успіхи з часів Курської операції: Україна відновлює ініціативу на фронті — ISW",
+        "en": "Biggest gains since the Kursk operation: Ukraine reclaims initiative on the front — ISW",
+        "ru": "Крупнейшие успехи со времён Курской операции: Украина восстанавливает инициативу на фронте — ISW"
       }
     },
     {
@@ -37,8 +36,21 @@
       "original": "Пентагон заявив про повернення Україною значних територій після блокування Starlink для РФ",
       "title": {
         "uk": "Пентагон заявив про повернення Україною значних територій після блокування Starlink для РФ",
-        "en": "Pentagon says Ukraine recaptured significant territory after Starlink was blocked for Russia",
+        "en": "Pentagon says Ukraine has reclaimed significant territories after Starlink was blocked for Russian forces",
         "ru": "Пентагон заявил о возвращении Украиной значительных территорий после блокировки Starlink для РФ"
+      }
+    },
+    {
+      "url": "https://www.euronews.com/my-europe/2026/05/22/lukashenka-offers-to-meet-zelenskyy-as-ukraine-warns-of-russias-new-offensive-through-bela",
+      "domain": "euronews.com",
+      "seenAt": "2026-05-22T11:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/d530275d4815a877.webp",
+      "original": "Lukashenka offers to meet Zelenskyy as Ukraine warns of Russia new offensive through Belarus",
+      "title": {
+        "uk": "Лукашенко пропонує зустріч із Зеленським, Україна попереджає про новий наступ Росії через Білорусь",
+        "en": "Lukashenko offers to meet Zelenskyy as Ukraine warns of Russia's new offensive through Belarus",
+        "ru": "Лукашенко предлагает встречу с Зеленским, Украина предупреждает о новом наступлении России через Беларусь"
       }
     },
     {
@@ -48,21 +60,34 @@
       "sourceCountry": "United States",
       "original": "Something big taking place : Why has Russia sent more nukes to Belarus ? | Russia - Ukraine war News",
       "title": {
-        "uk": "«Щось велике відбувається»: чому Росія відправила більше ядерної зброї до Білорусі?",
-        "en": "\"Something big is taking place\": Why has Russia sent more nuclear weapons to Belarus?",
-        "ru": "«Происходит что-то серьёзное»: почему Россия отправила больше ядерного оружия в Беларусь?"
+        "uk": "«Відбувається щось велике»: чому Росія направила більше ядерної зброї до Білорусі?",
+        "en": "\"Something big is taking place\": why has Russia sent more nukes to Belarus?",
+        "ru": "«Происходит что-то большое»: почему Россия направила больше ядерного оружия в Беларусь?"
       }
     },
     {
-      "url": "https://glavcom.ua/country/incidents/najbilshi-uspikhi-z-chasiv-kurskoji-operatsiji-ukrajina-vidnovljuje-initsiativu-na-fronti-isw-1120877.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-05-21T06:30:00.000Z",
+      "url": "https://gordonua.com/ukr/section-war/news-putin-khoche-zavershyty-viynu-do-kintsya-roku-ale-na-peremozhnykh-umovakh-zmi-22-05-2026.html",
+      "domain": "gordonua.com",
+      "seenAt": "2026-05-22T13:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Найбільші успіхи з часів курської операції . Україна відновлює ініціативу на фронті – ISW",
+      "original": "Путін хоче завершити війну до кінця року , але на  переможних  умовах – ЗМІ",
       "title": {
-        "uk": "Найбільші успіхи з часів курської операції: Україна відновлює ініціативу на фронті — ISW",
-        "en": "Ukraine's biggest gains since the Kursk operation: Ukraine reclaims front-line initiative — ISW",
-        "ru": "Наибольшие успехи со времён Курской операции: Украина восстанавливает инициативу на фронте — ISW"
+        "uk": "Путін хоче завершити війну до кінця року, але на «переможних» умовах — ЗМІ",
+        "en": "Putin wants to end the war by year's end, but on \"victorious\" terms — media",
+        "ru": "Путин хочет завершить войну до конца года, но на «победных» условиях — СМИ"
+      }
+    },
+    {
+      "url": "https://www.cnn.com/2026/05/20/politics/russia-losing-ukraine-mcgurk-analysis",
+      "domain": "cnn.com",
+      "seenAt": "2026-05-20T04:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/5216435fb824b68b.webp",
+      "original": "Russia is losing in Ukraine . Xi has noticed Trump should too",
+      "title": {
+        "uk": "Росія програє в Україні. Сі це помітив — Трамп теж мав би",
+        "en": "Russia is losing in Ukraine. Xi has noticed — Trump should too",
+        "ru": "Россия проигрывает в Украине. Си это заметил — Трамп тоже должен"
       }
     },
     {
@@ -75,46 +100,19 @@
       "title": {
         "uk": "Україна заявила, що її дрони вразили ще один нафтопереробний завод у глибині Росії на тлі ескалації далекобійних ударів",
         "en": "Ukraine says its drones hit another refinery deep inside Russia as long-range strikes escalate",
-        "ru": "Украина заявила, что её дроны поразили ещё один нефтеперерабатывающий завод вглубь России на фоне эскалации дальних ударов"
+        "ru": "Украина сообщила, что её дроны поразили ещё один нефтеперерабатывающий завод в глубине России на фоне эскалации дальнобойных ударов"
       }
     },
     {
-      "url": "https://www.cnn.com/2026/05/20/politics/russia-losing-ukraine-mcgurk-analysis",
-      "domain": "cnn.com",
-      "seenAt": "2026-05-20T04:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/5216435fb824b68b.webp",
-      "original": "Russia is losing in Ukraine . Xi has noticed Trump should too",
+      "url": "https://www.5.ua/svit/ssha-zaklykaly-do-nehainoho-prypynennia-vohniu-u-viini-rf-proty-ukrainy-376713.html",
+      "domain": "5.ua",
+      "seenAt": "2026-05-23T09:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "США закликали до негайного припинення вогню у війні рф проти України",
       "title": {
-        "uk": "Росія програє в Україні. Сі це помітив — Трамп теж повинен",
-        "en": "Russia is losing in Ukraine. Xi has noticed — Trump should too",
-        "ru": "Россия проигрывает в Украине. Си заметил — Трамп тоже должен"
-      }
-    },
-    {
-      "url": "https://pt.euronews.com/2026/05/20/china-treina-em-segredo-militares-russos-para-guerra-na-ucrania",
-      "domain": "pt.euronews.com",
-      "seenAt": "2026-05-20T10:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/b7d399643f89a452.webp",
-      "original": "China treina em segredo militares russos para guerra na Ucrânia",
-      "title": {
-        "uk": "Китай таємно навчає російських військових для війни в Україні",
-        "en": "China secretly trains Russian military personnel for the war in Ukraine",
-        "ru": "Китай тайно обучает российских военных для войны в Украине"
-      }
-    },
-    {
-      "url": "https://www.straitstimes.com/business/economy/russias-economy-posts-first-quarterly-decline-in-three-years",
-      "domain": "straitstimes.com",
-      "seenAt": "2026-05-15T18:45:00.000Z",
-      "sourceCountry": "Singapore",
-      "image": "/news/0962034d4f26dc47.webp",
-      "original": "Russia economy posts first quarterly decline in three years",
-      "title": {
-        "uk": "Економіка Росії зафіксувала перший квартальний спад за три роки",
-        "en": "Russia's economy posts first quarterly decline in three years",
-        "ru": "Экономика России зафиксировала первый квартальный спад за три года"
+        "uk": "США закликали до негайного припинення вогню у війні РФ проти України",
+        "en": "US calls for immediate ceasefire in Russia's war against Ukraine",
+        "ru": "США призвали к немедленному прекращению огня в войне РФ против Украины"
       }
     },
     {
@@ -125,9 +123,9 @@
       "image": "/news/b325b24b47ba956f.webp",
       "original": "Very difficult choice : Putin running out of options in Ukraine as war stalls , says Estonia intel chief",
       "title": {
-        "uk": "«Дуже складний вибір»: Путін вичерпує варіанти в Україні через застій у війні, вважає голова естонської розвідки",
+        "uk": "«Дуже важкий вибір»: Путін вичерпує варіанти в Україні, поки війна заходить у глухий кут, — голова естонської розвідки",
         "en": "\"Very difficult choice\": Putin running out of options in Ukraine as war stalls, says Estonia intel chief",
-        "ru": "«Очень сложный выбор»: Путин исчерпывает варианты в Украине на фоне застоя войны, считает глава эстонской разведки"
+        "ru": "«Очень сложный выбор»: у Путина заканчиваются варианты в Украине по мере того, как война заходит в тупик, — глава эстонской разведки"
       }
     }
   ]
