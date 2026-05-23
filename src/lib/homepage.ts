@@ -212,6 +212,11 @@ const HISTORY_SPECS: { key: string; metric: string; source?: string }[] = [
   { key: 'ruLoss', metric: 'ru_equipment_losses', source: 'oryx' },
   { key: 'uaLoss', metric: 'ua_equipment_losses', source: 'oryx' },
   { key: 'aid', metric: 'aid_allocated_cumulative_eur', source: 'kiel' },
+  { key: 'oil', metric: 'oil_brent_usd', source: 'eia' },
+  { key: 'front', metric: 'occupied_area_km2', source: 'deepstate' },
+  { key: 'revenue', metric: 'ru_fossil_revenue_eur_cumulative', source: 'crea' },
+  { key: 'refugees', metric: 'refugees_from_ukraine', source: 'unhcr' },
+  { key: 'idps', metric: 'ua_idps', source: 'unhcr' },
   { key: 'prob', metric: 'war_end_probability' }, // mean across sources/ts
 ];
 

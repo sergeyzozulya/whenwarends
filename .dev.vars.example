@@ -7,6 +7,11 @@
 # NASA FIRMS area-API MAP_KEY (free: https://firms.modaps.eosdis.nasa.gov/api/area/)
 FIRMS_MAP_KEY=your-firms-map-key
 
+# U.S. EIA Open Data API key (free: https://www.eia.gov/opendata/register.php)
+# Powers the daily Brent crude oil widget. Without it the oil collector fails
+# in isolation (never fabricates a price).
+EIA_API_KEY=your-eia-api-key
+
 # Optional: URL of the Kiel Ukraine Support Tracker .xlsx workbook. The URL
 # rotates each release (embeds Release_NN + a UUID); update it per release.
 # Without it the kiel widget fails in isolation (never fabricates data).

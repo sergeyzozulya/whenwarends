@@ -1,0 +1,159 @@
+---
+// Privacy — what the site collects, what it doesn't, and who processes it.
+// Trilingual, content-mapped (same pattern as about/methodology).
+import Layout from '@/layouts/Layout.astro';
+import { getTranslation } from '@i18n/index';
+import type { Lang } from '@lib/types';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined } },
+    { params: { lang: 'uk' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+const lang = (Astro.params.lang ?? 'en') as Lang;
+const t = (key: string) => getTranslation(lang, key);
+
+interface Block {
+  h: string;
+  p: string[];
+}
+interface Page {
+  lede: string;
+  blocks: Block[];
+}
+
+const CONTENT: Record<Lang, Page> = {
+  en: {
+    lede: "What this site collects, what it doesn't, and who processes it. The short version: no cookies, no accounts, no advertising, and no tracking of you across sites.",
+    blocks: [
+      {
+        h: 'What we collect',
+        p: [
+          "Nothing that identifies you personally is needed to read this site. We don't ask you to log in, we set no advertising or tracking cookies, and we never sell or share data. We keep only two things: anonymous, aggregate traffic statistics, and any message you choose to email us.",
+        ],
+      },
+      {
+        h: "Analytics, and why there's no cookie banner",
+        p: [
+          'We measure visits with two cookieless tools — Cloudflare Web Analytics and Google Analytics. Neither sets a cookie or a persistent identifier on your device, neither follows you across other websites, and both report only coarse, aggregate figures: page views, approximate country, referrer, and browser type.',
+          'Google Analytics runs with Consent Mode set to denied, so it sends only cookieless, aggregated signals rather than identifying pings. Because nothing is stored on your device and no personal profile is built, there is no cookie banner to dismiss.',
+        ],
+      },
+      {
+        h: 'Who processes the data',
+        p: [
+          'Cloudflare hosts the site and provides Cloudflare Web Analytics, processing traffic data without personal identifiers. Google processes the Google Analytics signals; your IP address is used momentarily to estimate approximate location and is not retained by us. Both are third-party processors with their own privacy terms.',
+        ],
+      },
+      {
+        h: 'If you email us',
+        p: [
+          'When you write to hello@whenwarends.org we receive your email address and message so we can reply. We use them only to respond, keep them no longer than needed, and never add you to a mailing list.',
+        ],
+      },
+      {
+        h: 'Your data, and changes',
+        p: [
+          "No accounts, no ads, no cross-site tracking, no data brokering. If you'd like the little we hold (an email exchange) removed, write to us and we'll delete it. This project is non-commercial and open source under CC BY 4.0; material changes to this notice are recorded in the changelog.",
+        ],
+      },
+    ],
+  },
+  uk: {
+    lede: 'Що цей сайт збирає, чого не збирає і хто обробляє дані. Коротко: без кук, без акаунтів, без реклами й без стеження за вами між сайтами.',
+    blocks: [
+      {
+        h: 'Що ми збираємо',
+        p: [
+          'Щоб читати цей сайт, не потрібні жодні дані, які вас ідентифікують. Ми не просимо входити в акаунт, не встановлюємо рекламних чи стежних кук і ніколи не продаємо й не передаємо дані. Ми зберігаємо лише дві речі: анонімну агреговану статистику відвідувань і будь-яке повідомлення, яке ви надішлете нам електронною поштою.',
+        ],
+      },
+      {
+        h: 'Аналітика й чому немає банера про куки',
+        p: [
+          'Ми вимірюємо відвідування двома інструментами без кук — Cloudflare Web Analytics і Google Analytics. Жоден не встановлює куки чи постійний ідентифікатор на вашому пристрої, жоден не стежить за вами на інших сайтах, і обидва повідомляють лише грубі агреговані показники: перегляди сторінок, приблизну країну, джерело переходу й тип браузера.',
+          'Google Analytics працює з Consent Mode у стані «denied», тож надсилає лише агреговані сигнали без кук, а не ідентифікаційні запити. Оскільки на вашому пристрої нічого не зберігається й персональний профіль не будується, банера про куки немає.',
+        ],
+      },
+      {
+        h: 'Хто обробляє дані',
+        p: [
+          'Cloudflare розміщує сайт і надає Cloudflare Web Analytics, обробляючи дані трафіку без персональних ідентифікаторів. Google обробляє сигнали Google Analytics; вашу IP-адресу використовують миттєво для оцінки приблизного розташування, і ми її не зберігаємо. Обидва — сторонні обробники з власними умовами конфіденційності.',
+        ],
+      },
+      {
+        h: 'Якщо ви нам пишете',
+        p: [
+          'Коли ви пишете на hello@whenwarends.org, ми отримуємо вашу електронну адресу й повідомлення, щоб відповісти. Ми використовуємо їх лише для відповіді, зберігаємо не довше, ніж потрібно, і ніколи не додаємо вас до розсилки.',
+        ],
+      },
+      {
+        h: 'Ваші дані та зміни',
+        p: [
+          'Без акаунтів, без реклами, без міжсайтового стеження, без торгівлі даними. Якщо хочете, щоб ми видалили те небагато, що зберігаємо (листування), напишіть нам — і ми видалимо. Проєкт некомерційний і з відкритим кодом за CC BY 4.0; суттєві зміни цього повідомлення фіксуються в історії змін.',
+        ],
+      },
+    ],
+  },
+  ru: {
+    lede: 'Что этот сайт собирает, чего не собирает и кто обрабатывает данные. Коротко: без кук, без аккаунтов, без рекламы и без слежки за вами между сайтами.',
+    blocks: [
+      {
+        h: 'Что мы собираем',
+        p: [
+          'Чтобы читать этот сайт, не нужны никакие данные, которые вас идентифицируют. Мы не просим входить в аккаунт, не устанавливаем рекламных или следящих кук и никогда не продаём и не передаём данные. Мы храним лишь две вещи: анонимную агрегированную статистику посещений и любое сообщение, которое вы отправите нам по электронной почте.',
+        ],
+      },
+      {
+        h: 'Аналитика и почему нет баннера о куках',
+        p: [
+          'Мы измеряем посещения двумя инструментами без кук — Cloudflare Web Analytics и Google Analytics. Ни один не устанавливает куки или постоянный идентификатор на вашем устройстве, ни один не следит за вами на других сайтах, и оба сообщают только грубые агрегированные показатели: просмотры страниц, приблизительную страну, источник перехода и тип браузера.',
+          'Google Analytics работает с Consent Mode в состоянии «denied», поэтому отправляет лишь агрегированные сигналы без кук, а не идентифицирующие запросы. Поскольку на вашем устройстве ничего не хранится и персональный профиль не строится, баннера о куках нет.',
+        ],
+      },
+      {
+        h: 'Кто обрабатывает данные',
+        p: [
+          'Cloudflare размещает сайт и предоставляет Cloudflare Web Analytics, обрабатывая данные трафика без персональных идентификаторов. Google обрабатывает сигналы Google Analytics; ваш IP-адрес используется мгновенно для оценки приблизительного местоположения и нами не сохраняется. Оба — сторонние обработчики со своими условиями конфиденциальности.',
+        ],
+      },
+      {
+        h: 'Если вы нам пишете',
+        p: [
+          'Когда вы пишете на hello@whenwarends.org, мы получаем ваш адрес электронной почты и сообщение, чтобы ответить. Мы используем их только для ответа, храним не дольше, чем нужно, и никогда не добавляем вас в рассылку.',
+        ],
+      },
+      {
+        h: 'Ваши данные и изменения',
+        p: [
+          'Без аккаунтов, без рекламы, без межсайтовой слежки, без торговли данными. Если хотите, чтобы мы удалили то немногое, что храним (переписку), напишите нам — и мы удалим. Проект некоммерческий и с открытым кодом по CC BY 4.0; существенные изменения этого уведомления фиксируются в истории изменений.',
+        ],
+      },
+    ],
+  },
+};
+
+const c = CONTENT[lang];
+---
+
+<Layout lang={lang} title={t('common.privacy')}>
+  <article class="max-w-2xl space-y-10">
+    <header class="space-y-2">
+      <h1 class="text-[22px] font-medium">{t('common.privacy')}</h1>
+      <p class="text-[16px] text-gray-600">{c.lede}</p>
+    </header>
+    {
+      c.blocks.map((b) => (
+        <section class="space-y-3">
+          <h2 class="text-[18px] font-medium">{b.h}</h2>
+          {b.p.map((para) => (
+            <p class="text-[16px]">{para}</p>
+          ))}
+        </section>
+      ))
+    }
+  </article>
+</Layout>

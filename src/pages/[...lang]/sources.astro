@@ -123,6 +123,46 @@ const FEEDS: Source[] = [
       ru: 'Визуально подтверждённые, привязанные к фото потери техники России и Украины (накопительно). Потери личного состава намеренно не показываем — нейтрального источника нет.',
     },
   },
+  {
+    name: 'DeepState',
+    url: 'https://deepstatemap.live',
+    license: 'Ukrainian OSINT — derived area only',
+    use: {
+      en: 'Russian-occupied area of Ukraine (km²), from the daily map. We store only the derived area figure, never the geometry, and label it Ukrainian OSINT.',
+      uk: 'Окупована Росією площа України (км²) з щоденної карти. Зберігаємо лише обчислене число площі, не геометрію, і позначаємо як українську OSINT-розвідку.',
+      ru: 'Оккупированная Россией площадь Украины (км²) из ежедневной карты. Храним только вычисленное число площади, не геометрию, и помечаем как украинскую OSINT-разведку.',
+    },
+  },
+  {
+    name: 'U.S. EIA (Energy Information Administration)',
+    url: 'https://www.eia.gov/opendata/',
+    license: 'Public domain (US gov)',
+    use: {
+      en: 'Daily Brent crude oil spot price — a neutral benchmark for the export revenue that funds Russia’s war.',
+      uk: 'Щоденна спотова ціна нафти Brent — нейтральний орієнтир для експортних доходів, що фінансують війну Росії.',
+      ru: 'Дневная спотовая цена нефти Brent — нейтральный ориентир для экспортных доходов, финансирующих войну России.',
+    },
+  },
+  {
+    name: 'CREA Russia Fossil Tracker',
+    url: 'https://www.russiafossiltracker.com',
+    license: 'CC BY 4.0',
+    use: {
+      en: 'Cumulative euros paid to Russia for oil, gas and coal exports since the invasion — the mirror image of aid to Ukraine.',
+      uk: 'Сукупні євро, сплачені Росії за експорт нафти, газу й вугілля від початку вторгнення — дзеркало допомоги Україні.',
+      ru: 'Совокупные евро, уплаченные России за экспорт нефти, газа и угля с начала вторжения — зеркало помощи Украине.',
+    },
+  },
+  {
+    name: 'UNHCR Refugee Data Finder',
+    url: 'https://www.unhcr.org/refugee-statistics/',
+    license: 'CC BY 4.0',
+    use: {
+      en: 'Ukrainians displaced by the war — refugees recorded abroad and internally displaced persons inside Ukraine — annual.',
+      uk: 'Українці, переміщені війною — біженці, зареєстровані за кордоном, і внутрішньо переміщені особи в Україні — щороку.',
+      ru: 'Украинцы, перемещённые войной — беженцы, зарегистрированные за рубежом, и внутренне перемещённые лица внутри Украины — ежегодно.',
+    },
+  },
 ];
 
 

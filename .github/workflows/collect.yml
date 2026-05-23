@@ -41,6 +41,7 @@ jobs:
         run: SKIP_DOWNSTREAM=1 npm run collect
         env:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
           KIEL_DATASET_URL: ${{ secrets.KIEL_DATASET_URL }}
           # Manifold needs no key; MANIFOLD_MARKET_ID is optional operator
           # config (defaults baked into the collector).

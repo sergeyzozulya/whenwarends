@@ -19,9 +19,19 @@ const segs = Astro.url.pathname.split('/').filter(Boolean);
 const rest = (lang === 'en' ? segs : segs.slice(1)).join('/');
 const hrefFor = (l: Lang): string => localizedPath(l, rest ? `/${rest}` : '');
 const homeHref = localizedPath(lang);
+
+// Masthead page nav. `currentSlug` marks the active page (empty on home).
+const currentSlug = rest.split('/')[0];
+const PAGES: { slug: string; label: string }[] = [
+  { slug: 'about', label: t('common.about') },
+  { slug: 'methodology', label: t('common.methodology') },
+  { slug: 'sources', label: t('common.sources') },
+];
 ---
 
-<header class="border-b border-[var(--color-line)]">
+<header
+  class="sticky top-0 z-50 border-b border-[var(--color-line)] bg-[var(--color-bg)]"
+>
   <div
     class="mx-auto flex max-w-[1180px] items-center justify-between px-6 py-4 sm:px-12"
   >
@@ -37,31 +47,54 @@ const homeHref = localizedPath(lang);
       </span>
     </a>
 
-    <nav
-      aria-label={t('common.language')}
-      class="inline-flex overflow-hidden rounded-[3px] border border-[#e3e6ea] text-[13px]"
-    >
-      {
-        LANGS.map((l, i) =>
-          l === lang ? (
-            <span
-              aria-current="true"
-              class={`bg-[#eef1f5] px-2.5 py-1 text-[var(--color-ink)] ${i > 0 ? 'border-l border-[#e3e6ea]' : ''}`}
-            >
-              {LABEL[l]}
-            </span>
-          ) : (
+    <div class="flex items-center gap-3 sm:gap-5">
+      <nav
+        aria-label={t('common.menu')}
+        class="hidden items-center gap-4 text-[13px] sm:flex"
+      >
+        {
+          PAGES.map((p) => (
             <a
-              href={hrefFor(l)}
-              hreflang={l}
-              data-set-lang={l}
-              class={`px-2.5 py-1 text-[var(--color-muted)] hover:bg-[#f1f3f6] hover:text-[var(--color-ink)] hover:no-underline ${i > 0 ? 'border-l border-[#e3e6ea]' : ''}`}
+              href={localizedPath(lang, `/${p.slug}`)}
+              aria-current={currentSlug === p.slug ? 'page' : undefined}
+              class={`hover:no-underline ${
+                currentSlug === p.slug
+                  ? 'font-medium text-[var(--color-ink)]'
+                  : 'text-[var(--color-muted)] hover:text-[var(--color-accent)]'
+              }`}
             >
-              {LABEL[l]}
+              {p.label}
             </a>
+          ))
+        }
+      </nav>
+
+      <nav
+        aria-label={t('common.language')}
+        class="inline-flex overflow-hidden rounded-[3px] border border-[#e3e6ea] text-[13px]"
+      >
+        {
+          LANGS.map((l, i) =>
+            l === lang ? (
+              <span
+                aria-current="true"
+                class={`bg-[#eef1f5] px-2.5 py-1 text-[var(--color-ink)] ${i > 0 ? 'border-l border-[#e3e6ea]' : ''}`}
+              >
+                {LABEL[l]}
+              </span>
+            ) : (
+              <a
+                href={hrefFor(l)}
+                hreflang={l}
+                data-set-lang={l}
+                class={`px-2.5 py-1 text-[var(--color-muted)] hover:bg-[#f1f3f6] hover:text-[var(--color-ink)] hover:no-underline ${i > 0 ? 'border-l border-[#e3e6ea]' : ''}`}
+              >
+                {LABEL[l]}
+              </a>
+            )
           )
-        )
-      }
-    </nav>
+        }
+      </nav>
+    </div>
   </div>
 </header>

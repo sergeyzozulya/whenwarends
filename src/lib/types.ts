@@ -16,6 +16,8 @@ export interface Env {
   ANTHROPIC_API_KEY: string;
   /** NASA FIRMS area-API MAP_KEY (free). GitHub Actions secret. */
   FIRMS_MAP_KEY: string;
+  /** U.S. EIA Open Data API key (free). GitHub Actions secret. */
+  EIA_API_KEY: string;
   CONTACT_TO_EMAIL: string;
   CONTACT_FROM_EMAIL: string;
   CONTACT_FROM_NAME: string;

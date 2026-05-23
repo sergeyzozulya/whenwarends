@@ -26,6 +26,7 @@ import { runDraftBrief } from './draft-brief';
 // only the env fields below.
 const env = {
   FIRMS_MAP_KEY: process.env.FIRMS_MAP_KEY ?? '',
+  EIA_API_KEY: process.env.EIA_API_KEY ?? '',
   ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY ?? '',
   // Operator config some collectors read off `env` (not the typed contract):
   KIEL_DATASET_URL: process.env.KIEL_DATASET_URL ?? '',

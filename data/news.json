@@ -3,6 +3,57 @@
   "source": "gdelt",
   "articles": [
     {
+      "url": "https://news.liga.net/war/news/bloomberg-pishet-chto-putin-hochet-zakonchit-voinu-v-etom-godu-no-peskov-govorit-dedlainov-net",
+      "domain": "news.liga.net",
+      "seenAt": "2026-05-22T08:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/ca1a94a80e29758d.webp",
+      "original": "Путин заговорил об окончании войны – Bloomberg | Новости Украины",
+      "title": {
+        "uk": "Путін заговорив про закінчення війни — Bloomberg",
+        "en": "Putin spoke about ending the war — Bloomberg",
+        "ru": "Путин заговорил об окончании войны — Bloomberg"
+      }
+    },
+    {
+      "url": "https://www.euronews.com/my-europe/2026/05/22/lukashenka-offers-to-meet-zelenskyy-as-ukraine-warns-of-russias-new-offensive-through-bela",
+      "domain": "euronews.com",
+      "seenAt": "2026-05-22T11:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/d530275d4815a877.webp",
+      "original": "Lukashenka offers to meet Zelenskyy as Ukraine warns of Russia new offensive through Belarus",
+      "title": {
+        "uk": "Лукашенко пропонує зустріч із Зеленським, оскільки Україна попереджає про новий наступ Росії через Білорусь",
+        "en": "Lukashenka offers to meet Zelenskyy as Ukraine warns of Russia's new offensive through Belarus",
+        "ru": "Лукашенко предлагает встретиться с Зеленским, поскольку Украина предупреждает о новом наступлении России через Беларусь"
+      }
+    },
+    {
+      "url": "https://kontrakty.ua/article/289691",
+      "domain": "kontrakty.ua",
+      "seenAt": "2026-05-22T09:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/65a03abc8507308c.webp",
+      "original": "Пентагон заявив про повернення Україною значних територій після блокування Starlink для РФ",
+      "title": {
+        "uk": "Пентагон заявив про повернення Україною значних територій після блокування Starlink для РФ",
+        "en": "Pentagon says Ukraine recaptured significant territory after Starlink was blocked for Russia",
+        "ru": "Пентагон заявил о возвращении Украиной значительных территорий после блокировки Starlink для РФ"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/5/22/too-big-a-risk-why-has-russia-sent-nuclear-warheads-to-belarus",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-05-22T12:00:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Something big taking place : Why has Russia sent more nukes to Belarus ? | Russia - Ukraine war News",
+      "title": {
+        "uk": "«Щось велике відбувається»: чому Росія відправила більше ядерної зброї до Білорусі?",
+        "en": "\"Something big is taking place\": Why has Russia sent more nuclear weapons to Belarus?",
+        "ru": "«Происходит что-то серьёзное»: почему Россия отправила больше ядерного оружия в Беларусь?"
+      }
+    },
+    {
       "url": "https://glavcom.ua/country/incidents/najbilshi-uspikhi-z-chasiv-kurskoji-operatsiji-ukrajina-vidnovljuje-initsiativu-na-fronti-isw-1120877.html",
       "domain": "glavcom.ua",
       "seenAt": "2026-05-21T06:30:00.000Z",
@@ -10,34 +61,8 @@
       "original": "Найбільші успіхи з часів курської операції . Україна відновлює ініціативу на фронті – ISW",
       "title": {
         "uk": "Найбільші успіхи з часів курської операції: Україна відновлює ініціативу на фронті — ISW",
-        "en": "Biggest gains since the Kursk operation: Ukraine reclaims the front-line initiative — ISW",
-        "ru": "Наибольшие успехи со времён курской операции: Украина восстанавливает инициативу на фронте — ISW"
-      }
-    },
-    {
-      "url": "https://24tv.ua/rosiya-zminyuye-svoyi-plani-viynu-proti-ukrayini-yak-situatsiyu_n3072323",
-      "domain": "24tv.ua",
-      "seenAt": "2026-05-21T14:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/45d8f79422e7c16e.webp",
-      "original": "Росія змінює свої плани на війну проти України - як ситуацію коментує Буданов",
-      "title": {
-        "uk": "Росія змінює свої плани щодо війни проти України — як ситуацію коментує Буданов",
-        "en": "Russia changes its war plans against Ukraine — Budanov comments on the situation",
-        "ru": "Россия меняет свои планы в войне против Украины — как ситуацию комментирует Буданов"
-      }
-    },
-    {
-      "url": "https://economictimes.indiatimes.com/news/defence/ukraine-strengthens-border-security-amid-growing-fears-of-belarusian-attack/articleshow/131248889.cms",
-      "domain": "economictimes.indiatimes.com",
-      "seenAt": "2026-05-21T16:30:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/f6d1d0616350d42a.webp",
-      "original": "Ukraine boosts border security with Belarus over attack fears",
-      "title": {
-        "uk": "Україна посилює безпеку кордону з Білоруссю через побоювання нападу",
-        "en": "Ukraine boosts border security with Belarus over attack fears",
-        "ru": "Украина усиливает безопасность границы с Беларусью из-за опасений нападения"
+        "en": "Ukraine's biggest gains since the Kursk operation: Ukraine reclaims front-line initiative — ISW",
+        "ru": "Наибольшие успехи со времён Курской операции: Украина восстанавливает инициативу на фронте — ISW"
       }
     },
     {
@@ -48,35 +73,9 @@
       "image": "/news/1b2350595e12881c.webp",
       "original": "Ukraine says its drones hit another refinery deep inside Russia as long - range strikes escalate",
       "title": {
-        "uk": "Україна заявляє, що її дрони вдарили по черговому нафтопереробному заводу вглиб Росії на тлі ескалації далекобійних ударів",
+        "uk": "Україна заявила, що її дрони вразили ще один нафтопереробний завод у глибині Росії на тлі ескалації далекобійних ударів",
         "en": "Ukraine says its drones hit another refinery deep inside Russia as long-range strikes escalate",
-        "ru": "Украина заявляет, что её дроны ударили по очередному нефтеперерабатывающему заводу вглубь России на фоне эскалации дальнобойных ударов"
-      }
-    },
-    {
-      "url": "https://tsn.ua/ato/ukrayina-vykhodyt-z-pastky-dozvoliv-ssha-iaki-problemy-tse-stvoriuye-dlia-putina-newsweek-3088235.html",
-      "domain": "tsn.ua",
-      "seenAt": "2026-05-21T06:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/ad8bace1e8495f9e.webp",
-      "original": "Україна отримує незалежність для ударів по Росії",
-      "title": {
-        "uk": "Україна отримує незалежність для ударів по Росії",
-        "en": "Ukraine gains autonomy for strikes against Russia",
-        "ru": "Украина получает независимость для ударов по России"
-      }
-    },
-    {
-      "url": "https://24tv.ua/vtrati-voroga-zbilshuyutsya-sirskiy-zayaviv-shho-rosiya-vtrachaye_n3071485",
-      "domain": "24tv.ua",
-      "seenAt": "2026-05-20T13:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/03a4528c0d59b7c9.webp",
-      "original": "Втрати ворога збільшуються - Сирський заявив , що Росія втрачає більше солдатів , ніж мобілізує",
-      "title": {
-        "uk": "Втрати ворога збільшуються — Сирський заявив, що Росія втрачає більше солдатів, ніж мобілізує",
-        "en": "Enemy losses growing — Syrsky says Russia is losing more soldiers than it mobilises",
-        "ru": "Потери врага растут — Сырский заявил, что Россия теряет больше солдат, чем мобилизует"
+        "ru": "Украина заявила, что её дроны поразили ещё один нефтеперерабатывающий завод вглубь России на фоне эскалации дальних ударов"
       }
     },
     {
@@ -89,20 +88,7 @@
       "title": {
         "uk": "Росія програє в Україні. Сі це помітив — Трамп теж повинен",
         "en": "Russia is losing in Ukraine. Xi has noticed — Trump should too",
-        "ru": "Россия проигрывает в Украине. Си это заметил — Трамп тоже должен"
-      }
-    },
-    {
-      "url": "https://www.volynnews.com/news/all/u-kremli-hotuiut-rosiian-do-zavershennia-viyny-bez-velykoyi-peremohy-The-Telegraph-/",
-      "domain": "volynnews.com",
-      "seenAt": "2026-05-19T15:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/c2a368ac68d98d3b.webp",
-      "original": "У Кремлі готують росіян до завершення війни без « великої перемоги », – The Telegraph",
-      "title": {
-        "uk": "У Кремлі готують росіян до завершення війни без «великої перемоги» — The Telegraph",
-        "en": "Kremlin is preparing Russians for the end of the war without a \"great victory\" — The Telegraph",
-        "ru": "В Кремле готовят россиян к завершению войны без «великой победы» — The Telegraph"
+        "ru": "Россия проигрывает в Украине. Си заметил — Трамп тоже должен"
       }
     },
     {
@@ -113,9 +99,9 @@
       "image": "/news/b7d399643f89a452.webp",
       "original": "China treina em segredo militares russos para guerra na Ucrânia",
       "title": {
-        "uk": "Китай таємно тренує російських військових для війни в Україні",
-        "en": "China secretly training Russian military personnel for the war in Ukraine",
-        "ru": "Китай тайно тренирует российских военных для войны в Украине"
+        "uk": "Китай таємно навчає російських військових для війни в Україні",
+        "en": "China secretly trains Russian military personnel for the war in Ukraine",
+        "ru": "Китай тайно обучает российских военных для войны в Украине"
       }
     },
     {
@@ -126,9 +112,22 @@
       "image": "/news/0962034d4f26dc47.webp",
       "original": "Russia economy posts first quarterly decline in three years",
       "title": {
-        "uk": "Економіка Росії фіксує перший квартальний спад за три роки",
+        "uk": "Економіка Росії зафіксувала перший квартальний спад за три роки",
         "en": "Russia's economy posts first quarterly decline in three years",
-        "ru": "Экономика России фиксирует первый квартальный спад за три года"
+        "ru": "Экономика России зафиксировала первый квартальный спад за три года"
+      }
+    },
+    {
+      "url": "https://www.hindustantimes.com/world-news/very-difficult-choices-putin-running-out-of-options-in-ukraine-as-war-stalls-says-estonia-intel-chief-101779092968274.html",
+      "domain": "hindustantimes.com",
+      "seenAt": "2026-05-18T09:30:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/b325b24b47ba956f.webp",
+      "original": "Very difficult choice : Putin running out of options in Ukraine as war stalls , says Estonia intel chief",
+      "title": {
+        "uk": "«Дуже складний вибір»: Путін вичерпує варіанти в Україні через застій у війні, вважає голова естонської розвідки",
+        "en": "\"Very difficult choice\": Putin running out of options in Ukraine as war stalls, says Estonia intel chief",
+        "ru": "«Очень сложный выбор»: Путин исчерпывает варианты в Украине на фоне застоя войны, считает глава эстонской разведки"
       }
     }
   ]

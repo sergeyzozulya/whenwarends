@@ -16,6 +16,14 @@ const SLIDER = '#255b7d';
 const TRACK = '#dee2e5';
 const UP = '#4f7a52';
 const DOWN = '#b5524e';
+// Merged dual-series cards: Ukraine = the accent blue, Russia = the muted
+// brick (reusing DOWN's tone) — staying within the one-accent palette rather
+// than introducing loud primaries.
+const UA_COLOR = ACCENT;
+const RU_COLOR = '#b5524e';
+// Grayscale second line for same-nation pairs (refugees vs IDPs) — within the
+// "one accent + grayscale" palette, so it never reads as a third "side".
+const NEUTRAL = '#8a929a';
 const WAR_START = Date.UTC(2022, 1, 24);
 const YEAR = 365 * 24 * 3600 * 1000;
 const PLAY_MS = 9000;
@@ -26,9 +34,31 @@ export interface HistoryTimelineProps {
 }
 
 type Fmt = (v: number) => string;
-type Ind = { key: string; source: string; unit: string; val: Fmt; dlt: Fmt };
+
+/** One plotted line in a card. `legend` is a strings key for the side label
+ *  (ru/ua) on merged cards; empty string for single-series cards. */
+type Series = { key: string; color: string; legend: string };
+
+/** A timeline card: one series (big number) or two merged (Ukraine vs Russia,
+ *  sharing a y-scale so their levels stay comparable). */
+type Card = {
+  label: string; // strings key for the card title
+  source: string; // attribution (proper names, not translated)
+  unit: string;
+  val: Fmt;
+  dlt: Fmt;
+  series: Series[];
+  /** Cumulative series shown as monthly FLOW (per-month change) instead of the
+   *  ever-rising total — far more informative as a sparkline. */
+  monthly?: boolean;
+};
 
 const signed1 = (v: number) => `${v >= 0 ? '+' : ''}${v.toFixed(1)}`;
+const intC = (v: number) => Math.round(v).toLocaleString('en-US');
+const compactN = new Intl.NumberFormat('en-US', {
+  notation: 'compact',
+  maximumFractionDigits: 1,
+});
 const eurC = new Intl.NumberFormat('en-US', {
   notation: 'compact',
   style: 'currency',
@@ -36,37 +66,41 @@ const eurC = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 1,
 });
 
-const INDICATORS: Ind[] = [
-  { key: 'intensity', source: 'GDELT', unit: 'index', val: (v) => v.toFixed(1), dlt: (d) => d.toFixed(1) },
-  { key: 'tone', source: 'GDELT', unit: '', val: (v) => v.toFixed(2), dlt: (d) => d.toFixed(2) },
-  { key: 'fire', source: 'NASA FIRMS', unit: '/day', val: (v) => String(Math.round(v)), dlt: (d) => String(Math.round(d)) },
+const single = (key: string, color = ACCENT): Series[] => [
+  { key, color, legend: '' },
+];
+const uaRu = (uaKey: string, ruKey: string): Series[] => [
+  { key: uaKey, color: UA_COLOR, legend: 'ua' },
+  { key: ruKey, color: RU_COLOR, legend: 'ru' },
+];
+
+const CARDS: Card[] = [
+  // Battlefield + humanitarian.
+  { label: 'front', source: 'DeepState', unit: 'km²', val: intC, dlt: intC, series: single('front', RU_COLOR) },
+  { label: 'intensity', source: 'GDELT', unit: 'index', val: (v) => v.toFixed(1), dlt: (d) => d.toFixed(1), series: single('intensity') },
+  { label: 'tone', source: 'GDELT', unit: '', val: (v) => v.toFixed(2), dlt: (d) => d.toFixed(2), series: single('tone') },
+  { label: 'fire', source: 'NASA FIRMS', unit: '/day', val: intC, dlt: intC, series: single('fire') },
+  { label: 'aid', source: 'Kiel', unit: '/mo', val: (v) => eurC.format(v), dlt: (d) => eurC.format(d), series: single('aid'), monthly: true },
+  // Displacement: refugees abroad (accent) vs IDPs inside Ukraine (grayscale).
   {
-    key: 'aid',
-    source: 'Kiel',
-    unit: 'allocated',
-    val: (v) => eurC.format(v),
-    dlt: (d) => eurC.format(d),
+    label: 'displaced',
+    source: 'UNHCR',
+    unit: 'people',
+    val: (v) => compactN.format(v),
+    dlt: (d) => compactN.format(d),
+    series: [
+      { key: 'refugees', color: UA_COLOR, legend: 'refAbroad' },
+      { key: 'idps', color: NEUTRAL, legend: 'refIdp' },
+    ],
   },
-  {
-    key: 'uaLoss',
-    source: 'Oryx',
-    unit: 'confirmed',
-    val: (v) => Math.round(v).toLocaleString('en-US'),
-    dlt: (d) => Math.round(d).toLocaleString('en-US'),
-  },
-  {
-    key: 'ruLoss',
-    source: 'Oryx',
-    unit: 'confirmed',
-    val: (v) => Math.round(v).toLocaleString('en-US'),
-    dlt: (d) => Math.round(d).toLocaleString('en-US'),
-  },
-  { key: 'uah', source: 'NBU', unit: 'UAH/USD', val: (v) => v.toFixed(2), dlt: (d) => d.toFixed(2) },
-  { key: 'rub', source: 'CBR', unit: 'RUB/USD', val: (v) => v.toFixed(1), dlt: (d) => d.toFixed(1) },
-  { key: 'uaGdp', source: 'World Bank', unit: '% y/y', val: signed1, dlt: signed1 },
-  { key: 'ruGdp', source: 'World Bank', unit: '% y/y', val: signed1, dlt: signed1 },
-  { key: 'uaCpi', source: 'NBU', unit: '% y/y', val: signed1, dlt: signed1 },
-  { key: 'ruCpi', source: 'World Bank', unit: '% y/y', val: signed1, dlt: signed1 },
+  { label: 'loss', source: 'Oryx', unit: 'confirmed', val: intC, dlt: intC, series: uaRu('uaLoss', 'ruLoss') },
+  // Financing.
+  { label: 'oil', source: 'EIA', unit: 'USD/bbl', val: (v) => v.toFixed(1), dlt: (d) => d.toFixed(1), series: single('oil') },
+  // Macro (merged Ukraine + Russia pairs).
+  { label: 'fx', source: 'NBU · CBR', unit: 'per USD', val: (v) => v.toFixed(1), dlt: (d) => d.toFixed(1), series: uaRu('uah', 'rub') },
+  { label: 'gdp', source: 'World Bank', unit: '% y/y', val: signed1, dlt: signed1, series: uaRu('uaGdp', 'ruGdp') },
+  { label: 'cpi', source: 'NBU · World Bank', unit: '% y/y', val: signed1, dlt: signed1, series: uaRu('uaCpi', 'ruCpi') },
+  { label: 'revenue', source: 'CREA', unit: '/mo', val: (v) => eurC.format(v), dlt: (d) => eurC.format(d), series: single('revenue', RU_COLOR), monthly: true },
 ];
 
 /** Latest value with t ≤ at (points sorted ascending). */
@@ -82,6 +116,34 @@ function asOf(points: { t: number; v: number }[], at: number): number | null {
     } else hi = mid - 1;
   }
   return ans;
+}
+
+/**
+ * Turn a cumulative series into a monthly-FLOW series: the per-month change in
+ * the running total. Each month keeps its last cumulative value; the flow for a
+ * month is that value minus the prior month's, labelled at the month's start.
+ * The first month is dropped (no prior to difference). Honest — every flow is a
+ * difference of two real observations.
+ */
+function toMonthlyFlow(
+  points: { t: number; v: number }[]
+): { t: number; v: number }[] {
+  if (points.length === 0) return [];
+  const monthEnd = new Map<string, { t: number; v: number }>();
+  for (const p of points) {
+    const d = new Date(p.t);
+    const key = `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
+    const cur = monthEnd.get(key);
+    if (!cur || p.t > cur.t) monthEnd.set(key, p);
+  }
+  const months = [...monthEnd.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  const out: { t: number; v: number }[] = [];
+  for (let i = 1; i < months.length; i++) {
+    const [key, end] = months[i];
+    const [y, m] = key.split('-').map(Number);
+    out.push({ t: Date.UTC(y, m - 1, 1), v: end.v - months[i - 1][1].v });
+  }
+  return out;
 }
 
 function HistoryTimelineView({ history, strings }: HistoryTimelineProps) {
@@ -144,10 +206,17 @@ function HistoryTimelineView({ history, strings }: HistoryTimelineProps) {
   const years: number[] = [];
   for (let y = 2022; y <= new Date(tMax).getUTCFullYear(); y++) years.push(y);
 
-  const cards = INDICATORS.map((ind) => ({
-    ind,
-    pts: byKey.get(ind.key) ?? [],
-  })).filter((c) => c.pts.length > 0);
+  // Resolve each card's lines to the series we actually hold; drop a line with
+  // no data and a card with no lines.
+  const cards = CARDS.map((card) => ({
+    card,
+    lines: card.series
+      .map((s) => {
+        const raw = byKey.get(s.key) ?? [];
+        return { s, pts: card.monthly ? toMonthlyFlow(raw) : raw };
+      })
+      .filter((l) => l.pts.length > 0),
+  })).filter((c) => c.lines.length > 0);
 
   if (cards.length === 0)
     return <p className="text-[13px] text-[var(--color-faint)]">—</p>;
@@ -176,10 +245,14 @@ function HistoryTimelineView({ history, strings }: HistoryTimelineProps) {
   const pad = 2;
 
   const ctrlCls =
-    'cursor-pointer rounded-[2px] border border-[#dee2e5] px-2.5 py-1.5 text-[13px] text-[var(--color-muted)] hover:text-[var(--color-ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-[#3b6b97]';
+    'flex items-center justify-center text-center cursor-pointer rounded-[2px] border border-[#dee2e5] px-2.5 py-1.5 text-[13px] text-[var(--color-muted)] hover:text-[var(--color-ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-[#3b6b97]';
 
   return (
     <div>
+      {/* Date readout + controls + scrubber stay pinned (below the masthead)
+          while the cards scroll. -mx-8 spans the card's p-8 padding; the white
+          surface hides cards passing underneath. */}
+      <div className="sticky top-14 z-30 -mx-8 bg-[var(--color-surface)] px-8 pb-2 pt-2">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="eyebrow">{strings.asOf ?? 'Showing data as of'}</p>
@@ -187,7 +260,7 @@ function HistoryTimelineView({ history, strings }: HistoryTimelineProps) {
             {monthLabel(selT)}
           </p>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="grid w-full grid-cols-3 gap-2 sm:flex sm:w-auto sm:items-center">
           <button
             type="button"
             className={ctrlCls}
@@ -196,7 +269,7 @@ function HistoryTimelineView({ history, strings }: HistoryTimelineProps) {
               setFrac(0);
             }}
           >
-            {monthLabel(WAR_START)}
+            {strings.start ?? 'Start'}
           </button>
           <button
             type="button"
@@ -262,29 +335,33 @@ function HistoryTimelineView({ history, strings }: HistoryTimelineProps) {
           <span key={y}>{y}</span>
         ))}
       </div>
+      </div>
 
       <div className="mt-9 grid grid-cols-1 border-l border-t border-[var(--color-line)] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {cards.map(({ ind, pts }) => {
-          const cur = asOf(pts, selT);
-          const prev = asOf(pts, selT - YEAR);
-          const delta = cur !== null && prev !== null ? cur - prev : null;
-          const win = pts.filter((p) => p.t >= WAR_START && p.t <= selT);
+        {cards.map(({ card, lines }) => {
+          // Per-line value as-of the cursor, 12-month delta, and windowed pts.
+          const lineData = lines.map(({ s, pts }) => {
+            const cur = asOf(pts, selT);
+            const prev = asOf(pts, selT - YEAR);
+            const delta = cur !== null && prev !== null ? cur - prev : null;
+            const win = pts.filter((p) => p.t >= WAR_START && p.t <= selT);
+            return { s, cur, delta, win };
+          });
 
-          let line = '';
-          let dotY: number | null = null;
-          if (win.length > 0) {
-            const vs = win.map((p) => p.v);
-            const lo = Math.min(...vs);
-            const hi = Math.max(...vs);
-            const span = hi - lo;
-            const xOf = (t: number) =>
-              pad +
-              ((t - WAR_START) / Math.max(1, selT - WAR_START)) *
-                (W - pad * 2);
-            const yOf = (v: number) =>
-              pad +
-              (H - pad * 2) -
-              (span === 0 ? 0.5 : (v - lo) / span) * (H - pad * 2);
+          // Shared y-scale across the card's lines so RU vs UA levels stay
+          // comparable; the sparkline shows shape, the legend the exact number.
+          const allV = lineData.flatMap((l) => l.win.map((p) => p.v));
+          const lo = allV.length ? Math.min(...allV) : 0;
+          const hi = allV.length ? Math.max(...allV) : 1;
+          const span = hi - lo;
+          const xOf = (t: number) =>
+            pad +
+            ((t - WAR_START) / Math.max(1, selT - WAR_START)) * (W - pad * 2);
+          const yOf = (v: number) =>
+            pad +
+            (H - pad * 2) -
+            (span === 0 ? 0.5 : (v - lo) / span) * (H - pad * 2);
+          const polyOf = (win: { t: number; v: number }[]) => {
             const seg: string[] = [];
             for (let i = 0; i < win.length; i++) {
               const x = xOf(win[i].t);
@@ -295,69 +372,119 @@ function HistoryTimelineView({ history, strings }: HistoryTimelineProps) {
             seg.push(
               `${(W - pad).toFixed(1)},${yOf(win[win.length - 1].v).toFixed(1)}`
             );
-            line = seg.join(' ');
-            if (cur !== null) dotY = yOf(cur);
-          }
+            return seg.join(' ');
+          };
 
-          const up = delta !== null && delta >= 0;
+          const merged = card.series.length > 1;
           return (
             <div
-              key={ind.key}
+              key={card.label}
               className="border-b border-r border-[var(--color-line)] p-4"
             >
               <div className="flex items-baseline justify-between gap-2">
                 <span className="text-[13px] leading-snug text-[var(--color-ink)]">
-                  {strings[ind.key] ?? ind.key}
+                  {strings[card.label] ?? card.label}
                 </span>
-                <span className="eyebrow shrink-0">{ind.source}</span>
+                <span className="eyebrow shrink-0">{card.source}</span>
               </div>
-              <p className="mt-3 text-[22px] font-normal leading-none tracking-[-0.01em] text-[var(--color-ink)]">
-                {cur === null ? '—' : ind.val(cur)}
-                {cur !== null && ind.unit && (
-                  <span className="ml-1 text-[11px] text-[var(--color-faint)]">
-                    {ind.unit}
-                  </span>
-                )}
-              </p>
-              <p className="mt-2 h-4 text-[11px]">
-                {delta === null ? (
-                  <span className="text-[var(--color-faint)]">—</span>
-                ) : (
-                  <span style={{ color: up ? UP : DOWN }}>
-                    {up ? '▲' : '▼'} {ind.dlt(Math.abs(delta))}
-                    <span className="text-[var(--color-faint)]">
-                      {' '}
-                      · {strings.per12m ?? '12m'}
-                    </span>
-                  </span>
-                )}
-              </p>
+
+              {merged ? (
+                <div className="mt-3 space-y-1.5">
+                  {lineData.map(({ s, cur, delta }) => {
+                    const up = delta !== null && delta >= 0;
+                    return (
+                      <div key={s.key} className="flex items-baseline gap-1.5">
+                        <span
+                          className="inline-block h-2 w-2 shrink-0 translate-y-[1px] rounded-full"
+                          style={{ background: s.color }}
+                          aria-hidden="true"
+                        />
+                        <span className="min-w-[3rem] shrink-0 text-[11px] text-[var(--color-faint)]">
+                          {strings[s.legend] ?? s.legend}
+                        </span>
+                        <span className="text-[16px] font-normal leading-none text-[var(--color-ink)]">
+                          {cur === null ? '—' : card.val(cur)}
+                        </span>
+                        {delta !== null && (
+                          <span
+                            className="text-[11px]"
+                            style={{ color: up ? UP : DOWN }}
+                          >
+                            {up ? '▲' : '▼'} {card.dlt(Math.abs(delta))}
+                          </span>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <>
+                  <p className="mt-3 text-[22px] font-normal leading-none tracking-[-0.01em] text-[var(--color-ink)]">
+                    {lineData[0].cur === null
+                      ? '—'
+                      : card.val(lineData[0].cur)}
+                    {lineData[0].cur !== null && card.unit && (
+                      <span className="ml-1 text-[11px] text-[var(--color-faint)]">
+                        {card.unit}
+                      </span>
+                    )}
+                  </p>
+                  <p className="mt-2 h-4 text-[11px]">
+                    {lineData[0].delta === null ? (
+                      <span className="text-[var(--color-faint)]">—</span>
+                    ) : (
+                      <span
+                        style={{
+                          color: lineData[0].delta >= 0 ? UP : DOWN,
+                        }}
+                      >
+                        {lineData[0].delta >= 0 ? '▲' : '▼'}{' '}
+                        {card.dlt(Math.abs(lineData[0].delta))}
+                        <span className="text-[var(--color-faint)]">
+                          {' '}
+                          · {strings.per12m ?? '12m'}
+                        </span>
+                      </span>
+                    )}
+                  </p>
+                </>
+              )}
+
               <svg
                 viewBox={`0 0 ${W} ${H}`}
                 preserveAspectRatio="none"
                 className="mt-3 block h-9 w-full"
                 aria-hidden="true"
               >
-                <polyline
-                  points={line}
-                  fill="none"
-                  stroke={ACCENT}
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  vectorEffect="non-scaling-stroke"
-                />
-                {dotY !== null && (
-                  <line
-                    x1={W - pad}
-                    y1={dotY}
-                    x2={W - pad}
-                    y2={dotY}
-                    stroke={ACCENT}
-                    strokeWidth={6}
-                    strokeLinecap="round"
-                    vectorEffect="non-scaling-stroke"
-                  />
+                {lineData.map(({ s, cur, win }) =>
+                  // Need ≥2 points for a real line; a single point (e.g. at the
+                  // far-left scrub, where only the war-start observation is in
+                  // range) would otherwise stretch into a misleading flat line.
+                  win.length < 2 ? null : (
+                    <g key={s.key}>
+                      <polyline
+                        points={polyOf(win)}
+                        fill="none"
+                        stroke={s.color}
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        vectorEffect="non-scaling-stroke"
+                      />
+                      {cur !== null && (
+                        <line
+                          x1={W - pad}
+                          y1={yOf(cur)}
+                          x2={W - pad}
+                          y2={yOf(cur)}
+                          stroke={s.color}
+                          strokeWidth={6}
+                          strokeLinecap="round"
+                          vectorEffect="non-scaling-stroke"
+                        />
+                      )}
+                    </g>
+                  )
                 )}
               </svg>
             </div>

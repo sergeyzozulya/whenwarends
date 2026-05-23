@@ -19,6 +19,7 @@
     "import:firms-archive": "tsx scripts/import-firms-archive.ts",
     "collect:gdelt-history": "tsx scripts/gdelt-history.ts",
     "collect:firms-history": "tsx scripts/firms-history.ts",
+    "collect:frontline-history": "tsx scripts/frontline-history.ts",
     "wrangler:dev": "npm run build && wrangler dev",
     "wrangler:deploy": "npm run build && wrangler deploy"
   },

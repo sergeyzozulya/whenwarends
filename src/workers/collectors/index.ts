@@ -14,6 +14,10 @@ import { nbuCollector } from './nbu';
 import { nbuCpiCollector } from './nbuCpi';
 import { cbrCollector } from './cbr';
 import { oryxCollector } from './oryx';
+import { eiaCollector } from './eia';
+import { deepStateCollector } from './deepstate';
+import { creaCollector } from './crea';
+import { unhcrCollector } from './unhcr';
 
 export const allCollectors: Collector[] = [
   polymarketCollector,
@@ -27,4 +31,8 @@ export const allCollectors: Collector[] = [
   nbuCpiCollector,
   cbrCollector,
   oryxCollector,
+  eiaCollector,
+  deepStateCollector,
+  creaCollector,
+  unhcrCollector,
 ];

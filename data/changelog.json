@@ -1,5 +1,13 @@
 [
   {
+    "id": 9,
+    "date": "2026-05-23",
+    "category": "new-source",
+    "description_en": "Added four indicators: Brent crude oil price (EIA), the occupied-territory front line in km² (DeepState), Russia's cumulative fossil-fuel export revenue (CREA), and refugees and internally displaced persons (UNHCR). The equipment-loss, currency, GDP and inflation indicators now plot Ukraine and Russia together on a single chart.",
+    "description_uk": "Додано чотири показники: ціну нафти Brent (EIA), окуповану територію в км² (DeepState), сукупні доходи РФ від експорту викопного палива (CREA), а також біженців і внутрішньо переміщених осіб (UNHCR). Показники втрат техніки, курсу валют, ВВП та інфляції тепер відображають Україну й Росію на одному графіку.",
+    "description_ru": "Добавлены четыре показателя: цена нефти Brent (EIA), оккупированная территория в км² (DeepState), совокупные доходы РФ от экспорта ископаемого топлива (CREA), а также беженцы и внутренне перемещённые лица (UNHCR). Показатели потерь техники, курса валют, ВВП и инфляции теперь отображают Украину и Россию на одном графике."
+  },
+  {
     "id": 8,
     "date": "2026-05-22",
     "category": "privacy",

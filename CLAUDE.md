@@ -211,8 +211,10 @@ whenwarends/
 
 ### Licensing
 
-- **GDELT, Kiel, NASA FIRMS, Manifold, World Bank**: CC BY or public domain. Always credit.
+- **GDELT, Kiel, NASA FIRMS, Manifold, World Bank, CREA, UNHCR**: CC BY or public domain. Always credit.
+- **U.S. EIA**: U.S. government work, public domain. Free API key.
 - **Oryx**: CC BY-**NC** — usable only because this project is non-commercial; always credit. Do not reuse Oryx data in any commercial context.
+- **DeepState**: the GitHub mirror repo is **GPL-3.0**. We ingest the daily occupied-territory GeoJSON but persist **only the derived occupied-area scalar (km²)** — a non-copyrightable fact — never the geometry, so no GPL-licensed content lands in the repo. Credit DeepState; label the figure Ukrainian OSINT (owner decision, 2026-05-22).
 
 ### Phase structure
 
@@ -261,6 +263,10 @@ replace review).
 | National Bank of Ukraine | UAH/USD FX; Ukraine monthly headline CPI | Public | Free API |
 | Central Bank of Russia | RUB/USD FX (official daily) | Public | Free |
 | European Central Bank (via Frankfurter) | Daily reference rates for EUR conversion | Public | Free |
+| U.S. EIA Open Data | Daily Brent crude oil spot price (war-financing proxy) | Public domain (US gov) | Free API key (`EIA_API_KEY`) |
+| DeepState (GitHub mirror) | Russian-occupied area of Ukraine, km² (front line) | Mirror repo GPL-3.0 — we store only the **derived km² fact**, never the geometry | Free; Ukrainian OSINT, credited + labelled |
+| CREA Russia Fossil Tracker | Cumulative € paid to Russia for fossil fuels (war revenue), daily | CC BY 4.0 | Free; `api.russiafossiltracker.com` `/v0/counter` (`aggregate_by=date&cumulate=true`) |
+| UNHCR Refugee Data Finder | Refugees abroad + IDPs inside Ukraine (annual) | CC BY 4.0 | Free, no auth; `coo=UKR` summed across asylum countries |
 
 Both market sources feed the war-end CDF: probabilities are normalized **per
 source**, then combined **50/50** (no source dominates on raw liquidity). See
