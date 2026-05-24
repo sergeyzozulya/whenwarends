@@ -9,6 +9,7 @@ import {
   readEvents,
   readBriefs,
   readNews,
+  readMeta,
 } from './filestore';
 import { computeCDF } from './cdf';
 import { marketBucket, isoToMs, type HeroMarket } from './heroChartData';
@@ -24,7 +25,6 @@ import {
   type CardPicks,
   type ConsensusPoint,
 } from './cards';
-import { getTranslation } from '../i18n/index';
 
 export interface CurveSet {
   curve: { date: string; probability: number }[];
@@ -38,12 +38,6 @@ export interface HistorySeries {
   key: string;
   /** Chronological points: t = epoch ms (UTC), v = value. */
   points: { t: number; v: number }[];
-}
-
-export interface BeliefSeries {
-  label: string;
-  points: number[];
-  current: string | null;
 }
 
 /** A compact trend for a sparkline + signed delta (the stat-card / hero trend). */
@@ -60,15 +54,6 @@ export interface TrendData {
   count: number;
 }
 
-export interface IndicatorData {
-  value: string | null;
-  sub?: string;
-  confidence?: number;
-  degraded?: { sinceHours: number };
-  /** Explanatory caption rendered below the confidence bar. */
-  note?: string;
-}
-
 export interface HomePayload {
   lastUpdated: string | null;
   hero: {
@@ -80,7 +65,6 @@ export interface HomePayload {
   };
   /** Secondary timelines: every metric we actually have, dense, 2022→now. */
   history: HistorySeries[];
-  beliefs: BeliefSeries[];
   /** The two stat-card selections (closest, optimistic). */
   cards: CardPicks;
   /** Hero consensus: liquidity-weighted centroid (probability + date). */
@@ -88,13 +72,6 @@ export interface HomePayload {
   /** Trend (sparkline + delta) for the consensus and each selected card market. */
   trends: { consensus: TrendData; closest: TrendData; optimistic: TrendData };
   events: EventRow[];
-  ground: {
-    frontline: IndicatorData;
-    intensity: IndicatorData;
-    aid: IndicatorData;
-    economy: IndicatorData;
-    ukEconomy: IndicatorData;
-  };
   brief: BriefRow | null;
   briefStale: boolean;
   /** Selected, locale-translated related news (GDELT), shown beside the brief. */
@@ -103,7 +80,6 @@ export interface HomePayload {
   newsAsOf: string | null;
 }
 
-const EMPTY_INDICATOR: IndicatorData = { value: null };
 const EMPTY_TREND: TrendData = {
   points: [],
   current: null,
@@ -123,7 +99,6 @@ export function emptyHomePayload(): HomePayload {
       markets: [],
     },
     history: [],
-    beliefs: [],
     cards: { closest: null, optimistic: null },
     consensus: null,
     trends: {
@@ -132,13 +107,6 @@ export function emptyHomePayload(): HomePayload {
       optimistic: EMPTY_TREND,
     },
     events: [],
-    ground: {
-      frontline: EMPTY_INDICATOR,
-      intensity: EMPTY_INDICATOR,
-      aid: EMPTY_INDICATOR,
-      economy: EMPTY_INDICATOR,
-      ukEconomy: EMPTY_INDICATOR,
-    },
     brief: null,
     briefStale: false,
     news: [],
@@ -147,50 +115,9 @@ export function emptyHomePayload(): HomePayload {
 }
 
 const HOURS = 3600_000;
-const fmtPct = (p: number) => `${Math.round(p * 100)}%`;
 
 function hoursSince(iso: string): number {
   return Math.max(0, Math.round((Date.now() - Date.parse(iso)) / HOURS));
-}
-
-function latestSnapshot(
-  rows: SnapshotRow[],
-  metric: string,
-  source: string
-): SnapshotRow | null {
-  let best: SnapshotRow | null = null;
-  for (const r of rows) {
-    if (r.metric !== metric || r.source !== source) continue;
-    if (!best || r.ts > best.ts) best = r;
-  }
-  return best;
-}
-
-function snapshotSeries(
-  rows: SnapshotRow[],
-  metric: string,
-  source: string,
-  sinceTs: string
-): SnapshotRow[] {
-  return rows
-    .filter(
-      (r) => r.metric === metric && r.source === source && r.ts >= sinceTs
-    )
-    .sort((a, b) => a.ts.localeCompare(b.ts));
-}
-
-function indicatorFrom(
-  row: SnapshotRow | null,
-  format: (v: number) => string,
-  staleHours: number
-): IndicatorData {
-  if (!row || row.value === null) return { value: null };
-  const age = hoursSince(row.ts);
-  return {
-    value: format(row.value),
-    confidence: row.confidence ?? undefined,
-    degraded: age > staleHours ? { sinceHours: age } : undefined,
-  };
 }
 
 // Dense per-metric history for the main timeline — every series we actually
@@ -394,94 +321,24 @@ export function loadHomePayload(lang: Lang): HomePayload {
     };
   });
 
-  const sinceTs = new Date(Date.now() - 365 * 24 * HOURS).toISOString();
-  const beliefs: BeliefSeries[] = [];
-  for (const source of ['polymarket', 'manifold'] as const) {
-    const series = snapshotSeries(
-      snapshots,
-      'war_end_probability',
-      source,
-      sinceTs
-    );
-    if (series.length === 0) continue;
-    const points = series
-      .map((s) => s.value)
-      .filter((v): v is number => v !== null);
-    const last = points.at(-1);
-    beliefs.push({
-      label: source,
-      points,
-      current: last !== undefined ? fmtPct(last) : null,
-    });
-  }
-
-  const eur = new Intl.NumberFormat('en', {
-    style: 'currency',
-    currency: 'EUR',
-    maximumFractionDigits: 0,
-  });
-
-  // Freshest data point we hold (markets.json is no longer used).
+  // "Last updated" = the real time the collect run executed (data/meta.json).
+  // Fall back to the freshest snapshot for data collected before meta.json
+  // existed — excluding future-dated points, since NBU publishes the official
+  // UAH/USD rate ahead for the next business day (valid for the FX series, but
+  // it must not push the label into the future).
+  const nowIso = new Date().toISOString();
   const lastUpdated =
-    snapshots.map((s) => s.ts).sort().at(-1) ?? null;
+    readMeta()?.lastCollected ??
+    snapshots
+      .map((s) => s.ts)
+      .filter((ts) => ts <= nowIso)
+      .sort()
+      .at(-1) ??
+    null;
 
   const briefStale = brief
     ? hoursSince(brief.date + 'T00:00:00Z') > 8 * 24
     : false;
-
-  // Combat-zone fire activity: NASA FIRMS emits one detection count per UTC
-  // day. The headline is the SUM over the last 5 days (matching the look-back
-  // and the sub label) — not one arbitrary partial NRT day. Honest source
-  // attribution lives in `sub`; this is measured FIRMS data, not an estimate.
-  const fireWindow = snapshotSeries(
-    snapshots,
-    'fire_anomalies',
-    'firms',
-    new Date(Date.now() - 5 * 24 * 3600 * 1000).toISOString()
-  );
-  let frontline: IndicatorData = { value: null };
-  if (fireWindow.length > 0) {
-    const total = fireWindow.reduce((s, r) => s + (r.value ?? 0), 0);
-    const latestTs = fireWindow[fireWindow.length - 1].ts;
-    const age = hoursSince(latestTs);
-    frontline = {
-      value: String(Math.round(total)),
-      sub: getTranslation(lang, 'ground.fireActivity'),
-      degraded: age > 72 ? { sinceHours: age } : undefined,
-    };
-  }
-
-  // Conflict intensity: GDELT "volume intensity" — the share of monitored
-  // global news coverage matching the war query (latest day). It's a
-  // normalized index, not a count, so label the unit and explain it.
-  const intensity = indicatorFrom(
-    latestSnapshot(snapshots, 'conflict_intensity', 'gdelt'),
-    (v) => v.toFixed(1),
-    48
-  );
-  if (intensity.value !== null) {
-    intensity.sub = getTranslation(lang, 'ground.intensityUnit');
-    intensity.note = getTranslation(lang, 'ground.intensityNote');
-  }
-
-  // Aid headline = Kiel's real cumulative ALLOCATED total (latest point of
-  // the monotonic Fig A22 series — aid actually delivered/specified). We use
-  // allocated, not committed: there is no honest cumulative-committed series
-  // (summing the monthly flow ≈ 2× the real figure). No fallback to monthly
-  // committed — committed is fully retired from the UI.
-  const aidRow = latestSnapshot(
-    snapshots,
-    'aid_allocated_cumulative_eur',
-    'kiel'
-  );
-  let aid: IndicatorData = { value: null };
-  if (aidRow && aidRow.value !== null) {
-    aid = {
-      value: eur.format(aidRow.value),
-      sub: getTranslation(lang, 'ground.aidTotal'),
-      confidence: aidRow.confidence ?? undefined,
-    };
-  }
 
   return {
     lastUpdated,
@@ -492,26 +349,10 @@ export function loadHomePayload(lang: Lang): HomePayload {
       markets: heroMarkets,
     },
     history,
-    beliefs,
     cards,
     consensus,
     trends,
     events,
-    ground: {
-      frontline,
-      intensity,
-      aid,
-      economy: indicatorFrom(
-        latestSnapshot(snapshots, 'rub_usd_rate', 'cbr'),
-        (v) => `${v.toFixed(2)} RUB / USD`,
-        72
-      ),
-      ukEconomy: indicatorFrom(
-        latestSnapshot(snapshots, 'uah_usd_rate', 'nbu'),
-        (v) => `${v.toFixed(2)} UAH / USD`,
-        72
-      ),
-    },
     brief,
     briefStale,
     news,

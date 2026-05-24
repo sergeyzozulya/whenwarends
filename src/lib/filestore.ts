@@ -16,6 +16,7 @@ import type {
   ChangelogRow,
   BriefRow,
   NewsFile,
+  CollectMeta,
 } from './types';
 
 const DATA_DIR = resolve(process.cwd(), 'data');
@@ -26,6 +27,7 @@ const P = {
   changelog: resolve(DATA_DIR, 'changelog.json'),
   briefs: resolve(DATA_DIR, 'briefs.json'),
   news: resolve(DATA_DIR, 'news.json'),
+  meta: resolve(DATA_DIR, 'meta.json'),
 };
 
 function ensureDir(): void {
@@ -137,6 +139,16 @@ export function readNews(): NewsFile | null {
 /** Overwrite the related-news file (current state, like markets.json). */
 export function writeNews(file: NewsFile): void {
   writeJson(P.news, file);
+}
+
+/** Run metadata (when collect last ran), or null before the first run. */
+export function readMeta(): CollectMeta | null {
+  return readJson<CollectMeta | null>(P.meta, null);
+}
+
+/** Overwrite the run-metadata file (current state, like markets.json). */
+export function writeMeta(meta: CollectMeta): void {
+  writeJson(P.meta, meta);
 }
 
 /** Overwrite the briefs file. The draft script upserts; PR review publishes. */

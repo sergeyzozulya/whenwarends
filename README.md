@@ -74,7 +74,7 @@ Actions): `FIRMS_MAP_KEY`, `KIEL_DATASET_URL`, `ANTHROPIC_API_KEY`
 
 ## Tech stack
 
-- **Astro 5** with TypeScript + Tailwind CSS
+- **Astro 6** with TypeScript + Tailwind CSS
 - **Cloudflare Workers** + Static Assets (static-only; no runtime DB)
 - **Versioned repo JSON** (`data/`) for time-series snapshots — read at build
 - **Chart.js** for the CDF visualization

@@ -229,7 +229,7 @@ function HistoryTimelineView({ history, strings }: HistoryTimelineProps) {
     return Math.min(1, Math.max(0, (clientX - r.left) / r.width));
   };
   const onKey = (e: React.KeyboardEvent) => {
-    let f = frac;
+    let f: number;
     if (e.key === 'ArrowLeft') f = Math.max(0, frac - 0.02);
     else if (e.key === 'ArrowRight') f = Math.min(1, frac + 0.02);
     else if (e.key === 'Home') f = 0;

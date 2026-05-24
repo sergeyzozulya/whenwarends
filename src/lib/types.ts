@@ -135,6 +135,12 @@ export interface NewsFile {
   articles: NewsItem[];
 }
 
+/** Run metadata (data/meta.json). Overwritten each collect run. */
+export interface CollectMeta {
+  /** Wall-clock UTC time (ISO-8601) the last collect run executed. */
+  lastCollected: string;
+}
+
 export interface EventRow {
   id: number;
   date: string; // YYYY-MM-DD

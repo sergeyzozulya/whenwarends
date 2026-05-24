@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src --ext .ts,.tsx,.astro",
+    "lint": "eslint src",
     "test": "vitest run",
     "test:e2e": "playwright test",
     "perf": "tsx scripts/check-bundle.ts",
@@ -24,42 +24,44 @@
     "wrangler:deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.96.0",
-    "@astrojs/react": "^4.4.2",
+    "@anthropic-ai/sdk": "^0.98.0",
+    "@astrojs/react": "^5.0.5",
     "@fontsource-variable/inter": "^5.2.8",
-    "astro": "^5.0.0",
+    "astro": "^6.3.7",
     "chart.js": "^4.4.1",
     "exceljs": "^4.4.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
     "tailwindcss": "^4.0.0",
-    "undici": "^7.25.0",
-    "zod": "^3.22.4"
+    "undici": "^8.3.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.11.3",
-    "@cloudflare/workers-types": "^4.20260420.1",
+    "@cloudflare/workers-types": "^4.20260524.1",
+    "@eslint/js": "^10.0.0",
     "@fontsource/inter": "^5.2.8",
     "@playwright/test": "^1.60.0",
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.3.0",
-    "@types/node": "^20.10.0",
-    "@types/react": "^18.3.28",
-    "@types/react-dom": "^18.3.7",
-    "@typescript-eslint/eslint-plugin": "^6.15.0",
-    "@typescript-eslint/parser": "^6.15.0",
-    "eslint": "^8.55.0",
-    "eslint-plugin-astro": "^0.30.0",
+    "@types/node": "^22.19.19",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.59.4",
+    "@typescript-eslint/parser": "^8.59.4",
+    "eslint": "^10.4.0",
+    "eslint-plugin-astro": "^1.7.0",
+    "globals": "^17.6.0",
     "playwright": "^1.40.1",
     "satori": "^0.26.0",
     "sharp": "^0.34.5",
-    "tsx": "^4.22.1",
-    "typescript": "^5.3.3",
-    "vitest": "^1.0.4",
-    "wrangler": "^4.0.0"
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.7",
+    "wrangler": "^4.94.0"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.12.0"
   }
 }

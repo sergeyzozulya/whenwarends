@@ -319,7 +319,7 @@ export function createKielCollector(
       }
 
       let extracted: KielExtractedRow[];
-      let sheetRows: unknown[][] = [];
+      let sheetRows: unknown[][];
       try {
         sheetRows = await sheetMatrix(buffer);
         extracted = extractCommitmentRows(sheetRows);
@@ -346,7 +346,7 @@ export function createKielCollector(
       // Kiel's own cumulative total (authoritative headline). Anchored at the
       // latest tracked month so it sits at the current data edge. Omitted
       // (not fabricated) if the total row is absent in this release.
-      let totalEur: number | null = null;
+      let totalEur: number | null;
       try {
         totalEur = extractCommittedTotal(sheetRows);
       } catch {

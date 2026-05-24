@@ -485,9 +485,8 @@ function HeroChartView({
           // Which point is currently hovered (Chart.js active element), so the
           // mark grows on hover like the regular dots do.
           const datasets = chart.data.datasets;
-          const marketsIdx = datasets.findIndex((d: any) => d.label === 'markets');
-          const consensusIdx = datasets.findIndex((d: any) => d.label === 'consensus');
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          const marketsIdx = datasets.findIndex((d: { label?: string }) => d.label === 'markets');
+          const consensusIdx = datasets.findIndex((d: { label?: string }) => d.label === 'consensus');
           const active = chart.getActiveElements() as { datasetIndex: number; index: number }[];
           const isActive = (di: number, idx: number) =>
             active.some((a) => a.datasetIndex === di && a.index === idx);

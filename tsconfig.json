@@ -12,13 +12,12 @@
     "noImplicitReturns": true,
     "isolatedModules": true,
     "allowJs": false,
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@lib/*": ["src/lib/*"],
-      "@i18n/*": ["src/i18n/*"],
-      "@workers/*": ["src/workers/*"]
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@i18n/*": ["./src/i18n/*"],
+      "@workers/*": ["./src/workers/*"]
     },
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,

@@ -69,7 +69,7 @@ const COPY = Object.fromEntries(
         if (home) home.setAttribute('href', '/' + lang);
         document.documentElement.lang = lang;
         document.title = c.title + ' — whenwarends.org';
-      } catch (e) {}
+      } catch { /* best-effort locale hydration; ignore */ }
     })();
   </script>
 </Layout>

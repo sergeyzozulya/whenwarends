@@ -29,9 +29,9 @@ export function localizedPath(lang: keyof typeof languages, path = ''): string {
 
 export function getTranslation(lang: keyof typeof languages, key: string): string {
   const keys = key.split('.');
-  let value: any = translations[lang];
+  let value: unknown = translations[lang];
   for (const k of keys) {
-    value = value?.[k];
+    value = (value as Record<string, unknown> | undefined)?.[k];
   }
-  return value || key;
+  return typeof value === 'string' && value.length > 0 ? value : key;
 }

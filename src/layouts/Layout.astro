@@ -95,7 +95,7 @@ const ALT_LANGS = ['uk', 'en', 'ru'] as const;
             var dest = base + path || '/';
             location.replace(dest + location.search + location.hash);
           }
-        } catch (e) {}
+        } catch { /* navigation is best-effort; ignore */ }
       })();
     </script>
 
@@ -156,7 +156,7 @@ const ALT_LANGS = ['uk', 'en', 'ru'] as const;
         if (!a) return;
         try {
           localStorage.setItem('lang', a.getAttribute('data-set-lang'));
-        } catch (err) {}
+        } catch { /* localStorage may be unavailable; ignore */ }
       });
     </script>
   </body>

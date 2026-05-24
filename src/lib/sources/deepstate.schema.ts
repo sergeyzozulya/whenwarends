@@ -47,7 +47,7 @@ export const FeatureSchema = z
   .object({
     type: z.literal('Feature'),
     // History features carry { date: "YYYY-MM-DD" | null }; daily files are {}.
-    properties: z.record(z.unknown()).nullable().optional(),
+    properties: z.record(z.string(), z.unknown()).nullable().optional(),
     geometry: GeometrySchema,
   })
   .passthrough();

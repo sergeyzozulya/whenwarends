@@ -24,7 +24,7 @@ In rough order of size: Ukrainians abroad checking for hope or context; Ukrainia
 
 ## 4. Tech stack
 
-**Frontend.** Astro 5+ with TypeScript and Tailwind. Static-first; islands hydrated only for interactive charts. Astro i18n with `prefixDefaultLocale: false` over `[...lang]` optional-prefix routes: English (default) is served at the root (`/`, `/methodology`), uk/ru are prefixed (`/uk`, `/ru`) — there is no `/en` prefix. Chart.js for the CDF; pure SVG sparklines. Locale bundles split — only active locale ships.
+**Frontend.** Astro 6+ with TypeScript and Tailwind. Static-first; islands hydrated only for interactive charts. Astro i18n with `prefixDefaultLocale: false` over `[...lang]` optional-prefix routes: English (default) is served at the root (`/`, `/methodology`), uk/ru are prefixed (`/uk`, `/ru`) — there is no `/en` prefix. Chart.js for the CDF; pure SVG sparklines. Locale bundles split — only active locale ships.
 
 > **Revised 2026-05-18 (v1.2)** — see §6/§14 and `data/changelog.json`. No
 > D1/KV/Cron; data is versioned repo JSON read at build. No Sentry (see §11).

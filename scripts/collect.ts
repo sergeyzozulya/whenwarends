@@ -15,6 +15,7 @@ import {
   appendSnapshots,
   upsertMarkets,
   readMarkets,
+  writeMeta,
 } from '../src/lib/filestore';
 import { allDerivedSnapshots } from '../src/lib/cards';
 import { runCollectNews } from './collect-news';
@@ -45,6 +46,9 @@ const env = {
 } as unknown as Env;
 
 async function main(): Promise<void> {
+  // The real wall-clock time this run executed — recorded below to drive the
+  // site's "last updated" label, independent of any single source's data date.
+  const startedAt = new Date().toISOString();
   const results = await runCollectors(allCollectors, env);
 
   let snapshotsAdded = 0;
@@ -81,6 +85,12 @@ async function main(): Promise<void> {
     `\ncollect done — ${snapshotsAdded} new snapshots, ${marketsTouched} markets, ` +
       `${failed.length}/${results.length} sources failed`
   );
+
+  // Stamp when this run refreshed the data (the "last updated" label reads
+  // this). Skipped when every source failed — nothing was refreshed.
+  if (failed.length < results.length) {
+    writeMeta({ lastCollected: startedAt });
+  }
 
   // One command updates everything: data -> related news -> editorial brief.
   // Both downstream steps are failure-isolated (they keep prior files on

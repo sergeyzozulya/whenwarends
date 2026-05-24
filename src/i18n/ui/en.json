@@ -107,19 +107,6 @@
     "shiftEarlier": "pulled the date {months} months earlier",
     "noShift": "no measurable shift"
   },
-  "ground": {
-    "heading": "Today on the ground",
-    "frontline": "Combat-zone fire activity",
-    "intensity": "Conflict intensity",
-    "aid": "Aid allocated",
-    "economy": "Russian economy",
-    "ukEconomy": "Ukrainian economy",
-    "confidence": "Confidence",
-    "fireActivity": "VIIRS fire/heat detections over Ukraine, last 5 days · NASA FIRMS",
-    "intensityUnit": "news-volume intensity index",
-    "intensityNote": "GDELT volume intensity: the share of monitored global news coverage matching the war query, latest day. Not a count.",
-    "aidTotal": "allocated to date · Kiel"
-  },
   "brief": {
     "sectionHeading": "This week",
     "sectionIntro": "A short read on the week — what the data moved, and the news coverage behind the numbers.",

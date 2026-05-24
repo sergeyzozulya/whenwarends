@@ -87,6 +87,7 @@ whenwarends/
 │   ├── events.json                    # legacy editorial events (read, not rendered in UI)
 │   ├── briefs.json                    # AI briefs (Phase 3)
 │   ├── news.json                      # current related-news selection (locale-translated)
+│   ├── meta.json                      # run metadata (lastCollected — drives "last updated")
 │   └── changelog.json                 # per-locale change log (id, date, category, description_{uk,en,ru})
 ├── worker/
 │   └── index.ts                       # Worker entry: static assets + health
