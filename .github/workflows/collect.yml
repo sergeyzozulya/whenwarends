@@ -65,6 +65,7 @@ jobs:
       # so a transient API problem never loses a day's data. The status check
       # below no-ops when nothing changed.
       - name: Commit data + news changes
+        id: commit
         if: always()
         run: |
           git config user.name "github-actions[bot]"
@@ -73,6 +74,29 @@ jobs:
             git add data/ public/news/
             git commit -m "chore(data): daily collection + brief $(date -u +%Y-%m-%d)"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "No data changes this run."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
+      # The commit above is pushed with the default GITHUB_TOKEN, which — by
+      # design, to prevent recursive runs — does NOT trigger the on:push
+      # CI/deploy in ci.yml. So a bot data commit would land in git but never
+      # reach Cloudflare. We therefore build + deploy the fresh site right here.
+      # Only when something actually changed: an unchanged dataset has nothing
+      # new to ship. The build embeds the just-committed data/news/brief.
+      # always() so a soft/hard failure in the news or brief step above can't
+      # skip the deploy of data that was nonetheless committed (mirrors the
+      # always() on the commit step). Build is gated on a commit having
+      # happened; deploy is gated on the build succeeding (broken data must
+      # not ship).
+      - name: Build site with fresh data
+        id: build
+        if: always() && steps.commit.outputs.changed == 'true'
+        run: npm run build
+      - name: Deploy to Cloudflare
+        if: always() && steps.build.outcome == 'success'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
