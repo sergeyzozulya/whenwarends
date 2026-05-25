@@ -39,6 +39,14 @@
 //      on a clean network. A dedicated undici Agent (gdeltAgent) raises the
 //      connect timeout to 30s for GDELT requests only.
 
+// NOTE: keep the `undici` dependency on a major compatible with Node's BUNDLED
+// undici (Node 22 → undici 6.x). undici 8 rewrote the dispatcher↔handler
+// contract (mandatory `onRequestStart`), so an undici-8 Agent handed to the
+// built-in global fetch below throws `UND_ERR_INVALID_ARG: invalid
+// onRequestStart method`. undici 7 still speaks the legacy handler interface
+// the built-in fetch uses — hence the `^7` pin in package.json. Do not bump to
+// 8+ without either moving off the global fetch (use undici's own fetch) or
+// confirming Node's bundled undici has caught up to the same major.
 import { Agent } from 'undici';
 import type { Collector, CollectorResult, Env, SnapshotInput } from '../types';
 import { fetchWithRetry, type FetchRetryOptions } from './contract';
