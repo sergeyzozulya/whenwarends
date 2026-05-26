@@ -18,13 +18,22 @@ export function getLang(lang: keyof typeof languages): string {
 
 /**
  * Build a path for a locale. The default locale (en) is served at the root with
- * no prefix; uk/ru are prefixed. localizedPath('en', '/methodology') →
- * '/methodology'; localizedPath('uk', '/methodology') → '/uk/methodology';
- * localizedPath('en') → '/'.
+ * no prefix; uk/ru are prefixed. The site is built in directory format, so every
+ * page URL is served with a trailing slash (Cloudflare 301s the slashless form);
+ * appending one here keeps canonical, hreflang, and internal links pointing at
+ * the served URL directly — no redirect, no canonical/alternate mismatch. File
+ * assets (a final segment with an extension, e.g. /og.png) keep their form.
+ * localizedPath('en', '/methodology') → '/methodology/';
+ * localizedPath('uk', '/methodology') → '/uk/methodology/';
+ * localizedPath('en') → '/'; localizedPath('uk') → '/uk/';
+ * localizedPath('en', '/og.png') → '/og.png'.
  */
 export function localizedPath(lang: keyof typeof languages, path = ''): string {
   const p = path && !path.startsWith('/') ? `/${path}` : path;
-  return lang === defaultLang ? p || '/' : `/${lang}${p}`;
+  const base = lang === defaultLang ? p || '/' : `/${lang}${p}`;
+  const lastSeg = base.slice(base.lastIndexOf('/') + 1);
+  const isFile = lastSeg.includes('.');
+  return base === '/' || base.endsWith('/') || isFile ? base : `${base}/`;
 }
 
 export function getTranslation(lang: keyof typeof languages, key: string): string {

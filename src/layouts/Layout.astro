@@ -62,38 +62,30 @@ const ALT_LANGS = ['uk', 'en', 'ru'] as const;
     <meta name="twitter:title" content={ogTitle} />
     <meta name="twitter:description" content={ogDesc} />
     <meta name="twitter:image" content={ogImage} />
-    {/* Language preference: a saved choice wins; otherwise auto-detect
-        from the browser (saved choice is only written when the user
-        explicitly switches — see the [data-set-lang] handler). Runs
-        before paint to avoid a flash. */}
+    {/* Language auto-redirect — deliberately narrow so it never interferes
+        with indexing. It fires ONLY when all three hold: (1) no explicit choice
+        is stored, (2) the visitor is on the unprefixed root ('/'), and (3) the
+        browser prefers uk/ru over en. Every other path — including localized
+        pages — is left untouched, so a crawler (which renders with en and
+        stores nothing) reaches each page directly instead of through a
+        redirect. An explicit switch is saved by the [data-set-lang] handler and
+        suppresses (1). Runs before paint to avoid a flash. */}
     <script is:inline>
       (function () {
         try {
-          // en is served at the root (no prefix); uk/ru are prefixed.
           var parts = location.pathname.split('/').filter(Boolean);
-          var first = parts[0];
-          var cur = first === 'uk' || first === 'ru' ? first : 'en';
-          var rest = cur === 'en' ? parts : parts.slice(1);
-          var sup = ['uk', 'en', 'ru'];
-          var stored = localStorage.getItem('lang');
-          var target = null;
-          if (stored && sup.indexOf(stored) !== -1) {
-            target = stored;
-          } else if (!stored) {
-            var navs = navigator.languages || [navigator.language || 'en'];
-            for (var i = 0; i < navs.length; i++) {
-              var l = (navs[i] || '').toLowerCase();
-              if (l.indexOf('uk') === 0) { target = 'uk'; break; }
-              if (l.indexOf('ru') === 0) { target = 'ru'; break; }
-              if (l.indexOf('en') === 0) { target = 'en'; break; }
-            }
-            if (!target) target = 'en';
+          if (parts.length !== 0) return;            // not the root page
+          if (localStorage.getItem('lang')) return;  // explicit choice set
+          var navs = navigator.languages || [navigator.language || 'en'];
+          var target = 'en';
+          for (var i = 0; i < navs.length; i++) {
+            var l = (navs[i] || '').toLowerCase();
+            if (l.indexOf('uk') === 0) { target = 'uk'; break; }
+            if (l.indexOf('ru') === 0) { target = 'ru'; break; }
+            if (l.indexOf('en') === 0) { target = 'en'; break; }
           }
-          if (target && target !== cur) {
-            var base = target === 'en' ? '' : '/' + target;
-            var path = rest.length ? '/' + rest.join('/') : '';
-            var dest = base + path || '/';
-            location.replace(dest + location.search + location.hash);
+          if (target !== 'en') {
+            location.replace('/' + target + '/' + location.search + location.hash);
           }
         } catch { /* navigation is best-effort; ignore */ }
       })();

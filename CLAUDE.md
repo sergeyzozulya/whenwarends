@@ -144,8 +144,12 @@ whenwarends/
   hardcode a locale segment.
 - **Layout** emits canonical + hreflang alternates (uk/en/ru + `x-default`→en)
   and a per-locale `og:image` (`/og.png`, `/uk/og.png`, `/ru/og.png`).
-- **Language preference**: a head script auto-detects from the browser on first
-  visit and honours an explicit switch saved to `localStorage` thereafter.
+- **Language preference**: a head script auto-redirects **only** on the
+  unprefixed root (`/`), and only when no explicit choice is stored and the
+  browser prefers uk/ru. Every other path (incl. localized pages) is left as-is
+  so crawlers index it directly — no language-dependent redirect off sub-pages.
+  An explicit switch is saved to `localStorage` and suppresses the root
+  auto-redirect thereafter.
 
 ### Styling
 
