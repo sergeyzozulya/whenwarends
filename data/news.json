@@ -1,18 +1,68 @@
 {
-  "asOf": "2026-05-25",
+  "asOf": "2026-05-28",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://oreporter.com/mundo/russia-ataca-kiev-missil-hipersonico-drones-quatro-mortos-ucrania",
-      "domain": "oreporter.com",
-      "seenAt": "2026-05-25T06:00:00.000Z",
-      "sourceCountry": "Brazil",
-      "image": "/news/f7bfc9ecad0f8e83.webp",
-      "original": "Rússia ataca Kiev com míssil hipersônico e drones ; ao menos quatro morrem na Ucrânia",
+      "url": "https://www.ibtimes.com/senior-ukrainian-commander-says-russian-army-no-longer-able-achieve-major-breakthroughs-3803371",
+      "domain": "ibtimes.com",
+      "seenAt": "2026-05-27T19:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/bd487f76eee38510.webp",
+      "original": "Senior Ukrainian Commander Says Russian Army No Longer Able To Achieve Major Breakthroughs",
       "title": {
-        "uk": "Росія атакує Київ гіперзвуковою ракетою та дронами; щонайменше четверо загиблих в Україні",
-        "en": "Russia attacks Kyiv with hypersonic missile and drones; at least four killed in Ukraine",
-        "ru": "Россия атакует Киев гиперзвуковой ракетой и дронами; не менее четырёх погибших на Украине"
+        "uk": "Старший командир ЗСУ заявив, що російська армія більше не здатна досягти великих проривів",
+        "en": "Senior Ukrainian commander says Russian army no longer able to achieve major breakthroughs",
+        "ru": "Старший украинский командир заявил, что российская армия больше не способна добиться крупных прорывов"
+      }
+    },
+    {
+      "url": "https://www.ibtimes.com/diplomats-told-leave-kyiv-russia-signals-its-deadliest-strikes-capital-are-still-ahead-3803300",
+      "domain": "ibtimes.com",
+      "seenAt": "2026-05-25T21:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/081c266cc3c17e5d.webp",
+      "original": "Diplomats Told to Leave Kyiv as Russia Signals Its Deadliest Strikes on the Capital Are Still Ahead",
+      "title": {
+        "uk": "Дипломатам рекомендували покинути Київ, оскільки Росія сигналізує про майбутні найруйнівніші удари по столиці",
+        "en": "Diplomats told to leave Kyiv as Russia signals its deadliest strikes on the capital are still ahead",
+        "ru": "Дипломатам рекомендовали покинуть Киев, поскольку Россия сигнализирует о готовящихся наиболее разрушительных ударах по столице"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/5/26/european-countries-and-eu-summon-russian-envoys-over-threats-on-kyiv",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-05-26T17:30:00.000Z",
+      "sourceCountry": "United States",
+      "original": "European countries and EU summon Russian envoys over threats on Kyiv",
+      "title": {
+        "uk": "Європейські країни та ЄС викликали послів Росії через погрози Києву",
+        "en": "European countries and EU summon Russian envoys over threats on Kyiv",
+        "ru": "Европейские страны и ЕС вызвали российских послов из-за угроз Киеву"
+      }
+    },
+    {
+      "url": "https://www.hurriyetdailynews.com/rubio-says-us-ready-to-mediate-as-moscow-steps-up-ukraine-threats-222540",
+      "domain": "hurriyetdailynews.com",
+      "seenAt": "2026-05-26T07:30:00.000Z",
+      "sourceCountry": "Turkey",
+      "original": "Rubio says US ready to mediate as Moscow steps up Ukraine threats",
+      "title": {
+        "uk": "Рубіо заявив, що США готові виступити посередником на тлі посилення загроз Москви щодо України",
+        "en": "Rubio says US ready to mediate as Moscow steps up Ukraine threats",
+        "ru": "Рубио заявил, что США готовы выступить посредником на фоне усиления угроз Москвы в адрес Украины"
+      }
+    },
+    {
+      "url": "https://www.arabnews.com/node/2644966/world",
+      "domain": "arabnews.com",
+      "seenAt": "2026-05-26T10:30:00.000Z",
+      "sourceCountry": "Saudi Arabia",
+      "image": "/news/c39382477b6a7b4c.webp",
+      "original": "Putin offers debt relief for newly recruited fighters in Ukraine",
+      "title": {
+        "uk": "Путін пропонує списання боргів новобранцям, що воюють в Україні",
+        "en": "Putin offers debt relief for newly recruited fighters in Ukraine",
+        "ru": "Путин предлагает списание долгов новым призывникам, воюющим на Украине"
       }
     },
     {
@@ -23,9 +73,47 @@
       "image": "/news/d530275d4815a877.webp",
       "original": "Lukashenka offers to meet Zelenskyy as Ukraine warns of Russia new offensive through Belarus",
       "title": {
-        "uk": "Лукашенко пропонує зустріч із Зеленським, поки Україна попереджає про новий наступ Росії через Білорусь",
-        "en": "Lukashenka offers to meet Zelenskyy as Ukraine warns of Russia's new offensive through Belarus",
-        "ru": "Лукашенко предлагает встречу с Зеленским, пока Украина предупреждает о новом наступлении России через Беларусь"
+        "uk": "Лукашенко запропонував зустріч із Зеленським, поки Україна попереджає про новий наступ Росії через Білорусь",
+        "en": "Lukashenka offers to meet Zelenskyy as Ukraine warns of Russia new offensive through Belarus",
+        "ru": "Лукашенко предложил встречу с Зеленским, пока Украина предупреждает о новом наступлении России через Беларусь"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/5/22/too-big-a-risk-why-has-russia-sent-nuclear-warheads-to-belarus",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-05-22T12:00:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Something big taking place : Why has Russia sent more nukes to Belarus ? | Russia - Ukraine war News",
+      "title": {
+        "uk": "«Відбувається щось велике»: навіщо Росія направила більше ядерної зброї до Білорусі?",
+        "en": "Something big taking place: why has Russia sent more nukes to Belarus?",
+        "ru": "«Происходит что-то большое»: зачем Россия направила больше ядерного оружия в Беларусь?"
+      }
+    },
+    {
+      "url": "https://ua.korrespondent.net/world/4881765-u-nato-otsinyly-hotovnist-rf-do-velykoho-nastupu",
+      "domain": "ua.korrespondent.net",
+      "seenAt": "2026-05-27T07:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/986dc22428adcaba.webp",
+      "original": "У НАТО оцінили готовність РФ до великого наступу",
+      "title": {
+        "uk": "У НАТО оцінили готовність РФ до великого наступу",
+        "en": "NATO assessed Russia's readiness for a large-scale offensive",
+        "ru": "В НАТО оценили готовность РФ к крупному наступлению"
+      }
+    },
+    {
+      "url": "https://www.dialog.ua/war/cnn-si-tszinpin-ponyal-chto-rossiya-proigryvaet-voynu-s-ukrainoy.html",
+      "domain": "dialog.ua",
+      "seenAt": "2026-05-24T16:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/bdd530ad7095e5cc.webp",
+      "original": "CNN : Си Цзиньпин понял , что Россия проигрывает войну с Украиной",
+      "title": {
+        "uk": "CNN: Сі Цзіньпін зрозумів, що Росія програє війну з Україною",
+        "en": "CNN: Xi Jinping understood that Russia is losing the war with Ukraine",
+        "ru": "CNN: Си Цзиньпин понял, что Россия проигрывает войну с Украиной"
       }
     },
     {
@@ -39,94 +127,6 @@
         "uk": "Коли закінчиться війна: активна фаза може завершитись восени",
         "en": "When will the war end: the active phase may conclude in autumn",
         "ru": "Когда закончится война: активная фаза может завершиться осенью"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/5/22/too-big-a-risk-why-has-russia-sent-nuclear-warheads-to-belarus",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-05-22T12:00:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Something big taking place : Why has Russia sent more nukes to Belarus ? | Russia - Ukraine war News",
-      "title": {
-        "uk": "«Щось велике відбувається»: чому Росія направила більше ядерної зброї до Білорусі?",
-        "en": "\"Something big taking place\": why has Russia sent more nukes to Belarus?",
-        "ru": "«Происходит что-то большое»: почему Россия направила больше ядерного оружия в Беларусь?"
-      }
-    },
-    {
-      "url": "https://www.cnn.com/2026/05/20/politics/russia-losing-ukraine-mcgurk-analysis",
-      "domain": "cnn.com",
-      "seenAt": "2026-05-20T04:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/5216435fb824b68b.webp",
-      "original": "Russia is losing in Ukraine . Xi has noticed Trump should too",
-      "title": {
-        "uk": "Росія програє в Україні. Сі це помітив — Трамп теж повинен",
-        "en": "Russia is losing in Ukraine. Xi has noticed — Trump should too",
-        "ru": "Россия проигрывает на Украине. Си это заметил — Трампу тоже стоит"
-      }
-    },
-    {
-      "url": "https://foreignpolicy.com/2026/05/18/ukraine-russia-war-strategy-attack/",
-      "domain": "foreignpolicy.com",
-      "seenAt": "2026-05-19T00:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/57f3458aa3666ce7.webp",
-      "original": "Ukraine Has a New War Strategy Against Russia and It Working",
-      "title": {
-        "uk": "Україна має нову воєнну стратегію проти Росії, і вона працює",
-        "en": "Ukraine has a new war strategy against Russia, and it's working",
-        "ru": "У Украины есть новая военная стратегия против России, и она работает"
-      }
-    },
-    {
-      "url": "https://www.yahoo.com/news/articles/ukraine-says-drones-hit-another-095305093.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-05-21T11:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/1b2350595e12881c.webp",
-      "original": "Ukraine says its drones hit another refinery deep inside Russia as long - range strikes escalate",
-      "title": {
-        "uk": "Україна заявила, що її дрони вдарили по черговому НПЗ у глибині Росії на тлі ескалації далекобійних ударів",
-        "en": "Ukraine says its drones hit another refinery deep inside Russia as long-range strikes escalate",
-        "ru": "Украина заявила, что её дроны нанесли удар по очередному НПЗ вглубь России на фоне эскалации дальних ударов"
-      }
-    },
-    {
-      "url": "https://www.obozrevatel.com/ukr/politics-news/makron-zasterig-lukashenka-vid-uchasti-u-vijni-proti-ukraini-i-nagadav-pro-riziki.htm",
-      "domain": "obozrevatel.com",
-      "seenAt": "2026-05-24T23:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Макрон застеріг Білорусь не вступати у війну проти України і нагадав про ризики",
-      "title": {
-        "uk": "Макрон застеріг Білорусь не вступати у війну проти України і нагадав про ризики",
-        "en": "Macron warned Belarus against entering the war against Ukraine and recalled the risks",
-        "ru": "Макрон предостерёг Беларусь от вступления в войну против Украины и напомнил о рисках"
-      }
-    },
-    {
-      "url": "https://www.pravda.com.ua/news/2026/05/23/8036038/",
-      "domain": "pravda.com.ua",
-      "seenAt": "2026-05-23T02:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "США в ООН повторили риторику про припинення вогню у війні Росії проти України",
-      "title": {
-        "uk": "США в ООН повторили риторику про припинення вогню у війні Росії проти України",
-        "en": "US at the UN repeated ceasefire rhetoric in Russia's war against Ukraine",
-        "ru": "США в ООН повторили риторику о прекращении огня в войне России против Украины"
-      }
-    },
-    {
-      "url": "https://ziare.com/general-nato/nato-general-armata-rusiei-razboi-ucraina-aparare-2014528",
-      "domain": "ziare.com",
-      "seenAt": "2026-05-24T12:30:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/569ad36926f399fb.webp",
-      "original": "Șeful Corpului Aliat de Reacție Rapidă al NATO : Armata Rusiei este mai periculoasă acum decât în momentul invadării Ucrainei . „ Trebuie să luăm în serios amenințarea lui Putin",
-      "title": {
-        "uk": "Командувач Корпусу швидкого реагування НАТО: армія Росії зараз небезпечніша, ніж на момент вторгнення в Україну — «Ми повинні серйозно сприймати загрозу Путіна»",
-        "en": "NATO Rapid Reaction Corps chief: Russia's army is more dangerous now than at the time of the invasion of Ukraine — \"We must take Putin's threat seriously\"",
-        "ru": "Командующий Корпусом быстрого реагирования НАТО: армия России сейчас опаснее, чем в момент вторжения в Украину — «Мы должны серьёзно воспринимать угрозу Путина»"
       }
     }
   ]
