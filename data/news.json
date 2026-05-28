@@ -10,22 +10,9 @@
       "image": "/news/bd487f76eee38510.webp",
       "original": "Senior Ukrainian Commander Says Russian Army No Longer Able To Achieve Major Breakthroughs",
       "title": {
-        "uk": "Старший командир ЗСУ заявив, що російська армія більше не здатна досягти великих проривів",
+        "uk": "Старший український командир заявив, що армія Росії більше не здатна досягти великих проривів",
         "en": "Senior Ukrainian commander says Russian army no longer able to achieve major breakthroughs",
-        "ru": "Старший украинский командир заявил, что российская армия больше не способна добиться крупных прорывов"
-      }
-    },
-    {
-      "url": "https://www.ibtimes.com/diplomats-told-leave-kyiv-russia-signals-its-deadliest-strikes-capital-are-still-ahead-3803300",
-      "domain": "ibtimes.com",
-      "seenAt": "2026-05-25T21:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/081c266cc3c17e5d.webp",
-      "original": "Diplomats Told to Leave Kyiv as Russia Signals Its Deadliest Strikes on the Capital Are Still Ahead",
-      "title": {
-        "uk": "Дипломатам рекомендували покинути Київ, оскільки Росія сигналізує про майбутні найруйнівніші удари по столиці",
-        "en": "Diplomats told to leave Kyiv as Russia signals its deadliest strikes on the capital are still ahead",
-        "ru": "Дипломатам рекомендовали покинуть Киев, поскольку Россия сигнализирует о готовящихся наиболее разрушительных ударах по столице"
+        "ru": "Старший украинский командир заявил, что армия России более не способна достичь крупных прорывов"
       }
     },
     {
@@ -35,21 +22,22 @@
       "sourceCountry": "United States",
       "original": "European countries and EU summon Russian envoys over threats on Kyiv",
       "title": {
-        "uk": "Європейські країни та ЄС викликали послів Росії через погрози Києву",
+        "uk": "Країни Європи та ЄС викликали російських послів через загрози Києву",
         "en": "European countries and EU summon Russian envoys over threats on Kyiv",
-        "ru": "Европейские страны и ЕС вызвали российских послов из-за угроз Киеву"
+        "ru": "Страны Европы и ЕС вызвали российских послов из-за угроз Киеву"
       }
     },
     {
-      "url": "https://www.hurriyetdailynews.com/rubio-says-us-ready-to-mediate-as-moscow-steps-up-ukraine-threats-222540",
-      "domain": "hurriyetdailynews.com",
-      "seenAt": "2026-05-26T07:30:00.000Z",
-      "sourceCountry": "Turkey",
-      "original": "Rubio says US ready to mediate as Moscow steps up Ukraine threats",
+      "url": "https://www.washingtonexaminer.com/news/world/4581322/russia-strikes-kyiv-withdraw/",
+      "domain": "washingtonexaminer.com",
+      "seenAt": "2026-05-25T23:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/b4cd9f555a89782d.webp",
+      "original": "Russia informs US of upcoming strikes on Kyiv",
       "title": {
-        "uk": "Рубіо заявив, що США готові виступити посередником на тлі посилення загроз Москви щодо України",
-        "en": "Rubio says US ready to mediate as Moscow steps up Ukraine threats",
-        "ru": "Рубио заявил, что США готовы выступить посредником на фоне усиления угроз Москвы в адрес Украины"
+        "uk": "Росія повідомила США про майбутні удари по Києву",
+        "en": "Russia informs US of upcoming strikes on Kyiv",
+        "ru": "Россия уведомила США о предстоящих ударах по Киеву"
       }
     },
     {
@@ -60,9 +48,34 @@
       "image": "/news/c39382477b6a7b4c.webp",
       "original": "Putin offers debt relief for newly recruited fighters in Ukraine",
       "title": {
-        "uk": "Путін пропонує списання боргів новобранцям, що воюють в Україні",
+        "uk": "Путін пропонує списання боргів новобранцям, які воюють в Україні",
         "en": "Putin offers debt relief for newly recruited fighters in Ukraine",
-        "ru": "Путин предлагает списание долгов новым призывникам, воюющим на Украине"
+        "ru": "Путин предлагает списание долгов новобранцам, воюющим в Украине"
+      }
+    },
+    {
+      "url": "https://www.eurointegration.com.ua/news/2026/05/27/7238382/",
+      "domain": "eurointegration.com.ua",
+      "seenAt": "2026-05-27T08:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/ebee49b935259507.webp",
+      "original": "Сікорський : Росія сьогодні не здатна на великий наступ проти НАТО",
+      "title": {
+        "uk": "Сікорський: Росія сьогодні не здатна на великий наступ проти НАТО",
+        "en": "Sikorski: Russia is currently not capable of a major offensive against NATO",
+        "ru": "Сикорский: Россия сегодня не способна на крупное наступление против НАТО"
+      }
+    },
+    {
+      "url": "https://www.obozrevatel.com/ukr/politics-news/nebenzya-v-oon-tsinichno-nazvav-umovi-dlya-mirnoi-ugodi-z-ukrainoyu.htm",
+      "domain": "obozrevatel.com",
+      "seenAt": "2026-05-27T09:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Небензя в ООН назвав умови для мирної угоди з Україною – чого хоче Кремль",
+      "title": {
+        "uk": "Небензя в ООН назвав умови для мирної угоди з Україною — чого хоче Кремль",
+        "en": "Nebenzya at the UN named conditions for a peace deal with Ukraine — what the Kremlin wants",
+        "ru": "Небензя в ООН назвал условия для мирного соглашения с Украиной — чего хочет Кремль"
       }
     },
     {
@@ -73,34 +86,9 @@
       "image": "/news/d530275d4815a877.webp",
       "original": "Lukashenka offers to meet Zelenskyy as Ukraine warns of Russia new offensive through Belarus",
       "title": {
-        "uk": "Лукашенко запропонував зустріч із Зеленським, поки Україна попереджає про новий наступ Росії через Білорусь",
-        "en": "Lukashenka offers to meet Zelenskyy as Ukraine warns of Russia new offensive through Belarus",
-        "ru": "Лукашенко предложил встречу с Зеленским, пока Украина предупреждает о новом наступлении России через Беларусь"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/5/22/too-big-a-risk-why-has-russia-sent-nuclear-warheads-to-belarus",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-05-22T12:00:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Something big taking place : Why has Russia sent more nukes to Belarus ? | Russia - Ukraine war News",
-      "title": {
-        "uk": "«Відбувається щось велике»: навіщо Росія направила більше ядерної зброї до Білорусі?",
-        "en": "Something big taking place: why has Russia sent more nukes to Belarus?",
-        "ru": "«Происходит что-то большое»: зачем Россия направила больше ядерного оружия в Беларусь?"
-      }
-    },
-    {
-      "url": "https://ua.korrespondent.net/world/4881765-u-nato-otsinyly-hotovnist-rf-do-velykoho-nastupu",
-      "domain": "ua.korrespondent.net",
-      "seenAt": "2026-05-27T07:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/986dc22428adcaba.webp",
-      "original": "У НАТО оцінили готовність РФ до великого наступу",
-      "title": {
-        "uk": "У НАТО оцінили готовність РФ до великого наступу",
-        "en": "NATO assessed Russia's readiness for a large-scale offensive",
-        "ru": "В НАТО оценили готовность РФ к крупному наступлению"
+        "uk": "Лукашенко пропонує зустріч із Зеленським, поки Україна попереджає про новий наступ РФ через Білорусь",
+        "en": "Lukashenka offers to meet Zelenskyy as Ukraine warns of new Russian offensive through Belarus",
+        "ru": "Лукашенко предлагает встречу с Зеленским, пока Украина предупреждает о новом наступлении РФ через Беларусь"
       }
     },
     {
@@ -117,6 +105,18 @@
       }
     },
     {
+      "url": "https://www.aljazeera.com/news/2026/5/22/too-big-a-risk-why-has-russia-sent-nuclear-warheads-to-belarus",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-05-22T12:00:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Something big taking place : Why has Russia sent more nukes to Belarus ? | Russia - Ukraine war News",
+      "title": {
+        "uk": "«Щось велике відбувається»: чому Росія відправила більше ядерної зброї до Білорусі?",
+        "en": "Something big taking place: why has Russia sent more nukes to Belarus?",
+        "ru": "«Происходит что-то большое»: почему Россия отправила больше ядерного оружия в Беларусь?"
+      }
+    },
+    {
       "url": "https://tsn.ua/ato/zupynka-viyny-ta-skasuvannia-voyennoho-stanu-vze-voseny-u-zelenskoho-nazvaly-holovnu-umovu-3090266.html",
       "domain": "tsn.ua",
       "seenAt": "2026-05-23T20:00:00.000Z",
@@ -125,7 +125,7 @@
       "original": "Коли закінчиться війна : активна фаза може завершитись восени",
       "title": {
         "uk": "Коли закінчиться війна: активна фаза може завершитись восени",
-        "en": "When will the war end: the active phase may conclude in autumn",
+        "en": "When will the war end: active phase may conclude in autumn",
         "ru": "Когда закончится война: активная фаза может завершиться осенью"
       }
     }
