@@ -1,31 +1,18 @@
 {
-  "asOf": "2026-05-31",
+  "asOf": "2026-06-01",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.investor.bg/a/593-sigurnost-i-otbrana/431358-v-neobyaveni-razgovori-sayuznitsite-ugovaryat-rusiya-da-ne-obstrelva-kiev",
-      "domain": "investor.bg",
-      "seenAt": "2026-05-31T06:00:00.000Z",
-      "sourceCountry": "Bulgaria",
-      "image": "/news/dbf6054b8496878b.webp",
-      "original": "В необявени разговори съюзниците уговарят Русия да не обстрелва Киев",
-      "title": {
-        "uk": "Союзники ведуть таємні переговори, щоб переконати Росію не обстрілювати Київ",
-        "en": "Allies hold secret talks to persuade Russia not to strike Kyiv",
-        "ru": "Союзники ведут тайные переговоры, убеждая Россию не обстреливать Киев"
-      }
-    },
-    {
-      "url": "https://www.yahoo.com/news/world/articles/concerns-mount-belarus-could-launchpad-040310360.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-05-31T06:30:00.000Z",
+      "url": "https://www.ibtimes.com/senior-ukrainian-commander-says-russian-army-no-longer-able-achieve-major-breakthroughs-3803371",
+      "domain": "ibtimes.com",
+      "seenAt": "2026-05-27T19:30:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/50f5c125054e2ea4.webp",
-      "original": "Concerns mount that Belarus could be a launchpad for a new Russian offensive in Ukraine",
+      "image": "/news/bd487f76eee38510.webp",
+      "original": "Senior Ukrainian Commander Says Russian Army No Longer Able To Achieve Major Breakthroughs",
       "title": {
-        "uk": "Зростають побоювання, що Білорусь може стати плацдармом для нового російського наступу в Україні",
-        "en": "Concerns mount that Belarus could be a launchpad for a new Russian offensive in Ukraine",
-        "ru": "Растут опасения, что Беларусь может стать плацдармом для нового российского наступления на Украине"
+        "uk": "Старший український командувач заявив, що російська армія більше не здатна досягати великих проривів",
+        "en": "Senior Ukrainian Commander Says Russian Army No Longer Able to Achieve Major Breakthroughs",
+        "ru": "Старший украинский командующий заявил, что российская армия больше не способна добиваться крупных прорывов"
       }
     },
     {
@@ -36,9 +23,9 @@
       "image": "/news/ea80091b74807846.webp",
       "original": "Russia Prepares New Large - Scale Attack on Ukraine , Zelenskiy Warns",
       "title": {
-        "uk": "Зеленський попереджає: Росія готує новий масштабний удар по Україні",
-        "en": "Russia prepares new large-scale attack on Ukraine, Zelenskiy warns",
-        "ru": "Зеленский предупреждает: Россия готовит новый масштабный удар по Украине"
+        "uk": "Зеленський попередив: Росія готує новий масштабний напад на Україну",
+        "en": "Russia Prepares New Large-Scale Attack on Ukraine, Zelenskyy Warns",
+        "ru": "Зеленский предупредил: Россия готовит новый масштабный удар по Украине"
       }
     },
     {
@@ -49,60 +36,34 @@
       "image": "/news/4f27c3477af5ba0a.webp",
       "original": "У Путина не осталось хороших ходов : украинские дроны меняют ход войны – WP",
       "title": {
-        "uk": "У Путіна не залишилось хороших ходів: українські дрони змінюють хід війни — WP",
-        "en": "Putin has no good moves left: Ukrainian drones are changing the course of the war — WP",
-        "ru": "У Путина не осталось хороших ходов: украинские дроны меняют ход войны — WP"
+        "uk": "У Путіна не залишилось хороших ходів: українські дрони змінюють хід війни – WP",
+        "en": "Putin Has No Good Moves Left: Ukrainian Drones Are Changing the Course of the War – WP",
+        "ru": "У Путина не осталось хороших ходов: украинские дроны меняют ход войны – WP"
       }
     },
     {
-      "url": "https://www.rts.rs/vesti/ratu-u-ukrajini/5961461/rat-u-ukrajini-ukrajina-rusija-putin-zelenski-.html",
-      "domain": "rts.rs",
-      "seenAt": "2026-05-30T05:45:00.000Z",
-      "sourceCountry": "Serbia",
-      "image": "/news/5997b9473c83d84f.webp",
-      "original": "Путин : Стање на фронту говори да се сукоб ближи крају ; Кијев : Погођена нафтна станица у Русији",
+      "url": "https://www.hurriyetdailynews.com/concerns-mount-over-belarus-as-launchpad-for-new-russian-offensive-222709",
+      "domain": "hurriyetdailynews.com",
+      "seenAt": "2026-05-31T11:00:00.000Z",
+      "sourceCountry": "Turkey",
+      "original": "Concerns mount over Belarus as launchpad for new Russian offensive",
       "title": {
-        "uk": "Путін: ситуація на фронті свідчить, що конфлікт наближається до кінця; Київ: в Росії уражена нафтова станція",
-        "en": "Putin: frontline situation shows conflict is nearing its end; Kyiv: oil facility hit in Russia",
-        "ru": "Путин: ситуация на фронте говорит о том, что конфликт близится к концу; Киев: в России поражена нефтяная станция"
+        "uk": "Занепокоєння посилюється через Білорусь як плацдарм для нового російського наступу",
+        "en": "Concerns Mount over Belarus as Launchpad for New Russian Offensive",
+        "ru": "Растёт обеспокоенность использованием Беларуси как плацдарма для нового российского наступления"
       }
     },
     {
-      "url": "https://www.unian.net/war/voyna-v-ukraine-vsu-nachali-nanosit-udar-po-rossiyskoy-prifrontovoy-logistike-13397265.html",
-      "domain": "unian.net",
-      "seenAt": "2026-05-29T21:30:00.000Z",
+      "url": "https://www.kyivpost.com/post/76914",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-05-26T19:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/aa736dd9e6004f41.webp",
-      "original": "Война в Украине – ВСУ начали наносить удар по российской прифронтовой логистике",
+      "image": "/news/b32ebbea4325da88.webp",
+      "original": "Ukraine Pitches Limited  Airport Truce  to Jumpstart Ceasefire Talks",
       "title": {
-        "uk": "Війна в Україні: ЗСУ почали завдавати ударів по російській прифронтовій логістиці",
-        "en": "War in Ukraine: Ukrainian forces begin striking Russian front-line logistics",
-        "ru": "Война в Украине: ВСУ начали наносить удары по российской прифронтовой логистике"
-      }
-    },
-    {
-      "url": "https://kp.ua/ua/politics/a730696-ukrajina-na-zasidanni-radbezu-oon-poprosila-partneriv-vdesjatero-zbilshiti-postachannja-ppo-",
-      "domain": "kp.ua",
-      "seenAt": "2026-05-29T06:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Україна на засіданні Радбезу ООН попросила партнерів вдесятеро збільшити постачання ППО",
-      "title": {
-        "uk": "Україна на засіданні Радбезу ООН попросила партнерів вдесятеро збільшити постачання ППО",
-        "en": "Ukraine at UN Security Council meeting asked partners to increase air-defence supplies tenfold",
-        "ru": "Украина на заседании Совбеза ООН попросила партнёров в десять раз увеличить поставки ПВО"
-      }
-    },
-    {
-      "url": "https://www.ibtimes.com/senior-ukrainian-commander-says-russian-army-no-longer-able-achieve-major-breakthroughs-3803371",
-      "domain": "ibtimes.com",
-      "seenAt": "2026-05-27T19:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/bd487f76eee38510.webp",
-      "original": "Senior Ukrainian Commander Says Russian Army No Longer Able To Achieve Major Breakthroughs",
-      "title": {
-        "uk": "Старший український командувач заявив, що армія Росії більше не здатна досягати великих проривів",
-        "en": "Senior Ukrainian commander says Russian army no longer able to achieve major breakthroughs",
-        "ru": "Старший украинский командующий заявил, что армия России больше не способна достигать крупных прорывов"
+        "uk": "Україна запропонувала обмежене «перемир'я над аеропортами» для перезапуску переговорів про припинення вогню",
+        "en": "Ukraine Pitches Limited \"Airport Truce\" to Jumpstart Ceasefire Talks",
+        "ru": "Украина предложила ограниченное «перемирие над аэропортами» для возобновления переговоров о прекращении огня"
       }
     },
     {
@@ -113,8 +74,34 @@
       "original": "European countries and EU summon Russian envoys over threats on Kyiv",
       "title": {
         "uk": "Європейські країни та ЄС викликали послів Росії через погрози Києву",
-        "en": "European countries and EU summon Russian envoys over threats on Kyiv",
+        "en": "European Countries and EU Summon Russian Envoys over Threats on Kyiv",
         "ru": "Европейские страны и ЕС вызвали послов России из-за угроз Киеву"
+      }
+    },
+    {
+      "url": "https://www.news24.com/world/secretary-of-state-rubio-offers-us-mediation-as-russia-warns-diplomats-to-flee-ukraine-20260526-0803",
+      "domain": "news24.com",
+      "seenAt": "2026-05-26T16:15:00.000Z",
+      "sourceCountry": "South Africa",
+      "image": "/news/064f361aa9a3b1f5.webp",
+      "original": "Secretary of State Rubio offers US mediation as Russia warns diplomats to flee Ukraine",
+      "title": {
+        "uk": "Держсекретар Рубіо запропонував американське посередництво, поки Росія попереджає дипломатів покинути Україну",
+        "en": "Secretary of State Rubio Offers US Mediation as Russia Warns Diplomats to Flee Ukraine",
+        "ru": "Госсекретарь Рубио предложил американское посредничество на фоне предупреждений России дипломатам покинуть Украину"
+      }
+    },
+    {
+      "url": "https://www.focus.de/politik/ausland/die-zeit-spielt-russland-nicht-mehr-in-die-haende_da5a41b2-7b07-4bcf-b4cd-0598a6e70a02.html",
+      "domain": "focus.de",
+      "seenAt": "2026-05-31T11:00:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/5f87dbf836f5d369.webp",
+      "original": "„ Die Zeit spielt Russland nicht mehr in die Hände",
+      "title": {
+        "uk": "«Час більше не грає на руку Росії»",
+        "en": "\"Time No Longer Plays into Russia's Hands\"",
+        "ru": "«Время больше не играет на руку России»"
       }
     },
     {
@@ -125,9 +112,22 @@
       "image": "/news/c39382477b6a7b4c.webp",
       "original": "Putin offers debt relief for newly recruited fighters in Ukraine",
       "title": {
-        "uk": "Путін пропонує списання боргів новобранцям, які воюють в Україні",
-        "en": "Putin offers debt relief for newly recruited fighters in Ukraine",
+        "uk": "Путін пропонує списання боргів новобранцям, що воюють в Україні",
+        "en": "Putin Offers Debt Relief for Newly Recruited Fighters in Ukraine",
         "ru": "Путин предлагает списание долгов новобранцам, воюющим на Украине"
+      }
+    },
+    {
+      "url": "https://www.smdailyjournal.com/news/world/russian-drone-launched-against-ukraine-crashes-in-romania-injuring-2/article_4e77b834-61d0-5a08-93b2-9bce7feda082.html",
+      "domain": "smdailyjournal.com",
+      "seenAt": "2026-05-29T07:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/4be53de46e7e2e24.webp",
+      "original": "Russian drone launched against Ukraine crashes in Romania , injuring 2",
+      "title": {
+        "uk": "Російський дрон, запущений по Україні, впав у Румунії, поранивши двох людей",
+        "en": "Russian Drone Launched against Ukraine Crashes in Romania, Injuring 2",
+        "ru": "Российский беспилотник, запущенный по Украине, упал в Румынии, ранив двух человек"
       }
     }
   ]
