@@ -1,44 +1,44 @@
 {
-  "asOf": "2026-06-01",
+  "asOf": "2026-06-02",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.ibtimes.com/senior-ukrainian-commander-says-russian-army-no-longer-able-achieve-major-breakthroughs-3803371",
-      "domain": "ibtimes.com",
-      "seenAt": "2026-05-27T19:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/bd487f76eee38510.webp",
-      "original": "Senior Ukrainian Commander Says Russian Army No Longer Able To Achieve Major Breakthroughs",
+      "url": "https://www.digi24.ro/stiri/externe/ucraina-a-recuperat-mai-mult-teritoriu-decat-a-ocupat-rusia-in-luna-mai-pentru-prima-data-din-2023-3795561",
+      "domain": "digi24.ro",
+      "seenAt": "2026-06-02T06:15:00.000Z",
+      "sourceCountry": "Romania",
+      "image": "/news/ae297ea0933dc6c4.webp",
+      "original": "Ucraina a recuperat mai mult teritoriu decât a ocupat Rusia în luna mai , pentru prima dată din 2023",
       "title": {
-        "uk": "Старший український командувач заявив, що російська армія більше не здатна досягати великих проривів",
-        "en": "Senior Ukrainian Commander Says Russian Army No Longer Able to Achieve Major Breakthroughs",
-        "ru": "Старший украинский командующий заявил, что российская армия больше не способна добиваться крупных прорывов"
+        "uk": "Україна відвоювала більше території, ніж захопила Росія у травні — вперше з 2023 року",
+        "en": "Ukraine recaptured more territory than Russia occupied in May, for the first time since 2023",
+        "ru": "Украина вернула больше территорий, чем захватила Россия в мае, — впервые с 2023 года"
       }
     },
     {
-      "url": "http://www.econotimes.com/Russia-Prepares-New-Large-Scale-Attack-on-Ukraine-Zelenskiy-Warns-1743061",
-      "domain": "econotimes.com",
-      "seenAt": "2026-05-30T11:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/ea80091b74807846.webp",
-      "original": "Russia Prepares New Large - Scale Attack on Ukraine , Zelenskiy Warns",
+      "url": "https://jornaldebrasilia.com.br/noticias/mundo/ataque-russo-em-larga-escala-deixa-13-mortos-e-dezenas-de-feridos-na-ucrania/",
+      "domain": "jornaldebrasilia.com.br",
+      "seenAt": "2026-06-02T10:15:00.000Z",
+      "sourceCountry": "Brazil",
+      "image": "/news/8b00729cb13879ca.webp",
+      "original": "Ataque russo em larga escala deixa 13 mortos e dezenas de feridos na Ucrânia",
       "title": {
-        "uk": "Зеленський попередив: Росія готує новий масштабний напад на Україну",
-        "en": "Russia Prepares New Large-Scale Attack on Ukraine, Zelenskyy Warns",
-        "ru": "Зеленский предупредил: Россия готовит новый масштабный удар по Украине"
+        "uk": "Масштабний російський удар залишив 13 загиблих і десятки поранених в Україні",
+        "en": "Large-scale Russian attack leaves 13 dead and dozens wounded in Ukraine",
+        "ru": "Масштабный российский удар унёс жизни 13 человек и ранил десятки в Украине"
       }
     },
     {
-      "url": "https://www.dialog.ua/opinion/u-putina-ne-ostalos-khoroshikh-khodov-ukrainskie-drony-menyayut-khod.html",
-      "domain": "dialog.ua",
-      "seenAt": "2026-05-30T18:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/4f27c3477af5ba0a.webp",
-      "original": "У Путина не осталось хороших ходов : украинские дроны меняют ход войны – WP",
+      "url": "https://www.moneycontrol.com/world/did-trump-ask-xi-jinping-to-push-putin-back-to-ukraine-peace-talks-during-beijing-summit-article-13938740.html",
+      "domain": "moneycontrol.com",
+      "seenAt": "2026-06-02T11:15:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/2bf9323e56d16187.webp",
+      "original": "Did Trump ask Xi Jinping to push Putin back to Ukraine peace talks during Beijing summit ?",
       "title": {
-        "uk": "У Путіна не залишилось хороших ходів: українські дрони змінюють хід війни – WP",
-        "en": "Putin Has No Good Moves Left: Ukrainian Drones Are Changing the Course of the War – WP",
-        "ru": "У Путина не осталось хороших ходов: украинские дроны меняют ход войны – WP"
+        "uk": "Чи просив Трамп Сі Цзіньпіна підштовхнути Путіна до мирних переговорів щодо України під час саміту в Пекіні?",
+        "en": "Did Trump ask Xi Jinping to push Putin back to Ukraine peace talks during the Beijing summit?",
+        "ru": "Просил ли Трамп Си Цзиньпина подтолкнуть Путина к мирным переговорам по Украине во время саммита в Пекине?"
       }
     },
     {
@@ -48,47 +48,9 @@
       "sourceCountry": "Turkey",
       "original": "Concerns mount over Belarus as launchpad for new Russian offensive",
       "title": {
-        "uk": "Занепокоєння посилюється через Білорусь як плацдарм для нового російського наступу",
-        "en": "Concerns Mount over Belarus as Launchpad for New Russian Offensive",
-        "ru": "Растёт обеспокоенность использованием Беларуси как плацдарма для нового российского наступления"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/76914",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-05-26T19:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/b32ebbea4325da88.webp",
-      "original": "Ukraine Pitches Limited  Airport Truce  to Jumpstart Ceasefire Talks",
-      "title": {
-        "uk": "Україна запропонувала обмежене «перемир'я над аеропортами» для перезапуску переговорів про припинення вогню",
-        "en": "Ukraine Pitches Limited \"Airport Truce\" to Jumpstart Ceasefire Talks",
-        "ru": "Украина предложила ограниченное «перемирие над аэропортами» для возобновления переговоров о прекращении огня"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/5/26/european-countries-and-eu-summon-russian-envoys-over-threats-on-kyiv",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-05-26T17:30:00.000Z",
-      "sourceCountry": "United States",
-      "original": "European countries and EU summon Russian envoys over threats on Kyiv",
-      "title": {
-        "uk": "Європейські країни та ЄС викликали послів Росії через погрози Києву",
-        "en": "European Countries and EU Summon Russian Envoys over Threats on Kyiv",
-        "ru": "Европейские страны и ЕС вызвали послов России из-за угроз Киеву"
-      }
-    },
-    {
-      "url": "https://www.news24.com/world/secretary-of-state-rubio-offers-us-mediation-as-russia-warns-diplomats-to-flee-ukraine-20260526-0803",
-      "domain": "news24.com",
-      "seenAt": "2026-05-26T16:15:00.000Z",
-      "sourceCountry": "South Africa",
-      "image": "/news/064f361aa9a3b1f5.webp",
-      "original": "Secretary of State Rubio offers US mediation as Russia warns diplomats to flee Ukraine",
-      "title": {
-        "uk": "Держсекретар Рубіо запропонував американське посередництво, поки Росія попереджає дипломатів покинути Україну",
-        "en": "Secretary of State Rubio Offers US Mediation as Russia Warns Diplomats to Flee Ukraine",
-        "ru": "Госсекретарь Рубио предложил американское посредничество на фоне предупреждений России дипломатам покинуть Украину"
+        "uk": "Зростають побоювання щодо Білорусі як плацдарму для нового російського наступу",
+        "en": "Concerns mount over Belarus as launchpad for new Russian offensive",
+        "ru": "Растут опасения относительно Беларуси как плацдарма для нового российского наступления"
       }
     },
     {
@@ -100,34 +62,72 @@
       "original": "„ Die Zeit spielt Russland nicht mehr in die Hände",
       "title": {
         "uk": "«Час більше не грає на руку Росії»",
-        "en": "\"Time No Longer Plays into Russia's Hands\"",
+        "en": "\"Time is no longer playing into Russia's hands\"",
         "ru": "«Время больше не играет на руку России»"
       }
     },
     {
-      "url": "https://www.arabnews.com/node/2644966/world",
-      "domain": "arabnews.com",
-      "seenAt": "2026-05-26T10:30:00.000Z",
-      "sourceCountry": "Saudi Arabia",
-      "image": "/news/c39382477b6a7b4c.webp",
-      "original": "Putin offers debt relief for newly recruited fighters in Ukraine",
+      "url": "https://www.yahoo.com/news/world/articles/ukraines-mid-range-strike-drones-121833265.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-05-29T17:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/0d758ed69718018d.webp",
+      "original": "Ukraine new mid - range strike drones are turning Russia once - safe rear areas into new kill zones",
       "title": {
-        "uk": "Путін пропонує списання боргів новобранцям, що воюють в Україні",
-        "en": "Putin Offers Debt Relief for Newly Recruited Fighters in Ukraine",
-        "ru": "Путин предлагает списание долгов новобранцам, воюющим на Украине"
+        "uk": "Нові ударні дрони середньої дальності України перетворюють колись безпечний тил Росії на нові зони ураження",
+        "en": "Ukraine's new mid-range strike drones are turning Russia's once-safe rear areas into new kill zones",
+        "ru": "Новые ударные дроны Украины средней дальности превращают некогда безопасный тыл России в новые зоны поражения"
       }
     },
     {
-      "url": "https://www.smdailyjournal.com/news/world/russian-drone-launched-against-ukraine-crashes-in-romania-injuring-2/article_4e77b834-61d0-5a08-93b2-9bce7feda082.html",
-      "domain": "smdailyjournal.com",
-      "seenAt": "2026-05-29T07:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/4be53de46e7e2e24.webp",
-      "original": "Russian drone launched against Ukraine crashes in Romania , injuring 2",
+      "url": "https://www.kyivpost.com/post/76919",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-05-27T00:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/5231c5b2d54274ef.webp",
+      "original": "Ukraine Has 500 Targets Ready in Belarus if Lukashenko Joins War",
       "title": {
-        "uk": "Російський дрон, запущений по Україні, впав у Румунії, поранивши двох людей",
-        "en": "Russian Drone Launched against Ukraine Crashes in Romania, Injuring 2",
-        "ru": "Российский беспилотник, запущенный по Украине, упал в Румынии, ранив двух человек"
+        "uk": "Україна має 500 цілей у Білорусі готовими на випадок вступу Лукашенка у війну",
+        "en": "Ukraine has 500 targets ready in Belarus if Lukashenko joins the war",
+        "ru": "Украина готова к удару по 500 целям в Беларуси, если Лукашенко вступит в войну"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/76920",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-05-27T00:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/f561d8e633ca0e98.webp",
+      "original": "More Than 50 Countries Condemn Russia Mass Attack on Ukraine at UN",
+      "title": {
+        "uk": "Понад 50 країн засудили масований удар Росії по Україні в ООН",
+        "en": "More than 50 countries condemn Russia's mass attack on Ukraine at the UN",
+        "ru": "Более 50 стран осудили массированный удар России по Украине в ООН"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/5/26/european-countries-and-eu-summon-russian-envoys-over-threats-on-kyiv",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-05-26T17:30:00.000Z",
+      "sourceCountry": "United States",
+      "original": "European countries and EU summon Russian envoys over threats on Kyiv",
+      "title": {
+        "uk": "Країни Європи та ЄС викликали російських послів у зв'язку з погрозами на адресу Києва",
+        "en": "European countries and EU summon Russian envoys over threats on Kyiv",
+        "ru": "Европейские страны и ЕС вызвали российских послов в связи с угрозами в адрес Киева"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/76914",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-05-26T19:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b32ebbea4325da88.webp",
+      "original": "Ukraine Pitches Limited  Airport Truce  to Jumpstart Ceasefire Talks",
+      "title": {
+        "uk": "Україна пропонує обмежене «перемир'я аеропортів» для запуску переговорів про припинення вогню",
+        "en": "Ukraine pitches limited 'airport truce' to jumpstart ceasefire talks",
+        "ru": "Украина предлагает ограниченное «перемирие аэропортов» для запуска переговоров о прекращении огня"
       }
     }
   ]
