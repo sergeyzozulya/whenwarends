@@ -28,9 +28,9 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.085,
-    "liquidity_usd": 18563.3882,
+    "liquidity_usd": 10054.5176,
     "liquidity_mana": null,
-    "last_updated": "2026-06-02T12:09:27.779Z"
+    "last_updated": "2026-06-03T12:46:09.561Z"
   },
   {
     "market_id": "polymarket:2243895",
@@ -39,9 +39,9 @@
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.055,
-    "liquidity_usd": 116108.1844,
+    "liquidity_usd": 78472.775,
     "liquidity_mana": null,
-    "last_updated": "2026-06-02T12:09:27.779Z"
+    "last_updated": "2026-06-03T12:46:09.561Z"
   },
   {
     "market_id": "polymarket:956449",
@@ -49,10 +49,10 @@
     "question": "Ukraine signs peace deal with Russia by June 30?",
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.0415,
-    "liquidity_usd": 45388.39648,
+    "current_price": 0.051,
+    "liquidity_usd": 28213.84913,
     "liquidity_mana": null,
-    "last_updated": "2026-06-02T12:09:27.779Z"
+    "last_updated": "2026-06-03T12:46:09.561Z"
   },
   {
     "market_id": "polymarket:2264326",
@@ -60,10 +60,10 @@
     "question": "Russia x Ukraine ceasefire by June 30, 2026?",
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.027,
-    "liquidity_usd": 55706.64055,
+    "current_price": 0.0265,
+    "liquidity_usd": 36437.94261,
     "liquidity_mana": null,
-    "last_updated": "2026-06-02T12:09:27.779Z"
+    "last_updated": "2026-06-03T12:46:09.561Z"
   },
   {
     "market_id": "manifold:h0gUElEUt9",
@@ -71,10 +71,10 @@
     "question": "Will Ukraine and Russia agree to a formal ceasefire by June 30, 2026?",
     "resolution_date": "2026-06-30T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.04124961255676231,
+    "current_price": 0.04677752876544606,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-06-02T12:09:28.028Z"
+    "last_updated": "2026-06-03T12:46:09.678Z"
   },
   {
     "market_id": "manifold:sPuSducIS2",
@@ -82,10 +82,10 @@
     "question": "Will Russia and Ukraine agree to a ceasefire before August 1, 2026?",
     "resolution_date": "2026-08-01T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.17129751013354944,
+    "current_price": 0.18589291135146058,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-06-02T12:09:28.028Z"
+    "last_updated": "2026-06-03T12:46:09.678Z"
   },
   {
     "market_id": "polymarket:2243896",
@@ -93,10 +93,10 @@
     "question": "Russia x Ukraine ceasefire agreement by October 31, 2026?",
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.315,
-    "liquidity_usd": 69201.5843,
+    "current_price": 0.305,
+    "liquidity_usd": 50364.6197,
     "liquidity_mana": null,
-    "last_updated": "2026-06-02T12:09:27.779Z"
+    "last_updated": "2026-06-03T12:46:09.561Z"
   },
   {
     "market_id": "polymarket:2264327",
@@ -105,9 +105,9 @@
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.205,
-    "liquidity_usd": 50402.8875,
+    "liquidity_usd": 41178.2055,
     "liquidity_mana": null,
-    "last_updated": "2026-06-02T12:09:27.779Z"
+    "last_updated": "2026-06-03T12:46:09.561Z"
   },
   {
     "market_id": "polymarket:2243897",
@@ -116,9 +116,9 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.485,
-    "liquidity_usd": 116381.3179,
+    "liquidity_usd": 88664.4116,
     "liquidity_mana": null,
-    "last_updated": "2026-06-02T12:09:27.779Z"
+    "last_updated": "2026-06-03T12:46:09.561Z"
   },
   {
     "market_id": "polymarket:665224",
@@ -126,10 +126,10 @@
     "question": "Ukraine signs peace deal with Russia before 2027?",
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.305,
-    "liquidity_usd": 82448.7798,
+    "current_price": 0.295,
+    "liquidity_usd": 63449.7432,
     "liquidity_mana": null,
-    "last_updated": "2026-06-02T12:09:27.779Z"
+    "last_updated": "2026-06-03T12:46:09.561Z"
   },
   {
     "market_id": "polymarket:2264328",
@@ -138,9 +138,9 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.335,
-    "liquidity_usd": 76566.6919,
+    "liquidity_usd": 66209.6613,
     "liquidity_mana": null,
-    "last_updated": "2026-06-02T12:09:27.779Z"
+    "last_updated": "2026-06-03T12:46:09.561Z"
   },
   {
     "market_id": "manifold:EzZLpOlLCg",
@@ -148,10 +148,10 @@
     "question": "Russia x Ukraine ceasefire in 2026?",
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.25575139975190475,
+    "current_price": 0.25134239231511213,
     "liquidity_usd": null,
     "liquidity_mana": 1000,
-    "last_updated": "2026-06-02T12:09:28.028Z"
+    "last_updated": "2026-06-03T12:46:09.678Z"
   },
   {
     "market_id": "manifold:UtgtL9ORLq",
@@ -162,7 +162,7 @@
     "current_price": 0.24769597537068586,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-06-02T12:09:28.028Z"
+    "last_updated": "2026-06-03T12:46:09.678Z"
   },
   {
     "market_id": "manifold:A0P8sZglZN",
@@ -173,7 +173,7 @@
     "current_price": 0.4233723938238539,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-06-02T12:09:28.028Z"
+    "last_updated": "2026-06-03T12:46:09.678Z"
   },
   {
     "market_id": "manifold:UlZEC6Rys2",
@@ -184,7 +184,7 @@
     "current_price": 0.14000000000000004,
     "liquidity_usd": null,
     "liquidity_mana": 1000,
-    "last_updated": "2026-06-02T12:09:28.028Z"
+    "last_updated": "2026-06-03T12:46:09.678Z"
   },
   {
     "market_id": "manifold:OgUy9yu6Zy",
@@ -195,6 +195,6 @@
     "current_price": 0.24769597537068605,
     "liquidity_usd": null,
     "liquidity_mana": 1005,
-    "last_updated": "2026-06-02T12:09:28.028Z"
+    "last_updated": "2026-06-03T12:46:09.678Z"
   }
 ]
