@@ -1,18 +1,17 @@
 {
-  "asOf": "2026-06-03",
+  "asOf": "2026-06-04",
   "source": "gdelt",
   "articles": [
     {
-      "url": "http://www.econotimes.com/Russia-Launches-Massive-Missile-and-Drone-Attack-on-Ukraine-1743366",
-      "domain": "econotimes.com",
-      "seenAt": "2026-06-03T07:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/22dc6c4ffee4c67d.webp",
-      "original": "Russia Launches Massive Missile and Drone Attack on Ukraine",
+      "url": "https://www.irishtimes.com/world/europe/2026/06/04/russia-is-showing-signs-of-weakness-in-ukraine-so-it-hits-harder/",
+      "domain": "irishtimes.com",
+      "seenAt": "2026-06-04T07:30:00.000Z",
+      "sourceCountry": "Ireland",
+      "original": "Russia is showing signs of weakness in Ukraine . So it hits harder",
       "title": {
-        "uk": "Росія завдала масованого ракетно-дронового удару по Україні",
-        "en": "Russia Launches Massive Missile and Drone Attack on Ukraine",
-        "ru": "Россия нанесла массированный ракетно-дроновый удар по Украине"
+        "uk": "Росія демонструє ознаки слабкості в Україні. Тому б'є сильніше",
+        "en": "Russia is showing signs of weakness in Ukraine. So it hits harder",
+        "ru": "Россия демонстрирует признаки слабости на Украине. Поэтому бьёт сильнее"
       }
     },
     {
@@ -23,9 +22,35 @@
       "image": "/news/ae297ea0933dc6c4.webp",
       "original": "Ucraina a recuperat mai mult teritoriu decât a ocupat Rusia în luna mai , pentru prima dată din 2023",
       "title": {
-        "uk": "Україна відвоювала більше територій, ніж зайняла Росія у травні, — вперше з 2023 року",
-        "en": "Ukraine Recovered More Territory Than Russia Occupied in May, for the First Time Since 2023",
-        "ru": "Украина отвоевала больше территорий, чем заняла Россия в мае, — впервые с 2023 года"
+        "uk": "Україна повернула більше територій, ніж захопила Росія у травні, — вперше з 2023 року",
+        "en": "Ukraine recovered more territory than Russia occupied in May, for the first time since 2023",
+        "ru": "Украина вернула больше территорий, чем захватила Россия в мае, — впервые с 2023 года"
+      }
+    },
+    {
+      "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/as-russias-ukraine-invasion-unravels-putin-escalates-attacks-on-civilians/",
+      "domain": "atlanticcouncil.org",
+      "seenAt": "2026-06-03T19:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/b0088c1130863552.webp",
+      "original": "As Russia Ukraine invasion unravels , Putin escalates attacks on civilians",
+      "title": {
+        "uk": "Коли російське вторгнення в Україну розвалюється, Путін посилює удари по мирних жителях",
+        "en": "As Russia-Ukraine invasion unravels, Putin escalates attacks on civilians",
+        "ru": "По мере того как российское вторжение в Украину рассыпается, Путин усиливает удары по мирным жителям"
+      }
+    },
+    {
+      "url": "https://www.razon.com.mx/mundo/2026/06/04/ucrania-ataca-la-terminal-petrolera-y-base-naval-de-san-petersburgo/",
+      "domain": "razon.com.mx",
+      "seenAt": "2026-06-04T10:30:00.000Z",
+      "sourceCountry": "Mexico",
+      "image": "/news/0675fed9ddbdf5e6.webp",
+      "original": "Ucrania ataca la terminal petrolera y base naval de San Petersburgo",
+      "title": {
+        "uk": "Україна атакувала нафтовий термінал і військово-морську базу Санкт-Петербурга",
+        "en": "Ukraine attacks oil terminal and naval base in St. Petersburg",
+        "ru": "Украина атаковала нефтяной терминал и военно-морскую базу Санкт-Петербурга"
       }
     },
     {
@@ -37,7 +62,7 @@
       "original": "ISW назвав причини відмови Путіна закінчити війну",
       "title": {
         "uk": "ISW назвав причини відмови Путіна закінчити війну",
-        "en": "ISW Identifies Reasons for Putin's Refusal to End the War",
+        "en": "ISW names reasons why Putin refuses to end the war",
         "ru": "ISW назвал причины отказа Путина закончить войну"
       }
     },
@@ -49,9 +74,9 @@
       "image": "/news/31f828198ca78ddb.webp",
       "original": "Ukraine president says US air defence  absolutely necessary  after Russian strikes",
       "title": {
-        "uk": "Президент України заявив, що американська система ППО «абсолютно необхідна» після ударів Росії",
-        "en": "Ukraine President Says US Air Defence 'Absolutely Necessary' After Russian Strikes",
-        "ru": "Президент Украины заявил, что американская система ПВО «абсолютно необходима» после ударов России"
+        "uk": "Президент України заявив, що американська система ППО «абсолютно необхідна» після російських ударів",
+        "en": "Ukraine president says US air defence 'absolutely necessary' after Russian strikes",
+        "ru": "Президент Украины заявил, что американская система ПВО «абсолютно необходима» после российских ударов"
       }
     },
     {
@@ -62,9 +87,9 @@
       "image": "/news/32202cbfec04f374.webp",
       "original": "Drone race : How Ukraine defence tech redefined Russia war",
       "title": {
-        "uk": "Гонка дронів: як оборонні технології України переписали правила війни з Росією",
-        "en": "Drone Race: How Ukraine's Defence Technology Redefined the War With Russia",
-        "ru": "Гонка дронов: как оборонные технологии Украины переопределили войну с Россией"
+        "uk": "Гонка дронів: як українські оборонні технології переосмислили війну з Росією",
+        "en": "Drone race: How Ukraine defence tech redefined Russia war",
+        "ru": "Гонка дронов: как украинские оборонные технологии переосмыслили войну с Россией"
       }
     },
     {
@@ -74,9 +99,9 @@
       "sourceCountry": "Turkey",
       "original": "Concerns mount over Belarus as launchpad for new Russian offensive",
       "title": {
-        "uk": "Зростають побоювання щодо використання Білорусі як плацдарму для нового наступу Росії",
-        "en": "Concerns Mount Over Belarus as Launchpad for New Russian Offensive",
-        "ru": "Растут опасения относительно использования Беларуси как плацдарма для нового наступления России"
+        "uk": "Зростають побоювання щодо використання Білорусі як плацдарму для нового російського наступу",
+        "en": "Concerns mount over Belarus as launchpad for new Russian offensive",
+        "ru": "Растут опасения относительно использования Белоруссии как плацдарма для нового российского наступления"
       }
     },
     {
@@ -87,22 +112,9 @@
       "image": "/news/2bf9323e56d16187.webp",
       "original": "Did Trump ask Xi Jinping to push Putin back to Ukraine peace talks during Beijing summit ?",
       "title": {
-        "uk": "Чи просив Трамп Сі Цзіньпіна підштовхнути Путіна до мирних переговорів щодо України на пекінському саміті?",
-        "en": "Did Trump Ask Xi Jinping to Push Putin Back to Ukraine Peace Talks During Beijing Summit?",
-        "ru": "Просил ли Трамп Си Цзиньпина подтолкнуть Путина к мирным переговорам по Украине на пекинском саммите?"
-      }
-    },
-    {
-      "url": "https://vesti-ua.net/novosti/politika/284595-rossiya-demonstriruet-priznaki-slabosti-nanosya-massirovannye-udary-po-mirnym-gorodam-nyt.html",
-      "domain": "vesti-ua.net",
-      "seenAt": "2026-06-03T12:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/085eff4bfada2331.webp",
-      "original": "Россия демонстрирует признаки слабости , нанося массированные удары по мирным городам , – NYT",
-      "title": {
-        "uk": "Росія демонструє ознаки слабкості, завдаючи масованих ударів по мирних містах, — NYT",
-        "en": "Russia Shows Signs of Weakness by Launching Massive Strikes on Civilian Cities — NYT",
-        "ru": "Россия демонстрирует признаки слабости, нанося массированные удары по мирным городам — NYT"
+        "uk": "Чи просив Трамп Сі Цзіньпіна натиснути на Путіна щодо повернення до мирних переговорів під час Пекінського саміту?",
+        "en": "Did Trump ask Xi Jinping to push Putin back to Ukraine peace talks during Beijing summit?",
+        "ru": "Просил ли Трамп Си Цзиньпина надавить на Путина ради возвращения к мирным переговорам по Украине на пекинском саммите?"
       }
     },
     {
@@ -113,22 +125,9 @@
       "image": "/news/71d191bcde24986a.webp",
       "original": "Russian general who wanted to take Kyiv in 3 days sentenced to life imprisonment – Prosecutor General",
       "title": {
-        "uk": "Російського генерала, який хотів захопити Київ за 3 дні, засуджено до довічного ув'язнення — Генеральна прокуратура",
-        "en": "Russian General Who Wanted to Take Kyiv in 3 Days Sentenced to Life Imprisonment — Prosecutor General",
-        "ru": "Российский генерал, намеревавшийся захватить Киев за 3 дня, приговорён к пожизненному заключению — Генеральная прокуратура"
-      }
-    },
-    {
-      "url": "https://www.ibtimes.com/senior-ukrainian-commander-says-russian-army-no-longer-able-achieve-major-breakthroughs-3803371",
-      "domain": "ibtimes.com",
-      "seenAt": "2026-05-27T19:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/bd487f76eee38510.webp",
-      "original": "Senior Ukrainian Commander Says Russian Army No Longer Able To Achieve Major Breakthroughs",
-      "title": {
-        "uk": "Старший командувач ЗСУ заявив, що російська армія більше не здатна досягати великих проривів",
-        "en": "Senior Ukrainian Commander Says Russian Army No Longer Able to Achieve Major Breakthroughs",
-        "ru": "Старший украинский командующий заявил, что российская армия больше не способна достигать крупных прорывов"
+        "uk": "Російський генерал, який хотів захопити Київ за 3 дні, засуджений до довічного ув'язнення",
+        "en": "Russian general who wanted to take Kyiv in 3 days sentenced to life imprisonment",
+        "ru": "Российский генерал, намеревавшийся захватить Киев за 3 дня, приговорён к пожизненному заключению"
       }
     }
   ]
