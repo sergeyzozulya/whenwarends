@@ -1,133 +1,134 @@
 {
-  "asOf": "2026-06-04",
+  "asOf": "2026-06-10",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.irishtimes.com/world/europe/2026/06/04/russia-is-showing-signs-of-weakness-in-ukraine-so-it-hits-harder/",
-      "domain": "irishtimes.com",
-      "seenAt": "2026-06-04T07:30:00.000Z",
-      "sourceCountry": "Ireland",
-      "original": "Russia is showing signs of weakness in Ukraine . So it hits harder",
-      "title": {
-        "uk": "Росія демонструє ознаки слабкості в Україні. Тому б'є сильніше",
-        "en": "Russia is showing signs of weakness in Ukraine. So it hits harder",
-        "ru": "Россия демонстрирует признаки слабости на Украине. Поэтому бьёт сильнее"
-      }
-    },
-    {
-      "url": "https://www.digi24.ro/stiri/externe/ucraina-a-recuperat-mai-mult-teritoriu-decat-a-ocupat-rusia-in-luna-mai-pentru-prima-data-din-2023-3795561",
-      "domain": "digi24.ro",
-      "seenAt": "2026-06-02T06:15:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/ae297ea0933dc6c4.webp",
-      "original": "Ucraina a recuperat mai mult teritoriu decât a ocupat Rusia în luna mai , pentru prima dată din 2023",
-      "title": {
-        "uk": "Україна повернула більше територій, ніж захопила Росія у травні, — вперше з 2023 року",
-        "en": "Ukraine recovered more territory than Russia occupied in May, for the first time since 2023",
-        "ru": "Украина вернула больше территорий, чем захватила Россия в мае, — впервые с 2023 года"
-      }
-    },
-    {
-      "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/as-russias-ukraine-invasion-unravels-putin-escalates-attacks-on-civilians/",
-      "domain": "atlanticcouncil.org",
-      "seenAt": "2026-06-03T19:30:00.000Z",
+      "url": "https://nypost.com/2026/06/08/world-news/ukraine-takes-back-more-than-230-square-miles-of-land-from-russia-military-chief-says/",
+      "domain": "nypost.com",
+      "seenAt": "2026-06-08T17:15:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/b0088c1130863552.webp",
-      "original": "As Russia Ukraine invasion unravels , Putin escalates attacks on civilians",
+      "image": "/news/98d89abc087193e4.webp",
+      "original": "Ukraine takes back more than 230 square miles of land from Russia , military chief says",
       "title": {
-        "uk": "Коли російське вторгнення в Україну розвалюється, Путін посилює удари по мирних жителях",
-        "en": "As Russia-Ukraine invasion unravels, Putin escalates attacks on civilians",
-        "ru": "По мере того как российское вторжение в Украину рассыпается, Путин усиливает удары по мирным жителям"
+        "uk": "Україна повернула понад 230 квадратних миль землі від Росії, заявив головнокомандувач",
+        "en": "Ukraine takes back more than 230 square miles of land from Russia, military chief says",
+        "ru": "Украина вернула более 230 квадратных миль территории у России, заявил главнокомандующий"
       }
     },
     {
-      "url": "https://www.razon.com.mx/mundo/2026/06/04/ucrania-ataca-la-terminal-petrolera-y-base-naval-de-san-petersburgo/",
-      "domain": "razon.com.mx",
-      "seenAt": "2026-06-04T10:30:00.000Z",
-      "sourceCountry": "Mexico",
-      "image": "/news/0675fed9ddbdf5e6.webp",
-      "original": "Ucrania ataca la terminal petrolera y base naval de San Petersburgo",
-      "title": {
-        "uk": "Україна атакувала нафтовий термінал і військово-морську базу Санкт-Петербурга",
-        "en": "Ukraine attacks oil terminal and naval base in St. Petersburg",
-        "ru": "Украина атаковала нефтяной терминал и военно-морскую базу Санкт-Петербурга"
-      }
-    },
-    {
-      "url": "https://ua.korrespondent.net/world/russia/4883544-ISW-nazvav-prychyny-vidmovy-putina-zakinchyty-viinu",
-      "domain": "ua.korrespondent.net",
-      "seenAt": "2026-06-02T22:30:00.000Z",
+      "url": "https://www.ukrinform.ua/rubric-polytics/4131431-lideri-britanii-nimeccini-francii-ta-ukraini-oznacili-umovi-dla-dosagnenna-miru.html",
+      "domain": "ukrinform.ua",
+      "seenAt": "2026-06-07T22:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/344bcee91c9f29d3.webp",
-      "original": "ISW назвав причини відмови Путіна закінчити війну",
+      "image": "/news/4ee66a274200b1e6.webp",
+      "original": "Лідери Британії , Німеччини , Франції та України означили умови для досягнення миру",
       "title": {
-        "uk": "ISW назвав причини відмови Путіна закінчити війну",
-        "en": "ISW names reasons why Putin refuses to end the war",
-        "ru": "ISW назвал причины отказа Путина закончить войну"
+        "uk": "Лідери Британії, Німеччини, Франції та України визначили умови для досягнення миру",
+        "en": "Leaders of Britain, Germany, France and Ukraine outlined conditions for achieving peace",
+        "ru": "Лидеры Британии, Германии, Франции и Украины обозначили условия для достижения мира"
       }
     },
     {
-      "url": "https://www.euronews.com/my-europe/2026/06/02/ukraines-president-says-us-air-defence-absolutely-necessary-after-russian-strikes",
-      "domain": "euronews.com",
-      "seenAt": "2026-06-02T15:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/31f828198ca78ddb.webp",
-      "original": "Ukraine president says US air defence  absolutely necessary  after Russian strikes",
+      "url": "https://www.kyivpost.com/post/77774",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-06-08T23:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/fedd9f5262c515c3.webp",
+      "original": "Lavrov :  Peace in Ukraine Depends on the Battlefield , Not Negotiations",
       "title": {
-        "uk": "Президент України заявив, що американська система ППО «абсолютно необхідна» після російських ударів",
-        "en": "Ukraine president says US air defence 'absolutely necessary' after Russian strikes",
-        "ru": "Президент Украины заявил, что американская система ПВО «абсолютно необходима» после российских ударов"
+        "uk": "Лавров: «Мир в Україні залежить від поля бою, а не від переговорів»",
+        "en": "Lavrov: \"Peace in Ukraine depends on the battlefield, not negotiations\"",
+        "ru": "Лавров: «Мир в Украине зависит от поля боя, а не от переговоров»"
       }
     },
     {
-      "url": "https://www.euronews.com/my-europe/2026/06/03/drone-race-how-ukraines-defence-tech-redefined-russias-war",
-      "domain": "euronews.com",
-      "seenAt": "2026-06-03T09:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/32202cbfec04f374.webp",
-      "original": "Drone race : How Ukraine defence tech redefined Russia war",
+      "url": "https://www.dw.com/en/ukraine-zelenskyy-open-letter-putin-ceasefire/a-77427312",
+      "domain": "dw.com",
+      "seenAt": "2026-06-04T22:45:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/6933a4ebc4d533df.webp",
+      "original": "Ukraine Zelenskyy proposes Putin meeting on ending war",
       "title": {
-        "uk": "Гонка дронів: як українські оборонні технології переосмислили війну з Росією",
-        "en": "Drone race: How Ukraine defence tech redefined Russia war",
-        "ru": "Гонка дронов: как украинские оборонные технологии переосмыслили войну с Россией"
+        "uk": "Зеленський пропонує Путіну зустріч щодо завершення війни",
+        "en": "Zelensky proposes Putin meeting on ending the war",
+        "ru": "Зеленский предлагает Путину встречу по окончанию войны"
       }
     },
     {
-      "url": "https://www.hurriyetdailynews.com/concerns-mount-over-belarus-as-launchpad-for-new-russian-offensive-222709",
-      "domain": "hurriyetdailynews.com",
-      "seenAt": "2026-05-31T11:00:00.000Z",
-      "sourceCountry": "Turkey",
-      "original": "Concerns mount over Belarus as launchpad for new Russian offensive",
-      "title": {
-        "uk": "Зростають побоювання щодо використання Білорусі як плацдарму для нового російського наступу",
-        "en": "Concerns mount over Belarus as launchpad for new Russian offensive",
-        "ru": "Растут опасения относительно использования Белоруссии как плацдарма для нового российского наступления"
-      }
-    },
-    {
-      "url": "https://www.moneycontrol.com/world/did-trump-ask-xi-jinping-to-push-putin-back-to-ukraine-peace-talks-during-beijing-summit-article-13938740.html",
-      "domain": "moneycontrol.com",
-      "seenAt": "2026-06-02T11:15:00.000Z",
+      "url": "https://www.thehindu.com/news/international/putin-rules-out-meeting-zelenskyy-and-vows-to-pursue-war-goals/article71068298.ece",
+      "domain": "thehindu.com",
+      "seenAt": "2026-06-06T02:00:00.000Z",
       "sourceCountry": "India",
-      "image": "/news/2bf9323e56d16187.webp",
-      "original": "Did Trump ask Xi Jinping to push Putin back to Ukraine peace talks during Beijing summit ?",
+      "image": "/news/2c4a27aa0108c8d1.webp",
+      "original": "Putin rules out meeting Zelenskyy and vows to pursue war goals",
       "title": {
-        "uk": "Чи просив Трамп Сі Цзіньпіна натиснути на Путіна щодо повернення до мирних переговорів під час Пекінського саміту?",
-        "en": "Did Trump ask Xi Jinping to push Putin back to Ukraine peace talks during Beijing summit?",
-        "ru": "Просил ли Трамп Си Цзиньпина надавить на Путина ради возвращения к мирным переговорам по Украине на пекинском саммите?"
+        "uk": "Путін виключає зустріч із Зеленським і обіцяє продовжувати досягнення воєнних цілей",
+        "en": "Putin rules out meeting Zelenskyy and vows to pursue war goals",
+        "ru": "Путин исключает встречу с Зеленским и обещает продолжать достижение военных целей"
       }
     },
     {
-      "url": "https://en.interfax.com.ua/news/general/1172990.html",
-      "domain": "en.interfax.com.ua",
-      "seenAt": "2026-06-02T13:30:00.000Z",
+      "url": "https://glavcom.ua/world/world-politics/ssha-v-radbezi-oon-nazvali-vijnu-rf-proti-ukrajini-stratehichnim-provalom-1124520.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-06-09T07:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/71d191bcde24986a.webp",
-      "original": "Russian general who wanted to take Kyiv in 3 days sentenced to life imprisonment – Prosecutor General",
+      "original": "США в Радбезі ООН назвали війну РФ проти України стратегічним провалом",
       "title": {
-        "uk": "Російський генерал, який хотів захопити Київ за 3 дні, засуджений до довічного ув'язнення",
-        "en": "Russian general who wanted to take Kyiv in 3 days sentenced to life imprisonment",
-        "ru": "Российский генерал, намеревавшийся захватить Киев за 3 дня, приговорён к пожизненному заключению"
+        "uk": "США в Радбезі ООН назвали війну РФ проти України стратегічним провалом",
+        "en": "US calls Russia's war against Ukraine a strategic failure at the UN Security Council",
+        "ru": "США в Совете Безопасности ООН назвали войну РФ против Украины стратегическим провалом"
+      }
+    },
+    {
+      "url": "https://www.infobae.com/america/mundo/2026/06/09/la-union-europea-aseguro-que-las-sanciones-occidentales-por-la-guerra-en-ucrania-le-costaron-a-rusia-mas-de-usd-12-billones/",
+      "domain": "infobae.com",
+      "seenAt": "2026-06-09T05:15:00.000Z",
+      "sourceCountry": "Argentina",
+      "image": "/news/10ba08f82456bf4e.webp",
+      "original": "La Unión Europea aseguró que las sanciones occidentales por la guerra en Ucrania ya le costaron a Rusia más de USD 1 , 2 billones",
+      "title": {
+        "uk": "ЄС заявив, що західні санкції через війну в Україні вже коштували Росії понад 1,2 трильйона доларів",
+        "en": "EU says Western sanctions over Ukraine war have already cost Russia more than $1.2 trillion",
+        "ru": "ЕС заявил, что западные санкции из-за войны в Украине уже обошлись России более чем в 1,2 триллиона долларов"
+      }
+    },
+    {
+      "url": "https://georgiatoday.ge/ukraine-launches-unprecedented-drone-attack-on-st-petersburg/",
+      "domain": "georgiatoday.ge",
+      "seenAt": "2026-06-07T12:30:00.000Z",
+      "sourceCountry": "Georgia",
+      "image": "/news/f4d6febfd4dae2d1.webp",
+      "original": "Ukraine launches  unprecedented  drone attack on St Petersburg",
+      "title": {
+        "uk": "Україна завдала «безпрецедентного» удару дронами по Санкт-Петербургу",
+        "en": "Ukraine launches \"unprecedented\" drone attack on St Petersburg",
+        "ru": "Украина нанесла «беспрецедентный» дроновый удар по Санкт-Петербургу"
+      }
+    },
+    {
+      "url": "https://24tv.ua/geopolitics/bolgariya-pripinit-postachannya-zbroyi-ukrayini-yak-tse-rishennya_n3084518",
+      "domain": "24tv.ua",
+      "seenAt": "2026-06-09T14:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/96f2891ac2b7f14c.webp",
+      "original": "Болгарія припинить постачання зброї Україні - як це рішення пояснює новий уряд",
+      "title": {
+        "uk": "Болгарія припинить постачання зброї Україні — як це рішення пояснює новий уряд",
+        "en": "Bulgaria will stop arms deliveries to Ukraine — how the new government explains this decision",
+        "ru": "Болгария прекратит поставки оружия Украине — как это решение объясняет новое правительство"
+      }
+    },
+    {
+      "url": "https://gazeta.ua/articles/krym/_ukrayina-pererizala-klyuchovi-shlyahi-do-krimu-ta-zmusila-rf-skorotiti-vijskovu-logistiku-isw/1252387",
+      "domain": "gazeta.ua",
+      "seenAt": "2026-06-10T07:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/76d7ab4267ae2347.webp",
+      "original": "Колапс ЗС РФ на півдні України - які обмеження встановив ворог , звідки вибивають росіян",
+      "title": {
+        "uk": "Колапс ЗС РФ на півдні України — які обмеження встановив ворог, звідки вибивають росіян",
+        "en": "Collapse of Russian forces in southern Ukraine — what restrictions the enemy has imposed, where Russians are being pushed out",
+        "ru": "Коллапс ВС РФ на юге Украины — какие ограничения установил враг, откуда выбивают россиян"
       }
     }
   ]
