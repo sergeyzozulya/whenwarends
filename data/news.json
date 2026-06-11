@@ -1,31 +1,66 @@
 {
-  "asOf": "2026-06-10",
+  "asOf": "2026-06-11",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://nypost.com/2026/06/08/world-news/ukraine-takes-back-more-than-230-square-miles-of-land-from-russia-military-chief-says/",
-      "domain": "nypost.com",
-      "seenAt": "2026-06-08T17:15:00.000Z",
+      "url": "https://www.cbsnews.com/news/ukraine-winning-war-russia-retired-us-generals/",
+      "domain": "cbsnews.com",
+      "seenAt": "2026-06-09T19:30:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/98d89abc087193e4.webp",
-      "original": "Ukraine takes back more than 230 square miles of land from Russia , military chief says",
+      "image": "/news/eb8931e1ecc3a73b.webp",
+      "original": "Ukraine winning war with Russia , retired U . S . generals say , as top Ukrainian commander says over 230 square miles retaken",
       "title": {
-        "uk": "Україна повернула понад 230 квадратних миль землі від Росії, заявив головнокомандувач",
-        "en": "Ukraine takes back more than 230 square miles of land from Russia, military chief says",
-        "ru": "Украина вернула более 230 квадратных миль территории у России, заявил главнокомандующий"
+        "uk": "Україна перемагає у війні з Росією, кажуть відставні генерали США, тоді як головнокомандувач ЗСУ заявив про повернення понад 600 кв. км території",
+        "en": "Ukraine winning war with Russia, retired U.S. generals say, as top Ukrainian commander says over 230 square miles retaken",
+        "ru": "Украина побеждает в войне с Россией, говорят отставные генералы США, тогда как главнокомандующий ВСУ заявил о возвращении более 600 кв. км территории"
       }
     },
     {
-      "url": "https://www.ukrinform.ua/rubric-polytics/4131431-lideri-britanii-nimeccini-francii-ta-ukraini-oznacili-umovi-dla-dosagnenna-miru.html",
-      "domain": "ukrinform.ua",
-      "seenAt": "2026-06-07T22:45:00.000Z",
+      "url": "https://zn.ua/ukr/war/jevropejtsi-namahatimutsja-zaruchitisja-pidtrimkoju-trampa-na-g7-dlja-mirnikh-perehovoriv-z-rosijeju-bloomberg.html",
+      "domain": "zn.ua",
+      "seenAt": "2026-06-11T08:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/4ee66a274200b1e6.webp",
-      "original": "Лідери Британії , Німеччини , Франції та України означили умови для досягнення миру",
+      "original": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією Bloomberg",
       "title": {
-        "uk": "Лідери Британії, Німеччини, Франції та України визначили умови для досягнення миру",
-        "en": "Leaders of Britain, Germany, France and Ukraine outlined conditions for achieving peace",
-        "ru": "Лидеры Британии, Германии, Франции и Украины обозначили условия для достижения мира"
+        "uk": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією — Bloomberg",
+        "en": "Europeans will try to secure Trump's support at G7 for peace negotiations with Russia — Bloomberg",
+        "ru": "Европейцы попытаются заручиться поддержкой Трампа на G7 для мирных переговоров с Россией — Bloomberg"
+      }
+    },
+    {
+      "url": "https://fakty.ua/473288-vojna-v-ukraine-blizitsya-k-zaversheniyu-v-cru-sdelali-gromkoe-zayavlenie",
+      "domain": "fakty.ua",
+      "seenAt": "2026-06-11T06:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Війна в Україні близька до завершення",
+      "title": {
+        "uk": "Війна в Україні близька до завершення",
+        "en": "The war in Ukraine is close to its end",
+        "ru": "Война в Украине близка к завершению"
+      }
+    },
+    {
+      "url": "https://fakty.ua/473237-kreml-gotovit-rossiyan-k-okonchaniyu-vojny-v-set-slili-scenarij-dlya-naseleniya",
+      "domain": "fakty.ua",
+      "seenAt": "2026-06-10T06:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "У Кремлі готуються до закінчення війни : для Путіна готують  переможний  сценарій",
+      "title": {
+        "uk": "У Кремлі готуються до закінчення війни: для Путіна готують «переможний» сценарій",
+        "en": "The Kremlin is preparing for the end of the war: a \"victory\" scenario is being readied for Putin",
+        "ru": "В Кремле готовятся к окончанию войны: для Путина готовят «победный» сценарий"
+      }
+    },
+    {
+      "url": "https://focus.ua/uk/politics/756887-p-yat-umov-dlya-miru-golovne-iz-zustrichi-zelenskogo-v-londoni",
+      "domain": "focus.ua",
+      "seenAt": "2026-06-08T08:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "П  ять умов для миру : головне із зустрічі Зеленського в Лондоні",
+      "title": {
+        "uk": "П'ять умов для миру: головне із зустрічі Зеленського в Лондоні",
+        "en": "Five conditions for peace: key outcomes of Zelensky's meeting in London",
+        "ru": "Пять условий для мира: главное со встречи Зеленского в Лондоне"
       }
     },
     {
@@ -38,45 +73,7 @@
       "title": {
         "uk": "Лавров: «Мир в Україні залежить від поля бою, а не від переговорів»",
         "en": "Lavrov: \"Peace in Ukraine depends on the battlefield, not negotiations\"",
-        "ru": "Лавров: «Мир в Украине зависит от поля боя, а не от переговоров»"
-      }
-    },
-    {
-      "url": "https://www.dw.com/en/ukraine-zelenskyy-open-letter-putin-ceasefire/a-77427312",
-      "domain": "dw.com",
-      "seenAt": "2026-06-04T22:45:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/6933a4ebc4d533df.webp",
-      "original": "Ukraine Zelenskyy proposes Putin meeting on ending war",
-      "title": {
-        "uk": "Зеленський пропонує Путіну зустріч щодо завершення війни",
-        "en": "Zelensky proposes Putin meeting on ending the war",
-        "ru": "Зеленский предлагает Путину встречу по окончанию войны"
-      }
-    },
-    {
-      "url": "https://www.thehindu.com/news/international/putin-rules-out-meeting-zelenskyy-and-vows-to-pursue-war-goals/article71068298.ece",
-      "domain": "thehindu.com",
-      "seenAt": "2026-06-06T02:00:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/2c4a27aa0108c8d1.webp",
-      "original": "Putin rules out meeting Zelenskyy and vows to pursue war goals",
-      "title": {
-        "uk": "Путін виключає зустріч із Зеленським і обіцяє продовжувати досягнення воєнних цілей",
-        "en": "Putin rules out meeting Zelenskyy and vows to pursue war goals",
-        "ru": "Путин исключает встречу с Зеленским и обещает продолжать достижение военных целей"
-      }
-    },
-    {
-      "url": "https://glavcom.ua/world/world-politics/ssha-v-radbezi-oon-nazvali-vijnu-rf-proti-ukrajini-stratehichnim-provalom-1124520.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-06-09T07:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "США в Радбезі ООН назвали війну РФ проти України стратегічним провалом",
-      "title": {
-        "uk": "США в Радбезі ООН назвали війну РФ проти України стратегічним провалом",
-        "en": "US calls Russia's war against Ukraine a strategic failure at the UN Security Council",
-        "ru": "США в Совете Безопасности ООН назвали войну РФ против Украины стратегическим провалом"
+        "ru": "Лавров: «Мир на Украине зависит от поля боя, а не от переговоров»"
       }
     },
     {
@@ -88,8 +85,33 @@
       "original": "La Unión Europea aseguró que las sanciones occidentales por la guerra en Ucrania ya le costaron a Rusia más de USD 1 , 2 billones",
       "title": {
         "uk": "ЄС заявив, що західні санкції через війну в Україні вже коштували Росії понад 1,2 трильйона доларів",
-        "en": "EU says Western sanctions over Ukraine war have already cost Russia more than $1.2 trillion",
-        "ru": "ЕС заявил, что западные санкции из-за войны в Украине уже обошлись России более чем в 1,2 триллиона долларов"
+        "en": "The EU said Western sanctions over the war in Ukraine have already cost Russia more than $1.2 trillion",
+        "ru": "ЕС заявил, что западные санкции из-за войны на Украине уже обошлись России более чем в 1,2 триллиона долларов"
+      }
+    },
+    {
+      "url": "https://gazeta.ua/articles/krym/_ukrayina-pererizala-klyuchovi-shlyahi-do-krimu-ta-zmusila-rf-skorotiti-vijskovu-logistiku-isw/1252387",
+      "domain": "gazeta.ua",
+      "seenAt": "2026-06-10T07:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/76d7ab4267ae2347.webp",
+      "original": "Колапс ЗС РФ на півдні України - які обмеження встановив ворог , звідки вибивають росіян",
+      "title": {
+        "uk": "Колапс ЗС РФ на півдні України: які обмеження встановив ворог, звідки вибивають росіян",
+        "en": "Collapse of Russian forces in southern Ukraine: what restrictions the enemy has imposed and where Russians are being pushed out from",
+        "ru": "Коллапс ВС РФ на юге Украины: какие ограничения ввёл враг, откуда выбивают россиян"
+      }
+    },
+    {
+      "url": "https://gordonua.com/ukr/section-worldnews/news-superechyt-kursu-yes-bolhariya-zrobyla-huchnu-zayavu-shchodo-zbroyi-dlya-ukrayiny-na-tli-zustrichi-e3-u-brytaniyi-09-06-2026.html",
+      "domain": "gordonua.com",
+      "seenAt": "2026-06-09T17:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Суперечить курсу ЄС . Болгарія зробила гучну заяву щодо зброї для України на тлі зустрічі Е3 у Британії",
+      "title": {
+        "uk": "Суперечить курсу ЄС: Болгарія зробила гучну заяву щодо зброї для України на тлі зустрічі Е3 у Британії",
+        "en": "Contradicts EU policy: Bulgaria made a loud statement on weapons for Ukraine against the backdrop of the E3 meeting in Britain",
+        "ru": "Противоречит курсу ЕС: Болгария сделала громкое заявление об оружии для Украины на фоне встречи Е3 в Британии"
       }
     },
     {
@@ -102,33 +124,7 @@
       "title": {
         "uk": "Україна завдала «безпрецедентного» удару дронами по Санкт-Петербургу",
         "en": "Ukraine launches \"unprecedented\" drone attack on St Petersburg",
-        "ru": "Украина нанесла «беспрецедентный» дроновый удар по Санкт-Петербургу"
-      }
-    },
-    {
-      "url": "https://24tv.ua/geopolitics/bolgariya-pripinit-postachannya-zbroyi-ukrayini-yak-tse-rishennya_n3084518",
-      "domain": "24tv.ua",
-      "seenAt": "2026-06-09T14:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/96f2891ac2b7f14c.webp",
-      "original": "Болгарія припинить постачання зброї Україні - як це рішення пояснює новий уряд",
-      "title": {
-        "uk": "Болгарія припинить постачання зброї Україні — як це рішення пояснює новий уряд",
-        "en": "Bulgaria will stop arms deliveries to Ukraine — how the new government explains this decision",
-        "ru": "Болгария прекратит поставки оружия Украине — как это решение объясняет новое правительство"
-      }
-    },
-    {
-      "url": "https://gazeta.ua/articles/krym/_ukrayina-pererizala-klyuchovi-shlyahi-do-krimu-ta-zmusila-rf-skorotiti-vijskovu-logistiku-isw/1252387",
-      "domain": "gazeta.ua",
-      "seenAt": "2026-06-10T07:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/76d7ab4267ae2347.webp",
-      "original": "Колапс ЗС РФ на півдні України - які обмеження встановив ворог , звідки вибивають росіян",
-      "title": {
-        "uk": "Колапс ЗС РФ на півдні України — які обмеження встановив ворог, звідки вибивають росіян",
-        "en": "Collapse of Russian forces in southern Ukraine — what restrictions the enemy has imposed, where Russians are being pushed out",
-        "ru": "Коллапс ВС РФ на юге Украины — какие ограничения установил враг, откуда выбивают россиян"
+        "ru": "Украина нанесла «беспрецедентный» удар дронами по Санкт-Петербургу"
       }
     }
   ]
