@@ -1,7 +1,19 @@
 {
-  "asOf": "2026-06-11",
+  "asOf": "2026-06-12",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://focus.ua/uk/politics/756887-p-yat-umov-dlya-miru-golovne-iz-zustrichi-zelenskogo-v-londoni",
+      "domain": "focus.ua",
+      "seenAt": "2026-06-08T08:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "П  ять умов для миру : головне із зустрічі Зеленського в Лондоні",
+      "title": {
+        "uk": "П'ять умов для миру: головне із зустрічі Зеленського в Лондоні",
+        "en": "Five conditions for peace: key outcomes from Zelensky's London meeting",
+        "ru": "Пять условий для мира: главное со встречи Зеленского в Лондоне"
+      }
+    },
     {
       "url": "https://www.cbsnews.com/news/ukraine-winning-war-russia-retired-us-generals/",
       "domain": "cbsnews.com",
@@ -10,33 +22,9 @@
       "image": "/news/eb8931e1ecc3a73b.webp",
       "original": "Ukraine winning war with Russia , retired U . S . generals say , as top Ukrainian commander says over 230 square miles retaken",
       "title": {
-        "uk": "Україна перемагає у війні з Росією, кажуть відставні генерали США, тоді як головнокомандувач ЗСУ заявив про повернення понад 600 кв. км території",
+        "uk": "Україна виграє війну з Росією, кажуть відставні генерали США; головнокомандувач заявив про повернення понад 230 квадратних миль",
         "en": "Ukraine winning war with Russia, retired U.S. generals say, as top Ukrainian commander says over 230 square miles retaken",
-        "ru": "Украина побеждает в войне с Россией, говорят отставные генералы США, тогда как главнокомандующий ВСУ заявил о возвращении более 600 кв. км территории"
-      }
-    },
-    {
-      "url": "https://zn.ua/ukr/war/jevropejtsi-namahatimutsja-zaruchitisja-pidtrimkoju-trampa-na-g7-dlja-mirnikh-perehovoriv-z-rosijeju-bloomberg.html",
-      "domain": "zn.ua",
-      "seenAt": "2026-06-11T08:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією Bloomberg",
-      "title": {
-        "uk": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією — Bloomberg",
-        "en": "Europeans will try to secure Trump's support at G7 for peace negotiations with Russia — Bloomberg",
-        "ru": "Европейцы попытаются заручиться поддержкой Трампа на G7 для мирных переговоров с Россией — Bloomberg"
-      }
-    },
-    {
-      "url": "https://fakty.ua/473288-vojna-v-ukraine-blizitsya-k-zaversheniyu-v-cru-sdelali-gromkoe-zayavlenie",
-      "domain": "fakty.ua",
-      "seenAt": "2026-06-11T06:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Війна в Україні близька до завершення",
-      "title": {
-        "uk": "Війна в Україні близька до завершення",
-        "en": "The war in Ukraine is close to its end",
-        "ru": "Война в Украине близка к завершению"
+        "ru": "Украина выигрывает войну с Россией, говорят отставные генералы США; главнокомандующий заявил о возврате более 230 квадратных миль"
       }
     },
     {
@@ -47,20 +35,46 @@
       "original": "У Кремлі готуються до закінчення війни : для Путіна готують  переможний  сценарій",
       "title": {
         "uk": "У Кремлі готуються до закінчення війни: для Путіна готують «переможний» сценарій",
-        "en": "The Kremlin is preparing for the end of the war: a \"victory\" scenario is being readied for Putin",
+        "en": "The Kremlin is preparing for the end of the war: a \"victory\" scenario is being drawn up for Putin",
         "ru": "В Кремле готовятся к окончанию войны: для Путина готовят «победный» сценарий"
       }
     },
     {
-      "url": "https://focus.ua/uk/politics/756887-p-yat-umov-dlya-miru-golovne-iz-zustrichi-zelenskogo-v-londoni",
-      "domain": "focus.ua",
-      "seenAt": "2026-06-08T08:15:00.000Z",
+      "url": "https://zn.ua/ukr/war/jevropejtsi-namahatimutsja-zaruchitisja-pidtrimkoju-trampa-na-g7-dlja-mirnikh-perehovoriv-z-rosijeju-bloomberg.html",
+      "domain": "zn.ua",
+      "seenAt": "2026-06-11T08:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "П  ять умов для миру : головне із зустрічі Зеленського в Лондоні",
+      "original": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією Bloomberg",
       "title": {
-        "uk": "П'ять умов для миру: головне із зустрічі Зеленського в Лондоні",
-        "en": "Five conditions for peace: key outcomes of Zelensky's meeting in London",
-        "ru": "Пять условий для мира: главное со встречи Зеленского в Лондоне"
+        "uk": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією — Bloomberg",
+        "en": "Europeans will try to secure Trump's support at G7 for peace talks with Russia — Bloomberg",
+        "ru": "Европейцы попытаются заручиться поддержкой Трампа на G7 для мирных переговоров с Россией — Bloomberg"
+      }
+    },
+    {
+      "url": "https://www.lsm.lv/raksts/zinas/arzemes/12.06.2026-merkis-okupeto-krimu-izolet-no-krievijas-kijiva-apstiprina-uzbrukumu-armjanskas-tiltam.a651187/",
+      "domain": "lsm.lv",
+      "seenAt": "2026-06-12T08:45:00.000Z",
+      "sourceCountry": "Latvia",
+      "image": "/news/b3ef584742f19691.webp",
+      "original": "Mērķis okupēto Krimu izolēt no Krievijas : Kijiva apstiprina uzbrukumu Armjanskas tiltam",
+      "title": {
+        "uk": "Мета — ізолювати окупований Крим від Росії: Київ підтверджує удар по Армянському мосту",
+        "en": "Goal to isolate occupied Crimea from Russia: Kyiv confirms strike on Armyansk bridge",
+        "ru": "Цель — изолировать оккупированный Крым от России: Киев подтверждает удар по Армянскому мосту"
+      }
+    },
+    {
+      "url": "https://lb.ua/society/2026/06/09/744088_bloomberg_noviy_uryad_bolgariyi.html",
+      "domain": "lb.ua",
+      "seenAt": "2026-06-09T14:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b6e00a638a35ca94.webp",
+      "original": "Bloomberg : уряд Болгарії планує припинити постачання зброї Україні",
+      "title": {
+        "uk": "Bloomberg: уряд Болгарії планує припинити постачання зброї Україні",
+        "en": "Bloomberg: Bulgaria's government plans to stop arms supplies to Ukraine",
+        "ru": "Bloomberg: правительство Болгарии планирует прекратить поставки оружия Украине"
       }
     },
     {
@@ -84,47 +98,35 @@
       "image": "/news/10ba08f82456bf4e.webp",
       "original": "La Unión Europea aseguró que las sanciones occidentales por la guerra en Ucrania ya le costaron a Rusia más de USD 1 , 2 billones",
       "title": {
-        "uk": "ЄС заявив, що західні санкції через війну в Україні вже коштували Росії понад 1,2 трильйона доларів",
-        "en": "The EU said Western sanctions over the war in Ukraine have already cost Russia more than $1.2 trillion",
-        "ru": "ЕС заявил, что западные санкции из-за войны на Украине уже обошлись России более чем в 1,2 триллиона долларов"
+        "uk": "Євросоюз заявив, що західні санкції через війну в Україні вже коштували Росії понад 1,2 трильйона доларів",
+        "en": "The European Union stated that Western sanctions over the war in Ukraine have already cost Russia more than USD 1.2 trillion",
+        "ru": "Европейский союз заявил, что западные санкции из-за войны на Украине уже обошлись России более чем в 1,2 триллиона долларов"
       }
     },
     {
-      "url": "https://gazeta.ua/articles/krym/_ukrayina-pererizala-klyuchovi-shlyahi-do-krimu-ta-zmusila-rf-skorotiti-vijskovu-logistiku-isw/1252387",
-      "domain": "gazeta.ua",
-      "seenAt": "2026-06-10T07:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/76d7ab4267ae2347.webp",
-      "original": "Колапс ЗС РФ на півдні України - які обмеження встановив ворог , звідки вибивають росіян",
+      "url": "https://www.clarin.com/new-york-times-international-weekly/giro-inesperado-campana-drones-ucrania-perjudicando-seriamente-rusos_0_ZIYYmrefG2.html",
+      "domain": "clarin.com",
+      "seenAt": "2026-06-10T14:45:00.000Z",
+      "sourceCountry": "Argentina",
+      "image": "/news/0b4bcf6765de3faf.webp",
+      "original": "Un giro inesperado en la campaña de drones de Ucrania está perjudicando seriamente a los rusos",
       "title": {
-        "uk": "Колапс ЗС РФ на півдні України: які обмеження встановив ворог, звідки вибивають росіян",
-        "en": "Collapse of Russian forces in southern Ukraine: what restrictions the enemy has imposed and where Russians are being pushed out from",
-        "ru": "Коллапс ВС РФ на юге Украины: какие ограничения ввёл враг, откуда выбивают россиян"
+        "uk": "Несподіваний поворот у дроновій кампанії України завдає серйозної шкоди росіянам",
+        "en": "An unexpected turn in Ukraine's drone campaign is seriously harming the Russians",
+        "ru": "Неожиданный поворот в дроновой кампании Украины наносит серьёзный ущерб россиянам"
       }
     },
     {
-      "url": "https://gordonua.com/ukr/section-worldnews/news-superechyt-kursu-yes-bolhariya-zrobyla-huchnu-zayavu-shchodo-zbroyi-dlya-ukrayiny-na-tli-zustrichi-e3-u-brytaniyi-09-06-2026.html",
-      "domain": "gordonua.com",
-      "seenAt": "2026-06-09T17:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Суперечить курсу ЄС . Болгарія зробила гучну заяву щодо зброї для України на тлі зустрічі Е3 у Британії",
+      "url": "https://www.abc.es/internacional/rusia-amplia-posiciones-militares-frente-oriental-otan-20260611014037-nt.html",
+      "domain": "abc.es",
+      "seenAt": "2026-06-12T00:15:00.000Z",
+      "sourceCountry": "Spain",
+      "image": "/news/b49a0c5a08485033.webp",
+      "original": "Rusia amplía sus posiciones militares en el frente oriental de la OTAN",
       "title": {
-        "uk": "Суперечить курсу ЄС: Болгарія зробила гучну заяву щодо зброї для України на тлі зустрічі Е3 у Британії",
-        "en": "Contradicts EU policy: Bulgaria made a loud statement on weapons for Ukraine against the backdrop of the E3 meeting in Britain",
-        "ru": "Противоречит курсу ЕС: Болгария сделала громкое заявление об оружии для Украины на фоне встречи Е3 в Британии"
-      }
-    },
-    {
-      "url": "https://georgiatoday.ge/ukraine-launches-unprecedented-drone-attack-on-st-petersburg/",
-      "domain": "georgiatoday.ge",
-      "seenAt": "2026-06-07T12:30:00.000Z",
-      "sourceCountry": "Georgia",
-      "image": "/news/f4d6febfd4dae2d1.webp",
-      "original": "Ukraine launches  unprecedented  drone attack on St Petersburg",
-      "title": {
-        "uk": "Україна завдала «безпрецедентного» удару дронами по Санкт-Петербургу",
-        "en": "Ukraine launches \"unprecedented\" drone attack on St Petersburg",
-        "ru": "Украина нанесла «беспрецедентный» удар дронами по Санкт-Петербургу"
+        "uk": "Росія розширює свої військові позиції на східному фланзі НАТО",
+        "en": "Russia expands its military positions on NATO's eastern flank",
+        "ru": "Россия расширяет свои военные позиции на восточном фланге НАТО"
       }
     }
   ]
