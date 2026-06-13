@@ -1,80 +1,18 @@
 {
-  "asOf": "2026-06-12",
+  "asOf": "2026-06-13",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://focus.ua/uk/politics/756887-p-yat-umov-dlya-miru-golovne-iz-zustrichi-zelenskogo-v-londoni",
-      "domain": "focus.ua",
-      "seenAt": "2026-06-08T08:15:00.000Z",
+      "url": "https://www.ukrinform.ua/rubric-polytics/4131431-lideri-britanii-nimeccini-francii-ta-ukraini-oznacili-umovi-dla-dosagnenna-miru.html",
+      "domain": "ukrinform.ua",
+      "seenAt": "2026-06-07T22:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "П  ять умов для миру : головне із зустрічі Зеленського в Лондоні",
+      "image": "/news/4ee66a274200b1e6.webp",
+      "original": "Лідери Британії , Німеччини , Франції та України означили умови для досягнення миру",
       "title": {
-        "uk": "П'ять умов для миру: головне із зустрічі Зеленського в Лондоні",
-        "en": "Five conditions for peace: key outcomes from Zelensky's London meeting",
-        "ru": "Пять условий для мира: главное со встречи Зеленского в Лондоне"
-      }
-    },
-    {
-      "url": "https://www.cbsnews.com/news/ukraine-winning-war-russia-retired-us-generals/",
-      "domain": "cbsnews.com",
-      "seenAt": "2026-06-09T19:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/eb8931e1ecc3a73b.webp",
-      "original": "Ukraine winning war with Russia , retired U . S . generals say , as top Ukrainian commander says over 230 square miles retaken",
-      "title": {
-        "uk": "Україна виграє війну з Росією, кажуть відставні генерали США; головнокомандувач заявив про повернення понад 230 квадратних миль",
-        "en": "Ukraine winning war with Russia, retired U.S. generals say, as top Ukrainian commander says over 230 square miles retaken",
-        "ru": "Украина выигрывает войну с Россией, говорят отставные генералы США; главнокомандующий заявил о возврате более 230 квадратных миль"
-      }
-    },
-    {
-      "url": "https://fakty.ua/473237-kreml-gotovit-rossiyan-k-okonchaniyu-vojny-v-set-slili-scenarij-dlya-naseleniya",
-      "domain": "fakty.ua",
-      "seenAt": "2026-06-10T06:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "У Кремлі готуються до закінчення війни : для Путіна готують  переможний  сценарій",
-      "title": {
-        "uk": "У Кремлі готуються до закінчення війни: для Путіна готують «переможний» сценарій",
-        "en": "The Kremlin is preparing for the end of the war: a \"victory\" scenario is being drawn up for Putin",
-        "ru": "В Кремле готовятся к окончанию войны: для Путина готовят «победный» сценарий"
-      }
-    },
-    {
-      "url": "https://zn.ua/ukr/war/jevropejtsi-namahatimutsja-zaruchitisja-pidtrimkoju-trampa-na-g7-dlja-mirnikh-perehovoriv-z-rosijeju-bloomberg.html",
-      "domain": "zn.ua",
-      "seenAt": "2026-06-11T08:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією Bloomberg",
-      "title": {
-        "uk": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією — Bloomberg",
-        "en": "Europeans will try to secure Trump's support at G7 for peace talks with Russia — Bloomberg",
-        "ru": "Европейцы попытаются заручиться поддержкой Трампа на G7 для мирных переговоров с Россией — Bloomberg"
-      }
-    },
-    {
-      "url": "https://www.lsm.lv/raksts/zinas/arzemes/12.06.2026-merkis-okupeto-krimu-izolet-no-krievijas-kijiva-apstiprina-uzbrukumu-armjanskas-tiltam.a651187/",
-      "domain": "lsm.lv",
-      "seenAt": "2026-06-12T08:45:00.000Z",
-      "sourceCountry": "Latvia",
-      "image": "/news/b3ef584742f19691.webp",
-      "original": "Mērķis okupēto Krimu izolēt no Krievijas : Kijiva apstiprina uzbrukumu Armjanskas tiltam",
-      "title": {
-        "uk": "Мета — ізолювати окупований Крим від Росії: Київ підтверджує удар по Армянському мосту",
-        "en": "Goal to isolate occupied Crimea from Russia: Kyiv confirms strike on Armyansk bridge",
-        "ru": "Цель — изолировать оккупированный Крым от России: Киев подтверждает удар по Армянскому мосту"
-      }
-    },
-    {
-      "url": "https://lb.ua/society/2026/06/09/744088_bloomberg_noviy_uryad_bolgariyi.html",
-      "domain": "lb.ua",
-      "seenAt": "2026-06-09T14:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/b6e00a638a35ca94.webp",
-      "original": "Bloomberg : уряд Болгарії планує припинити постачання зброї Україні",
-      "title": {
-        "uk": "Bloomberg: уряд Болгарії планує припинити постачання зброї Україні",
-        "en": "Bloomberg: Bulgaria's government plans to stop arms supplies to Ukraine",
-        "ru": "Bloomberg: правительство Болгарии планирует прекратить поставки оружия Украине"
+        "uk": "Лідери Британії, Німеччини, Франції та України означили умови для досягнення миру",
+        "en": "Leaders of Britain, Germany, France and Ukraine outlined conditions for achieving peace",
+        "ru": "Лидеры Британии, Германии, Франции и Украины обозначили условия для достижения мира"
       }
     },
     {
@@ -86,47 +24,108 @@
       "original": "Lavrov :  Peace in Ukraine Depends on the Battlefield , Not Negotiations",
       "title": {
         "uk": "Лавров: «Мир в Україні залежить від поля бою, а не від переговорів»",
-        "en": "Lavrov: \"Peace in Ukraine depends on the battlefield, not negotiations\"",
+        "en": "Lavrov: 'Peace in Ukraine depends on the battlefield, not negotiations'",
         "ru": "Лавров: «Мир на Украине зависит от поля боя, а не от переговоров»"
       }
     },
     {
-      "url": "https://www.infobae.com/america/mundo/2026/06/09/la-union-europea-aseguro-que-las-sanciones-occidentales-por-la-guerra-en-ucrania-le-costaron-a-rusia-mas-de-usd-12-billones/",
-      "domain": "infobae.com",
-      "seenAt": "2026-06-09T05:15:00.000Z",
-      "sourceCountry": "Argentina",
-      "image": "/news/10ba08f82456bf4e.webp",
-      "original": "La Unión Europea aseguró que las sanciones occidentales por la guerra en Ucrania ya le costaron a Rusia más de USD 1 , 2 billones",
+      "url": "https://www.cbsnews.com/news/ukraine-winning-war-russia-retired-us-generals/",
+      "domain": "cbsnews.com",
+      "seenAt": "2026-06-09T19:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/eb8931e1ecc3a73b.webp",
+      "original": "Ukraine winning war with Russia , retired U . S . generals say , as top Ukrainian commander says over 230 square miles retaken",
       "title": {
-        "uk": "Євросоюз заявив, що західні санкції через війну в Україні вже коштували Росії понад 1,2 трильйона доларів",
-        "en": "The European Union stated that Western sanctions over the war in Ukraine have already cost Russia more than USD 1.2 trillion",
-        "ru": "Европейский союз заявил, что западные санкции из-за войны на Украине уже обошлись России более чем в 1,2 триллиона долларов"
+        "uk": "Україна перемагає у війні з Росією, кажуть колишні генерали США; топ-командувач повідомляє про звільнення понад 600 кв. км",
+        "en": "Ukraine winning war with Russia, retired U.S. generals say, as top Ukrainian commander says over 230 square miles retaken",
+        "ru": "Украина побеждает в войне с Россией, считают отставные генералы США; главный украинский командующий сообщает о возвращении более 600 кв. км"
       }
     },
     {
-      "url": "https://www.clarin.com/new-york-times-international-weekly/giro-inesperado-campana-drones-ucrania-perjudicando-seriamente-rusos_0_ZIYYmrefG2.html",
-      "domain": "clarin.com",
-      "seenAt": "2026-06-10T14:45:00.000Z",
-      "sourceCountry": "Argentina",
-      "image": "/news/0b4bcf6765de3faf.webp",
-      "original": "Un giro inesperado en la campaña de drones de Ucrania está perjudicando seriamente a los rusos",
+      "url": "https://www.obozrevatel.com/politics-news/putin-nachal-priznavat-neudachi-v-vojne-s-ukrainoj-v-isw-obyasnili-chto-stoit-za-etimi-zayavleniyami.htm",
+      "domain": "obozrevatel.com",
+      "seenAt": "2026-06-13T06:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Путин начал признавать неудачи в войне с Украиной – причина и цель – анализ ISW",
       "title": {
-        "uk": "Несподіваний поворот у дроновій кампанії України завдає серйозної шкоди росіянам",
-        "en": "An unexpected turn in Ukraine's drone campaign is seriously harming the Russians",
-        "ru": "Неожиданный поворот в дроновой кампании Украины наносит серьёзный ущерб россиянам"
+        "uk": "Путін почав визнавати невдачі у війні проти України — причина і мета — аналіз ISW",
+        "en": "Putin began acknowledging failures in the war against Ukraine — reasons and goals — ISW analysis",
+        "ru": "Путин начал признавать неудачи в войне с Украиной — причина и цель — анализ ISW"
       }
     },
     {
-      "url": "https://www.abc.es/internacional/rusia-amplia-posiciones-militares-frente-oriental-otan-20260611014037-nt.html",
-      "domain": "abc.es",
-      "seenAt": "2026-06-12T00:15:00.000Z",
-      "sourceCountry": "Spain",
-      "image": "/news/b49a0c5a08485033.webp",
-      "original": "Rusia amplía sus posiciones militares en el frente oriental de la OTAN",
+      "url": "https://www.spokesman.com/stories/2026/jun/11/ukraines-drone-commander-wants-to-cut-crimea-off-f/",
+      "domain": "spokesman.com",
+      "seenAt": "2026-06-11T20:45:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Ukraine drone commander wants to cut Crimea off from Russia",
       "title": {
-        "uk": "Росія розширює свої військові позиції на східному фланзі НАТО",
-        "en": "Russia expands its military positions on NATO's eastern flank",
-        "ru": "Россия расширяет свои военные позиции на восточном фланге НАТО"
+        "uk": "Командувач дронових сил України хоче відрізати Крим від Росії",
+        "en": "Ukraine drone commander wants to cut Crimea off from Russia",
+        "ru": "Командующий дроновыми силами Украины хочет отрезать Крым от России"
+      }
+    },
+    {
+      "url": "https://vesti-ua.net/novosti/politika/284809-otchet-isw-v-mae-ukraina-osvobodila-znachitelno-bolshe-territoriy-chem-zahvatila-rf-na-fone-rekordnyh-poter-okkupantov.html",
+      "domain": "vesti-ua.net",
+      "seenAt": "2026-06-07T15:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b80367daabaa0218.webp",
+      "original": "Отчет ISW : В мае Украина освободила значительно больше территорий , чем захватила РФ , на фоне рекордных потерь оккупантов",
+      "title": {
+        "uk": "Звіт ISW: у травні Україна звільнила значно більше територій, ніж захопила РФ, на тлі рекордних втрат окупантів",
+        "en": "ISW report: in May Ukraine liberated significantly more territory than Russia captured, amid record occupier losses",
+        "ru": "Отчёт ISW: в мае Украина освободила значительно больше территорий, чем захватила РФ, на фоне рекордных потерь оккупантов"
+      }
+    },
+    {
+      "url": "https://24tv.ua/geopolitics/bolgariya-pripinit-postachannya-zbroyi-ukrayini-yak-tse-rishennya_n3084518",
+      "domain": "24tv.ua",
+      "seenAt": "2026-06-09T14:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/96f2891ac2b7f14c.webp",
+      "original": "Болгарія припинить постачання зброї Україні - як це рішення пояснює новий уряд",
+      "title": {
+        "uk": "Болгарія припинить постачання зброї Україні — як новий уряд пояснює це рішення",
+        "en": "Bulgaria to stop weapons supplies to Ukraine — how the new government explains this decision",
+        "ru": "Болгария прекратит поставки оружия Украине — как новое правительство объясняет это решение"
+      }
+    },
+    {
+      "url": "https://zn.ua/ukr/war/jevropejtsi-namahatimutsja-zaruchitisja-pidtrimkoju-trampa-na-g7-dlja-mirnikh-perehovoriv-z-rosijeju-bloomberg.html",
+      "domain": "zn.ua",
+      "seenAt": "2026-06-11T08:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією Bloomberg",
+      "title": {
+        "uk": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією — Bloomberg",
+        "en": "Europeans to seek Trump's support at G7 for peace talks with Russia — Bloomberg",
+        "ru": "Европейцы попытаются заручиться поддержкой Трампа на G7 для мирных переговоров с Россией — Bloomberg"
+      }
+    },
+    {
+      "url": "https://www.unian.net/world/nato-shveciya-schitaet-chto-rossiya-sposobna-nanesti-udar-po-stranam-evropy-ranshe-chem-ozhidalos-13410363.html",
+      "domain": "unian.net",
+      "seenAt": "2026-06-12T13:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/4bb88b3de5b7b721.webp",
+      "original": "НАТО – Швеция считает , что Россия способна нанести удар по странам Европы раньше , чем ожидалось .",
+      "title": {
+        "uk": "НАТО: Швеція вважає, що Росія здатна завдати удару по країнах Європи раніше, ніж очікувалося",
+        "en": "NATO: Sweden believes Russia capable of striking European countries sooner than expected",
+        "ru": "НАТО: Швеция считает, что Россия способна нанести удар по странам Европы раньше, чем ожидалось"
+      }
+    },
+    {
+      "url": "https://glavcom.ua/world/world-politics/ssha-v-radbezi-oon-nazvali-vijnu-rf-proti-ukrajini-stratehichnim-provalom-1124520.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-06-09T07:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "США в Радбезі ООН назвали війну РФ проти України стратегічним провалом",
+      "title": {
+        "uk": "США в Радбезі ООН назвали війну РФ проти України стратегічним провалом",
+        "en": "US at UN Security Council called Russia's war against Ukraine a strategic failure",
+        "ru": "США в Совете Безопасности ООН назвали войну РФ против Украины стратегическим провалом"
       }
     }
   ]
