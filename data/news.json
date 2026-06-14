@@ -1,44 +1,44 @@
 {
-  "asOf": "2026-06-13",
+  "asOf": "2026-06-14",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.ukrinform.ua/rubric-polytics/4131431-lideri-britanii-nimeccini-francii-ta-ukraini-oznacili-umovi-dla-dosagnenna-miru.html",
-      "domain": "ukrinform.ua",
-      "seenAt": "2026-06-07T22:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/4ee66a274200b1e6.webp",
-      "original": "Лідери Британії , Німеччини , Франції та України означили умови для досягнення миру",
-      "title": {
-        "uk": "Лідери Британії, Німеччини, Франції та України означили умови для досягнення миру",
-        "en": "Leaders of Britain, Germany, France and Ukraine outlined conditions for achieving peace",
-        "ru": "Лидеры Британии, Германии, Франции и Украины обозначили условия для достижения мира"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/77774",
+      "url": "https://www.kyivpost.com/post/78136",
       "domain": "kyivpost.com",
-      "seenAt": "2026-06-08T23:45:00.000Z",
+      "seenAt": "2026-06-14T08:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/fedd9f5262c515c3.webp",
-      "original": "Lavrov :  Peace in Ukraine Depends on the Battlefield , Not Negotiations",
+      "image": "/news/f76cabf4547276b5.webp",
+      "original": "Italy Backs Alexander Stubb as EU Envoy for Ukraine - Russia Peace Talks",
       "title": {
-        "uk": "Лавров: «Мир в Україні залежить від поля бою, а не від переговорів»",
-        "en": "Lavrov: 'Peace in Ukraine depends on the battlefield, not negotiations'",
-        "ru": "Лавров: «Мир на Украине зависит от поля боя, а не от переговоров»"
+        "uk": "Італія підтримує Александра Стубба як посланця ЄС на мирних переговорах між Україною та Росією",
+        "en": "Italy backs Alexander Stubb as EU envoy for Ukraine-Russia peace talks",
+        "ru": "Италия поддерживает Александра Стубба в качестве посланника ЕС на мирных переговорах между Украиной и Россией"
       }
     },
     {
-      "url": "https://www.cbsnews.com/news/ukraine-winning-war-russia-retired-us-generals/",
-      "domain": "cbsnews.com",
-      "seenAt": "2026-06-09T19:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/eb8931e1ecc3a73b.webp",
-      "original": "Ukraine winning war with Russia , retired U . S . generals say , as top Ukrainian commander says over 230 square miles retaken",
+      "url": "https://www.sudouest.fr:443/international/guerre-en-ukraine-derriere-les-bombardements-reguliers-un-essoufflement-de-l-offensive-russe-29481144.php",
+      "domain": "sudouest.fr",
+      "seenAt": "2026-06-14T07:15:00.000Z",
+      "sourceCountry": "France",
+      "image": "/news/b9962318015e2eb3.webp",
+      "original": "Guerre en Ukraine  : derrière les bombardements réguliers , un essoufflement de loffensive russe",
       "title": {
-        "uk": "Україна перемагає у війні з Росією, кажуть колишні генерали США; топ-командувач повідомляє про звільнення понад 600 кв. км",
-        "en": "Ukraine winning war with Russia, retired U.S. generals say, as top Ukrainian commander says over 230 square miles retaken",
-        "ru": "Украина побеждает в войне с Россией, считают отставные генералы США; главный украинский командующий сообщает о возвращении более 600 кв. км"
+        "uk": "Війна в Україні: за регулярними бомбардуваннями — виснаження російського наступу",
+        "en": "War in Ukraine: behind the regular bombardments, an exhaustion of the Russian offensive",
+        "ru": "Война в Украине: за регулярными бомбардировками — истощение российского наступления"
+      }
+    },
+    {
+      "url": "https://www.bostonglobe.com/2026/06/13/world/war-ukraine-has-now-gone-longer-than-world-war-i/",
+      "domain": "bostonglobe.com",
+      "seenAt": "2026-06-13T21:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/895c7f9435b6e99b.webp",
+      "original": "The war in Ukraine has now gone on longer than World War I",
+      "title": {
+        "uk": "Війна в Україні тривала довше, ніж Перша світова війна",
+        "en": "The war in Ukraine has now gone on longer than World War I",
+        "ru": "Война в Украине продолжается дольше, чем Первая мировая война"
       }
     },
     {
@@ -48,9 +48,22 @@
       "sourceCountry": "Ukraine",
       "original": "Путин начал признавать неудачи в войне с Украиной – причина и цель – анализ ISW",
       "title": {
-        "uk": "Путін почав визнавати невдачі у війні проти України — причина і мета — аналіз ISW",
-        "en": "Putin began acknowledging failures in the war against Ukraine — reasons and goals — ISW analysis",
-        "ru": "Путин начал признавать неудачи в войне с Украиной — причина и цель — анализ ISW"
+        "uk": "Путін почав визнавати невдачі у війні проти України — причина та мета — аналіз ISW",
+        "en": "Putin has begun acknowledging failures in the war against Ukraine — reasons and goals — ISW analysis",
+        "ru": "Путин начал признавать неудачи в войне против Украины — причина и цель — анализ ISW"
+      }
+    },
+    {
+      "url": "https://sapo.pt/artigo/primeiro-contacto-diplomatico-europeu-com-moscovo-desde-2022-6a2b1c90272fc55d31dca6ec",
+      "domain": "sapo.pt",
+      "seenAt": "2026-06-11T21:15:00.000Z",
+      "sourceCountry": "Portugal",
+      "image": "/news/65fc83e1b2158e1f.webp",
+      "original": "Primeiro contacto diplomático europeu com Moscovo desde 2022",
+      "title": {
+        "uk": "Перший дипломатичний контакт Європи з Москвою з 2022 року",
+        "en": "First European diplomatic contact with Moscow since 2022",
+        "ru": "Первый дипломатический контакт Европы с Москвой с 2022 года"
       }
     },
     {
@@ -66,66 +79,55 @@
       }
     },
     {
-      "url": "https://vesti-ua.net/novosti/politika/284809-otchet-isw-v-mae-ukraina-osvobodila-znachitelno-bolshe-territoriy-chem-zahvatila-rf-na-fone-rekordnyh-poter-okkupantov.html",
-      "domain": "vesti-ua.net",
-      "seenAt": "2026-06-07T15:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/b80367daabaa0218.webp",
-      "original": "Отчет ISW : В мае Украина освободила значительно больше территорий , чем захватила РФ , на фоне рекордных потерь оккупантов",
+      "url": "https://www.cbsnews.com/news/ukraine-winning-war-russia-retired-us-generals/",
+      "domain": "cbsnews.com",
+      "seenAt": "2026-06-09T19:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/eb8931e1ecc3a73b.webp",
+      "original": "Ukraine winning war with Russia , retired U . S . generals say , as top Ukrainian commander says over 230 square miles retaken",
       "title": {
-        "uk": "Звіт ISW: у травні Україна звільнила значно більше територій, ніж захопила РФ, на тлі рекордних втрат окупантів",
-        "en": "ISW report: in May Ukraine liberated significantly more territory than Russia captured, amid record occupier losses",
-        "ru": "Отчёт ISW: в мае Украина освободила значительно больше территорий, чем захватила РФ, на фоне рекордных потерь оккупантов"
+        "uk": "Відставні генерали США кажуть, що Україна перемагає у війні з Росією; головнокомандувач повідомив про повернення понад 600 кв. км",
+        "en": "Ukraine winning war with Russia, retired U.S. generals say, as top Ukrainian commander says over 230 square miles retaken",
+        "ru": "Отставные генералы США говорят, что Украина побеждает в войне с Россией; главнокомандующий сообщил о возвращении более 600 кв. км"
       }
     },
     {
-      "url": "https://24tv.ua/geopolitics/bolgariya-pripinit-postachannya-zbroyi-ukrayini-yak-tse-rishennya_n3084518",
-      "domain": "24tv.ua",
-      "seenAt": "2026-06-09T14:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/96f2891ac2b7f14c.webp",
-      "original": "Болгарія припинить постачання зброї Україні - як це рішення пояснює новий уряд",
+      "url": "https://www.infobae.com/america/mundo/2026/06/09/la-union-europea-aseguro-que-las-sanciones-occidentales-por-la-guerra-en-ucrania-le-costaron-a-rusia-mas-de-usd-12-billones/",
+      "domain": "infobae.com",
+      "seenAt": "2026-06-09T05:15:00.000Z",
+      "sourceCountry": "Argentina",
+      "image": "/news/10ba08f82456bf4e.webp",
+      "original": "La Unión Europea aseguró que las sanciones occidentales por la guerra en Ucrania ya le costaron a Rusia más de USD 1 , 2 billones",
       "title": {
-        "uk": "Болгарія припинить постачання зброї Україні — як новий уряд пояснює це рішення",
-        "en": "Bulgaria to stop weapons supplies to Ukraine — how the new government explains this decision",
-        "ru": "Болгария прекратит поставки оружия Украине — как новое правительство объясняет это решение"
+        "uk": "ЄС заявив, що західні санкції через війну в Україні вже коштували Росії понад 1,2 трлн доларів",
+        "en": "The EU stated that Western sanctions over the war in Ukraine have already cost Russia more than USD 1.2 trillion",
+        "ru": "ЕС заявил, что западные санкции из-за войны в Украине уже обошлись России более чем в 1,2 трлн долларов"
       }
     },
     {
-      "url": "https://zn.ua/ukr/war/jevropejtsi-namahatimutsja-zaruchitisja-pidtrimkoju-trampa-na-g7-dlja-mirnikh-perehovoriv-z-rosijeju-bloomberg.html",
-      "domain": "zn.ua",
-      "seenAt": "2026-06-11T08:30:00.000Z",
+      "url": "https://www.kyivpost.com/post/77774",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-06-08T23:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією Bloomberg",
+      "image": "/news/fedd9f5262c515c3.webp",
+      "original": "Lavrov :  Peace in Ukraine Depends on the Battlefield , Not Negotiations",
       "title": {
-        "uk": "Європейці намагатимуться заручитися підтримкою Трампа на G7 для мирних переговорів з Росією — Bloomberg",
-        "en": "Europeans to seek Trump's support at G7 for peace talks with Russia — Bloomberg",
-        "ru": "Европейцы попытаются заручиться поддержкой Трампа на G7 для мирных переговоров с Россией — Bloomberg"
+        "uk": "Лавров: «Мир в Україні залежить від поля бою, а не від переговорів»",
+        "en": "Lavrov: \"Peace in Ukraine depends on the battlefield, not negotiations\"",
+        "ru": "Лавров: «Мир в Украине зависит от поля боя, а не от переговоров»"
       }
     },
     {
-      "url": "https://www.unian.net/world/nato-shveciya-schitaet-chto-rossiya-sposobna-nanesti-udar-po-stranam-evropy-ranshe-chem-ozhidalos-13410363.html",
-      "domain": "unian.net",
-      "seenAt": "2026-06-12T13:15:00.000Z",
+      "url": "https://lb.ua/society/2026/06/09/744088_bloomberg_noviy_uryad_bolgariyi.html",
+      "domain": "lb.ua",
+      "seenAt": "2026-06-09T14:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/4bb88b3de5b7b721.webp",
-      "original": "НАТО – Швеция считает , что Россия способна нанести удар по странам Европы раньше , чем ожидалось .",
+      "image": "/news/b6e00a638a35ca94.webp",
+      "original": "Bloomberg : уряд Болгарії планує припинити постачання зброї Україні",
       "title": {
-        "uk": "НАТО: Швеція вважає, що Росія здатна завдати удару по країнах Європи раніше, ніж очікувалося",
-        "en": "NATO: Sweden believes Russia capable of striking European countries sooner than expected",
-        "ru": "НАТО: Швеция считает, что Россия способна нанести удар по странам Европы раньше, чем ожидалось"
-      }
-    },
-    {
-      "url": "https://glavcom.ua/world/world-politics/ssha-v-radbezi-oon-nazvali-vijnu-rf-proti-ukrajini-stratehichnim-provalom-1124520.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-06-09T07:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "США в Радбезі ООН назвали війну РФ проти України стратегічним провалом",
-      "title": {
-        "uk": "США в Радбезі ООН назвали війну РФ проти України стратегічним провалом",
-        "en": "US at UN Security Council called Russia's war against Ukraine a strategic failure",
-        "ru": "США в Совете Безопасности ООН назвали войну РФ против Украины стратегическим провалом"
+        "uk": "Bloomberg: уряд Болгарії планує припинити постачання зброї Україні",
+        "en": "Bloomberg: Bulgarian government plans to halt arms supplies to Ukraine",
+        "ru": "Bloomberg: правительство Болгарии планирует прекратить поставки оружия Украине"
       }
     }
   ]
