@@ -1,7 +1,46 @@
 {
-  "asOf": "2026-06-14",
+  "asOf": "2026-06-15",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://www.abc.net.au/news/2026-06-15/ukraine-pechersk-lavra-monastery-russia-missile-strike/106800464",
+      "domain": "abc.net.au",
+      "seenAt": "2026-06-15T11:15:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/9a2aee9c19adb9ec.webp",
+      "original": "Four killed in Kyiv as UNESCO - listed monastery struck by Russian missile",
+      "title": {
+        "uk": "Четверо загиблих у Києві: російська ракета вдарила по монастирю зі списку ЮНЕСКО",
+        "en": "Four killed in Kyiv as UNESCO-listed monastery struck by Russian missile",
+        "ru": "Четверо погибших в Киеве: российская ракета ударила по монастырю из списка ЮНЕСКО"
+      }
+    },
+    {
+      "url": "https://www.yahoo.com/news/world/articles/tech-tactics-giving-ukraine-rare-111801487.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-06-15T14:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/75e3b7b3cff6b1da.webp",
+      "original": "New tech and tactics are giving Ukraine rare momentum against Russia",
+      "title": {
+        "uk": "Нові технології та тактика надають Україні рідкісну перевагу проти Росії",
+        "en": "New tech and tactics are giving Ukraine rare momentum against Russia",
+        "ru": "Новые технологии и тактика дают Украине редкий импульс против России"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/78135",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-06-14T12:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/9b51aa50e344fa05.webp",
+      "original": "Despite strikes on Ukraine , Russian advances slow , analysts say",
+      "title": {
+        "uk": "Незважаючи на удари по Україні, просування Росії сповільнюється, кажуть аналітики",
+        "en": "Despite strikes on Ukraine, Russian advances slow, analysts say",
+        "ru": "Несмотря на удары по Украине, российское наступление замедляется, говорят аналитики"
+      }
+    },
     {
       "url": "https://www.kyivpost.com/post/78136",
       "domain": "kyivpost.com",
@@ -10,60 +49,21 @@
       "image": "/news/f76cabf4547276b5.webp",
       "original": "Italy Backs Alexander Stubb as EU Envoy for Ukraine - Russia Peace Talks",
       "title": {
-        "uk": "Італія підтримує Александра Стубба як посланця ЄС на мирних переговорах між Україною та Росією",
+        "uk": "Італія підтримує Александра Стубба як посланника ЄС на мирних переговорах між Україною та Росією",
         "en": "Italy backs Alexander Stubb as EU envoy for Ukraine-Russia peace talks",
         "ru": "Италия поддерживает Александра Стубба в качестве посланника ЕС на мирных переговорах между Украиной и Россией"
       }
     },
     {
-      "url": "https://www.sudouest.fr:443/international/guerre-en-ukraine-derriere-les-bombardements-reguliers-un-essoufflement-de-l-offensive-russe-29481144.php",
-      "domain": "sudouest.fr",
-      "seenAt": "2026-06-14T07:15:00.000Z",
-      "sourceCountry": "France",
-      "image": "/news/b9962318015e2eb3.webp",
-      "original": "Guerre en Ukraine  : derrière les bombardements réguliers , un essoufflement de loffensive russe",
-      "title": {
-        "uk": "Війна в Україні: за регулярними бомбардуваннями — виснаження російського наступу",
-        "en": "War in Ukraine: behind the regular bombardments, an exhaustion of the Russian offensive",
-        "ru": "Война в Украине: за регулярными бомбардировками — истощение российского наступления"
-      }
-    },
-    {
-      "url": "https://www.bostonglobe.com/2026/06/13/world/war-ukraine-has-now-gone-longer-than-world-war-i/",
-      "domain": "bostonglobe.com",
-      "seenAt": "2026-06-13T21:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/895c7f9435b6e99b.webp",
-      "original": "The war in Ukraine has now gone on longer than World War I",
-      "title": {
-        "uk": "Війна в Україні тривала довше, ніж Перша світова війна",
-        "en": "The war in Ukraine has now gone on longer than World War I",
-        "ru": "Война в Украине продолжается дольше, чем Первая мировая война"
-      }
-    },
-    {
-      "url": "https://www.obozrevatel.com/politics-news/putin-nachal-priznavat-neudachi-v-vojne-s-ukrainoj-v-isw-obyasnili-chto-stoit-za-etimi-zayavleniyami.htm",
-      "domain": "obozrevatel.com",
-      "seenAt": "2026-06-13T06:15:00.000Z",
+      "url": "https://focus.ua/uk/world/757343-posli-franciji-velikoji-britaniji-ta-nimechchini-zustrilisya-z-mzs-rf-pro-shcho-govorili",
+      "domain": "focus.ua",
+      "seenAt": "2026-06-11T12:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Путин начал признавать неудачи в войне с Украиной – причина и цель – анализ ISW",
+      "original": "Посли Франції , Великої Британії та Німеччини зустрілися з МЗС РФ : про що говорили",
       "title": {
-        "uk": "Путін почав визнавати невдачі у війні проти України — причина та мета — аналіз ISW",
-        "en": "Putin has begun acknowledging failures in the war against Ukraine — reasons and goals — ISW analysis",
-        "ru": "Путин начал признавать неудачи в войне против Украины — причина и цель — анализ ISW"
-      }
-    },
-    {
-      "url": "https://sapo.pt/artigo/primeiro-contacto-diplomatico-europeu-com-moscovo-desde-2022-6a2b1c90272fc55d31dca6ec",
-      "domain": "sapo.pt",
-      "seenAt": "2026-06-11T21:15:00.000Z",
-      "sourceCountry": "Portugal",
-      "image": "/news/65fc83e1b2158e1f.webp",
-      "original": "Primeiro contacto diplomático europeu com Moscovo desde 2022",
-      "title": {
-        "uk": "Перший дипломатичний контакт Європи з Москвою з 2022 року",
-        "en": "First European diplomatic contact with Moscow since 2022",
-        "ru": "Первый дипломатический контакт Европы с Москвой с 2022 года"
+        "uk": "Посли Франції, Великої Британії та Німеччини зустрілися з МЗС РФ: про що говорили",
+        "en": "Ambassadors of France, UK and Germany met with Russia's foreign ministry: what was discussed",
+        "ru": "Послы Франции, Великобритании и Германии встретились с МИД РФ: о чём говорили"
       }
     },
     {
@@ -73,61 +73,58 @@
       "sourceCountry": "United States",
       "original": "Ukraine drone commander wants to cut Crimea off from Russia",
       "title": {
-        "uk": "Командувач дронових сил України хоче відрізати Крим від Росії",
+        "uk": "Командир підрозділу дронів України хоче відрізати Крим від Росії",
         "en": "Ukraine drone commander wants to cut Crimea off from Russia",
-        "ru": "Командующий дроновыми силами Украины хочет отрезать Крым от России"
+        "ru": "Командир подразделения дронов Украины хочет отрезать Крым от России"
       }
     },
     {
-      "url": "https://www.cbsnews.com/news/ukraine-winning-war-russia-retired-us-generals/",
-      "domain": "cbsnews.com",
-      "seenAt": "2026-06-09T19:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/eb8931e1ecc3a73b.webp",
-      "original": "Ukraine winning war with Russia , retired U . S . generals say , as top Ukrainian commander says over 230 square miles retaken",
-      "title": {
-        "uk": "Відставні генерали США кажуть, що Україна перемагає у війні з Росією; головнокомандувач повідомив про повернення понад 600 кв. км",
-        "en": "Ukraine winning war with Russia, retired U.S. generals say, as top Ukrainian commander says over 230 square miles retaken",
-        "ru": "Отставные генералы США говорят, что Украина побеждает в войне с Россией; главнокомандующий сообщил о возвращении более 600 кв. км"
-      }
-    },
-    {
-      "url": "https://www.infobae.com/america/mundo/2026/06/09/la-union-europea-aseguro-que-las-sanciones-occidentales-por-la-guerra-en-ucrania-le-costaron-a-rusia-mas-de-usd-12-billones/",
-      "domain": "infobae.com",
-      "seenAt": "2026-06-09T05:15:00.000Z",
-      "sourceCountry": "Argentina",
-      "image": "/news/10ba08f82456bf4e.webp",
-      "original": "La Unión Europea aseguró que las sanciones occidentales por la guerra en Ucrania ya le costaron a Rusia más de USD 1 , 2 billones",
-      "title": {
-        "uk": "ЄС заявив, що західні санкції через війну в Україні вже коштували Росії понад 1,2 трлн доларів",
-        "en": "The EU stated that Western sanctions over the war in Ukraine have already cost Russia more than USD 1.2 trillion",
-        "ru": "ЕС заявил, что западные санкции из-за войны в Украине уже обошлись России более чем в 1,2 трлн долларов"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/77774",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-06-08T23:45:00.000Z",
+      "url": "https://www.obozrevatel.com/politics-news/putin-nachal-priznavat-neudachi-v-vojne-s-ukrainoj-v-isw-obyasnili-chto-stoit-za-etimi-zayavleniyami.htm",
+      "domain": "obozrevatel.com",
+      "seenAt": "2026-06-13T06:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/fedd9f5262c515c3.webp",
-      "original": "Lavrov :  Peace in Ukraine Depends on the Battlefield , Not Negotiations",
+      "original": "Путин начал признавать неудачи в войне с Украиной – причина и цель – анализ ISW",
       "title": {
-        "uk": "Лавров: «Мир в Україні залежить від поля бою, а не від переговорів»",
-        "en": "Lavrov: \"Peace in Ukraine depends on the battlefield, not negotiations\"",
-        "ru": "Лавров: «Мир в Украине зависит от поля боя, а не от переговоров»"
+        "uk": "Путін почав визнавати невдачі у війні проти України — причина і мета — аналіз ISW",
+        "en": "Putin has begun acknowledging failures in the war against Ukraine — reasons and goals — ISW analysis",
+        "ru": "Путин начал признавать неудачи в войне с Украиной — причина и цель — анализ ISW"
       }
     },
     {
-      "url": "https://lb.ua/society/2026/06/09/744088_bloomberg_noviy_uryad_bolgariyi.html",
-      "domain": "lb.ua",
-      "seenAt": "2026-06-09T14:00:00.000Z",
+      "url": "https://fakty.ua/473312-znak-otchayaniya-putin-gotovit-masshtabnoe-zimnee-nastuplenie-chtoby-izbezhat-ekonomicheskogo-kollapsa",
+      "domain": "fakty.ua",
+      "seenAt": "2026-06-12T15:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/b6e00a638a35ca94.webp",
-      "original": "Bloomberg : уряд Болгарії планує припинити постачання зброї Україні",
+      "original": "Путін готує масштабний зимовий наступ , щоб уникнути економічного колапсу",
       "title": {
-        "uk": "Bloomberg: уряд Болгарії планує припинити постачання зброї Україні",
-        "en": "Bloomberg: Bulgarian government plans to halt arms supplies to Ukraine",
-        "ru": "Bloomberg: правительство Болгарии планирует прекратить поставки оружия Украине"
+        "uk": "Путін готує масштабний зимовий наступ, щоб уникнути економічного колапсу",
+        "en": "Putin is preparing a large-scale winter offensive to avoid economic collapse",
+        "ru": "Путин готовит масштабное зимнее наступление, чтобы избежать экономического коллапса"
+      }
+    },
+    {
+      "url": "https://finance.liga.net/ua/state-finance/news/rosiia-tratyt-na-viynu-z-ukrainoiu-915-mln-na-den-tse-novyy-rekord",
+      "domain": "finance.liga.net",
+      "seenAt": "2026-06-13T07:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Росія тратить на війну з Україною $915 млн на день | Новини України",
+      "title": {
+        "uk": "Росія витрачає на війну проти України 915 млн доларів на день",
+        "en": "Russia is spending $915 million per day on its war against Ukraine",
+        "ru": "Россия тратит на войну с Украиной 915 млн долларов в день"
+      }
+    },
+    {
+      "url": "https://24tv.ua/geopolitics/bolgariya-pripinit-postachannya-zbroyi-ukrayini-yak-tse-rishennya_n3084518",
+      "domain": "24tv.ua",
+      "seenAt": "2026-06-09T14:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/96f2891ac2b7f14c.webp",
+      "original": "Болгарія припинить постачання зброї Україні - як це рішення пояснює новий уряд",
+      "title": {
+        "uk": "Болгарія припинить постачання зброї Україні — як новий уряд пояснює це рішення",
+        "en": "Bulgaria to halt arms supplies to Ukraine — how the new government explains the decision",
+        "ru": "Болгария прекратит поставки оружия Украине — как новое правительство объясняет это решение"
       }
     }
   ]
