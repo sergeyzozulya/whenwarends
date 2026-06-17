@@ -1,18 +1,31 @@
 {
-  "asOf": "2026-06-15",
+  "asOf": "2026-06-17",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.abc.net.au/news/2026-06-15/ukraine-pechersk-lavra-monastery-russia-missile-strike/106800464",
-      "domain": "abc.net.au",
-      "seenAt": "2026-06-15T11:15:00.000Z",
-      "sourceCountry": "Australia",
-      "image": "/news/9a2aee9c19adb9ec.webp",
-      "original": "Four killed in Kyiv as UNESCO - listed monastery struck by Russian missile",
+      "url": "https://www.unian.ua/war/ukrajina-pereyshla-do-novogo-etapu-viyni-droniv-nyt-13414488.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-06-17T07:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/1931ff2ffaae5110.webp",
+      "original": "Україна перейшла до нового етапу війни дронів ,",
       "title": {
-        "uk": "Четверо загиблих у Києві: російська ракета вдарила по монастирю зі списку ЮНЕСКО",
-        "en": "Four killed in Kyiv as UNESCO-listed monastery struck by Russian missile",
-        "ru": "Четверо погибших в Киеве: российская ракета ударила по монастырю из списка ЮНЕСКО"
+        "uk": "Україна перейшла до нового етапу війни дронів",
+        "en": "Ukraine has entered a new phase of drone warfare",
+        "ru": "Украина перешла к новому этапу войны дронов"
+      }
+    },
+    {
+      "url": "https://www.the-star.co.ke/news/2026-06-17-g7-leaders-back-ukraine-tighten-pressure-on-russia",
+      "domain": "the-star.co.ke",
+      "seenAt": "2026-06-17T09:00:00.000Z",
+      "sourceCountry": "Kenya",
+      "image": "/news/4318a1449a87ea6a.webp",
+      "original": "G7 leaders back Ukraine , tighten pressure on Russia in France summit",
+      "title": {
+        "uk": "Лідери G7 підтримали Україну та посилили тиск на Росію на саміті у Франції",
+        "en": "G7 leaders back Ukraine, tighten pressure on Russia at France summit",
+        "ru": "Лидеры G7 поддержали Украину и усилили давление на Россию на саммите во Франции"
       }
     },
     {
@@ -23,9 +36,35 @@
       "image": "/news/75e3b7b3cff6b1da.webp",
       "original": "New tech and tactics are giving Ukraine rare momentum against Russia",
       "title": {
-        "uk": "Нові технології та тактика надають Україні рідкісну перевагу проти Росії",
+        "uk": "Нові технології та тактики дають Україні рідкісний імпульс проти Росії",
         "en": "New tech and tactics are giving Ukraine rare momentum against Russia",
-        "ru": "Новые технологии и тактика дают Украине редкий импульс против России"
+        "ru": "Новые технологии и тактики дают Украине редкий импульс против России"
+      }
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-06-15/ukraine-pechersk-lavra-monastery-russia-missile-strike/106800464",
+      "domain": "abc.net.au",
+      "seenAt": "2026-06-15T11:15:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/9a2aee9c19adb9ec.webp",
+      "original": "Four killed in Kyiv as UNESCO - listed monastery struck by Russian missile",
+      "title": {
+        "uk": "Четверо загиблих у Києві: російська ракета вдарила по монастирю зі списку ЮНЕСКО",
+        "en": "Four killed in Kyiv as UNESCO-listed monastery struck by Russian missile",
+        "ru": "Четыре человека погибли в Киеве: российская ракета ударила по монастырю из списка ЮНЕСКО"
+      }
+    },
+    {
+      "url": "https://www.yahoo.com/news/politics/articles/eu-imposes-more-sanctions-russia-141130169.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-06-15T15:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/162160c0629e013e.webp",
+      "original": "EU imposes more sanctions on Russia , including on  shadow fleet",
+      "title": {
+        "uk": "ЄС запровадив нові санкції проти Росії, зокрема щодо тіньового флоту",
+        "en": "EU imposes more sanctions on Russia, including on shadow fleet",
+        "ru": "ЕС ввёл новые санкции против России, в том числе в отношении теневого флота"
       }
     },
     {
@@ -42,6 +81,44 @@
       }
     },
     {
+      "url": "https://www.dw.com/uk/ukraina-v-2026-roci-vigotovit-10-mln-bezpilotnikiv-zelenskij/a-77582181",
+      "domain": "dw.com",
+      "seenAt": "2026-06-16T22:00:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/26537865959b815c.webp",
+      "original": "Зеленський : Україна цьогоріч виготовить 10 млн дронів",
+      "title": {
+        "uk": "Зеленський: Україна цьогоріч виготовить 10 млн дронів",
+        "en": "Zelensky: Ukraine will produce 10 million drones this year",
+        "ru": "Зеленский: Украина в этом году произведёт 10 млн дронов"
+      }
+    },
+    {
+      "url": "https://glavcom.ua/world/observe/rosija-zitknulasja-z-novimi-problemami-pislja-udariv-po-mostakh-do-krimu-isw-1125189.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-06-12T09:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Росія зіткнулася з новими проблемами після ударів по мостах до Криму – ISW",
+      "title": {
+        "uk": "Росія зіткнулася з новими проблемами після ударів по мостах до Криму — ISW",
+        "en": "Russia faces new problems after strikes on bridges to Crimea — ISW",
+        "ru": "Россия столкнулась с новыми проблемами после ударов по мостам в Крым — ISW"
+      }
+    },
+    {
+      "url": "https://www.unian.net/war/nastuplenie-iz-belarusi-lukashenko-rasskazal-kak-on-obsuzhdal-s-putinym-novoe-nastuplenie-na-ukrainu-13413330.html",
+      "domain": "unian.net",
+      "seenAt": "2026-06-16T08:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/491ea1ef73ed4fbb.webp",
+      "original": "Наступление из Беларуси – Лукашенко рассказал , как он обсуждал с Путиным новое наступление на Украину",
+      "title": {
+        "uk": "Наступ з Білорусі: Лукашенко розповів, як обговорював із Путіним нове наступ на Україну",
+        "en": "Offensive from Belarus: Lukashenko told how he discussed a new offensive on Ukraine with Putin",
+        "ru": "Наступление из Беларуси: Лукашенко рассказал, как обсуждал с Путиным новое наступление на Украину"
+      }
+    },
+    {
       "url": "https://www.kyivpost.com/post/78136",
       "domain": "kyivpost.com",
       "seenAt": "2026-06-14T08:00:00.000Z",
@@ -49,82 +126,9 @@
       "image": "/news/f76cabf4547276b5.webp",
       "original": "Italy Backs Alexander Stubb as EU Envoy for Ukraine - Russia Peace Talks",
       "title": {
-        "uk": "Італія підтримує Александра Стубба як посланника ЄС на мирних переговорах між Україною та Росією",
+        "uk": "Італія підтримує Александра Стубба як посланця ЄС на мирних переговорах між Україною та Росією",
         "en": "Italy backs Alexander Stubb as EU envoy for Ukraine-Russia peace talks",
         "ru": "Италия поддерживает Александра Стубба в качестве посланника ЕС на мирных переговорах между Украиной и Россией"
-      }
-    },
-    {
-      "url": "https://focus.ua/uk/world/757343-posli-franciji-velikoji-britaniji-ta-nimechchini-zustrilisya-z-mzs-rf-pro-shcho-govorili",
-      "domain": "focus.ua",
-      "seenAt": "2026-06-11T12:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Посли Франції , Великої Британії та Німеччини зустрілися з МЗС РФ : про що говорили",
-      "title": {
-        "uk": "Посли Франції, Великої Британії та Німеччини зустрілися з МЗС РФ: про що говорили",
-        "en": "Ambassadors of France, UK and Germany met with Russia's foreign ministry: what was discussed",
-        "ru": "Послы Франции, Великобритании и Германии встретились с МИД РФ: о чём говорили"
-      }
-    },
-    {
-      "url": "https://www.spokesman.com/stories/2026/jun/11/ukraines-drone-commander-wants-to-cut-crimea-off-f/",
-      "domain": "spokesman.com",
-      "seenAt": "2026-06-11T20:45:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Ukraine drone commander wants to cut Crimea off from Russia",
-      "title": {
-        "uk": "Командир підрозділу дронів України хоче відрізати Крим від Росії",
-        "en": "Ukraine drone commander wants to cut Crimea off from Russia",
-        "ru": "Командир подразделения дронов Украины хочет отрезать Крым от России"
-      }
-    },
-    {
-      "url": "https://www.obozrevatel.com/politics-news/putin-nachal-priznavat-neudachi-v-vojne-s-ukrainoj-v-isw-obyasnili-chto-stoit-za-etimi-zayavleniyami.htm",
-      "domain": "obozrevatel.com",
-      "seenAt": "2026-06-13T06:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Путин начал признавать неудачи в войне с Украиной – причина и цель – анализ ISW",
-      "title": {
-        "uk": "Путін почав визнавати невдачі у війні проти України — причина і мета — аналіз ISW",
-        "en": "Putin has begun acknowledging failures in the war against Ukraine — reasons and goals — ISW analysis",
-        "ru": "Путин начал признавать неудачи в войне с Украиной — причина и цель — анализ ISW"
-      }
-    },
-    {
-      "url": "https://fakty.ua/473312-znak-otchayaniya-putin-gotovit-masshtabnoe-zimnee-nastuplenie-chtoby-izbezhat-ekonomicheskogo-kollapsa",
-      "domain": "fakty.ua",
-      "seenAt": "2026-06-12T15:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Путін готує масштабний зимовий наступ , щоб уникнути економічного колапсу",
-      "title": {
-        "uk": "Путін готує масштабний зимовий наступ, щоб уникнути економічного колапсу",
-        "en": "Putin is preparing a large-scale winter offensive to avoid economic collapse",
-        "ru": "Путин готовит масштабное зимнее наступление, чтобы избежать экономического коллапса"
-      }
-    },
-    {
-      "url": "https://finance.liga.net/ua/state-finance/news/rosiia-tratyt-na-viynu-z-ukrainoiu-915-mln-na-den-tse-novyy-rekord",
-      "domain": "finance.liga.net",
-      "seenAt": "2026-06-13T07:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Росія тратить на війну з Україною $915 млн на день | Новини України",
-      "title": {
-        "uk": "Росія витрачає на війну проти України 915 млн доларів на день",
-        "en": "Russia is spending $915 million per day on its war against Ukraine",
-        "ru": "Россия тратит на войну с Украиной 915 млн долларов в день"
-      }
-    },
-    {
-      "url": "https://24tv.ua/geopolitics/bolgariya-pripinit-postachannya-zbroyi-ukrayini-yak-tse-rishennya_n3084518",
-      "domain": "24tv.ua",
-      "seenAt": "2026-06-09T14:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/96f2891ac2b7f14c.webp",
-      "original": "Болгарія припинить постачання зброї Україні - як це рішення пояснює новий уряд",
-      "title": {
-        "uk": "Болгарія припинить постачання зброї Україні — як новий уряд пояснює це рішення",
-        "en": "Bulgaria to halt arms supplies to Ukraine — how the new government explains the decision",
-        "ru": "Болгария прекратит поставки оружия Украине — как новое правительство объясняет это решение"
       }
     }
   ]
