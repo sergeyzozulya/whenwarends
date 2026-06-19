@@ -1,57 +1,69 @@
 {
-  "asOf": "2026-06-17",
+  "asOf": "2026-06-19",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.unian.ua/war/ukrajina-pereyshla-do-novogo-etapu-viyni-droniv-nyt-13414488.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-06-17T07:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/1931ff2ffaae5110.webp",
-      "original": "Україна перейшла до нового етапу війни дронів ,",
+      "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-trump-zelensky-g7-news-b2998092.html",
+      "domain": "independent.co.uk",
+      "seenAt": "2026-06-18T08:45:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/a4f985188f021542.webp",
+      "original": "Ukraine - Russia war latest : Moscow suspends all flights as massive Ukrainian drone attack sparks oil refinery fire",
       "title": {
-        "uk": "Україна перейшла до нового етапу війни дронів",
-        "en": "Ukraine has entered a new phase of drone warfare",
-        "ru": "Украина перешла к новому этапу войны дронов"
+        "uk": "Хроніка війни Україна–Росія: Москва зупинила всі рейси через масовану атаку українських дронів, які підпалили нафтопереробний завод",
+        "en": "Ukraine-Russia war latest: Moscow suspends all flights as massive Ukrainian drone attack sparks oil refinery fire",
+        "ru": "Хроника войны Украина–Россия: Москва приостановила все рейсы после массированной атаки украинских дронов, вызвавшей пожар на нефтеперерабатывающем заводе"
       }
     },
     {
-      "url": "https://www.the-star.co.ke/news/2026-06-17-g7-leaders-back-ukraine-tighten-pressure-on-russia",
-      "domain": "the-star.co.ke",
-      "seenAt": "2026-06-17T09:00:00.000Z",
-      "sourceCountry": "Kenya",
-      "image": "/news/4318a1449a87ea6a.webp",
-      "original": "G7 leaders back Ukraine , tighten pressure on Russia in France summit",
-      "title": {
-        "uk": "Лідери G7 підтримали Україну та посилили тиск на Росію на саміті у Франції",
-        "en": "G7 leaders back Ukraine, tighten pressure on Russia at France summit",
-        "ru": "Лидеры G7 поддержали Украину и усилили давление на Россию на саммите во Франции"
-      }
-    },
-    {
-      "url": "https://www.yahoo.com/news/world/articles/tech-tactics-giving-ukraine-rare-111801487.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-06-15T14:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/75e3b7b3cff6b1da.webp",
-      "original": "New tech and tactics are giving Ukraine rare momentum against Russia",
-      "title": {
-        "uk": "Нові технології та тактики дають Україні рідкісний імпульс проти Росії",
-        "en": "New tech and tactics are giving Ukraine rare momentum against Russia",
-        "ru": "Новые технологии и тактики дают Украине редкий импульс против России"
-      }
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-15/ukraine-pechersk-lavra-monastery-russia-missile-strike/106800464",
-      "domain": "abc.net.au",
-      "seenAt": "2026-06-15T11:15:00.000Z",
+      "url": "https://www.sbs.com.au/news/podcast-episode/g7-turning-point-as-world-powers-back-ukraine/dgioi66ut",
+      "domain": "sbs.com.au",
+      "seenAt": "2026-06-18T03:15:00.000Z",
       "sourceCountry": "Australia",
-      "image": "/news/9a2aee9c19adb9ec.webp",
-      "original": "Four killed in Kyiv as UNESCO - listed monastery struck by Russian missile",
+      "image": "/news/612d0ec001bdfab3.webp",
+      "original": "G7  turning point  as world powers back Ukraine",
       "title": {
-        "uk": "Четверо загиблих у Києві: російська ракета вдарила по монастирю зі списку ЮНЕСКО",
-        "en": "Four killed in Kyiv as UNESCO-listed monastery struck by Russian missile",
-        "ru": "Четыре человека погибли в Киеве: российская ракета ударила по монастырю из списка ЮНЕСКО"
+        "uk": "G7 — «переломний момент»: світові держави підтримали Україну",
+        "en": "G7 'turning point' as world powers back Ukraine",
+        "ru": "Саммит G7 — «переломный момент»: мировые державы поддержали Украину"
+      }
+    },
+    {
+      "url": "https://www.liga.net/ua/politics/articles/koly-i-na-iakykh-umovakh-mozhut-zamorozyty-viynu-v-ukraini-the-economist",
+      "domain": "liga.net",
+      "seenAt": "2026-06-19T10:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Трамп змінює курс щодо України : чи посилять тиск на Путіна | Новини України",
+      "title": {
+        "uk": "Трамп змінює курс щодо України: чи посилять тиск на Путіна",
+        "en": "Trump changes course on Ukraine: will pressure on Putin be stepped up?",
+        "ru": "Трамп меняет курс по Украине: усилят ли давление на Путина"
+      }
+    },
+    {
+      "url": "https://www.cbsnews.com/news/ukraine-russia-war-moscow-air-defense-interceptor-shortage-drone-strikes/",
+      "domain": "cbsnews.com",
+      "seenAt": "2026-06-17T15:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/5f1f3d659955a26a.webp",
+      "original": "Ukraine deep strikes leaving Russia short on air defense missiles , possibly at an  unsustainable rate",
+      "title": {
+        "uk": "Глибокі удари України залишають Росію без ракет для ПВО — можливо, у «нестійкому» темпі",
+        "en": "Ukraine deep strikes leaving Russia short on air defense missiles, possibly at an 'unsustainable rate'",
+        "ru": "Глубокие удары Украины лишают Россию ракет для ПВО, возможно, «неприемлемыми темпами»"
+      }
+    },
+    {
+      "url": "https://www.forbes.com/sites/andyjsemotiuk/2026/06/17/why-trumps-ukraine-peace-plan-faces-serious-obstacles/",
+      "domain": "forbes.com",
+      "seenAt": "2026-06-17T13:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/e63574a1e30b4433.webp",
+      "original": "Why Trump Ukraine Peace Plan Faces Serious Obstacles",
+      "title": {
+        "uk": "Чому мирний план Трампа щодо України стикається з серйозними перешкодами",
+        "en": "Why Trump Ukraine peace plan faces serious obstacles",
+        "ru": "Почему мирный план Трампа по Украине сталкивается с серьёзными препятствиями"
       }
     },
     {
@@ -68,6 +80,19 @@
       }
     },
     {
+      "url": "https://www.abc.net.au/news/2026-06-15/ukraine-pechersk-lavra-monastery-russia-missile-strike/106800464",
+      "domain": "abc.net.au",
+      "seenAt": "2026-06-15T11:15:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/9a2aee9c19adb9ec.webp",
+      "original": "Four killed in Kyiv as UNESCO - listed monastery struck by Russian missile",
+      "title": {
+        "uk": "Четверо загиблих у Києві: російська ракета вдарила по монастирю зі списку ЮНЕСКО",
+        "en": "Four killed in Kyiv as UNESCO-listed monastery struck by Russian missile",
+        "ru": "Четыре человека погибли в Киеве после удара российской ракеты по монастырю из списка ЮНЕСКО"
+      }
+    },
+    {
       "url": "https://www.kyivpost.com/post/78135",
       "domain": "kyivpost.com",
       "seenAt": "2026-06-14T12:45:00.000Z",
@@ -75,34 +100,22 @@
       "image": "/news/9b51aa50e344fa05.webp",
       "original": "Despite strikes on Ukraine , Russian advances slow , analysts say",
       "title": {
-        "uk": "Незважаючи на удари по Україні, просування Росії сповільнюється, кажуть аналітики",
+        "uk": "Незважаючи на удари по Україні, російський наступ сповільнюється, — аналітики",
         "en": "Despite strikes on Ukraine, Russian advances slow, analysts say",
-        "ru": "Несмотря на удары по Украине, российское наступление замедляется, говорят аналитики"
+        "ru": "Несмотря на удары по Украине, российское наступление замедляется, — аналитики"
       }
     },
     {
-      "url": "https://www.dw.com/uk/ukraina-v-2026-roci-vigotovit-10-mln-bezpilotnikiv-zelenskij/a-77582181",
-      "domain": "dw.com",
-      "seenAt": "2026-06-16T22:00:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/26537865959b815c.webp",
-      "original": "Зеленський : Україна цьогоріч виготовить 10 млн дронів",
+      "url": "https://www.yahoo.com/news/world/articles/tech-tactics-giving-ukraine-rare-111801487.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-06-15T14:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/75e3b7b3cff6b1da.webp",
+      "original": "New tech and tactics are giving Ukraine rare momentum against Russia",
       "title": {
-        "uk": "Зеленський: Україна цьогоріч виготовить 10 млн дронів",
-        "en": "Zelensky: Ukraine will produce 10 million drones this year",
-        "ru": "Зеленский: Украина в этом году произведёт 10 млн дронов"
-      }
-    },
-    {
-      "url": "https://glavcom.ua/world/observe/rosija-zitknulasja-z-novimi-problemami-pislja-udariv-po-mostakh-do-krimu-isw-1125189.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-06-12T09:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Росія зіткнулася з новими проблемами після ударів по мостах до Криму – ISW",
-      "title": {
-        "uk": "Росія зіткнулася з новими проблемами після ударів по мостах до Криму — ISW",
-        "en": "Russia faces new problems after strikes on bridges to Crimea — ISW",
-        "ru": "Россия столкнулась с новыми проблемами после ударов по мостам в Крым — ISW"
+        "uk": "Нові технології та тактики дають Україні рідкісний імпульс у протистоянні з Росією",
+        "en": "New tech and tactics are giving Ukraine rare momentum against Russia",
+        "ru": "Новые технологии и тактики дают Украине редкий импульс в противостоянии с Россией"
       }
     },
     {
@@ -113,22 +126,9 @@
       "image": "/news/491ea1ef73ed4fbb.webp",
       "original": "Наступление из Беларуси – Лукашенко рассказал , как он обсуждал с Путиным новое наступление на Украину",
       "title": {
-        "uk": "Наступ з Білорусі: Лукашенко розповів, як обговорював із Путіним нове наступ на Україну",
+        "uk": "Наступ з Білорусі: Лукашенко розповів, як обговорював із Путіним новий наступ на Україну",
         "en": "Offensive from Belarus: Lukashenko told how he discussed a new offensive on Ukraine with Putin",
         "ru": "Наступление из Беларуси: Лукашенко рассказал, как обсуждал с Путиным новое наступление на Украину"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/78136",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-06-14T08:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/f76cabf4547276b5.webp",
-      "original": "Italy Backs Alexander Stubb as EU Envoy for Ukraine - Russia Peace Talks",
-      "title": {
-        "uk": "Італія підтримує Александра Стубба як посланця ЄС на мирних переговорах між Україною та Росією",
-        "en": "Italy backs Alexander Stubb as EU envoy for Ukraine-Russia peace talks",
-        "ru": "Италия поддерживает Александра Стубба в качестве посланника ЕС на мирных переговорах между Украиной и Россией"
       }
     }
   ]
