@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-19",
+  "asOf": "2026-06-20",
   "source": "gdelt",
   "articles": [
     {
@@ -10,22 +10,72 @@
       "image": "/news/a4f985188f021542.webp",
       "original": "Ukraine - Russia war latest : Moscow suspends all flights as massive Ukrainian drone attack sparks oil refinery fire",
       "title": {
-        "uk": "Хроніка війни Україна–Росія: Москва зупинила всі рейси через масовану атаку українських дронів, які підпалили нафтопереробний завод",
+        "uk": "Останні новини про війну Україна–Росія: Москва призупинила всі рейси, бо масштабна атака українських дронів спричинила пожежу на нафтопереробному заводі",
         "en": "Ukraine-Russia war latest: Moscow suspends all flights as massive Ukrainian drone attack sparks oil refinery fire",
-        "ru": "Хроника войны Украина–Россия: Москва приостановила все рейсы после массированной атаки украинских дронов, вызвавшей пожар на нефтеперерабатывающем заводе"
+        "ru": "Война Украина–Россия: Москва приостановила все рейсы, поскольку масштабная атака украинских дронов вызвала пожар на нефтеперерабатывающем заводе"
       }
     },
     {
-      "url": "https://www.sbs.com.au/news/podcast-episode/g7-turning-point-as-world-powers-back-ukraine/dgioi66ut",
-      "domain": "sbs.com.au",
-      "seenAt": "2026-06-18T03:15:00.000Z",
-      "sourceCountry": "Australia",
-      "image": "/news/612d0ec001bdfab3.webp",
-      "original": "G7  turning point  as world powers back Ukraine",
+      "url": "https://www.kyivpost.com/post/78561",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-06-19T20:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/3ca8112ab37dc1c6.webp",
+      "original": "If He Doesnt Do It , We Will : Zelensky Gives Lukashenko One Week to Remove Military Equipment Near Ukraine Border",
       "title": {
-        "uk": "G7 — «переломний момент»: світові держави підтримали Україну",
-        "en": "G7 'turning point' as world powers back Ukraine",
-        "ru": "Саммит G7 — «переломный момент»: мировые державы поддержали Украину"
+        "uk": "«Якщо він цього не зробить, зробимо ми»: Зеленський дав Лукашенку тиждень на виведення військової техніки з кордону з Україною",
+        "en": "\"If he doesn't do it, we will\": Zelensky gives Lukashenko one week to remove military equipment near Ukraine border",
+        "ru": "«Если он этого не сделает, сделаем мы»: Зеленский дал Лукашенко неделю на вывод военной техники с границы с Украиной"
+      }
+    },
+    {
+      "url": "https://fakty.ua/473771-ukraina-i-ssha-obsuzhdayut-ostanovku-vojny-po-linii-fronta---smi",
+      "domain": "fakty.ua",
+      "seenAt": "2026-06-19T13:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Україна та США обговорюють зупинку війни по лінії фронту - ЗМІ",
+      "title": {
+        "uk": "Україна та США обговорюють зупинку війни по лінії фронту — ЗМІ",
+        "en": "Ukraine and the US are discussing halting the war along the front line — media",
+        "ru": "Украина и США обсуждают остановку войны по линии фронта — СМИ"
+      }
+    },
+    {
+      "url": "https://www.radiosvoboda.org/a/news-tusk-polshcha-perehovory-ukraina/33785065.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-06-20T07:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/301f6e630ba03565.webp",
+      "original": "Польща не визнаватиме домовленостей щодо України , якщо не братиме участі в переговорах – Туск",
+      "title": {
+        "uk": "Польща не визнаватиме домовленостей щодо України, якщо не братиме участі в переговорах — Туск",
+        "en": "Poland will not recognise agreements on Ukraine if it does not participate in negotiations — Tusk",
+        "ru": "Польша не будет признавать договорённостей по Украине, если не будет участвовать в переговорах — Туск"
+      }
+    },
+    {
+      "url": "https://www.ukrinform.ua/rubric-polytics/4135406-lideri-es-odnogolosno-pogodili-visnovki-evropejskoi-radi-sodo-ukraini.html",
+      "domain": "ukrinform.ua",
+      "seenAt": "2026-06-19T00:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/79a714c9dd09cfbe.webp",
+      "original": "Лідери ЄС одноголосно погодили висновки Європейської Ради щодо України",
+      "title": {
+        "uk": "Лідери ЄС одноголосно погодили висновки Європейської Ради щодо України",
+        "en": "EU leaders unanimously agreed on European Council conclusions on Ukraine",
+        "ru": "Лидеры ЕС единогласно согласовали выводы Европейского совета по Украине"
+      }
+    },
+    {
+      "url": "https://fakty.ua/473701-iz-za-glubokih-udarov-ukrainy-rossiya-uzhe-ispytyvaet-nehvatku-raket-pvo",
+      "domain": "fakty.ua",
+      "seenAt": "2026-06-19T14:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Росії не вистачає ракет - перехоплювачів - дані української розвідки",
+      "title": {
+        "uk": "Росії не вистачає ракет-перехоплювачів — дані української розвідки",
+        "en": "Russia is running short on interceptor missiles — Ukrainian intelligence data",
+        "ru": "России не хватает ракет-перехватчиков — данные украинской разведки"
       }
     },
     {
@@ -36,8 +86,8 @@
       "original": "Трамп змінює курс щодо України : чи посилять тиск на Путіна | Новини України",
       "title": {
         "uk": "Трамп змінює курс щодо України: чи посилять тиск на Путіна",
-        "en": "Trump changes course on Ukraine: will pressure on Putin be stepped up?",
-        "ru": "Трамп меняет курс по Украине: усилят ли давление на Путина"
+        "en": "Trump changes course on Ukraine: will pressure on Putin increase?",
+        "ru": "Трамп меняет курс по Украине: усилится ли давление на Путина"
       }
     },
     {
@@ -48,87 +98,35 @@
       "image": "/news/5f1f3d659955a26a.webp",
       "original": "Ukraine deep strikes leaving Russia short on air defense missiles , possibly at an  unsustainable rate",
       "title": {
-        "uk": "Глибокі удари України залишають Росію без ракет для ПВО — можливо, у «нестійкому» темпі",
-        "en": "Ukraine deep strikes leaving Russia short on air defense missiles, possibly at an 'unsustainable rate'",
-        "ru": "Глубокие удары Украины лишают Россию ракет для ПВО, возможно, «неприемлемыми темпами»"
+        "uk": "Глибокі удари України залишають Росію без ракет для протиповітряної оборони — можливо, в нестійкому темпі",
+        "en": "Ukraine deep strikes leaving Russia short on air defense missiles, possibly at an unsustainable rate",
+        "ru": "Глубокие удары Украины лишают Россию ракет для ПВО — возможно, в неприемлемом темпе"
       }
     },
     {
-      "url": "https://www.forbes.com/sites/andyjsemotiuk/2026/06/17/why-trumps-ukraine-peace-plan-faces-serious-obstacles/",
-      "domain": "forbes.com",
-      "seenAt": "2026-06-17T13:45:00.000Z",
+      "url": "https://www.euronews.com/my-europe/2026/06/17/zelenskyy-heads-to-brussels-buoyed-by-new-g7-commitments",
+      "domain": "euronews.com",
+      "seenAt": "2026-06-17T18:00:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/e63574a1e30b4433.webp",
-      "original": "Why Trump Ukraine Peace Plan Faces Serious Obstacles",
+      "image": "/news/57e5f6354219db9c.webp",
+      "original": "Zelenskyy heads to Brussels buoyed by new G7 commitments",
       "title": {
-        "uk": "Чому мирний план Трампа щодо України стикається з серйозними перешкодами",
-        "en": "Why Trump Ukraine peace plan faces serious obstacles",
-        "ru": "Почему мирный план Трампа по Украине сталкивается с серьёзными препятствиями"
+        "uk": "Зеленський вирушив до Брюсселя, надихнутий новими зобов'язаннями G7",
+        "en": "Zelensky heads to Brussels buoyed by new G7 commitments",
+        "ru": "Зеленский направился в Брюссель, воодушевлённый новыми обязательствами G7"
       }
     },
     {
-      "url": "https://www.yahoo.com/news/politics/articles/eu-imposes-more-sanctions-russia-141130169.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-06-15T15:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/162160c0629e013e.webp",
-      "original": "EU imposes more sanctions on Russia , including on  shadow fleet",
-      "title": {
-        "uk": "ЄС запровадив нові санкції проти Росії, зокрема щодо тіньового флоту",
-        "en": "EU imposes more sanctions on Russia, including on shadow fleet",
-        "ru": "ЕС ввёл новые санкции против России, в том числе в отношении теневого флота"
-      }
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-15/ukraine-pechersk-lavra-monastery-russia-missile-strike/106800464",
-      "domain": "abc.net.au",
-      "seenAt": "2026-06-15T11:15:00.000Z",
-      "sourceCountry": "Australia",
-      "image": "/news/9a2aee9c19adb9ec.webp",
-      "original": "Four killed in Kyiv as UNESCO - listed monastery struck by Russian missile",
-      "title": {
-        "uk": "Четверо загиблих у Києві: російська ракета вдарила по монастирю зі списку ЮНЕСКО",
-        "en": "Four killed in Kyiv as UNESCO-listed monastery struck by Russian missile",
-        "ru": "Четыре человека погибли в Киеве после удара российской ракеты по монастырю из списка ЮНЕСКО"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/78135",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-06-14T12:45:00.000Z",
+      "url": "https://interfax.com.ua/news/general/1176692.html",
+      "domain": "interfax.com.ua",
+      "seenAt": "2026-06-15T16:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/9b51aa50e344fa05.webp",
-      "original": "Despite strikes on Ukraine , Russian advances slow , analysts say",
+      "image": "/news/04150605fedea3ce.webp",
+      "original": "Темпи просування росіян зараз фактично найнижчі з 2022р – командир Третього армійського корпусу",
       "title": {
-        "uk": "Незважаючи на удари по Україні, російський наступ сповільнюється, — аналітики",
-        "en": "Despite strikes on Ukraine, Russian advances slow, analysts say",
-        "ru": "Несмотря на удары по Украине, российское наступление замедляется, — аналитики"
-      }
-    },
-    {
-      "url": "https://www.yahoo.com/news/world/articles/tech-tactics-giving-ukraine-rare-111801487.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-06-15T14:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/75e3b7b3cff6b1da.webp",
-      "original": "New tech and tactics are giving Ukraine rare momentum against Russia",
-      "title": {
-        "uk": "Нові технології та тактики дають Україні рідкісний імпульс у протистоянні з Росією",
-        "en": "New tech and tactics are giving Ukraine rare momentum against Russia",
-        "ru": "Новые технологии и тактики дают Украине редкий импульс в противостоянии с Россией"
-      }
-    },
-    {
-      "url": "https://www.unian.net/war/nastuplenie-iz-belarusi-lukashenko-rasskazal-kak-on-obsuzhdal-s-putinym-novoe-nastuplenie-na-ukrainu-13413330.html",
-      "domain": "unian.net",
-      "seenAt": "2026-06-16T08:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/491ea1ef73ed4fbb.webp",
-      "original": "Наступление из Беларуси – Лукашенко рассказал , как он обсуждал с Путиным новое наступление на Украину",
-      "title": {
-        "uk": "Наступ з Білорусі: Лукашенко розповів, як обговорював із Путіним новий наступ на Україну",
-        "en": "Offensive from Belarus: Lukashenko told how he discussed a new offensive on Ukraine with Putin",
-        "ru": "Наступление из Беларуси: Лукашенко рассказал, как обсуждал с Путиным новое наступление на Украину"
+        "uk": "Темпи просування росіян зараз фактично найнижчі з 2022 року — командир Третього армійського корпусу",
+        "en": "The pace of Russian advances is now effectively the lowest since 2022 — Third Army Corps commander",
+        "ru": "Темпы продвижения россиян сейчас фактически самые низкие с 2022 года — командир Третьего армейского корпуса"
       }
     }
   ]
