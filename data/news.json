@@ -1,44 +1,31 @@
 {
-  "asOf": "2026-06-21",
+  "asOf": "2026-06-22",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-trump-zelensky-g7-news-b2998092.html",
-      "domain": "independent.co.uk",
-      "seenAt": "2026-06-18T08:45:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/a4f985188f021542.webp",
-      "original": "Ukraine - Russia war latest : Moscow suspends all flights as massive Ukrainian drone attack sparks oil refinery fire",
-      "title": {
-        "uk": "Останнє про війну Україна–Росія: Москва призупинила всі рейси через масштабну атаку українських дронів, які спричинили пожежу на нафтопереробному заводі",
-        "en": "Ukraine-Russia war latest: Moscow suspends all flights as massive Ukrainian drone attack sparks oil refinery fire",
-        "ru": "Последнее о войне Украина–Россия: Москва приостановила все рейсы из-за масштабной атаки украинских дронов, вызвавшей пожар на нефтеперерабатывающем заводе"
-      }
-    },
-    {
-      "url": "https://indianexpress.com/article/world/ukraine-russia-war-logistics-lockdown-behemoth-drones-crimea-chonhar-bridge-10749346/",
-      "domain": "indianexpress.com",
-      "seenAt": "2026-06-20T17:15:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/e62b33d6b39c85af.webp",
-      "original": "How Ukraine is using drones to disrupt Russian supply lines and fuel convoys",
-      "title": {
-        "uk": "Як Україна використовує дрони для порушення російських ліній постачання та паливних колон",
-        "en": "How Ukraine is using drones to disrupt Russian supply lines and fuel convoys",
-        "ru": "Как Украина использует дроны для нарушения российских линий снабжения и топливных колонн"
-      }
-    },
-    {
-      "url": "https://www.cbsnews.com/news/ukraine-russia-war-moscow-air-defense-interceptor-shortage-drone-strikes/",
-      "domain": "cbsnews.com",
-      "seenAt": "2026-06-17T15:30:00.000Z",
+      "url": "https://www.cnn.com/2026/06/19/europe/ukraine-broke-through-russias-air-defenses-intl",
+      "domain": "cnn.com",
+      "seenAt": "2026-06-19T16:45:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/5f1f3d659955a26a.webp",
-      "original": "Ukraine deep strikes leaving Russia short on air defense missiles , possibly at an  unsustainable rate",
+      "image": "/news/ca205775719da43e.webp",
+      "original": "How Ukraine broke through Russia air defenses",
       "title": {
-        "uk": "Глибокі удари України залишають Росію без ракет-перехоплювачів ППО, можливо, з нестійкими темпами витрат",
-        "en": "Ukraine deep strikes leaving Russia short on air defense missiles, possibly at an unsustainable rate",
-        "ru": "Глубокие удары Украины оставляют Россию без ракет-перехватчиков ПВО, возможно, с неустойчивым темпом расхода"
+        "uk": "Як Україна прорвала російську систему ППО",
+        "en": "How Ukraine broke through Russia's air defenses",
+        "ru": "Как Украина прорвала российскую систему ПВО"
+      }
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/clyx2lk9d15o",
+      "domain": "bbc.co.uk",
+      "seenAt": "2026-06-21T15:15:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/bbdc2b69d06aa730.webp",
+      "original": "Fuel sales halted in occupied Crimea as Ukraine targets oil facilities",
+      "title": {
+        "uk": "Продаж пального призупинено в окупованому Криму після ударів України по нафтовій інфраструктурі",
+        "en": "Fuel sales halted in occupied Crimea as Ukraine targets oil facilities",
+        "ru": "Продажа топлива приостановлена в оккупированном Крыму после ударов Украины по нефтяной инфраструктуре"
       }
     },
     {
@@ -49,47 +36,22 @@
       "image": "/news/3ca8112ab37dc1c6.webp",
       "original": "If He Doesnt Do It , We Will : Zelensky Gives Lukashenko One Week to Remove Military Equipment Near Ukraine Border",
       "title": {
-        "uk": "«Якщо він не зробить цього, зробимо ми»: Зеленський дав Лукашенку тиждень на виведення військової техніки з кордону з Україною",
-        "en": "If he doesn't do it, we will: Zelensky gives Lukashenko one week to remove military equipment near Ukraine border",
-        "ru": "«Если он не сделает этого, сделаем мы»: Зеленский дал Лукашенко неделю на вывод военной техники с границы с Украиной"
+        "uk": "«Якщо він цього не зробить, зробимо ми»: Зеленський дав Лукашенку тиждень на виведення військової техніки біля кордону з Україною",
+        "en": "\"If he doesn't do it, we will\": Zelensky gives Lukashenko one week to remove military equipment near Ukraine border",
+        "ru": "«Если он этого не сделает, сделаем мы»: Зеленский дал Лукашенко неделю на вывод военной техники у границы с Украиной"
       }
     },
     {
-      "url": "https://www.unian.ua/war/pripinennya-boyovih-diy-u-viyni-v-ukrajini-zaraz-vidchinilosya-vikno-dlya-miru-ale-ne-nadovgo-13417755.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-06-20T12:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/67618e2cde79e8c0.webp",
-      "original": "Припинення бойових дій - у війні в Україні зараз відчинилося вікно для миру , але не надовго",
+      "url": "https://www.cbsnews.com/news/ukraine-russia-war-moscow-air-defense-interceptor-shortage-drone-strikes/",
+      "domain": "cbsnews.com",
+      "seenAt": "2026-06-17T15:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/5f1f3d659955a26a.webp",
+      "original": "Ukraine deep strikes leaving Russia short on air defense missiles , possibly at an  unsustainable rate",
       "title": {
-        "uk": "Припинення бойових дій: у війні в Україні зараз відкрилося вікно для миру, але ненадовго",
-        "en": "Ceasefire: a window for peace has opened in the war in Ukraine, but not for long",
-        "ru": "Прекращение огня: в войне на Украине открылось окно для мира, но ненадолго"
-      }
-    },
-    {
-      "url": "https://fakty.ua/473771-ukraina-i-ssha-obsuzhdayut-ostanovku-vojny-po-linii-fronta---smi",
-      "domain": "fakty.ua",
-      "seenAt": "2026-06-19T13:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Україна та США обговорюють зупинку війни по лінії фронту - ЗМІ",
-      "title": {
-        "uk": "Україна та США обговорюють зупинку війни по лінії фронту — ЗМІ",
-        "en": "Ukraine and the US are discussing halting the war along the front line — media",
-        "ru": "Украина и США обсуждают остановку войны по линии фронта — СМИ"
-      }
-    },
-    {
-      "url": "https://tsn.ua/politika/yes-pidtverdyv-nezminnu-pidtrymku-ukrayiny-ta-zaklykav-rosiiu-do-nehaynoho-peremyria-3109592.html",
-      "domain": "tsn.ua",
-      "seenAt": "2026-06-19T00:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/0b948bd74bb5c505.webp",
-      "original": "ЄС підтвердив підтримку України та закликав Росію до негайного перемир  я Політика",
-      "title": {
-        "uk": "ЄС підтвердив підтримку України та закликав Росію до негайного перемир'я",
-        "en": "EU confirms support for Ukraine and calls on Russia for an immediate ceasefire",
-        "ru": "ЕС подтвердил поддержку Украины и призвал Россию к немедленному перемирию"
+        "uk": "Глибокі удари України позбавляють Росію ракет для ППО — можливо, із нестійкими темпами витрат",
+        "en": "Ukraine deep strikes leaving Russia short on air defense missiles, possibly at an unsustainable rate",
+        "ru": "Глубокие удары Украины лишают Россию ракет ПВО — возможно, с неустойчивыми темпами расхода"
       }
     },
     {
@@ -100,22 +62,60 @@
       "image": "/news/e63574a1e30b4433.webp",
       "original": "Why Trump Ukraine Peace Plan Faces Serious Obstacles",
       "title": {
-        "uk": "Чому мирний план Трампа щодо України стикається з серйозними перешкодами",
-        "en": "Why Trump Ukraine peace plan faces serious obstacles",
+        "uk": "Чому мирний план Трампа щодо України стикається із серйозними перешкодами",
+        "en": "Why Trump's Ukraine peace plan faces serious obstacles",
         "ru": "Почему мирный план Трампа по Украине сталкивается с серьёзными препятствиями"
       }
     },
     {
-      "url": "https://www.abc.net.au/news/2026-06-15/ukraine-pechersk-lavra-monastery-russia-missile-strike/106800464",
-      "domain": "abc.net.au",
-      "seenAt": "2026-06-15T11:15:00.000Z",
-      "sourceCountry": "Australia",
-      "image": "/news/9a2aee9c19adb9ec.webp",
-      "original": "Four killed in Kyiv as UNESCO - listed monastery struck by Russian missile",
+      "url": "https://fakty.ua/473771-ukraina-i-ssha-obsuzhdayut-ostanovku-vojny-po-linii-fronta---smi",
+      "domain": "fakty.ua",
+      "seenAt": "2026-06-19T13:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Україна та США обговорюють зупинку війни по лінії фронту - ЗМІ",
       "title": {
-        "uk": "Чотири загиблих у Києві: російська ракета вдарила по монастирю зі списку ЮНЕСКО",
-        "en": "Four killed in Kyiv as UNESCO-listed monastery struck by Russian missile",
-        "ru": "Четыре человека погибли в Киеве: российская ракета ударила по монастырю из списка ЮНЕСКО"
+        "uk": "Україна та США обговорюють зупинку війни по лінії фронту — ЗМІ",
+        "en": "Ukraine and US discussing stopping the war along the front line — media",
+        "ru": "Украина и США обсуждают остановку войны по линии фронта — СМИ"
+      }
+    },
+    {
+      "url": "https://www.unian.ua/war/pripinennya-boyovih-diy-u-viyni-v-ukrajini-zaraz-vidchinilosya-vikno-dlya-miru-ale-ne-nadovgo-13417755.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-06-20T12:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/67618e2cde79e8c0.webp",
+      "original": "Припинення бойових дій - у війні в Україні зараз відчинилося вікно для миру , але не надовго",
+      "title": {
+        "uk": "Припинення бойових дій: у війні в Україні відкрилося вікно для миру, але ненадовго",
+        "en": "Ceasefire: a window for peace has opened in the war in Ukraine, but not for long",
+        "ru": "Прекращение огня: в войне на Украине открылось окно для мира, но ненадолго"
+      }
+    },
+    {
+      "url": "https://www.euronews.com/my-europe/2026/06/17/zelenskyy-heads-to-brussels-buoyed-by-new-g7-commitments",
+      "domain": "euronews.com",
+      "seenAt": "2026-06-17T18:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/57e5f6354219db9c.webp",
+      "original": "Zelenskyy heads to Brussels buoyed by new G7 commitments",
+      "title": {
+        "uk": "Зеленський вирушає до Брюсселя на підйомі від нових зобов'язань G7",
+        "en": "Zelenskyy heads to Brussels buoyed by new G7 commitments",
+        "ru": "Зеленский направляется в Брюссель, воодушевлённый новыми обязательствами G7"
+      }
+    },
+    {
+      "url": "https://www.radiosvoboda.org/a/news-tusk-polshcha-perehovory-ukraina/33785065.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-06-20T07:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/301f6e630ba03565.webp",
+      "original": "Польща не визнаватиме домовленостей щодо України , якщо не братиме участі в переговорах – Туск",
+      "title": {
+        "uk": "Польща не визнаватиме домовленостей щодо України, якщо не братиме участі в переговорах — Туск",
+        "en": "Poland will not recognize agreements on Ukraine if it does not take part in negotiations — Tusk",
+        "ru": "Польша не будет признавать договорённости по Украине, если не будет участвовать в переговорах — Туск"
       }
     },
     {
@@ -126,9 +126,9 @@
       "image": "/news/162160c0629e013e.webp",
       "original": "EU imposes more sanctions on Russia , including on  shadow fleet",
       "title": {
-        "uk": "ЄС запровадив нові санкції проти Росії, зокрема щодо тіньового флоту",
+        "uk": "ЄС запровадив нові санкції проти Росії, зокрема проти «тіньового флоту»",
         "en": "EU imposes more sanctions on Russia, including on shadow fleet",
-        "ru": "ЕС ввёл новые санкции против России, в том числе в отношении теневого флота"
+        "ru": "ЕС ввёл новые санкции против России, в том числе против «теневого флота»"
       }
     }
   ]
