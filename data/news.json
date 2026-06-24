@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-23",
+  "asOf": "2026-06-24",
   "source": "gdelt",
   "articles": [
     {
@@ -10,48 +10,99 @@
       "image": "/news/0142621b9fda516d.webp",
       "original": "Ukraine - Russia war live : Kyiv warns ceasefire offer may expire as  our patience is not endless",
       "title": {
-        "uk": "Війна України з Росією наживо: Київ попереджає, що пропозиція про припинення вогню може втратити чинність, адже «наше терпіння не безмежне»",
-        "en": "Ukraine–Russia war live: Kyiv warns ceasefire offer may expire as 'our patience is not endless'",
-        "ru": "Война Украины с Россией в прямом эфире: Киев предупреждает, что предложение о прекращении огня может истечь, поскольку «наше терпение не безгранично»"
+        "uk": "Війна України і Росії в прямому ефірі: Київ попереджає, що пропозиція про припинення вогню може застаріти — «наше терпіння не безмежне»",
+        "en": "Ukraine-Russia war live: Kyiv warns ceasefire offer may expire as 'our patience is not endless'",
+        "ru": "Война Украины и России: Киев предупреждает, что предложение о прекращении огня может утратить силу — «наше терпение не безгранично»"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/78741",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-06-23T05:45:00.000Z",
+      "url": "https://24tv.ua/mirni-peregovori-putin-prodovzhuye-napolyagati-kapitulyatsiyi_n3093396",
+      "domain": "24tv.ua",
+      "seenAt": "2026-06-24T09:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/1471c9ec1dacdb0d.webp",
-      "original": "UK Condemns Russia Mass Strikes on Ukraine at UN Security Council",
+      "image": "/news/345da6c70b0cb251.webp",
+      "original": "Мирні переговори - Путін продовжує наполягати на капітуляції України",
       "title": {
-        "uk": "Велика Британія засудила масові удари Росії по Україні на засіданні Радбезу ООН",
-        "en": "UK condemns Russia mass strikes on Ukraine at UN Security Council",
-        "ru": "Великобритания осудила массированные удары России по Украине на заседании Совета Безопасности ООН"
+        "uk": "Мирні переговори: Путін продовжує наполягати на капітуляції України",
+        "en": "Peace negotiations: Putin continues to insist on Ukraine's capitulation",
+        "ru": "Мирные переговоры: Путин продолжает настаивать на капитуляции Украины"
       }
     },
     {
-      "url": "https://www.20minutos.es/tecnologia/actualidad/ucrania-cruza-nueva-linea-guerra-drones-capaces-matar-sin-intervencion-humana_7000060_0.html",
-      "domain": "20minutos.es",
-      "seenAt": "2026-06-23T08:45:00.000Z",
-      "sourceCountry": "Spain",
-      "image": "/news/add3eb05fac1dca5.webp",
-      "original": "Ucrania cruza una nueva línea en la guerra : prueba drones capaces de matar sin intervención humana",
+      "url": "https://tsn.ua/politika/putin-rozkryv-svoiu-holovnu-umovu-zavershennia-viyny-shcho-naspravdi-stoyit-za-yoho-zaiavamy-detali-shokuiut-3112937.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-06-24T07:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/73674e338135dbc6.webp",
+      "original": "Війна в Україні : що означають нові заяви Путіна про переговори в ISW пояснили Політика",
       "title": {
-        "uk": "Україна перетинає нову межу у війні: випробовує дрони, здатні вбивати без участі людини",
-        "en": "Ukraine crosses a new line in the war: tests drones capable of killing without human intervention",
-        "ru": "Украина пересекает новую черту в войне: испытывает дроны, способные убивать без участия человека"
+        "uk": "Війна в Україні: що означають нові заяви Путіна про переговори — пояснення ISW",
+        "en": "War in Ukraine: what Putin's new statements on negotiations mean — ISW explains",
+        "ru": "Война на Украине: что означают новые заявления Путина о переговорах — объяснение ISW"
       }
     },
     {
-      "url": "https://www.digi24.ro/stiri/externe/isw-ucraina-izoleaza-treptat-crimeea-de-rusia-un-comandant-explica-logica-din-spatele-operatiunii-3825819",
-      "domain": "digi24.ro",
-      "seenAt": "2026-06-23T06:45:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/e5585092e2b998dd.webp",
-      "original": "ISW : „ Ucraina izolează treptat Crimeea de Rusia . Un comandant explică logica din spatele operațiunii",
+      "url": "https://www.yahoo.com/news/politics/articles/putin-nato-preparing-war-against-142629692.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-06-23T15:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/02c3fd4824e5f13d.webp",
+      "original": "Putin : NATO preparing for war against Russia",
       "title": {
-        "uk": "ISW: Україна поступово ізолює Крим від Росії. Командир пояснює логіку операції",
-        "en": "ISW: Ukraine is gradually isolating Crimea from Russia. A commander explains the logic behind the operation",
-        "ru": "ISW: Украина постепенно изолирует Крым от России. Командир объясняет логику операции"
+        "uk": "Путін заявив, що НАТО готується до війни проти Росії",
+        "en": "Putin says NATO is preparing for war against Russia",
+        "ru": "Путин заявил, что НАТО готовится к войне против России"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/78784",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-06-23T15:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/e4e2a9877e5aec41.webp",
+      "original": "Russia Says US Drifting From Role as  Objective Mediator  in Ukraine War",
+      "title": {
+        "uk": "Росія заявляє, що США відходять від ролі «об'єктивного посередника» у війні в Україні",
+        "en": "Russia says US drifting from role as 'objective mediator' in Ukraine war",
+        "ru": "Россия заявляет, что США отходят от роли «объективного посредника» в войне на Украине"
+      }
+    },
+    {
+      "url": "https://www.yahoo.com/news/world/articles/ukraine-says-hit-railway-bridge-134319327.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-06-23T14:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/87d5264ef07a48ed.webp",
+      "original": "Ukraine says it hit a railway bridge to Crimea , seeking to isolate the Russian - held peninsula",
+      "title": {
+        "uk": "Україна заявила, що вдарила по залізничному мосту до Криму, прагнучи ізолювати окупований Росією півострів",
+        "en": "Ukraine says it hit a railway bridge to Crimea, seeking to isolate the Russian-held peninsula",
+        "ru": "Украина заявила, что нанесла удар по железнодорожному мосту в Крым, стремясь изолировать удерживаемый Россией полуостров"
+      }
+    },
+    {
+      "url": "https://www.moneycontrol.com/news/india/trump-turned-down-vance-s-proposal-for-india-led-ukraine-peacekeeping-force-reveals-new-book-13957577.html",
+      "domain": "moneycontrol.com",
+      "seenAt": "2026-06-24T07:30:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/e4f675af3497f668.webp",
+      "original": "Trump turned down Vance proposal for India - led Ukraine peacekeeping force , reveals new book",
+      "title": {
+        "uk": "Трамп відхилив пропозицію Венса щодо миротворчих сил під керівництвом Індії в Україні — нова книга",
+        "en": "Trump turned down Vance proposal for India-led Ukraine peacekeeping force, reveals new book",
+        "ru": "Трамп отклонил предложение Вэнса о миротворческих силах под руководством Индии на Украине — новая книга"
+      }
+    },
+    {
+      "url": "https://war.obozrevatel.com/rossiya-usilila-davlenie-na-lukashenko-chtobyi-otkryit-novyij-front-v-vojne-protiv-ukrainyi-wsj.htm",
+      "domain": "war.obozrevatel.com",
+      "seenAt": "2026-06-24T04:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Наступление из Беларуси - Россия давит на Лукашенко чтобы открыть новый фронт в войне в Украине",
+      "title": {
+        "uk": "Наступ з Білорусі: Росія тисне на Лукашенка, щоб відкрити новий фронт у війні в Україні",
+        "en": "Offensive from Belarus: Russia pressures Lukashenko to open a new front in the war in Ukraine",
+        "ru": "Наступление из Беларуси: Россия давит на Лукашенко, чтобы открыть новый фронт в войне на Украине"
       }
     },
     {
@@ -62,74 +113,22 @@
       "image": "/news/c2b51d46d6aadde0.webp",
       "original": "Kyiv drone leverage moved the US . Moscow could be next , a top Ukrainian official says .",
       "title": {
-        "uk": "Дроновий важіль Києва вплинув на США. Наступною може бути Москва, — заявив високопосадовець України",
-        "en": "Kyiv drone leverage moved the US. Moscow could be next, a top Ukrainian official says",
-        "ru": "Дроновый рычаг Киева повлиял на США. Следующей может стать Москва, — заявил высокопоставленный украинский чиновник"
+        "uk": "Дронові важелі Києва змінили позицію США. Москва може стати наступною — високопосадовець України",
+        "en": "Kyiv drone leverage moved the US. Moscow could be next, a top Ukrainian official says.",
+        "ru": "Дроновые рычаги Киева изменили позицию США. Москва может стать следующей — высокопоставленный чиновник Украины"
       }
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/clyx2lk9d15o",
-      "domain": "bbc.co.uk",
-      "seenAt": "2026-06-21T15:15:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/bbdc2b69d06aa730.webp",
-      "original": "Fuel sales halted in occupied Crimea as Ukraine targets oil facilities",
+      "url": "https://www.20minutos.es/tecnologia/actualidad/ucrania-cruza-nueva-linea-guerra-drones-capaces-matar-sin-intervencion-humana_7000060_0.html",
+      "domain": "20minutos.es",
+      "seenAt": "2026-06-23T08:45:00.000Z",
+      "sourceCountry": "Spain",
+      "image": "/news/add3eb05fac1dca5.webp",
+      "original": "Ucrania cruza una nueva línea en la guerra : prueba drones capaces de matar sin intervención humana",
       "title": {
-        "uk": "Продаж пального зупинено в окупованому Криму після ударів України по нафтовій інфраструктурі",
-        "en": "Fuel sales halted in occupied Crimea as Ukraine targets oil facilities",
-        "ru": "Продажи топлива остановлены в оккупированном Крыму после ударов Украины по нефтяной инфраструктуре"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/78561",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-06-19T20:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/3ca8112ab37dc1c6.webp",
-      "original": "If He Doesnt Do It , We Will : Zelensky Gives Lukashenko One Week to Remove Military Equipment Near Ukraine Border",
-      "title": {
-        "uk": "Якщо він цього не зробить — зробимо ми: Зеленський дав Лукашенку тиждень на виведення військової техніки з кордону з Україною",
-        "en": "If he doesn't do it, we will: Zelensky gives Lukashenko one week to remove military equipment near Ukraine border",
-        "ru": "Если он этого не сделает — сделаем мы: Зеленский дал Лукашенко неделю на вывод военной техники с границы с Украиной"
-      }
-    },
-    {
-      "url": "https://www.yahoo.com/news/world/articles/russian-military-search-viable-assault-135244110.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-06-22T14:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/9dcd78d387a652d7.webp",
-      "original": "The Russian Military Search For A Viable Assault Tactic Falls Short",
-      "title": {
-        "uk": "Пошук боєздатної тактики штурму в російській армії зазнає невдачі",
-        "en": "The Russian military search for a viable assault tactic falls short",
-        "ru": "Поиск жизнеспособной тактики штурма в российской армии терпит неудачу"
-      }
-    },
-    {
-      "url": "https://www.cbsnews.com/news/ukraine-russia-war-moscow-air-defense-interceptor-shortage-drone-strikes/",
-      "domain": "cbsnews.com",
-      "seenAt": "2026-06-17T15:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/5f1f3d659955a26a.webp",
-      "original": "Ukraine deep strikes leaving Russia short on air defense missiles , possibly at an  unsustainable rate",
-      "title": {
-        "uk": "Глибокі удари України залишають Росію з дефіцитом ракет ППО — можливо, з нестійким темпом витрат",
-        "en": "Ukraine deep strikes leaving Russia short on air defense missiles, possibly at an 'unsustainable rate'",
-        "ru": "Глубокие удары Украины оставляют Россию с дефицитом ракет ПВО — возможно, с неприемлемым темпом расхода"
-      }
-    },
-    {
-      "url": "https://indianexpress.com/article/world/ukraine-russia-war-logistics-lockdown-behemoth-drones-crimea-chonhar-bridge-10749346/",
-      "domain": "indianexpress.com",
-      "seenAt": "2026-06-20T17:15:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/e62b33d6b39c85af.webp",
-      "original": "How Ukraine is using drones to disrupt Russian supply lines and fuel convoys",
-      "title": {
-        "uk": "Як Україна використовує дрони для порушення російських ліній постачання та паливних конвоїв",
-        "en": "How Ukraine is using drones to disrupt Russian supply lines and fuel convoys",
-        "ru": "Как Украина использует дроны для нарушения российских линий снабжения и топливных конвоев"
+        "uk": "Україна переступає нову межу у війні: випробовує дрони, здатні вбивати без участі людини",
+        "en": "Ukraine crosses a new line in the war: tests drones capable of killing without human intervention",
+        "ru": "Украина пересекает новую черту в войне: испытывает дроны, способные убивать без участия человека"
       }
     }
   ]
