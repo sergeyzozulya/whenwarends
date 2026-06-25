@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-24",
+  "asOf": "2026-06-25",
   "source": "gdelt",
   "articles": [
     {
@@ -10,9 +10,48 @@
       "image": "/news/0142621b9fda516d.webp",
       "original": "Ukraine - Russia war live : Kyiv warns ceasefire offer may expire as  our patience is not endless",
       "title": {
-        "uk": "Війна України і Росії в прямому ефірі: Київ попереджає, що пропозиція про припинення вогню може застаріти — «наше терпіння не безмежне»",
-        "en": "Ukraine-Russia war live: Kyiv warns ceasefire offer may expire as 'our patience is not endless'",
-        "ru": "Война Украины и России: Киев предупреждает, что предложение о прекращении огня может утратить силу — «наше терпение не безгранично»"
+        "uk": "Війна Україна – Росія: Київ попереджає, що пропозиція про припинення вогню може втратити чинність, адже «наше терпіння не безмежне»",
+        "en": "Ukraine–Russia war: Kyiv warns ceasefire offer may expire as 'our patience is not endless'",
+        "ru": "Война Украина – Россия: Киев предупреждает, что предложение о прекращении огня может устареть, поскольку «наше терпение не безгранично»"
+      }
+    },
+    {
+      "url": "https://abcnews.com/Business/wireStory/ukraines-latest-long-range-strikes-russia-hit-major-134161222",
+      "domain": "abcnews.com",
+      "seenAt": "2026-06-24T14:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/8907df7d67fab535.webp",
+      "original": "Ukraine latest strikes on Russia hit major natural gas plant and satellite centers",
+      "title": {
+        "uk": "Останні удари України по Росії: уражені великий газовий завод та супутникові центри",
+        "en": "Ukraine's latest strikes on Russia hit major natural gas plant and satellite centers",
+        "ru": "Последние удары Украины по России: поражены крупный газовый завод и спутниковые центры"
+      }
+    },
+    {
+      "url": "https://www.yahoo.com/news/world/articles/ukraine-says-hit-railway-bridge-134319327.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-06-23T14:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/87d5264ef07a48ed.webp",
+      "original": "Ukraine says it hit a railway bridge to Crimea , seeking to isolate the Russian - held peninsula",
+      "title": {
+        "uk": "Україна заявила, що вдарила по залізничному мосту до Криму, прагнучи ізолювати контрольований Росією півострів",
+        "en": "Ukraine says it hit a railway bridge to Crimea, seeking to isolate the Russian-held peninsula",
+        "ru": "Украина заявила, что ударила по железнодорожному мосту к Крыму, стремясь изолировать контролируемый Россией полуостров"
+      }
+    },
+    {
+      "url": "https://www.yahoo.com/news/politics/articles/putin-nato-preparing-war-against-142629692.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-06-23T15:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/02c3fd4824e5f13d.webp",
+      "original": "Putin : NATO preparing for war against Russia",
+      "title": {
+        "uk": "Путін: НАТО готується до війни проти Росії",
+        "en": "Putin: NATO is preparing for war against Russia",
+        "ru": "Путин: НАТО готовится к войне против России"
       }
     },
     {
@@ -24,7 +63,7 @@
       "original": "Мирні переговори - Путін продовжує наполягати на капітуляції України",
       "title": {
         "uk": "Мирні переговори: Путін продовжує наполягати на капітуляції України",
-        "en": "Peace negotiations: Putin continues to insist on Ukraine's capitulation",
+        "en": "Peace talks: Putin continues to insist on Ukraine's capitulation",
         "ru": "Мирные переговоры: Путин продолжает настаивать на капитуляции Украины"
       }
     },
@@ -38,46 +77,7 @@
       "title": {
         "uk": "Війна в Україні: що означають нові заяви Путіна про переговори — пояснення ISW",
         "en": "War in Ukraine: what Putin's new statements on negotiations mean — ISW explains",
-        "ru": "Война на Украине: что означают новые заявления Путина о переговорах — объяснение ISW"
-      }
-    },
-    {
-      "url": "https://www.yahoo.com/news/politics/articles/putin-nato-preparing-war-against-142629692.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-06-23T15:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/02c3fd4824e5f13d.webp",
-      "original": "Putin : NATO preparing for war against Russia",
-      "title": {
-        "uk": "Путін заявив, що НАТО готується до війни проти Росії",
-        "en": "Putin says NATO is preparing for war against Russia",
-        "ru": "Путин заявил, что НАТО готовится к войне против России"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/78784",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-06-23T15:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/e4e2a9877e5aec41.webp",
-      "original": "Russia Says US Drifting From Role as  Objective Mediator  in Ukraine War",
-      "title": {
-        "uk": "Росія заявляє, що США відходять від ролі «об'єктивного посередника» у війні в Україні",
-        "en": "Russia says US drifting from role as 'objective mediator' in Ukraine war",
-        "ru": "Россия заявляет, что США отходят от роли «объективного посредника» в войне на Украине"
-      }
-    },
-    {
-      "url": "https://www.yahoo.com/news/world/articles/ukraine-says-hit-railway-bridge-134319327.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-06-23T14:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/87d5264ef07a48ed.webp",
-      "original": "Ukraine says it hit a railway bridge to Crimea , seeking to isolate the Russian - held peninsula",
-      "title": {
-        "uk": "Україна заявила, що вдарила по залізничному мосту до Криму, прагнучи ізолювати окупований Росією півострів",
-        "en": "Ukraine says it hit a railway bridge to Crimea, seeking to isolate the Russian-held peninsula",
-        "ru": "Украина заявила, что нанесла удар по железнодорожному мосту в Крым, стремясь изолировать удерживаемый Россией полуостров"
+        "ru": "Война в Украине: что означают новые заявления Путина о переговорах — объяснение ISW"
       }
     },
     {
@@ -89,8 +89,8 @@
       "original": "Trump turned down Vance proposal for India - led Ukraine peacekeeping force , reveals new book",
       "title": {
         "uk": "Трамп відхилив пропозицію Венса щодо миротворчих сил під керівництвом Індії в Україні — нова книга",
-        "en": "Trump turned down Vance proposal for India-led Ukraine peacekeeping force, reveals new book",
-        "ru": "Трамп отклонил предложение Вэнса о миротворческих силах под руководством Индии на Украине — новая книга"
+        "en": "Trump turned down Vance's proposal for an India-led Ukraine peacekeeping force, reveals new book",
+        "ru": "Трамп отклонил предложение Вэнса о миротворческих силах под руководством Индии в Украине — новая книга"
       }
     },
     {
@@ -101,34 +101,34 @@
       "original": "Наступление из Беларуси - Россия давит на Лукашенко чтобы открыть новый фронт в войне в Украине",
       "title": {
         "uk": "Наступ з Білорусі: Росія тисне на Лукашенка, щоб відкрити новий фронт у війні в Україні",
-        "en": "Offensive from Belarus: Russia pressures Lukashenko to open a new front in the war in Ukraine",
-        "ru": "Наступление из Беларуси: Россия давит на Лукашенко, чтобы открыть новый фронт в войне на Украине"
+        "en": "Offensive from Belarus: Russia pressuring Lukashenko to open a new front in the war in Ukraine",
+        "ru": "Наступление из Беларуси: Россия давит на Лукашенко, чтобы открыть новый фронт в войне в Украине"
       }
     },
     {
-      "url": "https://www.militarytimes.com/pentagon/2026/06/22/kyivs-drone-leverage-moved-the-us-moscow-could-be-next-a-top-ukrainian-official-says/",
-      "domain": "militarytimes.com",
-      "seenAt": "2026-06-22T17:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/c2b51d46d6aadde0.webp",
-      "original": "Kyiv drone leverage moved the US . Moscow could be next , a top Ukrainian official says .",
+      "url": "https://www.moneycontrol.com/world/russian-opposition-leader-maxim-kruglov-sentenced-to-7-years-over-anti-war-posts-article-13958067.html",
+      "domain": "moneycontrol.com",
+      "seenAt": "2026-06-24T16:45:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/9af0028a2b6b3a6e.webp",
+      "original": "Russian opposition leader Maxim Kruglov sentenced to 7 years over anti - war posts",
       "title": {
-        "uk": "Дронові важелі Києва змінили позицію США. Москва може стати наступною — високопосадовець України",
-        "en": "Kyiv drone leverage moved the US. Moscow could be next, a top Ukrainian official says.",
-        "ru": "Дроновые рычаги Киева изменили позицию США. Москва может стать следующей — высокопоставленный чиновник Украины"
+        "uk": "Російського опозиційного лідера Максима Кругова засуджено до 7 років ув'язнення за антивоєнні публікації",
+        "en": "Russian opposition leader Maxim Kruglov sentenced to 7 years over anti-war posts",
+        "ru": "Российский оппозиционный лидер Максим Круглов приговорён к 7 годам заключения за антивоенные публикации"
       }
     },
     {
-      "url": "https://www.20minutos.es/tecnologia/actualidad/ucrania-cruza-nueva-linea-guerra-drones-capaces-matar-sin-intervencion-humana_7000060_0.html",
-      "domain": "20minutos.es",
-      "seenAt": "2026-06-23T08:45:00.000Z",
-      "sourceCountry": "Spain",
-      "image": "/news/add3eb05fac1dca5.webp",
-      "original": "Ucrania cruza una nueva línea en la guerra : prueba drones capaces de matar sin intervención humana",
+      "url": "https://www.radiosvoboda.org/a/news-tramp-zelenskyi/33788358.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-06-25T05:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/659aed2640d3addc.webp",
+      "original": "Трамп : Зеленський « досить добре справляється » у війні з Росією",
       "title": {
-        "uk": "Україна переступає нову межу у війні: випробовує дрони, здатні вбивати без участі людини",
-        "en": "Ukraine crosses a new line in the war: tests drones capable of killing without human intervention",
-        "ru": "Украина пересекает новую черту в войне: испытывает дроны, способные убивать без участия человека"
+        "uk": "Трамп: Зеленський «досить добре справляється» у війні з Росією",
+        "en": "Trump: Zelensky is 'doing quite well' in the war with Russia",
+        "ru": "Трамп: Зеленский «неплохо справляется» в войне с Россией"
       }
     }
   ]
