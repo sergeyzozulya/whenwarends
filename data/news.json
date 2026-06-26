@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-25",
+  "asOf": "2026-06-26",
   "source": "gdelt",
   "articles": [
     {
@@ -10,22 +10,9 @@
       "image": "/news/0142621b9fda516d.webp",
       "original": "Ukraine - Russia war live : Kyiv warns ceasefire offer may expire as  our patience is not endless",
       "title": {
-        "uk": "Війна Україна – Росія: Київ попереджає, що пропозиція про припинення вогню може втратити чинність, адже «наше терпіння не безмежне»",
-        "en": "Ukraine–Russia war: Kyiv warns ceasefire offer may expire as 'our patience is not endless'",
-        "ru": "Война Украина – Россия: Киев предупреждает, что предложение о прекращении огня может устареть, поскольку «наше терпение не безгранично»"
-      }
-    },
-    {
-      "url": "https://abcnews.com/Business/wireStory/ukraines-latest-long-range-strikes-russia-hit-major-134161222",
-      "domain": "abcnews.com",
-      "seenAt": "2026-06-24T14:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/8907df7d67fab535.webp",
-      "original": "Ukraine latest strikes on Russia hit major natural gas plant and satellite centers",
-      "title": {
-        "uk": "Останні удари України по Росії: уражені великий газовий завод та супутникові центри",
-        "en": "Ukraine's latest strikes on Russia hit major natural gas plant and satellite centers",
-        "ru": "Последние удары Украины по России: поражены крупный газовый завод и спутниковые центры"
+        "uk": "Війна України та Росії наживо: Київ попереджає, що пропозиція про припинення вогню може втратити чинність, оскільки «наше терпіння не безмежне»",
+        "en": "Ukraine-Russia war live: Kyiv warns ceasefire offer may expire as 'our patience is not endless'",
+        "ru": "Война Украины и России в прямом эфире: Киев предупреждает, что предложение о прекращении огня может утратить силу, поскольку «наше терпение не безгранично»"
       }
     },
     {
@@ -36,48 +23,73 @@
       "image": "/news/87d5264ef07a48ed.webp",
       "original": "Ukraine says it hit a railway bridge to Crimea , seeking to isolate the Russian - held peninsula",
       "title": {
-        "uk": "Україна заявила, що вдарила по залізничному мосту до Криму, прагнучи ізолювати контрольований Росією півострів",
+        "uk": "Україна заявила, що вдарила по залізничному мосту до Криму, намагаючись ізолювати окупований Росією півострів",
         "en": "Ukraine says it hit a railway bridge to Crimea, seeking to isolate the Russian-held peninsula",
-        "ru": "Украина заявила, что ударила по железнодорожному мосту к Крыму, стремясь изолировать контролируемый Россией полуостров"
+        "ru": "Украина заявила, что нанесла удар по железнодорожному мосту в Крым, стремясь изолировать удерживаемый Россией полуостров"
       }
     },
     {
-      "url": "https://www.yahoo.com/news/politics/articles/putin-nato-preparing-war-against-142629692.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-06-23T15:15:00.000Z",
+      "url": "https://abcnews.com/Business/wireStory/ukraines-latest-long-range-strikes-russia-hit-major-134161222",
+      "domain": "abcnews.com",
+      "seenAt": "2026-06-24T14:15:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/02c3fd4824e5f13d.webp",
-      "original": "Putin : NATO preparing for war against Russia",
+      "image": "/news/8907df7d67fab535.webp",
+      "original": "Ukraine latest strikes on Russia hit major natural gas plant and satellite centers",
       "title": {
-        "uk": "Путін: НАТО готується до війни проти Росії",
-        "en": "Putin: NATO is preparing for war against Russia",
-        "ru": "Путин: НАТО готовится к войне против России"
+        "uk": "Останні удари України по Росії вразили великий завод природного газу та супутникові центри",
+        "en": "Ukraine's latest strikes on Russia hit a major natural gas plant and satellite centers",
+        "ru": "Последние удары Украины по России поразили крупный завод природного газа и спутниковые центры"
       }
     },
     {
-      "url": "https://24tv.ua/mirni-peregovori-putin-prodovzhuye-napolyagati-kapitulyatsiyi_n3093396",
-      "domain": "24tv.ua",
-      "seenAt": "2026-06-24T09:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/345da6c70b0cb251.webp",
-      "original": "Мирні переговори - Путін продовжує наполягати на капітуляції України",
+      "url": "https://www.news4jax.com/news/world/2026/06/25/zelenskyy-says-russia-is-shifting-air-defenses-to-moscow-and-other-key-sites-after-drone-strikes/",
+      "domain": "news4jax.com",
+      "seenAt": "2026-06-25T11:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/58dc938076a71730.webp",
+      "original": "Zelenskyy says Russia is shifting air defenses to Moscow and other key sites after drone strikes",
       "title": {
-        "uk": "Мирні переговори: Путін продовжує наполягати на капітуляції України",
-        "en": "Peace talks: Putin continues to insist on Ukraine's capitulation",
-        "ru": "Мирные переговоры: Путин продолжает настаивать на капитуляции Украины"
+        "uk": "Зеленський заявив, що Росія переміщує засоби ППО до Москви та інших ключових об'єктів після ударів дронів",
+        "en": "Zelenskyy says Russia is shifting air defenses to Moscow and other key sites after drone strikes",
+        "ru": "Зеленский заявил, что Россия перебрасывает средства ПВО к Москве и другим ключевым объектам после ударов дронов"
       }
     },
     {
-      "url": "https://tsn.ua/politika/putin-rozkryv-svoiu-holovnu-umovu-zavershennia-viyny-shcho-naspravdi-stoyit-za-yoho-zaiavamy-detali-shokuiut-3112937.html",
-      "domain": "tsn.ua",
-      "seenAt": "2026-06-24T07:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/73674e338135dbc6.webp",
-      "original": "Війна в Україні : що означають нові заяви Путіна про переговори в ISW пояснили Політика",
+      "url": "https://www.ibtimes.co.uk/putin-calls-peace-talks-ukraines-expanding-refinery-strikes-raise-pressure-russia-1804951",
+      "domain": "ibtimes.co.uk",
+      "seenAt": "2026-06-25T07:45:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/cd40f1bb35c9cfbc.webp",
+      "original": "Putin Calls for Peace Talks as Ukraine Expanding Refinery Strikes Raise Pressure on Russia",
       "title": {
-        "uk": "Війна в Україні: що означають нові заяви Путіна про переговори — пояснення ISW",
-        "en": "War in Ukraine: what Putin's new statements on negotiations mean — ISW explains",
-        "ru": "Война в Украине: что означают новые заявления Путина о переговорах — объяснение ISW"
+        "uk": "Путін закликає до мирних переговорів, оскільки розширення ударів України по нафтопереробних заводах посилює тиск на Росію",
+        "en": "Putin calls for peace talks as Ukraine expanding refinery strikes raise pressure on Russia",
+        "ru": "Путин призывает к мирным переговорам, поскольку расширение ударов Украины по нефтеперерабатывающим заводам усиливает давление на Россию"
+      }
+    },
+    {
+      "url": "https://ua.korrespondent.net/ukraine/4889290-40-denna-operatsiia-vplyvu-yak-sbu-zmushuie-rf-do-myru",
+      "domain": "ua.korrespondent.net",
+      "seenAt": "2026-06-25T22:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/c5f815948fa34049.webp",
+      "original": "40 - денна операція впливу . Як СБУ змушує РФ до миру",
+      "title": {
+        "uk": "40-денна операція впливу: як СБУ змушує РФ до миру",
+        "en": "A 40-day influence operation: how the SBU is pressuring Russia toward peace",
+        "ru": "40-дневная операция влияния: как СБУ вынуждает РФ к миру"
+      }
+    },
+    {
+      "url": "https://vlasti.net/news/367440",
+      "domain": "vlasti.net",
+      "seenAt": "2026-06-25T10:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Україна поставила під сумнів віру Путіна перемогти у війні на виснаження – WSJ / vlasti . net",
+      "title": {
+        "uk": "Україна поставила під сумнів віру Путіна перемогти у війні на виснаження — WSJ",
+        "en": "Ukraine has challenged Putin's belief in winning the war of attrition — WSJ",
+        "ru": "Украина поставила под сомнение веру Путина в победу в войне на истощение — WSJ"
       }
     },
     {
@@ -88,47 +100,35 @@
       "image": "/news/e4f675af3497f668.webp",
       "original": "Trump turned down Vance proposal for India - led Ukraine peacekeeping force , reveals new book",
       "title": {
-        "uk": "Трамп відхилив пропозицію Венса щодо миротворчих сил під керівництвом Індії в Україні — нова книга",
-        "en": "Trump turned down Vance's proposal for an India-led Ukraine peacekeeping force, reveals new book",
-        "ru": "Трамп отклонил предложение Вэнса о миротворческих силах под руководством Индии в Украине — новая книга"
+        "uk": "Трамп відхилив пропозицію Венса щодо миротворчих сил в Україні під керівництвом Індії, — розкриває нова книга",
+        "en": "Trump turned down Vance proposal for India-led Ukraine peacekeeping force, reveals new book",
+        "ru": "Трамп отклонил предложение Вэнса о миротворческих силах под руководством Индии на Украине, — раскрывает новая книга"
       }
     },
     {
-      "url": "https://war.obozrevatel.com/rossiya-usilila-davlenie-na-lukashenko-chtobyi-otkryit-novyij-front-v-vojne-protiv-ukrainyi-wsj.htm",
-      "domain": "war.obozrevatel.com",
-      "seenAt": "2026-06-24T04:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Наступление из Беларуси - Россия давит на Лукашенко чтобы открыть новый фронт в войне в Украине",
+      "url": "https://www.antena3.ro/externe/zelenski-anunta-ca-lukasenko-s-a-conformat-cererii-sale-si-a-inchis-releele-folosite-de-rusia-pentru-atacuri-cu-drone-793331.html",
+      "domain": "antena3.ro",
+      "seenAt": "2026-06-24T19:00:00.000Z",
+      "sourceCountry": "Romania",
+      "image": "/news/b1e6c061d653cefd.webp",
+      "original": "Zelenski anunță că Lukașenko s - a conformat cererii sale și a închis releele folosite de Rusia pentru atacuri cu drone",
       "title": {
-        "uk": "Наступ з Білорусі: Росія тисне на Лукашенка, щоб відкрити новий фронт у війні в Україні",
-        "en": "Offensive from Belarus: Russia pressuring Lukashenko to open a new front in the war in Ukraine",
-        "ru": "Наступление из Беларуси: Россия давит на Лукашенко, чтобы открыть новый фронт в войне в Украине"
+        "uk": "Зеленський оголосив, що Лукашенко виконав його вимогу та закрив ретранслятори, які Росія використовувала для атак дронами",
+        "en": "Zelensky announces that Lukashenko complied with his request and closed relays used by Russia for drone attacks",
+        "ru": "Зеленский объявил, что Лукашенко выполнил его требование и закрыл ретрансляторы, используемые Россией для атак дронами"
       }
     },
     {
-      "url": "https://www.moneycontrol.com/world/russian-opposition-leader-maxim-kruglov-sentenced-to-7-years-over-anti-war-posts-article-13958067.html",
-      "domain": "moneycontrol.com",
-      "seenAt": "2026-06-24T16:45:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/9af0028a2b6b3a6e.webp",
-      "original": "Russian opposition leader Maxim Kruglov sentenced to 7 years over anti - war posts",
+      "url": "https://www.yahoo.com/news/politics/articles/putin-nato-preparing-war-against-142629692.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-06-23T15:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/02c3fd4824e5f13d.webp",
+      "original": "Putin : NATO preparing for war against Russia",
       "title": {
-        "uk": "Російського опозиційного лідера Максима Кругова засуджено до 7 років ув'язнення за антивоєнні публікації",
-        "en": "Russian opposition leader Maxim Kruglov sentenced to 7 years over anti-war posts",
-        "ru": "Российский оппозиционный лидер Максим Круглов приговорён к 7 годам заключения за антивоенные публикации"
-      }
-    },
-    {
-      "url": "https://www.radiosvoboda.org/a/news-tramp-zelenskyi/33788358.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-06-25T05:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/659aed2640d3addc.webp",
-      "original": "Трамп : Зеленський « досить добре справляється » у війні з Росією",
-      "title": {
-        "uk": "Трамп: Зеленський «досить добре справляється» у війні з Росією",
-        "en": "Trump: Zelensky is 'doing quite well' in the war with Russia",
-        "ru": "Трамп: Зеленский «неплохо справляется» в войне с Россией"
+        "uk": "Путін заявив, що НАТО готується до війни проти Росії",
+        "en": "Putin says NATO is preparing for war against Russia",
+        "ru": "Путин заявил, что НАТО готовится к войне против России"
       }
     }
   ]
