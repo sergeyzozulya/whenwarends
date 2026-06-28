@@ -1,95 +1,83 @@
 {
-  "asOf": "2026-06-26",
+  "asOf": "2026-06-28",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-trump-zelensky-ceasefire-news-b3000937.html",
+      "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-trump-zelensky-offensive-b3004432.html",
       "domain": "independent.co.uk",
-      "seenAt": "2026-06-23T07:45:00.000Z",
+      "seenAt": "2026-06-28T08:15:00.000Z",
       "sourceCountry": "United Kingdom",
-      "image": "/news/0142621b9fda516d.webp",
-      "original": "Ukraine - Russia war live : Kyiv warns ceasefire offer may expire as  our patience is not endless",
+      "image": "/news/c2dc1f9766810738.webp",
+      "original": "Ukraine - Russia war latest : Fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
       "title": {
-        "uk": "Війна України та Росії наживо: Київ попереджає, що пропозиція про припинення вогню може втратити чинність, оскільки «наше терпіння не безмежне»",
-        "en": "Ukraine-Russia war live: Kyiv warns ceasefire offer may expire as 'our patience is not endless'",
-        "ru": "Война Украины и России в прямом эфире: Киев предупреждает, что предложение о прекращении огня может утратить силу, поскольку «наше терпение не безгранично»"
+        "uk": "Хроніка війни Україна–Росія: пожежа на російському нафтопереробному заводі після удару України, Київ атакований ракетами",
+        "en": "Ukraine–Russia war latest: fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
+        "ru": "Хроника войны Украина–Россия: пожар на российском нефтеперерабатывающем заводе после удара Украины, Киев атакован ракетами"
       }
     },
     {
-      "url": "https://www.yahoo.com/news/world/articles/ukraine-says-hit-railway-bridge-134319327.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-06-23T14:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/87d5264ef07a48ed.webp",
-      "original": "Ukraine says it hit a railway bridge to Crimea , seeking to isolate the Russian - held peninsula",
+      "url": "https://timesofindia.indiatimes.com/defence/international/zelenskyys-new-war-plan-ukraine-launches-40-day-deep-strike-campaign-inside-russia/articleshow/132030610.cms",
+      "domain": "timesofindia.indiatimes.com",
+      "seenAt": "2026-06-27T08:15:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/4ccfc8bddd539164.webp",
+      "original": "Zelenskyy new war plan : Ukraine launches 40 - day deep - strike campaign inside Russia",
       "title": {
-        "uk": "Україна заявила, що вдарила по залізничному мосту до Криму, намагаючись ізолювати окупований Росією півострів",
-        "en": "Ukraine says it hit a railway bridge to Crimea, seeking to isolate the Russian-held peninsula",
-        "ru": "Украина заявила, что нанесла удар по железнодорожному мосту в Крым, стремясь изолировать удерживаемый Россией полуостров"
+        "uk": "Новий воєнний план Зеленського: Україна розпочинає 40-денну кампанію глибоких ударів по Росії",
+        "en": "Zelenskyy's new war plan: Ukraine launches 40-day deep-strike campaign inside Russia",
+        "ru": "Новый военный план Зеленского: Украина запускает 40-дневную кампанию глубоких ударов по России"
       }
     },
     {
-      "url": "https://abcnews.com/Business/wireStory/ukraines-latest-long-range-strikes-russia-hit-major-134161222",
-      "domain": "abcnews.com",
-      "seenAt": "2026-06-24T14:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/8907df7d67fab535.webp",
-      "original": "Ukraine latest strikes on Russia hit major natural gas plant and satellite centers",
+      "url": "https://nos.nl/nieuwsuur/artikel/2620512-rusland-roept-noodtoestand-uit-op-de-krim-doorbraak-in-oekraiens-offensief",
+      "domain": "nos.nl",
+      "seenAt": "2026-06-27T08:00:00.000Z",
+      "sourceCountry": "Netherlands",
+      "image": "/news/0d788b639a1aeaf8.webp",
+      "original": "Rusland roept noodtoestand uit op de Krim : doorbraak in Oekraïens offensief ?",
       "title": {
-        "uk": "Останні удари України по Росії вразили великий завод природного газу та супутникові центри",
-        "en": "Ukraine's latest strikes on Russia hit a major natural gas plant and satellite centers",
-        "ru": "Последние удары Украины по России поразили крупный завод природного газа и спутниковые центры"
+        "uk": "Росія оголошує надзвичайний стан у Криму: прорив в українському наступі?",
+        "en": "Russia declares state of emergency in Crimea: breakthrough in Ukrainian offensive?",
+        "ru": "Россия объявляет чрезвычайное положение в Крыму: прорыв в украинском наступлении?"
       }
     },
     {
-      "url": "https://www.news4jax.com/news/world/2026/06/25/zelenskyy-says-russia-is-shifting-air-defenses-to-moscow-and-other-key-sites-after-drone-strikes/",
-      "domain": "news4jax.com",
-      "seenAt": "2026-06-25T11:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/58dc938076a71730.webp",
-      "original": "Zelenskyy says Russia is shifting air defenses to Moscow and other key sites after drone strikes",
-      "title": {
-        "uk": "Зеленський заявив, що Росія переміщує засоби ППО до Москви та інших ключових об'єктів після ударів дронів",
-        "en": "Zelenskyy says Russia is shifting air defenses to Moscow and other key sites after drone strikes",
-        "ru": "Зеленский заявил, что Россия перебрасывает средства ПВО к Москве и другим ключевым объектам после ударов дронов"
-      }
-    },
-    {
-      "url": "https://www.ibtimes.co.uk/putin-calls-peace-talks-ukraines-expanding-refinery-strikes-raise-pressure-russia-1804951",
-      "domain": "ibtimes.co.uk",
-      "seenAt": "2026-06-25T07:45:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/cd40f1bb35c9cfbc.webp",
-      "original": "Putin Calls for Peace Talks as Ukraine Expanding Refinery Strikes Raise Pressure on Russia",
-      "title": {
-        "uk": "Путін закликає до мирних переговорів, оскільки розширення ударів України по нафтопереробних заводах посилює тиск на Росію",
-        "en": "Putin calls for peace talks as Ukraine expanding refinery strikes raise pressure on Russia",
-        "ru": "Путин призывает к мирным переговорам, поскольку расширение ударов Украины по нефтеперерабатывающим заводам усиливает давление на Россию"
-      }
-    },
-    {
-      "url": "https://ua.korrespondent.net/ukraine/4889290-40-denna-operatsiia-vplyvu-yak-sbu-zmushuie-rf-do-myru",
-      "domain": "ua.korrespondent.net",
-      "seenAt": "2026-06-25T22:15:00.000Z",
+      "url": "https://24tv.ua/ru/sirskij-zajavil-chto-rossija-ne-otkazalas-ot-plana-zahvatit-ukrainu-no-skorrektirovala-sroki_n3095452",
+      "domain": "24tv.ua",
+      "seenAt": "2026-06-27T12:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/c5f815948fa34049.webp",
-      "original": "40 - денна операція впливу . Як СБУ змушує РФ до миру",
+      "image": "/news/eab3cac3747f0f6d.webp",
+      "original": "Сирский заявил , что Россия не отказалась от плана захватить Украину , но скорректировала сроки",
       "title": {
-        "uk": "40-денна операція впливу: як СБУ змушує РФ до миру",
-        "en": "A 40-day influence operation: how the SBU is pressuring Russia toward peace",
-        "ru": "40-дневная операция влияния: как СБУ вынуждает РФ к миру"
+        "uk": "Сирський заявив, що Росія не відмовилася від плану захопити Україну, але скоригувала терміни",
+        "en": "Syrsky says Russia has not abandoned its plan to capture Ukraine but has adjusted its timeline",
+        "ru": "Сырский заявил, что Россия не отказалась от плана захватить Украину, но скорректировала сроки"
       }
     },
     {
-      "url": "https://vlasti.net/news/367440",
-      "domain": "vlasti.net",
-      "seenAt": "2026-06-25T10:45:00.000Z",
+      "url": "https://www.kyivpost.com/post/78739",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-06-23T05:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Україна поставила під сумнів віру Путіна перемогти у війні на виснаження – WSJ / vlasti . net",
+      "image": "/news/a1d87c4e0b8394f3.webp",
+      "original": "Ukraine Warns Russia at UN to Leave Occupied Lands Before It Is Too Late",
       "title": {
-        "uk": "Україна поставила під сумнів віру Путіна перемогти у війні на виснаження — WSJ",
-        "en": "Ukraine has challenged Putin's belief in winning the war of attrition — WSJ",
-        "ru": "Украина поставила под сомнение веру Путина в победу в войне на истощение — WSJ"
+        "uk": "Україна попередила Росію в ООН: залишити окуповані землі, поки не пізно",
+        "en": "Ukraine warns Russia at UN to leave occupied lands before it is too late",
+        "ru": "Украина предупредила Россию в ООН: покинуть оккупированные территории, пока не поздно"
+      }
+    },
+    {
+      "url": "https://www.epochtimes.com/gb/26/6/27/n14798077.htm",
+      "domain": "epochtimes.com",
+      "seenAt": "2026-06-28T00:30:00.000Z",
+      "sourceCountry": "China",
+      "image": "/news/4ac07a59a7a7f8f1.webp",
+      "original": "消息 ： 川普对普京失望 或放弃阿拉斯加会谈意向",
+      "title": {
+        "uk": "ЗМІ: Трамп розчарований Путіним і може відмовитися від планів переговорів на Алясці",
+        "en": "Reports: Trump disappointed with Putin, may abandon plans for Alaska talks",
+        "ru": "СМИ: Трамп разочарован Путиным и может отказаться от планов переговоров на Аляске"
       }
     },
     {
@@ -100,35 +88,48 @@
       "image": "/news/e4f675af3497f668.webp",
       "original": "Trump turned down Vance proposal for India - led Ukraine peacekeeping force , reveals new book",
       "title": {
-        "uk": "Трамп відхилив пропозицію Венса щодо миротворчих сил в Україні під керівництвом Індії, — розкриває нова книга",
-        "en": "Trump turned down Vance proposal for India-led Ukraine peacekeeping force, reveals new book",
-        "ru": "Трамп отклонил предложение Вэнса о миротворческих силах под руководством Индии на Украине, — раскрывает новая книга"
+        "uk": "Трамп відхилив пропозицію Венса щодо миротворчих сил під керівництвом Індії в Україні — нова книга",
+        "en": "Trump turned down Vance's proposal for an India-led Ukraine peacekeeping force, reveals new book",
+        "ru": "Трамп отклонил предложение Вэнса о миротворческих силах под руководством Индии в Украине — новая книга"
       }
     },
     {
-      "url": "https://www.antena3.ro/externe/zelenski-anunta-ca-lukasenko-s-a-conformat-cererii-sale-si-a-inchis-releele-folosite-de-rusia-pentru-atacuri-cu-drone-793331.html",
-      "domain": "antena3.ro",
-      "seenAt": "2026-06-24T19:00:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/b1e6c061d653cefd.webp",
-      "original": "Zelenski anunță că Lukașenko s - a conformat cererii sale și a închis releele folosite de Rusia pentru atacuri cu drone",
+      "url": "https://www.lrt.lt/ru/novosti/17/2972183/smi-2-strany-preduprezhdaiut-o-vozmozhnoi-rossiiskoi-provokatsii-v-stranakh-baltii-ili-pol-she",
+      "domain": "lrt.lt",
+      "seenAt": "2026-06-27T13:45:00.000Z",
+      "sourceCountry": "Lithuania",
+      "image": "/news/e83509591ab372d3.webp",
+      "original": "СМИ : 2 страны предупреждают о возможной российской провокации в странах Балтии или Польше",
       "title": {
-        "uk": "Зеленський оголосив, що Лукашенко виконав його вимогу та закрив ретранслятори, які Росія використовувала для атак дронами",
-        "en": "Zelensky announces that Lukashenko complied with his request and closed relays used by Russia for drone attacks",
-        "ru": "Зеленский объявил, что Лукашенко выполнил его требование и закрыл ретрансляторы, используемые Россией для атак дронами"
+        "uk": "ЗМІ: 2 країни попереджають про можливу російську провокацію в країнах Балтії або Польщі",
+        "en": "Media: 2 countries warn of possible Russian provocation in the Baltic states or Poland",
+        "ru": "СМИ: 2 страны предупреждают о возможной российской провокации в странах Балтии или Польше"
       }
     },
     {
-      "url": "https://www.yahoo.com/news/politics/articles/putin-nato-preparing-war-against-142629692.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-06-23T15:15:00.000Z",
+      "url": "https://24tv.ua/sirskiy-pro-viynu-tehnologiy-chomu-bronetehnika-gine-do-vihodu_n3095320",
+      "domain": "24tv.ua",
+      "seenAt": "2026-06-27T06:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/9d42503a5334c76e.webp",
+      "original": "Сирський про війну технологій - чому бронетехніка гине до виходу на лінію зіткнення",
+      "title": {
+        "uk": "Сирський про війну технологій: чому бронетехніка гине до виходу на лінію зіткнення",
+        "en": "Syrsky on the war of technologies: why armoured vehicles are destroyed before reaching the front line",
+        "ru": "Сырский о войне технологий: почему бронетехника гибнет до выхода на линию соприкосновения"
+      }
+    },
+    {
+      "url": "https://abcnews.com/Business/wireStory/ukraines-latest-long-range-strikes-russia-hit-major-134161222",
+      "domain": "abcnews.com",
+      "seenAt": "2026-06-24T14:15:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/02c3fd4824e5f13d.webp",
-      "original": "Putin : NATO preparing for war against Russia",
+      "image": "/news/8907df7d67fab535.webp",
+      "original": "Ukraine latest strikes on Russia hit major natural gas plant and satellite centers",
       "title": {
-        "uk": "Путін заявив, що НАТО готується до війни проти Росії",
-        "en": "Putin says NATO is preparing for war against Russia",
-        "ru": "Путин заявил, что НАТО готовится к войне против России"
+        "uk": "Останні удари України по Росії вразили великий газовий завод і супутникові центри",
+        "en": "Ukraine's latest strikes on Russia hit a major natural gas plant and satellite centers",
+        "ru": "Последние удары Украины по России поразили крупный газовый завод и спутниковые центры"
       }
     }
   ]
