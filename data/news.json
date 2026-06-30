@@ -1,20 +1,7 @@
 {
-  "asOf": "2026-06-28",
+  "asOf": "2026-06-30",
   "source": "gdelt",
   "articles": [
-    {
-      "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-trump-zelensky-offensive-b3004432.html",
-      "domain": "independent.co.uk",
-      "seenAt": "2026-06-28T08:15:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/c2dc1f9766810738.webp",
-      "original": "Ukraine - Russia war latest : Fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
-      "title": {
-        "uk": "Хроніка війни Україна–Росія: пожежа на російському нафтопереробному заводі після удару України, Київ атакований ракетами",
-        "en": "Ukraine–Russia war latest: fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
-        "ru": "Хроника войны Украина–Россия: пожар на российском нефтеперерабатывающем заводе после удара Украины, Киев атакован ракетами"
-      }
-    },
     {
       "url": "https://timesofindia.indiatimes.com/defence/international/zelenskyys-new-war-plan-ukraine-launches-40-day-deep-strike-campaign-inside-russia/articleshow/132030610.cms",
       "domain": "timesofindia.indiatimes.com",
@@ -23,9 +10,48 @@
       "image": "/news/4ccfc8bddd539164.webp",
       "original": "Zelenskyy new war plan : Ukraine launches 40 - day deep - strike campaign inside Russia",
       "title": {
-        "uk": "Новий воєнний план Зеленського: Україна розпочинає 40-денну кампанію глибоких ударів по Росії",
+        "uk": "Новий воєнний план Зеленського: Україна розпочала 40-денну кампанію глибоких ударів по Росії",
         "en": "Zelenskyy's new war plan: Ukraine launches 40-day deep-strike campaign inside Russia",
-        "ru": "Новый военный план Зеленского: Украина запускает 40-дневную кампанию глубоких ударов по России"
+        "ru": "Новый военный план Зеленского: Украина запустила 40-дневную кампанию глубоких ударов по России"
+      }
+    },
+    {
+      "url": "https://zaxid.net/putin_vidkinuv_propozitsiyu_ukrayini_pro_vzayemnu_vidmovu_vid_dalekobiynih_udariv_n1640423",
+      "domain": "zaxid.net",
+      "seenAt": "2026-06-29T19:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/2d41b547d32e018c.webp",
+      "original": "Путін відмовився від взаємного припинення ударів : це пропонувала Україна",
+      "title": {
+        "uk": "Путін відмовився від взаємного припинення ударів: це пропонувала Україна",
+        "en": "Putin rejected mutual cessation of strikes, which Ukraine had proposed",
+        "ru": "Путин отказался от взаимного прекращения ударов: это предлагала Украина"
+      }
+    },
+    {
+      "url": "https://www.ksat.com/news/world/2026/06/29/zelenskyy-condemns-horrific-attacks-as-russian-strikes-kill-11-and-wound-40-in-ukraine/",
+      "domain": "ksat.com",
+      "seenAt": "2026-06-29T18:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/dafbd992a4f6e383.webp",
+      "original": "Zelenskyy condemns  horrific attack as Russian strikes kill 11 and wound 40 in Ukraine",
+      "title": {
+        "uk": "Зеленський засудив «жахливу атаку» після того, як російські удари вбили 11 і поранили 40 осіб в Україні",
+        "en": "Zelenskyy condemns 'horrific attack' as Russian strikes kill 11 and wound 40 in Ukraine",
+        "ru": "Зеленский осудил «ужасную атаку» после того, как российские удары убили 11 и ранили 40 человек в Украине"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-trump-zelensky-offensive-b3004432.html",
+      "domain": "independent.co.uk",
+      "seenAt": "2026-06-28T08:15:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/c2dc1f9766810738.webp",
+      "original": "Ukraine - Russia war latest : Fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
+      "title": {
+        "uk": "Остання хвилина: пожежа на російському нафтопереробному заводі після удару України, Київ атакований ракетами",
+        "en": "Ukraine-Russia war latest: Fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
+        "ru": "Война Украина–Россия: пожар на российском нефтеперерабатывающем заводе после удара Украины, Киев поражён ракетами"
       }
     },
     {
@@ -36,100 +62,73 @@
       "image": "/news/0d788b639a1aeaf8.webp",
       "original": "Rusland roept noodtoestand uit op de Krim : doorbraak in Oekraïens offensief ?",
       "title": {
-        "uk": "Росія оголошує надзвичайний стан у Криму: прорив в українському наступі?",
+        "uk": "Росія оголосила надзвичайний стан у Криму: прорив в українському наступі?",
         "en": "Russia declares state of emergency in Crimea: breakthrough in Ukrainian offensive?",
-        "ru": "Россия объявляет чрезвычайное положение в Крыму: прорыв в украинском наступлении?"
+        "ru": "Россия объявила чрезвычайное положение в Крыму: прорыв в украинском наступлении?"
       }
     },
     {
-      "url": "https://24tv.ua/ru/sirskij-zajavil-chto-rossija-ne-otkazalas-ot-plana-zahvatit-ukrainu-no-skorrektirovala-sroki_n3095452",
-      "domain": "24tv.ua",
-      "seenAt": "2026-06-27T12:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/eab3cac3747f0f6d.webp",
-      "original": "Сирский заявил , что Россия не отказалась от плана захватить Украину , но скорректировала сроки",
-      "title": {
-        "uk": "Сирський заявив, що Росія не відмовилася від плану захопити Україну, але скоригувала терміни",
-        "en": "Syrsky says Russia has not abandoned its plan to capture Ukraine but has adjusted its timeline",
-        "ru": "Сырский заявил, что Россия не отказалась от плана захватить Украину, но скорректировала сроки"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/78739",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-06-23T05:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/a1d87c4e0b8394f3.webp",
-      "original": "Ukraine Warns Russia at UN to Leave Occupied Lands Before It Is Too Late",
-      "title": {
-        "uk": "Україна попередила Росію в ООН: залишити окуповані землі, поки не пізно",
-        "en": "Ukraine warns Russia at UN to leave occupied lands before it is too late",
-        "ru": "Украина предупредила Россию в ООН: покинуть оккупированные территории, пока не поздно"
-      }
-    },
-    {
-      "url": "https://www.epochtimes.com/gb/26/6/27/n14798077.htm",
-      "domain": "epochtimes.com",
-      "seenAt": "2026-06-28T00:30:00.000Z",
-      "sourceCountry": "China",
-      "image": "/news/4ac07a59a7a7f8f1.webp",
-      "original": "消息 ： 川普对普京失望 或放弃阿拉斯加会谈意向",
-      "title": {
-        "uk": "ЗМІ: Трамп розчарований Путіним і може відмовитися від планів переговорів на Алясці",
-        "en": "Reports: Trump disappointed with Putin, may abandon plans for Alaska talks",
-        "ru": "СМИ: Трамп разочарован Путиным и может отказаться от планов переговоров на Аляске"
-      }
-    },
-    {
-      "url": "https://www.moneycontrol.com/news/india/trump-turned-down-vance-s-proposal-for-india-led-ukraine-peacekeeping-force-reveals-new-book-13957577.html",
-      "domain": "moneycontrol.com",
-      "seenAt": "2026-06-24T07:30:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/e4f675af3497f668.webp",
-      "original": "Trump turned down Vance proposal for India - led Ukraine peacekeeping force , reveals new book",
-      "title": {
-        "uk": "Трамп відхилив пропозицію Венса щодо миротворчих сил під керівництвом Індії в Україні — нова книга",
-        "en": "Trump turned down Vance's proposal for an India-led Ukraine peacekeeping force, reveals new book",
-        "ru": "Трамп отклонил предложение Вэнса о миротворческих силах под руководством Индии в Украине — новая книга"
-      }
-    },
-    {
-      "url": "https://www.lrt.lt/ru/novosti/17/2972183/smi-2-strany-preduprezhdaiut-o-vozmozhnoi-rossiiskoi-provokatsii-v-stranakh-baltii-ili-pol-she",
-      "domain": "lrt.lt",
-      "seenAt": "2026-06-27T13:45:00.000Z",
-      "sourceCountry": "Lithuania",
-      "image": "/news/e83509591ab372d3.webp",
-      "original": "СМИ : 2 страны предупреждают о возможной российской провокации в странах Балтии или Польше",
-      "title": {
-        "uk": "ЗМІ: 2 країни попереджають про можливу російську провокацію в країнах Балтії або Польщі",
-        "en": "Media: 2 countries warn of possible Russian provocation in the Baltic states or Poland",
-        "ru": "СМИ: 2 страны предупреждают о возможной российской провокации в странах Балтии или Польше"
-      }
-    },
-    {
-      "url": "https://24tv.ua/sirskiy-pro-viynu-tehnologiy-chomu-bronetehnika-gine-do-vihodu_n3095320",
-      "domain": "24tv.ua",
-      "seenAt": "2026-06-27T06:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/9d42503a5334c76e.webp",
-      "original": "Сирський про війну технологій - чому бронетехніка гине до виходу на лінію зіткнення",
-      "title": {
-        "uk": "Сирський про війну технологій: чому бронетехніка гине до виходу на лінію зіткнення",
-        "en": "Syrsky on the war of technologies: why armoured vehicles are destroyed before reaching the front line",
-        "ru": "Сырский о войне технологий: почему бронетехника гибнет до выхода на линию соприкосновения"
-      }
-    },
-    {
-      "url": "https://abcnews.com/Business/wireStory/ukraines-latest-long-range-strikes-russia-hit-major-134161222",
-      "domain": "abcnews.com",
-      "seenAt": "2026-06-24T14:15:00.000Z",
+      "url": "https://www.cbsnews.com/news/russian-soldiers-killed-front-lines-ukraine-war-drones/",
+      "domain": "cbsnews.com",
+      "seenAt": "2026-06-29T22:30:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/8907df7d67fab535.webp",
-      "original": "Ukraine latest strikes on Russia hit major natural gas plant and satellite centers",
+      "image": "/news/0da1c0fbf73f4c3b.webp",
+      "original": "Some Russian soldiers last just minutes on front lines against Ukraine drones , military bloggers say",
       "title": {
-        "uk": "Останні удари України по Росії вразили великий газовий завод і супутникові центри",
-        "en": "Ukraine's latest strikes on Russia hit a major natural gas plant and satellite centers",
-        "ru": "Последние удары Украины по России поразили крупный газовый завод и спутниковые центры"
+        "uk": "Деякі російські солдати тримаються лише хвилини на лінії фронту під ударами українських дронів — військові блогери",
+        "en": "Some Russian soldiers last just minutes on front lines against Ukraine drones, military bloggers say",
+        "ru": "Некоторые российские солдаты держатся лишь минуты на линии фронта под ударами украинских дронов, сообщают военные блогеры"
+      }
+    },
+    {
+      "url": "https://www.unian.net/war/konstantinovka-rossiya-nastupaet-padenie-goroda-lish-vopros-vremeni-reuters-13425621.html",
+      "domain": "unian.net",
+      "seenAt": "2026-06-29T08:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/4f7fbe186b8884a0.webp",
+      "original": "Константиновка - Россия наступает , падение города лишь вопрос времени",
+      "title": {
+        "uk": "Костянтинівка: Росія наступає, падіння міста лише питання часу",
+        "en": "Kostiantynivka: Russia is advancing, the city's fall is only a matter of time",
+        "ru": "Константиновка: Россия наступает, падение города — лишь вопрос времени"
+      }
+    },
+    {
+      "url": "https://www.cna.com.tw/news/aopl/202606300002.aspx",
+      "domain": "cna.com.tw",
+      "seenAt": "2026-06-29T19:15:00.000Z",
+      "sourceCountry": "Taiwan",
+      "original": "芬蘭總統籲烏俄停火60天 稱烏克蘭狀態佳有利談判 | 國際",
+      "title": {
+        "uk": "Президент Фінляндії закликав до 60-денного припинення вогню між Україною та Росією, зазначивши, що позиція України сприятлива для переговорів",
+        "en": "Finnish president urges 60-day Ukraine-Russia ceasefire, says Ukraine's position is favourable for negotiations",
+        "ru": "Президент Финляндии призвал к 60-дневному прекращению огня между Украиной и Россией, заявив, что позиция Украины благоприятна для переговоров"
+      }
+    },
+    {
+      "url": "https://ua.korrespondent.net/world/4890349-kytai-v-oon-zvernuvsia-do-ukrainy-i-rosii",
+      "domain": "ua.korrespondent.net",
+      "seenAt": "2026-06-30T09:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/9ceed32a8b740490.webp",
+      "original": "Китай в ООН звернувся до України і Росії",
+      "title": {
+        "uk": "Китай в ООН звернувся до України і Росії",
+        "en": "China addresses Ukraine and Russia at the UN",
+        "ru": "Китай в ООН обратился к Украине и России"
+      }
+    },
+    {
+      "url": "https://www.washingtonexaminer.com/news/white-house/4626426/trump-changed-his-tune-on-ukraine/",
+      "domain": "washingtonexaminer.com",
+      "seenAt": "2026-06-29T12:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/36008d0383f4127e.webp",
+      "original": "Trump changed his tune on Ukraine , but dont expect him to start cutting checks",
+      "title": {
+        "uk": "Трамп змінив риторику щодо України, але не варто очікувати від нього фінансової підтримки",
+        "en": "Trump changed his tune on Ukraine, but don't expect him to start cutting checks",
+        "ru": "Трамп сменил тон в отношении Украины, но не стоит ожидать от него финансовой помощи"
       }
     }
   ]
