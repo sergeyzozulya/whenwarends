@@ -1,7 +1,72 @@
 {
-  "asOf": "2026-06-30",
+  "asOf": "2026-07-01",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://www.wandtv.com/news/national/zelenskyy-condemns-horrific-attacks-as-russian-strikes-kill-12-and-wound-40-in-ukraine/article_04f5c625-3fd8-536d-a358-b1a93d6694f8.html",
+      "domain": "wandtv.com",
+      "seenAt": "2026-06-30T01:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/55c2242b3a90bebc.webp",
+      "original": "Zelenskyy condemns  horrific attack as Russian strikes kill 12 and wound 40 in Ukraine",
+      "title": {
+        "uk": "Зеленський засудив «жахливий напад» після того, як російські удари вбили 12 і поранили 40 людей в Україні",
+        "en": "Zelenskyy condemns 'horrific attack' as Russian strikes kill 12 and wound 40 in Ukraine",
+        "ru": "Зеленский осудил «ужасную атаку» после того, как российские удары убили 12 и ранили 40 человек в Украине"
+      }
+    },
+    {
+      "url": "https://www.radiosvoboda.org/a/news-isw-putin-perehovory-ssha-samit-alyaska/33791788.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-06-30T05:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/195314450be9ae5d.webp",
+      "original": "ISW : Путін намагається вести переговори зі США щодо України , ніби ситуація на полі бою не змінилася з серпня",
+      "title": {
+        "uk": "ISW: Путін намагається вести переговори зі США щодо України, ніби ситуація на полі бою не змінилася з серпня",
+        "en": "ISW: Putin is trying to negotiate with the US on Ukraine as if the battlefield situation has not changed since August",
+        "ru": "ISW: Путин пытается вести переговоры с США по Украине, будто ситуация на поле боя не изменилась с августа"
+      }
+    },
+    {
+      "url": "https://lb.ua/society/2026/06/30/748622_golovkom_zsu_rosiya_prorahovuie.html",
+      "domain": "lb.ua",
+      "seenAt": "2026-06-30T17:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/7d3d92671b828fb8.webp",
+      "original": "Росія прораховує наступ на північ України з Брянщини заявив головком ЗСУ",
+      "title": {
+        "uk": "Росія прораховує наступ на північ України з Брянщини — заявив головком ЗСУ",
+        "en": "Russia is calculating an offensive on northern Ukraine from the Bryansk region, says commander-in-chief of the Armed Forces of Ukraine",
+        "ru": "Россия просчитывает наступление на север Украины из Брянщины — заявил главком ВСУ"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-trump-zelensky-offensive-b3004432.html",
+      "domain": "independent.co.uk",
+      "seenAt": "2026-06-28T08:15:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/c2dc1f9766810738.webp",
+      "original": "Ukraine - Russia war latest : Fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
+      "title": {
+        "uk": "Останні новини війни Україна–Росія: пожежа на російському нафтопереробному заводі після удару України, Київ обстріляний ракетами",
+        "en": "Ukraine-Russia war latest: Fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
+        "ru": "Последние новости войны Украина–Россия: пожар на российском нефтеперерабатывающем заводе после удара Украины, Киев обстрелян ракетами"
+      }
+    },
+    {
+      "url": "https://zaxid.net/putin_vidkinuv_propozitsiyu_ukrayini_pro_vzayemnu_vidmovu_vid_dalekobiynih_udariv_n1640423",
+      "domain": "zaxid.net",
+      "seenAt": "2026-06-29T19:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/2d41b547d32e018c.webp",
+      "original": "Путін відмовився від взаємного припинення ударів : це пропонувала Україна",
+      "title": {
+        "uk": "Путін відмовився від взаємного припинення ударів: це пропонувала Україна",
+        "en": "Putin rejected Ukraine's proposal for a mutual halt on strikes",
+        "ru": "Путин отказался от взаимного прекращения ударов: это предлагала Украина"
+      }
+    },
     {
       "url": "https://timesofindia.indiatimes.com/defence/international/zelenskyys-new-war-plan-ukraine-launches-40-day-deep-strike-campaign-inside-russia/articleshow/132030610.cms",
       "domain": "timesofindia.indiatimes.com",
@@ -16,55 +81,16 @@
       }
     },
     {
-      "url": "https://zaxid.net/putin_vidkinuv_propozitsiyu_ukrayini_pro_vzayemnu_vidmovu_vid_dalekobiynih_udariv_n1640423",
-      "domain": "zaxid.net",
-      "seenAt": "2026-06-29T19:00:00.000Z",
+      "url": "https://24tv.ua/ru/sirskij-zajavil-chto-rossija-ne-otkazalas-ot-plana-zahvatit-ukrainu-no-skorrektirovala-sroki_n3095452",
+      "domain": "24tv.ua",
+      "seenAt": "2026-06-27T12:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/2d41b547d32e018c.webp",
-      "original": "Путін відмовився від взаємного припинення ударів : це пропонувала Україна",
+      "image": "/news/eab3cac3747f0f6d.webp",
+      "original": "Сирский заявил , что Россия не отказалась от плана захватить Украину , но скорректировала сроки",
       "title": {
-        "uk": "Путін відмовився від взаємного припинення ударів: це пропонувала Україна",
-        "en": "Putin rejected mutual cessation of strikes, which Ukraine had proposed",
-        "ru": "Путин отказался от взаимного прекращения ударов: это предлагала Украина"
-      }
-    },
-    {
-      "url": "https://www.ksat.com/news/world/2026/06/29/zelenskyy-condemns-horrific-attacks-as-russian-strikes-kill-11-and-wound-40-in-ukraine/",
-      "domain": "ksat.com",
-      "seenAt": "2026-06-29T18:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/dafbd992a4f6e383.webp",
-      "original": "Zelenskyy condemns  horrific attack as Russian strikes kill 11 and wound 40 in Ukraine",
-      "title": {
-        "uk": "Зеленський засудив «жахливу атаку» після того, як російські удари вбили 11 і поранили 40 осіб в Україні",
-        "en": "Zelenskyy condemns 'horrific attack' as Russian strikes kill 11 and wound 40 in Ukraine",
-        "ru": "Зеленский осудил «ужасную атаку» после того, как российские удары убили 11 и ранили 40 человек в Украине"
-      }
-    },
-    {
-      "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-trump-zelensky-offensive-b3004432.html",
-      "domain": "independent.co.uk",
-      "seenAt": "2026-06-28T08:15:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/c2dc1f9766810738.webp",
-      "original": "Ukraine - Russia war latest : Fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
-      "title": {
-        "uk": "Остання хвилина: пожежа на російському нафтопереробному заводі після удару України, Київ атакований ракетами",
-        "en": "Ukraine-Russia war latest: Fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
-        "ru": "Война Украина–Россия: пожар на российском нефтеперерабатывающем заводе после удара Украины, Киев поражён ракетами"
-      }
-    },
-    {
-      "url": "https://nos.nl/nieuwsuur/artikel/2620512-rusland-roept-noodtoestand-uit-op-de-krim-doorbraak-in-oekraiens-offensief",
-      "domain": "nos.nl",
-      "seenAt": "2026-06-27T08:00:00.000Z",
-      "sourceCountry": "Netherlands",
-      "image": "/news/0d788b639a1aeaf8.webp",
-      "original": "Rusland roept noodtoestand uit op de Krim : doorbraak in Oekraïens offensief ?",
-      "title": {
-        "uk": "Росія оголосила надзвичайний стан у Криму: прорив в українському наступі?",
-        "en": "Russia declares state of emergency in Crimea: breakthrough in Ukrainian offensive?",
-        "ru": "Россия объявила чрезвычайное положение в Крыму: прорыв в украинском наступлении?"
+        "uk": "Сирський заявив, що Росія не відмовилась від плану захопити Україну, але скоригувала терміни",
+        "en": "Syrsky said Russia has not abandoned its plan to capture Ukraine but has adjusted its timeline",
+        "ru": "Сырский заявил, что Россия не отказалась от плана захватить Украину, но скорректировала сроки"
       }
     },
     {
@@ -75,60 +101,35 @@
       "image": "/news/0da1c0fbf73f4c3b.webp",
       "original": "Some Russian soldiers last just minutes on front lines against Ukraine drones , military bloggers say",
       "title": {
-        "uk": "Деякі російські солдати тримаються лише хвилини на лінії фронту під ударами українських дронів — військові блогери",
-        "en": "Some Russian soldiers last just minutes on front lines against Ukraine drones, military bloggers say",
-        "ru": "Некоторые российские солдаты держатся лишь минуты на линии фронта под ударами украинских дронов, сообщают военные блогеры"
+        "uk": "Деякі російські солдати живуть лічені хвилини на лінії фронту під ударами українських дронів — військові блогери",
+        "en": "Some Russian soldiers last just minutes on the front line against Ukraine's drones, military bloggers say",
+        "ru": "Некоторые российские солдаты держатся лишь минуты на линии фронта под ударами украинских дронов — военные блогеры"
       }
     },
     {
-      "url": "https://www.unian.net/war/konstantinovka-rossiya-nastupaet-padenie-goroda-lish-vopros-vremeni-reuters-13425621.html",
-      "domain": "unian.net",
-      "seenAt": "2026-06-29T08:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/4f7fbe186b8884a0.webp",
-      "original": "Константиновка - Россия наступает , падение города лишь вопрос времени",
+      "url": "https://nos.nl/nieuwsuur/artikel/2620512-rusland-roept-noodtoestand-uit-op-de-krim-doorbraak-in-oekraiens-offensief",
+      "domain": "nos.nl",
+      "seenAt": "2026-06-27T08:00:00.000Z",
+      "sourceCountry": "Netherlands",
+      "image": "/news/0d788b639a1aeaf8.webp",
+      "original": "Rusland roept noodtoestand uit op de Krim : doorbraak in Oekraïens offensief ?",
       "title": {
-        "uk": "Костянтинівка: Росія наступає, падіння міста лише питання часу",
-        "en": "Kostiantynivka: Russia is advancing, the city's fall is only a matter of time",
-        "ru": "Константиновка: Россия наступает, падение города — лишь вопрос времени"
+        "uk": "Росія оголошує надзвичайний стан у Криму: прорив в українському наступі?",
+        "en": "Russia declares state of emergency in Crimea: breakthrough in Ukrainian offensive?",
+        "ru": "Россия объявляет чрезвычайное положение в Крыму: прорыв в украинском наступлении?"
       }
     },
     {
-      "url": "https://www.cna.com.tw/news/aopl/202606300002.aspx",
-      "domain": "cna.com.tw",
-      "seenAt": "2026-06-29T19:15:00.000Z",
-      "sourceCountry": "Taiwan",
-      "original": "芬蘭總統籲烏俄停火60天 稱烏克蘭狀態佳有利談判 | 國際",
-      "title": {
-        "uk": "Президент Фінляндії закликав до 60-денного припинення вогню між Україною та Росією, зазначивши, що позиція України сприятлива для переговорів",
-        "en": "Finnish president urges 60-day Ukraine-Russia ceasefire, says Ukraine's position is favourable for negotiations",
-        "ru": "Президент Финляндии призвал к 60-дневному прекращению огня между Украиной и Россией, заявив, что позиция Украины благоприятна для переговоров"
-      }
-    },
-    {
-      "url": "https://ua.korrespondent.net/world/4890349-kytai-v-oon-zvernuvsia-do-ukrainy-i-rosii",
-      "domain": "ua.korrespondent.net",
-      "seenAt": "2026-06-30T09:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/9ceed32a8b740490.webp",
-      "original": "Китай в ООН звернувся до України і Росії",
-      "title": {
-        "uk": "Китай в ООН звернувся до України і Росії",
-        "en": "China addresses Ukraine and Russia at the UN",
-        "ru": "Китай в ООН обратился к Украине и России"
-      }
-    },
-    {
-      "url": "https://www.washingtonexaminer.com/news/white-house/4626426/trump-changed-his-tune-on-ukraine/",
-      "domain": "washingtonexaminer.com",
-      "seenAt": "2026-06-29T12:30:00.000Z",
+      "url": "https://finance.yahoo.com/small-business/articles/russias-small-businesses-pay-price-051347540.html",
+      "domain": "finance.yahoo.com",
+      "seenAt": "2026-06-30T05:45:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/36008d0383f4127e.webp",
-      "original": "Trump changed his tune on Ukraine , but dont expect him to start cutting checks",
+      "image": "/news/19066ad04009e61f.webp",
+      "original": "Russia small businesses pay the price of spiralling Ukraine war",
       "title": {
-        "uk": "Трамп змінив риторику щодо України, але не варто очікувати від нього фінансової підтримки",
-        "en": "Trump changed his tune on Ukraine, but don't expect him to start cutting checks",
-        "ru": "Трамп сменил тон в отношении Украины, но не стоит ожидать от него финансовой помощи"
+        "uk": "Малий бізнес Росії платить ціну за ескалацію війни в Україні",
+        "en": "Russia's small businesses pay the price of the spiralling Ukraine war",
+        "ru": "Малый бизнес России расплачивается за разрастающуюся войну в Украине"
       }
     }
   ]
