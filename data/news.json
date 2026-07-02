@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-01",
+  "asOf": "2026-07-02",
   "source": "gdelt",
   "articles": [
     {
@@ -10,9 +10,22 @@
       "image": "/news/55c2242b3a90bebc.webp",
       "original": "Zelenskyy condemns  horrific attack as Russian strikes kill 12 and wound 40 in Ukraine",
       "title": {
-        "uk": "Зеленський засудив «жахливий напад» після того, як російські удари вбили 12 і поранили 40 людей в Україні",
+        "uk": "Зеленський засуджує «жахливий напад» — російські удари вбили 12 та поранили 40 людей в Україні",
         "en": "Zelenskyy condemns 'horrific attack' as Russian strikes kill 12 and wound 40 in Ukraine",
-        "ru": "Зеленский осудил «ужасную атаку» после того, как российские удары убили 12 и ранили 40 человек в Украине"
+        "ru": "Зеленский осуждает «ужасную атаку» — российские удары убили 12 и ранили 40 человек на Украине"
+      }
+    },
+    {
+      "url": "https://lb.ua/society/2026/06/30/748622_golovkom_zsu_rosiya_prorahovuie.html",
+      "domain": "lb.ua",
+      "seenAt": "2026-06-30T17:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/7d3d92671b828fb8.webp",
+      "original": "Росія прораховує наступ на північ України з Брянщини заявив головком ЗСУ",
+      "title": {
+        "uk": "Росія прораховує наступ на північ України з Брянщини, заявив головком ЗСУ",
+        "en": "Russia is calculating an offensive on northern Ukraine from the Bryansk region, says Ukraine's commander-in-chief",
+        "ru": "Россия просчитывает наступление на север Украины с Брянщины, заявил главком ВСУ"
       }
     },
     {
@@ -24,47 +37,8 @@
       "original": "ISW : Путін намагається вести переговори зі США щодо України , ніби ситуація на полі бою не змінилася з серпня",
       "title": {
         "uk": "ISW: Путін намагається вести переговори зі США щодо України, ніби ситуація на полі бою не змінилася з серпня",
-        "en": "ISW: Putin is trying to negotiate with the US on Ukraine as if the battlefield situation has not changed since August",
-        "ru": "ISW: Путин пытается вести переговоры с США по Украине, будто ситуация на поле боя не изменилась с августа"
-      }
-    },
-    {
-      "url": "https://lb.ua/society/2026/06/30/748622_golovkom_zsu_rosiya_prorahovuie.html",
-      "domain": "lb.ua",
-      "seenAt": "2026-06-30T17:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/7d3d92671b828fb8.webp",
-      "original": "Росія прораховує наступ на північ України з Брянщини заявив головком ЗСУ",
-      "title": {
-        "uk": "Росія прораховує наступ на північ України з Брянщини — заявив головком ЗСУ",
-        "en": "Russia is calculating an offensive on northern Ukraine from the Bryansk region, says commander-in-chief of the Armed Forces of Ukraine",
-        "ru": "Россия просчитывает наступление на север Украины из Брянщины — заявил главком ВСУ"
-      }
-    },
-    {
-      "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-trump-zelensky-offensive-b3004432.html",
-      "domain": "independent.co.uk",
-      "seenAt": "2026-06-28T08:15:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/c2dc1f9766810738.webp",
-      "original": "Ukraine - Russia war latest : Fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
-      "title": {
-        "uk": "Останні новини війни Україна–Росія: пожежа на російському нафтопереробному заводі після удару України, Київ обстріляний ракетами",
-        "en": "Ukraine-Russia war latest: Fire erupts at Russian oil refinery after Ukraine strike as Kyiv hit by missiles",
-        "ru": "Последние новости войны Украина–Россия: пожар на российском нефтеперерабатывающем заводе после удара Украины, Киев обстрелян ракетами"
-      }
-    },
-    {
-      "url": "https://zaxid.net/putin_vidkinuv_propozitsiyu_ukrayini_pro_vzayemnu_vidmovu_vid_dalekobiynih_udariv_n1640423",
-      "domain": "zaxid.net",
-      "seenAt": "2026-06-29T19:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/2d41b547d32e018c.webp",
-      "original": "Путін відмовився від взаємного припинення ударів : це пропонувала Україна",
-      "title": {
-        "uk": "Путін відмовився від взаємного припинення ударів: це пропонувала Україна",
-        "en": "Putin rejected Ukraine's proposal for a mutual halt on strikes",
-        "ru": "Путин отказался от взаимного прекращения ударов: это предлагала Украина"
+        "en": "ISW: Putin is trying to negotiate with the US over Ukraine as if the battlefield situation has not changed since August",
+        "ru": "ISW: Путин пытается вести переговоры с США по Украине, как будто ситуация на поле боя не изменилась с августа"
       }
     },
     {
@@ -75,35 +49,22 @@
       "image": "/news/4ccfc8bddd539164.webp",
       "original": "Zelenskyy new war plan : Ukraine launches 40 - day deep - strike campaign inside Russia",
       "title": {
-        "uk": "Новий воєнний план Зеленського: Україна розпочала 40-денну кампанію глибоких ударів по Росії",
+        "uk": "Новий воєнний план Зеленського: Україна розпочинає 40-денну кампанію глибоких ударів по Росії",
         "en": "Zelenskyy's new war plan: Ukraine launches 40-day deep-strike campaign inside Russia",
-        "ru": "Новый военный план Зеленского: Украина запустила 40-дневную кампанию глубоких ударов по России"
+        "ru": "Новый военный план Зеленского: Украина запускает 40-дневную кампанию глубоких ударов по России"
       }
     },
     {
-      "url": "https://24tv.ua/ru/sirskij-zajavil-chto-rossija-ne-otkazalas-ot-plana-zahvatit-ukrainu-no-skorrektirovala-sroki_n3095452",
-      "domain": "24tv.ua",
-      "seenAt": "2026-06-27T12:00:00.000Z",
+      "url": "https://zaxid.net/putin_vidkinuv_propozitsiyu_ukrayini_pro_vzayemnu_vidmovu_vid_dalekobiynih_udariv_n1640423",
+      "domain": "zaxid.net",
+      "seenAt": "2026-06-29T19:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/eab3cac3747f0f6d.webp",
-      "original": "Сирский заявил , что Россия не отказалась от плана захватить Украину , но скорректировала сроки",
+      "image": "/news/2d41b547d32e018c.webp",
+      "original": "Путін відмовився від взаємного припинення ударів : це пропонувала Україна",
       "title": {
-        "uk": "Сирський заявив, що Росія не відмовилась від плану захопити Україну, але скоригувала терміни",
-        "en": "Syrsky said Russia has not abandoned its plan to capture Ukraine but has adjusted its timeline",
-        "ru": "Сырский заявил, что Россия не отказалась от плана захватить Украину, но скорректировала сроки"
-      }
-    },
-    {
-      "url": "https://www.cbsnews.com/news/russian-soldiers-killed-front-lines-ukraine-war-drones/",
-      "domain": "cbsnews.com",
-      "seenAt": "2026-06-29T22:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/0da1c0fbf73f4c3b.webp",
-      "original": "Some Russian soldiers last just minutes on front lines against Ukraine drones , military bloggers say",
-      "title": {
-        "uk": "Деякі російські солдати живуть лічені хвилини на лінії фронту під ударами українських дронів — військові блогери",
-        "en": "Some Russian soldiers last just minutes on the front line against Ukraine's drones, military bloggers say",
-        "ru": "Некоторые российские солдаты держатся лишь минуты на линии фронта под ударами украинских дронов — военные блогеры"
+        "uk": "Путін відмовився від взаємного припинення ударів — це пропонувала Україна",
+        "en": "Putin rejected the mutual halt to strikes proposed by Ukraine",
+        "ru": "Путин отказался от взаимного прекращения ударов, которое предлагала Украина"
       }
     },
     {
@@ -120,6 +81,45 @@
       }
     },
     {
+      "url": "https://www.cbsnews.com/news/russian-soldiers-killed-front-lines-ukraine-war-drones/",
+      "domain": "cbsnews.com",
+      "seenAt": "2026-06-29T22:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/0da1c0fbf73f4c3b.webp",
+      "original": "Some Russian soldiers last just minutes on front lines against Ukraine drones , military bloggers say",
+      "title": {
+        "uk": "Деякі російські солдати тримаються на передовій лише кілька хвилин під ударами українських дронів — військові блогери",
+        "en": "Some Russian soldiers last just minutes on front lines against Ukraine drones, military bloggers say",
+        "ru": "Некоторые российские солдаты держатся на передовой лишь несколько минут под ударами украинских дронов, говорят военные блогеры"
+      }
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/world/europe/russia-might-launch-limited-war-against-nato-within-dutch-intel-sounds-alarm/articleshow/132073994.cms",
+      "domain": "timesofindia.indiatimes.com",
+      "seenAt": "2026-06-29T15:45:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/a731ea8ee8ee3dea.webp",
+      "original": "Russia might launch limited war against Nato within ... : Dutch intel sounds alarm",
+      "title": {
+        "uk": "Росія може розпочати обмежену війну проти НАТО: нідерландська розвідка б'є на сполох",
+        "en": "Russia might launch limited war against NATO: Dutch intelligence sounds alarm",
+        "ru": "Россия может начать ограниченную войну против НАТО: нидерландская разведка бьёт тревогу"
+      }
+    },
+    {
+      "url": "http://www.econotimes.com/Russia-Intensifies-Assault-on-Kostiantynivka-as-Ukraines-Donetsk-Defense-Faces-Mounting-Pressure-1745379",
+      "domain": "econotimes.com",
+      "seenAt": "2026-06-29T08:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/15213d727993f0a0.webp",
+      "original": "Russia Intensifies Assault on Kostiantynivka as Ukraine Donetsk Defense Faces Mounting Pressure",
+      "title": {
+        "uk": "Росія посилює наступ на Костянтинівку, тиск на оборону України в Донецькій області зростає",
+        "en": "Russia intensifies assault on Kostiantynivka as Ukraine's Donetsk defense faces mounting pressure",
+        "ru": "Россия усиливает наступление на Константиновку, давление на украинскую оборону в Донецкой области нарастает"
+      }
+    },
+    {
       "url": "https://finance.yahoo.com/small-business/articles/russias-small-businesses-pay-price-051347540.html",
       "domain": "finance.yahoo.com",
       "seenAt": "2026-06-30T05:45:00.000Z",
@@ -127,9 +127,9 @@
       "image": "/news/19066ad04009e61f.webp",
       "original": "Russia small businesses pay the price of spiralling Ukraine war",
       "title": {
-        "uk": "Малий бізнес Росії платить ціну за ескалацію війни в Україні",
+        "uk": "Малий бізнес Росії розплачується за загострення війни в Україні",
         "en": "Russia's small businesses pay the price of the spiralling Ukraine war",
-        "ru": "Малый бизнес России расплачивается за разрастающуюся войну в Украине"
+        "ru": "Малый бизнес России расплачивается за эскалацию войны на Украине"
       }
     }
   ]
