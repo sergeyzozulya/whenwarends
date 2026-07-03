@@ -1,18 +1,18 @@
 {
-  "asOf": "2026-07-02",
+  "asOf": "2026-07-03",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.wandtv.com/news/national/zelenskyy-condemns-horrific-attacks-as-russian-strikes-kill-12-and-wound-40-in-ukraine/article_04f5c625-3fd8-536d-a358-b1a93d6694f8.html",
-      "domain": "wandtv.com",
-      "seenAt": "2026-06-30T01:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/55c2242b3a90bebc.webp",
-      "original": "Zelenskyy condemns  horrific attack as Russian strikes kill 12 and wound 40 in Ukraine",
+      "url": "https://www.radiosvoboda.org/a/news-isw-putin-perehovory-ssha-samit-alyaska/33791788.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-06-30T05:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/195314450be9ae5d.webp",
+      "original": "ISW : Путін намагається вести переговори зі США щодо України , ніби ситуація на полі бою не змінилася з серпня",
       "title": {
-        "uk": "Зеленський засуджує «жахливий напад» — російські удари вбили 12 та поранили 40 людей в Україні",
-        "en": "Zelenskyy condemns 'horrific attack' as Russian strikes kill 12 and wound 40 in Ukraine",
-        "ru": "Зеленский осуждает «ужасную атаку» — российские удары убили 12 и ранили 40 человек на Украине"
+        "uk": "ISW: Путін намагається вести переговори зі США щодо України, ніби ситуація на полі бою не змінилася з серпня",
+        "en": "ISW: Putin is trying to negotiate with the US on Ukraine as if the battlefield situation has not changed since August",
+        "ru": "ISW: Путин пытается вести переговоры с США по Украине, как будто ситуация на поле боя не изменилась с августа"
       }
     },
     {
@@ -25,20 +25,20 @@
       "title": {
         "uk": "Росія прораховує наступ на північ України з Брянщини, заявив головком ЗСУ",
         "en": "Russia is calculating an offensive on northern Ukraine from the Bryansk region, says Ukraine's commander-in-chief",
-        "ru": "Россия просчитывает наступление на север Украины с Брянщины, заявил главком ВСУ"
+        "ru": "Россия просчитывает наступление на север Украины из Брянщины, заявил главнокомандующий ВСУ"
       }
     },
     {
-      "url": "https://www.radiosvoboda.org/a/news-isw-putin-perehovory-ssha-samit-alyaska/33791788.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-06-30T05:15:00.000Z",
+      "url": "https://zaxid.net/putin_vidkinuv_propozitsiyu_ukrayini_pro_vzayemnu_vidmovu_vid_dalekobiynih_udariv_n1640423",
+      "domain": "zaxid.net",
+      "seenAt": "2026-06-29T19:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/195314450be9ae5d.webp",
-      "original": "ISW : Путін намагається вести переговори зі США щодо України , ніби ситуація на полі бою не змінилася з серпня",
+      "image": "/news/2d41b547d32e018c.webp",
+      "original": "Путін відмовився від взаємного припинення ударів : це пропонувала Україна",
       "title": {
-        "uk": "ISW: Путін намагається вести переговори зі США щодо України, ніби ситуація на полі бою не змінилася з серпня",
-        "en": "ISW: Putin is trying to negotiate with the US over Ukraine as if the battlefield situation has not changed since August",
-        "ru": "ISW: Путин пытается вести переговоры с США по Украине, как будто ситуация на поле боя не изменилась с августа"
+        "uk": "Путін відмовився від взаємного припинення ударів: це пропонувала Україна",
+        "en": "Putin rejected the mutual halt of strikes — a proposal that had come from Ukraine",
+        "ru": "Путин отказался от взаимного прекращения ударов — это предлагала Украина"
       }
     },
     {
@@ -55,32 +55,6 @@
       }
     },
     {
-      "url": "https://zaxid.net/putin_vidkinuv_propozitsiyu_ukrayini_pro_vzayemnu_vidmovu_vid_dalekobiynih_udariv_n1640423",
-      "domain": "zaxid.net",
-      "seenAt": "2026-06-29T19:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/2d41b547d32e018c.webp",
-      "original": "Путін відмовився від взаємного припинення ударів : це пропонувала Україна",
-      "title": {
-        "uk": "Путін відмовився від взаємного припинення ударів — це пропонувала Україна",
-        "en": "Putin rejected the mutual halt to strikes proposed by Ukraine",
-        "ru": "Путин отказался от взаимного прекращения ударов, которое предлагала Украина"
-      }
-    },
-    {
-      "url": "https://nos.nl/nieuwsuur/artikel/2620512-rusland-roept-noodtoestand-uit-op-de-krim-doorbraak-in-oekraiens-offensief",
-      "domain": "nos.nl",
-      "seenAt": "2026-06-27T08:00:00.000Z",
-      "sourceCountry": "Netherlands",
-      "image": "/news/0d788b639a1aeaf8.webp",
-      "original": "Rusland roept noodtoestand uit op de Krim : doorbraak in Oekraïens offensief ?",
-      "title": {
-        "uk": "Росія оголошує надзвичайний стан у Криму: прорив в українському наступі?",
-        "en": "Russia declares state of emergency in Crimea: breakthrough in Ukrainian offensive?",
-        "ru": "Россия объявляет чрезвычайное положение в Крыму: прорыв в украинском наступлении?"
-      }
-    },
-    {
       "url": "https://www.cbsnews.com/news/russian-soldiers-killed-front-lines-ukraine-war-drones/",
       "domain": "cbsnews.com",
       "seenAt": "2026-06-29T22:30:00.000Z",
@@ -88,22 +62,21 @@
       "image": "/news/0da1c0fbf73f4c3b.webp",
       "original": "Some Russian soldiers last just minutes on front lines against Ukraine drones , military bloggers say",
       "title": {
-        "uk": "Деякі російські солдати тримаються на передовій лише кілька хвилин під ударами українських дронів — військові блогери",
+        "uk": "Деякі російські солдати протримуються лише кілька хвилин на передовій проти українських дронів, кажуть воєнні блогери",
         "en": "Some Russian soldiers last just minutes on front lines against Ukraine drones, military bloggers say",
-        "ru": "Некоторые российские солдаты держатся на передовой лишь несколько минут под ударами украинских дронов, говорят военные блогеры"
+        "ru": "Некоторые российские солдаты держатся на передовой лишь несколько минут под ударами дронов Украины, сообщают военные блогеры"
       }
     },
     {
-      "url": "https://timesofindia.indiatimes.com/world/europe/russia-might-launch-limited-war-against-nato-within-dutch-intel-sounds-alarm/articleshow/132073994.cms",
-      "domain": "timesofindia.indiatimes.com",
-      "seenAt": "2026-06-29T15:45:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/a731ea8ee8ee3dea.webp",
-      "original": "Russia might launch limited war against Nato within ... : Dutch intel sounds alarm",
+      "url": "https://knpr.org/npr/2026-06-27/inside-a-secretive-ukrainian-team-launching-deep-drone-strikes-at-russia",
+      "domain": "knpr.org",
+      "seenAt": "2026-06-27T11:15:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Inside a secretive Ukrainian team launching deep drone strikes at Russia",
       "title": {
-        "uk": "Росія може розпочати обмежену війну проти НАТО: нідерландська розвідка б'є на сполох",
-        "en": "Russia might launch limited war against NATO: Dutch intelligence sounds alarm",
-        "ru": "Россия может начать ограниченную войну против НАТО: нидерландская разведка бьёт тревогу"
+        "uk": "Зсередини секретної української команди, яка завдає глибоких ударів дронами по Росії",
+        "en": "Inside a secretive Ukrainian team launching deep drone strikes at Russia",
+        "ru": "Внутри секретной украинской команды, наносящей глубокие удары дронами по России"
       }
     },
     {
@@ -114,9 +87,22 @@
       "image": "/news/15213d727993f0a0.webp",
       "original": "Russia Intensifies Assault on Kostiantynivka as Ukraine Donetsk Defense Faces Mounting Pressure",
       "title": {
-        "uk": "Росія посилює наступ на Костянтинівку, тиск на оборону України в Донецькій області зростає",
-        "en": "Russia intensifies assault on Kostiantynivka as Ukraine's Donetsk defense faces mounting pressure",
-        "ru": "Россия усиливает наступление на Константиновку, давление на украинскую оборону в Донецкой области нарастает"
+        "uk": "Росія посилює штурм Костянтинівки, тоді як українська оборона на Донеччині зазнає зростаючого тиску",
+        "en": "Russia intensifies assault on Kostiantynivka as Ukraine's Donetsk defence faces mounting pressure",
+        "ru": "Россия усиливает штурм Константиновки на фоне нарастающего давления на украинскую оборону на Донетчине"
+      }
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/world/europe/russia-might-launch-limited-war-against-nato-within-dutch-intel-sounds-alarm/articleshow/132073994.cms",
+      "domain": "timesofindia.indiatimes.com",
+      "seenAt": "2026-06-29T15:45:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/a731ea8ee8ee3dea.webp",
+      "original": "Russia might launch limited war against Nato within ... : Dutch intel sounds alarm",
+      "title": {
+        "uk": "Нідерландська розвідка б'є на сполох: Росія може розпочати обмежену війну проти НАТО",
+        "en": "Russia might launch limited war against NATO: Dutch intelligence sounds alarm",
+        "ru": "Нидерландская разведка бьёт тревогу: Россия может начать ограниченную войну против НАТО"
       }
     },
     {
@@ -127,9 +113,22 @@
       "image": "/news/19066ad04009e61f.webp",
       "original": "Russia small businesses pay the price of spiralling Ukraine war",
       "title": {
-        "uk": "Малий бізнес Росії розплачується за загострення війни в Україні",
+        "uk": "Малий бізнес Росії платить ціну за ескалацію війни в Україні",
         "en": "Russia's small businesses pay the price of the spiralling Ukraine war",
-        "ru": "Малый бизнес России расплачивается за эскалацию войны на Украине"
+        "ru": "Малый бизнес России платит цену за эскалацию войны на Украине"
+      }
+    },
+    {
+      "url": "https://www.arkansasonline.com/news/2026/jun/30/russian-strikes-see-12-dead-in-ukraine/",
+      "domain": "arkansasonline.com",
+      "seenAt": "2026-06-30T11:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/9b8749f5aeaadc4f.webp",
+      "original": "Russian strikes see 12 dead in Ukraine | The Arkansas Democrat - Gazette",
+      "title": {
+        "uk": "Внаслідок російських ударів в Україні загинули 12 людей",
+        "en": "Russian strikes see 12 dead in Ukraine",
+        "ru": "В результате российских ударов на Украине погибли 12 человек"
       }
     }
   ]
