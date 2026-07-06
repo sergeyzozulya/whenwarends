@@ -1,18 +1,82 @@
 {
-  "asOf": "2026-07-03",
+  "asOf": "2026-07-06",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.radiosvoboda.org/a/news-isw-putin-perehovory-ssha-samit-alyaska/33791788.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-06-30T05:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/195314450be9ae5d.webp",
-      "original": "ISW : Путін намагається вести переговори зі США щодо України , ніби ситуація на полі бою не змінилася з серпня",
+      "url": "https://timesofindia.indiatimes.com/world/europe/russia-launches-fresh-missile-drone-attack-on-kyiv-ahead-of-nato-summit-in-turkey/articleshow/132205221.cms",
+      "domain": "timesofindia.indiatimes.com",
+      "seenAt": "2026-07-06T03:00:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/ed243d11627936dd.webp",
+      "original": "Russia launches fresh missile , drone attack on Kyiv ahead of Nato summit in Turkey",
       "title": {
-        "uk": "ISW: Путін намагається вести переговори зі США щодо України, ніби ситуація на полі бою не змінилася з серпня",
-        "en": "ISW: Putin is trying to negotiate with the US on Ukraine as if the battlefield situation has not changed since August",
-        "ru": "ISW: Путин пытается вести переговоры с США по Украине, как будто ситуация на поле боя не изменилась с августа"
+        "uk": "Росія завдала нових ракетних та дронових ударів по Києву напередодні саміту НАТО в Туреччині",
+        "en": "Russia launches fresh missile and drone attack on Kyiv ahead of NATO summit in Turkey",
+        "ru": "Россия нанесла новые ракетные и дроновые удары по Киеву накануне саммита НАТО в Турции"
+      }
+    },
+    {
+      "url": "http://www.econotimes.com/Trump-to-Meet-Zelenskiy-at-NATO-Summit-in-Turkey-to-Push-Ukraine-Peace-Efforts-1745953",
+      "domain": "econotimes.com",
+      "seenAt": "2026-07-06T00:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/9785e6da67d7e666.webp",
+      "original": "Trump to Meet Zelenskiy at NATO Summit in Turkey to Push Ukraine Peace Efforts",
+      "title": {
+        "uk": "Трамп зустрінеться із Зеленським на саміті НАТО в Туреччині для просування мирних зусиль щодо України",
+        "en": "Trump to meet Zelenskiy at NATO summit in Turkey to push Ukraine peace efforts",
+        "ru": "Трамп встретится с Зеленским на саммите НАТО в Турции для продвижения мирных усилий по Украине"
+      }
+    },
+    {
+      "url": "https://www.facenews.ua/news/2026/535004/",
+      "domain": "facenews.ua",
+      "seenAt": "2026-07-06T10:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/881fca76af61909b.webp",
+      "original": "Віцепрезидент США Венс : Оборона України ефективна , контрнаступу не варто починати",
+      "title": {
+        "uk": "Віцепрезидент США Венс: оборона України ефективна, контрнаступу не варто починати",
+        "en": "US Vice President Vance: Ukraine's defense is effective, a counteroffensive should not be launched",
+        "ru": "Вице-президент США Вэнс: оборона Украины эффективна, начинать контрнаступление не стоит"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/79619",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-05T12:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/5fcc539d8af298b6.webp",
+      "original": "Medvedev Outlines Plans to Expand Russian  Security Zone  into 3 Ukrainian Regions",
+      "title": {
+        "uk": "Медведєв окреслив плани розширення російської «зони безпеки» на 3 регіони України",
+        "en": "Medvedev outlines plans to expand Russian 'security zone' into 3 Ukrainian regions",
+        "ru": "Медведев обозначил планы расширения российской «зоны безопасности» на 3 региона Украины"
+      }
+    },
+    {
+      "url": "https://tribune.com.pk/story/2616529/zelenskiy-denies-russia-captures-key-city",
+      "domain": "tribune.com.pk",
+      "seenAt": "2026-07-05T02:45:00.000Z",
+      "sourceCountry": "Pakistan",
+      "image": "/news/b35a22e805abded7.webp",
+      "original": "Zelenskiy denies Russia captures key city",
+      "title": {
+        "uk": "Зеленський спростував захоплення Росією ключового міста",
+        "en": "Zelenskiy denies Russia captured key city",
+        "ru": "Зеленский опроверг захват Россией ключевого города"
+      }
+    },
+    {
+      "url": "https://fakty.ua/474662-nikuda-ne-spryatatsya-ukraina-prevracshaet-krym-v-gigantskuyu-myshelovku",
+      "domain": "fakty.ua",
+      "seenAt": "2026-07-06T09:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "« Ніде сховатися »: у NYT пояснили , як Україна перетворює Крим на пастку для рф",
+      "title": {
+        "uk": "«Ніде сховатися»: у NYT пояснили, як Україна перетворює Крим на пастку для Росії",
+        "en": "'Nowhere to hide': NYT explains how Ukraine is turning Crimea into a trap for Russia",
+        "ru": "«Негде спрятаться»: в NYT объяснили, как Украина превращает Крым в ловушку для России"
       }
     },
     {
@@ -24,111 +88,46 @@
       "original": "Росія прораховує наступ на північ України з Брянщини заявив головком ЗСУ",
       "title": {
         "uk": "Росія прораховує наступ на північ України з Брянщини, заявив головком ЗСУ",
-        "en": "Russia is calculating an offensive on northern Ukraine from the Bryansk region, says Ukraine's commander-in-chief",
-        "ru": "Россия просчитывает наступление на север Украины из Брянщины, заявил главнокомандующий ВСУ"
+        "en": "Russia is calculating an offensive on northern Ukraine from the Bryansk region, says Ukrainian commander-in-chief",
+        "ru": "Россия просчитывает наступление на север Украины из Брянской области, заявил главнокомандующий ВСУ"
       }
     },
     {
-      "url": "https://zaxid.net/putin_vidkinuv_propozitsiyu_ukrayini_pro_vzayemnu_vidmovu_vid_dalekobiynih_udariv_n1640423",
-      "domain": "zaxid.net",
-      "seenAt": "2026-06-29T19:00:00.000Z",
+      "url": "http://www.tennesseedaily.com/news/279165288/putin-says-war-will-continue-shrugs-off-fuel-shortages",
+      "domain": "tennesseedaily.com",
+      "seenAt": "2026-07-05T09:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/8df9a590aca01b7c.webp",
+      "original": "Putin not worried by hits on refineries , says war will continue",
+      "title": {
+        "uk": "Путін не переймається ударами по нафтопереробних заводах і заявляє, що війна триватиме",
+        "en": "Putin not worried by hits on refineries, says war will continue",
+        "ru": "Путин не обеспокоен ударами по нефтеперерабатывающим заводам и заявляет, что война продолжится"
+      }
+    },
+    {
+      "url": "https://glavcom.ua/country/incidents/putin-maje-nomer-zelenskoho-ministr-zakordonnikh-sprav-polshchi-rozpoviv-vid-choho-zalezhit-zavershennja-vijni-1129716.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-07-05T19:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/2d41b547d32e018c.webp",
-      "original": "Путін відмовився від взаємного припинення ударів : це пропонувала Україна",
+      "original": "« Путін має номер Зеленського »: міністр закордонних справ Польщі розповів , від чого залежить завершення війни",
       "title": {
-        "uk": "Путін відмовився від взаємного припинення ударів: це пропонувала Україна",
-        "en": "Putin rejected the mutual halt of strikes — a proposal that had come from Ukraine",
-        "ru": "Путин отказался от взаимного прекращения ударов — это предлагала Украина"
+        "uk": "«Путін має номер Зеленського»: міністр закордонних справ Польщі розповів, від чого залежить завершення війни",
+        "en": "'Putin has Zelensky's number': Poland's foreign minister says what the end of the war depends on",
+        "ru": "«У Путина есть номер Зеленского»: министр иностранных дел Польши рассказал, от чего зависит завершение войны"
       }
     },
     {
-      "url": "https://timesofindia.indiatimes.com/defence/international/zelenskyys-new-war-plan-ukraine-launches-40-day-deep-strike-campaign-inside-russia/articleshow/132030610.cms",
-      "domain": "timesofindia.indiatimes.com",
-      "seenAt": "2026-06-27T08:15:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/4ccfc8bddd539164.webp",
-      "original": "Zelenskyy new war plan : Ukraine launches 40 - day deep - strike campaign inside Russia",
+      "url": "https://www.unian.ua/world/prem-yer-niderlandiv-zaklikav-posiliti-tisk-na-putina-shchob-rosiya-pripinila-viynu-v-ukrajini-detali-13431513.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-07-05T07:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/4136d647a711eb58.webp",
+      "original": "Прем  єр Нідерландів закликав посилити тиск на Путіна , щоб Росія припинила війну в Україні",
       "title": {
-        "uk": "Новий воєнний план Зеленського: Україна розпочинає 40-денну кампанію глибоких ударів по Росії",
-        "en": "Zelenskyy's new war plan: Ukraine launches 40-day deep-strike campaign inside Russia",
-        "ru": "Новый военный план Зеленского: Украина запускает 40-дневную кампанию глубоких ударов по России"
-      }
-    },
-    {
-      "url": "https://www.cbsnews.com/news/russian-soldiers-killed-front-lines-ukraine-war-drones/",
-      "domain": "cbsnews.com",
-      "seenAt": "2026-06-29T22:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/0da1c0fbf73f4c3b.webp",
-      "original": "Some Russian soldiers last just minutes on front lines against Ukraine drones , military bloggers say",
-      "title": {
-        "uk": "Деякі російські солдати протримуються лише кілька хвилин на передовій проти українських дронів, кажуть воєнні блогери",
-        "en": "Some Russian soldiers last just minutes on front lines against Ukraine drones, military bloggers say",
-        "ru": "Некоторые российские солдаты держатся на передовой лишь несколько минут под ударами дронов Украины, сообщают военные блогеры"
-      }
-    },
-    {
-      "url": "https://knpr.org/npr/2026-06-27/inside-a-secretive-ukrainian-team-launching-deep-drone-strikes-at-russia",
-      "domain": "knpr.org",
-      "seenAt": "2026-06-27T11:15:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Inside a secretive Ukrainian team launching deep drone strikes at Russia",
-      "title": {
-        "uk": "Зсередини секретної української команди, яка завдає глибоких ударів дронами по Росії",
-        "en": "Inside a secretive Ukrainian team launching deep drone strikes at Russia",
-        "ru": "Внутри секретной украинской команды, наносящей глубокие удары дронами по России"
-      }
-    },
-    {
-      "url": "http://www.econotimes.com/Russia-Intensifies-Assault-on-Kostiantynivka-as-Ukraines-Donetsk-Defense-Faces-Mounting-Pressure-1745379",
-      "domain": "econotimes.com",
-      "seenAt": "2026-06-29T08:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/15213d727993f0a0.webp",
-      "original": "Russia Intensifies Assault on Kostiantynivka as Ukraine Donetsk Defense Faces Mounting Pressure",
-      "title": {
-        "uk": "Росія посилює штурм Костянтинівки, тоді як українська оборона на Донеччині зазнає зростаючого тиску",
-        "en": "Russia intensifies assault on Kostiantynivka as Ukraine's Donetsk defence faces mounting pressure",
-        "ru": "Россия усиливает штурм Константиновки на фоне нарастающего давления на украинскую оборону на Донетчине"
-      }
-    },
-    {
-      "url": "https://timesofindia.indiatimes.com/world/europe/russia-might-launch-limited-war-against-nato-within-dutch-intel-sounds-alarm/articleshow/132073994.cms",
-      "domain": "timesofindia.indiatimes.com",
-      "seenAt": "2026-06-29T15:45:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/a731ea8ee8ee3dea.webp",
-      "original": "Russia might launch limited war against Nato within ... : Dutch intel sounds alarm",
-      "title": {
-        "uk": "Нідерландська розвідка б'є на сполох: Росія може розпочати обмежену війну проти НАТО",
-        "en": "Russia might launch limited war against NATO: Dutch intelligence sounds alarm",
-        "ru": "Нидерландская разведка бьёт тревогу: Россия может начать ограниченную войну против НАТО"
-      }
-    },
-    {
-      "url": "https://finance.yahoo.com/small-business/articles/russias-small-businesses-pay-price-051347540.html",
-      "domain": "finance.yahoo.com",
-      "seenAt": "2026-06-30T05:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/19066ad04009e61f.webp",
-      "original": "Russia small businesses pay the price of spiralling Ukraine war",
-      "title": {
-        "uk": "Малий бізнес Росії платить ціну за ескалацію війни в Україні",
-        "en": "Russia's small businesses pay the price of the spiralling Ukraine war",
-        "ru": "Малый бизнес России платит цену за эскалацию войны на Украине"
-      }
-    },
-    {
-      "url": "https://www.arkansasonline.com/news/2026/jun/30/russian-strikes-see-12-dead-in-ukraine/",
-      "domain": "arkansasonline.com",
-      "seenAt": "2026-06-30T11:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/9b8749f5aeaadc4f.webp",
-      "original": "Russian strikes see 12 dead in Ukraine | The Arkansas Democrat - Gazette",
-      "title": {
-        "uk": "Внаслідок російських ударів в Україні загинули 12 людей",
-        "en": "Russian strikes see 12 dead in Ukraine",
-        "ru": "В результате российских ударов на Украине погибли 12 человек"
+        "uk": "Прем'єр Нідерландів закликав посилити тиск на Путіна, щоб Росія припинила війну в Україні",
+        "en": "Dutch prime minister calls for increased pressure on Putin to make Russia end the war in Ukraine",
+        "ru": "Премьер Нидерландов призвал усилить давление на Путина, чтобы Россия прекратила войну в Украине"
       }
     }
   ]
