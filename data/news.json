@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-07-07",
+  "asOf": "2026-07-08",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.newsit.gr/kosmos/oukrania-sfyrokopima-me-430-drones-enantion-tis-mosxas-kata-ti-diarkeia-tis-nyxtas/4722162/",
-      "domain": "newsit.gr",
-      "seenAt": "2026-07-07T04:45:00.000Z",
-      "sourceCountry": "Greece",
-      "image": "/news/0cad1f43e312c888.webp",
-      "original": "Ουκρανία : Σφυροκόπημα με 430 drones εναντίον της Μόσχας κατά τη διάρκεια της νύχτας",
+      "url": "https://nypost.com/2026/07/07/world-news/ukraine-pushes-new-approach-to-end-russia-war-ahead-of-trump-zelensky-meeting/",
+      "domain": "nypost.com",
+      "seenAt": "2026-07-07T23:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/de85a627491f3060.webp",
+      "original": "Ukraine pushes new approach to end Russia war ahead of Trump - Zelensky meeting",
       "title": {
-        "uk": "Україна: нічне бомбардування Москви 430 дронами",
-        "en": "Ukraine: Bombardment of Moscow with 430 drones during the night",
-        "ru": "Украина: ночная бомбардировка Москвы 430 дронами"
+        "uk": "Україна просуває новий підхід до завершення війни з Росією напередодні зустрічі Трампа і Зеленського",
+        "en": "Ukraine pushes new approach to end Russia war ahead of Trump-Zelensky meeting",
+        "ru": "Украина продвигает новый подход к завершению войны с Россией накануне встречи Трампа и Зеленского"
       }
     },
     {
-      "url": "https://morningstaronline.co.uk/article/russian-strikes-kiev-kill-11-zelensky-decries-lack-interceptors-burnt-iran-war",
-      "domain": "morningstaronline.co.uk",
-      "seenAt": "2026-07-06T20:45:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/4b71edcd015b10c7.webp",
-      "original": "Russian strikes on Kiev kill 11 as Zelensky decries lack of interceptors burnt up in Iran war",
+      "url": "https://timesofindia.indiatimes.com/world/europe/russia-launches-fresh-missile-drone-attack-on-kyiv-ahead-of-nato-summit-in-turkey/articleshow/132205221.cms",
+      "domain": "timesofindia.indiatimes.com",
+      "seenAt": "2026-07-06T03:00:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/ed243d11627936dd.webp",
+      "original": "Russia launches fresh missile , drone attack on Kyiv ahead of Nato summit in Turkey",
       "title": {
-        "uk": "Російські удари по Києву вбили 11 людей — Зеленський нарікає на нестачу перехоплювачів, використаних у війні з Іраном",
-        "en": "Russian strikes on Kyiv kill 11 as Zelensky decries lack of interceptors used up in Iran war",
-        "ru": "Российские удары по Киеву убили 11 человек — Зеленский сетует на нехватку перехватчиков, израсходованных в войне с Ираном"
+        "uk": "Росія завдала нового ракетного та дронового удару по Києву напередодні саміту НАТО в Туреччині",
+        "en": "Russia launches fresh missile and drone attack on Kyiv ahead of NATO summit in Turkey",
+        "ru": "Россия нанесла новый ракетный и дроновый удар по Киеву накануне саммита НАТО в Турции"
       }
     },
     {
@@ -37,8 +37,71 @@
       "original": "Зеленский заявил , что исход войны определит битва за украинское небо",
       "title": {
         "uk": "Зеленський заявив, що результат війни визначить битва за українське небо",
-        "en": "Zelensky said the outcome of the war will be determined by the battle for Ukrainian skies",
+        "en": "Zelensky says the outcome of the war will be decided by the battle for Ukrainian skies",
         "ru": "Зеленский заявил, что исход войны определит битва за украинское небо"
+      }
+    },
+    {
+      "url": "https://biz.liga.net/ua/energy/news/reuters-naybilshyy-u-rosii-vyrobnyk-benzynu-zupynyv-robotu-pislia-ataky-ukrainskykh-droniv",
+      "domain": "biz.liga.net",
+      "seenAt": "2026-07-07T19:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Омський НПЗ Газпром нєфті зупився після атаки дронів | Новини України",
+      "title": {
+        "uk": "Омський НПЗ «Газпром нафти» зупинився після атаки дронів",
+        "en": "Gazprom Neft's Omsk refinery halted after drone attack",
+        "ru": "Омский НПЗ «Газпром нефти» остановился после атаки дронов"
+      }
+    },
+    {
+      "url": "https://www.volynnews.com/news/all/rosiyska-armiia-stala-nebezpechnishoiu-nizh-u-2022-rotsi-Forbes-nazvav-h/",
+      "domain": "volynnews.com",
+      "seenAt": "2026-07-08T07:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/77aa0b8a79b6cc7f.webp",
+      "original": "Російська армія стала небезпечнішою , ніж у 2022 році . Forbes назвав головну причину",
+      "title": {
+        "uk": "Російська армія стала небезпечнішою, ніж у 2022 році — Forbes назвав головну причину",
+        "en": "Russian army has become more dangerous than in 2022 — Forbes names the main reason",
+        "ru": "Российская армия стала опаснее, чем в 2022 году — Forbes назвал главную причину"
+      }
+    },
+    {
+      "url": "https://adevarul.ro/stiri-externe/rusia/kremlinul-nu-ia-in-calcul-negocieri-reale-cu-2541363.html",
+      "domain": "adevarul.ro",
+      "seenAt": "2026-07-07T20:45:00.000Z",
+      "sourceCountry": "Romania",
+      "image": "/news/a73a3d08bd9c25fa.webp",
+      "original": "Kremlinul nu ia în calcul negocieri reale cu Ucraina înainte de 2027 . Putin mizează pe presiunea SUA asupra Kievului",
+      "title": {
+        "uk": "Кремль не розглядає реальних переговорів з Україною до 2027 року — Путін робить ставку на тиск США на Київ",
+        "en": "Kremlin not considering real negotiations with Ukraine before 2027 — Putin counts on US pressure on Kyiv",
+        "ru": "Кремль не рассматривает реальных переговоров с Украиной до 2027 года — Путин делает ставку на давление США на Киев"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/79619",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-05T12:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/5fcc539d8af298b6.webp",
+      "original": "Medvedev Outlines Plans to Expand Russian  Security Zone  into 3 Ukrainian Regions",
+      "title": {
+        "uk": "Медведєв окреслив плани розширення російської «зони безпеки» на 3 регіони України",
+        "en": "Medvedev outlines plans to expand Russian \"security zone\" into 3 Ukrainian regions",
+        "ru": "Медведев обозначил планы расширения российской «зоны безопасности» на 3 региона Украины"
+      }
+    },
+    {
+      "url": "https://fakty.ua/474811-norvegiya-prizvala-kitaj-pomoch-privlech-rossiyu-k-mirnym-peregovoram-s-ukrainoj",
+      "domain": "fakty.ua",
+      "seenAt": "2026-07-08T09:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "У Європі попросили Китай вплинути на Росію для припинення війни в Україні",
+      "title": {
+        "uk": "У Європі попросили Китай вплинути на Росію для припинення війни в Україні",
+        "en": "Europe asks China to pressure Russia to end the war in Ukraine",
+        "ru": "В Европе попросили Китай повлиять на Россию для прекращения войны в Украине"
       }
     },
     {
@@ -50,86 +113,21 @@
       "original": "Ukraine Special Forces Strike Russian Oil Tanker , Kerch Oil Terminal",
       "title": {
         "uk": "Спецназ України завдав удару по російському нафтовому танкеру та нафтовому терміналу в Керчі",
-        "en": "Ukraine Special Forces strike Russian oil tanker, Kerch oil terminal",
+        "en": "Ukraine special forces strike Russian oil tanker, Kerch oil terminal",
         "ru": "Спецназ Украины нанёс удар по российскому нефтяному танкеру и нефтяному терминалу в Керчи"
       }
     },
     {
-      "url": "https://www.cna.com.tw:443/news/aopl/202607060032.aspx",
-      "domain": "cna.com.tw",
-      "seenAt": "2026-07-06T04:15:00.000Z",
-      "sourceCountry": "Taiwan",
-      "image": "/news/26a713ab9836a98a.webp",
-      "original": "烏克蘭猛攻俄羅斯能源設施 釀數十年最嚴重燃料危機 | 國際",
-      "title": {
-        "uk": "Інтенсивні удари України по енергетичній інфраструктурі Росії спричинили найсерйознішу паливну кризу за десятиліття",
-        "en": "Ukraine's intense strikes on Russia's energy facilities cause worst fuel crisis in decades",
-        "ru": "Интенсивные удары Украины по энергетической инфраструктуре России вызвали тяжелейший топливный кризис за десятилетия"
-      }
-    },
-    {
-      "url": "https://www.unian.ua/world/zakinchennya-viyni-v-ukrajini-u-norvegiji-nazvali-krajinu-yaka-mozhe-vplinuti-na-rosiyu-13433214.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-07-07T05:00:00.000Z",
+      "url": "https://www.rbc.ua/rus/news/govoriti-perelom-viyni-rosieyu-shche-zarano-1783440585.html",
+      "domain": "rbc.ua",
+      "seenAt": "2026-07-07T17:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/a01fdcbd674bcbc9.webp",
-      "original": "Закінчення війни в Україні - у Норвегії назвали країну , яка може вплинути на Росію",
+      "image": "/news/6c1af252ed9dc10b.webp",
+      "original": "Сирський заявив , що переломний момент у війні ще не настав",
       "title": {
-        "uk": "Закінчення війни в Україні: у Норвегії назвали країну, яка може вплинути на Росію",
-        "en": "End of the war in Ukraine: Norway names the country that can influence Russia",
-        "ru": "Завершение войны в Украине: в Норвегии назвали страну, которая может повлиять на Россию"
-      }
-    },
-    {
-      "url": "http://www.econotimes.com/Trump-to-Meet-Zelenskiy-at-NATO-Summit-in-Turkey-to-Push-Ukraine-Peace-Efforts-1745953",
-      "domain": "econotimes.com",
-      "seenAt": "2026-07-06T00:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/9785e6da67d7e666.webp",
-      "original": "Trump to Meet Zelenskiy at NATO Summit in Turkey to Push Ukraine Peace Efforts",
-      "title": {
-        "uk": "Трамп зустрінеться із Зеленським на саміті НАТО в Туреччині для просування мирних зусиль щодо України",
-        "en": "Trump to meet Zelensky at NATO summit in Turkey to push Ukraine peace efforts",
-        "ru": "Трамп встретится с Зеленским на саммите НАТО в Турции для продвижения мирных усилий по Украине"
-      }
-    },
-    {
-      "url": "https://lb.ua/world/2026/07/05/749750_vens_uspihi_ukrayini_fronti.html",
-      "domain": "lb.ua",
-      "seenAt": "2026-07-05T16:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/92fbd5530c674af8.webp",
-      "original": "Венс : оборонна стратегія України виснажує сили Росії",
-      "title": {
-        "uk": "Венс: оборонна стратегія України виснажує сили Росії",
-        "en": "Vance: Ukraine's defense strategy is exhausting Russia's forces",
-        "ru": "Вэнс: оборонная стратегия Украины истощает силы России"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/79619",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-05T12:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/5fcc539d8af298b6.webp",
-      "original": "Medvedev Outlines Plans to Expand Russian  Security Zone  into 3 Ukrainian Regions",
-      "title": {
-        "uk": "Медведєв окреслив плани розширення російської «зони безпеки» на 3 українські регіони",
-        "en": "Medvedev outlines plans to expand Russian 'security zone' into 3 Ukrainian regions",
-        "ru": "Медведев обозначил планы расширения российской «зоны безопасности» на 3 украинских региона"
-      }
-    },
-    {
-      "url": "https://tribune.com.pk/story/2616529/zelenskiy-denies-russia-captures-key-city",
-      "domain": "tribune.com.pk",
-      "seenAt": "2026-07-05T02:45:00.000Z",
-      "sourceCountry": "Pakistan",
-      "image": "/news/b35a22e805abded7.webp",
-      "original": "Zelenskiy denies Russia captures key city",
-      "title": {
-        "uk": "Зеленський заперечує захоплення Росією ключового міста",
-        "en": "Zelensky denies Russia captured key city",
-        "ru": "Зеленский опроверг захват Россией ключевого города"
+        "uk": "Сирський заявив, що переломний момент у війні ще не настав",
+        "en": "Syrsky says the turning point in the war has not yet arrived",
+        "ru": "Сырский заявил, что переломный момент в войне ещё не наступил"
       }
     }
   ]
