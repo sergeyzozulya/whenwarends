@@ -1,82 +1,121 @@
 {
-  "asOf": "2026-07-08",
+  "asOf": "2026-07-11",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://nypost.com/2026/07/07/world-news/ukraine-pushes-new-approach-to-end-russia-war-ahead-of-trump-zelensky-meeting/",
-      "domain": "nypost.com",
-      "seenAt": "2026-07-07T23:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/de85a627491f3060.webp",
-      "original": "Ukraine pushes new approach to end Russia war ahead of Trump - Zelensky meeting",
+      "url": "https://www.straitstimes.com/world/europe/putin-likely-to-escalate-ukraine-war-despite-trump-peace-push-sources-say",
+      "domain": "straitstimes.com",
+      "seenAt": "2026-07-09T10:15:00.000Z",
+      "sourceCountry": "Singapore",
+      "image": "/news/bfa88bf4ccf9ef25.webp",
+      "original": "Putin likely to escalate Ukraine war , despite Trump peace push , sources say",
       "title": {
-        "uk": "Україна просуває новий підхід до завершення війни з Росією напередодні зустрічі Трампа і Зеленського",
-        "en": "Ukraine pushes new approach to end Russia war ahead of Trump-Zelensky meeting",
-        "ru": "Украина продвигает новый подход к завершению войны с Россией накануне встречи Трампа и Зеленского"
+        "uk": "Путін, ймовірно, ескалує війну в Україні, попри мирні зусилля Трампа — джерела",
+        "en": "Putin likely to escalate Ukraine war, despite Trump peace push, sources say",
+        "ru": "Путин, вероятно, пойдёт на эскалацию войны в Украине, несмотря на мирные усилия Трампа — источники"
       }
     },
     {
-      "url": "https://timesofindia.indiatimes.com/world/europe/russia-launches-fresh-missile-drone-attack-on-kyiv-ahead-of-nato-summit-in-turkey/articleshow/132205221.cms",
-      "domain": "timesofindia.indiatimes.com",
-      "seenAt": "2026-07-06T03:00:00.000Z",
+      "url": "https://www.livemint.com/global/russia-ukraine-war-putin-zelensky-nato-11783752589780.html",
+      "domain": "livemint.com",
+      "seenAt": "2026-07-11T09:15:00.000Z",
       "sourceCountry": "India",
-      "image": "/news/ed243d11627936dd.webp",
-      "original": "Russia launches fresh missile , drone attack on Kyiv ahead of Nato summit in Turkey",
+      "image": "/news/8fe3574f4b7fb30f.webp",
+      "original": "The war in Ukraine is shifting against Putin but he isnt giving in",
       "title": {
-        "uk": "Росія завдала нового ракетного та дронового удару по Києву напередодні саміту НАТО в Туреччині",
-        "en": "Russia launches fresh missile and drone attack on Kyiv ahead of NATO summit in Turkey",
-        "ru": "Россия нанесла новый ракетный и дроновый удар по Киеву накануне саммита НАТО в Турции"
+        "uk": "Війна в Україні складається не на користь Путіна, але він не поступається",
+        "en": "The war in Ukraine is shifting against Putin but he isn't giving in",
+        "ru": "Война в Украине складывается не в пользу Путина, но он не сдаётся"
       }
     },
     {
-      "url": "https://gazeta.ua/ru/articles/politics/_zelenskij-zayavil-chto-ishod-vojny-opredelit-bitva-za-ukrainskoe-nebo/1254045",
-      "domain": "gazeta.ua",
-      "seenAt": "2026-07-06T21:15:00.000Z",
+      "url": "https://www.euronews.com/my-europe/2026/07/10/ukrainian-drone-strikes-hit-southern-russian-refineries-and-azov-port-officials-say",
+      "domain": "euronews.com",
+      "seenAt": "2026-07-10T19:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/7109ccb5d92efc6b.webp",
+      "original": "Ukrainian drone strikes hit southern Russian refineries and Azov port , officials say",
+      "title": {
+        "uk": "Українські удари дронів вдарили по нафтопереробних заводах на півдні Росії та порту в Азовському морі — чиновники",
+        "en": "Ukrainian drone strikes hit southern Russian refineries and Azov port, officials say",
+        "ru": "Украинские удары дронами поразили нефтеперерабатывающие заводы на юге России и порт в Азовском море — чиновники"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/79957",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-10T06:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/facc7a1329bd783a.webp",
-      "original": "Зеленский заявил , что исход войны определит битва за украинское небо",
+      "image": "/news/04cdcbd446b87b3c.webp",
+      "original": "Baltic States Tell UN Russia Must Accept Immediate Ceasefire",
       "title": {
-        "uk": "Зеленський заявив, що результат війни визначить битва за українське небо",
-        "en": "Zelensky says the outcome of the war will be decided by the battle for Ukrainian skies",
-        "ru": "Зеленский заявил, что исход войны определит битва за украинское небо"
+        "uk": "Країни Балтії заявили в ООН, що Росія має прийняти негайне припинення вогню",
+        "en": "Baltic states tell UN Russia must accept immediate ceasefire",
+        "ru": "Страны Балтии заявили в ООН, что Россия должна принять немедленное прекращение огня"
       }
     },
     {
-      "url": "https://biz.liga.net/ua/energy/news/reuters-naybilshyy-u-rosii-vyrobnyk-benzynu-zupynyv-robotu-pislia-ataky-ukrainskykh-droniv",
-      "domain": "biz.liga.net",
-      "seenAt": "2026-07-07T19:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Омський НПЗ Газпром нєфті зупився після атаки дронів | Новини України",
-      "title": {
-        "uk": "Омський НПЗ «Газпром нафти» зупинився після атаки дронів",
-        "en": "Gazprom Neft's Omsk refinery halted after drone attack",
-        "ru": "Омский НПЗ «Газпром нефти» остановился после атаки дронов"
-      }
-    },
-    {
-      "url": "https://www.volynnews.com/news/all/rosiyska-armiia-stala-nebezpechnishoiu-nizh-u-2022-rotsi-Forbes-nazvav-h/",
-      "domain": "volynnews.com",
-      "seenAt": "2026-07-08T07:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/77aa0b8a79b6cc7f.webp",
-      "original": "Російська армія стала небезпечнішою , ніж у 2022 році . Forbes назвав головну причину",
-      "title": {
-        "uk": "Російська армія стала небезпечнішою, ніж у 2022 році — Forbes назвав головну причину",
-        "en": "Russian army has become more dangerous than in 2022 — Forbes names the main reason",
-        "ru": "Российская армия стала опаснее, чем в 2022 году — Forbes назвал главную причину"
-      }
-    },
-    {
-      "url": "https://adevarul.ro/stiri-externe/rusia/kremlinul-nu-ia-in-calcul-negocieri-reale-cu-2541363.html",
-      "domain": "adevarul.ro",
-      "seenAt": "2026-07-07T20:45:00.000Z",
+      "url": "https://www.digi24.ro/stiri/externe/putin-este-pregatit-sa-escaladeze-razboiul-liderul-rus-nu-vrea-negocieri-cu-ucraina-in-ciuda-presiunilor-lui-trump-reuters-3855021",
+      "domain": "digi24.ro",
+      "seenAt": "2026-07-09T14:45:00.000Z",
       "sourceCountry": "Romania",
-      "image": "/news/a73a3d08bd9c25fa.webp",
-      "original": "Kremlinul nu ia în calcul negocieri reale cu Ucraina înainte de 2027 . Putin mizează pe presiunea SUA asupra Kievului",
+      "image": "/news/3d2b9b412b0d4682.webp",
+      "original": "Putin ia în calcul posibile lovituri asupra bazelor NATO din România , dezvăluie un oficial rus ( Reuters )",
       "title": {
-        "uk": "Кремль не розглядає реальних переговорів з Україною до 2027 року — Путін робить ставку на тиск США на Київ",
-        "en": "Kremlin not considering real negotiations with Ukraine before 2027 — Putin counts on US pressure on Kyiv",
-        "ru": "Кремль не рассматривает реальных переговоров с Украиной до 2027 года — Путин делает ставку на давление США на Киев"
+        "uk": "Путін розглядає можливі удари по базах НАТО в Румунії — розповідає російський чиновник (Reuters)",
+        "en": "Putin considers possible strikes on NATO bases in Romania, Russian official reveals (Reuters)",
+        "ru": "Путин рассматривает возможные удары по базам НАТО в Румынии — российский чиновник (Reuters)"
+      }
+    },
+    {
+      "url": "https://24tv.ua/ru/nastuplenie-rossii-fronte-syrskij-rasskazal-naskolko-snizilis_n3103228",
+      "domain": "24tv.ua",
+      "seenAt": "2026-07-10T08:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/2e447149c6924c44.webp",
+      "original": "Наступление России на фронте - Сырский рассказал , насколько снизились темпы продвижения противника",
+      "title": {
+        "uk": "Наступ Росії на фронті: Сирський розповів, наскільки знизились темпи просування противника",
+        "en": "Russian offensive on the front: Syrsky says the enemy's rate of advance has dropped significantly",
+        "ru": "Наступление России на фронте: Сырский рассказал, насколько снизились темпы продвижения противника"
+      }
+    },
+    {
+      "url": "https://www.parismatch.com/actu/international/lukraine-dispose-de-deux-mois-avant-une-escalade-de-poutine-la-mise-en-garde-du-president-tcheque-272410",
+      "domain": "parismatch.com",
+      "seenAt": "2026-07-09T18:45:00.000Z",
+      "sourceCountry": "France",
+      "image": "/news/805a2b028a383ca1.webp",
+      "original": "LUkraine dispose de « deux mois » avant une escalade de Poutine : la mise en garde du président tchèque",
+      "title": {
+        "uk": "В України є «два місяці» до ескалації Путіна: попередження президента Чехії",
+        "en": "Ukraine has 'two months' before a Putin escalation: Czech president's warning",
+        "ru": "У Украины есть «два месяца» до эскалации Путина: предупреждение президента Чехии"
+      }
+    },
+    {
+      "url": "https://news.bigmir.net/ua/ukraine/10389440-lavrov-ozvuchiv-pozitsiyu-kremlya-schodo-pripinennya-vognyu-v-ukrayini",
+      "domain": "news.bigmir.net",
+      "seenAt": "2026-07-10T08:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/432b23c316810f7c.webp",
+      "original": "Лавров озвучив позицію Кремля щодо припинення вогню в Україні",
+      "title": {
+        "uk": "Лавров озвучив позицію Кремля щодо припинення вогню в Україні",
+        "en": "Lavrov announces the Kremlin's position on a ceasefire in Ukraine",
+        "ru": "Лавров озвучил позицию Кремля по прекращению огня на Украине"
+      }
+    },
+    {
+      "url": "https://www.dnoticias.pt/2026/7/11/498644-zelensky-decreta-criacao-de-forca-militar-de-reacao-rapida/",
+      "domain": "dnoticias.pt",
+      "seenAt": "2026-07-11T01:45:00.000Z",
+      "sourceCountry": "Portugal",
+      "original": "Zelensky decreta criao de força militar de reao rápida",
+      "title": {
+        "uk": "Зеленський підписав указ про створення сил швидкого реагування",
+        "en": "Zelensky decrees creation of a rapid reaction military force",
+        "ru": "Зеленский издал указ о создании сил быстрого реагирования"
       }
     },
     {
@@ -87,47 +126,9 @@
       "image": "/news/5fcc539d8af298b6.webp",
       "original": "Medvedev Outlines Plans to Expand Russian  Security Zone  into 3 Ukrainian Regions",
       "title": {
-        "uk": "Медведєв окреслив плани розширення російської «зони безпеки» на 3 регіони України",
-        "en": "Medvedev outlines plans to expand Russian \"security zone\" into 3 Ukrainian regions",
-        "ru": "Медведев обозначил планы расширения российской «зоны безопасности» на 3 региона Украины"
-      }
-    },
-    {
-      "url": "https://fakty.ua/474811-norvegiya-prizvala-kitaj-pomoch-privlech-rossiyu-k-mirnym-peregovoram-s-ukrainoj",
-      "domain": "fakty.ua",
-      "seenAt": "2026-07-08T09:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "У Європі попросили Китай вплинути на Росію для припинення війни в Україні",
-      "title": {
-        "uk": "У Європі попросили Китай вплинути на Росію для припинення війни в Україні",
-        "en": "Europe asks China to pressure Russia to end the war in Ukraine",
-        "ru": "В Европе попросили Китай повлиять на Россию для прекращения войны в Украине"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/79697",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-06T16:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/47a74f7c1cd6be5c.webp",
-      "original": "Ukraine Special Forces Strike Russian Oil Tanker , Kerch Oil Terminal",
-      "title": {
-        "uk": "Спецназ України завдав удару по російському нафтовому танкеру та нафтовому терміналу в Керчі",
-        "en": "Ukraine special forces strike Russian oil tanker, Kerch oil terminal",
-        "ru": "Спецназ Украины нанёс удар по российскому нефтяному танкеру и нефтяному терминалу в Керчи"
-      }
-    },
-    {
-      "url": "https://www.rbc.ua/rus/news/govoriti-perelom-viyni-rosieyu-shche-zarano-1783440585.html",
-      "domain": "rbc.ua",
-      "seenAt": "2026-07-07T17:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/6c1af252ed9dc10b.webp",
-      "original": "Сирський заявив , що переломний момент у війні ще не настав",
-      "title": {
-        "uk": "Сирський заявив, що переломний момент у війні ще не настав",
-        "en": "Syrsky says the turning point in the war has not yet arrived",
-        "ru": "Сырский заявил, что переломный момент в войне ещё не наступил"
+        "uk": "Медведєв виклав плани щодо розширення російської «зони безпеки» на 3 регіони України",
+        "en": "Medvedev outlines plans to expand Russian 'security zone' into 3 Ukrainian regions",
+        "ru": "Медведев обозначил планы по расширению российской «зоны безопасности» на 3 региона Украины"
       }
     }
   ]
