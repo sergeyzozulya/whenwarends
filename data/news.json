@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-11",
+  "asOf": "2026-07-15",
   "source": "gdelt",
   "articles": [
     {
@@ -10,22 +10,110 @@
       "image": "/news/bfa88bf4ccf9ef25.webp",
       "original": "Putin likely to escalate Ukraine war , despite Trump peace push , sources say",
       "title": {
-        "uk": "Путін, ймовірно, ескалує війну в Україні, попри мирні зусилля Трампа — джерела",
+        "uk": "Путін, ймовірно, ескалує війну в Україні попри мирні зусилля Трампа, повідомляють джерела",
         "en": "Putin likely to escalate Ukraine war, despite Trump peace push, sources say",
-        "ru": "Путин, вероятно, пойдёт на эскалацию войны в Украине, несмотря на мирные усилия Трампа — источники"
+        "ru": "Путин, вероятно, эскалирует войну на Украине вопреки мирным усилиям Трампа, сообщают источники"
       }
     },
     {
-      "url": "https://www.livemint.com/global/russia-ukraine-war-putin-zelensky-nato-11783752589780.html",
-      "domain": "livemint.com",
-      "seenAt": "2026-07-11T09:15:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/8fe3574f4b7fb30f.webp",
-      "original": "The war in Ukraine is shifting against Putin but he isnt giving in",
+      "url": "https://gordonua.com/ukr/section-war/news-zakinchennya-viyny-chy-prypynennya-vohnyu-zelenskyy-vidpoviv-choho-khoche-vin-a-choho-putin-14-07-2026.html",
+      "domain": "gordonua.com",
+      "seenAt": "2026-07-14T13:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Закінчення війни чи припинення вогню . Зеленський відповів , чого хоче він , а чого – Путін",
       "title": {
-        "uk": "Війна в Україні складається не на користь Путіна, але він не поступається",
-        "en": "The war in Ukraine is shifting against Putin but he isn't giving in",
-        "ru": "Война в Украине складывается не в пользу Путина, но он не сдаётся"
+        "uk": "Закінчення війни чи припинення вогню: Зеленський відповів, чого хоче він, а чого — Путін",
+        "en": "End of war or ceasefire: Zelensky answered what he wants and what Putin wants",
+        "ru": "Конец войны или прекращение огня: Зеленский ответил, чего хочет он, а чего — Путин"
+      }
+    },
+    {
+      "url": "https://english.aawsat.com/world/5295774-peace-ukraine-unlikely-be-reached-soon-polish-pm-says",
+      "domain": "english.aawsat.com",
+      "seenAt": "2026-07-14T09:45:00.000Z",
+      "sourceCountry": "Syria",
+      "image": "/news/fd489da6ca59e494.webp",
+      "original": "Peace in Ukraine Unlikely to Be Reached Soon , Polish PM Says",
+      "title": {
+        "uk": "Мир в Україні навряд чи буде досягнутий найближчим часом — прем'єр-міністр Польщі",
+        "en": "Peace in Ukraine unlikely to be reached soon, Polish PM says",
+        "ru": "Мир на Украине вряд ли будет достигнут в ближайшее время — премьер-министр Польши"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/80269",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-15T01:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/e77dd732a83bc890.webp",
+      "original": "Poland to Host First  Coalition of the Willing  Military Drills",
+      "title": {
+        "uk": "Польща прийме перші військові навчання «Коаліції охочих»",
+        "en": "Poland to host first 'Coalition of the Willing' military drills",
+        "ru": "Польша примет первые военные учения «Коалиции желающих»"
+      }
+    },
+    {
+      "url": "https://www.hurriyetdailynews.com/ukraine-allies-pledge-more-air-defense-pressure-russia-224341",
+      "domain": "hurriyetdailynews.com",
+      "seenAt": "2026-07-14T07:30:00.000Z",
+      "sourceCountry": "Turkey",
+      "original": "Ukraine allies pledge more air defense , pressure Russia",
+      "title": {
+        "uk": "Союзники України пообіцяли більше засобів ППО та посилення тиску на Росію",
+        "en": "Ukraine allies pledge more air defense, pressure Russia",
+        "ru": "Союзники Украины обещают дополнительную противовоздушную оборону и давление на Россию"
+      }
+    },
+    {
+      "url": "https://kreschatic.kiev.ua/svit/2026/07/14/vijna-vstupyla-v-novu-fazu-mercz-zayavyv-pro-uspihy-ukrayiny-ta-zupynku-prosuvannya-rf.html",
+      "domain": "kreschatic.kiev.ua",
+      "seenAt": "2026-07-14T08:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/55f512e6222498fc.webp",
+      "original": "Мерц заявив про нову фазу війни та успіхи України на фронті",
+      "title": {
+        "uk": "Мерц заявив про нову фазу війни та успіхи України на фронті",
+        "en": "Merz declared new phase of war and Ukraine's successes at the front",
+        "ru": "Мерц заявил о новой фазе войны и успехах Украины на фронте"
+      }
+    },
+    {
+      "url": "https://www.arabnews.com/node/2650393/world",
+      "domain": "arabnews.com",
+      "seenAt": "2026-07-10T13:00:00.000Z",
+      "sourceCountry": "Saudi Arabia",
+      "image": "/news/77f19a39b82038c8.webp",
+      "original": "Ukraine army chief says war not yet at  turning point",
+      "title": {
+        "uk": "Головнокомандувач армії України заявив, що війна ще не досягла «переломного моменту»",
+        "en": "Ukraine army chief says war not yet at 'turning point'",
+        "ru": "Главнокомандующий армии Украины заявил, что война ещё не достигла «переломного момента»"
+      }
+    },
+    {
+      "url": "http://www.merkur.de/politik/ukraine-krieg-putin-schattenflotte-krim-nato-verluste-europaeische-union-zr-94397677.html",
+      "domain": "merkur.de",
+      "seenAt": "2026-07-14T20:00:00.000Z",
+      "sourceCountry": "Germany",
+      "original": "Ukraine - Drohnen fegen Putins Schattenflotte aus Asowschem Meer",
+      "title": {
+        "uk": "Українські дрони виганяють тіньовий флот Путіна з Азовського моря",
+        "en": "Ukrainian drones sweep Putin's shadow fleet from the Azov Sea",
+        "ru": "Украинские дроны вытесняют теневой флот Путина из Азовского моря"
+      }
+    },
+    {
+      "url": "https://nltimes.nl/2026/07/14/netherlands-start-military-exercises-ukraine-help-design-new-air-defense-system",
+      "domain": "nltimes.nl",
+      "seenAt": "2026-07-14T10:15:00.000Z",
+      "sourceCountry": "Netherlands",
+      "image": "/news/fb53de12ddaec96f.webp",
+      "original": "Netherlands to start military exercises with Ukraine , help design new air defense system",
+      "title": {
+        "uk": "Нідерланди розпочнуть військові навчання з Україною та допоможуть розробити нову систему ППО",
+        "en": "Netherlands to start military exercises with Ukraine, help design new air defense system",
+        "ru": "Нидерланды начнут военные учения с Украиной и помогут разработать новую систему ПВО"
       }
     },
     {
@@ -36,99 +124,9 @@
       "image": "/news/7109ccb5d92efc6b.webp",
       "original": "Ukrainian drone strikes hit southern Russian refineries and Azov port , officials say",
       "title": {
-        "uk": "Українські удари дронів вдарили по нафтопереробних заводах на півдні Росії та порту в Азовському морі — чиновники",
+        "uk": "Удари українських дронів по нафтопереробних заводах на півдні Росії та порту в Азовському морі — повідомляють офіційні особи",
         "en": "Ukrainian drone strikes hit southern Russian refineries and Azov port, officials say",
-        "ru": "Украинские удары дронами поразили нефтеперерабатывающие заводы на юге России и порт в Азовском море — чиновники"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/79957",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-10T06:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/04cdcbd446b87b3c.webp",
-      "original": "Baltic States Tell UN Russia Must Accept Immediate Ceasefire",
-      "title": {
-        "uk": "Країни Балтії заявили в ООН, що Росія має прийняти негайне припинення вогню",
-        "en": "Baltic states tell UN Russia must accept immediate ceasefire",
-        "ru": "Страны Балтии заявили в ООН, что Россия должна принять немедленное прекращение огня"
-      }
-    },
-    {
-      "url": "https://www.digi24.ro/stiri/externe/putin-este-pregatit-sa-escaladeze-razboiul-liderul-rus-nu-vrea-negocieri-cu-ucraina-in-ciuda-presiunilor-lui-trump-reuters-3855021",
-      "domain": "digi24.ro",
-      "seenAt": "2026-07-09T14:45:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/3d2b9b412b0d4682.webp",
-      "original": "Putin ia în calcul posibile lovituri asupra bazelor NATO din România , dezvăluie un oficial rus ( Reuters )",
-      "title": {
-        "uk": "Путін розглядає можливі удари по базах НАТО в Румунії — розповідає російський чиновник (Reuters)",
-        "en": "Putin considers possible strikes on NATO bases in Romania, Russian official reveals (Reuters)",
-        "ru": "Путин рассматривает возможные удары по базам НАТО в Румынии — российский чиновник (Reuters)"
-      }
-    },
-    {
-      "url": "https://24tv.ua/ru/nastuplenie-rossii-fronte-syrskij-rasskazal-naskolko-snizilis_n3103228",
-      "domain": "24tv.ua",
-      "seenAt": "2026-07-10T08:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/2e447149c6924c44.webp",
-      "original": "Наступление России на фронте - Сырский рассказал , насколько снизились темпы продвижения противника",
-      "title": {
-        "uk": "Наступ Росії на фронті: Сирський розповів, наскільки знизились темпи просування противника",
-        "en": "Russian offensive on the front: Syrsky says the enemy's rate of advance has dropped significantly",
-        "ru": "Наступление России на фронте: Сырский рассказал, насколько снизились темпы продвижения противника"
-      }
-    },
-    {
-      "url": "https://www.parismatch.com/actu/international/lukraine-dispose-de-deux-mois-avant-une-escalade-de-poutine-la-mise-en-garde-du-president-tcheque-272410",
-      "domain": "parismatch.com",
-      "seenAt": "2026-07-09T18:45:00.000Z",
-      "sourceCountry": "France",
-      "image": "/news/805a2b028a383ca1.webp",
-      "original": "LUkraine dispose de « deux mois » avant une escalade de Poutine : la mise en garde du président tchèque",
-      "title": {
-        "uk": "В України є «два місяці» до ескалації Путіна: попередження президента Чехії",
-        "en": "Ukraine has 'two months' before a Putin escalation: Czech president's warning",
-        "ru": "У Украины есть «два месяца» до эскалации Путина: предупреждение президента Чехии"
-      }
-    },
-    {
-      "url": "https://news.bigmir.net/ua/ukraine/10389440-lavrov-ozvuchiv-pozitsiyu-kremlya-schodo-pripinennya-vognyu-v-ukrayini",
-      "domain": "news.bigmir.net",
-      "seenAt": "2026-07-10T08:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/432b23c316810f7c.webp",
-      "original": "Лавров озвучив позицію Кремля щодо припинення вогню в Україні",
-      "title": {
-        "uk": "Лавров озвучив позицію Кремля щодо припинення вогню в Україні",
-        "en": "Lavrov announces the Kremlin's position on a ceasefire in Ukraine",
-        "ru": "Лавров озвучил позицию Кремля по прекращению огня на Украине"
-      }
-    },
-    {
-      "url": "https://www.dnoticias.pt/2026/7/11/498644-zelensky-decreta-criacao-de-forca-militar-de-reacao-rapida/",
-      "domain": "dnoticias.pt",
-      "seenAt": "2026-07-11T01:45:00.000Z",
-      "sourceCountry": "Portugal",
-      "original": "Zelensky decreta criao de força militar de reao rápida",
-      "title": {
-        "uk": "Зеленський підписав указ про створення сил швидкого реагування",
-        "en": "Zelensky decrees creation of a rapid reaction military force",
-        "ru": "Зеленский издал указ о создании сил быстрого реагирования"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/79619",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-05T12:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/5fcc539d8af298b6.webp",
-      "original": "Medvedev Outlines Plans to Expand Russian  Security Zone  into 3 Ukrainian Regions",
-      "title": {
-        "uk": "Медведєв виклав плани щодо розширення російської «зони безпеки» на 3 регіони України",
-        "en": "Medvedev outlines plans to expand Russian 'security zone' into 3 Ukrainian regions",
-        "ru": "Медведев обозначил планы по расширению российской «зоны безопасности» на 3 региона Украины"
+        "ru": "Удары украинских дронов по нефтеперерабатывающим заводам на юге России и порту в Азовском море — сообщают официальные лица"
       }
     }
   ]
