@@ -1,18 +1,17 @@
 {
-  "asOf": "2026-07-15",
+  "asOf": "2026-07-16",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.straitstimes.com/world/europe/putin-likely-to-escalate-ukraine-war-despite-trump-peace-push-sources-say",
-      "domain": "straitstimes.com",
-      "seenAt": "2026-07-09T10:15:00.000Z",
-      "sourceCountry": "Singapore",
-      "image": "/news/bfa88bf4ccf9ef25.webp",
-      "original": "Putin likely to escalate Ukraine war , despite Trump peace push , sources say",
+      "url": "https://www.foxnews.com/world/watch-russian-soldier-thrown-through-air-soviet-era-helicopter-gun-spins-out-control",
+      "domain": "foxnews.com",
+      "seenAt": "2026-07-15T20:30:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Trump says Putin is ready to reach a peace deal ending Ukraine war",
       "title": {
-        "uk": "Путін, ймовірно, ескалує війну в Україні попри мирні зусилля Трампа, повідомляють джерела",
-        "en": "Putin likely to escalate Ukraine war, despite Trump peace push, sources say",
-        "ru": "Путин, вероятно, эскалирует войну на Украине вопреки мирным усилиям Трампа, сообщают источники"
+        "uk": "Трамп каже, що Путін готовий укласти мирну угоду для завершення війни в Україні",
+        "en": "Trump says Putin is ready to reach a peace deal ending Ukraine war",
+        "ru": "Трамп заявил, что Путин готов заключить мирное соглашение для завершения войны на Украине"
       }
     },
     {
@@ -35,22 +34,9 @@
       "image": "/news/fd489da6ca59e494.webp",
       "original": "Peace in Ukraine Unlikely to Be Reached Soon , Polish PM Says",
       "title": {
-        "uk": "Мир в Україні навряд чи буде досягнутий найближчим часом — прем'єр-міністр Польщі",
+        "uk": "Мир в Україні навряд чи буде досягнутий найближчим часом, заявив прем'єр-міністр Польщі",
         "en": "Peace in Ukraine unlikely to be reached soon, Polish PM says",
-        "ru": "Мир на Украине вряд ли будет достигнут в ближайшее время — премьер-министр Польши"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/80269",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-15T01:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/e77dd732a83bc890.webp",
-      "original": "Poland to Host First  Coalition of the Willing  Military Drills",
-      "title": {
-        "uk": "Польща прийме перші військові навчання «Коаліції охочих»",
-        "en": "Poland to host first 'Coalition of the Willing' military drills",
-        "ru": "Польша примет первые военные учения «Коалиции желающих»"
+        "ru": "Мир на Украине вряд ли будет достигнут в ближайшее время, заявил премьер-министр Польши"
       }
     },
     {
@@ -60,60 +46,48 @@
       "sourceCountry": "Turkey",
       "original": "Ukraine allies pledge more air defense , pressure Russia",
       "title": {
-        "uk": "Союзники України пообіцяли більше засобів ППО та посилення тиску на Росію",
+        "uk": "Союзники України пообіцяли більше засобів ППО та тиск на Росію",
         "en": "Ukraine allies pledge more air defense, pressure Russia",
-        "ru": "Союзники Украины обещают дополнительную противовоздушную оборону и давление на Россию"
+        "ru": "Союзники Украины пообещали больше средств ПВО и давление на Россию"
       }
     },
     {
-      "url": "https://kreschatic.kiev.ua/svit/2026/07/14/vijna-vstupyla-v-novu-fazu-mercz-zayavyv-pro-uspihy-ukrayiny-ta-zupynku-prosuvannya-rf.html",
-      "domain": "kreschatic.kiev.ua",
-      "seenAt": "2026-07-14T08:15:00.000Z",
+      "url": "https://aa.com.tr/en/europe/coalition-of-the-willing-reaffirms-support-for-ukraine-vows-to-accelerate-peace-efforts/3996969",
+      "domain": "aa.com.tr",
+      "seenAt": "2026-07-13T21:30:00.000Z",
+      "sourceCountry": "Turkey",
+      "image": "/news/1ed60bb27468c634.webp",
+      "original": "Coalition of the willing  reaffirms support for Ukraine , vows to accelerate peace efforts",
+      "title": {
+        "uk": "«Коаліція охочих» підтвердила підтримку України та пообіцяла прискорити мирні зусилля",
+        "en": "Coalition of the Willing reaffirms support for Ukraine, vows to accelerate peace efforts",
+        "ru": "«Коалиция желающих» подтвердила поддержку Украины и пообещала ускорить мирные усилия"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/80348",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-15T23:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/55f512e6222498fc.webp",
-      "original": "Мерц заявив про нову фазу війни та успіхи України на фронті",
+      "image": "/news/2c6e938cae2814c3.webp",
+      "original": "Why Bulgaria Left the Coalition of the Willing on Ukraine",
       "title": {
-        "uk": "Мерц заявив про нову фазу війни та успіхи України на фронті",
-        "en": "Merz declared new phase of war and Ukraine's successes at the front",
-        "ru": "Мерц заявил о новой фазе войны и успехах Украины на фронте"
+        "uk": "Чому Болгарія вийшла з «Коаліції охочих» щодо України",
+        "en": "Why Bulgaria left the Coalition of the Willing on Ukraine",
+        "ru": "Почему Болгария вышла из «Коалиции желающих» по Украине"
       }
     },
     {
-      "url": "https://www.arabnews.com/node/2650393/world",
-      "domain": "arabnews.com",
-      "seenAt": "2026-07-10T13:00:00.000Z",
-      "sourceCountry": "Saudi Arabia",
-      "image": "/news/77f19a39b82038c8.webp",
-      "original": "Ukraine army chief says war not yet at  turning point",
+      "url": "https://www.unian.ua/war/ukrajinski-droni-zminili-hid-viyni-ale-chi-vistachit-jih-dlya-zvilnennya-teritoriy-foreign-policy-13442289.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-07-16T06:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b4f21ee361319357.webp",
+      "original": "Українські дрони змінили хід війни , але чи вистачить їх для звільнення територій – Foreign Policy",
       "title": {
-        "uk": "Головнокомандувач армії України заявив, що війна ще не досягла «переломного моменту»",
-        "en": "Ukraine army chief says war not yet at 'turning point'",
-        "ru": "Главнокомандующий армии Украины заявил, что война ещё не достигла «переломного момента»"
-      }
-    },
-    {
-      "url": "http://www.merkur.de/politik/ukraine-krieg-putin-schattenflotte-krim-nato-verluste-europaeische-union-zr-94397677.html",
-      "domain": "merkur.de",
-      "seenAt": "2026-07-14T20:00:00.000Z",
-      "sourceCountry": "Germany",
-      "original": "Ukraine - Drohnen fegen Putins Schattenflotte aus Asowschem Meer",
-      "title": {
-        "uk": "Українські дрони виганяють тіньовий флот Путіна з Азовського моря",
-        "en": "Ukrainian drones sweep Putin's shadow fleet from the Azov Sea",
-        "ru": "Украинские дроны вытесняют теневой флот Путина из Азовского моря"
-      }
-    },
-    {
-      "url": "https://nltimes.nl/2026/07/14/netherlands-start-military-exercises-ukraine-help-design-new-air-defense-system",
-      "domain": "nltimes.nl",
-      "seenAt": "2026-07-14T10:15:00.000Z",
-      "sourceCountry": "Netherlands",
-      "image": "/news/fb53de12ddaec96f.webp",
-      "original": "Netherlands to start military exercises with Ukraine , help design new air defense system",
-      "title": {
-        "uk": "Нідерланди розпочнуть військові навчання з Україною та допоможуть розробити нову систему ППО",
-        "en": "Netherlands to start military exercises with Ukraine, help design new air defense system",
-        "ru": "Нидерланды начнут военные учения с Украиной и помогут разработать новую систему ПВО"
+        "uk": "Українські дрони змінили хід війни, але чи вистачить їх для звільнення територій — Foreign Policy",
+        "en": "Ukrainian drones changed the course of the war, but are there enough to liberate territories — Foreign Policy",
+        "ru": "Украинские дроны изменили ход войны, но хватит ли их для освобождения территорий — Foreign Policy"
       }
     },
     {
@@ -124,9 +98,35 @@
       "image": "/news/7109ccb5d92efc6b.webp",
       "original": "Ukrainian drone strikes hit southern Russian refineries and Azov port , officials say",
       "title": {
-        "uk": "Удари українських дронів по нафтопереробних заводах на півдні Росії та порту в Азовському морі — повідомляють офіційні особи",
+        "uk": "Українські дрони вдарили по нафтопереробних заводах півдня Росії та азовському порту, повідомляють офіційні особи",
         "en": "Ukrainian drone strikes hit southern Russian refineries and Azov port, officials say",
-        "ru": "Удары украинских дронов по нефтеперерабатывающим заводам на юге России и порту в Азовском море — сообщают официальные лица"
+        "ru": "Украинские дроны нанесли удары по нефтеперерабатывающим заводам юга России и азовскому порту, сообщают официальные лица"
+      }
+    },
+    {
+      "url": "https://www.arabnews.com/node/2650393/world",
+      "domain": "arabnews.com",
+      "seenAt": "2026-07-10T13:00:00.000Z",
+      "sourceCountry": "Saudi Arabia",
+      "image": "/news/77f19a39b82038c8.webp",
+      "original": "Ukraine army chief says war not yet at  turning point",
+      "title": {
+        "uk": "Командувач армії України заявив, що війна ще не досягла «переломного моменту»",
+        "en": "Ukraine army chief says war not yet at 'turning point'",
+        "ru": "Главнокомандующий армии Украины заявил, что война ещё не достигла «переломного момента»"
+      }
+    },
+    {
+      "url": "https://theconversation.com/ukraine-war-belaruss-highwire-act-teeters-under-russian-pressure-287324",
+      "domain": "theconversation.com",
+      "seenAt": "2026-07-15T16:30:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/fd7e73a8a8367e31.webp",
+      "original": "Ukraine war : Belarus highwire act teeters under Russian pressure",
+      "title": {
+        "uk": "Війна в Україні: Білорусь балансує на межі під тиском Росії",
+        "en": "Ukraine war: Belarus highwire act teeters under Russian pressure",
+        "ru": "Война на Украине: Белоруссия балансирует на грани под давлением России"
       }
     }
   ]
