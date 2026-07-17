@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-16",
+  "asOf": "2026-07-17",
   "source": "gdelt",
   "articles": [
     {
@@ -9,9 +9,61 @@
       "sourceCountry": "United States",
       "original": "Trump says Putin is ready to reach a peace deal ending Ukraine war",
       "title": {
-        "uk": "Трамп каже, що Путін готовий укласти мирну угоду для завершення війни в Україні",
-        "en": "Trump says Putin is ready to reach a peace deal ending Ukraine war",
-        "ru": "Трамп заявил, что Путин готов заключить мирное соглашение для завершения войны на Украине"
+        "uk": "Трамп заявив, що Путін готовий укласти мирну угоду для завершення війни в Україні",
+        "en": "Trump says Putin is ready to reach a peace deal ending the Ukraine war",
+        "ru": "Трамп заявил, что Путин готов заключить мирное соглашение для завершения войны в Украине"
+      }
+    },
+    {
+      "url": "https://korrespondent.net/world/russia/4894904-rossyia-teriaet-kontrol-nad-krymom-The-Economist",
+      "domain": "korrespondent.net",
+      "seenAt": "2026-07-17T06:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/3a0a2e8fbefcc0b6.webp",
+      "original": "Россия теряет контроль над Крымом - The Economist",
+      "title": {
+        "uk": "Росія втрачає контроль над Кримом — The Economist",
+        "en": "Russia is losing control over Crimea — The Economist",
+        "ru": "Россия теряет контроль над Крымом — The Economist"
+      }
+    },
+    {
+      "url": "https://www.theepochtimes.com/world/cia-director-credits-drones-ai-with-halting-russian-advances-in-ukraine-6063034",
+      "domain": "theepochtimes.com",
+      "seenAt": "2026-07-16T23:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/fa7f862fe8945f59.webp",
+      "original": "CIA Director Credits Drones , AI With Halting Russian Advances in Ukraine",
+      "title": {
+        "uk": "Директор ЦРУ заявив, що дрони та ШІ зупинили просування Росії в Україні",
+        "en": "CIA Director credits drones and AI with halting Russian advances in Ukraine",
+        "ru": "Директор ЦРУ приписал остановку российского наступления в Украине дронам и ИИ"
+      }
+    },
+    {
+      "url": "https://www.zerohedge.com/geopolitical/coalition-willing-hold-drills-near-ukraine-ahead-post-ceasefire-deployment",
+      "domain": "zerohedge.com",
+      "seenAt": "2026-07-17T09:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/31cac25ba9aa5fdd.webp",
+      "original": "Coalition Of The Willing To Hold Drills Near Ukraine Ahead Of Post - Ceasefire Deployment",
+      "title": {
+        "uk": "«Коаліція охочих» проведе навчання поблизу України перед розгортанням після припинення вогню",
+        "en": "Coalition of the Willing to hold drills near Ukraine ahead of post-ceasefire deployment",
+        "ru": "«Коалиция желающих» проведёт учения вблизи Украины перед развёртыванием после прекращения огня"
+      }
+    },
+    {
+      "url": "https://www.unian.ua/war/ukrajinski-droni-zminili-hid-viyni-ale-chi-vistachit-jih-dlya-zvilnennya-teritoriy-foreign-policy-13442289.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-07-16T06:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b4f21ee361319357.webp",
+      "original": "Українські дрони змінили хід війни , але чи вистачить їх для звільнення територій – Foreign Policy",
+      "title": {
+        "uk": "Українські дрони змінили хід війни, але чи вистачить їх для звільнення територій — Foreign Policy",
+        "en": "Ukrainian drones changed the course of the war, but will they be enough to liberate territories — Foreign Policy",
+        "ru": "Украинские дроны изменили ход войны, но хватит ли их для освобождения территорий — Foreign Policy"
       }
     },
     {
@@ -27,41 +79,29 @@
       }
     },
     {
-      "url": "https://english.aawsat.com/world/5295774-peace-ukraine-unlikely-be-reached-soon-polish-pm-says",
-      "domain": "english.aawsat.com",
-      "seenAt": "2026-07-14T09:45:00.000Z",
-      "sourceCountry": "Syria",
-      "image": "/news/fd489da6ca59e494.webp",
-      "original": "Peace in Ukraine Unlikely to Be Reached Soon , Polish PM Says",
+      "url": "https://www.rbc.ua/rus/news/zelenskiy-nazvav-indikatori-zmin-rosiyi-shchodo-1784209708.html",
+      "domain": "rbc.ua",
+      "seenAt": "2026-07-16T16:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/3f085bdc5e8e2687.webp",
+      "original": "Зеленський оцінив готовність РФ до закінчення війни проти України",
       "title": {
-        "uk": "Мир в Україні навряд чи буде досягнутий найближчим часом, заявив прем'єр-міністр Польщі",
-        "en": "Peace in Ukraine unlikely to be reached soon, Polish PM says",
-        "ru": "Мир на Украине вряд ли будет достигнут в ближайшее время, заявил премьер-министр Польши"
+        "uk": "Зеленський оцінив готовність РФ до закінчення війни проти України",
+        "en": "Zelensky assessed Russia's readiness to end the war against Ukraine",
+        "ru": "Зеленский оценил готовность РФ к завершению войны против Украины"
       }
     },
     {
-      "url": "https://www.hurriyetdailynews.com/ukraine-allies-pledge-more-air-defense-pressure-russia-224341",
-      "domain": "hurriyetdailynews.com",
-      "seenAt": "2026-07-14T07:30:00.000Z",
-      "sourceCountry": "Turkey",
-      "original": "Ukraine allies pledge more air defense , pressure Russia",
+      "url": "https://english.hani.co.kr/arti/english_edition/e_international/1268404.html",
+      "domain": "english.hani.co.kr",
+      "seenAt": "2026-07-15T11:15:00.000Z",
+      "sourceCountry": "South Korea",
+      "image": "/news/43224b085c06ce07.webp",
+      "original": "[ Q & A ] Russia may be taking a beating , but is it really losing the war ?",
       "title": {
-        "uk": "Союзники України пообіцяли більше засобів ППО та тиск на Росію",
-        "en": "Ukraine allies pledge more air defense, pressure Russia",
-        "ru": "Союзники Украины пообещали больше средств ПВО и давление на Россию"
-      }
-    },
-    {
-      "url": "https://aa.com.tr/en/europe/coalition-of-the-willing-reaffirms-support-for-ukraine-vows-to-accelerate-peace-efforts/3996969",
-      "domain": "aa.com.tr",
-      "seenAt": "2026-07-13T21:30:00.000Z",
-      "sourceCountry": "Turkey",
-      "image": "/news/1ed60bb27468c634.webp",
-      "original": "Coalition of the willing  reaffirms support for Ukraine , vows to accelerate peace efforts",
-      "title": {
-        "uk": "«Коаліція охочих» підтвердила підтримку України та пообіцяла прискорити мирні зусилля",
-        "en": "Coalition of the Willing reaffirms support for Ukraine, vows to accelerate peace efforts",
-        "ru": "«Коалиция желающих» подтвердила поддержку Украины и пообещала ускорить мирные усилия"
+        "uk": "Росія може зазнавати поразок, але чи справді вона програє війну?",
+        "en": "Russia may be taking a beating, but is it really losing the war?",
+        "ru": "Россия может терпеть поражения, но действительно ли она проигрывает войну?"
       }
     },
     {
@@ -78,45 +118,6 @@
       }
     },
     {
-      "url": "https://www.unian.ua/war/ukrajinski-droni-zminili-hid-viyni-ale-chi-vistachit-jih-dlya-zvilnennya-teritoriy-foreign-policy-13442289.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-07-16T06:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/b4f21ee361319357.webp",
-      "original": "Українські дрони змінили хід війни , але чи вистачить їх для звільнення територій – Foreign Policy",
-      "title": {
-        "uk": "Українські дрони змінили хід війни, але чи вистачить їх для звільнення територій — Foreign Policy",
-        "en": "Ukrainian drones changed the course of the war, but are there enough to liberate territories — Foreign Policy",
-        "ru": "Украинские дроны изменили ход войны, но хватит ли их для освобождения территорий — Foreign Policy"
-      }
-    },
-    {
-      "url": "https://www.euronews.com/my-europe/2026/07/10/ukrainian-drone-strikes-hit-southern-russian-refineries-and-azov-port-officials-say",
-      "domain": "euronews.com",
-      "seenAt": "2026-07-10T19:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/7109ccb5d92efc6b.webp",
-      "original": "Ukrainian drone strikes hit southern Russian refineries and Azov port , officials say",
-      "title": {
-        "uk": "Українські дрони вдарили по нафтопереробних заводах півдня Росії та азовському порту, повідомляють офіційні особи",
-        "en": "Ukrainian drone strikes hit southern Russian refineries and Azov port, officials say",
-        "ru": "Украинские дроны нанесли удары по нефтеперерабатывающим заводам юга России и азовскому порту, сообщают официальные лица"
-      }
-    },
-    {
-      "url": "https://www.arabnews.com/node/2650393/world",
-      "domain": "arabnews.com",
-      "seenAt": "2026-07-10T13:00:00.000Z",
-      "sourceCountry": "Saudi Arabia",
-      "image": "/news/77f19a39b82038c8.webp",
-      "original": "Ukraine army chief says war not yet at  turning point",
-      "title": {
-        "uk": "Командувач армії України заявив, що війна ще не досягла «переломного моменту»",
-        "en": "Ukraine army chief says war not yet at 'turning point'",
-        "ru": "Главнокомандующий армии Украины заявил, что война ещё не достигла «переломного момента»"
-      }
-    },
-    {
       "url": "https://theconversation.com/ukraine-war-belaruss-highwire-act-teeters-under-russian-pressure-287324",
       "domain": "theconversation.com",
       "seenAt": "2026-07-15T16:30:00.000Z",
@@ -126,7 +127,7 @@
       "title": {
         "uk": "Війна в Україні: Білорусь балансує на межі під тиском Росії",
         "en": "Ukraine war: Belarus highwire act teeters under Russian pressure",
-        "ru": "Война на Украине: Белоруссия балансирует на грани под давлением России"
+        "ru": "Война в Украине: Беларусь балансирует на грани под российским давлением"
       }
     }
   ]
