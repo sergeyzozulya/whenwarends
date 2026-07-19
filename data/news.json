@@ -1,7 +1,20 @@
 {
-  "asOf": "2026-07-17",
+  "asOf": "2026-07-19",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://www.lsm.lv/raksts/zinas/arzemes/19.07.2026-krievija-pret-ukrainas-galvaspilsetu-nepilnas-stundas-laika-raida-40-ballistiskas-raketes.a655530/",
+      "domain": "lsm.lv",
+      "seenAt": "2026-07-19T07:15:00.000Z",
+      "sourceCountry": "Latvia",
+      "image": "/news/35c8738a09a513aa.webp",
+      "original": "Krievija pret Ukrainas galvaspilsētu nepilnas stundas laikā raida 40 ballistiskās raķetes",
+      "title": {
+        "uk": "Росія випустила 40 балістичних ракет по столиці України менш ніж за годину",
+        "en": "Russia fires 40 ballistic missiles at Ukraine's capital in under an hour",
+        "ru": "Россия выпустила 40 баллистических ракет по столице Украины менее чем за час"
+      }
+    },
     {
       "url": "https://www.foxnews.com/world/watch-russian-soldier-thrown-through-air-soviet-era-helicopter-gun-spins-out-control",
       "domain": "foxnews.com",
@@ -11,20 +24,45 @@
       "title": {
         "uk": "Трамп заявив, що Путін готовий укласти мирну угоду для завершення війни в Україні",
         "en": "Trump says Putin is ready to reach a peace deal ending the Ukraine war",
-        "ru": "Трамп заявил, что Путин готов заключить мирное соглашение для завершения войны в Украине"
+        "ru": "Трамп заявил, что Путин готов заключить мирную сделку для завершения войны в Украине"
       }
     },
     {
-      "url": "https://korrespondent.net/world/russia/4894904-rossyia-teriaet-kontrol-nad-krymom-The-Economist",
-      "domain": "korrespondent.net",
-      "seenAt": "2026-07-17T06:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/3a0a2e8fbefcc0b6.webp",
-      "original": "Россия теряет контроль над Крымом - The Economist",
+      "url": "https://www.aljazeera.com/news/2026/7/17/ukraine-cuts-off-crimea-from-russia-plunging-it-into-an-energy-crisis",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-07-17T14:15:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Ukraine  cuts off  Crimea from Russia , plunging it into an energy crisis | Russia - Ukraine war News",
       "title": {
-        "uk": "Росія втрачає контроль над Кримом — The Economist",
-        "en": "Russia is losing control over Crimea — The Economist",
-        "ru": "Россия теряет контроль над Крымом — The Economist"
+        "uk": "Україна «відрізала» Крим від Росії, занурюючи його в енергетичну кризу",
+        "en": "Ukraine 'cuts off' Crimea from Russia, plunging it into an energy crisis",
+        "ru": "Украина «отрезала» Крым от России, погружая его в энергетический кризис"
+      }
+    },
+    {
+      "url": "https://news.bigmir.net/ua/ukraine/10393737-sbu-znischila-strategichnij-bombarduvalnik-tu-95-na-aerodromi-v-engelsi",
+      "domain": "news.bigmir.net",
+      "seenAt": "2026-07-17T17:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/a110a1245358aad7.webp",
+      "original": "СБУ знищила стратегічний бомбардувальник Ту - 95 на аеродромі в Енгельсі",
+      "title": {
+        "uk": "СБУ знищила стратегічний бомбардувальник Ту-95 на аеродромі в Енгельсі",
+        "en": "Ukraine's SBU destroys Tu-95 strategic bomber at Engels airfield",
+        "ru": "СБУ уничтожила стратегический бомбардировщик Ту-95 на аэродроме в Энгельсе"
+      }
+    },
+    {
+      "url": "https://www.radiosvoboda.org/a/kytay-viyna-sybiha-perehovory-si/33805155.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-07-18T04:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/feff6d2a849bd23f.webp",
+      "original": "Сибіга їде до Китаю . Пекін побачив шанс на швидке перемир  я ?",
+      "title": {
+        "uk": "Сибіга їде до Китаю. Пекін побачив шанс на швидке перемир'я?",
+        "en": "Sybiga travels to China. Did Beijing see a chance for a quick ceasefire?",
+        "ru": "Сибига едет в Китай. Пекин увидел шанс на быстрое перемирие?"
       }
     },
     {
@@ -35,9 +73,9 @@
       "image": "/news/fa7f862fe8945f59.webp",
       "original": "CIA Director Credits Drones , AI With Halting Russian Advances in Ukraine",
       "title": {
-        "uk": "Директор ЦРУ заявив, що дрони та ШІ зупинили просування Росії в Україні",
+        "uk": "Директор ЦРУ заявив, що дрони та штучний інтелект зупинили просування Росії в Україні",
         "en": "CIA Director credits drones and AI with halting Russian advances in Ukraine",
-        "ru": "Директор ЦРУ приписал остановку российского наступления в Украине дронам и ИИ"
+        "ru": "Директор ЦРУ заявил, что дроны и ИИ остановили наступление России в Украине"
       }
     },
     {
@@ -48,22 +86,22 @@
       "image": "/news/31cac25ba9aa5fdd.webp",
       "original": "Coalition Of The Willing To Hold Drills Near Ukraine Ahead Of Post - Ceasefire Deployment",
       "title": {
-        "uk": "«Коаліція охочих» проведе навчання поблизу України перед розгортанням після припинення вогню",
+        "uk": "«Коаліція охочих» проведе навчання поблизу України напередодні розгортання після перемир'я",
         "en": "Coalition of the Willing to hold drills near Ukraine ahead of post-ceasefire deployment",
-        "ru": "«Коалиция желающих» проведёт учения вблизи Украины перед развёртыванием после прекращения огня"
+        "ru": "«Коалиция желающих» проведёт учения вблизи Украины перед развёртыванием после перемирия"
       }
     },
     {
-      "url": "https://www.unian.ua/war/ukrajinski-droni-zminili-hid-viyni-ale-chi-vistachit-jih-dlya-zvilnennya-teritoriy-foreign-policy-13442289.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-07-16T06:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/b4f21ee361319357.webp",
-      "original": "Українські дрони змінили хід війни , але чи вистачить їх для звільнення територій – Foreign Policy",
+      "url": "https://adevarul.ro/stiri-externe/in-lume/ministra-de-externe-a-coreei-de-nord-vizita-2544081.html",
+      "domain": "adevarul.ro",
+      "seenAt": "2026-07-18T10:15:00.000Z",
+      "sourceCountry": "Romania",
+      "image": "/news/6791ffc3325e460c.webp",
+      "original": "Ministra de Externe a Coreei de Nord , vizită oficială în Rusia . Phenianul și Moscova își consolidează relațiile",
       "title": {
-        "uk": "Українські дрони змінили хід війни, але чи вистачить їх для звільнення територій — Foreign Policy",
-        "en": "Ukrainian drones changed the course of the war, but will they be enough to liberate territories — Foreign Policy",
-        "ru": "Украинские дроны изменили ход войны, но хватит ли их для освобождения территорий — Foreign Policy"
+        "uk": "Міністр закордонних справ Північної Кореї здійснила офіційний візит до Росії: Пхеньян і Москва зміцнюють відносини",
+        "en": "North Korea's Foreign Minister makes official visit to Russia as Pyongyang and Moscow strengthen ties",
+        "ru": "Министр иностранных дел Северной Кореи совершила официальный визит в Россию: Пхеньян и Москва укрепляют отношения"
       }
     },
     {
@@ -79,55 +117,16 @@
       }
     },
     {
-      "url": "https://www.rbc.ua/rus/news/zelenskiy-nazvav-indikatori-zmin-rosiyi-shchodo-1784209708.html",
-      "domain": "rbc.ua",
-      "seenAt": "2026-07-16T16:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/3f085bdc5e8e2687.webp",
-      "original": "Зеленський оцінив готовність РФ до закінчення війни проти України",
+      "url": "http://www.jpost.com/international/internationalrussia-ukraine-war/article-902443",
+      "domain": "jpost.com",
+      "seenAt": "2026-07-14T10:15:00.000Z",
+      "sourceCountry": "Israel",
+      "image": "/news/0dd266f74a1f87aa.webp",
+      "original": "Peace in Ukraine unlikely to be reached before winter , Polish PM says",
       "title": {
-        "uk": "Зеленський оцінив готовність РФ до закінчення війни проти України",
-        "en": "Zelensky assessed Russia's readiness to end the war against Ukraine",
-        "ru": "Зеленский оценил готовность РФ к завершению войны против Украины"
-      }
-    },
-    {
-      "url": "https://english.hani.co.kr/arti/english_edition/e_international/1268404.html",
-      "domain": "english.hani.co.kr",
-      "seenAt": "2026-07-15T11:15:00.000Z",
-      "sourceCountry": "South Korea",
-      "image": "/news/43224b085c06ce07.webp",
-      "original": "[ Q & A ] Russia may be taking a beating , but is it really losing the war ?",
-      "title": {
-        "uk": "Росія може зазнавати поразок, але чи справді вона програє війну?",
-        "en": "Russia may be taking a beating, but is it really losing the war?",
-        "ru": "Россия может терпеть поражения, но действительно ли она проигрывает войну?"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/80348",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-15T23:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/2c6e938cae2814c3.webp",
-      "original": "Why Bulgaria Left the Coalition of the Willing on Ukraine",
-      "title": {
-        "uk": "Чому Болгарія вийшла з «Коаліції охочих» щодо України",
-        "en": "Why Bulgaria left the Coalition of the Willing on Ukraine",
-        "ru": "Почему Болгария вышла из «Коалиции желающих» по Украине"
-      }
-    },
-    {
-      "url": "https://theconversation.com/ukraine-war-belaruss-highwire-act-teeters-under-russian-pressure-287324",
-      "domain": "theconversation.com",
-      "seenAt": "2026-07-15T16:30:00.000Z",
-      "sourceCountry": "Australia",
-      "image": "/news/fd7e73a8a8367e31.webp",
-      "original": "Ukraine war : Belarus highwire act teeters under Russian pressure",
-      "title": {
-        "uk": "Війна в Україні: Білорусь балансує на межі під тиском Росії",
-        "en": "Ukraine war: Belarus highwire act teeters under Russian pressure",
-        "ru": "Война в Украине: Беларусь балансирует на грани под российским давлением"
+        "uk": "Мир в Україні навряд чи буде досягнутий до зими, заявив прем'єр-міністр Польщі",
+        "en": "Peace in Ukraine unlikely to be reached before winter, Polish PM says",
+        "ru": "Мир в Украине вряд ли будет достигнут до зимы, заявил премьер-министр Польши"
       }
     }
   ]
