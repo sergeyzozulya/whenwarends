@@ -1,7 +1,56 @@
 {
-  "asOf": "2026-07-19",
+  "asOf": "2026-07-20",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://www.theguardian.com/world/2026/jul/20/ukraine-war-briefing-russia-behind-deadly-strike-on-cargo-ship-says-ukraine-as-putin-thanks-north-korea",
+      "domain": "theguardian.com",
+      "seenAt": "2026-07-20T02:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Ukraine war briefing : Russia behind deadly strike on cargo ship , says Ukraine , as Putin thanks North Korea",
+      "title": {
+        "uk": "Зведення про війну в Україні: Росія стоїть за смертоносним ударом по вантажному судну, стверджує Україна, тоді як Путін дякує Північній Кореї",
+        "en": "Ukraine war briefing: Russia behind deadly strike on cargo ship, says Ukraine, as Putin thanks North Korea",
+        "ru": "Сводка войны в Украине: Россия стоит за смертоносным ударом по грузовому судну, заявляет Украина, тогда как Путин благодарит Северную Корею"
+      }
+    },
+    {
+      "url": "https://www.forbes.com/sites/melikkaylan/2026/07/19/zelensky-sacks-defense-minister-delays-demise-of-putin/",
+      "domain": "forbes.com",
+      "seenAt": "2026-07-20T04:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/12bb9a2e7e41764a.webp",
+      "original": "Zelensky Sacks Defense Minister , Delays Demise Of Putin",
+      "title": {
+        "uk": "Зеленський звільнив міністра оборони",
+        "en": "Zelensky sacks defense minister",
+        "ru": "Зеленский увольняет министра обороны"
+      }
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/20/nato-russia-ukraine-war-missile-attacks-drone-europe-defense-.html",
+      "domain": "cnbc.com",
+      "seenAt": "2026-07-20T05:30:00.000Z",
+      "sourceCountry": "United States",
+      "original": "NATO says Russia would  lose a lot  if Moscow attacks Poland , Baltics",
+      "title": {
+        "uk": "НАТО заявляє, що Росія «втратить багато», якщо атакує Польщу та країни Балтії",
+        "en": "NATO says Russia would 'lose a lot' if Moscow attacks Poland, Baltics",
+        "ru": "НАТО заявляет, что Россия «много потеряет», если атакует Польшу и страны Балтии"
+      }
+    },
+    {
+      "url": "https://www.dawn.com/news/2016857/putin-meets-north-korean-fm-hails-pyongyangs-war-support",
+      "domain": "dawn.com",
+      "seenAt": "2026-07-20T06:30:00.000Z",
+      "sourceCountry": "Pakistan",
+      "original": "Putin meets North Korean FM , hails Pyongyang war support - Newspaper",
+      "title": {
+        "uk": "Путін зустрівся з міністром закордонних справ Північної Кореї та відзначив підтримку Пхеньяна у війні",
+        "en": "Putin meets North Korean foreign minister, hails Pyongyang's war support",
+        "ru": "Путин встретился с главой МИД Северной Кореи и высоко оценил поддержку Пхеньяна в войне"
+      }
+    },
     {
       "url": "https://www.lsm.lv/raksts/zinas/arzemes/19.07.2026-krievija-pret-ukrainas-galvaspilsetu-nepilnas-stundas-laika-raida-40-ballistiskas-raketes.a655530/",
       "domain": "lsm.lv",
@@ -16,40 +65,16 @@
       }
     },
     {
-      "url": "https://www.foxnews.com/world/watch-russian-soldier-thrown-through-air-soviet-era-helicopter-gun-spins-out-control",
-      "domain": "foxnews.com",
-      "seenAt": "2026-07-15T20:30:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Trump says Putin is ready to reach a peace deal ending Ukraine war",
+      "url": "https://gazeta.ua/ru/articles/life/_pravitelstvo-rossii-razreshaet-novym-kategoriyam-osuzhdennyh-voevat-protiv-ukrainy/1254906",
+      "domain": "gazeta.ua",
+      "seenAt": "2026-07-19T17:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/53c55dfb5c7c1213.webp",
+      "original": "Мобилизация : Правительство России разрешает новым категориям осужденных воевать против Украины",
       "title": {
-        "uk": "Трамп заявив, що Путін готовий укласти мирну угоду для завершення війни в Україні",
-        "en": "Trump says Putin is ready to reach a peace deal ending the Ukraine war",
-        "ru": "Трамп заявил, что Путин готов заключить мирную сделку для завершения войны в Украине"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/7/17/ukraine-cuts-off-crimea-from-russia-plunging-it-into-an-energy-crisis",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-07-17T14:15:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Ukraine  cuts off  Crimea from Russia , plunging it into an energy crisis | Russia - Ukraine war News",
-      "title": {
-        "uk": "Україна «відрізала» Крим від Росії, занурюючи його в енергетичну кризу",
-        "en": "Ukraine 'cuts off' Crimea from Russia, plunging it into an energy crisis",
-        "ru": "Украина «отрезала» Крым от России, погружая его в энергетический кризис"
-      }
-    },
-    {
-      "url": "https://news.bigmir.net/ua/ukraine/10393737-sbu-znischila-strategichnij-bombarduvalnik-tu-95-na-aerodromi-v-engelsi",
-      "domain": "news.bigmir.net",
-      "seenAt": "2026-07-17T17:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/a110a1245358aad7.webp",
-      "original": "СБУ знищила стратегічний бомбардувальник Ту - 95 на аеродромі в Енгельсі",
-      "title": {
-        "uk": "СБУ знищила стратегічний бомбардувальник Ту-95 на аеродромі в Енгельсі",
-        "en": "Ukraine's SBU destroys Tu-95 strategic bomber at Engels airfield",
-        "ru": "СБУ уничтожила стратегический бомбардировщик Ту-95 на аэродроме в Энгельсе"
+        "uk": "Мобілізація: уряд Росії дозволяє новим категоріям засуджених воювати проти України",
+        "en": "Mobilization: Russian government allows new categories of convicts to fight against Ukraine",
+        "ru": "Мобилизация: правительство России разрешает новым категориям осуждённых воевать против Украины"
       }
     },
     {
@@ -61,72 +86,47 @@
       "original": "Сибіга їде до Китаю . Пекін побачив шанс на швидке перемир  я ?",
       "title": {
         "uk": "Сибіга їде до Китаю. Пекін побачив шанс на швидке перемир'я?",
-        "en": "Sybiga travels to China. Did Beijing see a chance for a quick ceasefire?",
+        "en": "Sybiha goes to China. Did Beijing see a chance for a quick ceasefire?",
         "ru": "Сибига едет в Китай. Пекин увидел шанс на быстрое перемирие?"
       }
     },
     {
-      "url": "https://www.theepochtimes.com/world/cia-director-credits-drones-ai-with-halting-russian-advances-in-ukraine-6063034",
-      "domain": "theepochtimes.com",
-      "seenAt": "2026-07-16T23:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/fa7f862fe8945f59.webp",
-      "original": "CIA Director Credits Drones , AI With Halting Russian Advances in Ukraine",
-      "title": {
-        "uk": "Директор ЦРУ заявив, що дрони та штучний інтелект зупинили просування Росії в Україні",
-        "en": "CIA Director credits drones and AI with halting Russian advances in Ukraine",
-        "ru": "Директор ЦРУ заявил, что дроны и ИИ остановили наступление России в Украине"
-      }
-    },
-    {
-      "url": "https://www.zerohedge.com/geopolitical/coalition-willing-hold-drills-near-ukraine-ahead-post-ceasefire-deployment",
-      "domain": "zerohedge.com",
-      "seenAt": "2026-07-17T09:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/31cac25ba9aa5fdd.webp",
-      "original": "Coalition Of The Willing To Hold Drills Near Ukraine Ahead Of Post - Ceasefire Deployment",
-      "title": {
-        "uk": "«Коаліція охочих» проведе навчання поблизу України напередодні розгортання після перемир'я",
-        "en": "Coalition of the Willing to hold drills near Ukraine ahead of post-ceasefire deployment",
-        "ru": "«Коалиция желающих» проведёт учения вблизи Украины перед развёртыванием после перемирия"
-      }
-    },
-    {
-      "url": "https://adevarul.ro/stiri-externe/in-lume/ministra-de-externe-a-coreei-de-nord-vizita-2544081.html",
-      "domain": "adevarul.ro",
-      "seenAt": "2026-07-18T10:15:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/6791ffc3325e460c.webp",
-      "original": "Ministra de Externe a Coreei de Nord , vizită oficială în Rusia . Phenianul și Moscova își consolidează relațiile",
-      "title": {
-        "uk": "Міністр закордонних справ Північної Кореї здійснила офіційний візит до Росії: Пхеньян і Москва зміцнюють відносини",
-        "en": "North Korea's Foreign Minister makes official visit to Russia as Pyongyang and Moscow strengthen ties",
-        "ru": "Министр иностранных дел Северной Кореи совершила официальный визит в Россию: Пхеньян и Москва укрепляют отношения"
-      }
-    },
-    {
-      "url": "https://gordonua.com/ukr/section-war/news-zakinchennya-viyny-chy-prypynennya-vohnyu-zelenskyy-vidpoviv-choho-khoche-vin-a-choho-putin-14-07-2026.html",
-      "domain": "gordonua.com",
-      "seenAt": "2026-07-14T13:15:00.000Z",
+      "url": "https://korrespondent.net/world/russia/4894904-rossyia-teriaet-kontrol-nad-krymom-The-Economist",
+      "domain": "korrespondent.net",
+      "seenAt": "2026-07-17T06:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Закінчення війни чи припинення вогню . Зеленський відповів , чого хоче він , а чого – Путін",
+      "image": "/news/3a0a2e8fbefcc0b6.webp",
+      "original": "Россия теряет контроль над Крымом - The Economist",
       "title": {
-        "uk": "Закінчення війни чи припинення вогню: Зеленський відповів, чого хоче він, а чого — Путін",
-        "en": "End of war or ceasefire: Zelensky answered what he wants and what Putin wants",
-        "ru": "Конец войны или прекращение огня: Зеленский ответил, чего хочет он, а чего — Путин"
+        "uk": "Росія втрачає контроль над Кримом — The Economist",
+        "en": "Russia is losing control of Crimea — The Economist",
+        "ru": "Россия теряет контроль над Крымом — The Economist"
       }
     },
     {
-      "url": "http://www.jpost.com/international/internationalrussia-ukraine-war/article-902443",
-      "domain": "jpost.com",
-      "seenAt": "2026-07-14T10:15:00.000Z",
-      "sourceCountry": "Israel",
-      "image": "/news/0dd266f74a1f87aa.webp",
-      "original": "Peace in Ukraine unlikely to be reached before winter , Polish PM says",
+      "url": "https://news.bigmir.net/ua/ukraine/10393737-sbu-znischila-strategichnij-bombarduvalnik-tu-95-na-aerodromi-v-engelsi",
+      "domain": "news.bigmir.net",
+      "seenAt": "2026-07-17T17:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/a110a1245358aad7.webp",
+      "original": "СБУ знищила стратегічний бомбардувальник Ту - 95 на аеродромі в Енгельсі",
       "title": {
-        "uk": "Мир в Україні навряд чи буде досягнутий до зими, заявив прем'єр-міністр Польщі",
-        "en": "Peace in Ukraine unlikely to be reached before winter, Polish PM says",
-        "ru": "Мир в Украине вряд ли будет достигнут до зимы, заявил премьер-министр Польши"
+        "uk": "СБУ знищила стратегічний бомбардувальник Ту-95 на аеродромі в Енгельсі",
+        "en": "Ukraine's Security Service destroyed a Tu-95 strategic bomber at Engels airfield",
+        "ru": "СБУ уничтожила стратегический бомбардировщик Ту-95 на аэродроме в Энгельсе"
+      }
+    },
+    {
+      "url": "https://www.unian.ua/war/ukrajinski-droni-zminili-hid-viyni-ale-chi-vistachit-jih-dlya-zvilnennya-teritoriy-foreign-policy-13442289.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-07-16T06:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b4f21ee361319357.webp",
+      "original": "Українські дрони змінили хід війни , але чи вистачить їх для звільнення територій – Foreign Policy",
+      "title": {
+        "uk": "Українські дрони змінили хід війни, але чи вистачить їх для звільнення територій — Foreign Policy",
+        "en": "Ukrainian drones changed the course of the war, but are there enough to liberate territories — Foreign Policy",
+        "ru": "Украинские дроны изменили ход войны, но хватит ли их для освобождения территорий — Foreign Policy"
       }
     }
   ]
