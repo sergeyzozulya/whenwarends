@@ -1,7 +1,46 @@
 {
-  "asOf": "2026-07-20",
+  "asOf": "2026-07-22",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://www.kyivpost.com/post/80810",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-22T08:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/226809a3d6801adc.webp",
+      "original": "Syrsky Says Army Went From Defense to Offensive Before Exit as Russia Declares Drapatyi Wanted",
+      "title": {
+        "uk": "Сирський заявив, що армія перейшла від оборони до наступу перед своїм відходом, поки Росія оголосила Драпатого в розшук",
+        "en": "Syrsky says army went from defense to offensive before exit as Russia declares Drapatyi wanted",
+        "ru": "Сырский заявил, что армия перешла от обороны к наступлению перед своим уходом, тогда как Россия объявила Драпатого в розыск"
+      }
+    },
+    {
+      "url": "https://www.unian.ua/war/mirni-peregovori-putin-peredumav-povernuti-ukrajini-deyaki-okupovani-teritoriji-13447752.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-07-22T05:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/58aa598dc9463d7c.webp",
+      "original": "Мирні переговори - Путін передумав повернути Україні деякі окуповані території",
+      "title": {
+        "uk": "Мирні переговори: Путін передумав повертати Україні деякі окуповані території",
+        "en": "Peace talks: Putin changed his mind on returning some occupied territories to Ukraine",
+        "ru": "Мирные переговоры: Путин передумал возвращать Украине некоторые оккупированные территории"
+      }
+    },
+    {
+      "url": "https://www.euronews.com/2026/07/20/ukraine-fires-400-drones-at-moscow-as-russia-steps-up-ballistic-missile-attacks",
+      "domain": "euronews.com",
+      "seenAt": "2026-07-20T11:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/e623a16e92f2579f.webp",
+      "original": "Ukraine fires 400 drones at Moscow as Russia steps up ballistic missile attacks",
+      "title": {
+        "uk": "Україна випустила 400 дронів по Москві, поки Росія посилює балістичні ракетні удари",
+        "en": "Ukraine fires 400 drones at Moscow as Russia steps up ballistic missile attacks",
+        "ru": "Украина запустила 400 дронов по Москве на фоне усиления Россией баллистических ракетных ударов"
+      }
+    },
     {
       "url": "https://www.theguardian.com/world/2026/jul/20/ukraine-war-briefing-russia-behind-deadly-strike-on-cargo-ship-says-ukraine-as-putin-thanks-north-korea",
       "domain": "theguardian.com",
@@ -9,72 +48,48 @@
       "sourceCountry": "United Kingdom",
       "original": "Ukraine war briefing : Russia behind deadly strike on cargo ship , says Ukraine , as Putin thanks North Korea",
       "title": {
-        "uk": "Зведення про війну в Україні: Росія стоїть за смертоносним ударом по вантажному судну, стверджує Україна, тоді як Путін дякує Північній Кореї",
+        "uk": "Зведення з війни: Росія стоїть за смертоносним ударом по вантажному судну — Україна; Путін подякував Північній Кореї",
         "en": "Ukraine war briefing: Russia behind deadly strike on cargo ship, says Ukraine, as Putin thanks North Korea",
-        "ru": "Сводка войны в Украине: Россия стоит за смертоносным ударом по грузовому судну, заявляет Украина, тогда как Путин благодарит Северную Корею"
+        "ru": "Сводка с войны: Россия стоит за смертоносным ударом по грузовому судну — Украина; Путин поблагодарил Северную Корею"
       }
     },
     {
-      "url": "https://www.forbes.com/sites/melikkaylan/2026/07/19/zelensky-sacks-defense-minister-delays-demise-of-putin/",
-      "domain": "forbes.com",
-      "seenAt": "2026-07-20T04:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/12bb9a2e7e41764a.webp",
-      "original": "Zelensky Sacks Defense Minister , Delays Demise Of Putin",
+      "url": "https://www.straitstimes.com/world/europe/ukraine-recaptured-700-sq-km-of-territory-this-year-outgoing-top-general-says",
+      "domain": "straitstimes.com",
+      "seenAt": "2026-07-22T06:45:00.000Z",
+      "sourceCountry": "Singapore",
+      "image": "/news/c2c92acc975341ae.webp",
+      "original": "Ukraine recaptured 700 sq km of territory this year , outgoing top general says",
       "title": {
-        "uk": "Зеленський звільнив міністра оборони",
-        "en": "Zelensky sacks defense minister",
-        "ru": "Зеленский увольняет министра обороны"
+        "uk": "Україна повернула 700 кв. км території цього року, заявив колишній головнокомандувач",
+        "en": "Ukraine recaptured 700 sq km of territory this year, outgoing top general says",
+        "ru": "Украина вернула 700 кв. км территории в этом году, заявил уходящий главнокомандующий"
       }
     },
     {
-      "url": "https://www.cnbc.com/2026/07/20/nato-russia-ukraine-war-missile-attacks-drone-europe-defense-.html",
-      "domain": "cnbc.com",
-      "seenAt": "2026-07-20T05:30:00.000Z",
-      "sourceCountry": "United States",
-      "original": "NATO says Russia would  lose a lot  if Moscow attacks Poland , Baltics",
+      "url": "https://ecfr.eu/publication/managed-disorder-the-hard-road-to-a-modest-peace-with-russia-after-ukraine/",
+      "domain": "ecfr.eu",
+      "seenAt": "2026-07-21T10:15:00.000Z",
+      "sourceCountry": "Russia",
+      "image": "/news/9b52c3f94d33abc6.webp",
+      "original": "Managed disorder : The hard road to a modest peace with Russia after Ukraine - European Council on Foreign Relations",
       "title": {
-        "uk": "НАТО заявляє, що Росія «втратить багато», якщо атакує Польщу та країни Балтії",
-        "en": "NATO says Russia would 'lose a lot' if Moscow attacks Poland, Baltics",
-        "ru": "НАТО заявляет, что Россия «много потеряет», если атакует Польшу и страны Балтии"
+        "uk": "Керований безлад: тернистий шлях до скромного миру з Росією після України — Європейська рада з міжнародних відносин",
+        "en": "Managed disorder: The hard road to a modest peace with Russia after Ukraine — European Council on Foreign Relations",
+        "ru": "Управляемый беспорядок: тернистый путь к скромному миру с Россией после Украины — Европейский совет по международным отношениям"
       }
     },
     {
-      "url": "https://www.dawn.com/news/2016857/putin-meets-north-korean-fm-hails-pyongyangs-war-support",
-      "domain": "dawn.com",
-      "seenAt": "2026-07-20T06:30:00.000Z",
-      "sourceCountry": "Pakistan",
-      "original": "Putin meets North Korean FM , hails Pyongyang war support - Newspaper",
+      "url": "https://larepublica.pe/mundo/2026/07/21/onu-reporta-1396-civiles-muertos-y-7978-heridos-en-ucrania-por-la-guerra-contra-rusia-en-lo-que-va-del-2026-1982274",
+      "domain": "larepublica.pe",
+      "seenAt": "2026-07-21T21:30:00.000Z",
+      "sourceCountry": "Peru",
+      "image": "/news/f3c31c8bc7375f85.webp",
+      "original": "ONU reporta  1 . 396 civiles muertos y 7 . 978 heridos  en Ucrania por la guerra contra Rusia en lo que va del 2026",
       "title": {
-        "uk": "Путін зустрівся з міністром закордонних справ Північної Кореї та відзначив підтримку Пхеньяна у війні",
-        "en": "Putin meets North Korean foreign minister, hails Pyongyang's war support",
-        "ru": "Путин встретился с главой МИД Северной Кореи и высоко оценил поддержку Пхеньяна в войне"
-      }
-    },
-    {
-      "url": "https://www.lsm.lv/raksts/zinas/arzemes/19.07.2026-krievija-pret-ukrainas-galvaspilsetu-nepilnas-stundas-laika-raida-40-ballistiskas-raketes.a655530/",
-      "domain": "lsm.lv",
-      "seenAt": "2026-07-19T07:15:00.000Z",
-      "sourceCountry": "Latvia",
-      "image": "/news/35c8738a09a513aa.webp",
-      "original": "Krievija pret Ukrainas galvaspilsētu nepilnas stundas laikā raida 40 ballistiskās raķetes",
-      "title": {
-        "uk": "Росія випустила 40 балістичних ракет по столиці України менш ніж за годину",
-        "en": "Russia fires 40 ballistic missiles at Ukraine's capital in under an hour",
-        "ru": "Россия выпустила 40 баллистических ракет по столице Украины менее чем за час"
-      }
-    },
-    {
-      "url": "https://gazeta.ua/ru/articles/life/_pravitelstvo-rossii-razreshaet-novym-kategoriyam-osuzhdennyh-voevat-protiv-ukrainy/1254906",
-      "domain": "gazeta.ua",
-      "seenAt": "2026-07-19T17:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/53c55dfb5c7c1213.webp",
-      "original": "Мобилизация : Правительство России разрешает новым категориям осужденных воевать против Украины",
-      "title": {
-        "uk": "Мобілізація: уряд Росії дозволяє новим категоріям засуджених воювати проти України",
-        "en": "Mobilization: Russian government allows new categories of convicts to fight against Ukraine",
-        "ru": "Мобилизация: правительство России разрешает новым категориям осуждённых воевать против Украины"
+        "uk": "ООН повідомляє про 1 396 загиблих і 7 978 поранених цивільних в Україні у війні проти Росії з початку 2026 року",
+        "en": "UN reports 1,396 civilians killed and 7,978 wounded in Ukraine in the war against Russia so far in 2026",
+        "ru": "ООН сообщает о 1 396 погибших и 7 978 раненых среди мирного населения Украины в войне против России с начала 2026 года"
       }
     },
     {
@@ -86,47 +101,33 @@
       "original": "Сибіга їде до Китаю . Пекін побачив шанс на швидке перемир  я ?",
       "title": {
         "uk": "Сибіга їде до Китаю. Пекін побачив шанс на швидке перемир'я?",
-        "en": "Sybiha goes to China. Did Beijing see a chance for a quick ceasefire?",
-        "ru": "Сибига едет в Китай. Пекин увидел шанс на быстрое перемирие?"
+        "en": "Sybiha travels to China. Has Beijing spotted a chance for a quick ceasefire?",
+        "ru": "Сыбига едет в Китай. Увидел ли Пекин шанс на быстрое перемирие?"
       }
     },
     {
-      "url": "https://korrespondent.net/world/russia/4894904-rossyia-teriaet-kontrol-nad-krymom-The-Economist",
-      "domain": "korrespondent.net",
-      "seenAt": "2026-07-17T06:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/3a0a2e8fbefcc0b6.webp",
-      "original": "Россия теряет контроль над Крымом - The Economist",
-      "title": {
-        "uk": "Росія втрачає контроль над Кримом — The Economist",
-        "en": "Russia is losing control of Crimea — The Economist",
-        "ru": "Россия теряет контроль над Крымом — The Economist"
-      }
-    },
-    {
-      "url": "https://news.bigmir.net/ua/ukraine/10393737-sbu-znischila-strategichnij-bombarduvalnik-tu-95-na-aerodromi-v-engelsi",
-      "domain": "news.bigmir.net",
-      "seenAt": "2026-07-17T17:15:00.000Z",
+      "url": "https://www.theepochtimes.com/world/cia-director-credits-drones-ai-with-halting-russian-advances-in-ukraine-6063034",
+      "domain": "theepochtimes.com",
+      "seenAt": "2026-07-16T23:00:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/a110a1245358aad7.webp",
-      "original": "СБУ знищила стратегічний бомбардувальник Ту - 95 на аеродромі в Енгельсі",
+      "image": "/news/fa7f862fe8945f59.webp",
+      "original": "CIA Director Credits Drones , AI With Halting Russian Advances in Ukraine",
       "title": {
-        "uk": "СБУ знищила стратегічний бомбардувальник Ту-95 на аеродромі в Енгельсі",
-        "en": "Ukraine's Security Service destroyed a Tu-95 strategic bomber at Engels airfield",
-        "ru": "СБУ уничтожила стратегический бомбардировщик Ту-95 на аэродроме в Энгельсе"
+        "uk": "Директор ЦРУ приписав дронам і штучному інтелекту зупинення наступу Росії в Україні",
+        "en": "CIA director credits drones, AI with halting Russian advances in Ukraine",
+        "ru": "Директор ЦРУ приписал дронам и искусственному интеллекту остановку российского наступления в Украине"
       }
     },
     {
-      "url": "https://www.unian.ua/war/ukrajinski-droni-zminili-hid-viyni-ale-chi-vistachit-jih-dlya-zvilnennya-teritoriy-foreign-policy-13442289.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-07-16T06:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/b4f21ee361319357.webp",
-      "original": "Українські дрони змінили хід війни , але чи вистачить їх для звільнення територій – Foreign Policy",
+      "url": "https://www.aljazeera.com/news/2026/7/17/ukraine-cuts-off-crimea-from-russia-plunging-it-into-an-energy-crisis",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-07-17T14:15:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Ukraine  cuts off  Crimea from Russia , plunging it into an energy crisis | Russia - Ukraine war News",
       "title": {
-        "uk": "Українські дрони змінили хід війни, але чи вистачить їх для звільнення територій — Foreign Policy",
-        "en": "Ukrainian drones changed the course of the war, but are there enough to liberate territories — Foreign Policy",
-        "ru": "Украинские дроны изменили ход войны, но хватит ли их для освобождения территорий — Foreign Policy"
+        "uk": "Україна «відрізала» Крим від Росії, поставивши його в умови енергетичної кризи",
+        "en": "Ukraine 'cuts off' Crimea from Russia, plunging it into an energy crisis",
+        "ru": "Украина «отрезала» Крым от России, погрузив его в энергетический кризис"
       }
     }
   ]

@@ -85,7 +85,7 @@
     "current_price": 0.043070972879612986,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-07-21T10:28:11.930Z"
+    "last_updated": "2026-07-22T10:29:28.750Z"
   },
   {
     "market_id": "polymarket:2602052",
@@ -94,9 +94,9 @@
     "resolution_date": "2026-08-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.075,
-    "liquidity_usd": 52375.3696,
+    "liquidity_usd": 42633.0856,
     "liquidity_mana": null,
-    "last_updated": "2026-07-21T10:28:10.939Z"
+    "last_updated": "2026-07-22T10:29:28.117Z"
   },
   {
     "market_id": "polymarket:2602277",
@@ -105,9 +105,9 @@
     "resolution_date": "2026-08-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.045,
-    "liquidity_usd": 53406.5451,
+    "liquidity_usd": 42042.641,
     "liquidity_mana": null,
-    "last_updated": "2026-07-21T10:28:10.939Z"
+    "last_updated": "2026-07-22T10:29:28.117Z"
   },
   {
     "market_id": "polymarket:2243896",
@@ -115,10 +115,10 @@
     "question": "Russia x Ukraine ceasefire agreement by October 31, 2026?",
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.17,
-    "liquidity_usd": 66369.6827,
+    "current_price": 0.175,
+    "liquidity_usd": 61466.4421,
     "liquidity_mana": null,
-    "last_updated": "2026-07-21T10:28:10.939Z"
+    "last_updated": "2026-07-22T10:29:28.117Z"
   },
   {
     "market_id": "polymarket:2264327",
@@ -127,9 +127,9 @@
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.115,
-    "liquidity_usd": 68035.4611,
+    "liquidity_usd": 61677.7281,
     "liquidity_mana": null,
-    "last_updated": "2026-07-21T10:28:10.939Z"
+    "last_updated": "2026-07-22T10:29:28.117Z"
   },
   {
     "market_id": "polymarket:2243897",
@@ -138,9 +138,9 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.355,
-    "liquidity_usd": 115307.1361,
+    "liquidity_usd": 114470.1726,
     "liquidity_mana": null,
-    "last_updated": "2026-07-21T10:28:10.939Z"
+    "last_updated": "2026-07-22T10:29:28.117Z"
   },
   {
     "market_id": "polymarket:665224",
@@ -149,9 +149,9 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.215,
-    "liquidity_usd": 83943.0251,
+    "liquidity_usd": 68352.7185,
     "liquidity_mana": null,
-    "last_updated": "2026-07-21T10:28:10.939Z"
+    "last_updated": "2026-07-22T10:29:28.117Z"
   },
   {
     "market_id": "polymarket:2264328",
@@ -159,10 +159,10 @@
     "question": "Russia x Ukraine ceasefire by December 31, 2026?",
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.225,
-    "liquidity_usd": 95146.416,
+    "current_price": 0.205,
+    "liquidity_usd": 87482.5984,
     "liquidity_mana": null,
-    "last_updated": "2026-07-21T10:28:10.939Z"
+    "last_updated": "2026-07-22T10:29:28.117Z"
   },
   {
     "market_id": "manifold:EzZLpOlLCg",
@@ -173,7 +173,7 @@
     "current_price": 0.25309542601183616,
     "liquidity_usd": null,
     "liquidity_mana": 1000,
-    "last_updated": "2026-07-21T10:28:11.930Z"
+    "last_updated": "2026-07-22T10:29:28.750Z"
   },
   {
     "market_id": "manifold:UtgtL9ORLq",
@@ -184,7 +184,7 @@
     "current_price": 0.22176683404970784,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-07-21T10:28:11.930Z"
+    "last_updated": "2026-07-22T10:29:28.750Z"
   },
   {
     "market_id": "manifold:A0P8sZglZN",
@@ -195,7 +195,7 @@
     "current_price": 0.3519025227482485,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-07-21T10:28:11.930Z"
+    "last_updated": "2026-07-22T10:29:28.750Z"
   },
   {
     "market_id": "manifold:UlZEC6Rys2",
@@ -217,6 +217,6 @@
     "current_price": 0.1946212042748629,
     "liquidity_usd": null,
     "liquidity_mana": 1005,
-    "last_updated": "2026-07-21T10:28:11.930Z"
+    "last_updated": "2026-07-22T10:29:28.750Z"
   }
 ]
