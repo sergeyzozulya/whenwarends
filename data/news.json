@@ -1,31 +1,69 @@
 {
-  "asOf": "2026-07-22",
+  "asOf": "2026-07-23",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.kyivpost.com/post/80810",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-22T08:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/226809a3d6801adc.webp",
-      "original": "Syrsky Says Army Went From Defense to Offensive Before Exit as Russia Declares Drapatyi Wanted",
+      "url": "https://www.aljazeera.com/news/2026/7/21/zelenskyy-replaces-ukraine-military-chief-after-protests",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-07-21T23:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/03123cb69c799ab3.webp",
+      "original": "Zelenskyy replaces Ukraine military chief after protests",
       "title": {
-        "uk": "Сирський заявив, що армія перейшла від оборони до наступу перед своїм відходом, поки Росія оголосила Драпатого в розшук",
-        "en": "Syrsky says army went from defense to offensive before exit as Russia declares Drapatyi wanted",
-        "ru": "Сырский заявил, что армия перешла от обороны к наступлению перед своим уходом, тогда как Россия объявила Драпатого в розыск"
+        "uk": "Зеленський замінив головнокомандувача армії України після протестів",
+        "en": "Zelenskyy replaces Ukraine military chief after protests",
+        "ru": "Зеленский заменил главнокомандующего армией Украины после протестов"
       }
     },
     {
-      "url": "https://www.unian.ua/war/mirni-peregovori-putin-peredumav-povernuti-ukrajini-deyaki-okupovani-teritoriji-13447752.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-07-22T05:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/58aa598dc9463d7c.webp",
-      "original": "Мирні переговори - Путін передумав повернути Україні деякі окуповані території",
+      "url": "https://www.dailyexcelsior.com/rubio-meets-russias-lavrov-in-manila-to-try-to-revive-prospect-of-us-helping-end-war-in-ukraine/",
+      "domain": "dailyexcelsior.com",
+      "seenAt": "2026-07-23T09:45:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/89cbf18dfee69d1f.webp",
+      "original": "Rubio meets Russia Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
       "title": {
-        "uk": "Мирні переговори: Путін передумав повертати Україні деякі окуповані території",
-        "en": "Peace talks: Putin changed his mind on returning some occupied territories to Ukraine",
-        "ru": "Мирные переговоры: Путин передумал возвращать Украине некоторые оккупированные территории"
+        "uk": "Рубіо зустрівся з Лавровим у Манілі, намагаючись відновити перспективу участі США в завершенні війни в Україні",
+        "en": "Rubio meets Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
+        "ru": "Рубио встретился с Лавровым в Маниле, пытаясь возродить перспективу участия США в завершении войны на Украине"
+      }
+    },
+    {
+      "url": "https://www.hurriyetdailynews.com/eu-locks-in-oil-price-cap-in-new-russia-sanctions-224708",
+      "domain": "hurriyetdailynews.com",
+      "seenAt": "2026-07-23T09:45:00.000Z",
+      "sourceCountry": "Turkey",
+      "original": "EU locks in oil price cap in new Russia sanctions",
+      "title": {
+        "uk": "ЄС закріпив стелю цін на нафту в нових санкціях проти Росії",
+        "en": "EU locks in oil price cap in new Russia sanctions",
+        "ru": "ЕС закрепил ценовой потолок на нефть в новых санкциях против России"
+      }
+    },
+    {
+      "url": "https://glavred.info/war/v-kremle-nazvali-novye-usloviya-prekrashcheniya-voyny-chego-trebuet-putin-10782800.html",
+      "domain": "glavred.info",
+      "seenAt": "2026-07-23T08:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/e950abf2969ebc6a.webp",
+      "original": "В Кремле назвали новые условия прекращения войны : чего требует Путин",
+      "title": {
+        "uk": "У Кремлі назвали нові умови припинення війни: чого вимагає Путін",
+        "en": "Kremlin names new conditions for ending the war: what Putin demands",
+        "ru": "В Кремле назвали новые условия прекращения войны: чего требует Путин"
+      }
+    },
+    {
+      "url": "https://www.rand.org/pubs/commentary/2026/07/ukraines-winning-strategy-against-russia-attrition.html",
+      "domain": "rand.org",
+      "seenAt": "2026-07-22T22:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/4c863ef74c299fee.webp",
+      "original": "Ukraine Winning Strategy Against Russia : Attrition",
+      "title": {
+        "uk": "Стратегія перемоги України над Росією: виснаження",
+        "en": "Ukraine winning strategy against Russia: Attrition",
+        "ru": "Стратегия победы Украины над Россией: истощение"
       }
     },
     {
@@ -38,7 +76,7 @@
       "title": {
         "uk": "Україна випустила 400 дронів по Москві, поки Росія посилює балістичні ракетні удари",
         "en": "Ukraine fires 400 drones at Moscow as Russia steps up ballistic missile attacks",
-        "ru": "Украина запустила 400 дронов по Москве на фоне усиления Россией баллистических ракетных ударов"
+        "ru": "Украина выпустила 400 дронов по Москве на фоне усиления Россией баллистических ракетных ударов"
       }
     },
     {
@@ -48,22 +86,21 @@
       "sourceCountry": "United Kingdom",
       "original": "Ukraine war briefing : Russia behind deadly strike on cargo ship , says Ukraine , as Putin thanks North Korea",
       "title": {
-        "uk": "Зведення з війни: Росія стоїть за смертоносним ударом по вантажному судну — Україна; Путін подякував Північній Кореї",
+        "uk": "Зведення з війни: Росія завдала смертоносного удару по вантажному судну, стверджує Україна; Путін дякує Північній Кореї",
         "en": "Ukraine war briefing: Russia behind deadly strike on cargo ship, says Ukraine, as Putin thanks North Korea",
-        "ru": "Сводка с войны: Россия стоит за смертоносным ударом по грузовому судну — Украина; Путин поблагодарил Северную Корею"
+        "ru": "Сводка с войны: Россия нанесла смертоносный удар по грузовому судну, утверждает Украина; Путин благодарит Северную Корею"
       }
     },
     {
-      "url": "https://www.straitstimes.com/world/europe/ukraine-recaptured-700-sq-km-of-territory-this-year-outgoing-top-general-says",
-      "domain": "straitstimes.com",
-      "seenAt": "2026-07-22T06:45:00.000Z",
-      "sourceCountry": "Singapore",
-      "image": "/news/c2c92acc975341ae.webp",
-      "original": "Ukraine recaptured 700 sq km of territory this year , outgoing top general says",
+      "url": "https://www.theguardian.com/world/2026/jul/22/volodymyr-zelenskyy-pressure-reinstate-sacked-defence-minister-mykhailo-fedorov",
+      "domain": "theguardian.com",
+      "seenAt": "2026-07-22T19:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Zelenskyy under growing pressure to reinstate sacked defence minister",
       "title": {
-        "uk": "Україна повернула 700 кв. км території цього року, заявив колишній головнокомандувач",
-        "en": "Ukraine recaptured 700 sq km of territory this year, outgoing top general says",
-        "ru": "Украина вернула 700 кв. км территории в этом году, заявил уходящий главнокомандующий"
+        "uk": "Зеленський зазнає дедалі більшого тиску щодо поновлення на посаді звільненого міністра оборони",
+        "en": "Zelenskyy under growing pressure to reinstate sacked defence minister",
+        "ru": "Зеленский испытывает нарастающее давление с требованием восстановить уволенного министра обороны"
       }
     },
     {
@@ -74,60 +111,22 @@
       "image": "/news/9b52c3f94d33abc6.webp",
       "original": "Managed disorder : The hard road to a modest peace with Russia after Ukraine - European Council on Foreign Relations",
       "title": {
-        "uk": "Керований безлад: тернистий шлях до скромного миру з Росією після України — Європейська рада з міжнародних відносин",
-        "en": "Managed disorder: The hard road to a modest peace with Russia after Ukraine — European Council on Foreign Relations",
-        "ru": "Управляемый беспорядок: тернистый путь к скромному миру с Россией после Украины — Европейский совет по международным отношениям"
+        "uk": "Керований безлад: важкий шлях до скромного миру з Росією після України",
+        "en": "Managed disorder: The hard road to a modest peace with Russia after Ukraine",
+        "ru": "Управляемый беспорядок: трудный путь к скромному миру с Россией после Украины"
       }
     },
     {
-      "url": "https://larepublica.pe/mundo/2026/07/21/onu-reporta-1396-civiles-muertos-y-7978-heridos-en-ucrania-por-la-guerra-contra-rusia-en-lo-que-va-del-2026-1982274",
-      "domain": "larepublica.pe",
-      "seenAt": "2026-07-21T21:30:00.000Z",
-      "sourceCountry": "Peru",
-      "image": "/news/f3c31c8bc7375f85.webp",
-      "original": "ONU reporta  1 . 396 civiles muertos y 7 . 978 heridos  en Ucrania por la guerra contra Rusia en lo que va del 2026",
+      "url": "https://www.omanobserver.om/article/1193327/world/europe/ukraine-vows-to-step-up-counteroffensive-actions",
+      "domain": "omanobserver.om",
+      "seenAt": "2026-07-22T22:00:00.000Z",
+      "sourceCountry": "Oman",
+      "image": "/news/e7aea776058ace38.webp",
+      "original": "Ukraine vows to step up counteroffensive actions",
       "title": {
-        "uk": "ООН повідомляє про 1 396 загиблих і 7 978 поранених цивільних в Україні у війні проти Росії з початку 2026 року",
-        "en": "UN reports 1,396 civilians killed and 7,978 wounded in Ukraine in the war against Russia so far in 2026",
-        "ru": "ООН сообщает о 1 396 погибших и 7 978 раненых среди мирного населения Украины в войне против России с начала 2026 года"
-      }
-    },
-    {
-      "url": "https://www.radiosvoboda.org/a/kytay-viyna-sybiha-perehovory-si/33805155.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-07-18T04:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/feff6d2a849bd23f.webp",
-      "original": "Сибіга їде до Китаю . Пекін побачив шанс на швидке перемир  я ?",
-      "title": {
-        "uk": "Сибіга їде до Китаю. Пекін побачив шанс на швидке перемир'я?",
-        "en": "Sybiha travels to China. Has Beijing spotted a chance for a quick ceasefire?",
-        "ru": "Сыбига едет в Китай. Увидел ли Пекин шанс на быстрое перемирие?"
-      }
-    },
-    {
-      "url": "https://www.theepochtimes.com/world/cia-director-credits-drones-ai-with-halting-russian-advances-in-ukraine-6063034",
-      "domain": "theepochtimes.com",
-      "seenAt": "2026-07-16T23:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/fa7f862fe8945f59.webp",
-      "original": "CIA Director Credits Drones , AI With Halting Russian Advances in Ukraine",
-      "title": {
-        "uk": "Директор ЦРУ приписав дронам і штучному інтелекту зупинення наступу Росії в Україні",
-        "en": "CIA director credits drones, AI with halting Russian advances in Ukraine",
-        "ru": "Директор ЦРУ приписал дронам и искусственному интеллекту остановку российского наступления в Украине"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/7/17/ukraine-cuts-off-crimea-from-russia-plunging-it-into-an-energy-crisis",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-07-17T14:15:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Ukraine  cuts off  Crimea from Russia , plunging it into an energy crisis | Russia - Ukraine war News",
-      "title": {
-        "uk": "Україна «відрізала» Крим від Росії, поставивши його в умови енергетичної кризи",
-        "en": "Ukraine 'cuts off' Crimea from Russia, plunging it into an energy crisis",
-        "ru": "Украина «отрезала» Крым от России, погрузив его в энергетический кризис"
+        "uk": "Україна обіцяє посилити контрнаступальні дії",
+        "en": "Ukraine vows to step up counteroffensive actions",
+        "ru": "Украина обещает усилить контрнаступательные действия"
       }
     }
   ]
