@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-23",
+  "asOf": "2026-07-24",
   "source": "gdelt",
   "articles": [
     {
@@ -12,7 +12,32 @@
       "title": {
         "uk": "Зеленський замінив головнокомандувача армії України після протестів",
         "en": "Zelenskyy replaces Ukraine military chief after protests",
-        "ru": "Зеленский заменил главнокомандующего армией Украины после протестов"
+        "ru": "Зеленский заменил главнокомандующего армии Украины после протестов"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/80841",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-22T13:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/5b3c181f94f99dbc.webp",
+      "original": "Ukraine new military commander Maj . Gen . Mykhailo Drapaty : Five Things to Know",
+      "title": {
+        "uk": "Новий військовий командувач України генерал-майор Михайло Драпатий: п'ять речей, які варто знати",
+        "en": "Ukraine's new military commander Maj. Gen. Mykhailo Drapaty: five things to know",
+        "ru": "Новый военный командующий Украины генерал-майор Михаил Драпатый: пять вещей, которые нужно знать"
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/jul/22/volodymyr-zelenskyy-pressure-reinstate-sacked-defence-minister-mykhailo-fedorov",
+      "domain": "theguardian.com",
+      "seenAt": "2026-07-22T19:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Zelenskyy under growing pressure to reinstate sacked defence minister",
+      "title": {
+        "uk": "Зеленський відчуває дедалі більший тиск щодо поновлення на посаді звільненого міністра оборони",
+        "en": "Zelenskyy under growing pressure to reinstate sacked defence minister",
+        "ru": "Зеленский испытывает растущее давление с требованием восстановить уволенного министра обороны"
       }
     },
     {
@@ -23,9 +48,22 @@
       "image": "/news/89cbf18dfee69d1f.webp",
       "original": "Rubio meets Russia Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
       "title": {
-        "uk": "Рубіо зустрівся з Лавровим у Манілі, намагаючись відновити перспективу участі США в завершенні війни в Україні",
-        "en": "Rubio meets Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
-        "ru": "Рубио встретился с Лавровым в Маниле, пытаясь возродить перспективу участия США в завершении войны на Украине"
+        "uk": "Рубіо зустрівся з Лавровим у Манілі, щоб спробувати відновити перспективу участі США у завершенні війни в Україні",
+        "en": "Rubio meets Russia's Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
+        "ru": "Рубио встретился с Лавровым в Маниле, чтобы попытаться возродить перспективу участия США в прекращении войны на Украине"
+      }
+    },
+    {
+      "url": "https://glavred.info/war/v-kremle-nazvali-novye-usloviya-prekrashcheniya-voyny-chego-trebuet-putin-10782800.html",
+      "domain": "glavred.info",
+      "seenAt": "2026-07-23T08:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/e950abf2969ebc6a.webp",
+      "original": "В Кремле назвали новые условия прекращения войны : чего требует Путин",
+      "title": {
+        "uk": "У Кремлі назвали нові умови припинення війни: чого вимагає Путін",
+        "en": "The Kremlin announces new conditions for ending the war: what Putin demands",
+        "ru": "В Кремле назвали новые условия прекращения войны: чего требует Путин"
       }
     },
     {
@@ -41,19 +79,6 @@
       }
     },
     {
-      "url": "https://glavred.info/war/v-kremle-nazvali-novye-usloviya-prekrashcheniya-voyny-chego-trebuet-putin-10782800.html",
-      "domain": "glavred.info",
-      "seenAt": "2026-07-23T08:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/e950abf2969ebc6a.webp",
-      "original": "В Кремле назвали новые условия прекращения войны : чего требует Путин",
-      "title": {
-        "uk": "У Кремлі назвали нові умови припинення війни: чого вимагає Путін",
-        "en": "Kremlin names new conditions for ending the war: what Putin demands",
-        "ru": "В Кремле назвали новые условия прекращения войны: чего требует Путин"
-      }
-    },
-    {
       "url": "https://www.rand.org/pubs/commentary/2026/07/ukraines-winning-strategy-against-russia-attrition.html",
       "domain": "rand.org",
       "seenAt": "2026-07-22T22:30:00.000Z",
@@ -61,9 +86,9 @@
       "image": "/news/4c863ef74c299fee.webp",
       "original": "Ukraine Winning Strategy Against Russia : Attrition",
       "title": {
-        "uk": "Стратегія перемоги України над Росією: виснаження",
-        "en": "Ukraine winning strategy against Russia: Attrition",
-        "ru": "Стратегия победы Украины над Россией: истощение"
+        "uk": "Виграшна стратегія України проти Росії: виснаження",
+        "en": "Ukraine's winning strategy against Russia: attrition",
+        "ru": "Выигрышная стратегия Украины против России: истощение"
       }
     },
     {
@@ -74,33 +99,9 @@
       "image": "/news/e623a16e92f2579f.webp",
       "original": "Ukraine fires 400 drones at Moscow as Russia steps up ballistic missile attacks",
       "title": {
-        "uk": "Україна випустила 400 дронів по Москві, поки Росія посилює балістичні ракетні удари",
+        "uk": "Україна випустила 400 дронів по Москві на тлі посилення балістичних ракетних ударів Росії",
         "en": "Ukraine fires 400 drones at Moscow as Russia steps up ballistic missile attacks",
-        "ru": "Украина выпустила 400 дронов по Москве на фоне усиления Россией баллистических ракетных ударов"
-      }
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/jul/20/ukraine-war-briefing-russia-behind-deadly-strike-on-cargo-ship-says-ukraine-as-putin-thanks-north-korea",
-      "domain": "theguardian.com",
-      "seenAt": "2026-07-20T02:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "original": "Ukraine war briefing : Russia behind deadly strike on cargo ship , says Ukraine , as Putin thanks North Korea",
-      "title": {
-        "uk": "Зведення з війни: Росія завдала смертоносного удару по вантажному судну, стверджує Україна; Путін дякує Північній Кореї",
-        "en": "Ukraine war briefing: Russia behind deadly strike on cargo ship, says Ukraine, as Putin thanks North Korea",
-        "ru": "Сводка с войны: Россия нанесла смертоносный удар по грузовому судну, утверждает Украина; Путин благодарит Северную Корею"
-      }
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/jul/22/volodymyr-zelenskyy-pressure-reinstate-sacked-defence-minister-mykhailo-fedorov",
-      "domain": "theguardian.com",
-      "seenAt": "2026-07-22T19:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "original": "Zelenskyy under growing pressure to reinstate sacked defence minister",
-      "title": {
-        "uk": "Зеленський зазнає дедалі більшого тиску щодо поновлення на посаді звільненого міністра оборони",
-        "en": "Zelenskyy under growing pressure to reinstate sacked defence minister",
-        "ru": "Зеленский испытывает нарастающее давление с требованием восстановить уволенного министра обороны"
+        "ru": "Украина выпустила 400 дронов по Москве на фоне усиления баллистических ракетных ударов России"
       }
     },
     {
@@ -111,22 +112,21 @@
       "image": "/news/9b52c3f94d33abc6.webp",
       "original": "Managed disorder : The hard road to a modest peace with Russia after Ukraine - European Council on Foreign Relations",
       "title": {
-        "uk": "Керований безлад: важкий шлях до скромного миру з Росією після України",
-        "en": "Managed disorder: The hard road to a modest peace with Russia after Ukraine",
+        "uk": "Кероване безладдя: важкий шлях до скромного миру з Росією після України",
+        "en": "Managed disorder: the hard road to a modest peace with Russia after Ukraine",
         "ru": "Управляемый беспорядок: трудный путь к скромному миру с Россией после Украины"
       }
     },
     {
-      "url": "https://www.omanobserver.om/article/1193327/world/europe/ukraine-vows-to-step-up-counteroffensive-actions",
-      "domain": "omanobserver.om",
-      "seenAt": "2026-07-22T22:00:00.000Z",
-      "sourceCountry": "Oman",
-      "image": "/news/e7aea776058ace38.webp",
-      "original": "Ukraine vows to step up counteroffensive actions",
+      "url": "https://www.dawn.com/news/2016857/putin-meets-north-korean-fm-hails-pyongyangs-war-support",
+      "domain": "dawn.com",
+      "seenAt": "2026-07-20T06:30:00.000Z",
+      "sourceCountry": "Pakistan",
+      "original": "Putin meets North Korean FM , hails Pyongyang war support - Newspaper",
       "title": {
-        "uk": "Україна обіцяє посилити контрнаступальні дії",
-        "en": "Ukraine vows to step up counteroffensive actions",
-        "ru": "Украина обещает усилить контрнаступательные действия"
+        "uk": "Путін зустрівся з міністром закордонних справ Північної Кореї та відзначив підтримку Пхеньяна у війні",
+        "en": "Putin meets North Korean foreign minister, hails Pyongyang's war support",
+        "ru": "Путин встретился с министром иностранных дел Северной Кореи и высоко оценил поддержку Пхеньяна в войне"
       }
     }
   ]
