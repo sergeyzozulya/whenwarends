@@ -1,7 +1,72 @@
 {
-  "asOf": "2026-07-24",
+  "asOf": "2026-07-25",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://www.moneycontrol.com/world/trump-zelensky-to-meet-in-washington-on-tuesday-as-us-ukraine-revive-peace-push-article-13983126.html",
+      "domain": "moneycontrol.com",
+      "seenAt": "2026-07-24T16:00:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/a9df3e6f4bc43383.webp",
+      "original": "Trump , Zelensky to meet in Washington on Tuesday as US , Ukraine revive peace push",
+      "title": {
+        "uk": "Трамп і Зеленський зустрінуться у Вашингтоні у вівторок, оскільки США та Україна поновлюють мирні зусилля",
+        "en": "Trump, Zelensky to meet in Washington on Tuesday as US, Ukraine revive peace push",
+        "ru": "Трамп и Зеленский встретятся в Вашингтоне во вторник, поскольку США и Украина возобновляют мирные усилия"
+      }
+    },
+    {
+      "url": "https://www.dialog.ua/ukraine/reuters-uznalo-o-novoy-mirnoy-initsiative-kotoruyu-ukraina-i-ssha.html",
+      "domain": "dialog.ua",
+      "seenAt": "2026-07-24T19:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/6a1ac952777f0f63.webp",
+      "original": "Reuters узнало о новой мирной инициативе , которую Украина и США предложат России",
+      "title": {
+        "uk": "Reuters дізналося про нову мирну ініціативу, яку Україна та США запропонують Росії",
+        "en": "Reuters learns of new peace initiative that Ukraine and the US plan to propose to Russia",
+        "ru": "Reuters узнало о новой мирной инициативе, которую Украина и США предложат России"
+      }
+    },
+    {
+      "url": "https://glavred.info/war/v-kremle-nazvali-novye-usloviya-prekrashcheniya-voyny-chego-trebuet-putin-10782800.html",
+      "domain": "glavred.info",
+      "seenAt": "2026-07-23T08:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/e950abf2969ebc6a.webp",
+      "original": "В Кремле назвали новые условия прекращения войны : чего требует Путин",
+      "title": {
+        "uk": "У Кремлі назвали нові умови припинення війни: чого вимагає Путін",
+        "en": "Kremlin names new conditions for ending the war: what Putin demands",
+        "ru": "В Кремле назвали новые условия прекращения войны: чего требует Путин"
+      }
+    },
+    {
+      "url": "https://www.dailyexcelsior.com/rubio-meets-russias-lavrov-in-manila-to-try-to-revive-prospect-of-us-helping-end-war-in-ukraine/",
+      "domain": "dailyexcelsior.com",
+      "seenAt": "2026-07-23T09:45:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/89cbf18dfee69d1f.webp",
+      "original": "Rubio meets Russia Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
+      "title": {
+        "uk": "Рубіо зустрівся з Лавровим у Манілі, намагаючись відновити перспективу участі США в завершенні війни в Україні",
+        "en": "Rubio meets Russia's Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
+        "ru": "Рубио встретился с Лавровым в Маниле, пытаясь возродить перспективу участия США в завершении войны в Украине"
+      }
+    },
+    {
+      "url": "https://www.rand.org/pubs/commentary/2026/07/ukraines-winning-strategy-against-russia-attrition.html",
+      "domain": "rand.org",
+      "seenAt": "2026-07-22T22:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/4c863ef74c299fee.webp",
+      "original": "Ukraine Winning Strategy Against Russia : Attrition",
+      "title": {
+        "uk": "Стратегія перемоги України над Росією: виснаження",
+        "en": "Ukraine winning strategy against Russia: attrition",
+        "ru": "Стратегия победы Украины над Россией: война на истощение"
+      }
+    },
     {
       "url": "https://www.aljazeera.com/news/2026/7/21/zelenskyy-replaces-ukraine-military-chief-after-protests",
       "domain": "aljazeera.com",
@@ -16,54 +81,16 @@
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/80841",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-22T13:45:00.000Z",
+      "url": "https://tsn.ua/ukrayina/u-rosiyi-hotuiut-novu-khvyliu-mobilizatsiyi-zelenskyy-povidomyv-dani-rozvidky-3135101.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-07-24T20:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/5b3c181f94f99dbc.webp",
-      "original": "Ukraine new military commander Maj . Gen . Mykhailo Drapaty : Five Things to Know",
+      "image": "/news/aba2487f3d2b60cb.webp",
+      "original": "Росія готує масштабну мобілізацію восени Зеленський Укрaїнa",
       "title": {
-        "uk": "Новий військовий командувач України генерал-майор Михайло Драпатий: п'ять речей, які варто знати",
-        "en": "Ukraine's new military commander Maj. Gen. Mykhailo Drapaty: five things to know",
-        "ru": "Новый военный командующий Украины генерал-майор Михаил Драпатый: пять вещей, которые нужно знать"
-      }
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/jul/22/volodymyr-zelenskyy-pressure-reinstate-sacked-defence-minister-mykhailo-fedorov",
-      "domain": "theguardian.com",
-      "seenAt": "2026-07-22T19:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "original": "Zelenskyy under growing pressure to reinstate sacked defence minister",
-      "title": {
-        "uk": "Зеленський відчуває дедалі більший тиск щодо поновлення на посаді звільненого міністра оборони",
-        "en": "Zelenskyy under growing pressure to reinstate sacked defence minister",
-        "ru": "Зеленский испытывает растущее давление с требованием восстановить уволенного министра обороны"
-      }
-    },
-    {
-      "url": "https://www.dailyexcelsior.com/rubio-meets-russias-lavrov-in-manila-to-try-to-revive-prospect-of-us-helping-end-war-in-ukraine/",
-      "domain": "dailyexcelsior.com",
-      "seenAt": "2026-07-23T09:45:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/89cbf18dfee69d1f.webp",
-      "original": "Rubio meets Russia Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
-      "title": {
-        "uk": "Рубіо зустрівся з Лавровим у Манілі, щоб спробувати відновити перспективу участі США у завершенні війни в Україні",
-        "en": "Rubio meets Russia's Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
-        "ru": "Рубио встретился с Лавровым в Маниле, чтобы попытаться возродить перспективу участия США в прекращении войны на Украине"
-      }
-    },
-    {
-      "url": "https://glavred.info/war/v-kremle-nazvali-novye-usloviya-prekrashcheniya-voyny-chego-trebuet-putin-10782800.html",
-      "domain": "glavred.info",
-      "seenAt": "2026-07-23T08:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/e950abf2969ebc6a.webp",
-      "original": "В Кремле назвали новые условия прекращения войны : чего требует Путин",
-      "title": {
-        "uk": "У Кремлі назвали нові умови припинення війни: чого вимагає Путін",
-        "en": "The Kremlin announces new conditions for ending the war: what Putin demands",
-        "ru": "В Кремле назвали новые условия прекращения войны: чего требует Путин"
+        "uk": "Росія готує масштабну мобілізацію восени",
+        "en": "Russia preparing large-scale mobilization in autumn",
+        "ru": "Россия готовит масштабную мобилизацию осенью"
       }
     },
     {
@@ -73,35 +100,22 @@
       "sourceCountry": "Turkey",
       "original": "EU locks in oil price cap in new Russia sanctions",
       "title": {
-        "uk": "ЄС закріпив стелю цін на нафту в нових санкціях проти Росії",
+        "uk": "ЄС закріплює стелю цін на нафту в нових санкціях проти Росії",
         "en": "EU locks in oil price cap in new Russia sanctions",
-        "ru": "ЕС закрепил ценовой потолок на нефть в новых санкциях против России"
+        "ru": "ЕС закрепляет потолок цен на нефть в новых санкциях против России"
       }
     },
     {
-      "url": "https://www.rand.org/pubs/commentary/2026/07/ukraines-winning-strategy-against-russia-attrition.html",
-      "domain": "rand.org",
-      "seenAt": "2026-07-22T22:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/4c863ef74c299fee.webp",
-      "original": "Ukraine Winning Strategy Against Russia : Attrition",
+      "url": "https://www.thehindu.com/news/international/several-killed-injured-in-russian-and-ukrainian-long-range-strikes-updates/article71262775.ece",
+      "domain": "thehindu.com",
+      "seenAt": "2026-07-24T14:30:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/dafde0ad985fe896.webp",
+      "original": "At least 17 killed in Russian and Ukrainian long - range strikes",
       "title": {
-        "uk": "Виграшна стратегія України проти Росії: виснаження",
-        "en": "Ukraine's winning strategy against Russia: attrition",
-        "ru": "Выигрышная стратегия Украины против России: истощение"
-      }
-    },
-    {
-      "url": "https://www.euronews.com/2026/07/20/ukraine-fires-400-drones-at-moscow-as-russia-steps-up-ballistic-missile-attacks",
-      "domain": "euronews.com",
-      "seenAt": "2026-07-20T11:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/e623a16e92f2579f.webp",
-      "original": "Ukraine fires 400 drones at Moscow as Russia steps up ballistic missile attacks",
-      "title": {
-        "uk": "Україна випустила 400 дронів по Москві на тлі посилення балістичних ракетних ударів Росії",
-        "en": "Ukraine fires 400 drones at Moscow as Russia steps up ballistic missile attacks",
-        "ru": "Украина выпустила 400 дронов по Москве на фоне усиления баллистических ракетных ударов России"
+        "uk": "Щонайменше 17 людей загинули внаслідок далекобійних ударів Росії та України",
+        "en": "At least 17 killed in Russian and Ukrainian long-range strikes",
+        "ru": "По меньшей мере 17 человек погибли в результате дальних ударов России и Украины"
       }
     },
     {
@@ -112,21 +126,9 @@
       "image": "/news/9b52c3f94d33abc6.webp",
       "original": "Managed disorder : The hard road to a modest peace with Russia after Ukraine - European Council on Foreign Relations",
       "title": {
-        "uk": "Кероване безладдя: важкий шлях до скромного миру з Росією після України",
-        "en": "Managed disorder: the hard road to a modest peace with Russia after Ukraine",
-        "ru": "Управляемый беспорядок: трудный путь к скромному миру с Россией после Украины"
-      }
-    },
-    {
-      "url": "https://www.dawn.com/news/2016857/putin-meets-north-korean-fm-hails-pyongyangs-war-support",
-      "domain": "dawn.com",
-      "seenAt": "2026-07-20T06:30:00.000Z",
-      "sourceCountry": "Pakistan",
-      "original": "Putin meets North Korean FM , hails Pyongyang war support - Newspaper",
-      "title": {
-        "uk": "Путін зустрівся з міністром закордонних справ Північної Кореї та відзначив підтримку Пхеньяна у війні",
-        "en": "Putin meets North Korean foreign minister, hails Pyongyang's war support",
-        "ru": "Путин встретился с министром иностранных дел Северной Кореи и высоко оценил поддержку Пхеньяна в войне"
+        "uk": "Керований безлад: важкий шлях до скромного миру з Росією після України",
+        "en": "Managed disorder: The hard road to a modest peace with Russia after Ukraine",
+        "ru": "Управляемый беспорядок: тяжёлый путь к скромному миру с Россией после Украины"
       }
     }
   ]
