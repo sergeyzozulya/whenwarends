@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-25",
+  "asOf": "2026-07-26",
   "source": "gdelt",
   "articles": [
     {
@@ -10,7 +10,7 @@
       "image": "/news/a9df3e6f4bc43383.webp",
       "original": "Trump , Zelensky to meet in Washington on Tuesday as US , Ukraine revive peace push",
       "title": {
-        "uk": "Трамп і Зеленський зустрінуться у Вашингтоні у вівторок, оскільки США та Україна поновлюють мирні зусилля",
+        "uk": "Трамп і Зеленський зустрінуться у Вашингтоні у вівторок, оскільки США та Україна відновлюють мирні зусилля",
         "en": "Trump, Zelensky to meet in Washington on Tuesday as US, Ukraine revive peace push",
         "ru": "Трамп и Зеленский встретятся в Вашингтоне во вторник, поскольку США и Украина возобновляют мирные усилия"
       }
@@ -24,21 +24,59 @@
       "original": "Reuters узнало о новой мирной инициативе , которую Украина и США предложат России",
       "title": {
         "uk": "Reuters дізналося про нову мирну ініціативу, яку Україна та США запропонують Росії",
-        "en": "Reuters learns of new peace initiative that Ukraine and the US plan to propose to Russia",
+        "en": "Reuters learned of a new peace initiative that Ukraine and the US will propose to Russia",
         "ru": "Reuters узнало о новой мирной инициативе, которую Украина и США предложат России"
       }
     },
     {
-      "url": "https://glavred.info/war/v-kremle-nazvali-novye-usloviya-prekrashcheniya-voyny-chego-trebuet-putin-10782800.html",
-      "domain": "glavred.info",
-      "seenAt": "2026-07-23T08:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/e950abf2969ebc6a.webp",
-      "original": "В Кремле назвали новые условия прекращения войны : чего требует Путин",
+      "url": "https://www.infobae.com/america/mundo/2026/07/25/putin-descarto-congelar-la-guerra-en-ucrania-ante-el-pedido-de-kazajistan-es-imposible/",
+      "domain": "infobae.com",
+      "seenAt": "2026-07-26T01:30:00.000Z",
+      "sourceCountry": "Argentina",
+      "image": "/news/de75cf42484b52af.webp",
+      "original": "Putin descartó congelar la guerra en Ucrania ante el pedido de Kazajistán :  Es imposible",
       "title": {
-        "uk": "У Кремлі назвали нові умови припинення війни: чого вимагає Путін",
-        "en": "Kremlin names new conditions for ending the war: what Putin demands",
-        "ru": "В Кремле назвали новые условия прекращения войны: чего требует Путин"
+        "uk": "Путін відкинув заморожування війни в Україні у відповідь на прохання Казахстану: «Це неможливо»",
+        "en": "Putin ruled out freezing the war in Ukraine in response to Kazakhstan's request: \"It's impossible\"",
+        "ru": "Путин отверг заморозку войны в Украине в ответ на просьбу Казахстана: «Это невозможно»"
+      }
+    },
+    {
+      "url": "https://www.freemalaysiatoday.com/category/world/2026/07/26/russia-seeks-30-000-extra-north-korean-troops-for-ukraine-war-says-zelensky",
+      "domain": "freemalaysiatoday.com",
+      "seenAt": "2026-07-26T09:15:00.000Z",
+      "sourceCountry": "Malaysia",
+      "image": "/news/b54d66db1dbb61cf.webp",
+      "original": "Russia seeks 30 , 000 extra North Korean troops for Ukraine war , says Zelensky",
+      "title": {
+        "uk": "Росія шукає 30 000 додаткових північнокорейських солдатів для війни в Україні, заявляє Зеленський",
+        "en": "Russia seeks 30,000 extra North Korean troops for Ukraine war, says Zelensky",
+        "ru": "Россия ищет 30 000 дополнительных северокорейских военных для войны в Украине, заявляет Зеленский"
+      }
+    },
+    {
+      "url": "https://www.yahoo.com/news/world/articles/ukraine-strikes-siberia-refinery-kazakh-145341998.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-07-25T15:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/7d7bd117a993b090.webp",
+      "original": "Ukraine strikes Siberia refinery as Kazakh leader tells Putin war should end",
+      "title": {
+        "uk": "Україна вдарила по нафтопереробному заводу в Сибіру, поки казахський лідер сказав Путіну, що війна має закінчитися",
+        "en": "Ukraine strikes Siberia refinery as Kazakh leader tells Putin war should end",
+        "ru": "Украина нанесла удар по нефтеперерабатывающему заводу в Сибири, пока казахский лидер заявил Путину, что война должна закончиться"
+      }
+    },
+    {
+      "url": "https://gordonua.com/ukr/section-war/news-zelenskyy-poperedyv-pro-novu-i-dovoli-znachnu-khvylyu-mobilizatsiyi-v-rf-24-07-2026.html",
+      "domain": "gordonua.com",
+      "seenAt": "2026-07-24T23:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Зеленський попередив про нову і  доволі значну  хвилю мобілізації в РФ",
+      "title": {
+        "uk": "Зеленський попередив про нову і доволі значну хвилю мобілізації в РФ",
+        "en": "Zelensky warned of a new and quite significant mobilization wave in Russia",
+        "ru": "Зеленский предупредил о новой и довольно значительной волне мобилизации в РФ"
       }
     },
     {
@@ -49,22 +87,9 @@
       "image": "/news/89cbf18dfee69d1f.webp",
       "original": "Rubio meets Russia Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
       "title": {
-        "uk": "Рубіо зустрівся з Лавровим у Манілі, намагаючись відновити перспективу участі США в завершенні війни в Україні",
-        "en": "Rubio meets Russia's Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
-        "ru": "Рубио встретился с Лавровым в Маниле, пытаясь возродить перспективу участия США в завершении войны в Украине"
-      }
-    },
-    {
-      "url": "https://www.rand.org/pubs/commentary/2026/07/ukraines-winning-strategy-against-russia-attrition.html",
-      "domain": "rand.org",
-      "seenAt": "2026-07-22T22:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/4c863ef74c299fee.webp",
-      "original": "Ukraine Winning Strategy Against Russia : Attrition",
-      "title": {
-        "uk": "Стратегія перемоги України над Росією: виснаження",
-        "en": "Ukraine winning strategy against Russia: attrition",
-        "ru": "Стратегия победы Украины над Россией: война на истощение"
+        "uk": "Рубіо зустрівся з Лавровим у Манілі, щоб спробувати відновити перспективу участі США у завершенні війни в Україні",
+        "en": "Rubio meets Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
+        "ru": "Рубио встретился с Лавровым в Маниле, чтобы попытаться возродить перспективу участия США в завершении войны в Украине"
       }
     },
     {
@@ -77,58 +102,32 @@
       "title": {
         "uk": "Зеленський замінив головнокомандувача армії України після протестів",
         "en": "Zelenskyy replaces Ukraine military chief after protests",
-        "ru": "Зеленский заменил главнокомандующего армии Украины после протестов"
+        "ru": "Зеленский сменил главнокомандующего армией Украины после протестов"
       }
     },
     {
-      "url": "https://tsn.ua/ukrayina/u-rosiyi-hotuiut-novu-khvyliu-mobilizatsiyi-zelenskyy-povidomyv-dani-rozvidky-3135101.html",
-      "domain": "tsn.ua",
-      "seenAt": "2026-07-24T20:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/aba2487f3d2b60cb.webp",
-      "original": "Росія готує масштабну мобілізацію восени Зеленський Укрaїнa",
+      "url": "https://www.theguardian.com/world/2026/jul/22/volodymyr-zelenskyy-pressure-reinstate-sacked-defence-minister-mykhailo-fedorov",
+      "domain": "theguardian.com",
+      "seenAt": "2026-07-22T19:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Zelenskyy under growing pressure to reinstate sacked defence minister",
       "title": {
-        "uk": "Росія готує масштабну мобілізацію восени",
-        "en": "Russia preparing large-scale mobilization in autumn",
-        "ru": "Россия готовит масштабную мобилизацию осенью"
+        "uk": "Зеленський зазнає дедалі більшого тиску з вимогою поновити звільненого міністра оборони",
+        "en": "Zelenskyy under growing pressure to reinstate sacked defence minister",
+        "ru": "Зеленский испытывает всё большее давление с требованием восстановить уволенного министра обороны"
       }
     },
     {
-      "url": "https://www.hurriyetdailynews.com/eu-locks-in-oil-price-cap-in-new-russia-sanctions-224708",
-      "domain": "hurriyetdailynews.com",
-      "seenAt": "2026-07-23T09:45:00.000Z",
-      "sourceCountry": "Turkey",
-      "original": "EU locks in oil price cap in new Russia sanctions",
+      "url": "https://www.rand.org/pubs/commentary/2026/07/ukraines-winning-strategy-against-russia-attrition.html",
+      "domain": "rand.org",
+      "seenAt": "2026-07-22T22:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/4c863ef74c299fee.webp",
+      "original": "Ukraine Winning Strategy Against Russia : Attrition",
       "title": {
-        "uk": "ЄС закріплює стелю цін на нафту в нових санкціях проти Росії",
-        "en": "EU locks in oil price cap in new Russia sanctions",
-        "ru": "ЕС закрепляет потолок цен на нефть в новых санкциях против России"
-      }
-    },
-    {
-      "url": "https://www.thehindu.com/news/international/several-killed-injured-in-russian-and-ukrainian-long-range-strikes-updates/article71262775.ece",
-      "domain": "thehindu.com",
-      "seenAt": "2026-07-24T14:30:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/dafde0ad985fe896.webp",
-      "original": "At least 17 killed in Russian and Ukrainian long - range strikes",
-      "title": {
-        "uk": "Щонайменше 17 людей загинули внаслідок далекобійних ударів Росії та України",
-        "en": "At least 17 killed in Russian and Ukrainian long-range strikes",
-        "ru": "По меньшей мере 17 человек погибли в результате дальних ударов России и Украины"
-      }
-    },
-    {
-      "url": "https://ecfr.eu/publication/managed-disorder-the-hard-road-to-a-modest-peace-with-russia-after-ukraine/",
-      "domain": "ecfr.eu",
-      "seenAt": "2026-07-21T10:15:00.000Z",
-      "sourceCountry": "Russia",
-      "image": "/news/9b52c3f94d33abc6.webp",
-      "original": "Managed disorder : The hard road to a modest peace with Russia after Ukraine - European Council on Foreign Relations",
-      "title": {
-        "uk": "Керований безлад: важкий шлях до скромного миру з Росією після України",
-        "en": "Managed disorder: The hard road to a modest peace with Russia after Ukraine",
-        "ru": "Управляемый беспорядок: тяжёлый путь к скромному миру с Россией после Украины"
+        "uk": "Переможна стратегія України проти Росії: виснаження",
+        "en": "Ukraine winning strategy against Russia: Attrition",
+        "ru": "Победная стратегия Украины против России: война на истощение"
       }
     }
   ]
