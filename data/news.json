@@ -1,31 +1,43 @@
 {
-  "asOf": "2026-07-26",
+  "asOf": "2026-07-27",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.moneycontrol.com/world/trump-zelensky-to-meet-in-washington-on-tuesday-as-us-ukraine-revive-peace-push-article-13983126.html",
-      "domain": "moneycontrol.com",
-      "seenAt": "2026-07-24T16:00:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/a9df3e6f4bc43383.webp",
-      "original": "Trump , Zelensky to meet in Washington on Tuesday as US , Ukraine revive peace push",
+      "url": "https://www.kyivpost.com/post/81124",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-27T07:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b1740cef94bc2797.webp",
+      "original": "Kremlin Shrugs Off Reports of US - Ukraine Air Truce Plan , Says It  Too Early",
       "title": {
-        "uk": "Трамп і Зеленський зустрінуться у Вашингтоні у вівторок, оскільки США та Україна відновлюють мирні зусилля",
-        "en": "Trump, Zelensky to meet in Washington on Tuesday as US, Ukraine revive peace push",
-        "ru": "Трамп и Зеленский встретятся в Вашингтоне во вторник, поскольку США и Украина возобновляют мирные усилия"
+        "uk": "Кремль відмахнувся від повідомлень про план повітряного перемир'я США та України, заявивши, що «ще зарано»",
+        "en": "Kremlin shrugs off reports of US-Ukraine air truce plan, says it's too early",
+        "ru": "Кремль отмахнулся от сообщений о плане воздушного перемирия США и Украины, заявив, что «ещё рано»"
       }
     },
     {
-      "url": "https://www.dialog.ua/ukraine/reuters-uznalo-o-novoy-mirnoy-initsiative-kotoruyu-ukraina-i-ssha.html",
-      "domain": "dialog.ua",
-      "seenAt": "2026-07-24T19:15:00.000Z",
+      "url": "https://www.obozrevatel.com/ukr/politics-news/ukraina-ta-ssha-gotuyut-novu-mirnu-propozitsiyu-dlya-rosii-media.htm",
+      "domain": "obozrevatel.com",
+      "seenAt": "2026-07-27T00:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/6a1ac952777f0f63.webp",
-      "original": "Reuters узнало о новой мирной инициативе , которую Украина и США предложат России",
+      "original": "Мирні переговори - яку пропозицію готують США і Україна для Росії - подробиці",
       "title": {
-        "uk": "Reuters дізналося про нову мирну ініціативу, яку Україна та США запропонують Росії",
-        "en": "Reuters learned of a new peace initiative that Ukraine and the US will propose to Russia",
-        "ru": "Reuters узнало о новой мирной инициативе, которую Украина и США предложат России"
+        "uk": "Мирні переговори: яку пропозицію готують США і Україна для Росії — подробиці",
+        "en": "Peace negotiations: what proposal the US and Ukraine are preparing for Russia — details",
+        "ru": "Мирные переговоры: какое предложение готовят США и Украина для России — подробности"
+      }
+    },
+    {
+      "url": "https://www.thehindu.com/news/international/zelenskyy-says-russia-seeks-30000-extra-north-korean-troops-for-ukraine-war/article71270092.ece",
+      "domain": "thehindu.com",
+      "seenAt": "2026-07-26T16:15:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/d4e295ea8f975496.webp",
+      "original": "Zelenskyy says Russia seeks 30 , 000 extra North Korean troops for Ukraine war",
+      "title": {
+        "uk": "Зеленський заявив, що Росія домагається 30 000 додаткових північнокорейських військ для війни в Україні",
+        "en": "Zelenskyy says Russia seeks 30,000 extra North Korean troops for Ukraine war",
+        "ru": "Зеленский заявил, что Россия добивается 30 000 дополнительных северокорейских военных для войны в Украине"
       }
     },
     {
@@ -36,22 +48,22 @@
       "image": "/news/de75cf42484b52af.webp",
       "original": "Putin descartó congelar la guerra en Ucrania ante el pedido de Kazajistán :  Es imposible",
       "title": {
-        "uk": "Путін відкинув заморожування війни в Україні у відповідь на прохання Казахстану: «Це неможливо»",
-        "en": "Putin ruled out freezing the war in Ukraine in response to Kazakhstan's request: \"It's impossible\"",
-        "ru": "Путин отверг заморозку войны в Украине в ответ на просьбу Казахстана: «Это невозможно»"
+        "uk": "Путін відкинув заморожування війни в Україні на прохання Казахстану: «Це неможливо»",
+        "en": "Putin ruled out freezing the war in Ukraine following Kazakhstan's request: 'It's impossible'",
+        "ru": "Путин отверг заморозку войны в Украине по просьбе Казахстана: «Это невозможно»"
       }
     },
     {
-      "url": "https://www.freemalaysiatoday.com/category/world/2026/07/26/russia-seeks-30-000-extra-north-korean-troops-for-ukraine-war-says-zelensky",
-      "domain": "freemalaysiatoday.com",
-      "seenAt": "2026-07-26T09:15:00.000Z",
-      "sourceCountry": "Malaysia",
-      "image": "/news/b54d66db1dbb61cf.webp",
-      "original": "Russia seeks 30 , 000 extra North Korean troops for Ukraine war , says Zelensky",
+      "url": "https://www.wcvb.com/article/ukraine-civilian-casualties-highest-since-2022/73265219",
+      "domain": "wcvb.com",
+      "seenAt": "2026-07-26T19:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/e5482a08891d15b3.webp",
+      "original": "Ukraine sees highest civilian casualties in a month since 2022",
       "title": {
-        "uk": "Росія шукає 30 000 додаткових північнокорейських солдатів для війни в Україні, заявляє Зеленський",
-        "en": "Russia seeks 30,000 extra North Korean troops for Ukraine war, says Zelensky",
-        "ru": "Россия ищет 30 000 дополнительных северокорейских военных для войны в Украине, заявляет Зеленский"
+        "uk": "Україна зафіксувала найбільші втрати серед цивільного населення за місяць з 2022 року",
+        "en": "Ukraine sees highest civilian casualties in a month since 2022",
+        "ru": "Украина зафиксировала наибольшее число жертв среди мирных жителей за месяц с 2022 года"
       }
     },
     {
@@ -62,9 +74,9 @@
       "image": "/news/7d7bd117a993b090.webp",
       "original": "Ukraine strikes Siberia refinery as Kazakh leader tells Putin war should end",
       "title": {
-        "uk": "Україна вдарила по нафтопереробному заводу в Сибіру, поки казахський лідер сказав Путіну, що війна має закінчитися",
+        "uk": "Україна вдарила по нафтопереробному заводу в Сибіру, поки казахський лідер закликав Путіна завершити війну",
         "en": "Ukraine strikes Siberia refinery as Kazakh leader tells Putin war should end",
-        "ru": "Украина нанесла удар по нефтеперерабатывающему заводу в Сибири, пока казахский лидер заявил Путину, что война должна закончиться"
+        "ru": "Украина нанесла удар по нефтеперерабатывающему заводу в Сибири, пока казахстанский лидер призвал Путина завершить войну"
       }
     },
     {
@@ -75,8 +87,8 @@
       "original": "Зеленський попередив про нову і  доволі значну  хвилю мобілізації в РФ",
       "title": {
         "uk": "Зеленський попередив про нову і доволі значну хвилю мобілізації в РФ",
-        "en": "Zelensky warned of a new and quite significant mobilization wave in Russia",
-        "ru": "Зеленский предупредил о новой и довольно значительной волне мобилизации в РФ"
+        "en": "Zelenskyy warned of a new and quite significant wave of mobilisation in Russia",
+        "ru": "Зеленский предупредил о новой и весьма значительной волне мобилизации в России"
       }
     },
     {
@@ -89,20 +101,20 @@
       "title": {
         "uk": "Рубіо зустрівся з Лавровим у Манілі, щоб спробувати відновити перспективу участі США у завершенні війни в Україні",
         "en": "Rubio meets Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
-        "ru": "Рубио встретился с Лавровым в Маниле, чтобы попытаться возродить перспективу участия США в завершении войны в Украине"
+        "ru": "Рубио встретился с Лавровым в Маниле, чтобы попытаться возобновить перспективу участия США в завершении войны в Украине"
       }
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/7/21/zelenskyy-replaces-ukraine-military-chief-after-protests",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-07-21T23:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/03123cb69c799ab3.webp",
-      "original": "Zelenskyy replaces Ukraine military chief after protests",
+      "url": "https://www.kyivpost.com/post/80841",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-22T13:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/5b3c181f94f99dbc.webp",
+      "original": "Ukraine new military commander Maj . Gen . Mykhailo Drapaty : Five Things to Know",
       "title": {
-        "uk": "Зеленський замінив головнокомандувача армії України після протестів",
-        "en": "Zelenskyy replaces Ukraine military chief after protests",
-        "ru": "Зеленский сменил главнокомандующего армией Украины после протестов"
+        "uk": "Новий головнокомандувач ЗСУ генерал-майор Михайло Драпатий: п'ять речей, які варто знати",
+        "en": "Ukraine's new military commander Maj. Gen. Mykhailo Drapaty: five things to know",
+        "ru": "Новый главнокомандующий ВСУ генерал-майор Михаил Драпатый: пять фактов"
       }
     },
     {
@@ -112,22 +124,9 @@
       "sourceCountry": "United Kingdom",
       "original": "Zelenskyy under growing pressure to reinstate sacked defence minister",
       "title": {
-        "uk": "Зеленський зазнає дедалі більшого тиску з вимогою поновити звільненого міністра оборони",
+        "uk": "Зеленський під дедалі більшим тиском щодо повернення на посаду звільненого міністра оборони",
         "en": "Zelenskyy under growing pressure to reinstate sacked defence minister",
         "ru": "Зеленский испытывает всё большее давление с требованием восстановить уволенного министра обороны"
-      }
-    },
-    {
-      "url": "https://www.rand.org/pubs/commentary/2026/07/ukraines-winning-strategy-against-russia-attrition.html",
-      "domain": "rand.org",
-      "seenAt": "2026-07-22T22:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/4c863ef74c299fee.webp",
-      "original": "Ukraine Winning Strategy Against Russia : Attrition",
-      "title": {
-        "uk": "Переможна стратегія України проти Росії: виснаження",
-        "en": "Ukraine winning strategy against Russia: Attrition",
-        "ru": "Победная стратегия Украины против России: война на истощение"
       }
     }
   ]
