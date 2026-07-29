@@ -1,18 +1,43 @@
 {
-  "asOf": "2026-07-28",
+  "asOf": "2026-07-29",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://ua.korrespondent.net/ukraine/4897744-povitriane-peremyria-peremovyny-navkolo-viiny",
-      "domain": "ua.korrespondent.net",
-      "seenAt": "2026-07-28T00:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/85c29fa2bd70a07d.webp",
-      "original": "Повітряне перемир  я . Перемовини навколо війни - Korrespondent . net",
+      "url": "https://aninews.in/news/world/us/we-want-to-stop-this-war-putin-doesnt-zelenskyy-says-sanctions-needed-as-russia-rejects-ceasefire-talks20260729091134/",
+      "domain": "aninews.in",
+      "seenAt": "2026-07-29T04:30:00.000Z",
+      "sourceCountry": "India",
+      "original": "We want to stop this war ... Putin doesnt : Zelenskyy says sanctions needed as Russia rejects ceasefire talks",
       "title": {
-        "uk": "Повітряне перемир'я. Переговори навколо війни",
-        "en": "Air ceasefire. Negotiations around the war",
-        "ru": "Воздушное перемирие. Переговоры вокруг войны"
+        "uk": "«Ми хочемо зупинити цю війну... Путін — ні»: Зеленський закликає до санкцій, оскільки Росія відкидає переговори про припинення вогню",
+        "en": "\"We want to stop this war... Putin doesn't\": Zelensky says sanctions needed as Russia rejects ceasefire talks",
+        "ru": "«Мы хотим остановить эту войну... Путин — нет»: Зеленский призвал к санкциям, поскольку Россия отвергла переговоры о прекращении огня"
+      }
+    },
+    {
+      "url": "https://www.irishtimes.com/world/us/2026/07/28/better-chemistry-has-the-trump-zelenskiy-relationship-thawed/",
+      "domain": "irishtimes.com",
+      "seenAt": "2026-07-28T13:30:00.000Z",
+      "sourceCountry": "Ireland",
+      "image": "/news/56b0edadeb89455d.webp",
+      "original": "Better chemistry : Has the Trump - Zelenskiy relationship thawed ? – The Irish Times",
+      "title": {
+        "uk": "Краща хімія: чи відтанули відносини між Трампом і Зеленським?",
+        "en": "Better chemistry: has the Trump-Zelenskyy relationship thawed?",
+        "ru": "Лучшая химия: потеплели ли отношения между Трампом и Зеленским?"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/81124",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-27T07:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b1740cef94bc2797.webp",
+      "original": "Kremlin Shrugs Off Reports of US - Ukraine Air Truce Plan , Says It  Too Early",
+      "title": {
+        "uk": "Кремль відмахнувся від повідомлень про план повітряного перемир'я між США та Україною, заявивши, що «ще занадто рано»",
+        "en": "Kremlin shrugs off reports of US-Ukraine air truce plan, says it's \"too early\"",
+        "ru": "Кремль отмахнулся от сообщений о плане воздушного перемирия между США и Украиной, заявив, что «слишком рано»"
       }
     },
     {
@@ -24,8 +49,8 @@
       "original": "ISW : Путін намагається перекласти відповідальність за продовження війни на Держдуму й населення Росії",
       "title": {
         "uk": "ISW: Путін намагається перекласти відповідальність за продовження війни на Держдуму й населення Росії",
-        "en": "ISW: Putin tries to shift responsibility for continuation of the war onto the State Duma and Russia's population",
-        "ru": "ISW: Путин пытается переложить ответственность за продолжение войны на Госдуму и население России"
+        "en": "ISW: Putin is trying to shift responsibility for the continuation of the war onto the State Duma and the Russian population",
+        "ru": "ISW: Путин пытается переложить ответственность за продолжение войны на Государственную думу и население России"
       }
     },
     {
@@ -36,9 +61,22 @@
       "image": "/news/d4e295ea8f975496.webp",
       "original": "Zelenskyy says Russia seeks 30 , 000 extra North Korean troops for Ukraine war",
       "title": {
-        "uk": "Зеленський заявив, що Росія прагне залучити ще 30 000 північнокорейських солдатів до війни в Україні",
-        "en": "Zelenskyy says Russia seeks 30,000 extra North Korean troops for Ukraine war",
-        "ru": "Зеленский заявил, что Россия хочет привлечь ещё 30 000 северокорейских солдат к войне в Украине"
+        "uk": "Зеленський заявив, що Росія прагне залучити ще 30 000 північнокорейських військ для війни в Україні",
+        "en": "Zelensky says Russia seeks 30,000 extra North Korean troops for Ukraine war",
+        "ru": "Зеленский заявил, что Россия стремится привлечь ещё 30 000 северокорейских солдат для войны в Украине"
+      }
+    },
+    {
+      "url": "https://24tv.ua/mirni-peregovori-do-chogo-same-putin-gotuye-rosiyan_n3113238",
+      "domain": "24tv.ua",
+      "seenAt": "2026-07-29T01:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/80f2bf5a05a16bb6.webp",
+      "original": "Мирні переговори - до чого саме Путін готує росіян",
+      "title": {
+        "uk": "Мирні переговори: до чого саме Путін готує росіян",
+        "en": "Peace talks: what exactly Putin is preparing Russians for",
+        "ru": "Мирные переговоры: к чему именно Путин готовит россиян"
       }
     },
     {
@@ -49,22 +87,9 @@
       "image": "/news/7d7bd117a993b090.webp",
       "original": "Ukraine strikes Siberia refinery as Kazakh leader tells Putin war should end",
       "title": {
-        "uk": "Україна вдарила по нафтопереробному заводу в Сибіру, поки президент Казахстану закликав Путіна закінчити війну",
+        "uk": "Україна завдала удару по нафтопереробному заводу в Сибіру, поки казахстанський лідер закликав Путіна покласти край війні",
         "en": "Ukraine strikes Siberia refinery as Kazakh leader tells Putin war should end",
-        "ru": "Украина нанесла удар по нефтеперерабатывающему заводу в Сибири, пока лидер Казахстана призвал Путина завершить войну"
-      }
-    },
-    {
-      "url": "https://www.moneycontrol.com/world/trump-zelensky-to-meet-in-washington-on-tuesday-as-us-ukraine-revive-peace-push-article-13983126.html",
-      "domain": "moneycontrol.com",
-      "seenAt": "2026-07-24T16:00:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/a9df3e6f4bc43383.webp",
-      "original": "Trump , Zelensky to meet in Washington on Tuesday as US , Ukraine revive peace push",
-      "title": {
-        "uk": "Трамп і Зеленський зустрінуться у Вашингтоні у вівторок, поки США й Україна відновлюють мирні зусилля",
-        "en": "Trump, Zelensky to meet in Washington on Tuesday as US, Ukraine revive peace push",
-        "ru": "Трамп и Зеленский встретятся в Вашингтоне во вторник, пока США и Украина возобновляют мирные усилия"
+        "ru": "Украина нанесла удар по нефтеперерабатывающему заводу в Сибири, пока лидер Казахстана призвал Путина прекратить войну"
       }
     },
     {
@@ -75,35 +100,21 @@
       "image": "/news/e5482a08891d15b3.webp",
       "original": "Ukraine sees highest civilian casualties in a month since 2022",
       "title": {
-        "uk": "Україна зафіксувала найбільші втрати серед цивільних за місяць з 2022 року",
+        "uk": "Україна зафіксувала найвищий рівень цивільних втрат за місяць з 2022 року",
         "en": "Ukraine sees highest civilian casualties in a month since 2022",
         "ru": "Украина зафиксировала наибольшее число жертв среди мирного населения за месяц с 2022 года"
       }
     },
     {
-      "url": "https://www.dailyexcelsior.com/rubio-meets-russias-lavrov-in-manila-to-try-to-revive-prospect-of-us-helping-end-war-in-ukraine/",
-      "domain": "dailyexcelsior.com",
-      "seenAt": "2026-07-23T09:45:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/89cbf18dfee69d1f.webp",
-      "original": "Rubio meets Russia Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
-      "title": {
-        "uk": "Рубіо зустрівся з Лавровим у Манілі, щоб спробувати відновити перспективу допомоги США у завершенні війни в Україні",
-        "en": "Rubio meets Russia's Lavrov in Manila to try to revive prospect of US helping end war in Ukraine",
-        "ru": "Рубио встретился с Лавровым в Маниле, чтобы попытаться возродить перспективу участия США в завершении войны в Украине"
-      }
-    },
-    {
-      "url": "https://tsn.ua/ukrayina/u-rosiyi-hotuiut-novu-khvyliu-mobilizatsiyi-zelenskyy-povidomyv-dani-rozvidky-3135101.html",
-      "domain": "tsn.ua",
-      "seenAt": "2026-07-24T20:00:00.000Z",
+      "url": "https://news.liga.net/ua/war/news/posol-ukrainy-v-izraili-pro-ataku-na-iranske-sudno-boremosia-z-inshoiu-storonoiu-tiiei-zh-osi-zla",
+      "domain": "news.liga.net",
+      "seenAt": "2026-07-27T13:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/aba2487f3d2b60cb.webp",
-      "original": "Росія готує масштабну мобілізацію восени Зеленський Укрaїнa",
+      "original": "Атака ЗСУ по судну Ірану – коментарі МЗС та посла України в Ізраїлі | Новини України",
       "title": {
-        "uk": "Росія готує масштабну мобілізацію восени",
-        "en": "Russia prepares large-scale mobilization in autumn",
-        "ru": "Россия готовит масштабную мобилизацию осенью"
+        "uk": "Атака ЗСУ по судну Ірану — коментарі МЗС та посла України в Ізраїлі",
+        "en": "Ukrainian military strike on Iranian vessel — comments from the Foreign Ministry and Ukraine's ambassador to Israel",
+        "ru": "Удар ВСУ по судну Ирана — комментарии МИД и посла Украины в Израиле"
       }
     },
     {
@@ -114,22 +125,9 @@
       "image": "/news/4c863ef74c299fee.webp",
       "original": "Ukraine Winning Strategy Against Russia : Attrition",
       "title": {
-        "uk": "Стратегія перемоги України над Росією: виснаження",
+        "uk": "Стратегія перемоги України проти Росії: виснаження",
         "en": "Ukraine winning strategy against Russia: attrition",
-        "ru": "Выигрышная стратегия Украины против России: война на истощение"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/80841",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-22T13:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/5b3c181f94f99dbc.webp",
-      "original": "Ukraine new military commander Maj . Gen . Mykhailo Drapaty : Five Things to Know",
-      "title": {
-        "uk": "Новий головнокомандувач ЗСУ генерал-майор Михайло Драпатий: п'ять речей, які варто знати",
-        "en": "Ukraine's new military commander Maj. Gen. Mykhailo Drapaty: five things to know",
-        "ru": "Новый главнокомандующий ВСУ генерал-майор Михаил Драпатый: пять вещей, которые нужно знать"
+        "ru": "Выигрышная стратегия Украины против России: истощение"
       }
     }
   ]
