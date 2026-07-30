@@ -1,30 +1,41 @@
 {
-  "asOf": "2026-07-29",
+  "asOf": "2026-07-30",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://aninews.in/news/world/us/we-want-to-stop-this-war-putin-doesnt-zelenskyy-says-sanctions-needed-as-russia-rejects-ceasefire-talks20260729091134/",
+      "url": "https://aninews.in/news/world/europe/russia-strikes-kyiv-with-ballistic-missiles-after-zelenskyy-warned-of-massive-attack20260730085330/",
       "domain": "aninews.in",
-      "seenAt": "2026-07-29T04:30:00.000Z",
+      "seenAt": "2026-07-30T05:30:00.000Z",
       "sourceCountry": "India",
-      "original": "We want to stop this war ... Putin doesnt : Zelenskyy says sanctions needed as Russia rejects ceasefire talks",
+      "original": "Russia strikes Kyiv with ballistic missiles after Zelenskyy warned of  massive attack",
       "title": {
-        "uk": "«Ми хочемо зупинити цю війну... Путін — ні»: Зеленський закликає до санкцій, оскільки Росія відкидає переговори про припинення вогню",
-        "en": "\"We want to stop this war... Putin doesn't\": Zelensky says sanctions needed as Russia rejects ceasefire talks",
-        "ru": "«Мы хотим остановить эту войну... Путин — нет»: Зеленский призвал к санкциям, поскольку Россия отвергла переговоры о прекращении огня"
+        "uk": "Росія завдала удару балістичними ракетами по Києву після попередження Зеленського про «масований удар»",
+        "en": "Russia strikes Kyiv with ballistic missiles after Zelenskyy warned of 'massive attack'",
+        "ru": "Россия нанесла удар баллистическими ракетами по Киеву после предупреждения Зеленского о «массированном ударе»"
       }
     },
     {
-      "url": "https://www.irishtimes.com/world/us/2026/07/28/better-chemistry-has-the-trump-zelenskiy-relationship-thawed/",
-      "domain": "irishtimes.com",
-      "seenAt": "2026-07-28T13:30:00.000Z",
-      "sourceCountry": "Ireland",
-      "image": "/news/56b0edadeb89455d.webp",
-      "original": "Better chemistry : Has the Trump - Zelenskiy relationship thawed ? – The Irish Times",
+      "url": "https://www.newsweek.com/new-russian-soldiers-shape-ukraine-war-12258788",
+      "domain": "newsweek.com",
+      "seenAt": "2026-07-29T13:00:00.000Z",
+      "sourceCountry": "United States",
+      "original": "How 500 , 000 New Russian Soldiers Could Shape Ukraine War",
       "title": {
-        "uk": "Краща хімія: чи відтанули відносини між Трампом і Зеленським?",
-        "en": "Better chemistry: has the Trump-Zelenskyy relationship thawed?",
-        "ru": "Лучшая химия: потеплели ли отношения между Трампом и Зеленским?"
+        "uk": "Як 500 000 нових російських солдатів можуть вплинути на війну в Україні",
+        "en": "How 500,000 new Russian soldiers could shape the Ukraine war",
+        "ru": "Как 500 000 новых российских солдат могут повлиять на войну в Украине"
+      }
+    },
+    {
+      "url": "https://www.obozrevatel.com/ukr/politics-news/u-tsomu-problema-zelenskij-u-ssha-poyasniv-hto-blokue-peregovori-schodo-pripinennya-vijni-v-ukraini.htm",
+      "domain": "obozrevatel.com",
+      "seenAt": "2026-07-29T07:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Зеленський у США пояснив , хто блокує переговори щодо припинення війни в Україні",
+      "title": {
+        "uk": "Зеленський у США пояснив, хто блокує переговори щодо припинення війни в Україні",
+        "en": "Zelenskyy in the US explained who is blocking negotiations on ending the war in Ukraine",
+        "ru": "Зеленский в США объяснил, кто блокирует переговоры по прекращению войны в Украине"
       }
     },
     {
@@ -35,9 +46,35 @@
       "image": "/news/b1740cef94bc2797.webp",
       "original": "Kremlin Shrugs Off Reports of US - Ukraine Air Truce Plan , Says It  Too Early",
       "title": {
-        "uk": "Кремль відмахнувся від повідомлень про план повітряного перемир'я між США та Україною, заявивши, що «ще занадто рано»",
-        "en": "Kremlin shrugs off reports of US-Ukraine air truce plan, says it's \"too early\"",
-        "ru": "Кремль отмахнулся от сообщений о плане воздушного перемирия между США и Украиной, заявив, что «слишком рано»"
+        "uk": "Кремль відкидає повідомлення про план повітряного перемир'я між США та Україною, заявляючи, що ще зарано",
+        "en": "Kremlin shrugs off reports of US-Ukraine air truce plan, says it's too early",
+        "ru": "Кремль отмахнулся от сообщений о плане воздушного перемирия между США и Украиной, заявив, что ещё рано"
+      }
+    },
+    {
+      "url": "https://www.irishtimes.com/world/us/2026/07/28/better-chemistry-has-the-trump-zelenskiy-relationship-thawed/",
+      "domain": "irishtimes.com",
+      "seenAt": "2026-07-28T13:30:00.000Z",
+      "sourceCountry": "Ireland",
+      "image": "/news/56b0edadeb89455d.webp",
+      "original": "Better chemistry : Has the Trump - Zelenskiy relationship thawed ? – The Irish Times",
+      "title": {
+        "uk": "Краща хімія: чи потеплішали стосунки Трампа і Зеленського?",
+        "en": "Better chemistry: has the Trump-Zelenskyy relationship thawed?",
+        "ru": "Лучшая химия: потеплели ли отношения Трампа и Зеленского?"
+      }
+    },
+    {
+      "url": "https://www.thehindu.com/news/international/zelenskyy-says-russia-seeks-30000-extra-north-korean-troops-for-ukraine-war/article71270092.ece",
+      "domain": "thehindu.com",
+      "seenAt": "2026-07-26T16:15:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/d4e295ea8f975496.webp",
+      "original": "Zelenskyy says Russia seeks 30 , 000 extra North Korean troops for Ukraine war",
+      "title": {
+        "uk": "Зеленський заявив, що Росія домагається 30 000 додаткових північнокорейських військ для війни в Україні",
+        "en": "Zelensky says Russia seeks 30,000 extra North Korean troops for Ukraine war",
+        "ru": "Зеленский заявил, что Россия добивается 30 000 дополнительных северокорейских военных для войны в Украине"
       }
     },
     {
@@ -49,34 +86,8 @@
       "original": "ISW : Путін намагається перекласти відповідальність за продовження війни на Держдуму й населення Росії",
       "title": {
         "uk": "ISW: Путін намагається перекласти відповідальність за продовження війни на Держдуму й населення Росії",
-        "en": "ISW: Putin is trying to shift responsibility for the continuation of the war onto the State Duma and the Russian population",
-        "ru": "ISW: Путин пытается переложить ответственность за продолжение войны на Государственную думу и население России"
-      }
-    },
-    {
-      "url": "https://www.thehindu.com/news/international/zelenskyy-says-russia-seeks-30000-extra-north-korean-troops-for-ukraine-war/article71270092.ece",
-      "domain": "thehindu.com",
-      "seenAt": "2026-07-26T16:15:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/d4e295ea8f975496.webp",
-      "original": "Zelenskyy says Russia seeks 30 , 000 extra North Korean troops for Ukraine war",
-      "title": {
-        "uk": "Зеленський заявив, що Росія прагне залучити ще 30 000 північнокорейських військ для війни в Україні",
-        "en": "Zelensky says Russia seeks 30,000 extra North Korean troops for Ukraine war",
-        "ru": "Зеленский заявил, что Россия стремится привлечь ещё 30 000 северокорейских солдат для войны в Украине"
-      }
-    },
-    {
-      "url": "https://24tv.ua/mirni-peregovori-do-chogo-same-putin-gotuye-rosiyan_n3113238",
-      "domain": "24tv.ua",
-      "seenAt": "2026-07-29T01:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/80f2bf5a05a16bb6.webp",
-      "original": "Мирні переговори - до чого саме Путін готує росіян",
-      "title": {
-        "uk": "Мирні переговори: до чого саме Путін готує росіян",
-        "en": "Peace talks: what exactly Putin is preparing Russians for",
-        "ru": "Мирные переговоры: к чему именно Путин готовит россиян"
+        "en": "ISW: Putin is trying to shift responsibility for the continuation of the war onto the State Duma and Russia's population",
+        "ru": "ISW: Путин пытается переложить ответственность за продолжение войны на Госдуму и население России"
       }
     },
     {
@@ -87,9 +98,9 @@
       "image": "/news/7d7bd117a993b090.webp",
       "original": "Ukraine strikes Siberia refinery as Kazakh leader tells Putin war should end",
       "title": {
-        "uk": "Україна завдала удару по нафтопереробному заводу в Сибіру, поки казахстанський лідер закликав Путіна покласти край війні",
+        "uk": "Україна завдала удару по нафтопереробному заводу в Сибіру, поки казахський лідер закликав Путіна припинити війну",
         "en": "Ukraine strikes Siberia refinery as Kazakh leader tells Putin war should end",
-        "ru": "Украина нанесла удар по нефтеперерабатывающему заводу в Сибири, пока лидер Казахстана призвал Путина прекратить войну"
+        "ru": "Украина нанесла удар по нефтеперерабатывающему заводу в Сибири, пока казахский лидер призвал Путина прекратить войну"
       }
     },
     {
@@ -100,34 +111,21 @@
       "image": "/news/e5482a08891d15b3.webp",
       "original": "Ukraine sees highest civilian casualties in a month since 2022",
       "title": {
-        "uk": "Україна зафіксувала найвищий рівень цивільних втрат за місяць з 2022 року",
+        "uk": "Україна зафіксувала найбільші втрати серед мирного населення за місяць з 2022 року",
         "en": "Ukraine sees highest civilian casualties in a month since 2022",
-        "ru": "Украина зафиксировала наибольшее число жертв среди мирного населения за месяц с 2022 года"
+        "ru": "Украина зафиксировала наибольшие потери среди мирного населения за месяц с 2022 года"
       }
     },
     {
-      "url": "https://news.liga.net/ua/war/news/posol-ukrainy-v-izraili-pro-ataku-na-iranske-sudno-boremosia-z-inshoiu-storonoiu-tiiei-zh-osi-zla",
-      "domain": "news.liga.net",
-      "seenAt": "2026-07-27T13:15:00.000Z",
+      "url": "https://www.kyivpost.com/post/81323",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-29T15:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Атака ЗСУ по судну Ірану – коментарі МЗС та посла України в Ізраїлі | Новини України",
+      "original": "Majority of Poles Oppose Backing Ukraine EU Bid , Poll Finds",
       "title": {
-        "uk": "Атака ЗСУ по судну Ірану — коментарі МЗС та посла України в Ізраїлі",
-        "en": "Ukrainian military strike on Iranian vessel — comments from the Foreign Ministry and Ukraine's ambassador to Israel",
-        "ru": "Удар ВСУ по судну Ирана — комментарии МИД и посла Украины в Израиле"
-      }
-    },
-    {
-      "url": "https://www.rand.org/pubs/commentary/2026/07/ukraines-winning-strategy-against-russia-attrition.html",
-      "domain": "rand.org",
-      "seenAt": "2026-07-22T22:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/4c863ef74c299fee.webp",
-      "original": "Ukraine Winning Strategy Against Russia : Attrition",
-      "title": {
-        "uk": "Стратегія перемоги України проти Росії: виснаження",
-        "en": "Ukraine winning strategy against Russia: attrition",
-        "ru": "Выигрышная стратегия Украины против России: истощение"
+        "uk": "Більшість поляків виступає проти підтримки вступу України до ЄС — опитування",
+        "en": "Majority of Poles oppose backing Ukraine's EU bid, poll finds",
+        "ru": "Большинство поляков выступает против поддержки вступления Украины в ЕС — опрос"
       }
     }
   ]
