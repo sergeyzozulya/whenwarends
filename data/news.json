@@ -1,17 +1,18 @@
 {
-  "asOf": "2026-07-31",
+  "asOf": "2026-08-01",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.newsweek.com/new-russian-soldiers-shape-ukraine-war-12258788",
-      "domain": "newsweek.com",
-      "seenAt": "2026-07-29T13:00:00.000Z",
+      "url": "https://www.aljazeera.com/features/2026/7/31/russia-appears-to-infiltrate-first-fortress-city-as-ukraine-changes-guard",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-07-31T14:15:00.000Z",
       "sourceCountry": "United States",
-      "original": "How 500 , 000 New Russian Soldiers Could Shape Ukraine War",
+      "image": "/news/bffba8222dcfcdca.webp",
+      "original": "Russia appears to infiltrate first  fortress city  as Ukraine changes guard | Russia - Ukraine war News",
       "title": {
-        "uk": "Як 500 000 нових російських солдатів можуть вплинути на війну в Україні",
-        "en": "How 500,000 new Russian soldiers could shape the Ukraine war",
-        "ru": "Как 500 000 новых российских солдат могут повлиять на войну в Украине"
+        "uk": "Росія, схоже, вперше проникає до «міста-фортеці», поки Україна змінює командування",
+        "en": "Russia appears to infiltrate first 'fortress city' as Ukraine changes guard",
+        "ru": "Россия, по имеющимся данным, впервые проникает в «город-крепость» на фоне смены командования в Украине"
       }
     },
     {
@@ -22,34 +23,21 @@
       "image": "/news/b1740cef94bc2797.webp",
       "original": "Kremlin Shrugs Off Reports of US - Ukraine Air Truce Plan , Says It  Too Early",
       "title": {
-        "uk": "Кремль відмахнувся від повідомлень про план повітряного перемир'я між США та Україною, заявивши, що це «занадто рано»",
-        "en": "Kremlin shrugs off reports of US-Ukraine air truce plan, says it's too early",
-        "ru": "Кремль отверг сообщения о плане воздушного перемирия между США и Украиной, заявив, что «ещё слишком рано»"
+        "uk": "Кремль відкидає повідомлення про план повітряного перемир'я між США та Україною, називаючи це «передчасним»",
+        "en": "Kremlin shrugs off reports of US-Ukraine air truce plan, says it's 'too early'",
+        "ru": "Кремль отмахнулся от сообщений о плане воздушного перемирия между США и Украиной, назвав его «преждевременным»"
       }
     },
     {
-      "url": "https://www.channelnewsasia.com/east-asia/zelensky-russia-30000-extra-north-korean-troops-ukraine-war-6278776",
-      "domain": "channelnewsasia.com",
-      "seenAt": "2026-07-26T11:45:00.000Z",
+      "url": "https://www.newsweek.com/new-russian-soldiers-shape-ukraine-war-12258788",
+      "domain": "newsweek.com",
+      "seenAt": "2026-07-29T13:00:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/76ddf17a10b9d517.webp",
-      "original": "Zelensky says Russia seeks 30 , 000 extra North Korean troops for Ukraine war",
+      "original": "How 500 , 000 New Russian Soldiers Could Shape Ukraine War",
       "title": {
-        "uk": "Зеленський заявив, що Росія шукає 30 000 додаткових північнокорейських солдатів для війни в Україні",
-        "en": "Zelensky says Russia seeks 30,000 extra North Korean troops for Ukraine war",
-        "ru": "Зеленский заявил, что Россия добивается привлечения 30 000 дополнительных северокорейских военных для войны в Украине"
-      }
-    },
-    {
-      "url": "https://aninews.in/news/world/europe/russia-strikes-kyiv-with-ballistic-missiles-after-zelenskyy-warned-of-massive-attack20260730085330/",
-      "domain": "aninews.in",
-      "seenAt": "2026-07-30T05:30:00.000Z",
-      "sourceCountry": "India",
-      "original": "Russia strikes Kyiv with ballistic missiles after Zelenskyy warned of  massive attack",
-      "title": {
-        "uk": "Росія завдала удару по Києву балістичними ракетами після попередження Зеленського про «масштабну атаку»",
-        "en": "Russia strikes Kyiv with ballistic missiles after Zelenskyy warned of 'massive attack'",
-        "ru": "Россия нанесла удар по Киеву баллистическими ракетами после предупреждения Зеленского о «масштабной атаке»"
+        "uk": "Як 500 000 нових російських солдатів можуть вплинути на перебіг війни в Україні",
+        "en": "How 500,000 new Russian soldiers could shape the Ukraine war",
+        "ru": "Как 500 000 новых российских солдат могут повлиять на ход войны в Украине"
       }
     },
     {
@@ -60,73 +48,85 @@
       "image": "/news/56b0edadeb89455d.webp",
       "original": "Better chemistry : Has the Trump - Zelenskiy relationship thawed ? – The Irish Times",
       "title": {
-        "uk": "Краща хімія: чи потеплішали стосунки між Трампом і Зеленським?",
-        "en": "Better chemistry: has the Trump-Zelenskyy relationship thawed?",
-        "ru": "Лучшая химия: потеплели ли отношения между Трампом и Зеленским?"
+        "uk": "Краща хімія: чи потеплішали відносини між Трампом і Зеленським?",
+        "en": "Better chemistry: has the Trump-Zelensky relationship thawed?",
+        "ru": "Улучшение отношений: потеплели ли отношения между Трампом и Зеленским?"
       }
     },
     {
-      "url": "https://www.newkerala.com/news/a/we-want-stop-this-war-putin-doesnt-zelenskyy-908.htm",
-      "domain": "newkerala.com",
-      "seenAt": "2026-07-29T05:30:00.000Z",
+      "url": "https://aninews.in/news/world/us/we-want-to-stop-this-war-putin-doesnt-zelenskyy-says-sanctions-needed-as-russia-rejects-ceasefire-talks20260729091134/",
+      "domain": "aninews.in",
+      "seenAt": "2026-07-29T04:30:00.000Z",
       "sourceCountry": "India",
-      "image": "/news/eb10f7c5ac23341c.webp",
-      "original": "Zelenskyy : Putin Rejects Ceasefire , Urges Sanctions",
+      "original": "We want to stop this war ... Putin doesnt : Zelenskyy says sanctions needed as Russia rejects ceasefire talks",
       "title": {
-        "uk": "Зеленський: Путін відкидає припинення вогню, закликає до санкцій",
-        "en": "Zelenskyy: Putin rejects ceasefire, urges sanctions",
-        "ru": "Зеленский: Путин отвергает прекращение огня, призывает к санкциям"
+        "uk": "«Ми хочемо зупинити цю війну, Путін — ні»: Зеленський закликає до санкцій, оскільки Росія відкидає переговори про перемир'я",
+        "en": "'We want to stop this war, Putin doesn't': Zelensky says sanctions needed as Russia rejects ceasefire talks",
+        "ru": "«Мы хотим остановить эту войну, Путин — нет»: Зеленский призывает к санкциям, поскольку Россия отвергает переговоры о перемирии"
       }
     },
     {
-      "url": "https://www.radiosvoboda.org/a/news-isw-putin-vidpovidalnist-za-prodvzhennia-viiny/33816536.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-07-28T09:30:00.000Z",
+      "url": "https://www.kyivpost.com/post/81340",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-29T15:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/82c60949e0eaf859.webp",
-      "original": "ISW : Путін намагається перекласти відповідальність за продовження війни на Держдуму й населення Росії",
+      "image": "/news/b7e74e5312ffb83c.webp",
+      "original": "Lavrov Says West Has United Against Russia , Warns of Its  Dismemberment",
       "title": {
-        "uk": "ISW: Путін намагається перекласти відповідальність за продовження війни на Держдуму й населення Росії",
-        "en": "ISW: Putin tries to shift responsibility for continuing the war onto the State Duma and Russia's population",
-        "ru": "ISW: Путин пытается переложить ответственность за продолжение войны на Государственную думу и население России"
+        "uk": "Лавров заявив, що Захід об'єднався проти Росії, і попередив про її «розчленування»",
+        "en": "Lavrov says West has united against Russia, warns of its 'dismemberment'",
+        "ru": "Лавров заявил, что Запад объединился против России, и предупредил о её «расчленении»"
       }
     },
     {
-      "url": "https://www.wcvb.com/article/ukraine-civilian-casualties-highest-since-2022/73265219",
-      "domain": "wcvb.com",
-      "seenAt": "2026-07-26T19:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/e5482a08891d15b3.webp",
-      "original": "Ukraine sees highest civilian casualties in a month since 2022",
+      "url": "https://www.thehindu.com/news/international/zelenskyy-says-russia-seeks-30000-extra-north-korean-troops-for-ukraine-war/article71270092.ece",
+      "domain": "thehindu.com",
+      "seenAt": "2026-07-26T16:15:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/d4e295ea8f975496.webp",
+      "original": "Zelenskyy says Russia seeks 30 , 000 extra North Korean troops for Ukraine war",
       "title": {
-        "uk": "Україна фіксує найбільші жертви серед цивільного населення за місяць із 2022 року",
-        "en": "Ukraine sees highest civilian casualties in a month since 2022",
-        "ru": "Украина фиксирует наибольшее число жертв среди мирного населения за месяц с 2022 года"
+        "uk": "Зеленський заявив, що Росія прагне залучити ще 30 000 північнокорейських військових для війни в Україні",
+        "en": "Zelensky says Russia seeks 30,000 extra North Korean troops for Ukraine war",
+        "ru": "Зеленский заявил, что Россия добивается привлечения ещё 30 000 северокорейских солдат для войны в Украине"
       }
     },
     {
-      "url": "https://news.liga.net/ua/war/news/posol-ukrainy-v-izraili-pro-ataku-na-iranske-sudno-boremosia-z-inshoiu-storonoiu-tiiei-zh-osi-zla",
-      "domain": "news.liga.net",
-      "seenAt": "2026-07-27T13:15:00.000Z",
+      "url": "https://espreso.tv/svit-amerikanski-zmi-nazivayut-mozhliviy-vizit-vitkoffa-i-kushnera-do-ukraini-odnim-iz-nayvazhlivishikh-rezultativ-zustrichi-zelenskogo-i-trampa-ulyanovska",
+      "domain": "espreso.tv",
+      "seenAt": "2026-07-30T00:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Атака ЗСУ по судну Ірану – коментарі МЗС та посла України в Ізраїлі | Новини України",
+      "image": "/news/93cc285deca26cae.webp",
+      "original": "США змінюють підхід до переговорів щодо російсько - української війни",
       "title": {
-        "uk": "Атака ЗСУ по судну Ірану — коментарі МЗС та посла України в Ізраїлі",
-        "en": "Ukrainian armed forces attack on Iranian vessel — comments from the foreign ministry and Ukraine's ambassador to Israel",
-        "ru": "Атака ВСУ на судно Ирана — комментарии МИД и посла Украины в Израиле"
+        "uk": "США змінюють підхід до переговорів щодо російсько-української війни",
+        "en": "The US is changing its approach to negotiations on the Russia-Ukraine war",
+        "ru": "США меняют подход к переговорам по российско-украинской войне"
       }
     },
     {
-      "url": "https://ua.korrespondent.net/world/4898166-bilshist-poliakiv-vystupaie-proty-vstupu-ukrainy-do-yes-opytuvannia",
-      "domain": "ua.korrespondent.net",
-      "seenAt": "2026-07-29T09:15:00.000Z",
+      "url": "https://focus.ua/uk/voennye-novosti/762727-viyna-v-ukrajini-analitiki-metaculus-nazvali-tochniy-chas-zavershennya-fokus",
+      "domain": "focus.ua",
+      "seenAt": "2026-07-29T18:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/bc4c5527d82e2e96.webp",
-      "original": "Більшість поляків виступає проти вступу України до ЄС - опитування",
+      "image": "/news/05b62fe1e1b96c4a.webp",
+      "original": "Війна в Україні аналітики Metaculus назвали точний час завершення Фокус",
       "title": {
-        "uk": "Більшість поляків виступає проти вступу України до ЄС — опитування",
-        "en": "Majority of Poles oppose Ukraine's EU membership — poll",
-        "ru": "Большинство поляков выступает против вступления Украины в ЕС — опрос"
+        "uk": "Війна в Україні: аналітики Metaculus назвали точний час завершення",
+        "en": "Ukraine war: Metaculus analysts named the precise time of its end",
+        "ru": "Война в Украине: аналитики Metaculus назвали точное время её завершения"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/81323",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-29T15:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Majority of Poles Oppose Backing Ukraine EU Bid , Poll Finds",
+      "title": {
+        "uk": "Більшість поляків виступає проти підтримки вступу України до ЄС — опитування",
+        "en": "Majority of Poles oppose backing Ukraine's EU bid, poll finds",
+        "ru": "Большинство поляков выступает против поддержки вступления Украины в ЕС — опрос"
       }
     }
   ]
