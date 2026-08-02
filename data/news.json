@@ -1,7 +1,59 @@
 {
-  "asOf": "2026-08-01",
+  "asOf": "2026-08-02",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://www.unian.net/war/nastuplenie-rf-provalilos-za-god-rossiyane-zamedlilis-v-4-raza-isw-13458255.html",
+      "domain": "unian.net",
+      "seenAt": "2026-08-02T07:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/82f886b284719c9c.webp",
+      "original": "Наступление РФ провалилось : за год россияне замедлились в 4 раза ,",
+      "title": {
+        "uk": "Наступ РФ провалився: за рік росіяни сповільнились у 4 рази",
+        "en": "Russia's offensive has failed: Russians slowed fourfold in a year",
+        "ru": "Наступление РФ провалилось: за год россияне замедлились в 4 раза"
+      }
+    },
+    {
+      "url": "https://www.khaama.com/russian-missile-drone-attack-on-kyiv-kills-nine-injures-28/",
+      "domain": "khaama.com",
+      "seenAt": "2026-08-01T12:30:00.000Z",
+      "sourceCountry": "Afghanistan",
+      "image": "/news/8859c82cda56b90b.webp",
+      "original": "Russian Missile , Drone Attack on Kyiv Kills 9 , Injures 28",
+      "title": {
+        "uk": "Російська ракетно-дронова атака на Київ: 9 загиблих, 28 поранених",
+        "en": "Russian missile and drone attack on Kyiv kills 9, injures 28",
+        "ru": "Российская ракетно-дроновая атака на Киев: 9 погибших, 28 раненых"
+      }
+    },
+    {
+      "url": "https://korrespondent.net/ukraine/4899182-armyia-rf-ponesla-rekordnye-potery-v-yuile-henshtab",
+      "domain": "korrespondent.net",
+      "seenAt": "2026-08-01T11:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/d0041ef92e1dff4d.webp",
+      "original": "Армия РФ понесла рекордные потери в июле - Генштаб",
+      "title": {
+        "uk": "Армія РФ зазнала рекордних втрат у липні — Генштаб",
+        "en": "Russian army suffered record losses in July — General Staff",
+        "ru": "Армия РФ понесла рекордные потери в июле — Генштаб"
+      }
+    },
+    {
+      "url": "https://www.rbc.ua/rus/news/rosiyske-komanduvannya-breshe-putinu-uspihi-1785564549.html",
+      "domain": "rbc.ua",
+      "seenAt": "2026-08-01T09:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/19b221c1b72c761e.webp",
+      "original": "Путін отримує неправдиву інформацію про успіхи в Харківській та Сумській областях",
+      "title": {
+        "uk": "Путін отримує неправдиву інформацію про успіхи в Харківській та Сумській областях",
+        "en": "Putin is receiving false information about successes in Kharkiv and Sumy regions",
+        "ru": "Путин получает ложную информацию об успехах в Харьковской и Сумской областях"
+      }
+    },
     {
       "url": "https://www.aljazeera.com/features/2026/7/31/russia-appears-to-infiltrate-first-fortress-city-as-ukraine-changes-guard",
       "domain": "aljazeera.com",
@@ -10,85 +62,22 @@
       "image": "/news/bffba8222dcfcdca.webp",
       "original": "Russia appears to infiltrate first  fortress city  as Ukraine changes guard | Russia - Ukraine war News",
       "title": {
-        "uk": "Росія, схоже, вперше проникає до «міста-фортеці», поки Україна змінює командування",
+        "uk": "Росія, схоже, проникає до першого «міста-фортеці», поки Україна змінює командування",
         "en": "Russia appears to infiltrate first 'fortress city' as Ukraine changes guard",
-        "ru": "Россия, по имеющимся данным, впервые проникает в «город-крепость» на фоне смены командования в Украине"
+        "ru": "Россия, по всей видимости, проникает в первый «город-крепость» на фоне смены командования в Украине"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/81124",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-27T07:15:00.000Z",
+      "url": "https://ua.korrespondent.net/ukraine/4898888-zelenskyi-nazvav-vtraty-ukrainy-ta-rf",
+      "domain": "ua.korrespondent.net",
+      "seenAt": "2026-07-31T09:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/b1740cef94bc2797.webp",
-      "original": "Kremlin Shrugs Off Reports of US - Ukraine Air Truce Plan , Says It  Too Early",
+      "image": "/news/9d202187e74fdfe4.webp",
+      "original": "Зеленський назвав втрати України та РФ",
       "title": {
-        "uk": "Кремль відкидає повідомлення про план повітряного перемир'я між США та Україною, називаючи це «передчасним»",
-        "en": "Kremlin shrugs off reports of US-Ukraine air truce plan, says it's 'too early'",
-        "ru": "Кремль отмахнулся от сообщений о плане воздушного перемирия между США и Украиной, назвав его «преждевременным»"
-      }
-    },
-    {
-      "url": "https://www.newsweek.com/new-russian-soldiers-shape-ukraine-war-12258788",
-      "domain": "newsweek.com",
-      "seenAt": "2026-07-29T13:00:00.000Z",
-      "sourceCountry": "United States",
-      "original": "How 500 , 000 New Russian Soldiers Could Shape Ukraine War",
-      "title": {
-        "uk": "Як 500 000 нових російських солдатів можуть вплинути на перебіг війни в Україні",
-        "en": "How 500,000 new Russian soldiers could shape the Ukraine war",
-        "ru": "Как 500 000 новых российских солдат могут повлиять на ход войны в Украине"
-      }
-    },
-    {
-      "url": "https://www.irishtimes.com/world/us/2026/07/28/better-chemistry-has-the-trump-zelenskiy-relationship-thawed/",
-      "domain": "irishtimes.com",
-      "seenAt": "2026-07-28T13:30:00.000Z",
-      "sourceCountry": "Ireland",
-      "image": "/news/56b0edadeb89455d.webp",
-      "original": "Better chemistry : Has the Trump - Zelenskiy relationship thawed ? – The Irish Times",
-      "title": {
-        "uk": "Краща хімія: чи потеплішали відносини між Трампом і Зеленським?",
-        "en": "Better chemistry: has the Trump-Zelensky relationship thawed?",
-        "ru": "Улучшение отношений: потеплели ли отношения между Трампом и Зеленским?"
-      }
-    },
-    {
-      "url": "https://aninews.in/news/world/us/we-want-to-stop-this-war-putin-doesnt-zelenskyy-says-sanctions-needed-as-russia-rejects-ceasefire-talks20260729091134/",
-      "domain": "aninews.in",
-      "seenAt": "2026-07-29T04:30:00.000Z",
-      "sourceCountry": "India",
-      "original": "We want to stop this war ... Putin doesnt : Zelenskyy says sanctions needed as Russia rejects ceasefire talks",
-      "title": {
-        "uk": "«Ми хочемо зупинити цю війну, Путін — ні»: Зеленський закликає до санкцій, оскільки Росія відкидає переговори про перемир'я",
-        "en": "'We want to stop this war, Putin doesn't': Zelensky says sanctions needed as Russia rejects ceasefire talks",
-        "ru": "«Мы хотим остановить эту войну, Путин — нет»: Зеленский призывает к санкциям, поскольку Россия отвергает переговоры о перемирии"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/81340",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-29T15:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/b7e74e5312ffb83c.webp",
-      "original": "Lavrov Says West Has United Against Russia , Warns of Its  Dismemberment",
-      "title": {
-        "uk": "Лавров заявив, що Захід об'єднався проти Росії, і попередив про її «розчленування»",
-        "en": "Lavrov says West has united against Russia, warns of its 'dismemberment'",
-        "ru": "Лавров заявил, что Запад объединился против России, и предупредил о её «расчленении»"
-      }
-    },
-    {
-      "url": "https://www.thehindu.com/news/international/zelenskyy-says-russia-seeks-30000-extra-north-korean-troops-for-ukraine-war/article71270092.ece",
-      "domain": "thehindu.com",
-      "seenAt": "2026-07-26T16:15:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/d4e295ea8f975496.webp",
-      "original": "Zelenskyy says Russia seeks 30 , 000 extra North Korean troops for Ukraine war",
-      "title": {
-        "uk": "Зеленський заявив, що Росія прагне залучити ще 30 000 північнокорейських військових для війни в Україні",
-        "en": "Zelensky says Russia seeks 30,000 extra North Korean troops for Ukraine war",
-        "ru": "Зеленский заявил, что Россия добивается привлечения ещё 30 000 северокорейских солдат для войны в Украине"
+        "uk": "Зеленський назвав втрати України та РФ",
+        "en": "Zelensky revealed Ukraine's and Russia's losses",
+        "ru": "Зеленский назвал потери Украины и России"
       }
     },
     {
@@ -100,33 +89,46 @@
       "original": "США змінюють підхід до переговорів щодо російсько - української війни",
       "title": {
         "uk": "США змінюють підхід до переговорів щодо російсько-української війни",
-        "en": "The US is changing its approach to negotiations on the Russia-Ukraine war",
+        "en": "US changes its approach to negotiations on the Russia–Ukraine war",
         "ru": "США меняют подход к переговорам по российско-украинской войне"
       }
     },
     {
-      "url": "https://focus.ua/uk/voennye-novosti/762727-viyna-v-ukrajini-analitiki-metaculus-nazvali-tochniy-chas-zavershennya-fokus",
-      "domain": "focus.ua",
-      "seenAt": "2026-07-29T18:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/05b62fe1e1b96c4a.webp",
-      "original": "Війна в Україні аналітики Metaculus назвали точний час завершення Фокус",
+      "url": "https://www.newsweek.com/new-russian-soldiers-shape-ukraine-war-12258788",
+      "domain": "newsweek.com",
+      "seenAt": "2026-07-29T13:00:00.000Z",
+      "sourceCountry": "United States",
+      "original": "How 500 , 000 New Russian Soldiers Could Shape Ukraine War",
       "title": {
-        "uk": "Війна в Україні: аналітики Metaculus назвали точний час завершення",
-        "en": "Ukraine war: Metaculus analysts named the precise time of its end",
-        "ru": "Война в Украине: аналитики Metaculus назвали точное время её завершения"
+        "uk": "Як 500 000 нових російських солдатів можуть вплинути на війну в Україні",
+        "en": "How 500,000 new Russian soldiers could shape the Ukraine war",
+        "ru": "Как 500 000 новых российских солдат могут повлиять на ход войны в Украине"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/81323",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-29T15:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Majority of Poles Oppose Backing Ukraine EU Bid , Poll Finds",
+      "url": "https://www.thehindu.com/news/international/zelenskyy-says-russia-seeks-30000-extra-north-korean-troops-for-ukraine-war/article71270092.ece",
+      "domain": "thehindu.com",
+      "seenAt": "2026-07-26T16:15:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/d4e295ea8f975496.webp",
+      "original": "Zelenskyy says Russia seeks 30 , 000 extra North Korean troops for Ukraine war",
       "title": {
-        "uk": "Більшість поляків виступає проти підтримки вступу України до ЄС — опитування",
-        "en": "Majority of Poles oppose backing Ukraine's EU bid, poll finds",
-        "ru": "Большинство поляков выступает против поддержки вступления Украины в ЕС — опрос"
+        "uk": "Зеленський заявив, що Росія домагається додаткових 30 000 північнокорейських військових для війни в Україні",
+        "en": "Zelensky says Russia seeks 30,000 extra North Korean troops for Ukraine war",
+        "ru": "Зеленский заявил, что Россия добивается дополнительных 30 000 северокорейских военных для войны в Украине"
+      }
+    },
+    {
+      "url": "https://gazeta.ua/articles/politics/_zelenskij-poyasniv-chomu-putin-unikaye-peremirya/1255497",
+      "domain": "gazeta.ua",
+      "seenAt": "2026-07-29T07:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b2305f6db4a18af6.webp",
+      "original": "Зеленський пояснив , чому Путін уникає перемир  я",
+      "title": {
+        "uk": "Зеленський пояснив, чому Путін уникає перемир'я",
+        "en": "Zelensky explained why Putin avoids a ceasefire",
+        "ru": "Зеленский объяснил, почему Путин избегает перемирия"
       }
     }
   ]
