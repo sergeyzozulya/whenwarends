@@ -1,31 +1,30 @@
 {
-  "asOf": "2026-08-02",
+  "asOf": "2026-08-03",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.unian.net/war/nastuplenie-rf-provalilos-za-god-rossiyane-zamedlilis-v-4-raza-isw-13458255.html",
-      "domain": "unian.net",
-      "seenAt": "2026-08-02T07:15:00.000Z",
+      "url": "https://glavcom.ua/country/incidents/zsu-zupinili-nastup-rosiji-na-slovjanskomu-naprjamku-isw-1134599.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-08-03T06:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/82f886b284719c9c.webp",
-      "original": "Наступление РФ провалилось : за год россияне замедлились в 4 раза ,",
+      "original": "ЗСУ зупинили наступ Росії на Слов  янському напрямку – ISW",
       "title": {
-        "uk": "Наступ РФ провалився: за рік росіяни сповільнились у 4 рази",
-        "en": "Russia's offensive has failed: Russians slowed fourfold in a year",
-        "ru": "Наступление РФ провалилось: за год россияне замедлились в 4 раза"
+        "uk": "ЗСУ зупинили наступ Росії на Слов'янському напрямку – ISW",
+        "en": "Ukrainian forces halt Russian offensive in the Sloviansk direction — ISW",
+        "ru": "ВСУ остановили наступление России на Славянском направлении — ISW"
       }
     },
     {
-      "url": "https://www.khaama.com/russian-missile-drone-attack-on-kyiv-kills-nine-injures-28/",
-      "domain": "khaama.com",
-      "seenAt": "2026-08-01T12:30:00.000Z",
-      "sourceCountry": "Afghanistan",
-      "image": "/news/8859c82cda56b90b.webp",
-      "original": "Russian Missile , Drone Attack on Kyiv Kills 9 , Injures 28",
+      "url": "https://www.rte.ie/news/2026/0802/1586210-ukraine-russia-strikes/",
+      "domain": "rte.ie",
+      "seenAt": "2026-08-02T20:15:00.000Z",
+      "sourceCountry": "Ireland",
+      "image": "/news/b4612874e937e141.webp",
+      "original": "At least 14 dead as Ukraine , Russia exchange strikes",
       "title": {
-        "uk": "Російська ракетно-дронова атака на Київ: 9 загиблих, 28 поранених",
-        "en": "Russian missile and drone attack on Kyiv kills 9, injures 28",
-        "ru": "Российская ракетно-дроновая атака на Киев: 9 погибших, 28 раненых"
+        "uk": "Щонайменше 14 загиблих у результаті обміну ударами між Україною та Росією",
+        "en": "At least 14 dead as Ukraine and Russia exchange strikes",
+        "ru": "Не менее 14 погибших в результате обмена ударами между Украиной и Россией"
       }
     },
     {
@@ -42,6 +41,58 @@
       }
     },
     {
+      "url": "https://www.moneycontrol.com/world/us-to-intensify-push-for-russia-ukraine-peace-talks-rubio-says-cites-need-to-narrow-red-lines-article-13990985.html",
+      "domain": "moneycontrol.com",
+      "seenAt": "2026-08-01T15:15:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/f9c1495ee38e95d9.webp",
+      "original": "US to intensify push for Russia - Ukraine peace talks , Rubio says ; cites need to narrow  red lines",
+      "title": {
+        "uk": "США посилять тиск задля переговорів між Росією та Україною — Рубіо",
+        "en": "US to intensify push for Russia-Ukraine peace talks, Rubio says, cites need to narrow red lines",
+        "ru": "США усилят давление на переговоры между Россией и Украиной — Рубио"
+      }
+    },
+    {
+      "url": "https://www.leparisien.fr/international/ukraine/guerre-en-ukraine-kiev-lance-une-nouvelle-attaque-de-drones-contre-le-geant-de-le-commerce-wildberries-en-russie-03-08-2026-3MNLMPIHB5CWLBJC6DSXLZF7EQ.php",
+      "domain": "leparisien.fr",
+      "seenAt": "2026-08-03T10:45:00.000Z",
+      "sourceCountry": "France",
+      "image": "/news/7a6c9e2c0866a2b7.webp",
+      "original": "Guerre en Ukraine  : Kiev lance une nouvelle attaque de drones contre le géant de le - commerce Wildberries en Russie",
+      "title": {
+        "uk": "Київ здійснив нову атаку дронами на гіганта електронної торгівлі Wildberries в Росії",
+        "en": "Ukraine war: Kyiv launches new drone attack on Russian e-commerce giant Wildberries",
+        "ru": "Война в Украине: Киев нанёс новый удар дронами по российскому гиганту электронной коммерции Wildberries"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/features/2026/7/31/russia-appears-to-infiltrate-first-fortress-city-as-ukraine-changes-guard",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-07-31T14:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/bffba8222dcfcdca.webp",
+      "original": "Russia appears to infiltrate first  fortress city  as Ukraine changes guard | Russia - Ukraine war News",
+      "title": {
+        "uk": "Росія, схоже, проникла до першого «міста-фортеці», поки Україна змінює командування",
+        "en": "Russia appears to infiltrate first fortress city as Ukraine changes guard",
+        "ru": "Россия, похоже, проникла в первый «город-крепость» на фоне смены командования в Украине"
+      }
+    },
+    {
+      "url": "https://www.cna.com.tw/news/aopl/202608010186.aspx",
+      "domain": "cna.com.tw",
+      "seenAt": "2026-08-01T13:00:00.000Z",
+      "sourceCountry": "Taiwan",
+      "image": "/news/879ca2813c0c5c2f.webp",
+      "original": "法新 ： 俄羅斯7月對烏克蘭發射376枚飛彈 創單月新高 | 國際",
+      "title": {
+        "uk": "Росія випустила по Україні 376 ракет у липні — рекорд за місяць",
+        "en": "Russia fired 376 missiles at Ukraine in July, a single-month record",
+        "ru": "Россия выпустила по Украине 376 ракет в июле — рекорд за один месяц"
+      }
+    },
+    {
       "url": "https://www.rbc.ua/rus/news/rosiyske-komanduvannya-breshe-putinu-uspihi-1785564549.html",
       "domain": "rbc.ua",
       "seenAt": "2026-08-01T09:30:00.000Z",
@@ -55,45 +106,6 @@
       }
     },
     {
-      "url": "https://www.aljazeera.com/features/2026/7/31/russia-appears-to-infiltrate-first-fortress-city-as-ukraine-changes-guard",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-07-31T14:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/bffba8222dcfcdca.webp",
-      "original": "Russia appears to infiltrate first  fortress city  as Ukraine changes guard | Russia - Ukraine war News",
-      "title": {
-        "uk": "Росія, схоже, проникає до першого «міста-фортеці», поки Україна змінює командування",
-        "en": "Russia appears to infiltrate first 'fortress city' as Ukraine changes guard",
-        "ru": "Россия, по всей видимости, проникает в первый «город-крепость» на фоне смены командования в Украине"
-      }
-    },
-    {
-      "url": "https://ua.korrespondent.net/ukraine/4898888-zelenskyi-nazvav-vtraty-ukrainy-ta-rf",
-      "domain": "ua.korrespondent.net",
-      "seenAt": "2026-07-31T09:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/9d202187e74fdfe4.webp",
-      "original": "Зеленський назвав втрати України та РФ",
-      "title": {
-        "uk": "Зеленський назвав втрати України та РФ",
-        "en": "Zelensky revealed Ukraine's and Russia's losses",
-        "ru": "Зеленский назвал потери Украины и России"
-      }
-    },
-    {
-      "url": "https://espreso.tv/svit-amerikanski-zmi-nazivayut-mozhliviy-vizit-vitkoffa-i-kushnera-do-ukraini-odnim-iz-nayvazhlivishikh-rezultativ-zustrichi-zelenskogo-i-trampa-ulyanovska",
-      "domain": "espreso.tv",
-      "seenAt": "2026-07-30T00:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/93cc285deca26cae.webp",
-      "original": "США змінюють підхід до переговорів щодо російсько - української війни",
-      "title": {
-        "uk": "США змінюють підхід до переговорів щодо російсько-української війни",
-        "en": "US changes its approach to negotiations on the Russia–Ukraine war",
-        "ru": "США меняют подход к переговорам по российско-украинской войне"
-      }
-    },
-    {
       "url": "https://www.newsweek.com/new-russian-soldiers-shape-ukraine-war-12258788",
       "domain": "newsweek.com",
       "seenAt": "2026-07-29T13:00:00.000Z",
@@ -102,33 +114,19 @@
       "title": {
         "uk": "Як 500 000 нових російських солдатів можуть вплинути на війну в Україні",
         "en": "How 500,000 new Russian soldiers could shape the Ukraine war",
-        "ru": "Как 500 000 новых российских солдат могут повлиять на ход войны в Украине"
+        "ru": "Как 500 000 новых российских солдат могут повлиять на войну в Украине"
       }
     },
     {
-      "url": "https://www.thehindu.com/news/international/zelenskyy-says-russia-seeks-30000-extra-north-korean-troops-for-ukraine-war/article71270092.ece",
-      "domain": "thehindu.com",
-      "seenAt": "2026-07-26T16:15:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/d4e295ea8f975496.webp",
-      "original": "Zelenskyy says Russia seeks 30 , 000 extra North Korean troops for Ukraine war",
-      "title": {
-        "uk": "Зеленський заявив, що Росія домагається додаткових 30 000 північнокорейських військових для війни в Україні",
-        "en": "Zelensky says Russia seeks 30,000 extra North Korean troops for Ukraine war",
-        "ru": "Зеленский заявил, что Россия добивается дополнительных 30 000 северокорейских военных для войны в Украине"
-      }
-    },
-    {
-      "url": "https://gazeta.ua/articles/politics/_zelenskij-poyasniv-chomu-putin-unikaye-peremirya/1255497",
-      "domain": "gazeta.ua",
-      "seenAt": "2026-07-29T07:00:00.000Z",
+      "url": "https://www.kyivpost.com/post/81323",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-07-29T15:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/b2305f6db4a18af6.webp",
-      "original": "Зеленський пояснив , чому Путін уникає перемир  я",
+      "original": "Majority of Poles Oppose Backing Ukraine EU Bid , Poll Finds",
       "title": {
-        "uk": "Зеленський пояснив, чому Путін уникає перемир'я",
-        "en": "Zelensky explained why Putin avoids a ceasefire",
-        "ru": "Зеленский объяснил, почему Путин избегает перемирия"
+        "uk": "Більшість поляків виступає проти підтримки вступу України до ЄС — опитування",
+        "en": "Majority of Poles oppose backing Ukraine's EU bid, poll finds",
+        "ru": "Большинство поляков против поддержки вступления Украины в ЕС — опрос"
       }
     }
   ]
