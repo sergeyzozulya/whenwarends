@@ -1,43 +1,80 @@
 {
-  "asOf": "2026-08-03",
+  "asOf": "2026-08-05",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://glavcom.ua/country/incidents/zsu-zupinili-nastup-rosiji-na-slovjanskomu-naprjamku-isw-1134599.html",
+      "url": "https://www.wral.com/news/ap/64f8e-russian-missile-and-drone-barrage-in-ukrainian-capital-region-kills-at-least-15/",
+      "domain": "wral.com",
+      "seenAt": "2026-08-05T09:30:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Russian missile and drone barrage in Ukrainian capital region kills 17",
+      "title": {
+        "uk": "Російський ракетно-дроновий удар по столичному регіону України: 17 загиблих",
+        "en": "Russian missile and drone barrage in Ukrainian capital region kills 17",
+        "ru": "Российский ракетно-дроновый удар по столичному региону Украины: 17 погибших"
+      }
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-08-04/ukrainian-drone-attack-on-moscow-industrial-zone-kills-five/106997120",
+      "domain": "abc.net.au",
+      "seenAt": "2026-08-04T13:15:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/e41f542d3ab9ed33.webp",
+      "original": "Ukrainian drone attack on Moscow industrial zone kills five",
+      "title": {
+        "uk": "Удар українських дронів по промисловій зоні Москви: п'ятеро загиблих",
+        "en": "Ukrainian drone attack on Moscow industrial zone kills five",
+        "ru": "Удар украинских дронов по промышленной зоне Москвы: пятеро погибших"
+      }
+    },
+    {
+      "url": "https://zn.ua/ukr/war/budanov-rosija-zajshla-u-stratehichnij-hlukhij-kut-u-vijni.html",
+      "domain": "zn.ua",
+      "seenAt": "2026-08-03T16:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Росія застрягла у війні - Буданов заявив про стратегічний тупик Кремля",
+      "title": {
+        "uk": "Росія застрягла у війні — Буданов заявив про стратегічний тупик Кремля",
+        "en": "Russia stuck in the war — Budanov declares Kremlin in strategic deadlock",
+        "ru": "Россия застряла в войне — Буданов заявил о стратегическом тупике Кремля"
+      }
+    },
+    {
+      "url": "https://www.unian.net/war/rossiya-gotovit-nastuplenie-na-krepostnoy-poyas-isw-obyasnil-novuyu-taktiku-udarov-po-logistike-vsu-13459863.html",
+      "domain": "unian.net",
+      "seenAt": "2026-08-04T05:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b1d20aa8d71d3e9c.webp",
+      "original": "Россия готовит наступление на Крепостной пояс : ISW объяснил новую тактику ударов по логистике ВСУ",
+      "title": {
+        "uk": "Росія готує наступ на Фортечний пояс: ISW пояснив нову тактику ударів по логістиці ЗСУ",
+        "en": "Russia prepares offensive on the fortress belt: ISW explains new tactic of striking Ukrainian logistics",
+        "ru": "Россия готовит наступление на крепостной пояс: ISW объяснил новую тактику ударов по логистике ВСУ"
+      }
+    },
+    {
+      "url": "https://glavcom.ua/country/incidents/rekord-za-vsju-vijnu-skilki-kabiv-rosija-skinula-na-fronti-u-lipni-1134947.html",
       "domain": "glavcom.ua",
-      "seenAt": "2026-08-03T06:45:00.000Z",
+      "seenAt": "2026-08-04T17:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "ЗСУ зупинили наступ Росії на Слов  янському напрямку – ISW",
+      "original": "Рекорд за всю війну : скільки КАБів Росія скинула на фронті у липні",
       "title": {
-        "uk": "ЗСУ зупинили наступ Росії на Слов'янському напрямку – ISW",
-        "en": "Ukrainian forces halt Russian offensive in the Sloviansk direction — ISW",
-        "ru": "ВСУ остановили наступление России на Славянском направлении — ISW"
+        "uk": "Рекорд за всю війну: скільки КАБів Росія скинула на фронті у липні",
+        "en": "War record: how many glide bombs Russia dropped at the front in July",
+        "ru": "Рекорд за всю войну: сколько КАБов Россия сбросила на фронте в июле"
       }
     },
     {
-      "url": "https://www.rte.ie/news/2026/0802/1586210-ukraine-russia-strikes/",
-      "domain": "rte.ie",
-      "seenAt": "2026-08-02T20:15:00.000Z",
-      "sourceCountry": "Ireland",
-      "image": "/news/b4612874e937e141.webp",
-      "original": "At least 14 dead as Ukraine , Russia exchange strikes",
+      "url": "https://foreignpolicy.com/2026/08/03/nato-europe-russia-missiles-air-defense-ukraine-patriots/",
+      "domain": "foreignpolicy.com",
+      "seenAt": "2026-08-03T23:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/102c9be8503f5043.webp",
+      "original": "How Will Europe Defend Itself Against Russian Missiles ?",
       "title": {
-        "uk": "Щонайменше 14 загиблих у результаті обміну ударами між Україною та Росією",
-        "en": "At least 14 dead as Ukraine and Russia exchange strikes",
-        "ru": "Не менее 14 погибших в результате обмена ударами между Украиной и Россией"
-      }
-    },
-    {
-      "url": "https://korrespondent.net/ukraine/4899182-armyia-rf-ponesla-rekordnye-potery-v-yuile-henshtab",
-      "domain": "korrespondent.net",
-      "seenAt": "2026-08-01T11:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/d0041ef92e1dff4d.webp",
-      "original": "Армия РФ понесла рекордные потери в июле - Генштаб",
-      "title": {
-        "uk": "Армія РФ зазнала рекордних втрат у липні — Генштаб",
-        "en": "Russian army suffered record losses in July — General Staff",
-        "ru": "Армия РФ понесла рекордные потери в июле — Генштаб"
+        "uk": "Як Європа захистить себе від російських ракет?",
+        "en": "How will Europe defend itself against Russian missiles?",
+        "ru": "Как Европа защитит себя от российских ракет?"
       }
     },
     {
@@ -45,88 +82,48 @@
       "domain": "moneycontrol.com",
       "seenAt": "2026-08-01T15:15:00.000Z",
       "sourceCountry": "India",
-      "image": "/news/f9c1495ee38e95d9.webp",
       "original": "US to intensify push for Russia - Ukraine peace talks , Rubio says ; cites need to narrow  red lines",
       "title": {
-        "uk": "США посилять тиск задля переговорів між Росією та Україною — Рубіо",
-        "en": "US to intensify push for Russia-Ukraine peace talks, Rubio says, cites need to narrow red lines",
-        "ru": "США усилят давление на переговоры между Россией и Украиной — Рубио"
+        "uk": "США посилять тиск задля мирних переговорів між Росією та Україною — Рубіо; необхідно звузити «червоні лінії»",
+        "en": "US to intensify push for Russia-Ukraine peace talks, Rubio says, citing need to narrow red lines",
+        "ru": "США усилят давление ради мирных переговоров между Россией и Украиной — Рубио; необходимо сузить «красные линии»"
       }
     },
     {
-      "url": "https://www.leparisien.fr/international/ukraine/guerre-en-ukraine-kiev-lance-une-nouvelle-attaque-de-drones-contre-le-geant-de-le-commerce-wildberries-en-russie-03-08-2026-3MNLMPIHB5CWLBJC6DSXLZF7EQ.php",
-      "domain": "leparisien.fr",
-      "seenAt": "2026-08-03T10:45:00.000Z",
-      "sourceCountry": "France",
-      "image": "/news/7a6c9e2c0866a2b7.webp",
-      "original": "Guerre en Ukraine  : Kiev lance une nouvelle attaque de drones contre le géant de le - commerce Wildberries en Russie",
-      "title": {
-        "uk": "Київ здійснив нову атаку дронами на гіганта електронної торгівлі Wildberries в Росії",
-        "en": "Ukraine war: Kyiv launches new drone attack on Russian e-commerce giant Wildberries",
-        "ru": "Война в Украине: Киев нанёс новый удар дронами по российскому гиганту электронной коммерции Wildberries"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/features/2026/7/31/russia-appears-to-infiltrate-first-fortress-city-as-ukraine-changes-guard",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-07-31T14:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/bffba8222dcfcdca.webp",
-      "original": "Russia appears to infiltrate first  fortress city  as Ukraine changes guard | Russia - Ukraine war News",
-      "title": {
-        "uk": "Росія, схоже, проникла до першого «міста-фортеці», поки Україна змінює командування",
-        "en": "Russia appears to infiltrate first fortress city as Ukraine changes guard",
-        "ru": "Россия, похоже, проникла в первый «город-крепость» на фоне смены командования в Украине"
-      }
-    },
-    {
-      "url": "https://www.cna.com.tw/news/aopl/202608010186.aspx",
-      "domain": "cna.com.tw",
-      "seenAt": "2026-08-01T13:00:00.000Z",
-      "sourceCountry": "Taiwan",
-      "image": "/news/879ca2813c0c5c2f.webp",
-      "original": "法新 ： 俄羅斯7月對烏克蘭發射376枚飛彈 創單月新高 | 國際",
-      "title": {
-        "uk": "Росія випустила по Україні 376 ракет у липні — рекорд за місяць",
-        "en": "Russia fired 376 missiles at Ukraine in July, a single-month record",
-        "ru": "Россия выпустила по Украине 376 ракет в июле — рекорд за один месяц"
-      }
-    },
-    {
-      "url": "https://www.rbc.ua/rus/news/rosiyske-komanduvannya-breshe-putinu-uspihi-1785564549.html",
-      "domain": "rbc.ua",
-      "seenAt": "2026-08-01T09:30:00.000Z",
+      "url": "https://news.liga.net/ua/war/news/forbes-ukraina-vpershe-vykorystala-dron-nosiy-dlia-skydannia-robota-v-tyl-rosiian",
+      "domain": "news.liga.net",
+      "seenAt": "2026-08-04T13:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/19b221c1b72c761e.webp",
-      "original": "Путін отримує неправдиву інформацію про успіхи в Харківській та Сумській областях",
+      "original": "ЗСУ вперше провели повітряний штурм дронами і роботами | Новини України",
       "title": {
-        "uk": "Путін отримує неправдиву інформацію про успіхи в Харківській та Сумській областях",
-        "en": "Putin is receiving false information about successes in Kharkiv and Sumy regions",
-        "ru": "Путин получает ложную информацию об успехах в Харьковской и Сумской областях"
+        "uk": "ЗСУ вперше провели повітряний штурм дронами і роботами",
+        "en": "Ukrainian forces conduct first aerial assault using drones and robots",
+        "ru": "ВСУ впервые провели воздушный штурм с применением дронов и роботов"
       }
     },
     {
-      "url": "https://www.newsweek.com/new-russian-soldiers-shape-ukraine-war-12258788",
-      "domain": "newsweek.com",
-      "seenAt": "2026-07-29T13:00:00.000Z",
-      "sourceCountry": "United States",
-      "original": "How 500 , 000 New Russian Soldiers Could Shape Ukraine War",
-      "title": {
-        "uk": "Як 500 000 нових російських солдатів можуть вплинути на війну в Україні",
-        "en": "How 500,000 new Russian soldiers could shape the Ukraine war",
-        "ru": "Как 500 000 новых российских солдат могут повлиять на войну в Украине"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/81323",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-07-29T15:45:00.000Z",
+      "url": "https://www.obozrevatel.com/ukr/politics-news/mi-gotovi-u-rosii-zrobili-zayavu-schodo-peregovoriv-pro-vijnu-v-ukraini-ta-nazvali-umovu.htm",
+      "domain": "obozrevatel.com",
+      "seenAt": "2026-08-04T10:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Majority of Poles Oppose Backing Ukraine EU Bid , Poll Finds",
+      "original": "У Росії зробили заяву щодо переговорів про війну в Україні та назвали умову – Михайло Галузін",
       "title": {
-        "uk": "Більшість поляків виступає проти підтримки вступу України до ЄС — опитування",
-        "en": "Majority of Poles oppose backing Ukraine's EU bid, poll finds",
-        "ru": "Большинство поляков против поддержки вступления Украины в ЕС — опрос"
+        "uk": "У Росії зробили заяву щодо переговорів про війну в Україні та назвали умову — Михайло Галузін",
+        "en": "Russia makes statement on Ukraine war negotiations and names its condition — Mikhail Galuzin",
+        "ru": "В России сделали заявление о переговорах по войне на Украине и назвали условие — Михаил Галузин"
+      }
+    },
+    {
+      "url": "https://www.insurancejournal.com/news/international/2026/07/29/879389.htm",
+      "domain": "insurancejournal.com",
+      "seenAt": "2026-07-29T12:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/1b672cd047b0799e.webp",
+      "original": "EU Plans to Sanction Record 1 , 600 Firms for Helping Russia",
+      "title": {
+        "uk": "ЄС планує запровадити санкції проти рекордних 1 600 компаній за допомогу Росії",
+        "en": "EU plans to sanction record 1,600 firms for helping Russia",
+        "ru": "ЕС планирует ввести санкции против рекордных 1 600 компаний за помощь России"
       }
     }
   ]
