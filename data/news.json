@@ -1,20 +1,7 @@
 {
-  "asOf": "2026-08-07",
+  "asOf": "2026-08-08",
   "source": "gdelt",
   "articles": [
-    {
-      "url": "https://www.unian.ua/war/viyna-v-ukrajini-ne-dosyagla-perelomu-optimizm-pochatku-lita-buv-peredchasnim-analitik-13462980.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-08-07T03:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/2afa90ab36515aa9.webp",
-      "original": "Війна в Україні не досягла перелому , оптимізм початку літа був передчасним",
-      "title": {
-        "uk": "Війна в Україні не досягла перелому, оптимізм початку літа був передчасним",
-        "en": "War in Ukraine has not reached a turning point, early-summer optimism was premature",
-        "ru": "Война в Украине не достигла перелома, оптимизм начала лета был преждевременным"
-      }
-    },
     {
       "url": "https://www.wral.com/news/ap/64f8e-russian-missile-and-drone-barrage-in-ukrainian-capital-region-kills-at-least-15/",
       "domain": "wral.com",
@@ -22,9 +9,22 @@
       "sourceCountry": "United States",
       "original": "Russian missile and drone barrage in Ukrainian capital region kills 17",
       "title": {
-        "uk": "Російський ракетно-дроновий удар по Київській області вбив 17 людей",
+        "uk": "Російський ракетно-дроновий удар по столичному регіону України вбив 17 людей",
         "en": "Russian missile and drone barrage in Ukrainian capital region kills 17",
-        "ru": "Российский ракетно-дроновый удар по Киевской области унёс жизни 17 человек"
+        "ru": "Российский ракетно-дроновый удар по столичному региону Украины унёс жизни 17 человек"
+      }
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-08-04/ukrainian-drone-attack-on-moscow-industrial-zone-kills-five/106997120",
+      "domain": "abc.net.au",
+      "seenAt": "2026-08-04T13:15:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/e41f542d3ab9ed33.webp",
+      "original": "Ukrainian drone attack on Moscow industrial zone kills five",
+      "title": {
+        "uk": "Удар дронами України по промисловій зоні Москви вбив п'ятьох",
+        "en": "Ukrainian drone attack on Moscow industrial zone kills five",
+        "ru": "Удар украинских дронов по промышленной зоне Москвы унёс жизни пятерых"
       }
     },
     {
@@ -35,8 +35,8 @@
       "image": "/news/cf1645cd732a4a83.webp",
       "original": "Analysis : Zelensky 40 - Day Plan to Force Russian Talks With Drones – Huge Damage , But No Peace",
       "title": {
-        "uk": "Аналіз: 40-денний план Зеленського змусити Росію до переговорів за допомогою дронів — величезна шкода, але миру немає",
-        "en": "Analysis: Zelensky 40-day plan to force Russian talks with drones — huge damage, but no peace",
+        "uk": "Аналіз: 40-денний план Зеленського змусити Росію до переговорів за допомогою дронів — значні збитки, але миру немає",
+        "en": "Analysis: Zelensky's 40-day plan to force Russian talks with drones — huge damage, but no peace",
         "ru": "Анализ: 40-дневный план Зеленского вынудить Россию к переговорам с помощью дронов — огромный ущерб, но мира нет"
       }
     },
@@ -48,47 +48,22 @@
       "image": "/news/3f7e0a4d658c8b6f.webp",
       "original": "Putin Replaces Key Ukraine Commanders as Russia Donbas Offensive Slows",
       "title": {
-        "uk": "Путін замінює ключових командирів в Україні, оскільки наступ Росії на Донбасі сповільнюється",
+        "uk": "Путін замінює ключових командувачів в Україні на тлі сповільнення наступу Росії на Донбасі",
         "en": "Putin replaces key Ukraine commanders as Russia's Donbas offensive slows",
-        "ru": "Путин заменяет ключевых командиров на Украине по мере замедления наступления России на Донбасс"
+        "ru": "Путин заменяет ключевых командующих в Украине на фоне замедления наступления России на Донбасс"
       }
     },
     {
-      "url": "https://www.eltiempo.com/mundo/europa/ucrania-lanza-uno-de-los-mayores-ataques-con-drones-contra-rusia-desde-el-inicio-de-la-guerra-3576751",
-      "domain": "eltiempo.com",
-      "seenAt": "2026-08-06T23:00:00.000Z",
-      "sourceCountry": "Colombia",
-      "image": "/news/8dee9662bacdc12b.webp",
-      "original": "Ucrania lanza uno de los mayores ataques con drones contra Rusia desde el inicio de la guerra",
-      "title": {
-        "uk": "Україна завдала один із найбільших дронових ударів по Росії з початку війни",
-        "en": "Ukraine launches one of the largest drone attacks against Russia since the start of the war",
-        "ru": "Украина нанесла один из крупнейших дроновых ударов по России с начала войны"
-      }
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-08-04/ukrainian-drone-attack-on-moscow-industrial-zone-kills-five/106997120",
-      "domain": "abc.net.au",
-      "seenAt": "2026-08-04T13:15:00.000Z",
-      "sourceCountry": "Australia",
-      "image": "/news/e41f542d3ab9ed33.webp",
-      "original": "Ukrainian drone attack on Moscow industrial zone kills five",
-      "title": {
-        "uk": "Удар українських дронів по складах у Московській області забрав п'ять життів",
-        "en": "Ukrainian drone attack on Russian warehouses in Moscow region kills five",
-        "ru": "Удар украинских дронов по складам в Московской области унёс пять жизней"
-      }
-    },
-    {
-      "url": "https://focus.ua/uk/politics/763511-viyna-v-ukrajini-eksposadovci-yes-ta-rf-proveli-tayemni-peregovori-pro-shcho-voni-govorili",
-      "domain": "focus.ua",
-      "seenAt": "2026-08-05T17:15:00.000Z",
+      "url": "https://www.unian.ua/war/viyna-v-ukrajini-ne-dosyagla-perelomu-optimizm-pochatku-lita-buv-peredchasnim-analitik-13462980.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-08-07T03:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Війна в Україні експосадовці ЄС та РФ провели таємні переговори про що вони говорили",
+      "image": "/news/2afa90ab36515aa9.webp",
+      "original": "Війна в Україні не досягла перелому , оптимізм початку літа був передчасним",
       "title": {
-        "uk": "Війна в Україні: експосадовці ЄС та РФ провели таємні переговори — про що вони говорили",
-        "en": "War in Ukraine: former EU and Russian officials held secret talks — what they discussed",
-        "ru": "Война в Украине: бывшие чиновники ЕС и РФ провели тайные переговоры — о чём они говорили"
+        "uk": "Війна в Україні не досягла перелому, оптимізм початку літа був передчасним",
+        "en": "The war in Ukraine has not reached a turning point; early summer optimism was premature",
+        "ru": "Война в Украине не достигла перелома, оптимизм начала лета оказался преждевременным"
       }
     },
     {
@@ -99,34 +74,59 @@
       "image": "/news/159d620100855f41.webp",
       "original": "Russia May Launch 100 Ballistic Missiles at Ukraine Every Month",
       "title": {
-        "uk": "Росія може запускати по 100 балістичних ракет по Україні щомісяця",
+        "uk": "Росія може щомісяця запускати по Україні до 100 балістичних ракет",
         "en": "Russia may launch 100 ballistic missiles at Ukraine every month",
-        "ru": "Россия может запускать по 100 баллистических ракет по Украине ежемесячно"
+        "ru": "Россия может ежемесячно запускать по Украине до 100 баллистических ракет"
       }
     },
     {
-      "url": "https://www.breitbart.com/asia/2026/08/05/report-ukraine-ids-north-korean-missile-unit-active-in-russian-invasion/",
-      "domain": "breitbart.com",
-      "seenAt": "2026-08-05T22:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/55de51df479ceab8.webp",
-      "original": "Report : Ukraine IDs North Korean Missile Unit Active in Russian Invasion",
-      "title": {
-        "uk": "За даними звіту, Україна ідентифікувала північнокорейський ракетний підрозділ, задіяний у вторгненні Росії",
-        "en": "Report: Ukraine identifies North Korean missile unit active in Russian invasion",
-        "ru": "По данным доклада, Украина установила северокорейское ракетное подразделение, участвующее в российском вторжении"
-      }
-    },
-    {
-      "url": "https://zn.ua/ukr/war/budanov-rosija-zajshla-u-stratehichnij-hlukhij-kut-u-vijni.html",
-      "domain": "zn.ua",
-      "seenAt": "2026-08-03T16:00:00.000Z",
+      "url": "https://news.liga.net/ua/war/news/forbes-ukraina-vpershe-vykorystala-dron-nosiy-dlia-skydannia-robota-v-tyl-rosiian",
+      "domain": "news.liga.net",
+      "seenAt": "2026-08-04T13:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Росія застрягла у війні - Буданов заявив про стратегічний тупик Кремля",
+      "original": "ЗСУ вперше провели повітряний штурм дронами і роботами | Новини України",
       "title": {
-        "uk": "Росія застрягла у війні — Буданов заявив про стратегічний тупик Кремля",
-        "en": "Russia is stuck in the war — Budanov declares Kremlin strategic deadlock",
-        "ru": "Россия застряла в войне — Буданов заявил о стратегическом тупике Кремля"
+        "uk": "ЗСУ вперше провели повітряний штурм дронами і роботами",
+        "en": "Ukrainian armed forces conduct first aerial assault combining drones and robots",
+        "ru": "ВСУ впервые провели воздушный штурм с применением дронов и роботов"
+      }
+    },
+    {
+      "url": "https://www.iefimerida.gr/kosmos/neo-shedio-poytin-tromazei-nato-ipa-wsj",
+      "domain": "iefimerida.gr",
+      "seenAt": "2026-08-07T18:15:00.000Z",
+      "sourceCountry": "Greece",
+      "image": "/news/ec06a7e8e3826a6f.webp",
+      "original": "WSJ : Οι ΗΠΑ βλέπουν νέο σχέδιο Πούτιν - Το σενάριο που τρομάζει το ΝΑΤΟ και η προειδοποίηση για επίθεση σε κράτος - μέλος",
+      "title": {
+        "uk": "WSJ: США бачать новий план Путіна — сценарій, який лякає НАТО, і попередження про напад на державу-члена",
+        "en": "WSJ: US sees Putin's new plan — the scenario alarming NATO and a warning of an attack on a member state",
+        "ru": "WSJ: США видят новый план Путина — сценарий, пугающий НАТО, и предупреждение об атаке на государство-член"
+      }
+    },
+    {
+      "url": "https://www.arabnews.com/node/2653691/world",
+      "domain": "arabnews.com",
+      "seenAt": "2026-08-06T19:45:00.000Z",
+      "sourceCountry": "Saudi Arabia",
+      "image": "/news/1fa10f28b4a3b0f1.webp",
+      "original": "UN chief denounces Russia , Ukraine for civilian deaths",
+      "title": {
+        "uk": "Генсек ООН засудив Росію та Україну за загибель мирних жителів",
+        "en": "UN chief denounces Russia and Ukraine for civilian deaths",
+        "ru": "Генсек ООН осудил Россию и Украину за гибель мирных жителей"
+      }
+    },
+    {
+      "url": "https://focus.ua/uk/politics/763511-viyna-v-ukrajini-eksposadovci-yes-ta-rf-proveli-tayemni-peregovori-pro-shcho-voni-govorili",
+      "domain": "focus.ua",
+      "seenAt": "2026-08-05T17:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Війна в Україні експосадовці ЄС та РФ провели таємні переговори про що вони говорили",
+      "title": {
+        "uk": "Війна в Україні: колишні посадовці ЄС та РФ провели таємні переговори — про що вони говорили",
+        "en": "War in Ukraine: ex-EU and Russian officials held secret talks — what they discussed",
+        "ru": "Война в Украине: бывшие чиновники ЕС и России провели тайные переговоры — о чём они говорили"
       }
     }
   ]
