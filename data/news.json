@@ -1,135 +1,132 @@
 {
-  "asOf": "2026-08-10",
+  "asOf": "2026-08-13",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://english.aawsat.com/world/5305193-crimea-strikes-could-rise-sevenfold-if-western-funds-came-faster-ukraine-drone",
-      "domain": "english.aawsat.com",
-      "seenAt": "2026-08-10T06:15:00.000Z",
-      "sourceCountry": "Syria",
-      "image": "/news/bb22e4a55b80fff3.webp",
-      "original": "Crimea Strikes Could Rise Sevenfold if Western Funds Came Faster , Ukraine Drone Commander Says",
+      "url": "https://globalnews.ca/news/12017530/ukraine-russia-zelenskyy-peace-proposal-us/",
+      "domain": "globalnews.ca",
+      "seenAt": "2026-08-11T23:15:00.000Z",
+      "sourceCountry": "Canada",
+      "image": "/news/79bfef31398ea8a8.webp",
+      "original": "Ukraine has given peace proposals to U . S . in bid for new talks : Zelenskyy - National",
       "title": {
-        "uk": "Удари по Криму могли б зрости у сім разів, якби західне фінансування надходило швидше, — командир дронів України",
-        "en": "Crimea strikes could rise sevenfold if Western funds came faster, Ukraine drone commander says",
-        "ru": "Удары по Крыму могли бы вырасти в семь раз, если бы западное финансирование поступало быстрее, — командир дронов Украины"
+        "uk": "Україна передала США мирні пропозиції в надії на нові переговори — Зеленський",
+        "en": "Ukraine has given peace proposals to U.S. in bid for new talks: Zelenskyy",
+        "ru": "Украина передала США мирные предложения в расчёте на новые переговоры — Зеленский"
       }
     },
     {
-      "url": "https://edition.cnn.com/2026/08/09/europe/russia-ukraine-escalation-aerial-strikes-intl-vis",
-      "domain": "edition.cnn.com",
-      "seenAt": "2026-08-09T08:30:00.000Z",
+      "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-precision-planned-013721000.html",
+      "domain": "aol.co.uk",
+      "seenAt": "2026-08-13T03:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/93996be4828c5795.webp",
+      "original": "Ukraine war briefing :  With precision , as planned  – Kyiv outlines battlefield gains",
+      "title": {
+        "uk": "Зведення про війну в Україні: «Точно за планом» — Київ звітує про успіхи на фронті",
+        "en": "Ukraine war briefing: 'With precision, as planned' — Kyiv outlines battlefield gains",
+        "ru": "Сводка о войне в Украине: «Точно по плану» — Киев отчитывается об успехах на фронте"
+      }
+    },
+    {
+      "url": "https://www.theepochtimes.com/world/ukraine-hits-russian-black-sea-naval-stronghold-says-zelenskyy-6074299",
+      "domain": "theepochtimes.com",
+      "seenAt": "2026-08-12T19:30:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/437635fd567462c8.webp",
-      "original": "Russia and Ukraine have stepped up their aerial war . Civilians are paying the price",
+      "image": "/news/bf190da6508543e2.webp",
+      "original": "Ukraine Hits Russian Black Sea Naval Stronghold , Says Zelenskyy",
       "title": {
-        "uk": "Росія та Україна посилили повітряну війну. Ціну платять цивільні",
-        "en": "Russia and Ukraine have stepped up their aerial war. Civilians are paying the price",
-        "ru": "Россия и Украина усилили воздушную войну. Цену платят мирные жители"
+        "uk": "Зеленський: Україна вдарила по головній базі Росії у Чорному морі",
+        "en": "Ukraine hits Russian Black Sea naval stronghold, says Zelenskyy",
+        "ru": "Зеленский: Украина нанесла удар по главной российской базе в Чёрном море"
       }
     },
     {
-      "url": "https://www.kyivpost.com/analysis/81785",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-08-05T18:00:00.000Z",
+      "url": "https://24tv.ua/geopolitics/atacms-spinu-vid-erdogana-zminyuye-ankara-svoyu-pozitsiyu-shhodo_n3121906",
+      "domain": "24tv.ua",
+      "seenAt": "2026-08-12T16:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/cf1645cd732a4a83.webp",
-      "original": "Analysis : Zelensky 40 - Day Plan to Force Russian Talks With Drones – Huge Damage , But No Peace",
+      "image": "/news/8b5d406c78d10667.webp",
+      "original": "Туреччина змінює позицію щодо Росії - що це означає для України",
       "title": {
-        "uk": "Аналіз: 40-денний план Зеленського змусити Росію до переговорів за допомогою дронів — величезні збитки, але не мир",
-        "en": "Analysis: Zelensky 40-day plan to force Russian talks with drones — huge damage, but no peace",
-        "ru": "Анализ: 40-дневный план Зеленского вынудить Россию к переговорам с помощью дронов — огромный ущерб, но не мир"
+        "uk": "Туреччина змінює позицію щодо Росії: що це означає для України",
+        "en": "Turkey is changing its stance on Russia — what this means for Ukraine",
+        "ru": "Турция меняет позицию в отношении России: что это означает для Украины"
       }
     },
     {
-      "url": "https://www.abc.net.au/news/2026-08-09/maps-show-ukraine-extensive-reach-into-russian-territory/107008704",
-      "domain": "abc.net.au",
-      "seenAt": "2026-08-08T19:30:00.000Z",
-      "sourceCountry": "Australia",
-      "image": "/news/5cf2bb11e4f5ff1a.webp",
-      "original": "More than four years from Russia invasion , Ukraine war is changing",
+      "url": "https://efe.com/mundo/2026-08-13/creciente-apoyo-militar-corea-norte-rusia-genera-alarma-ucrania/",
+      "domain": "efe.com",
+      "seenAt": "2026-08-13T06:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/f61d64492e3e0daf.webp",
+      "original": "El creciente apoyo militar de Corea del Norte a Rusia genera alarma en Ucrania",
       "title": {
-        "uk": "Більш ніж чотири роки після вторгнення Росії: війна в Україні змінюється",
-        "en": "More than four years from Russia's invasion, the Ukraine war is changing",
-        "ru": "Более четырёх лет после вторжения России: война в Украине меняется"
+        "uk": "Зростаюча військова підтримка Північної Кореї Росії викликає тривогу в Україні",
+        "en": "North Korea's growing military support for Russia raises alarm in Ukraine",
+        "ru": "Растущая военная поддержка Северной Кореей России вызывает тревогу в Украине"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/81778",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-08-05T18:00:00.000Z",
+      "url": "https://www.gazetadopovo.com.br/mundo/ucrania-deixa-bombardear-petroleiros-porto-russo-apos-pedido-vice-trump/",
+      "domain": "gazetadopovo.com.br",
+      "seenAt": "2026-08-12T12:15:00.000Z",
+      "sourceCountry": "Brazil",
+      "image": "/news/c42fa913d3703c28.webp",
+      "original": "Ucrânia cessa ataques em porto russo após EUA pedirem",
+      "title": {
+        "uk": "Україна припинила атаки на російський порт після прохання США",
+        "en": "Ukraine halts attacks on Russian port after U.S. request",
+        "ru": "Украина прекратила атаки на российский порт по просьбе США"
+      }
+    },
+    {
+      "url": "https://nationalpost.com/news/world/putin-trump-alaska-summit",
+      "domain": "nationalpost.com",
+      "seenAt": "2026-08-11T04:30:00.000Z",
+      "sourceCountry": "Canada",
+      "original": "A year after Trump hosted Putin to seek Ukraine peace , goodwill is gone",
+      "title": {
+        "uk": "Рік після того, як Трамп прийняв Путіна задля миру в Україні: добра воля вичерпана",
+        "en": "A year after Trump hosted Putin to seek Ukraine peace, goodwill is gone",
+        "ru": "Год спустя после встречи Трампа и Путина ради мира в Украине: добрая воля иссякла"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/news/world/europe/russia-ukraine-war-missiles-putin-escalation-b3031445.html",
+      "domain": "independent.co.uk",
+      "seenAt": "2026-08-11T23:15:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/cc373c5b7046a827.webp",
+      "original": "Russian strikes kill ten in Ukraine as Zelensky says  every step  Putin takes is towards escalation",
+      "title": {
+        "uk": "Російські удари вбили десятьох в Україні; Зеленський: кожен крок Путіна веде до ескалації",
+        "en": "Russian strikes kill ten in Ukraine as Zelensky says 'every step' Putin takes is towards escalation",
+        "ru": "Российские удары убили десятерых в Украине; Зеленский: каждый шаг Путина ведёт к эскалации"
+      }
+    },
+    {
+      "url": "https://glavcom.ua/world/observe/rosija-vicherpala-resurs-dobrovoltsiv-dlja-vijni-proti-ukrajini-1135934.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-08-10T10:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/3f7e0a4d658c8b6f.webp",
-      "original": "Putin Replaces Key Ukraine Commanders as Russia Donbas Offensive Slows",
+      "original": "Росія вичерпала ресурс добровольців для війни проти України",
       "title": {
-        "uk": "Путін замінює ключових командувачів в Україні, оскільки наступ Росії на Донбасі сповільнюється",
-        "en": "Putin replaces key Ukraine commanders as Russia's Donbas offensive slows",
-        "ru": "Путин заменяет ключевых командующих на Украине, поскольку наступление России на Донбассе замедляется"
+        "uk": "Росія вичерпала ресурс добровольців для війни проти України",
+        "en": "Russia has exhausted its pool of volunteers for the war against Ukraine",
+        "ru": "Россия исчерпала ресурс добровольцев для войны против Украины"
       }
     },
     {
-      "url": "https://www.mediafax.ro/externe/zelenski-avertizeaza-ca-rusia-ar-putea-primi-pana-la-50-000-de-soldati-nord-coreeni-23787560",
-      "domain": "mediafax.ro",
-      "seenAt": "2026-08-09T14:45:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/815cd298ae9d363b.webp",
-      "original": "Zelenski avertizează că Rusia ar putea primi până la 50 . 000 de soldați nord - coreeni",
+      "url": "https://www.sandiegouniontribune.com/2026/08/10/ukraine-drone-commander-crimea/",
+      "domain": "sandiegouniontribune.com",
+      "seenAt": "2026-08-10T17:45:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Ukraine push to cripple Russia in Crimea is just getting started",
       "title": {
-        "uk": "Зеленський попереджає, що Росія може отримати до 50 000 північнокорейських солдатів",
-        "en": "Zelensky warns Russia could receive up to 50,000 North Korean soldiers",
-        "ru": "Зеленский предупреждает, что Россия может получить до 50 000 северокорейских солдат"
-      }
-    },
-    {
-      "url": "https://www.unian.ua/war/viyna-v-ukrajini-ne-dosyagla-perelomu-optimizm-pochatku-lita-buv-peredchasnim-analitik-13462980.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-08-07T03:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/2afa90ab36515aa9.webp",
-      "original": "Війна в Україні не досягла перелому , оптимізм початку літа був передчасним",
-      "title": {
-        "uk": "Війна в Україні не досягла перелому, оптимізм початку літа був передчасним",
-        "en": "The war in Ukraine has not reached a turning point; early summer optimism was premature",
-        "ru": "Война в Украине не достигла перелома, оптимизм начала лета был преждевременным"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/81773",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-08-05T18:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/159d620100855f41.webp",
-      "original": "Russia May Launch 100 Ballistic Missiles at Ukraine Every Month",
-      "title": {
-        "uk": "Росія може запускати по 100 балістичних ракет по Україні щомісяця",
-        "en": "Russia may launch 100 ballistic missiles at Ukraine every month",
-        "ru": "Россия может запускать по 100 баллистических ракет по Украине ежемесячно"
-      }
-    },
-    {
-      "url": "https://www.unian.net/war/kak-zakonchitsya-voyna-madyar-nazval-5-usloviy-dlya-pobedy-ukrainy-13464846.html",
-      "domain": "unian.net",
-      "seenAt": "2026-08-09T11:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/a7c6052b67fbc8e9.webp",
-      "original": "Как закончится война : Мадяр назвал 5 условий для победы Украины",
-      "title": {
-        "uk": "Як закінчиться війна: Мадяр назвав 5 умов для перемоги України",
-        "en": "How the war will end: Madyar names 5 conditions for Ukraine's victory",
-        "ru": "Как закончится война: Мадяр назвал 5 условий для победы Украины"
-      }
-    },
-    {
-      "url": "https://www.unian.ua/war/tramp-vtrachaye-vazheli-vplivu-na-ukrajinu-kijiv-stav-odnim-z-naycinnishih-soyuznikiv-ssha-13465086.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-08-09T15:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/c5f032fbbf6f592e.webp",
-      "original": "Трамп втрачає важелі впливу на Україну : Київ став одним з найцінніших союзників США",
-      "title": {
-        "uk": "Трамп втрачає важелі впливу на Україну: Київ став одним з найцінніших союзників США",
-        "en": "Trump is losing leverage over Ukraine: Kyiv has become one of the US's most valuable allies",
-        "ru": "Трамп теряет рычаги влияния на Украину: Киев стал одним из наиболее ценных союзников США"
+        "uk": "Наступ України з метою знищення військового потенціалу Росії в Криму лише починається",
+        "en": "Ukraine push to cripple Russia in Crimea is just getting started",
+        "ru": "Украинское наступление с целью подорвать военный потенциал России в Крыму только начинается"
       }
     }
   ]
