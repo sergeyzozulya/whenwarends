@@ -1,44 +1,93 @@
 {
-  "asOf": "2026-08-13",
+  "asOf": "2026-08-14",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://globalnews.ca/news/12017530/ukraine-russia-zelenskyy-peace-proposal-us/",
-      "domain": "globalnews.ca",
-      "seenAt": "2026-08-11T23:15:00.000Z",
-      "sourceCountry": "Canada",
-      "image": "/news/79bfef31398ea8a8.webp",
-      "original": "Ukraine has given peace proposals to U . S . in bid for new talks : Zelenskyy - National",
-      "title": {
-        "uk": "Україна передала США мирні пропозиції в надії на нові переговори — Зеленський",
-        "en": "Ukraine has given peace proposals to U.S. in bid for new talks: Zelenskyy",
-        "ru": "Украина передала США мирные предложения в расчёте на новые переговоры — Зеленский"
-      }
-    },
-    {
-      "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-precision-planned-013721000.html",
-      "domain": "aol.co.uk",
-      "seenAt": "2026-08-13T03:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/93996be4828c5795.webp",
-      "original": "Ukraine war briefing :  With precision , as planned  – Kyiv outlines battlefield gains",
-      "title": {
-        "uk": "Зведення про війну в Україні: «Точно за планом» — Київ звітує про успіхи на фронті",
-        "en": "Ukraine war briefing: 'With precision, as planned' — Kyiv outlines battlefield gains",
-        "ru": "Сводка о войне в Украине: «Точно по плану» — Киев отчитывается об успехах на фронте"
-      }
-    },
-    {
-      "url": "https://www.theepochtimes.com/world/ukraine-hits-russian-black-sea-naval-stronghold-says-zelenskyy-6074299",
-      "domain": "theepochtimes.com",
-      "seenAt": "2026-08-12T19:30:00.000Z",
+      "url": "http://www.econotimes.com/Zelenskiy-Sends-Peace-Plan-to-US-Warns-of-New-Russian-Mobilisation-1749247",
+      "domain": "econotimes.com",
+      "seenAt": "2026-08-12T11:30:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/bf190da6508543e2.webp",
-      "original": "Ukraine Hits Russian Black Sea Naval Stronghold , Says Zelenskyy",
+      "image": "/news/c2a86319b9db588d.webp",
+      "original": "Zelenskiy Sends Peace Plan to U . S ., Warns of New Russian Mobilisation",
       "title": {
-        "uk": "Зеленський: Україна вдарила по головній базі Росії у Чорному морі",
-        "en": "Ukraine hits Russian Black Sea naval stronghold, says Zelenskyy",
-        "ru": "Зеленский: Украина нанесла удар по главной российской базе в Чёрном море"
+        "uk": "Зеленський надіслав мирний план США і попередив про нову російську мобілізацію",
+        "en": "Zelenskyy sends peace plan to U.S., warns of new Russian mobilisation",
+        "ru": "Зеленский направил мирный план США и предупредил о новой российской мобилизации"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/82103",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-08-11T07:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/3978edca9fe53e5f.webp",
+      "original": "Trump - Putin Alaska Summit Fails to End Ukraine War One Year On",
+      "title": {
+        "uk": "Рік по тому: аляскинський саміт Трампа і Путіна не зупинив війну в Україні",
+        "en": "Trump-Putin Alaska summit fails to end Ukraine war one year on",
+        "ru": "Год спустя: аляскинский саммит Трампа и Путина не остановил войну в Украине"
+      }
+    },
+    {
+      "url": "https://www.5.ua/suspilstvo/ukraina-peredala-rosii-propozytsiiu-vzaiemno-zupynyty-ataky-na-tsyvilni-sudna-v-chornomu-mori-381553.html",
+      "domain": "5.ua",
+      "seenAt": "2026-08-13T19:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Україна передала росії пропозицію взаємно зупинити атаки на цивільні судна в Чорному морі",
+      "title": {
+        "uk": "Україна передала Росії пропозицію взаємно зупинити атаки на цивільні судна в Чорному морі",
+        "en": "Ukraine submitted to Russia a proposal to mutually halt attacks on civilian vessels in the Black Sea",
+        "ru": "Украина передала России предложение взаимно прекратить атаки на гражданские суда в Чёрном море"
+      }
+    },
+    {
+      "url": "https://www.newsweek.com/zelensky-ukraine-leverage-trump-russia-novorossiysk-12317123",
+      "domain": "newsweek.com",
+      "seenAt": "2026-08-13T10:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/5659c6ce73467f39.webp",
+      "original": "Two Years On From Kursk Offensive , Now Ukraine Has Real Leverage",
+      "title": {
+        "uk": "Два роки після курського наступу: тепер Україна має реальний важіль тиску",
+        "en": "Two years on from Kursk offensive, now Ukraine has real leverage",
+        "ru": "Два года после курского наступления: теперь у Украины есть реальный рычаг влияния"
+      }
+    },
+    {
+      "url": "https://kp.ua/ua/politics/a734502-zsu-pid-chas-nastupu-na-oleksandrivskomu-naprjamku-zvilnili-26-sil-zelenskij",
+      "domain": "kp.ua",
+      "seenAt": "2026-08-12T19:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/3b67991cd458f319.webp",
+      "original": "ЗСУ під час наступу на Олександрівському напрямку звільнили 26 сіл , - Зеленський",
+      "title": {
+        "uk": "ЗСУ під час наступу на Олександрівському напрямку звільнили 26 сіл — Зеленський",
+        "en": "Ukraine's armed forces liberated 26 villages in the Oleksandrivka direction — Zelenskyy",
+        "ru": "ВСУ в ходе наступления на Александровском направлении освободили 26 сёл — Зеленский"
+      }
+    },
+    {
+      "url": "https://www.obozrevatel.com/ukr/politics-news/kreml-dav-nakaz-u-ft-rozkrili-skilki-osib-rosiya-hoche-vidpraviti-na-vijnu-proti-ukraini-do-kintsya-roku.htm",
+      "domain": "obozrevatel.com",
+      "seenAt": "2026-08-10T10:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Мобілізація в Росії – скільки людей хочуть відправити на війну проти України до кінця року",
+      "title": {
+        "uk": "Мобілізація в Росії: скільки людей хочуть відправити на війну проти України до кінця року",
+        "en": "Russia's mobilisation: how many people are planned to be sent to war against Ukraine by year's end",
+        "ru": "Мобилизация в России: сколько людей планируют отправить на войну против Украины до конца года"
+      }
+    },
+    {
+      "url": "https://wnyc.org/npr/nx-s1-5904418",
+      "domain": "wnyc.org",
+      "seenAt": "2026-08-13T17:45:00.000Z",
+      "sourceCountry": "United States",
+      "original": "By sky and sea , Ukraine drone strikes challenge Russia grip on Crimea",
+      "title": {
+        "uk": "З неба і моря: удари дронів України кидають виклик контролю Росії над Кримом",
+        "en": "By sky and sea, Ukraine drone strikes challenge Russia's grip on Crimea",
+        "ru": "С неба и моря: удары украинских дронов бросают вызов контролю России над Крымом"
       }
     },
     {
@@ -50,83 +99,34 @@
       "original": "Туреччина змінює позицію щодо Росії - що це означає для України",
       "title": {
         "uk": "Туреччина змінює позицію щодо Росії: що це означає для України",
-        "en": "Turkey is changing its stance on Russia — what this means for Ukraine",
-        "ru": "Турция меняет позицию в отношении России: что это означает для Украины"
+        "en": "Turkey is changing its position on Russia: what this means for Ukraine",
+        "ru": "Турция меняет позицию по отношению к России: что это означает для Украины"
       }
     },
     {
-      "url": "https://efe.com/mundo/2026-08-13/creciente-apoyo-militar-corea-norte-rusia-genera-alarma-ucrania/",
-      "domain": "efe.com",
-      "seenAt": "2026-08-13T06:30:00.000Z",
+      "url": "https://www.foxnews.com/politics/russia-helping-china-close-gap-us-forces-amid-taiwan-tensions-warns-longtime-military-leader",
+      "domain": "foxnews.com",
+      "seenAt": "2026-08-12T09:45:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/f61d64492e3e0daf.webp",
-      "original": "El creciente apoyo militar de Corea del Norte a Rusia genera alarma en Ucrania",
+      "image": "/news/ac3dc8ec4918ff89.webp",
+      "original": "Russia giving China submarine - quieting tech , ex - rear admiral warns",
       "title": {
-        "uk": "Зростаюча військова підтримка Північної Кореї Росії викликає тривогу в Україні",
-        "en": "North Korea's growing military support for Russia raises alarm in Ukraine",
-        "ru": "Растущая военная поддержка Северной Кореей России вызывает тревогу в Украине"
+        "uk": "Росія передає Китаю технологію зниження шуму підводних човнів, попереджає колишній контрадмірал",
+        "en": "Russia giving China submarine-quieting technology, ex-rear admiral warns",
+        "ru": "Россия передаёт Китаю технологию снижения шумности подводных лодок, предупреждает бывший контр-адмирал"
       }
     },
     {
-      "url": "https://www.gazetadopovo.com.br/mundo/ucrania-deixa-bombardear-petroleiros-porto-russo-apos-pedido-vice-trump/",
-      "domain": "gazetadopovo.com.br",
-      "seenAt": "2026-08-12T12:15:00.000Z",
-      "sourceCountry": "Brazil",
-      "image": "/news/c42fa913d3703c28.webp",
-      "original": "Ucrânia cessa ataques em porto russo após EUA pedirem",
-      "title": {
-        "uk": "Україна припинила атаки на російський порт після прохання США",
-        "en": "Ukraine halts attacks on Russian port after U.S. request",
-        "ru": "Украина прекратила атаки на российский порт по просьбе США"
-      }
-    },
-    {
-      "url": "https://nationalpost.com/news/world/putin-trump-alaska-summit",
-      "domain": "nationalpost.com",
-      "seenAt": "2026-08-11T04:30:00.000Z",
-      "sourceCountry": "Canada",
-      "original": "A year after Trump hosted Putin to seek Ukraine peace , goodwill is gone",
-      "title": {
-        "uk": "Рік після того, як Трамп прийняв Путіна задля миру в Україні: добра воля вичерпана",
-        "en": "A year after Trump hosted Putin to seek Ukraine peace, goodwill is gone",
-        "ru": "Год спустя после встречи Трампа и Путина ради мира в Украине: добрая воля иссякла"
-      }
-    },
-    {
-      "url": "https://www.independent.co.uk/news/world/europe/russia-ukraine-war-missiles-putin-escalation-b3031445.html",
-      "domain": "independent.co.uk",
-      "seenAt": "2026-08-11T23:15:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/cc373c5b7046a827.webp",
-      "original": "Russian strikes kill ten in Ukraine as Zelensky says  every step  Putin takes is towards escalation",
-      "title": {
-        "uk": "Російські удари вбили десятьох в Україні; Зеленський: кожен крок Путіна веде до ескалації",
-        "en": "Russian strikes kill ten in Ukraine as Zelensky says 'every step' Putin takes is towards escalation",
-        "ru": "Российские удары убили десятерых в Украине; Зеленский: каждый шаг Путина ведёт к эскалации"
-      }
-    },
-    {
-      "url": "https://glavcom.ua/world/observe/rosija-vicherpala-resurs-dobrovoltsiv-dlja-vijni-proti-ukrajini-1135934.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-08-10T10:30:00.000Z",
+      "url": "https://www.rbc.ua/rus/news/evropa-hoche-poserednika-peregovorah-rosieyu-1786644275.html",
+      "domain": "rbc.ua",
+      "seenAt": "2026-08-13T20:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Росія вичерпала ресурс добровольців для війни проти України",
+      "image": "/news/02f34e883cb4715b.webp",
+      "original": "Переговори з Росією - Бразилія заявила про прохання Європи про посередництво",
       "title": {
-        "uk": "Росія вичерпала ресурс добровольців для війни проти України",
-        "en": "Russia has exhausted its pool of volunteers for the war against Ukraine",
-        "ru": "Россия исчерпала ресурс добровольцев для войны против Украины"
-      }
-    },
-    {
-      "url": "https://www.sandiegouniontribune.com/2026/08/10/ukraine-drone-commander-crimea/",
-      "domain": "sandiegouniontribune.com",
-      "seenAt": "2026-08-10T17:45:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Ukraine push to cripple Russia in Crimea is just getting started",
-      "title": {
-        "uk": "Наступ України з метою знищення військового потенціалу Росії в Криму лише починається",
-        "en": "Ukraine push to cripple Russia in Crimea is just getting started",
-        "ru": "Украинское наступление с целью подорвать военный потенциал России в Крыму только начинается"
+        "uk": "Переговори з Росією: Бразилія заявила про прохання Європи про посередництво",
+        "en": "Talks with Russia: Brazil says Europe requested mediation",
+        "ru": "Переговоры с Россией: Бразилия заявила о просьбе Европы о посредничестве"
       }
     }
   ]
