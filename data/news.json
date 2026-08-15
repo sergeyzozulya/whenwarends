@@ -1,7 +1,19 @@
 {
-  "asOf": "2026-08-14",
+  "asOf": "2026-08-15",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://glavcom.ua/news/kreml-ne-hotovij-do-miru-bez-kapituljatsiji-ukrajini-isw-1136807.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-08-15T06:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Кремль не готовий до миру без капітуляції України – ISW",
+      "title": {
+        "uk": "Кремль не готовий до миру без капітуляції України — ISW",
+        "en": "Kremlin Not Ready for Peace Without Ukraine's Capitulation — ISW",
+        "ru": "Кремль не готов к миру без капитуляции Украины — ISW"
+      }
+    },
     {
       "url": "http://www.econotimes.com/Zelenskiy-Sends-Peace-Plan-to-US-Warns-of-New-Russian-Mobilisation-1749247",
       "domain": "econotimes.com",
@@ -10,34 +22,21 @@
       "image": "/news/c2a86319b9db588d.webp",
       "original": "Zelenskiy Sends Peace Plan to U . S ., Warns of New Russian Mobilisation",
       "title": {
-        "uk": "Зеленський надіслав мирний план США і попередив про нову російську мобілізацію",
-        "en": "Zelenskyy sends peace plan to U.S., warns of new Russian mobilisation",
-        "ru": "Зеленский направил мирный план США и предупредил о новой российской мобилизации"
+        "uk": "Зеленський передав мирний план США та попередив про нову мобілізацію Росії",
+        "en": "Zelenskyy Sends Peace Plan to U.S., Warns of New Russian Mobilisation",
+        "ru": "Зеленский передал мирный план США и предупредил о новой мобилизации России"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/82103",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-08-11T07:00:00.000Z",
+      "url": "https://www.obozrevatel.com/ukr/politics-news/rosiya-ne-zmozhe-zahopiti-donbas-navit-u-2027-rotsi-media-otrimali-dostup-do-listuvannya-ukraini-i-ssha.htm",
+      "domain": "obozrevatel.com",
+      "seenAt": "2026-08-14T18:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/3978edca9fe53e5f.webp",
-      "original": "Trump - Putin Alaska Summit Fails to End Ukraine War One Year On",
+      "original": "Росія не зможе захопити Донбас у 2027 році – переговори України і адміністрації Трампа",
       "title": {
-        "uk": "Рік по тому: аляскинський саміт Трампа і Путіна не зупинив війну в Україні",
-        "en": "Trump-Putin Alaska summit fails to end Ukraine war one year on",
-        "ru": "Год спустя: аляскинский саммит Трампа и Путина не остановил войну в Украине"
-      }
-    },
-    {
-      "url": "https://www.5.ua/suspilstvo/ukraina-peredala-rosii-propozytsiiu-vzaiemno-zupynyty-ataky-na-tsyvilni-sudna-v-chornomu-mori-381553.html",
-      "domain": "5.ua",
-      "seenAt": "2026-08-13T19:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Україна передала росії пропозицію взаємно зупинити атаки на цивільні судна в Чорному морі",
-      "title": {
-        "uk": "Україна передала Росії пропозицію взаємно зупинити атаки на цивільні судна в Чорному морі",
-        "en": "Ukraine submitted to Russia a proposal to mutually halt attacks on civilian vessels in the Black Sea",
-        "ru": "Украина передала России предложение взаимно прекратить атаки на гражданские суда в Чёрном море"
+        "uk": "Росія не зможе захопити Донбас у 2027 році — переговори України і адміністрації Трампа",
+        "en": "Russia Will Not Be Able to Capture Donbas in 2027 — Ukraine-Trump Administration Talks",
+        "ru": "Россия не сможет захватить Донбасс в 2027 году — переговоры Украины и администрации Трампа"
       }
     },
     {
@@ -48,46 +47,60 @@
       "image": "/news/5659c6ce73467f39.webp",
       "original": "Two Years On From Kursk Offensive , Now Ukraine Has Real Leverage",
       "title": {
-        "uk": "Два роки після курського наступу: тепер Україна має реальний важіль тиску",
-        "en": "Two years on from Kursk offensive, now Ukraine has real leverage",
-        "ru": "Два года после курского наступления: теперь у Украины есть реальный рычаг влияния"
+        "uk": "Два роки після наступу на Курськ: тепер Україна має реальні важелі впливу",
+        "en": "Two Years On From Kursk Offensive, Now Ukraine Has Real Leverage",
+        "ru": "Два года после наступления на Курск: теперь у Украины есть реальные рычаги влияния"
       }
     },
     {
-      "url": "https://kp.ua/ua/politics/a734502-zsu-pid-chas-nastupu-na-oleksandrivskomu-naprjamku-zvilnili-26-sil-zelenskij",
-      "domain": "kp.ua",
-      "seenAt": "2026-08-12T19:15:00.000Z",
+      "url": "https://ua.korrespondent.net/ukraine/4902279-zsu-zvilnyly-26-naselenykh-punktiv-na-pivdni",
+      "domain": "ua.korrespondent.net",
+      "seenAt": "2026-08-12T14:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/3b67991cd458f319.webp",
-      "original": "ЗСУ під час наступу на Олександрівському напрямку звільнили 26 сіл , - Зеленський",
+      "image": "/news/3c30b39a16775418.webp",
+      "original": "ЗСУ звільнили 26 населених пунктів на півдні",
       "title": {
-        "uk": "ЗСУ під час наступу на Олександрівському напрямку звільнили 26 сіл — Зеленський",
-        "en": "Ukraine's armed forces liberated 26 villages in the Oleksandrivka direction — Zelenskyy",
-        "ru": "ВСУ в ходе наступления на Александровском направлении освободили 26 сёл — Зеленский"
+        "uk": "ЗСУ звільнили 26 населених пунктів на півдні",
+        "en": "Ukrainian Forces Liberate 26 Settlements in the South",
+        "ru": "ВСУ освободили 26 населённых пунктов на юге"
       }
     },
     {
-      "url": "https://www.obozrevatel.com/ukr/politics-news/kreml-dav-nakaz-u-ft-rozkrili-skilki-osib-rosiya-hoche-vidpraviti-na-vijnu-proti-ukraini-do-kintsya-roku.htm",
+      "url": "https://www.obozrevatel.com/ukr/politics-news/u-rosii-zrobili-novu-zayavu-pro-zamorozku-vijni-z-ukrainoyu-i-zagovorili-pro-natsizm.htm",
       "domain": "obozrevatel.com",
-      "seenAt": "2026-08-10T10:30:00.000Z",
+      "seenAt": "2026-08-14T11:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Мобілізація в Росії – скільки людей хочуть відправити на війну проти України до кінця року",
+      "original": "Росія готова заморозити війну з Україною чи ні – заява Лаврова",
       "title": {
-        "uk": "Мобілізація в Росії: скільки людей хочуть відправити на війну проти України до кінця року",
-        "en": "Russia's mobilisation: how many people are planned to be sent to war against Ukraine by year's end",
-        "ru": "Мобилизация в России: сколько людей планируют отправить на войну против Украины до конца года"
+        "uk": "Росія готова заморозити війну з Україною чи ні — заява Лаврова",
+        "en": "Is Russia Ready to Freeze the War With Ukraine — Lavrov's Statement",
+        "ru": "Готова ли Россия заморозить войну с Украиной — заявление Лаврова"
       }
     },
     {
-      "url": "https://wnyc.org/npr/nx-s1-5904418",
-      "domain": "wnyc.org",
-      "seenAt": "2026-08-13T17:45:00.000Z",
-      "sourceCountry": "United States",
-      "original": "By sky and sea , Ukraine drone strikes challenge Russia grip on Crimea",
+      "url": "https://www.dw.com/ru/50-tysac-soldat-dla-vojny-rf-v-ukraine-cto-eto-dast-kndr/a-78357680",
+      "domain": "dw.com",
+      "seenAt": "2026-08-14T11:30:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/17b40d0a35f90e93.webp",
+      "original": "50 тысяч солдат для войны РФ в Украине : что это даст КНДР ?",
       "title": {
-        "uk": "З неба і моря: удари дронів України кидають виклик контролю Росії над Кримом",
-        "en": "By sky and sea, Ukraine drone strikes challenge Russia's grip on Crimea",
-        "ru": "С неба и моря: удары украинских дронов бросают вызов контролю России над Крымом"
+        "uk": "50 тисяч солдатів для війни РФ в Україні: що це дасть КНДР?",
+        "en": "50,000 Soldiers for Russia's War in Ukraine: What Does North Korea Gain?",
+        "ru": "50 тысяч солдат для войны РФ в Украине: что это даст КНДР?"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/82103",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-08-11T07:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/3978edca9fe53e5f.webp",
+      "original": "Trump - Putin Alaska Summit Fails to End Ukraine War One Year On",
+      "title": {
+        "uk": "Рік по тому: Аляскинський саміт Трампа і Путіна не завершив війну в Україні",
+        "en": "Trump-Putin Alaska Summit Fails to End Ukraine War One Year On",
+        "ru": "Год спустя: Аляскинский саммит Трампа и Путина не завершил войну в Украине"
       }
     },
     {
@@ -98,35 +111,22 @@
       "image": "/news/8b5d406c78d10667.webp",
       "original": "Туреччина змінює позицію щодо Росії - що це означає для України",
       "title": {
-        "uk": "Туреччина змінює позицію щодо Росії: що це означає для України",
-        "en": "Turkey is changing its position on Russia: what this means for Ukraine",
-        "ru": "Турция меняет позицию по отношению к России: что это означает для Украины"
+        "uk": "Туреччина змінює позицію щодо Росії — що це означає для України",
+        "en": "Turkey Is Changing Its Position on Russia — What This Means for Ukraine",
+        "ru": "Турция меняет позицию в отношении России — что это означает для Украины"
       }
     },
     {
-      "url": "https://www.foxnews.com/politics/russia-helping-china-close-gap-us-forces-amid-taiwan-tensions-warns-longtime-military-leader",
-      "domain": "foxnews.com",
-      "seenAt": "2026-08-12T09:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/ac3dc8ec4918ff89.webp",
-      "original": "Russia giving China submarine - quieting tech , ex - rear admiral warns",
+      "url": "https://aa.com.tr/en/opinion/on-the-costs-of-economic-attrition-a-look-at-the-russia-ukraine-war/4027468",
+      "domain": "aa.com.tr",
+      "seenAt": "2026-08-14T17:30:00.000Z",
+      "sourceCountry": "Turkey",
+      "image": "/news/2ebbedbf1290b474.webp",
+      "original": "On the costs of economic attrition : A look at the Russia - Ukraine War",
       "title": {
-        "uk": "Росія передає Китаю технологію зниження шуму підводних човнів, попереджає колишній контрадмірал",
-        "en": "Russia giving China submarine-quieting technology, ex-rear admiral warns",
-        "ru": "Россия передаёт Китаю технологию снижения шумности подводных лодок, предупреждает бывший контр-адмирал"
-      }
-    },
-    {
-      "url": "https://www.rbc.ua/rus/news/evropa-hoche-poserednika-peregovorah-rosieyu-1786644275.html",
-      "domain": "rbc.ua",
-      "seenAt": "2026-08-13T20:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/02f34e883cb4715b.webp",
-      "original": "Переговори з Росією - Бразилія заявила про прохання Європи про посередництво",
-      "title": {
-        "uk": "Переговори з Росією: Бразилія заявила про прохання Європи про посередництво",
-        "en": "Talks with Russia: Brazil says Europe requested mediation",
-        "ru": "Переговоры с Россией: Бразилия заявила о просьбе Европы о посредничестве"
+        "uk": "Про вартість економічного виснаження: погляд на російсько-українську війну",
+        "en": "On the Costs of Economic Attrition: A Look at the Russia-Ukraine War",
+        "ru": "О цене экономического истощения: взгляд на российско-украинскую войну"
       }
     }
   ]
