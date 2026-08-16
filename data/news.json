@@ -1,42 +1,44 @@
 {
-  "asOf": "2026-08-15",
+  "asOf": "2026-08-16",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://glavcom.ua/news/kreml-ne-hotovij-do-miru-bez-kapituljatsiji-ukrajini-isw-1136807.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-08-15T06:15:00.000Z",
+      "url": "https://www.dialog.ua/russia/rossiya-planiruet-novoe-bolshoe-nastuplenie-zimoy-nyt.html",
+      "domain": "dialog.ua",
+      "seenAt": "2026-08-15T13:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Кремль не готовий до миру без капітуляції України – ISW",
+      "image": "/news/a04f5a53ab40caa7.webp",
+      "original": "Россия планирует новое большое наступление зимой – NYT",
       "title": {
-        "uk": "Кремль не готовий до миру без капітуляції України — ISW",
-        "en": "Kremlin Not Ready for Peace Without Ukraine's Capitulation — ISW",
-        "ru": "Кремль не готов к миру без капитуляции Украины — ISW"
+        "uk": "Росія планує новий масштабний наступ взимку — NYT",
+        "en": "Russia plans new major offensive in winter — NYT",
+        "ru": "Россия планирует новое масштабное наступление зимой — NYT"
       }
     },
     {
-      "url": "http://www.econotimes.com/Zelenskiy-Sends-Peace-Plan-to-US-Warns-of-New-Russian-Mobilisation-1749247",
-      "domain": "econotimes.com",
-      "seenAt": "2026-08-12T11:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/c2a86319b9db588d.webp",
-      "original": "Zelenskiy Sends Peace Plan to U . S ., Warns of New Russian Mobilisation",
+      "url": "https://www.rbc.ua/rus/news/isw-poyasnili-chomu-kreml-vidmovlyaetsya-1786777398.html",
+      "domain": "rbc.ua",
+      "seenAt": "2026-08-15T11:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/7339dbaca5582e54.webp",
+      "original": "Переговори України та Росії - в ISW пояснили , чому Кремль відмовляється продовжувати діалог",
       "title": {
-        "uk": "Зеленський передав мирний план США та попередив про нову мобілізацію Росії",
-        "en": "Zelenskyy Sends Peace Plan to U.S., Warns of New Russian Mobilisation",
-        "ru": "Зеленский передал мирный план США и предупредил о новой мобилизации России"
+        "uk": "Переговори України та Росії: в ISW пояснили, чому Кремль відмовляється продовжувати діалог",
+        "en": "Ukraine-Russia talks: ISW explains why the Kremlin refuses to continue dialogue",
+        "ru": "Переговоры Украины и России: в ISW объяснили, почему Кремль отказывается продолжать диалог"
       }
     },
     {
-      "url": "https://www.obozrevatel.com/ukr/politics-news/rosiya-ne-zmozhe-zahopiti-donbas-navit-u-2027-rotsi-media-otrimali-dostup-do-listuvannya-ukraini-i-ssha.htm",
-      "domain": "obozrevatel.com",
-      "seenAt": "2026-08-14T18:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Росія не зможе захопити Донбас у 2027 році – переговори України і адміністрації Трампа",
+      "url": "https://www.rte.ie/news/analysis-and-comment/2026/0815/1587931-alaska-ukraine-analysis/",
+      "domain": "rte.ie",
+      "seenAt": "2026-08-15T10:30:00.000Z",
+      "sourceCountry": "Ireland",
+      "image": "/news/aebc6e947517d5ce.webp",
+      "original": "One year on , did Alaska change anything for Ukraine ?",
       "title": {
-        "uk": "Росія не зможе захопити Донбас у 2027 році — переговори України і адміністрації Трампа",
-        "en": "Russia Will Not Be Able to Capture Donbas in 2027 — Ukraine-Trump Administration Talks",
-        "ru": "Россия не сможет захватить Донбасс в 2027 году — переговоры Украины и администрации Трампа"
+        "uk": "Рік потому: чи щось змінила Аляска для України?",
+        "en": "One year on, did Alaska change anything for Ukraine?",
+        "ru": "Год спустя: изменила ли Аляска что-то для Украины?"
       }
     },
     {
@@ -47,34 +49,60 @@
       "image": "/news/5659c6ce73467f39.webp",
       "original": "Two Years On From Kursk Offensive , Now Ukraine Has Real Leverage",
       "title": {
-        "uk": "Два роки після наступу на Курськ: тепер Україна має реальні важелі впливу",
-        "en": "Two Years On From Kursk Offensive, Now Ukraine Has Real Leverage",
-        "ru": "Два года после наступления на Курск: теперь у Украины есть реальные рычаги влияния"
+        "uk": "Два роки після Курської операції: тепер Україна має реальний важіль тиску",
+        "en": "Two years on from Kursk offensive, now Ukraine has real leverage",
+        "ru": "Два года после наступления на Курск: теперь у Украины есть реальный рычаг влияния"
       }
     },
     {
-      "url": "https://ua.korrespondent.net/ukraine/4902279-zsu-zvilnyly-26-naselenykh-punktiv-na-pivdni",
-      "domain": "ua.korrespondent.net",
-      "seenAt": "2026-08-12T14:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/3c30b39a16775418.webp",
-      "original": "ЗСУ звільнили 26 населених пунктів на півдні",
+      "url": "https://www.samaa.tv/2087355210-russia-rules-out-immediate-ukraine-ceasefire",
+      "domain": "samaa.tv",
+      "seenAt": "2026-08-14T13:00:00.000Z",
+      "sourceCountry": "Pakistan",
+      "image": "/news/e8dc0451a65ca175.webp",
+      "original": "Russia rules out immediate Ukraine ceasefire",
       "title": {
-        "uk": "ЗСУ звільнили 26 населених пунктів на півдні",
-        "en": "Ukrainian Forces Liberate 26 Settlements in the South",
-        "ru": "ВСУ освободили 26 населённых пунктов на юге"
+        "uk": "Росія відкидає негайне припинення вогню з Україною",
+        "en": "Russia rules out immediate Ukraine ceasefire",
+        "ru": "Россия исключает немедленное прекращение огня с Украиной"
       }
     },
     {
-      "url": "https://www.obozrevatel.com/ukr/politics-news/u-rosii-zrobili-novu-zayavu-pro-zamorozku-vijni-z-ukrainoyu-i-zagovorili-pro-natsizm.htm",
+      "url": "https://www.obozrevatel.com/ukr/politics-news/rosiya-ne-zmozhe-zahopiti-donbas-navit-u-2027-rotsi-media-otrimali-dostup-do-listuvannya-ukraini-i-ssha.htm",
       "domain": "obozrevatel.com",
-      "seenAt": "2026-08-14T11:15:00.000Z",
+      "seenAt": "2026-08-14T18:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Росія готова заморозити війну з Україною чи ні – заява Лаврова",
+      "original": "Росія не зможе захопити Донбас у 2027 році – переговори України і адміністрації Трампа",
       "title": {
-        "uk": "Росія готова заморозити війну з Україною чи ні — заява Лаврова",
-        "en": "Is Russia Ready to Freeze the War With Ukraine — Lavrov's Statement",
-        "ru": "Готова ли Россия заморозить войну с Украиной — заявление Лаврова"
+        "uk": "Росія не зможе захопити Донбас у 2027 році — переговори України і адміністрації Трампа",
+        "en": "Russia will not be able to capture Donbas in 2027 — Ukraine and Trump administration talks",
+        "ru": "Россия не сможет захватить Донбасс в 2027 году — переговоры Украины и администрации Трампа"
+      }
+    },
+    {
+      "url": "https://globalnews.ca/news/12017530/ukraine-russia-zelenskyy-peace-proposal-us/",
+      "domain": "globalnews.ca",
+      "seenAt": "2026-08-11T23:15:00.000Z",
+      "sourceCountry": "Canada",
+      "image": "/news/79bfef31398ea8a8.webp",
+      "original": "Ukraine has given peace proposals to U . S . in bid for new talks : Zelenskyy - National",
+      "title": {
+        "uk": "Україна передала мирні пропозиції США для відновлення переговорів — Зеленський",
+        "en": "Ukraine has given peace proposals to U.S. in bid for new talks — Zelenskyy",
+        "ru": "Украина передала США мирные предложения в расчёте на новые переговоры — Зеленский"
+      }
+    },
+    {
+      "url": "https://glavred.info/front/vsu-rezko-izmenili-situaciyu-na-fronte-deepstate-pokazal-masshtaby-nastupleniya-10787981.html",
+      "domain": "glavred.info",
+      "seenAt": "2026-08-12T21:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/6e2164ff98040e92.webp",
+      "original": "ВСУ резко изменили ситуацию на фронте : DeepState показал масштабы наступления",
+      "title": {
+        "uk": "ЗСУ різко змінили ситуацію на фронті: DeepState показав масштаби наступу",
+        "en": "Ukrainian forces dramatically changed the front-line situation: DeepState shows the scale of the offensive",
+        "ru": "ВСУ резко изменили ситуацию на фронте: DeepState показал масштабы наступления"
       }
     },
     {
@@ -86,21 +114,8 @@
       "original": "50 тысяч солдат для войны РФ в Украине : что это даст КНДР ?",
       "title": {
         "uk": "50 тисяч солдатів для війни РФ в Україні: що це дасть КНДР?",
-        "en": "50,000 Soldiers for Russia's War in Ukraine: What Does North Korea Gain?",
+        "en": "50,000 soldiers for Russia's war in Ukraine: what does it give North Korea?",
         "ru": "50 тысяч солдат для войны РФ в Украине: что это даст КНДР?"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/82103",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-08-11T07:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/3978edca9fe53e5f.webp",
-      "original": "Trump - Putin Alaska Summit Fails to End Ukraine War One Year On",
-      "title": {
-        "uk": "Рік по тому: Аляскинський саміт Трампа і Путіна не завершив війну в Україні",
-        "en": "Trump-Putin Alaska Summit Fails to End Ukraine War One Year On",
-        "ru": "Год спустя: Аляскинский саммит Трампа и Путина не завершил войну в Украине"
       }
     },
     {
@@ -112,21 +127,8 @@
       "original": "Туреччина змінює позицію щодо Росії - що це означає для України",
       "title": {
         "uk": "Туреччина змінює позицію щодо Росії — що це означає для України",
-        "en": "Turkey Is Changing Its Position on Russia — What This Means for Ukraine",
-        "ru": "Турция меняет позицию в отношении России — что это означает для Украины"
-      }
-    },
-    {
-      "url": "https://aa.com.tr/en/opinion/on-the-costs-of-economic-attrition-a-look-at-the-russia-ukraine-war/4027468",
-      "domain": "aa.com.tr",
-      "seenAt": "2026-08-14T17:30:00.000Z",
-      "sourceCountry": "Turkey",
-      "image": "/news/2ebbedbf1290b474.webp",
-      "original": "On the costs of economic attrition : A look at the Russia - Ukraine War",
-      "title": {
-        "uk": "Про вартість економічного виснаження: погляд на російсько-українську війну",
-        "en": "On the Costs of Economic Attrition: A Look at the Russia-Ukraine War",
-        "ru": "О цене экономического истощения: взгляд на российско-украинскую войну"
+        "en": "Turkey changes its position on Russia — what does this mean for Ukraine?",
+        "ru": "Турция меняет позицию по России — что это означает для Украины?"
       }
     }
   ]

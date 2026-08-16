@@ -93,10 +93,10 @@
     "question": "Russia x Ukraine ceasefire agreement by August 31, 2026?",
     "resolution_date": "2026-08-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.021,
-    "liquidity_usd": 44397.62211,
+    "current_price": 0.0205,
+    "liquidity_usd": 38369.37464,
     "liquidity_mana": null,
-    "last_updated": "2026-08-15T08:34:23.928Z"
+    "last_updated": "2026-08-16T08:34:35.367Z"
   },
   {
     "market_id": "polymarket:2602277",
@@ -104,10 +104,10 @@
     "question": "Ukraine signs peace deal with Russia by August 31?",
     "resolution_date": "2026-08-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.005,
-    "liquidity_usd": 45561.90842,
+    "current_price": 0.007,
+    "liquidity_usd": 56352.95184,
     "liquidity_mana": null,
-    "last_updated": "2026-08-15T08:34:23.928Z"
+    "last_updated": "2026-08-16T08:34:35.367Z"
   },
   {
     "market_id": "polymarket:2243896",
@@ -115,10 +115,10 @@
     "question": "Russia x Ukraine ceasefire agreement by October 31, 2026?",
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.115,
-    "liquidity_usd": 62303.6663,
+    "current_price": 0.11,
+    "liquidity_usd": 60609.4405,
     "liquidity_mana": null,
-    "last_updated": "2026-08-15T08:34:23.928Z"
+    "last_updated": "2026-08-16T08:34:35.367Z"
   },
   {
     "market_id": "polymarket:2264327",
@@ -127,9 +127,9 @@
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.095,
-    "liquidity_usd": 85099.7142,
+    "liquidity_usd": 70392.1341,
     "liquidity_mana": null,
-    "last_updated": "2026-08-15T08:34:23.928Z"
+    "last_updated": "2026-08-16T08:34:35.367Z"
   },
   {
     "market_id": "polymarket:2243897",
@@ -137,10 +137,10 @@
     "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.265,
-    "liquidity_usd": 83030.9342,
+    "current_price": 0.255,
+    "liquidity_usd": 98540.308,
     "liquidity_mana": null,
-    "last_updated": "2026-08-15T08:34:23.928Z"
+    "last_updated": "2026-08-16T08:34:35.367Z"
   },
   {
     "market_id": "polymarket:665224",
@@ -148,10 +148,10 @@
     "question": "Ukraine signs peace deal with Russia before 2027?",
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.175,
-    "liquidity_usd": 52704.0483,
+    "current_price": 0.155,
+    "liquidity_usd": 67460.807,
     "liquidity_mana": null,
-    "last_updated": "2026-08-15T08:34:23.928Z"
+    "last_updated": "2026-08-16T08:34:35.367Z"
   },
   {
     "market_id": "polymarket:2264328",
@@ -159,10 +159,10 @@
     "question": "Russia x Ukraine ceasefire by December 31, 2026?",
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.205,
-    "liquidity_usd": 109723.5261,
+    "current_price": 0.215,
+    "liquidity_usd": 112339.5772,
     "liquidity_mana": null,
-    "last_updated": "2026-08-15T08:34:23.928Z"
+    "last_updated": "2026-08-16T08:34:35.367Z"
   },
   {
     "market_id": "manifold:EzZLpOlLCg",
@@ -173,7 +173,7 @@
     "current_price": 0.15940198042755355,
     "liquidity_usd": null,
     "liquidity_mana": 1000,
-    "last_updated": "2026-08-15T08:34:24.093Z"
+    "last_updated": "2026-08-16T08:34:35.696Z"
   },
   {
     "market_id": "manifold:UtgtL9ORLq",
@@ -184,7 +184,7 @@
     "current_price": 0.13682332213719073,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-08-15T08:34:24.093Z"
+    "last_updated": "2026-08-16T08:34:35.696Z"
   },
   {
     "market_id": "manifold:A0P8sZglZN",
@@ -195,7 +195,7 @@
     "current_price": 0.2675909448328234,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-08-15T08:34:24.093Z"
+    "last_updated": "2026-08-16T08:34:35.696Z"
   },
   {
     "market_id": "manifold:UlZEC6Rys2",
@@ -217,6 +217,6 @@
     "current_price": 0.09880027128663452,
     "liquidity_usd": null,
     "liquidity_mana": 1005,
-    "last_updated": "2026-08-15T08:34:24.093Z"
+    "last_updated": "2026-08-16T08:34:35.696Z"
   }
 ]
