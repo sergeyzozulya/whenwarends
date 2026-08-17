@@ -1,18 +1,57 @@
 {
-  "asOf": "2026-08-16",
+  "asOf": "2026-08-17",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.dialog.ua/russia/rossiya-planiruet-novoe-bolshoe-nastuplenie-zimoy-nyt.html",
-      "domain": "dialog.ua",
-      "seenAt": "2026-08-15T13:45:00.000Z",
+      "url": "https://www.ukrinform.ua/rubric-polytics/4154630-vijna-v-ukraini-najimovirnise-zakincitsa-pripinennam-vognu-a-ne-mirom-niderlandskij-diplomat.html",
+      "domain": "ukrinform.ua",
+      "seenAt": "2026-08-17T02:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/a04f5a53ab40caa7.webp",
-      "original": "Россия планирует новое большое наступление зимой – NYT",
+      "image": "/news/3bec1dfcc69b3593.webp",
+      "original": "Війна в Україні , найімовірніше , закінчиться припиненням вогню , а не миром",
       "title": {
-        "uk": "Росія планує новий масштабний наступ взимку — NYT",
-        "en": "Russia plans new major offensive in winter — NYT",
-        "ru": "Россия планирует новое масштабное наступление зимой — NYT"
+        "uk": "Війна в Україні, найімовірніше, закінчиться припиненням вогню, а не миром",
+        "en": "The war in Ukraine will most likely end with a ceasefire, not a peace deal",
+        "ru": "Война на Украине скорее всего закончится перемирием, а не миром"
+      }
+    },
+    {
+      "url": "https://www1.pluska.sk/spravy/eu-chysta-najtvrdsi-uder-voci-rusku-od-zaciatku-vojny",
+      "domain": "pluska.sk",
+      "seenAt": "2026-08-17T08:15:00.000Z",
+      "sourceCountry": "Slovak Republic",
+      "image": "/news/291f6f299e3d52d3.webp",
+      "original": "EÚ chystá najtvrdší úder voči Rusku od začiatku vojny",
+      "title": {
+        "uk": "ЄС готує найжорсткіший удар проти Росії з початку війни",
+        "en": "EU prepares its hardest blow against Russia since the start of the war",
+        "ru": "ЕС готовит самый жёсткий удар по России с начала войны"
+      }
+    },
+    {
+      "url": "https://www.vedomosti.ru/politics/news/2026/08/16/1221431-the-times-britanskie",
+      "domain": "vedomosti.ru",
+      "seenAt": "2026-08-16T11:00:00.000Z",
+      "sourceCountry": "Russia",
+      "image": "/news/52d12cddde4f1fd8.webp",
+      "original": "Sunday Times : британские БПЛА впервые применили для ударов по РФ",
+      "title": {
+        "uk": "Sunday Times: британські БПЛА вперше застосували для ударів по РФ",
+        "en": "Sunday Times: British drones used for strikes on Russia for the first time",
+        "ru": "Sunday Times: британские БПЛА впервые применили для ударов по РФ"
+      }
+    },
+    {
+      "url": "https://www.unian.ua/war/vtrati-rf-zletili-do-rekordu-na-tli-chutok-pro-masovu-mobilizaciyu-forbes-13471746.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-08-16T13:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/044e2c7b4731dc75.webp",
+      "original": "Втрати РФ злетіли до рекорду на тлі чуток про масову мобілізацію ,",
+      "title": {
+        "uk": "Втрати РФ злетіли до рекорду на тлі чуток про масову мобілізацію",
+        "en": "Russia's losses hit a record amid rumours of mass mobilisation",
+        "ru": "Потери РФ достигли рекорда на фоне слухов о массовой мобилизации"
       }
     },
     {
@@ -29,6 +68,19 @@
       }
     },
     {
+      "url": "https://www.dialog.ua/russia/rossiya-planiruet-novoe-bolshoe-nastuplenie-zimoy-nyt.html",
+      "domain": "dialog.ua",
+      "seenAt": "2026-08-15T13:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/a04f5a53ab40caa7.webp",
+      "original": "Россия планирует новое большое наступление зимой – NYT",
+      "title": {
+        "uk": "Росія планує нове масштабне наступ взимку — NYT",
+        "en": "Russia plans a new major offensive in winter — NYT",
+        "ru": "Россия планирует новое крупное наступление зимой — NYT"
+      }
+    },
+    {
       "url": "https://www.rte.ie/news/analysis-and-comment/2026/0815/1587931-alaska-ukraine-analysis/",
       "domain": "rte.ie",
       "seenAt": "2026-08-15T10:30:00.000Z",
@@ -36,73 +88,9 @@
       "image": "/news/aebc6e947517d5ce.webp",
       "original": "One year on , did Alaska change anything for Ukraine ?",
       "title": {
-        "uk": "Рік потому: чи щось змінила Аляска для України?",
+        "uk": "Рік потому: чи змінив Анкоридж щось для України?",
         "en": "One year on, did Alaska change anything for Ukraine?",
-        "ru": "Год спустя: изменила ли Аляска что-то для Украины?"
-      }
-    },
-    {
-      "url": "https://www.newsweek.com/zelensky-ukraine-leverage-trump-russia-novorossiysk-12317123",
-      "domain": "newsweek.com",
-      "seenAt": "2026-08-13T10:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/5659c6ce73467f39.webp",
-      "original": "Two Years On From Kursk Offensive , Now Ukraine Has Real Leverage",
-      "title": {
-        "uk": "Два роки після Курської операції: тепер Україна має реальний важіль тиску",
-        "en": "Two years on from Kursk offensive, now Ukraine has real leverage",
-        "ru": "Два года после наступления на Курск: теперь у Украины есть реальный рычаг влияния"
-      }
-    },
-    {
-      "url": "https://www.samaa.tv/2087355210-russia-rules-out-immediate-ukraine-ceasefire",
-      "domain": "samaa.tv",
-      "seenAt": "2026-08-14T13:00:00.000Z",
-      "sourceCountry": "Pakistan",
-      "image": "/news/e8dc0451a65ca175.webp",
-      "original": "Russia rules out immediate Ukraine ceasefire",
-      "title": {
-        "uk": "Росія відкидає негайне припинення вогню з Україною",
-        "en": "Russia rules out immediate Ukraine ceasefire",
-        "ru": "Россия исключает немедленное прекращение огня с Украиной"
-      }
-    },
-    {
-      "url": "https://www.obozrevatel.com/ukr/politics-news/rosiya-ne-zmozhe-zahopiti-donbas-navit-u-2027-rotsi-media-otrimali-dostup-do-listuvannya-ukraini-i-ssha.htm",
-      "domain": "obozrevatel.com",
-      "seenAt": "2026-08-14T18:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Росія не зможе захопити Донбас у 2027 році – переговори України і адміністрації Трампа",
-      "title": {
-        "uk": "Росія не зможе захопити Донбас у 2027 році — переговори України і адміністрації Трампа",
-        "en": "Russia will not be able to capture Donbas in 2027 — Ukraine and Trump administration talks",
-        "ru": "Россия не сможет захватить Донбасс в 2027 году — переговоры Украины и администрации Трампа"
-      }
-    },
-    {
-      "url": "https://globalnews.ca/news/12017530/ukraine-russia-zelenskyy-peace-proposal-us/",
-      "domain": "globalnews.ca",
-      "seenAt": "2026-08-11T23:15:00.000Z",
-      "sourceCountry": "Canada",
-      "image": "/news/79bfef31398ea8a8.webp",
-      "original": "Ukraine has given peace proposals to U . S . in bid for new talks : Zelenskyy - National",
-      "title": {
-        "uk": "Україна передала мирні пропозиції США для відновлення переговорів — Зеленський",
-        "en": "Ukraine has given peace proposals to U.S. in bid for new talks — Zelenskyy",
-        "ru": "Украина передала США мирные предложения в расчёте на новые переговоры — Зеленский"
-      }
-    },
-    {
-      "url": "https://glavred.info/front/vsu-rezko-izmenili-situaciyu-na-fronte-deepstate-pokazal-masshtaby-nastupleniya-10787981.html",
-      "domain": "glavred.info",
-      "seenAt": "2026-08-12T21:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/6e2164ff98040e92.webp",
-      "original": "ВСУ резко изменили ситуацию на фронте : DeepState показал масштабы наступления",
-      "title": {
-        "uk": "ЗСУ різко змінили ситуацію на фронті: DeepState показав масштаби наступу",
-        "en": "Ukrainian forces dramatically changed the front-line situation: DeepState shows the scale of the offensive",
-        "ru": "ВСУ резко изменили ситуацию на фронте: DeepState показал масштабы наступления"
+        "ru": "Год спустя: изменил ли Анкоридж что-либо для Украины?"
       }
     },
     {
@@ -114,21 +102,34 @@
       "original": "50 тысяч солдат для войны РФ в Украине : что это даст КНДР ?",
       "title": {
         "uk": "50 тисяч солдатів для війни РФ в Україні: що це дасть КНДР?",
-        "en": "50,000 soldiers for Russia's war in Ukraine: what does it give North Korea?",
+        "en": "50,000 soldiers for Russia's war in Ukraine: what does North Korea gain?",
         "ru": "50 тысяч солдат для войны РФ в Украине: что это даст КНДР?"
       }
     },
     {
-      "url": "https://24tv.ua/geopolitics/atacms-spinu-vid-erdogana-zminyuye-ankara-svoyu-pozitsiyu-shhodo_n3121906",
-      "domain": "24tv.ua",
-      "seenAt": "2026-08-12T16:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/8b5d406c78d10667.webp",
-      "original": "Туреччина змінює позицію щодо Росії - що це означає для України",
+      "url": "https://www.newsweek.com/zelensky-ukraine-leverage-trump-russia-novorossiysk-12317123",
+      "domain": "newsweek.com",
+      "seenAt": "2026-08-13T10:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/5659c6ce73467f39.webp",
+      "original": "Two Years On From Kursk Offensive , Now Ukraine Has Real Leverage",
       "title": {
-        "uk": "Туреччина змінює позицію щодо Росії — що це означає для України",
-        "en": "Turkey changes its position on Russia — what does this mean for Ukraine?",
-        "ru": "Турция меняет позицию по России — что это означает для Украины?"
+        "uk": "Два роки після наступу на Курщині: тепер Україна має реальні важелі впливу",
+        "en": "Two years on from the Kursk offensive, Ukraine now has real leverage",
+        "ru": "Два года после наступления на Курщине: теперь у Украины есть реальные рычаги влияния"
+      }
+    },
+    {
+      "url": "https://globalnews.ca/news/12017530/ukraine-russia-zelenskyy-peace-proposal-us/",
+      "domain": "globalnews.ca",
+      "seenAt": "2026-08-11T23:15:00.000Z",
+      "sourceCountry": "Canada",
+      "image": "/news/79bfef31398ea8a8.webp",
+      "original": "Ukraine has given peace proposals to U . S . in bid for new talks : Zelenskyy - National",
+      "title": {
+        "uk": "Україна передала США мирні пропозиції задля нових переговорів — Зеленський",
+        "en": "Ukraine has given peace proposals to the US in a bid for new talks — Zelenskyy",
+        "ru": "Украина передала США мирные предложения в надежде на новые переговоры — Зеленский"
       }
     }
   ]
