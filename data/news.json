@@ -1,109 +1,105 @@
 {
-  "asOf": "2026-08-17",
+  "asOf": "2026-08-19",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.ukrinform.ua/rubric-polytics/4154630-vijna-v-ukraini-najimovirnise-zakincitsa-pripinennam-vognu-a-ne-mirom-niderlandskij-diplomat.html",
-      "domain": "ukrinform.ua",
-      "seenAt": "2026-08-17T02:30:00.000Z",
+      "url": "https://news.liga.net/ua/war/news/u-hur-ne-vykliuchaiut-novoi-nastupalnoi-operatsii-rosii-u-liutomu-iakshcho-bude-mobilizatsiia",
+      "domain": "news.liga.net",
+      "seenAt": "2026-08-18T10:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/3bec1dfcc69b3593.webp",
-      "original": "Війна в Україні , найімовірніше , закінчиться припиненням вогню , а не миром",
+      "original": "Новий наступ Росії може початись у лютому 2027 – дані ГУР | Новини України",
       "title": {
-        "uk": "Війна в Україні, найімовірніше, закінчиться припиненням вогню, а не миром",
-        "en": "The war in Ukraine will most likely end with a ceasefire, not a peace deal",
-        "ru": "Война на Украине скорее всего закончится перемирием, а не миром"
+        "uk": "Новий наступ Росії може початись у лютому 2027 – дані ГУР",
+        "en": "New Russian offensive may begin in February 2027 – GUR data",
+        "ru": "Новое наступление России может начаться в феврале 2027 – данные ГУР"
       }
     },
     {
-      "url": "https://www1.pluska.sk/spravy/eu-chysta-najtvrdsi-uder-voci-rusku-od-zaciatku-vojny",
-      "domain": "pluska.sk",
-      "seenAt": "2026-08-17T08:15:00.000Z",
-      "sourceCountry": "Slovak Republic",
-      "image": "/news/291f6f299e3d52d3.webp",
-      "original": "EÚ chystá najtvrdší úder voči Rusku od začiatku vojny",
-      "title": {
-        "uk": "ЄС готує найжорсткіший удар проти Росії з початку війни",
-        "en": "EU prepares its hardest blow against Russia since the start of the war",
-        "ru": "ЕС готовит самый жёсткий удар по России с начала войны"
-      }
-    },
-    {
-      "url": "https://www.vedomosti.ru/politics/news/2026/08/16/1221431-the-times-britanskie",
-      "domain": "vedomosti.ru",
-      "seenAt": "2026-08-16T11:00:00.000Z",
-      "sourceCountry": "Russia",
-      "image": "/news/52d12cddde4f1fd8.webp",
-      "original": "Sunday Times : британские БПЛА впервые применили для ударов по РФ",
-      "title": {
-        "uk": "Sunday Times: британські БПЛА вперше застосували для ударів по РФ",
-        "en": "Sunday Times: British drones used for strikes on Russia for the first time",
-        "ru": "Sunday Times: британские БПЛА впервые применили для ударов по РФ"
-      }
-    },
-    {
-      "url": "https://www.unian.ua/war/vtrati-rf-zletili-do-rekordu-na-tli-chutok-pro-masovu-mobilizaciyu-forbes-13471746.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-08-16T13:45:00.000Z",
+      "url": "https://zn.ua/ukr/war/the-economist-shcho-stanetsja-koli-u-zakhodu-zakinchatsja-raketi-perekhopljuvachi.html",
+      "domain": "zn.ua",
+      "seenAt": "2026-08-19T00:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/044e2c7b4731dc75.webp",
-      "original": "Втрати РФ злетіли до рекорду на тлі чуток про масову мобілізацію ,",
+      "original": "Захід зіткнувся з критичним дефіцитом ракет - перехоплювачів",
       "title": {
-        "uk": "Втрати РФ злетіли до рекорду на тлі чуток про масову мобілізацію",
-        "en": "Russia's losses hit a record amid rumours of mass mobilisation",
-        "ru": "Потери РФ достигли рекорда на фоне слухов о массовой мобилизации"
+        "uk": "Захід зіткнувся з критичним дефіцитом ракет-перехоплювачів",
+        "en": "The West faces a critical shortage of interceptor missiles",
+        "ru": "Запад столкнулся с критическим дефицитом ракет-перехватчиков"
       }
     },
     {
-      "url": "https://www.rbc.ua/rus/news/isw-poyasnili-chomu-kreml-vidmovlyaetsya-1786777398.html",
-      "domain": "rbc.ua",
-      "seenAt": "2026-08-15T11:15:00.000Z",
+      "url": "https://focus.ua/uk/voennye-novosti/764833-viyna-v-ukrajini-u-gur-rozkrili-chomu-miru-z-rosiyeyu-do-kincya-roku-ne-bude",
+      "domain": "focus.ua",
+      "seenAt": "2026-08-18T10:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/7339dbaca5582e54.webp",
-      "original": "Переговори України та Росії - в ISW пояснили , чому Кремль відмовляється продовжувати діалог",
+      "original": "Війна в Україні у ГУР розкрили , чому миру з Росією до кінця року не буде",
       "title": {
-        "uk": "Переговори України та Росії: в ISW пояснили, чому Кремль відмовляється продовжувати діалог",
-        "en": "Ukraine-Russia talks: ISW explains why the Kremlin refuses to continue dialogue",
-        "ru": "Переговоры Украины и России: в ISW объяснили, почему Кремль отказывается продолжать диалог"
+        "uk": "У ГУР розкрили, чому миру з Росією до кінця року не буде",
+        "en": "GUR reveals why there will be no peace with Russia by end of the year",
+        "ru": "В ГУР раскрыли, почему мира с Россией до конца года не будет"
       }
     },
     {
-      "url": "https://www.dialog.ua/russia/rossiya-planiruet-novoe-bolshoe-nastuplenie-zimoy-nyt.html",
-      "domain": "dialog.ua",
-      "seenAt": "2026-08-15T13:45:00.000Z",
+      "url": "https://www.yahoo.com/news/world/articles/ukraine-aims-drone-blitz-moscow-092116248.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-08-18T10:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/798faf6a4aee2271.webp",
+      "original": "Ukraine aims a drone blitz at Moscow while Russian missiles kill 10 in a Ukrainian village",
+      "title": {
+        "uk": "Україна завдає масованого удару дронами по Москві, тоді як російські ракети вбивають 10 осіб в українському селі",
+        "en": "Ukraine aims a drone blitz at Moscow while Russian missiles kill 10 in a Ukrainian village",
+        "ru": "Украина наносит массированный удар дронами по Москве, российские ракеты убивают 10 человек в украинском селе"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/82538",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-08-18T01:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/a04f5a53ab40caa7.webp",
-      "original": "Россия планирует новое большое наступление зимой – NYT",
+      "image": "/news/4790cede2bde59fe.webp",
+      "original": "North Korea , Russia Reaffirm Ties on Korean Liberation Day Anniversary",
       "title": {
-        "uk": "Росія планує нове масштабне наступ взимку — NYT",
-        "en": "Russia plans a new major offensive in winter — NYT",
-        "ru": "Россия планирует новое крупное наступление зимой — NYT"
+        "uk": "Північна Корея та Росія підтверджують союз у річницю визволення Кореї",
+        "en": "North Korea and Russia reaffirm ties on Korean Liberation Day anniversary",
+        "ru": "Северная Корея и Россия подтверждают союз в годовщину Дня освобождения Кореи"
       }
     },
     {
-      "url": "https://www.rte.ie/news/analysis-and-comment/2026/0815/1587931-alaska-ukraine-analysis/",
-      "domain": "rte.ie",
-      "seenAt": "2026-08-15T10:30:00.000Z",
-      "sourceCountry": "Ireland",
-      "image": "/news/aebc6e947517d5ce.webp",
-      "original": "One year on , did Alaska change anything for Ukraine ?",
+      "url": "http://www.jpost.com/international/internationalrussia-ukraine-war/article-905811",
+      "domain": "jpost.com",
+      "seenAt": "2026-08-17T19:45:00.000Z",
+      "sourceCountry": "Israel",
+      "image": "/news/494d09ef20674343.webp",
+      "original": "Russia jails Yabloko politician for condemning Ukraine war",
       "title": {
-        "uk": "Рік потому: чи змінив Анкоридж щось для України?",
-        "en": "One year on, did Alaska change anything for Ukraine?",
-        "ru": "Год спустя: изменил ли Анкоридж что-либо для Украины?"
+        "uk": "Росія ув'язнює політика «Яблука» за засудження війни в Україні",
+        "en": "Russia jails Yabloko politician for condemning Ukraine war",
+        "ru": "Россия сажает политика «Яблока» за осуждение войны в Украине"
       }
     },
     {
-      "url": "https://www.dw.com/ru/50-tysac-soldat-dla-vojny-rf-v-ukraine-cto-eto-dast-kndr/a-78357680",
-      "domain": "dw.com",
-      "seenAt": "2026-08-14T11:30:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/17b40d0a35f90e93.webp",
-      "original": "50 тысяч солдат для войны РФ в Украине : что это даст КНДР ?",
+      "url": "https://glavcom.ua/world/observe/rosija-vtratila-1-4-mln-vijskovikh-i-hotuje-novu-mobilizatsiju-forbes-1136964.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-08-16T16:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Росія втратила 1 , 4 млн військових і готує нову мобілізацію – Forbes",
       "title": {
-        "uk": "50 тисяч солдатів для війни РФ в Україні: що це дасть КНДР?",
-        "en": "50,000 soldiers for Russia's war in Ukraine: what does North Korea gain?",
-        "ru": "50 тысяч солдат для войны РФ в Украине: что это даст КНДР?"
+        "uk": "Росія втратила 1,4 млн військових і готує нову мобілізацію – Forbes",
+        "en": "Russia has lost 1.4 million troops and is preparing a new mobilization – Forbes",
+        "ru": "Россия потеряла 1,4 млн военных и готовит новую мобилизацию – Forbes"
+      }
+    },
+    {
+      "url": "https://24tv.ua/pripinennya-viyni-ukrayini-isw-zayavili-shho-rosiya-ne-zatsikavlena_n3123855",
+      "domain": "24tv.ua",
+      "seenAt": "2026-08-15T07:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/fa94666054fcfb5d.webp",
+      "original": "Припинення війни в України - ISW заявили , що Росія не зацікавлена у завершенні конфлікту",
+      "title": {
+        "uk": "ISW: Росія не зацікавлена у завершенні конфлікту",
+        "en": "ISW: Russia is not interested in ending the conflict",
+        "ru": "ISW: Россия не заинтересована в завершении конфликта"
       }
     },
     {
@@ -114,22 +110,22 @@
       "image": "/news/5659c6ce73467f39.webp",
       "original": "Two Years On From Kursk Offensive , Now Ukraine Has Real Leverage",
       "title": {
-        "uk": "Два роки після наступу на Курщині: тепер Україна має реальні важелі впливу",
+        "uk": "Два роки після курського наступу: тепер Україна має реальні важелі впливу",
         "en": "Two years on from the Kursk offensive, Ukraine now has real leverage",
-        "ru": "Два года после наступления на Курщине: теперь у Украины есть реальные рычаги влияния"
+        "ru": "Два года после курского наступления: теперь у Украины есть реальные рычаги влияния"
       }
     },
     {
-      "url": "https://globalnews.ca/news/12017530/ukraine-russia-zelenskyy-peace-proposal-us/",
-      "domain": "globalnews.ca",
-      "seenAt": "2026-08-11T23:15:00.000Z",
-      "sourceCountry": "Canada",
-      "image": "/news/79bfef31398ea8a8.webp",
-      "original": "Ukraine has given peace proposals to U . S . in bid for new talks : Zelenskyy - National",
+      "url": "https://www.dailykos.com/stories/2026/8/13/800083633/community/adaptive-indomitable-ukraines-reversal-of-russian-occupation/",
+      "domain": "dailykos.com",
+      "seenAt": "2026-08-13T09:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/1875d227abdb9cd0.webp",
+      "original": "ADAPTIVE INDOMITABLE UKRAINE Reversal of Ru Occupation in the Southeast Continues . 745 Sq Km & 26 Villages Liberated Since January",
       "title": {
-        "uk": "Україна передала США мирні пропозиції задля нових переговорів — Зеленський",
-        "en": "Ukraine has given peace proposals to the US in a bid for new talks — Zelenskyy",
-        "ru": "Украина передала США мирные предложения в надежде на новые переговоры — Зеленский"
+        "uk": "Звільнення окупованих територій на південному сході України триває: 745 км² і 26 сіл з початку року",
+        "en": "Reversal of Russian occupation in Ukraine's southeast continues: 745 sq km and 26 villages liberated since January",
+        "ru": "Освобождение оккупированных территорий на юго-востоке Украины продолжается: 745 кв. км и 26 сёл с начала года"
       }
     }
   ]
