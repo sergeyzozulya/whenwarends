@@ -1,7 +1,20 @@
 {
-  "asOf": "2026-08-19",
+  "asOf": "2026-08-20",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://www.yahoo.com/news/world/articles/ukrainian-capital-kyiv-under-attack-220750884.html",
+      "domain": "yahoo.com",
+      "seenAt": "2026-08-20T03:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/273e3c973ad87a7f.webp",
+      "original": "Russian ballistic missiles kill at least five in Ukraine Kyiv , spark fires",
+      "title": {
+        "uk": "Російські балістичні ракети вбили щонайменше п'ятьох в Україні та спричинили пожежі",
+        "en": "Russian ballistic missiles kill at least five in Ukraine, sparking fires",
+        "ru": "Российские баллистические ракеты убили не менее пяти человек в Украине и вызвали пожары"
+      }
+    },
     {
       "url": "https://news.liga.net/ua/war/news/u-hur-ne-vykliuchaiut-novoi-nastupalnoi-operatsii-rosii-u-liutomu-iakshcho-bude-mobilizatsiia",
       "domain": "news.liga.net",
@@ -9,9 +22,9 @@
       "sourceCountry": "Ukraine",
       "original": "Новий наступ Росії може початись у лютому 2027 – дані ГУР | Новини України",
       "title": {
-        "uk": "Новий наступ Росії може початись у лютому 2027 – дані ГУР",
-        "en": "New Russian offensive may begin in February 2027 – GUR data",
-        "ru": "Новое наступление России может начаться в феврале 2027 – данные ГУР"
+        "uk": "Новий наступ Росії може початися у лютому 2027 року — дані ГУР",
+        "en": "Russia's new offensive may begin in February 2027 — GUR data",
+        "ru": "Новое наступление России может начаться в феврале 2027 года — данные ГУР"
       }
     },
     {
@@ -27,54 +40,41 @@
       }
     },
     {
-      "url": "https://focus.ua/uk/voennye-novosti/764833-viyna-v-ukrajini-u-gur-rozkrili-chomu-miru-z-rosiyeyu-do-kincya-roku-ne-bude",
-      "domain": "focus.ua",
-      "seenAt": "2026-08-18T10:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Війна в Україні у ГУР розкрили , чому миру з Росією до кінця року не буде",
-      "title": {
-        "uk": "У ГУР розкрили, чому миру з Росією до кінця року не буде",
-        "en": "GUR reveals why there will be no peace with Russia by end of the year",
-        "ru": "В ГУР раскрыли, почему мира с Россией до конца года не будет"
-      }
-    },
-    {
-      "url": "https://www.yahoo.com/news/world/articles/ukraine-aims-drone-blitz-moscow-092116248.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-08-18T10:15:00.000Z",
+      "url": "https://warontherocks.com/managed-instability-why-the-wars-against-iran-and-ukraine-can-go-on-and-on-and-on/",
+      "domain": "warontherocks.com",
+      "seenAt": "2026-08-19T09:30:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/798faf6a4aee2271.webp",
-      "original": "Ukraine aims a drone blitz at Moscow while Russian missiles kill 10 in a Ukrainian village",
+      "image": "/news/a3364196db99e018.webp",
+      "original": "Managed Instability : Why the Wars Against Iran and Ukraine Can Go On and On and On …",
       "title": {
-        "uk": "Україна завдає масованого удару дронами по Москві, тоді як російські ракети вбивають 10 осіб в українському селі",
-        "en": "Ukraine aims a drone blitz at Moscow while Russian missiles kill 10 in a Ukrainian village",
-        "ru": "Украина наносит массированный удар дронами по Москве, российские ракеты убивают 10 человек в украинском селе"
+        "uk": "Керована нестабільність: чому війни проти Ірану та України можуть тривати нескінченно",
+        "en": "Managed Instability: Why the Wars Against Iran and Ukraine Can Go On and On and On",
+        "ru": "Управляемая нестабильность: почему войны против Ирана и Украины могут продолжаться бесконечно"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/82538",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-08-18T01:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/4790cede2bde59fe.webp",
-      "original": "North Korea , Russia Reaffirm Ties on Korean Liberation Day Anniversary",
+      "url": "https://www.theguardian.com/world/2026/aug/19/ukraine-war-briefing-would-be-parcel-bomber-convicted-in-german-court",
+      "domain": "theguardian.com",
+      "seenAt": "2026-08-19T03:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Ukraine war briefing : Would - be parcel bomber convicted in German court",
       "title": {
-        "uk": "Північна Корея та Росія підтверджують союз у річницю визволення Кореї",
-        "en": "North Korea and Russia reaffirm ties on Korean Liberation Day anniversary",
-        "ru": "Северная Корея и Россия подтверждают союз в годовщину Дня освобождения Кореи"
+        "uk": "Зведення про війну в Україні: потенційного терориста-поштовика засуджено в німецькому суді",
+        "en": "Ukraine war briefing: Would-be parcel bomber convicted in German court",
+        "ru": "Сводка о войне в Украине: потенциальный исполнитель взрыва посылки осуждён в немецком суде"
       }
     },
     {
-      "url": "http://www.jpost.com/international/internationalrussia-ukraine-war/article-905811",
-      "domain": "jpost.com",
-      "seenAt": "2026-08-17T19:45:00.000Z",
-      "sourceCountry": "Israel",
-      "image": "/news/494d09ef20674343.webp",
-      "original": "Russia jails Yabloko politician for condemning Ukraine war",
+      "url": "https://www.dw.com/en/russia-prison-for-opposition-leader-over-war-criticism/a-78403203",
+      "domain": "dw.com",
+      "seenAt": "2026-08-17T17:15:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/97cd40f7cbb9440a.webp",
+      "original": "Russia : Prison for opposition leader over war criticism",
       "title": {
-        "uk": "Росія ув'язнює політика «Яблука» за засудження війни в Україні",
-        "en": "Russia jails Yabloko politician for condemning Ukraine war",
-        "ru": "Россия сажает политика «Яблока» за осуждение войны в Украине"
+        "uk": "Росія: опозиційного лідера ув'язнили за критику війни",
+        "en": "Russia: Opposition leader jailed for criticising the war",
+        "ru": "Россия: оппозиционный лидер заключён в тюрьму за критику войны"
       }
     },
     {
@@ -84,22 +84,9 @@
       "sourceCountry": "Ukraine",
       "original": "Росія втратила 1 , 4 млн військових і готує нову мобілізацію – Forbes",
       "title": {
-        "uk": "Росія втратила 1,4 млн військових і готує нову мобілізацію – Forbes",
-        "en": "Russia has lost 1.4 million troops and is preparing a new mobilization – Forbes",
-        "ru": "Россия потеряла 1,4 млн военных и готовит новую мобилизацию – Forbes"
-      }
-    },
-    {
-      "url": "https://24tv.ua/pripinennya-viyni-ukrayini-isw-zayavili-shho-rosiya-ne-zatsikavlena_n3123855",
-      "domain": "24tv.ua",
-      "seenAt": "2026-08-15T07:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/fa94666054fcfb5d.webp",
-      "original": "Припинення війни в України - ISW заявили , що Росія не зацікавлена у завершенні конфлікту",
-      "title": {
-        "uk": "ISW: Росія не зацікавлена у завершенні конфлікту",
-        "en": "ISW: Russia is not interested in ending the conflict",
-        "ru": "ISW: Россия не заинтересована в завершении конфликта"
+        "uk": "Росія втратила 1,4 млн військових і готує нову мобілізацію — Forbes",
+        "en": "Russia has lost 1.4 million troops and is preparing a new mobilisation — Forbes",
+        "ru": "Россия потеряла 1,4 млн военнослужащих и готовит новую мобилизацию — Forbes"
       }
     },
     {
@@ -110,22 +97,35 @@
       "image": "/news/5659c6ce73467f39.webp",
       "original": "Two Years On From Kursk Offensive , Now Ukraine Has Real Leverage",
       "title": {
-        "uk": "Два роки після курського наступу: тепер Україна має реальні важелі впливу",
-        "en": "Two years on from the Kursk offensive, Ukraine now has real leverage",
-        "ru": "Два года после курского наступления: теперь у Украины есть реальные рычаги влияния"
+        "uk": "Два роки після Курської наступальної операції: тепер Україна має реальні важелі впливу",
+        "en": "Two Years On From the Kursk Offensive, Ukraine Now Has Real Leverage",
+        "ru": "Два года после Курского наступления: теперь у Украины есть реальные рычаги влияния"
       }
     },
     {
-      "url": "https://www.dailykos.com/stories/2026/8/13/800083633/community/adaptive-indomitable-ukraines-reversal-of-russian-occupation/",
-      "domain": "dailykos.com",
-      "seenAt": "2026-08-13T09:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/1875d227abdb9cd0.webp",
-      "original": "ADAPTIVE INDOMITABLE UKRAINE Reversal of Ru Occupation in the Southeast Continues . 745 Sq Km & 26 Villages Liberated Since January",
+      "url": "https://www1.pluska.sk/spravy/eu-chysta-najtvrdsi-uder-voci-rusku-od-zaciatku-vojny",
+      "domain": "pluska.sk",
+      "seenAt": "2026-08-17T08:15:00.000Z",
+      "sourceCountry": "Slovak Republic",
+      "image": "/news/291f6f299e3d52d3.webp",
+      "original": "EÚ chystá najtvrdší úder voči Rusku od začiatku vojny",
       "title": {
-        "uk": "Звільнення окупованих територій на південному сході України триває: 745 км² і 26 сіл з початку року",
-        "en": "Reversal of Russian occupation in Ukraine's southeast continues: 745 sq km and 26 villages liberated since January",
-        "ru": "Освобождение оккупированных территорий на юго-востоке Украины продолжается: 745 кв. км и 26 сёл с начала года"
+        "uk": "ЄС готує найжорсткіший удар по Росії з початку війни",
+        "en": "EU prepares its toughest blow against Russia since the start of the war",
+        "ru": "ЕС готовит самый жёсткий удар по России с начала войны"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/82538",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-08-18T01:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/4790cede2bde59fe.webp",
+      "original": "North Korea , Russia Reaffirm Ties on Korean Liberation Day Anniversary",
+      "title": {
+        "uk": "Північна Корея і Росія підтверджують союз у річницю визволення Кореї",
+        "en": "North Korea and Russia Reaffirm Ties on Korean Liberation Day Anniversary",
+        "ru": "Северная Корея и Россия подтверждают союз в годовщину освобождения Кореи"
       }
     }
   ]
