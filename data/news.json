@@ -1,18 +1,83 @@
 {
-  "asOf": "2026-08-20",
+  "asOf": "2026-08-24",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.yahoo.com/news/world/articles/ukrainian-capital-kyiv-under-attack-220750884.html",
-      "domain": "yahoo.com",
-      "seenAt": "2026-08-20T03:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/273e3c973ad87a7f.webp",
-      "original": "Russian ballistic missiles kill at least five in Ukraine Kyiv , spark fires",
+      "url": "https://www.abc.net.au/news/2026-08-20/russian-strikes-kill-13-in-kyiv-as-ukraine-war-intensifies/107060814",
+      "domain": "abc.net.au",
+      "seenAt": "2026-08-20T12:00:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/6d6e12d24f5bdfce.webp",
+      "original": "Russian missile strikes kill 13 in Kyiv and surrounding region , power supply cut to 50 , 000 homes",
       "title": {
-        "uk": "Російські балістичні ракети вбили щонайменше п'ятьох в Україні та спричинили пожежі",
-        "en": "Russian ballistic missiles kill at least five in Ukraine, sparking fires",
-        "ru": "Российские баллистические ракеты убили не менее пяти человек в Украине и вызвали пожары"
+        "uk": "Російські ракетні удари вбили 13 людей у Києві та області, електропостачання 50 000 будинків відключено",
+        "en": "Russian missile strikes kill 13 in Kyiv and surrounding region, power supply cut to 50,000 homes",
+        "ru": "Российские ракетные удары убили 13 человек в Киеве и области, электроснабжение 50 000 домов отключено"
+      }
+    },
+    {
+      "url": "https://www.stripes.com/theaters/europe/2026-08-23/zelenskyy-putin-reject-shipping-truce-22640310.html",
+      "domain": "stripes.com",
+      "seenAt": "2026-08-23T22:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/33a2f8b64af109c6.webp",
+      "original": "Zelenskyy says Putin rejected Black Sea shipping truce offer",
+      "title": {
+        "uk": "Зеленський заявив, що Путін відкинув пропозицію про перемир'я у Чорному морі",
+        "en": "Zelenskyy says Putin rejected Black Sea shipping truce offer",
+        "ru": "Зеленский заявил, что Путин отклонил предложение о перемирии в Чёрном море"
+      }
+    },
+    {
+      "url": "https://www.standard.net.au/story/9335366/putin-wants-to-draft-300000-new-troops-zelenskiy-says/",
+      "domain": "standard.net.au",
+      "seenAt": "2026-08-23T14:45:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/8d3f9460b469976d.webp",
+      "original": "Putin wants to draft 300 , 000 new troops , Zelenskiy says",
+      "title": {
+        "uk": "Зеленський каже, що Путін хоче призвати 300 000 нових солдатів",
+        "en": "Putin wants to draft 300,000 new troops, Zelenskyy says",
+        "ru": "Зеленский заявил, что Путин хочет призвать 300 000 новых военнослужащих"
+      }
+    },
+    {
+      "url": "https://www.rte.ie/news/ukraine/2026/0823/1588900-ukraine-russia/",
+      "domain": "rte.ie",
+      "seenAt": "2026-08-23T11:30:00.000Z",
+      "sourceCountry": "Ireland",
+      "image": "/news/fe4b39d4c6980fe6.webp",
+      "original": "Zelensky says wartime elections would  split  Ukraine",
+      "title": {
+        "uk": "Зеленський каже, що вибори під час війни «розколять» Україну",
+        "en": "Zelensky says wartime elections would 'split' Ukraine",
+        "ru": "Зеленский заявил, что выборы в военное время «расколют» Украину"
+      }
+    },
+    {
+      "url": "https://www.ideal.es/internacional/europa/kiev-golpea-cosmodromo-militar-1700-kilometros-frontera-20260823195132-ntrc.html",
+      "domain": "ideal.es",
+      "seenAt": "2026-08-23T23:00:00.000Z",
+      "sourceCountry": "Spain",
+      "image": "/news/e3ddb3059a54c78d.webp",
+      "original": "Kiev golpea un cosmódromo militar a 1 . 700 kilómetros de la frontera",
+      "title": {
+        "uk": "Київ завдав удару по військовому космодрому за 1 700 кілометрів від кордону",
+        "en": "Kyiv strikes a military cosmodrome 1,700 kilometres from the border",
+        "ru": "Киев нанёс удар по военному космодрому в 1 700 километрах от границы"
+      }
+    },
+    {
+      "url": "https://www.facenews.ua/news/2026/538937/",
+      "domain": "facenews.ua",
+      "seenAt": "2026-08-21T20:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/0b4ebd0fa8b77cf2.webp",
+      "original": "До Росії прибули ще 8500 військових КНДР , серед них 400 операторів дронів для атак по Україні",
+      "title": {
+        "uk": "До Росії прибули ще 8 500 військових КНДР, серед них 400 операторів дронів для атак по Україні",
+        "en": "Another 8,500 North Korean troops arrived in Russia, including 400 drone operators for strikes on Ukraine",
+        "ru": "В Россию прибыли ещё 8 500 военных КНДР, среди них 400 операторов дронов для ударов по Украине"
       }
     },
     {
@@ -22,46 +87,22 @@
       "sourceCountry": "Ukraine",
       "original": "Новий наступ Росії може початись у лютому 2027 – дані ГУР | Новини України",
       "title": {
-        "uk": "Новий наступ Росії може початися у лютому 2027 року — дані ГУР",
-        "en": "Russia's new offensive may begin in February 2027 — GUR data",
+        "uk": "Новий наступ Росії може початися у лютому 2027 — дані ГУР",
+        "en": "New Russian offensive may begin in February 2027 — Ukrainian military intelligence data",
         "ru": "Новое наступление России может начаться в феврале 2027 года — данные ГУР"
       }
     },
     {
-      "url": "https://zn.ua/ukr/war/the-economist-shcho-stanetsja-koli-u-zakhodu-zakinchatsja-raketi-perekhopljuvachi.html",
-      "domain": "zn.ua",
-      "seenAt": "2026-08-19T00:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Захід зіткнувся з критичним дефіцитом ракет - перехоплювачів",
+      "url": "https://www.ellitoral.com/internacionales/ucrania-rusia-emmanuel-macron-zelenski-misiles-interceptores-defensa-aerea-guerra-ucrania_0_TVBuFgJUL5.html",
+      "domain": "ellitoral.com",
+      "seenAt": "2026-08-22T18:00:00.000Z",
+      "sourceCountry": "Argentina",
+      "image": "/news/3c6d28c4be2d42c7.webp",
+      "original": "Macron anunció el envío de misiles interceptores a Ucrania tras la escalada de ataques rusos",
       "title": {
-        "uk": "Захід зіткнувся з критичним дефіцитом ракет-перехоплювачів",
-        "en": "The West faces a critical shortage of interceptor missiles",
-        "ru": "Запад столкнулся с критическим дефицитом ракет-перехватчиков"
-      }
-    },
-    {
-      "url": "https://warontherocks.com/managed-instability-why-the-wars-against-iran-and-ukraine-can-go-on-and-on-and-on/",
-      "domain": "warontherocks.com",
-      "seenAt": "2026-08-19T09:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/a3364196db99e018.webp",
-      "original": "Managed Instability : Why the Wars Against Iran and Ukraine Can Go On and On and On …",
-      "title": {
-        "uk": "Керована нестабільність: чому війни проти Ірану та України можуть тривати нескінченно",
-        "en": "Managed Instability: Why the Wars Against Iran and Ukraine Can Go On and On and On",
-        "ru": "Управляемая нестабильность: почему войны против Ирана и Украины могут продолжаться бесконечно"
-      }
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/aug/19/ukraine-war-briefing-would-be-parcel-bomber-convicted-in-german-court",
-      "domain": "theguardian.com",
-      "seenAt": "2026-08-19T03:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "original": "Ukraine war briefing : Would - be parcel bomber convicted in German court",
-      "title": {
-        "uk": "Зведення про війну в Україні: потенційного терориста-поштовика засуджено в німецькому суді",
-        "en": "Ukraine war briefing: Would-be parcel bomber convicted in German court",
-        "ru": "Сводка о войне в Украине: потенциальный исполнитель взрыва посылки осуждён в немецком суде"
+        "uk": "Макрон оголосив про відправку ракет-перехоплювачів в Україну після ескалації російських ударів",
+        "en": "Macron announced the sending of interceptor missiles to Ukraine following the escalation of Russian attacks",
+        "ru": "Макрон объявил об отправке ракет-перехватчиков на Украину после эскалации российских ударов"
       }
     },
     {
@@ -72,60 +113,22 @@
       "image": "/news/97cd40f7cbb9440a.webp",
       "original": "Russia : Prison for opposition leader over war criticism",
       "title": {
-        "uk": "Росія: опозиційного лідера ув'язнили за критику війни",
-        "en": "Russia: Opposition leader jailed for criticising the war",
-        "ru": "Россия: оппозиционный лидер заключён в тюрьму за критику войны"
+        "uk": "Росія: тюремне ув'язнення для лідера опозиції за критику війни",
+        "en": "Russia: Prison for opposition leader over war criticism",
+        "ru": "Россия: тюрьма для лидера оппозиции за критику войны"
       }
     },
     {
-      "url": "https://glavcom.ua/world/observe/rosija-vtratila-1-4-mln-vijskovikh-i-hotuje-novu-mobilizatsiju-forbes-1136964.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-08-16T16:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Росія втратила 1 , 4 млн військових і готує нову мобілізацію – Forbes",
+      "url": "https://euobserver.com/233005/ukrainian-spy-chief-predicts-putins-plans-missile-terrorism-and-donbas-meat-grinding-ukraine-battlefield-update-day-1638/",
+      "domain": "euobserver.com",
+      "seenAt": "2026-08-20T16:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/908bcd238faafd1f.webp",
+      "original": "Ukrainian spy chief predicts Putin plans : missile terrorism and Donbas meat - grinding ( Ukraine Battlefield update , Day 1 , 638 ) – EUobserver",
       "title": {
-        "uk": "Росія втратила 1,4 млн військових і готує нову мобілізацію — Forbes",
-        "en": "Russia has lost 1.4 million troops and is preparing a new mobilisation — Forbes",
-        "ru": "Россия потеряла 1,4 млн военнослужащих и готовит новую мобилизацию — Forbes"
-      }
-    },
-    {
-      "url": "https://www.newsweek.com/zelensky-ukraine-leverage-trump-russia-novorossiysk-12317123",
-      "domain": "newsweek.com",
-      "seenAt": "2026-08-13T10:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/5659c6ce73467f39.webp",
-      "original": "Two Years On From Kursk Offensive , Now Ukraine Has Real Leverage",
-      "title": {
-        "uk": "Два роки після Курської наступальної операції: тепер Україна має реальні важелі впливу",
-        "en": "Two Years On From the Kursk Offensive, Ukraine Now Has Real Leverage",
-        "ru": "Два года после Курского наступления: теперь у Украины есть реальные рычаги влияния"
-      }
-    },
-    {
-      "url": "https://www1.pluska.sk/spravy/eu-chysta-najtvrdsi-uder-voci-rusku-od-zaciatku-vojny",
-      "domain": "pluska.sk",
-      "seenAt": "2026-08-17T08:15:00.000Z",
-      "sourceCountry": "Slovak Republic",
-      "image": "/news/291f6f299e3d52d3.webp",
-      "original": "EÚ chystá najtvrdší úder voči Rusku od začiatku vojny",
-      "title": {
-        "uk": "ЄС готує найжорсткіший удар по Росії з початку війни",
-        "en": "EU prepares its toughest blow against Russia since the start of the war",
-        "ru": "ЕС готовит самый жёсткий удар по России с начала войны"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/82538",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-08-18T01:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/4790cede2bde59fe.webp",
-      "original": "North Korea , Russia Reaffirm Ties on Korean Liberation Day Anniversary",
-      "title": {
-        "uk": "Північна Корея і Росія підтверджують союз у річницю визволення Кореї",
-        "en": "North Korea and Russia Reaffirm Ties on Korean Liberation Day Anniversary",
-        "ru": "Северная Корея и Россия подтверждают союз в годовщину освобождения Кореи"
+        "uk": "Голова розвідки України спрогнозував плани Путіна: ракетний терор і «м'ясорубка» на Донбасі",
+        "en": "Ukrainian spy chief predicts Putin's plans: missile terrorism and Donbas meat-grinding",
+        "ru": "Глава разведки Украины спрогнозировал планы Путина: ракетный террор и «мясорубка» на Донбасе"
       }
     }
   ]
