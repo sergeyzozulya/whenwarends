@@ -1,18 +1,70 @@
 {
-  "asOf": "2026-08-24",
+  "asOf": "2026-08-26",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.abc.net.au/news/2026-08-20/russian-strikes-kill-13-in-kyiv-as-ukraine-war-intensifies/107060814",
-      "domain": "abc.net.au",
-      "seenAt": "2026-08-20T12:00:00.000Z",
-      "sourceCountry": "Australia",
-      "image": "/news/6d6e12d24f5bdfce.webp",
-      "original": "Russian missile strikes kill 13 in Kyiv and surrounding region , power supply cut to 50 , 000 homes",
+      "url": "https://www.facenews.ua/news/2026/539292/",
+      "domain": "facenews.ua",
+      "seenAt": "2026-08-25T19:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/29e77e3fec2ad758.webp",
+      "original": "Директор ЦРУ відвідав Москву : обговорювалися припинення вогню , мобілізація та безпека країн Балтії",
       "title": {
-        "uk": "Російські ракетні удари вбили 13 людей у Києві та області, електропостачання 50 000 будинків відключено",
-        "en": "Russian missile strikes kill 13 in Kyiv and surrounding region, power supply cut to 50,000 homes",
-        "ru": "Российские ракетные удары убили 13 человек в Киеве и области, электроснабжение 50 000 домов отключено"
+        "uk": "Директор ЦРУ відвідав Москву: обговорювалися припинення вогню, мобілізація та безпека країн Балтії",
+        "en": "CIA Director visited Moscow: ceasefire, mobilization and Baltic states security discussed",
+        "ru": "Директор ЦРУ посетил Москву: обсуждались прекращение огня, мобилизация и безопасность стран Балтии"
+      }
+    },
+    {
+      "url": "https://www.radiosvoboda.org/a/news-rada-bezpeky-oon-rosia-prypynennia-vohniu/33839034.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-08-25T11:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/bb642e33631e1325.webp",
+      "original": "Пів сотні країн закликали Росію негайно погодитися на припинення вогню",
+      "title": {
+        "uk": "Пів сотні країн закликали Росію негайно погодитися на припинення вогню",
+        "en": "Fifty countries called on Russia to immediately agree to a ceasefire",
+        "ru": "Полсотни стран призвали Россию немедленно согласиться на прекращение огня"
+      }
+    },
+    {
+      "url": "https://uainfo.org/blognews/1787633652-ukrayina-ssha-ta-evropa-rozrobili-noviy-plan-pripinennya.html",
+      "domain": "uainfo.org",
+      "seenAt": "2026-08-25T07:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/476c5c4d81c38c3b.webp",
+      "original": "Україна , США та Європа розробили новий план припинення вогню з буферною зоною ,",
+      "title": {
+        "uk": "Україна, США та Європа розробили новий план припинення вогню з буферною зоною",
+        "en": "Ukraine, the US and Europe have developed a new ceasefire plan with a buffer zone",
+        "ru": "Украина, США и Европа разработали новый план прекращения огня с буферной зоной"
+      }
+    },
+    {
+      "url": "https://www.dsnews.ua/ukr/politics/donbas-nalezhit-rosiji-u-kremli-vistupili-proti-ideji-bufernoji-zoni-dlya-pripinennya-viyni-25082026-466156",
+      "domain": "dsnews.ua",
+      "seenAt": "2026-08-25T14:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/a119c01b18dd785a.webp",
+      "original": "Донбас належить Росії : у Кремлі виступили проти ідеї  буферної зони  для припинення війни DSnews . ua",
+      "title": {
+        "uk": "Донбас належить Росії: у Кремлі виступили проти ідеї буферної зони для припинення війни",
+        "en": "Donbas belongs to Russia: Kremlin opposes buffer zone idea for ending the war",
+        "ru": "Донбасс принадлежит России: в Кремле выступили против идеи буферной зоны для прекращения войны"
+      }
+    },
+    {
+      "url": "https://www.eurointegration.com.ua/news/2026/08/24/7244109/",
+      "domain": "eurointegration.com.ua",
+      "seenAt": "2026-08-24T19:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/bb01ebc7bc899f16.webp",
+      "original": "Лідери  коаліції охочих  оприлюднили спільну заяву після засідання у Києві",
+      "title": {
+        "uk": "Лідери «коаліції охочих» оприлюднили спільну заяву після засідання у Києві",
+        "en": "Leaders of the coalition of the willing published a joint statement after the Kyiv meeting",
+        "ru": "Лидеры «коалиции желающих» опубликовали совместное заявление после встречи в Киеве"
       }
     },
     {
@@ -23,9 +75,9 @@
       "image": "/news/33a2f8b64af109c6.webp",
       "original": "Zelenskyy says Putin rejected Black Sea shipping truce offer",
       "title": {
-        "uk": "Зеленський заявив, що Путін відкинув пропозицію про перемир'я у Чорному морі",
+        "uk": "Зеленський заявив, що Путін відхилив пропозицію про перемир'я у судноплавстві в Чорному морі",
         "en": "Zelenskyy says Putin rejected Black Sea shipping truce offer",
-        "ru": "Зеленский заявил, что Путин отклонил предложение о перемирии в Чёрном море"
+        "ru": "Зеленский заявил, что Путин отверг предложение о перемирии в судоходстве в Чёрном море"
       }
     },
     {
@@ -38,97 +90,46 @@
       "title": {
         "uk": "Зеленський каже, що Путін хоче призвати 300 000 нових солдатів",
         "en": "Putin wants to draft 300,000 new troops, Zelenskyy says",
-        "ru": "Зеленский заявил, что Путин хочет призвать 300 000 новых военнослужащих"
+        "ru": "Путин хочет призвать 300 000 новых военных, говорит Зеленский"
       }
     },
     {
-      "url": "https://www.rte.ie/news/ukraine/2026/0823/1588900-ukraine-russia/",
-      "domain": "rte.ie",
-      "seenAt": "2026-08-23T11:30:00.000Z",
-      "sourceCountry": "Ireland",
-      "image": "/news/fe4b39d4c6980fe6.webp",
-      "original": "Zelensky says wartime elections would  split  Ukraine",
+      "url": "https://www.kyivpost.com/post/82935",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-08-23T13:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/fa762a78fb410bc0.webp",
+      "original": "Zelensky Warns Against Wartime Elections , Calls for Unity",
       "title": {
-        "uk": "Зеленський каже, що вибори під час війни «розколять» Україну",
-        "en": "Zelensky says wartime elections would 'split' Ukraine",
-        "ru": "Зеленский заявил, что выборы в военное время «расколют» Украину"
+        "uk": "Зеленський застерігає від виборів під час війни, закликає до єдності",
+        "en": "Zelensky warns against wartime elections, calls for unity",
+        "ru": "Зеленский предупреждает против выборов в военное время, призывает к единству"
       }
     },
     {
-      "url": "https://www.ideal.es/internacional/europa/kiev-golpea-cosmodromo-militar-1700-kilometros-frontera-20260823195132-ntrc.html",
-      "domain": "ideal.es",
-      "seenAt": "2026-08-23T23:00:00.000Z",
+      "url": "https://www.canarias7.es/internacional/europa/reino-unido-entrega-ucrania-planos-fabricar-misiles-20260824115532-ntrc.html",
+      "domain": "canarias7.es",
+      "seenAt": "2026-08-25T09:30:00.000Z",
       "sourceCountry": "Spain",
-      "image": "/news/e3ddb3059a54c78d.webp",
-      "original": "Kiev golpea un cosmódromo militar a 1 . 700 kilómetros de la frontera",
+      "image": "/news/64339af6544e4531.webp",
+      "original": "El Reino Unido entrega a Ucrania planos para fabricar misiles de largo alcance",
       "title": {
-        "uk": "Київ завдав удару по військовому космодрому за 1 700 кілометрів від кордону",
-        "en": "Kyiv strikes a military cosmodrome 1,700 kilometres from the border",
-        "ru": "Киев нанёс удар по военному космодрому в 1 700 километрах от границы"
+        "uk": "Велика Британія передала Україні плани виробництва ракет великої дальності",
+        "en": "The United Kingdom delivers to Ukraine plans for manufacturing long-range missiles",
+        "ru": "Великобритания передала Украине планы производства ракет большой дальности"
       }
     },
     {
-      "url": "https://www.facenews.ua/news/2026/538937/",
-      "domain": "facenews.ua",
-      "seenAt": "2026-08-21T20:15:00.000Z",
+      "url": "https://glavred.info/front/nastuplenie-rf-posypalos-srazu-na-neskolkih-napravleniyah-gde-prodvinulis-vsu-10791164.html",
+      "domain": "glavred.info",
+      "seenAt": "2026-08-25T08:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/0b4ebd0fa8b77cf2.webp",
-      "original": "До Росії прибули ще 8500 військових КНДР , серед них 400 операторів дронів для атак по Україні",
+      "image": "/news/470f0608d8649e9f.webp",
+      "original": "Наступление РФ посыпалось сразу на нескольких направлениях : где продвинулись ВСУ",
       "title": {
-        "uk": "До Росії прибули ще 8 500 військових КНДР, серед них 400 операторів дронів для атак по Україні",
-        "en": "Another 8,500 North Korean troops arrived in Russia, including 400 drone operators for strikes on Ukraine",
-        "ru": "В Россию прибыли ещё 8 500 военных КНДР, среди них 400 операторов дронов для ударов по Украине"
-      }
-    },
-    {
-      "url": "https://news.liga.net/ua/war/news/u-hur-ne-vykliuchaiut-novoi-nastupalnoi-operatsii-rosii-u-liutomu-iakshcho-bude-mobilizatsiia",
-      "domain": "news.liga.net",
-      "seenAt": "2026-08-18T10:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Новий наступ Росії може початись у лютому 2027 – дані ГУР | Новини України",
-      "title": {
-        "uk": "Новий наступ Росії може початися у лютому 2027 — дані ГУР",
-        "en": "New Russian offensive may begin in February 2027 — Ukrainian military intelligence data",
-        "ru": "Новое наступление России может начаться в феврале 2027 года — данные ГУР"
-      }
-    },
-    {
-      "url": "https://www.ellitoral.com/internacionales/ucrania-rusia-emmanuel-macron-zelenski-misiles-interceptores-defensa-aerea-guerra-ucrania_0_TVBuFgJUL5.html",
-      "domain": "ellitoral.com",
-      "seenAt": "2026-08-22T18:00:00.000Z",
-      "sourceCountry": "Argentina",
-      "image": "/news/3c6d28c4be2d42c7.webp",
-      "original": "Macron anunció el envío de misiles interceptores a Ucrania tras la escalada de ataques rusos",
-      "title": {
-        "uk": "Макрон оголосив про відправку ракет-перехоплювачів в Україну після ескалації російських ударів",
-        "en": "Macron announced the sending of interceptor missiles to Ukraine following the escalation of Russian attacks",
-        "ru": "Макрон объявил об отправке ракет-перехватчиков на Украину после эскалации российских ударов"
-      }
-    },
-    {
-      "url": "https://www.dw.com/en/russia-prison-for-opposition-leader-over-war-criticism/a-78403203",
-      "domain": "dw.com",
-      "seenAt": "2026-08-17T17:15:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/97cd40f7cbb9440a.webp",
-      "original": "Russia : Prison for opposition leader over war criticism",
-      "title": {
-        "uk": "Росія: тюремне ув'язнення для лідера опозиції за критику війни",
-        "en": "Russia: Prison for opposition leader over war criticism",
-        "ru": "Россия: тюрьма для лидера оппозиции за критику войны"
-      }
-    },
-    {
-      "url": "https://euobserver.com/233005/ukrainian-spy-chief-predicts-putins-plans-missile-terrorism-and-donbas-meat-grinding-ukraine-battlefield-update-day-1638/",
-      "domain": "euobserver.com",
-      "seenAt": "2026-08-20T16:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/908bcd238faafd1f.webp",
-      "original": "Ukrainian spy chief predicts Putin plans : missile terrorism and Donbas meat - grinding ( Ukraine Battlefield update , Day 1 , 638 ) – EUobserver",
-      "title": {
-        "uk": "Голова розвідки України спрогнозував плани Путіна: ракетний терор і «м'ясорубка» на Донбасі",
-        "en": "Ukrainian spy chief predicts Putin's plans: missile terrorism and Donbas meat-grinding",
-        "ru": "Глава разведки Украины спрогнозировал планы Путина: ракетный террор и «мясорубка» на Донбасе"
+        "uk": "Наступ РФ захлинувся одразу на кількох напрямках: де просунулися ЗСУ",
+        "en": "Russia's offensive stalled on several fronts simultaneously: where Ukrainian forces advanced",
+        "ru": "Наступление РФ посыпалось сразу на нескольких направлениях: где продвинулись ВСУ"
       }
     }
   ]
