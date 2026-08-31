@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-30",
+  "asOf": "2026-08-31",
   "source": "gdelt",
   "articles": [
     {
@@ -11,8 +11,33 @@
       "original": "Путін наказав спланувати операції на Київ і Чернігів - Паліса",
       "title": {
         "uk": "Путін наказав спланувати операції на Київ і Чернігів — Паліса",
-        "en": "Putin ordered operations on Kyiv and Chernihiv to be planned — Palisa",
+        "en": "Putin ordered planning of operations toward Kyiv and Chernihiv — Palisa",
         "ru": "Путин приказал спланировать операции на Киев и Чернигов — Палиса"
+      }
+    },
+    {
+      "url": "https://fortune.com/2026/08/26/cia-director-mysterious-visit-moscow-trump-putin/",
+      "domain": "fortune.com",
+      "seenAt": "2026-08-26T21:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/464c98d6567213ff.webp",
+      "original": "CIA director visits Putin in Moscow in talks that Trump calls  sort of semi - routine",
+      "title": {
+        "uk": "Директор ЦРУ відвідав Москву на переговорах, які Трамп назвав «певною мірою напіврутинними»",
+        "en": "CIA director visits Moscow in talks that Trump calls 'sort of semi-routine'",
+        "ru": "Директор ЦРУ посетил Москву на переговорах, которые Трамп назвал «своего рода полурутинными»"
+      }
+    },
+    {
+      "url": "https://www.aktuality.sk/clanok/QDzuCYY/kremel-tvrdi-ze-mierove-rozhovory-o-ukrajine-su-do-znacnej-miery-pozastavene/",
+      "domain": "aktuality.sk",
+      "seenAt": "2026-08-28T15:45:00.000Z",
+      "sourceCountry": "Slovak Republic",
+      "original": "Kremeľ tvrdí , že mierové rozhovory o Ukrajine sú do značnej miery pozastavené",
+      "title": {
+        "uk": "Кремль стверджує, що мирні переговори щодо України значною мірою призупинені",
+        "en": "Kremlin says peace talks on Ukraine are largely suspended",
+        "ru": "Кремль заявляет, что мирные переговоры по Украине в значительной мере приостановлены"
       }
     },
     {
@@ -24,72 +49,34 @@
       "original": "Rússia diz estar a preparar  ataques massivos  contra a infraestrutura energética ucraniana",
       "title": {
         "uk": "Росія заявляє, що готує «масовані удари» по енергетичній інфраструктурі України",
-        "en": "Russia says it is preparing 'massive strikes' against Ukraine's energy infrastructure",
-        "ru": "Россия заявляет о подготовке «массированных ударов» по энергетической инфраструктуре Украины"
+        "en": "Russia says it is preparing 'massive strikes' against Ukrainian energy infrastructure",
+        "ru": "Россия заявляет, что готовит «массированные удары» по энергетической инфраструктуре Украины"
       }
     },
     {
-      "url": "https://www.unian.ua/war/okupanti-zbirayut-armiyu-dlya-novogo-udaru-isw-rozkriv-nebezpechniy-napryamok-13484628.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-08-30T06:45:00.000Z",
+      "url": "https://www.radiosvoboda.org/a/zelenskyy-ppo-reaktyvni-shakhedy/33843574.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-08-31T08:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/1f267c30d5cb14cc.webp",
-      "original": "Окупанти збирають армію для нового удару : ISW розкрив небезпечний напрямок",
+      "image": "/news/0bf798a1d42faed5.webp",
+      "original": "Радіо Свобода Weekly : Зеленський заявив , що ППО вже восени має збивати понад 90 % реактивних « шахедів »",
       "title": {
-        "uk": "Окупанти збирають армію для нового удару: ISW розкрив небезпечний напрямок",
-        "en": "Occupiers are massing troops for a new strike: ISW reveals a dangerous direction",
-        "ru": "Оккупанты собирают армию для нового удара: ISW раскрыл опасное направление"
+        "uk": "Зеленський заявив, що ППО вже восени має збивати понад 90% реактивних «шахедів»",
+        "en": "Zelensky says air defenses should be shooting down over 90% of jet-powered Shaheds by autumn",
+        "ru": "Зеленский заявил, что ПВО уже осенью должна сбивать более 90% реактивных «шахедов»"
       }
     },
     {
-      "url": "https://www.aktuality.sk/clanok/QDzuCYY/kremel-tvrdi-ze-mierove-rozhovory-o-ukrajine-su-do-znacnej-miery-pozastavene/",
-      "domain": "aktuality.sk",
-      "seenAt": "2026-08-28T15:45:00.000Z",
-      "sourceCountry": "Slovak Republic",
-      "original": "Kremeľ tvrdí , že mierové rozhovory o Ukrajine sú do značnej miery pozastavené",
+      "url": "https://www.lsm.lv/raksts/zinas/arzemes/31.08.2026-krievija-aizvaditaja-nedela-ukrainai-uzbrukusi-ar-gandriz-2000-dronu-un-31-raketi-ukraina-gatavojas-jaunai-kara-ziemai.a660986/",
+      "domain": "lsm.lv",
+      "seenAt": "2026-08-31T05:45:00.000Z",
+      "sourceCountry": "Latvia",
+      "image": "/news/c586b5e6f7f9c1a9.webp",
+      "original": "Krievija aizvadītajā nedēļā Ukrainai uzbrukusi ar gandrīz 2000 dronu un 31 raķeti ; Ukraina gatavojas jaunai kara ziemai",
       "title": {
-        "uk": "Кремль стверджує, що мирні переговори щодо України значною мірою призупинено",
-        "en": "Kremlin says peace talks on Ukraine are largely suspended",
-        "ru": "Кремль утверждает, что мирные переговоры по Украине в значительной мере приостановлены"
-      }
-    },
-    {
-      "url": "https://fortune.com/2026/08/26/cia-director-mysterious-visit-moscow-trump-putin/",
-      "domain": "fortune.com",
-      "seenAt": "2026-08-26T21:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/464c98d6567213ff.webp",
-      "original": "CIA director visits Putin in Moscow in talks that Trump calls  sort of semi - routine",
-      "title": {
-        "uk": "Директор ЦРУ відвідав Москву на переговорах, які Трамп назвав «напівплановими»",
-        "en": "CIA director visits Moscow in talks that Trump calls 'sort of semi-routine'",
-        "ru": "Директор ЦРУ посетил Москву на переговорах, которые Трамп назвал «полурутинными»"
-      }
-    },
-    {
-      "url": "https://www.ukrinform.ua/rubric-world/4158615-glava-cru-zasterig-rosian-so-eskalacia-vijni-pidstovhne-trampa-do-zelenskogo-wp.html",
-      "domain": "ukrinform.ua",
-      "seenAt": "2026-08-28T14:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/841df547041ef25a.webp",
-      "original": "Глава ЦРУ застеріг росіян , що ескалація війни підштовхне Трампа до Зеленського",
-      "title": {
-        "uk": "Глава ЦРУ застеріг росіян, що ескалація війни підштовхне Трампа до Зеленського",
-        "en": "CIA chief warned Russians that war escalation would push Trump toward Zelensky",
-        "ru": "Глава ЦРУ предупредил россиян, что эскалация войны подтолкнёт Трампа к Зеленскому"
-      }
-    },
-    {
-      "url": "https://uainfo.org/blognews/1787633652-ukrayina-ssha-ta-evropa-rozrobili-noviy-plan-pripinennya.html",
-      "domain": "uainfo.org",
-      "seenAt": "2026-08-25T07:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/476c5c4d81c38c3b.webp",
-      "original": "Україна , США та Європа розробили новий план припинення вогню з буферною зоною ,",
-      "title": {
-        "uk": "Україна, США та Європа розробили новий план припинення вогню з буферною зоною",
-        "en": "Ukraine, the US and Europe have developed a new ceasefire plan with a buffer zone",
-        "ru": "Украина, США и Европа разработали новый план прекращения огня с буферной зоной"
+        "uk": "Минулого тижня Росія атакувала Україну майже 2000 дронами та 31 ракетою; Україна готується до нової воєнної зими",
+        "en": "Russia attacked Ukraine with nearly 2,000 drones and 31 missiles last week; Ukraine prepares for another war winter",
+        "ru": "На прошлой неделе Россия атаковала Украину почти 2000 дронами и 31 ракетой; Украина готовится к новой военной зиме"
       }
     },
     {
@@ -112,9 +99,22 @@
       "sourceCountry": "United Kingdom",
       "original": "Ukraine war briefing : Reboot of  fortress belt  defences as Zelenskyy visits frontline | Ukraine",
       "title": {
-        "uk": "Зведення про війну в Україні: відновлення оборони «фортечного поясу» під час візиту Зеленського на передову",
+        "uk": "Зведення про війну в Україні: перезапуск оборони «фортечного поясу» на тлі візиту Зеленського на передову",
         "en": "Ukraine war briefing: Reboot of 'fortress belt' defences as Zelenskyy visits frontline",
-        "ru": "Сводка о войне в Украине: возобновление обороны «крепостного пояса» во время визита Зеленского на передовую"
+        "ru": "Сводка о войне на Украине: перезапуск обороны «крепостного пояса» на фоне визита Зеленского на передовую"
+      }
+    },
+    {
+      "url": "https://uainfo.org/blognews/1787683125-lishe-7-na-peremogu-rf---vitik-analitichnoyi-zapiski-sberbanku-.html",
+      "domain": "uainfo.org",
+      "seenAt": "2026-08-25T22:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/5065e9364337930d.webp",
+      "original": "Лише 7 % на перемогу РФ - витік аналітичної записки  Сбербанку  про вісім сценаріїв закінчення війни",
+      "title": {
+        "uk": "Лише 7% на перемогу РФ: витік аналітичної записки «Сбербанку» про вісім сценаріїв закінчення війни",
+        "en": "Only 7% chance of Russia winning: leaked Sberbank analytical memo on eight war-end scenarios",
+        "ru": "Лишь 7% на победу РФ: утечка аналитической записки «Сбербанка» о восьми сценариях окончания войны"
       }
     },
     {
@@ -125,9 +125,9 @@
       "image": "/news/64339af6544e4531.webp",
       "original": "El Reino Unido entrega a Ucrania planos para fabricar misiles de largo alcance",
       "title": {
-        "uk": "Велика Британія передала Україні плани для виробництва ракет далекого радіусу дії",
-        "en": "The United Kingdom delivers to Ukraine plans to manufacture long-range missiles",
-        "ru": "Великобритания передала Украине планы для производства ракет дальнего радиуса действия"
+        "uk": "Велика Британія передала Україні плани для виробництва ракет великої дальності",
+        "en": "UK delivers plans to Ukraine for manufacturing long-range missiles",
+        "ru": "Великобритания передала Украине планы для производства ракет большой дальности"
       }
     }
   ]
