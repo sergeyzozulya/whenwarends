@@ -1,56 +1,18 @@
 {
-  "asOf": "2026-08-31",
+  "asOf": "2026-09-01",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://ua.korrespondent.net/ukraine/4907253-putin-nakazav-splanuvaty-operatsii-na-kyiv-i-chernihiv-palisa",
-      "domain": "ua.korrespondent.net",
-      "seenAt": "2026-08-29T12:45:00.000Z",
+      "url": "https://www.kyivpost.com/post/83360",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-08-30T11:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/1af3ee1d3c3dec9c.webp",
-      "original": "Путін наказав спланувати операції на Київ і Чернігів - Паліса",
+      "image": "/news/1f9e78bb5384b04e.webp",
+      "original": "CIA Chief Proposed Trump - Putin - Zelensky Summit",
       "title": {
-        "uk": "Путін наказав спланувати операції на Київ і Чернігів — Паліса",
-        "en": "Putin ordered planning of operations toward Kyiv and Chernihiv — Palisa",
-        "ru": "Путин приказал спланировать операции на Киев и Чернигов — Палиса"
-      }
-    },
-    {
-      "url": "https://fortune.com/2026/08/26/cia-director-mysterious-visit-moscow-trump-putin/",
-      "domain": "fortune.com",
-      "seenAt": "2026-08-26T21:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/464c98d6567213ff.webp",
-      "original": "CIA director visits Putin in Moscow in talks that Trump calls  sort of semi - routine",
-      "title": {
-        "uk": "Директор ЦРУ відвідав Москву на переговорах, які Трамп назвав «певною мірою напіврутинними»",
-        "en": "CIA director visits Moscow in talks that Trump calls 'sort of semi-routine'",
-        "ru": "Директор ЦРУ посетил Москву на переговорах, которые Трамп назвал «своего рода полурутинными»"
-      }
-    },
-    {
-      "url": "https://www.aktuality.sk/clanok/QDzuCYY/kremel-tvrdi-ze-mierove-rozhovory-o-ukrajine-su-do-znacnej-miery-pozastavene/",
-      "domain": "aktuality.sk",
-      "seenAt": "2026-08-28T15:45:00.000Z",
-      "sourceCountry": "Slovak Republic",
-      "original": "Kremeľ tvrdí , že mierové rozhovory o Ukrajine sú do značnej miery pozastavené",
-      "title": {
-        "uk": "Кремль стверджує, що мирні переговори щодо України значною мірою призупинені",
-        "en": "Kremlin says peace talks on Ukraine are largely suspended",
-        "ru": "Кремль заявляет, что мирные переговоры по Украине в значительной мере приостановлены"
-      }
-    },
-    {
-      "url": "https://www.rtp.pt/noticias/guerra-na-ucrania/russia-diz-estar-a-preparar-ataques-massivos-contra-a-infraestrutura-energetica-ucraniana_n1762354",
-      "domain": "rtp.pt",
-      "seenAt": "2026-08-30T10:15:00.000Z",
-      "sourceCountry": "Portugal",
-      "image": "/news/2d94a2ef324bd65f.webp",
-      "original": "Rússia diz estar a preparar  ataques massivos  contra a infraestrutura energética ucraniana",
-      "title": {
-        "uk": "Росія заявляє, що готує «масовані удари» по енергетичній інфраструктурі України",
-        "en": "Russia says it is preparing 'massive strikes' against Ukrainian energy infrastructure",
-        "ru": "Россия заявляет, что готовит «массированные удары» по энергетической инфраструктуре Украины"
+        "uk": "Директор ЦРУ запропонував саміт Трамп–Путін–Зеленський",
+        "en": "CIA Chief Proposed Trump–Putin–Zelensky Summit",
+        "ru": "Директор ЦРУ предложил саммит Трамп–Путин–Зеленский"
       }
     },
     {
@@ -62,46 +24,60 @@
       "original": "Радіо Свобода Weekly : Зеленський заявив , що ППО вже восени має збивати понад 90 % реактивних « шахедів »",
       "title": {
         "uk": "Зеленський заявив, що ППО вже восени має збивати понад 90% реактивних «шахедів»",
-        "en": "Zelensky says air defenses should be shooting down over 90% of jet-powered Shaheds by autumn",
+        "en": "Zelensky Says Air Defence Should Be Shooting Down Over 90% of Jet-Powered Shaheds by This Autumn",
         "ru": "Зеленский заявил, что ПВО уже осенью должна сбивать более 90% реактивных «шахедов»"
       }
     },
     {
-      "url": "https://www.lsm.lv/raksts/zinas/arzemes/31.08.2026-krievija-aizvaditaja-nedela-ukrainai-uzbrukusi-ar-gandriz-2000-dronu-un-31-raketi-ukraina-gatavojas-jaunai-kara-ziemai.a660986/",
-      "domain": "lsm.lv",
-      "seenAt": "2026-08-31T05:45:00.000Z",
-      "sourceCountry": "Latvia",
-      "image": "/news/c586b5e6f7f9c1a9.webp",
-      "original": "Krievija aizvadītajā nedēļā Ukrainai uzbrukusi ar gandrīz 2000 dronu un 31 raķeti ; Ukraina gatavojas jaunai kara ziemai",
-      "title": {
-        "uk": "Минулого тижня Росія атакувала Україну майже 2000 дронами та 31 ракетою; Україна готується до нової воєнної зими",
-        "en": "Russia attacked Ukraine with nearly 2,000 drones and 31 missiles last week; Ukraine prepares for another war winter",
-        "ru": "На прошлой неделе Россия атаковала Украину почти 2000 дронами и 31 ракетой; Украина готовится к новой военной зиме"
-      }
-    },
-    {
-      "url": "https://www.radiosvoboda.org/a/news-rada-bezpeky-oon-rosia-prypynennia-vohniu/33839034.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-08-25T11:00:00.000Z",
+      "url": "https://www.unian.ua/war/okupanti-zbirayut-armiyu-dlya-novogo-udaru-isw-rozkriv-nebezpechniy-napryamok-13484628.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-08-30T06:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/bb642e33631e1325.webp",
-      "original": "Пів сотні країн закликали Росію негайно погодитися на припинення вогню",
+      "image": "/news/1f267c30d5cb14cc.webp",
+      "original": "Окупанти збирають армію для нового удару : ISW розкрив небезпечний напрямок",
       "title": {
-        "uk": "Пів сотні країн закликали Росію негайно погодитися на припинення вогню",
-        "en": "Around fifty countries called on Russia to immediately agree to a ceasefire",
-        "ru": "Около пятидесяти стран призвали Россию немедленно согласиться на прекращение огня"
+        "uk": "Окупанти збирають армію для нового удару: ISW розкрив небезпечний напрямок",
+        "en": "Occupiers Amassing Forces for New Strike: ISW Reveals Dangerous Direction",
+        "ru": "Оккупанты собирают армию для нового удара: ISW раскрыл опасное направление"
       }
     },
     {
-      "url": "https://www.theguardian.com/world/2026/aug/27/ukraine-war-briefing-reboot-of-fortress-belt-defences-as-zelenskyy-visits-frontline",
-      "domain": "theguardian.com",
-      "seenAt": "2026-08-27T03:15:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "original": "Ukraine war briefing : Reboot of  fortress belt  defences as Zelenskyy visits frontline | Ukraine",
+      "url": "https://www.rtp.pt/noticias/guerra-na-ucrania/russia-diz-estar-a-preparar-ataques-massivos-contra-a-infraestrutura-energetica-ucraniana_n1762354",
+      "domain": "rtp.pt",
+      "seenAt": "2026-08-30T10:15:00.000Z",
+      "sourceCountry": "Portugal",
+      "image": "/news/2d94a2ef324bd65f.webp",
+      "original": "Rússia diz estar a preparar  ataques massivos  contra a infraestrutura energética ucraniana",
       "title": {
-        "uk": "Зведення про війну в Україні: перезапуск оборони «фортечного поясу» на тлі візиту Зеленського на передову",
-        "en": "Ukraine war briefing: Reboot of 'fortress belt' defences as Zelenskyy visits frontline",
-        "ru": "Сводка о войне на Украине: перезапуск обороны «крепостного пояса» на фоне визита Зеленского на передовую"
+        "uk": "Росія заявляє, що готує масовані удари по енергетичній інфраструктурі України",
+        "en": "Russia Says It Is Preparing Massive Attacks on Ukraine's Energy Infrastructure",
+        "ru": "Россия заявляет о подготовке массированных ударов по энергетической инфраструктуре Украины"
+      }
+    },
+    {
+      "url": "https://ua.korrespondent.net/ukraine/4907253-putin-nakazav-splanuvaty-operatsii-na-kyiv-i-chernihiv-palisa",
+      "domain": "ua.korrespondent.net",
+      "seenAt": "2026-08-29T12:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/1af3ee1d3c3dec9c.webp",
+      "original": "Путін наказав спланувати операції на Київ і Чернігів - Паліса",
+      "title": {
+        "uk": "Путін наказав спланувати операції на Київ і Чернігів — Паліса",
+        "en": "Putin Ordered Planning of Operations on Kyiv and Chernihiv — Palisa",
+        "ru": "Путин приказал спланировать операции на Киев и Чернигов — Палиса"
+      }
+    },
+    {
+      "url": "https://www.digi24.ro/stiri/externe/rusia-pierde-lunar-in-ucraina-cu-6-000-de-militari-mai-mult-decat-reuseste-sa-recruteze-ce-strategie-are-putin-the-guardian-3926835",
+      "domain": "digi24.ro",
+      "seenAt": "2026-08-29T17:15:00.000Z",
+      "sourceCountry": "Romania",
+      "image": "/news/89205fe5fb034ddd.webp",
+      "original": "Rusia pierde lunar în Ucraina cu 6 . 000 de militari mai mult decât reuşeşte să recruteze . Ce strategie are Putin ( The Guardian )",
+      "title": {
+        "uk": "Росія щомісяця втрачає на 6 000 військових більше, ніж встигає набрати — The Guardian",
+        "en": "Russia Loses 6,000 More Soldiers Monthly in Ukraine Than It Can Recruit — The Guardian",
+        "ru": "Россия теряет в Украине на 6 000 военных в месяц больше, чем успевает набрать — The Guardian"
       }
     },
     {
@@ -113,21 +89,45 @@
       "original": "Лише 7 % на перемогу РФ - витік аналітичної записки  Сбербанку  про вісім сценаріїв закінчення війни",
       "title": {
         "uk": "Лише 7% на перемогу РФ: витік аналітичної записки «Сбербанку» про вісім сценаріїв закінчення війни",
-        "en": "Only 7% chance of Russia winning: leaked Sberbank analytical memo on eight war-end scenarios",
-        "ru": "Лишь 7% на победу РФ: утечка аналитической записки «Сбербанка» о восьми сценариях окончания войны"
+        "en": "Only 7% Chance of Russian Victory: Leaked Sberbank Memo on Eight War-End Scenarios",
+        "ru": "Лишь 7% на победу РФ: утечка аналитической записки «Сбербанка» о восьми сценариях завершения войны"
       }
     },
     {
-      "url": "https://www.canarias7.es/internacional/europa/reino-unido-entrega-ucrania-planos-fabricar-misiles-20260824115532-ntrc.html",
-      "domain": "canarias7.es",
-      "seenAt": "2026-08-25T09:30:00.000Z",
-      "sourceCountry": "Spain",
-      "image": "/news/64339af6544e4531.webp",
-      "original": "El Reino Unido entrega a Ucrania planos para fabricar misiles de largo alcance",
+      "url": "https://www.theguardian.com/world/2026/aug/27/ukraine-war-briefing-reboot-of-fortress-belt-defences-as-zelenskyy-visits-frontline",
+      "domain": "theguardian.com",
+      "seenAt": "2026-08-27T03:15:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Ukraine war briefing : Reboot of  fortress belt  defences as Zelenskyy visits frontline | Ukraine",
       "title": {
-        "uk": "Велика Британія передала Україні плани для виробництва ракет великої дальності",
-        "en": "UK delivers plans to Ukraine for manufacturing long-range missiles",
-        "ru": "Великобритания передала Украине планы для производства ракет большой дальности"
+        "uk": "Зведення про війну в Україні: відновлення оборони «фортечного поясу» — Зеленський відвідав передову",
+        "en": "Ukraine War Briefing: Reboot of 'Fortress Belt' Defences as Zelenskyy Visits Frontline",
+        "ru": "Сводка о войне в Украине: восстановление обороны «крепостного пояса» — Зеленский посетил передовую"
+      }
+    },
+    {
+      "url": "https://www.obozrevatel.com/novosti-mir/putin-podzhigaet-evropu-neskolko-prichin-po-kotoryim-rossiya-aktivizirovala-ataki-na-evropejskij-voenno-promyishlennyij-kompleks-svyazannyij-s-ukrainoj-kakim-budet-otvet-evropyi.htm",
+      "domain": "obozrevatel.com",
+      "seenAt": "2026-08-31T12:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Диверсии на предприятиях в Европе - почему Россия активизировала атаки на европейский ВПК и каким будет ответ",
+      "title": {
+        "uk": "Диверсії на підприємствах у Європі: чому Росія активізувала атаки на європейський ВПК і якою буде відповідь",
+        "en": "Sabotage at European Enterprises: Why Russia Has Stepped Up Attacks on Europe's Defence Industry and What the Response Will Be",
+        "ru": "Диверсии на предприятиях в Европе: почему Россия активизировала атаки на европейский ВПК и каким будет ответ"
+      }
+    },
+    {
+      "url": "https://www.newindianexpress.com/world/2026/Aug/31/prospects-will-be-even-brighter-putin-xi-hold-talks-on-sidelines-of-sco-summit",
+      "domain": "newindianexpress.com",
+      "seenAt": "2026-08-31T19:15:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/108a85eed2bc610c.webp",
+      "original": "Prospects will be even brighter : Putin , Xi hold talks on sidelines of SCO summit",
+      "title": {
+        "uk": "Перспективи будуть ще кращими: Путін і Сі провели переговори на полях саміту ШОС",
+        "en": "Prospects Will Be Even Brighter: Putin and Xi Hold Talks on Sidelines of SCO Summit",
+        "ru": "Перспективы будут ещё лучше: Путин и Си провели переговоры на полях саммита ШОС"
       }
     }
   ]
