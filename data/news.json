@@ -1,17 +1,18 @@
 {
-  "asOf": "2026-09-02",
+  "asOf": "2026-09-03",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.hindustantimes.com/world-news/the-ukraine-war-is-intensifying-expanding-and-stuck-101788337967627.html",
-      "domain": "hindustantimes.com",
-      "seenAt": "2026-09-02T10:15:00.000Z",
-      "sourceCountry": "India",
-      "original": "The Ukraine war is intensifying , expanding and stuck",
+      "url": "https://www.irishtimes.com/world/europe/2026/08/29/russian-strike-on-warehouse-near-kyiv-causes-detonation-killing-27/",
+      "domain": "irishtimes.com",
+      "seenAt": "2026-08-29T13:30:00.000Z",
+      "sourceCountry": "Ireland",
+      "image": "/news/4b5756ad367068ea.webp",
+      "original": "Almost 40 killed in Russian attack on Kyiv region",
       "title": {
-        "uk": "Війна в Україні посилюється, розширюється і зайшла в глухий кут",
-        "en": "The Ukraine war is intensifying, expanding and stuck",
-        "ru": "Война в Украине усиливается, расширяется и зашла в тупик"
+        "uk": "Майже 40 людей загинули внаслідок російського удару по Київській області",
+        "en": "Almost 40 killed in Russian attack on Kyiv region",
+        "ru": "Почти 40 человек погибли в результате российского удара по Киевской области"
       }
     },
     {
@@ -23,7 +24,7 @@
       "original": "Путін наказав спланувати операції на Київ і Чернігів - Паліса",
       "title": {
         "uk": "Путін наказав спланувати операції на Київ і Чернігів — Паліса",
-        "en": "Putin ordered planning of operations toward Kyiv and Chernihiv — Palisa",
+        "en": "Putin ordered plans for operations on Kyiv and Chernihiv — Palisa",
         "ru": "Путин приказал спланировать операции на Киев и Чернигов — Палиса"
       }
     },
@@ -35,9 +36,9 @@
       "image": "/news/1f9e78bb5384b04e.webp",
       "original": "CIA Chief Proposed Trump - Putin - Zelensky Summit",
       "title": {
-        "uk": "Директор ЦРУ запропонував саміт Трамп — Путін — Зеленський",
+        "uk": "Директор ЦРУ запропонував провести саміт Трамп–Путін–Зеленський",
         "en": "CIA chief proposed Trump-Putin-Zelensky summit",
-        "ru": "Директор ЦРУ предложил саммит Трамп — Путин — Зеленский"
+        "ru": "Директор ЦРУ предложил провести саммит Трамп–Путин–Зеленский"
       }
     },
     {
@@ -48,9 +49,22 @@
       "image": "/news/2d94a2ef324bd65f.webp",
       "original": "Rússia diz estar a preparar  ataques massivos  contra a infraestrutura energética ucraniana",
       "title": {
-        "uk": "Росія заявляє, що готує масовані удари по енергетичній інфраструктурі України",
-        "en": "Russia says it is preparing massive strikes against Ukraine's energy infrastructure",
-        "ru": "Россия заявляет о подготовке массированных ударов по энергетической инфраструктуре Украины"
+        "uk": "Росія заявила, що готує масовані удари по енергетичній інфраструктурі України",
+        "en": "Russia says it is preparing massive attacks on Ukraine's energy infrastructure",
+        "ru": "Россия заявила о подготовке массированных ударов по энергетической инфраструктуре Украины"
+      }
+    },
+    {
+      "url": "https://www.sandiegouniontribune.com/2026/08/27/us-patriot-missile-critical-shortage/",
+      "domain": "sandiegouniontribune.com",
+      "seenAt": "2026-08-27T17:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/8da30193bf8a6e3b.webp",
+      "original": "Patriot missile stocks are  beyond critical  due to Iran war : official",
+      "title": {
+        "uk": "Запаси ракет Patriot в Європі перебувають на «понадкритичному» рівні через війну з Іраном — офіційні особи",
+        "en": "Patriot missile stocks in Europe are 'beyond critical' due to Iran war, officials say",
+        "ru": "Запасы ракет Patriot в Европе находятся на «сверхкритическом» уровне из-за войны с Ираном — официальные лица"
       }
     },
     {
@@ -62,21 +76,8 @@
       "original": "США заявили в ООН , що продовжать сприяти переговорам між Україною та Росією",
       "title": {
         "uk": "США заявили в ООН, що продовжать сприяти переговорам між Україною та Росією",
-        "en": "US stated at the UN that it will continue to facilitate negotiations between Ukraine and Russia",
+        "en": "US stated at the UN that it will continue facilitating negotiations between Ukraine and Russia",
         "ru": "США заявили в ООН, что продолжат содействовать переговорам между Украиной и Россией"
-      }
-    },
-    {
-      "url": "https://www.digi24.ro/stiri/externe/rusia-pierde-lunar-in-ucraina-cu-6-000-de-militari-mai-mult-decat-reuseste-sa-recruteze-ce-strategie-are-putin-the-guardian-3926835",
-      "domain": "digi24.ro",
-      "seenAt": "2026-08-29T17:15:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/89205fe5fb034ddd.webp",
-      "original": "Rusia pierde lunar în Ucraina cu 6 . 000 de militari mai mult decât reuşeşte să recruteze . Ce strategie are Putin ( The Guardian )",
-      "title": {
-        "uk": "Росія щомісяця втрачає в Україні на 6 000 військових більше, ніж вербує. Яка стратегія Путіна",
-        "en": "Russia loses 6,000 more soldiers monthly in Ukraine than it can recruit. What is Putin's strategy",
-        "ru": "Россия ежемесячно теряет в Украине на 6 000 военных больше, чем набирает. Какова стратегия Путина"
       }
     },
     {
@@ -87,48 +88,47 @@
       "image": "/news/c731ce8eea2248f2.webp",
       "original": "Генштаб назвал потери России в августе",
       "title": {
-        "uk": "Генштаб назвав втрати Росії в серпні",
-        "en": "General Staff named Russia's losses in August",
+        "uk": "Генштаб назвав втрати Росії у серпні",
+        "en": "General Staff reported Russia's losses in August",
         "ru": "Генштаб назвал потери России в августе"
       }
     },
     {
-      "url": "https://www.sandiegouniontribune.com/2026/08/27/us-patriot-missile-critical-shortage/",
-      "domain": "sandiegouniontribune.com",
-      "seenAt": "2026-08-27T17:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/8da30193bf8a6e3b.webp",
-      "original": "Patriot missile stocks are  beyond critical  due to Iran war : official",
-      "title": {
-        "uk": "Запаси ракет Patriot є «понад критичними» через війну з Іраном — офіційна особа",
-        "en": "Patriot missile stocks are 'beyond critical' due to Iran war: official",
-        "ru": "Запасы ракет Patriot «за критической чертой» из-за войны с Ираном — официальное лицо"
-      }
-    },
-    {
-      "url": "https://www.ukrinform.ua/rubric-polytics/4159857-es-nikoli-ne-viznae-okupovani-ukrainski-teritorii-rosijskimi.html",
-      "domain": "ukrinform.ua",
-      "seenAt": "2026-09-01T17:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/9b8c247af548da43.webp",
-      "original": "ЄС ніколи не визнає окуповані українські території російськими",
-      "title": {
-        "uk": "ЄС ніколи не визнає окуповані українські території російськими",
-        "en": "EU will never recognize occupied Ukrainian territories as Russian",
-        "ru": "ЕС никогда не признает оккупированные украинские территории российскими"
-      }
-    },
-    {
-      "url": "https://www.newindianexpress.com/world/2026/Aug/31/prospects-will-be-even-brighter-putin-xi-hold-talks-on-sidelines-of-sco-summit",
-      "domain": "newindianexpress.com",
-      "seenAt": "2026-08-31T19:15:00.000Z",
+      "url": "https://www.hindustantimes.com/world-news/the-ukraine-war-is-intensifying-expanding-and-stuck-101788337967627.html",
+      "domain": "hindustantimes.com",
+      "seenAt": "2026-09-02T10:15:00.000Z",
       "sourceCountry": "India",
-      "image": "/news/108a85eed2bc610c.webp",
-      "original": "Prospects will be even brighter : Putin , Xi hold talks on sidelines of SCO summit",
+      "original": "The Ukraine war is intensifying , expanding and stuck",
       "title": {
-        "uk": "Путін і Сі провели переговори на полях саміту ШОС",
-        "en": "Putin and Xi hold talks on the sidelines of the SCO summit",
-        "ru": "Путин и Си провели переговоры на полях саммита ШОС"
+        "uk": "Війна в Україні загострюється, розширюється і зайшла у глухий кут",
+        "en": "The Ukraine war is intensifying, expanding and stuck",
+        "ru": "Война в Украине усиливается, расширяется и зашла в тупик"
+      }
+    },
+    {
+      "url": "https://tsn.ua/ato/kharkiv-znovu-pid-zahrozoiu-rosiiany-rvutsia-vpered-isw-rozkryv-nebezpechni-napriamky-mapa-3158906.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-08-31T06:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/e9f860d9d5e1758a.webp",
+      "original": "Війна в Україні : росіяни рвуться до Харкова , де наступає РФ",
+      "title": {
+        "uk": "Війна в Україні: росіяни рвуться до Харкова, де наступає РФ",
+        "en": "War in Ukraine: Russians pushing toward Kharkiv as Russia advances",
+        "ru": "Война в Украине: россияне рвутся к Харькову, наступление РФ продолжается"
+      }
+    },
+    {
+      "url": "https://www.topky.sk/cl/11/9484637/MIMORIADNY-ONLINE-Rusko-chysta-sabotaz-v-Dansku--Tercom-su-firmy-pomahajuce-Ukrajine",
+      "domain": "topky.sk",
+      "seenAt": "2026-09-03T05:15:00.000Z",
+      "sourceCountry": "Slovak Republic",
+      "image": "/news/ab74395a530074b4.webp",
+      "original": "Rusko plánuje sabotáž v Dánsku",
+      "title": {
+        "uk": "Росія планує диверсію в Данії",
+        "en": "Russia plans sabotage in Denmark",
+        "ru": "Россия планирует диверсию в Дании"
       }
     }
   ]
