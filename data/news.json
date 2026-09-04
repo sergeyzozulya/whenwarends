@@ -1,7 +1,20 @@
 {
-  "asOf": "2026-09-03",
+  "asOf": "2026-09-04",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://kyivindependent.com/russia-planning-operation-in-northern-ukraine-including-kyiv-military-says/",
+      "domain": "kyivindependent.com",
+      "seenAt": "2026-08-29T18:15:00.000Z",
+      "sourceCountry": "",
+      "image": "/news/f6dc3e6a1edcc107.webp",
+      "original": "Russia planning operation in northern Ukraine , including Kyiv , military says",
+      "title": {
+        "uk": "Росія планує операцію на півночі України, включно з Києвом, — повідомляють військові",
+        "en": "Russia planning operation in northern Ukraine, including Kyiv, military says",
+        "ru": "Россия планирует операцию на севере Украины, включая Киев, — сообщают военные"
+      }
+    },
     {
       "url": "https://www.irishtimes.com/world/europe/2026/08/29/russian-strike-on-warehouse-near-kyiv-causes-detonation-killing-27/",
       "domain": "irishtimes.com",
@@ -13,19 +26,6 @@
         "uk": "Майже 40 людей загинули внаслідок російського удару по Київській області",
         "en": "Almost 40 killed in Russian attack on Kyiv region",
         "ru": "Почти 40 человек погибли в результате российского удара по Киевской области"
-      }
-    },
-    {
-      "url": "https://ua.korrespondent.net/ukraine/4907253-putin-nakazav-splanuvaty-operatsii-na-kyiv-i-chernihiv-palisa",
-      "domain": "ua.korrespondent.net",
-      "seenAt": "2026-08-29T12:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/1af3ee1d3c3dec9c.webp",
-      "original": "Путін наказав спланувати операції на Київ і Чернігів - Паліса",
-      "title": {
-        "uk": "Путін наказав спланувати операції на Київ і Чернігів — Паліса",
-        "en": "Putin ordered plans for operations on Kyiv and Chernihiv — Palisa",
-        "ru": "Путин приказал спланировать операции на Киев и Чернигов — Палиса"
       }
     },
     {
@@ -42,42 +42,41 @@
       }
     },
     {
-      "url": "https://www.rtp.pt/noticias/guerra-na-ucrania/russia-diz-estar-a-preparar-ataques-massivos-contra-a-infraestrutura-energetica-ucraniana_n1762354",
-      "domain": "rtp.pt",
-      "seenAt": "2026-08-30T10:15:00.000Z",
-      "sourceCountry": "Portugal",
-      "image": "/news/2d94a2ef324bd65f.webp",
-      "original": "Rússia diz estar a preparar  ataques massivos  contra a infraestrutura energética ucraniana",
-      "title": {
-        "uk": "Росія заявила, що готує масовані удари по енергетичній інфраструктурі України",
-        "en": "Russia says it is preparing massive attacks on Ukraine's energy infrastructure",
-        "ru": "Россия заявила о подготовке массированных ударов по энергетической инфраструктуре Украины"
-      }
-    },
-    {
-      "url": "https://www.sandiegouniontribune.com/2026/08/27/us-patriot-missile-critical-shortage/",
-      "domain": "sandiegouniontribune.com",
-      "seenAt": "2026-08-27T17:00:00.000Z",
+      "url": "https://nypost.com/2026/08/29/world-news/kremlin-says-ukraine-peace-talks-on-deep-pause/",
+      "domain": "nypost.com",
+      "seenAt": "2026-08-29T22:30:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/8da30193bf8a6e3b.webp",
-      "original": "Patriot missile stocks are  beyond critical  due to Iran war : official",
+      "image": "/news/53446400da453263.webp",
+      "original": "Kremlin says Ukraine peace talks on  deep pause",
       "title": {
-        "uk": "Запаси ракет Patriot в Європі перебувають на «понадкритичному» рівні через війну з Іраном — офіційні особи",
-        "en": "Patriot missile stocks in Europe are 'beyond critical' due to Iran war, officials say",
-        "ru": "Запасы ракет Patriot в Европе находятся на «сверхкритическом» уровне из-за войны с Ираном — официальные лица"
+        "uk": "Кремль заявив, що мирні переговори щодо України перебувають у «глибокій паузі»",
+        "en": "Kremlin says Ukraine peace talks on 'deep pause'",
+        "ru": "Кремль заявил, что мирные переговоры по Украине находятся в «глубокой паузе»"
       }
     },
     {
-      "url": "https://www.ukrinform.ua/rubric-polytics/4159869-ssa-zaavili-v-oon-so-prodovzat-spriati-peregovoram-miz-ukrainou-ta-rosieu.html",
-      "domain": "ukrinform.ua",
-      "seenAt": "2026-09-01T17:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/bfc26bb950e95968.webp",
-      "original": "США заявили в ООН , що продовжать сприяти переговорам між Україною та Росією",
+      "url": "https://www.livemint.com/global/ukraines-next-goal-is-to-shut-down-russia-s-commercial-airspace-11788491106009.html",
+      "domain": "livemint.com",
+      "seenAt": "2026-09-04T04:00:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/60ba283d36555d8c.webp",
+      "original": "Ukraine next goal is to shut down Russia commercial airspace",
       "title": {
-        "uk": "США заявили в ООН, що продовжать сприяти переговорам між Україною та Росією",
-        "en": "US stated at the UN that it will continue facilitating negotiations between Ukraine and Russia",
-        "ru": "США заявили в ООН, что продолжат содействовать переговорам между Украиной и Россией"
+        "uk": "Наступна мета України — закрити комерційний повітряний простір Росії",
+        "en": "Ukraine's next goal is to shut down Russia's commercial airspace",
+        "ru": "Следующая цель Украины — закрыть коммерческое воздушное пространство России"
+      }
+    },
+    {
+      "url": "https://www.hindustantimes.com/world-news/the-ukraine-war-is-intensifying-expanding-and-stuck-101788337967627.html",
+      "domain": "hindustantimes.com",
+      "seenAt": "2026-09-02T10:15:00.000Z",
+      "sourceCountry": "India",
+      "original": "The Ukraine war is intensifying , expanding and stuck",
+      "title": {
+        "uk": "Війна в Україні загострюється, розширюється та зайшла в глухий кут",
+        "en": "The Ukraine war is intensifying, expanding and stuck",
+        "ru": "Война в Украине обостряется, расширяется и зашла в тупик"
       }
     },
     {
@@ -89,46 +88,46 @@
       "original": "Генштаб назвал потери России в августе",
       "title": {
         "uk": "Генштаб назвав втрати Росії у серпні",
-        "en": "General Staff reported Russia's losses in August",
+        "en": "General Staff announces Russia's losses in August",
         "ru": "Генштаб назвал потери России в августе"
       }
     },
     {
-      "url": "https://www.hindustantimes.com/world-news/the-ukraine-war-is-intensifying-expanding-and-stuck-101788337967627.html",
-      "domain": "hindustantimes.com",
-      "seenAt": "2026-09-02T10:15:00.000Z",
-      "sourceCountry": "India",
-      "original": "The Ukraine war is intensifying , expanding and stuck",
-      "title": {
-        "uk": "Війна в Україні загострюється, розширюється і зайшла у глухий кут",
-        "en": "The Ukraine war is intensifying, expanding and stuck",
-        "ru": "Война в Украине усиливается, расширяется и зашла в тупик"
-      }
-    },
-    {
-      "url": "https://tsn.ua/ato/kharkiv-znovu-pid-zahrozoiu-rosiiany-rvutsia-vpered-isw-rozkryv-nebezpechni-napriamky-mapa-3158906.html",
-      "domain": "tsn.ua",
-      "seenAt": "2026-08-31T06:45:00.000Z",
+      "url": "https://glavcom.ua/world/world-politics/rosija-mozhe-pereviriti-nato-cherez-moldovu-wp-1140668.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-09-04T03:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/e9f860d9d5e1758a.webp",
-      "original": "Війна в Україні : росіяни рвуться до Харкова , де наступає РФ",
+      "original": "Росія може перевірити НАТО через Молдову – WP",
       "title": {
-        "uk": "Війна в Україні: росіяни рвуться до Харкова, де наступає РФ",
-        "en": "War in Ukraine: Russians pushing toward Kharkiv as Russia advances",
-        "ru": "Война в Украине: россияне рвутся к Харькову, наступление РФ продолжается"
+        "uk": "Росія може перевірити НАТО через Молдову — WP",
+        "en": "Russia may test NATO through Moldova — WP",
+        "ru": "Россия может проверить НАТО через Молдову — WP"
       }
     },
     {
-      "url": "https://www.topky.sk/cl/11/9484637/MIMORIADNY-ONLINE-Rusko-chysta-sabotaz-v-Dansku--Tercom-su-firmy-pomahajuce-Ukrajine",
-      "domain": "topky.sk",
-      "seenAt": "2026-09-03T05:15:00.000Z",
-      "sourceCountry": "Slovak Republic",
-      "image": "/news/ab74395a530074b4.webp",
-      "original": "Rusko plánuje sabotáž v Dánsku",
+      "url": "https://www.kyivpost.com/post/83531",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-09-02T04:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/cd86ed4d56023754.webp",
+      "original": "Putin Praises Iran Amid US War , Pledges Moscow Support",
       "title": {
-        "uk": "Росія планує диверсію в Данії",
-        "en": "Russia plans sabotage in Denmark",
-        "ru": "Россия планирует диверсию в Дании"
+        "uk": "Путін похвалив Іран на тлі війни зі США та пообіцяв підтримку Москви",
+        "en": "Putin praises Iran amid US war, pledges Moscow support",
+        "ru": "Путин похвалил Иран на фоне войны с США и пообещал поддержку Москвы"
+      }
+    },
+    {
+      "url": "https://www.freemalaysiatoday.com/category/world/2026/09/03/putin-denies-plan-for-new-russia-military-call-up",
+      "domain": "freemalaysiatoday.com",
+      "seenAt": "2026-09-03T14:00:00.000Z",
+      "sourceCountry": "Malaysia",
+      "image": "/news/01b21040a64ba7f6.webp",
+      "original": "Putin denies plan for new Russian military call up",
+      "title": {
+        "uk": "Путін заперечив плани нового військового призову в Росії",
+        "en": "Putin denies plan for new Russian military call-up",
+        "ru": "Путин отверг планы нового военного призыва в России"
       }
     }
   ]
