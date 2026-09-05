@@ -1,95 +1,107 @@
 {
-  "asOf": "2026-09-04",
+  "asOf": "2026-09-05",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://kyivindependent.com/russia-planning-operation-in-northern-ukraine-including-kyiv-military-says/",
-      "domain": "kyivindependent.com",
-      "seenAt": "2026-08-29T18:15:00.000Z",
-      "sourceCountry": "",
-      "image": "/news/f6dc3e6a1edcc107.webp",
-      "original": "Russia planning operation in northern Ukraine , including Kyiv , military says",
-      "title": {
-        "uk": "Росія планує операцію на півночі України, включно з Києвом, — повідомляють військові",
-        "en": "Russia planning operation in northern Ukraine, including Kyiv, military says",
-        "ru": "Россия планирует операцию на севере Украины, включая Киев, — сообщают военные"
-      }
-    },
-    {
-      "url": "https://www.irishtimes.com/world/europe/2026/08/29/russian-strike-on-warehouse-near-kyiv-causes-detonation-killing-27/",
-      "domain": "irishtimes.com",
-      "seenAt": "2026-08-29T13:30:00.000Z",
-      "sourceCountry": "Ireland",
-      "image": "/news/4b5756ad367068ea.webp",
-      "original": "Almost 40 killed in Russian attack on Kyiv region",
-      "title": {
-        "uk": "Майже 40 людей загинули внаслідок російського удару по Київській області",
-        "en": "Almost 40 killed in Russian attack on Kyiv region",
-        "ru": "Почти 40 человек погибли в результате российского удара по Киевской области"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/83360",
+      "url": "https://www.kyivpost.com/post/83824",
       "domain": "kyivpost.com",
-      "seenAt": "2026-08-30T11:00:00.000Z",
+      "seenAt": "2026-09-05T09:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/1f9e78bb5384b04e.webp",
-      "original": "CIA Chief Proposed Trump - Putin - Zelensky Summit",
+      "image": "/news/9a0948d345d292ea.webp",
+      "original": "Combat Continues as Russia Rejects Ceasefire",
       "title": {
-        "uk": "Директор ЦРУ запропонував провести саміт Трамп–Путін–Зеленський",
-        "en": "CIA chief proposed Trump-Putin-Zelensky summit",
-        "ru": "Директор ЦРУ предложил провести саммит Трамп–Путин–Зеленский"
+        "uk": "Бойові дії тривають: Росія відхилила пропозицію про припинення вогню",
+        "en": "Combat Continues as Russia Rejects Ceasefire",
+        "ru": "Боевые действия продолжаются: Россия отвергла предложение о прекращении огня"
       }
     },
     {
-      "url": "https://nypost.com/2026/08/29/world-news/kremlin-says-ukraine-peace-talks-on-deep-pause/",
-      "domain": "nypost.com",
-      "seenAt": "2026-08-29T22:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/53446400da453263.webp",
-      "original": "Kremlin says Ukraine peace talks on  deep pause",
+      "url": "https://www.thejournal.ie/trump-kushner-witkoff-russia-ukraine-new-plan-to-end-war-7153363-Sep2026/",
+      "domain": "thejournal.ie",
+      "seenAt": "2026-09-05T07:45:00.000Z",
+      "sourceCountry": "Ireland",
+      "image": "/news/bccb8128bb7be4e7.webp",
+      "original": "Trump envoys Kushner and Witkoff head to Russia and Ukraine with new plan to end war",
       "title": {
-        "uk": "Кремль заявив, що мирні переговори щодо України перебувають у «глибокій паузі»",
-        "en": "Kremlin says Ukraine peace talks on 'deep pause'",
-        "ru": "Кремль заявил, что мирные переговоры по Украине находятся в «глубокой паузе»"
+        "uk": "Посланці Трампа Кушнер і Віткофф їдуть до Росії та України з новим планом завершення війни",
+        "en": "Trump Envoys Kushner and Witkoff Head to Russia and Ukraine with New Plan to End War",
+        "ru": "Посланники Трампа Кушнер и Виткофф едут в Россию и Украину с новым планом завершения войны"
       }
     },
     {
-      "url": "https://www.livemint.com/global/ukraines-next-goal-is-to-shut-down-russia-s-commercial-airspace-11788491106009.html",
-      "domain": "livemint.com",
-      "seenAt": "2026-09-04T04:00:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/60ba283d36555d8c.webp",
-      "original": "Ukraine next goal is to shut down Russia commercial airspace",
-      "title": {
-        "uk": "Наступна мета України — закрити комерційний повітряний простір Росії",
-        "en": "Ukraine's next goal is to shut down Russia's commercial airspace",
-        "ru": "Следующая цель Украины — закрыть коммерческое воздушное пространство России"
-      }
-    },
-    {
-      "url": "https://www.hindustantimes.com/world-news/the-ukraine-war-is-intensifying-expanding-and-stuck-101788337967627.html",
-      "domain": "hindustantimes.com",
-      "seenAt": "2026-09-02T10:15:00.000Z",
-      "sourceCountry": "India",
-      "original": "The Ukraine war is intensifying , expanding and stuck",
-      "title": {
-        "uk": "Війна в Україні загострюється, розширюється та зайшла в глухий кут",
-        "en": "The Ukraine war is intensifying, expanding and stuck",
-        "ru": "Война в Украине обостряется, расширяется и зашла в тупик"
-      }
-    },
-    {
-      "url": "https://korrespondent.net/ukraine/4908040-henshtab-nazval-potery-rossyy-v-avhuste",
-      "domain": "korrespondent.net",
-      "seenAt": "2026-09-01T16:00:00.000Z",
+      "url": "https://glavcom.ua/country/incidents/tisha-ne-lishe-v-nebi-budanov-rozkriv-shcho-ukrajina-proponuvala-rosiji-1140948.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-09-05T10:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/c731ce8eea2248f2.webp",
-      "original": "Генштаб назвал потери России в августе",
+      "original": "Україна пропонувала Путіну припинити бої на фронті під час візиту посланців Трампа",
       "title": {
-        "uk": "Генштаб назвав втрати Росії у серпні",
-        "en": "General Staff announces Russia's losses in August",
-        "ru": "Генштаб назвал потери России в августе"
+        "uk": "Україна пропонувала Путіну припинити бої на фронті під час візиту посланців Трампа",
+        "en": "Ukraine Proposed that Putin Halt Frontline Fighting During Trump Envoys' Visit",
+        "ru": "Украина предлагала Путину прекратить бои на фронте во время визита посланников Трампа"
+      }
+    },
+    {
+      "url": "https://www.obozrevatel.com/politics-news/putin-usilil-udaryi-po-ukraine-posle-tajnogo-vizita-direktora-tsru-media.htm",
+      "domain": "obozrevatel.com",
+      "seenAt": "2026-09-05T01:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Путин усилил атаки по Украине после визита в Москву главы ЦРУ Джона Ретклиффа - WP",
+      "title": {
+        "uk": "Путін посилив удари по Україні після візиту до Москви директора ЦРУ Джона Ретклліфа — WP",
+        "en": "Putin Intensified Strikes on Ukraine After CIA Director John Ratcliffe's Visit to Moscow — WP",
+        "ru": "Путин усилил удары по Украине после визита в Москву директора ЦРУ Джона Рэтклиффа — WP"
+      }
+    },
+    {
+      "url": "https://www.notimerica.com/politica/noticia-ucrania-oiea-anuncia-alto-fuego-entorno-central-nuclear-zaporiyia-permitir-reparaciones-20260905104930.html",
+      "domain": "notimerica.com",
+      "seenAt": "2026-09-05T09:45:00.000Z",
+      "sourceCountry": "Colombia",
+      "image": "/news/0761188e3886e1f9.webp",
+      "original": "Ucrania .- El OIEA anuncia un alto el fuego en el entorno de la central nuclear de Zaporiyia para permitir reparaciones",
+      "title": {
+        "uk": "МАГАТЕ оголошує про припинення вогню навколо Запорізької АЕС для проведення ремонтних робіт",
+        "en": "IAEA Announces Ceasefire Around Zaporizhzhia Nuclear Plant to Allow Repairs",
+        "ru": "МАГАТЭ объявляет о прекращении огня вокруг Запорожской АЭС для проведения ремонтных работ"
+      }
+    },
+    {
+      "url": "https://interfax.com.ua/news/general/1198680.html",
+      "domain": "interfax.com.ua",
+      "seenAt": "2026-09-04T13:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/8fdfaa4656f0403b.webp",
+      "original": "Буданов : переговори про завершення війни можуть відновитися наприкінці вересня , але припинення вогню навряд чи буде до весни – NYT",
+      "title": {
+        "uk": "Буданов: переговори про завершення війни можуть відновитися наприкінці вересня, але припинення вогню навряд чи буде до весни — NYT",
+        "en": "Budanov: War-Ending Talks May Resume Late September, but Ceasefire Unlikely Before Spring — NYT",
+        "ru": "Буданов: переговоры о завершении войны могут возобновиться в конце сентября, но прекращение огня вряд ли наступит до весны — NYT"
+      }
+    },
+    {
+      "url": "https://24tv.ua/budanov-mig-zustritisya-putinim-moskvi-rosiya-zrobila-nespodivanu_n3136156",
+      "domain": "24tv.ua",
+      "seenAt": "2026-09-04T16:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/5a038f7d49b61e2e.webp",
+      "original": "Буданов міг зустрітися з Путіним у Москві - Росія зробила несподівану пропозицію",
+      "title": {
+        "uk": "Буданов міг зустрітися з Путіним у Москві — Росія зробила несподівану пропозицію",
+        "en": "Budanov May Have Met Putin in Moscow — Russia Made an Unexpected Proposal",
+        "ru": "Буданов мог встретиться с Путиным в Москве — Россия сделала неожиданное предложение"
+      }
+    },
+    {
+      "url": "https://tsn.ua/ukrayina/budanov-ziznavsia-u-tayemnykh-kontaktakh-iz-hru-ta-pryhozynym-shcho-vidbuvalosia-za-lashtunkamy-3162347.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-09-04T16:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/86e991a0f503ca52.webp",
+      "original": "Буданов про контакти з РФ розкрив деталі розмов із ГРУ та Пригожиним під час війни Укрaїнa",
+      "title": {
+        "uk": "Буданов розкрив деталі контактів із ГРУ та Пригожиним під час війни",
+        "en": "Budanov Reveals Details of Contacts with the GRU and Prigozhin During the War",
+        "ru": "Буданов раскрыл детали контактов с ГРУ и Пригожиным во время войны"
       }
     },
     {
@@ -100,34 +112,20 @@
       "original": "Росія може перевірити НАТО через Молдову – WP",
       "title": {
         "uk": "Росія може перевірити НАТО через Молдову — WP",
-        "en": "Russia may test NATO through Moldova — WP",
+        "en": "Russia May Test NATO Through Moldova — WP",
         "ru": "Россия может проверить НАТО через Молдову — WP"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/83531",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-02T04:30:00.000Z",
+      "url": "https://war.obozrevatel.com/ukr/zsu-prosunulisya-odrazu-na-kilkoh-napryamkah-karti-isw.htm",
+      "domain": "war.obozrevatel.com",
+      "seenAt": "2026-09-05T09:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/cd86ed4d56023754.webp",
-      "original": "Putin Praises Iran Amid US War , Pledges Moscow Support",
+      "original": "Ситуація на фронті - ЗСУ просунулися на кількох напрямках - карти",
       "title": {
-        "uk": "Путін похвалив Іран на тлі війни зі США та пообіцяв підтримку Москви",
-        "en": "Putin praises Iran amid US war, pledges Moscow support",
-        "ru": "Путин похвалил Иран на фоне войны с США и пообещал поддержку Москвы"
-      }
-    },
-    {
-      "url": "https://www.freemalaysiatoday.com/category/world/2026/09/03/putin-denies-plan-for-new-russia-military-call-up",
-      "domain": "freemalaysiatoday.com",
-      "seenAt": "2026-09-03T14:00:00.000Z",
-      "sourceCountry": "Malaysia",
-      "image": "/news/01b21040a64ba7f6.webp",
-      "original": "Putin denies plan for new Russian military call up",
-      "title": {
-        "uk": "Путін заперечив плани нового військового призову в Росії",
-        "en": "Putin denies plan for new Russian military call-up",
-        "ru": "Путин отверг планы нового военного призыва в России"
+        "uk": "Ситуація на фронті: ЗСУ просунулися на кількох напрямках — карти",
+        "en": "Front Situation: Ukrainian Forces Advanced in Several Directions — Maps",
+        "ru": "Ситуация на фронте: ВСУ продвинулись по нескольким направлениям — карты"
       }
     }
   ]
