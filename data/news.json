@@ -1,131 +1,132 @@
 {
-  "asOf": "2026-09-05",
+  "asOf": "2026-09-07",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.kyivpost.com/post/83824",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-05T09:45:00.000Z",
+      "url": "https://time.com/article/2026/09/05/putin-pauses-strikes-kyiv-trump-envoys-visit-russia-ukraine/",
+      "domain": "time.com",
+      "seenAt": "2026-09-05T18:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/0b21039c06ac7bd1.webp",
+      "original": "Putin Pauses Strikes on Kyiv as Trump Envoys Visit Russia and Ukraine",
+      "title": {
+        "uk": "Путін зупинив удари по Києву під час візиту посланців Трампа до Росії та України",
+        "en": "Putin Pauses Strikes on Kyiv as Trump Envoys Visit Russia and Ukraine",
+        "ru": "Путин приостановил удары по Киеву на время визита посланников Трампа в Россию и Украину"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/9/5/at-least-5-killed-in-russian-attacks-on-ukraine-as-us-envoys-visit-moscow",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-09-05T11:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/45969404c4da50ed.webp",
+      "original": "At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
+      "title": {
+        "uk": "Щонайменше 5 осіб загинули внаслідок російських атак на Україну під час перебування посланців США в Москві",
+        "en": "At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
+        "ru": "Не менее 5 человек погибли в результате российских атак на Украину во время визита посланников США в Москву"
+      }
+    },
+    {
+      "url": "https://en.interfax.com.ua/news/general/1199216.html",
+      "domain": "en.interfax.com.ua",
+      "seenAt": "2026-09-05T13:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/9a0948d345d292ea.webp",
-      "original": "Combat Continues as Russia Rejects Ceasefire",
+      "image": "/news/26a0619bbf0b09f7.webp",
+      "original": "Budanov : Ukrainian ceasefire proposal conveyed to Russian leadership , no response received",
       "title": {
-        "uk": "Бойові дії тривають: Росія відхилила пропозицію про припинення вогню",
-        "en": "Combat Continues as Russia Rejects Ceasefire",
-        "ru": "Боевые действия продолжаются: Россия отвергла предложение о прекращении огня"
+        "uk": "Буданов: пропозицію України про припинення вогню передано керівництву Росії, відповіді не отримано",
+        "en": "Budanov: Ukrainian ceasefire proposal conveyed to Russian leadership, no response received",
+        "ru": "Буданов: предложение Украины о прекращении огня передано руководству России, ответа не получено"
       }
     },
     {
-      "url": "https://www.thejournal.ie/trump-kushner-witkoff-russia-ukraine-new-plan-to-end-war-7153363-Sep2026/",
-      "domain": "thejournal.ie",
-      "seenAt": "2026-09-05T07:45:00.000Z",
-      "sourceCountry": "Ireland",
-      "image": "/news/bccb8128bb7be4e7.webp",
-      "original": "Trump envoys Kushner and Witkoff head to Russia and Ukraine with new plan to end war",
-      "title": {
-        "uk": "Посланці Трампа Кушнер і Віткофф їдуть до Росії та України з новим планом завершення війни",
-        "en": "Trump Envoys Kushner and Witkoff Head to Russia and Ukraine with New Plan to End War",
-        "ru": "Посланники Трампа Кушнер и Виткофф едут в Россию и Украину с новым планом завершения войны"
-      }
-    },
-    {
-      "url": "https://glavcom.ua/country/incidents/tisha-ne-lishe-v-nebi-budanov-rozkriv-shcho-ukrajina-proponuvala-rosiji-1140948.html",
+      "url": "https://glavcom.ua/country/incidents/putin-visunuv-ssha-shche-zhorstkishij-ultimatum-shchodo-ukrajini-bloomberg-1141127.html",
       "domain": "glavcom.ua",
-      "seenAt": "2026-09-05T10:00:00.000Z",
+      "seenAt": "2026-09-06T16:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Україна пропонувала Путіну припинити бої на фронті під час візиту посланців Трампа",
+      "original": "Путін висунув США ще жорсткіший ультиматум щодо України – Bloomberg",
       "title": {
-        "uk": "Україна пропонувала Путіну припинити бої на фронті під час візиту посланців Трампа",
-        "en": "Ukraine Proposed that Putin Halt Frontline Fighting During Trump Envoys' Visit",
-        "ru": "Украина предлагала Путину прекратить бои на фронте во время визита посланников Трампа"
+        "uk": "Путін висунув США ще жорсткіший ультиматум щодо України — Bloomberg",
+        "en": "Putin presented the US with an even harsher ultimatum on Ukraine — Bloomberg",
+        "ru": "Путин выдвинул США ещё более жёсткий ультиматум по Украине — Bloomberg"
       }
     },
     {
-      "url": "https://www.obozrevatel.com/politics-news/putin-usilil-udaryi-po-ukraine-posle-tajnogo-vizita-direktora-tsru-media.htm",
-      "domain": "obozrevatel.com",
-      "seenAt": "2026-09-05T01:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Путин усилил атаки по Украине после визита в Москву главы ЦРУ Джона Ретклиффа - WP",
-      "title": {
-        "uk": "Путін посилив удари по Україні після візиту до Москви директора ЦРУ Джона Ретклліфа — WP",
-        "en": "Putin Intensified Strikes on Ukraine After CIA Director John Ratcliffe's Visit to Moscow — WP",
-        "ru": "Путин усилил удары по Украине после визита в Москву директора ЦРУ Джона Рэтклиффа — WP"
-      }
-    },
-    {
-      "url": "https://www.notimerica.com/politica/noticia-ucrania-oiea-anuncia-alto-fuego-entorno-central-nuclear-zaporiyia-permitir-reparaciones-20260905104930.html",
-      "domain": "notimerica.com",
-      "seenAt": "2026-09-05T09:45:00.000Z",
-      "sourceCountry": "Colombia",
-      "image": "/news/0761188e3886e1f9.webp",
-      "original": "Ucrania .- El OIEA anuncia un alto el fuego en el entorno de la central nuclear de Zaporiyia para permitir reparaciones",
-      "title": {
-        "uk": "МАГАТЕ оголошує про припинення вогню навколо Запорізької АЕС для проведення ремонтних робіт",
-        "en": "IAEA Announces Ceasefire Around Zaporizhzhia Nuclear Plant to Allow Repairs",
-        "ru": "МАГАТЭ объявляет о прекращении огня вокруг Запорожской АЭС для проведения ремонтных работ"
-      }
-    },
-    {
-      "url": "https://interfax.com.ua/news/general/1198680.html",
-      "domain": "interfax.com.ua",
-      "seenAt": "2026-09-04T13:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/8fdfaa4656f0403b.webp",
-      "original": "Буданов : переговори про завершення війни можуть відновитися наприкінці вересня , але припинення вогню навряд чи буде до весни – NYT",
-      "title": {
-        "uk": "Буданов: переговори про завершення війни можуть відновитися наприкінці вересня, але припинення вогню навряд чи буде до весни — NYT",
-        "en": "Budanov: War-Ending Talks May Resume Late September, but Ceasefire Unlikely Before Spring — NYT",
-        "ru": "Буданов: переговоры о завершении войны могут возобновиться в конце сентября, но прекращение огня вряд ли наступит до весны — NYT"
-      }
-    },
-    {
-      "url": "https://24tv.ua/budanov-mig-zustritisya-putinim-moskvi-rosiya-zrobila-nespodivanu_n3136156",
-      "domain": "24tv.ua",
-      "seenAt": "2026-09-04T16:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/5a038f7d49b61e2e.webp",
-      "original": "Буданов міг зустрітися з Путіним у Москві - Росія зробила несподівану пропозицію",
-      "title": {
-        "uk": "Буданов міг зустрітися з Путіним у Москві — Росія зробила несподівану пропозицію",
-        "en": "Budanov May Have Met Putin in Moscow — Russia Made an Unexpected Proposal",
-        "ru": "Буданов мог встретиться с Путиным в Москве — Россия сделала неожиданное предложение"
-      }
-    },
-    {
-      "url": "https://tsn.ua/ukrayina/budanov-ziznavsia-u-tayemnykh-kontaktakh-iz-hru-ta-pryhozynym-shcho-vidbuvalosia-za-lashtunkamy-3162347.html",
-      "domain": "tsn.ua",
-      "seenAt": "2026-09-04T16:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/86e991a0f503ca52.webp",
-      "original": "Буданов про контакти з РФ розкрив деталі розмов із ГРУ та Пригожиним під час війни Укрaїнa",
-      "title": {
-        "uk": "Буданов розкрив деталі контактів із ГРУ та Пригожиним під час війни",
-        "en": "Budanov Reveals Details of Contacts with the GRU and Prigozhin During the War",
-        "ru": "Буданов раскрыл детали контактов с ГРУ и Пригожиным во время войны"
-      }
-    },
-    {
-      "url": "https://glavcom.ua/world/world-politics/rosija-mozhe-pereviriti-nato-cherez-moldovu-wp-1140668.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-09-04T03:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Росія може перевірити НАТО через Молдову – WP",
-      "title": {
-        "uk": "Росія може перевірити НАТО через Молдову — WP",
-        "en": "Russia May Test NATO Through Moldova — WP",
-        "ru": "Россия может проверить НАТО через Молдову — WP"
-      }
-    },
-    {
-      "url": "https://war.obozrevatel.com/ukr/zsu-prosunulisya-odrazu-na-kilkoh-napryamkah-karti-isw.htm",
+      "url": "https://war.obozrevatel.com/ukr/rosii-potriben-ne-lishe-donbas-v-isw-rozkrili-tsili-armii-putina-karta.htm",
       "domain": "war.obozrevatel.com",
-      "seenAt": "2026-09-05T09:00:00.000Z",
+      "seenAt": "2026-09-07T06:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Ситуація на фронті - ЗСУ просунулися на кількох напрямках - карти",
+      "original": "Вимоги Путіна виходять за межі Донбасу – в ISW розкрили цілі – карта бойових дій в Україні",
       "title": {
-        "uk": "Ситуація на фронті: ЗСУ просунулися на кількох напрямках — карти",
-        "en": "Front Situation: Ukrainian Forces Advanced in Several Directions — Maps",
-        "ru": "Ситуация на фронте: ВСУ продвинулись по нескольким направлениям — карты"
+        "uk": "Вимоги Путіна виходять за межі Донбасу — ISW розкрив цілі",
+        "en": "Putin's demands go beyond Donbas — ISW reveals goals",
+        "ru": "Требования Путина выходят за рамки Донбасса — ISW раскрыл цели"
+      }
+    },
+    {
+      "url": "https://www.unian.ua/politics/vitkoff-i-kushner-u-kiyevi-ne-oznachayut-blizkiy-mir-oficer-13491879.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-09-06T15:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/37e9d11a590839ce.webp",
+      "original": "Віткофф і Кушнер у Києві не означають близький мир",
+      "title": {
+        "uk": "Віткофф і Кушнер у Києві не означають близький мир",
+        "en": "Witkoff and Kushner in Kyiv do not mean peace is near",
+        "ru": "Визит Уиткоффа и Кушнера в Киев не означает скорого мира"
+      }
+    },
+    {
+      "url": "https://lb.ua/world/2026/09/06/764112_tretomu_raundi_peregovoriv_z.html",
+      "domain": "lb.ua",
+      "seenAt": "2026-09-06T18:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b774a079d6da796e.webp",
+      "original": "У переговорах у Києві з США візьмуть участь радники Франції Британії та Німеччини",
+      "title": {
+        "uk": "У переговорах у Києві з США візьмуть участь радники Франції, Британії та Німеччини",
+        "en": "Advisers from France, UK and Germany to participate in Kyiv talks with the US",
+        "ru": "В переговорах в Киеве с США примут участие советники Франции, Великобритании и Германии"
+      }
+    },
+    {
+      "url": "https://zn.ua/ukr/energetics/mahate-zaprovadilo-lokalne-pripinennja-vohnju-dlja-remontu-liniji-zhivlennja-zaes.html",
+      "domain": "zn.ua",
+      "seenAt": "2026-09-05T20:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Запорізька АЕС - МАГАТЕ домовилося про припинення вогню для ремонту - новини енергетики",
+      "title": {
+        "uk": "Запорізька АЕС: МАГАТЕ домовилося про припинення вогню для ремонту",
+        "en": "Zaporizhzhia NPP: IAEA agreed on a ceasefire for repairs",
+        "ru": "Запорожская АЭС: МАГАТЭ договорилось о прекращении огня для проведения ремонта"
+      }
+    },
+    {
+      "url": "https://news.telegraf.com.ua/ukr/ukraina/5949333-kogda-zakonchitsya-voyna-v-ukraine-britanskiy-razvedchik-nazval-god-i-usloviya",
+      "domain": "news.telegraf.com.ua",
+      "seenAt": "2026-09-06T09:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/623b5e4439f1b48a.webp",
+      "original": "Коли закінчиться війна в Україні : британський розвідник назвав рік та умови",
+      "title": {
+        "uk": "Коли закінчиться війна в Україні: британський розвідник назвав рік та умови",
+        "en": "When will the war in Ukraine end: British intelligence officer named the year and conditions",
+        "ru": "Когда закончится война в Украине: британский разведчик назвал год и условия"
+      }
+    },
+    {
+      "url": "https://24tv.ua/pripinennya-vognyu-mozhe-dati-rosiyi-chas-vidnovlennya-yakiy_n3136438",
+      "domain": "24tv.ua",
+      "seenAt": "2026-09-05T12:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/ca2d84d6307ad7c2.webp",
+      "original": "Припинення вогню може дати Росії час на відновлення - який ризик несе замороження фронту",
+      "title": {
+        "uk": "Припинення вогню може дати Росії час на відновлення — який ризик несе замороження фронту",
+        "en": "Ceasefire could give Russia time to recover — what risks does freezing the front line carry",
+        "ru": "Прекращение огня может дать России время для восстановления — какой риск несёт заморозка фронта"
       }
     }
   ]
