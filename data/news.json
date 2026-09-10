@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-09",
+  "asOf": "2026-09-10",
   "source": "gdelt",
   "articles": [
     {
@@ -11,8 +11,34 @@
       "original": "Putin Pauses Strikes on Kyiv as Trump Envoys Visit Russia and Ukraine",
       "title": {
         "uk": "Путін призупинив удари по Києву, поки посланці Трампа відвідують Росію та Україну",
-        "en": "Putin Pauses Strikes on Kyiv as Trump Envoys Visit Russia and Ukraine",
+        "en": "Putin pauses strikes on Kyiv as Trump envoys visit Russia and Ukraine",
         "ru": "Путин приостановил удары по Киеву во время визита посланников Трампа в Россию и Украину"
+      }
+    },
+    {
+      "url": "https://www.dw.com/en/us-envoys-witkoff-and-kushner-hold-ukraine-talks-after-meeting-putin/a-79054779",
+      "domain": "dw.com",
+      "seenAt": "2026-09-06T22:30:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/cbf827c5bd3df1d7.webp",
+      "original": "Witkoff and Kushner hold Ukraine talks after meeting Putin",
+      "title": {
+        "uk": "Віткофф і Кушнер провели переговори щодо України після зустрічі з Путіним",
+        "en": "Witkoff and Kushner hold Ukraine talks after meeting Putin",
+        "ru": "Виткофф и Кушнер провели переговоры по Украине после встречи с Путиным"
+      }
+    },
+    {
+      "url": "https://en.interfax.com.ua/news/general/1199216.html",
+      "domain": "en.interfax.com.ua",
+      "seenAt": "2026-09-05T13:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/26a0619bbf0b09f7.webp",
+      "original": "Budanov : Ukrainian ceasefire proposal conveyed to Russian leadership , no response received",
+      "title": {
+        "uk": "Буданов: пропозицію України щодо припинення вогню передано керівництву Росії, відповіді не надійшло",
+        "en": "Budanov: Ukrainian ceasefire proposal conveyed to Russian leadership, no response received",
+        "ru": "Буданов: предложение Украины о прекращении огня передано руководству России, ответа не последовало"
       }
     },
     {
@@ -23,21 +49,8 @@
       "original": "Путін висунув США ще жорсткіший ультиматум щодо України – Bloomberg",
       "title": {
         "uk": "Путін висунув США ще жорсткіший ультиматум щодо України — Bloomberg",
-        "en": "Putin Issued an Even Harsher Ultimatum to the US on Ukraine — Bloomberg",
+        "en": "Putin presents US with an even harsher ultimatum on Ukraine — Bloomberg",
         "ru": "Путин выдвинул США ещё более жёсткий ультиматум по Украине — Bloomberg"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/83824",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-05T09:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/9a0948d345d292ea.webp",
-      "original": "Combat Continues as Russia Rejects Ceasefire",
-      "title": {
-        "uk": "Бойові дії тривають, оскільки Росія відхилила пропозицію про припинення вогню",
-        "en": "Combat Continues as Russia Rejects Ceasefire",
-        "ru": "Боевые действия продолжаются, так как Россия отвергла предложение о прекращении огня"
       }
     },
     {
@@ -48,8 +61,8 @@
       "original": "Вимоги Путіна виходять за межі Донбасу – в ISW розкрили цілі – карта бойових дій в Україні",
       "title": {
         "uk": "Вимоги Путіна виходять за межі Донбасу — в ISW розкрили цілі",
-        "en": "Putin's Demands Go Beyond Donbas — ISW Reveals Goals",
-        "ru": "Требования Путина выходят за рамки Донбасса — в ISW раскрыли цели"
+        "en": "Putin's demands extend beyond Donbas — ISW reveals goals",
+        "ru": "Требования Путина выходят за пределы Донбасса — в ISW раскрыли цели"
       }
     },
     {
@@ -60,22 +73,9 @@
       "image": "/news/f341927fb7bd11b5.webp",
       "original": "Зеленский :  Окно возможностей  открыто до ноября",
       "title": {
-        "uk": "Зеленський: «Вікно можливостей» відкрите до листопада",
-        "en": "Zelensky: \"Window of Opportunity\" Is Open Until November",
-        "ru": "Зеленский: «Окно возможностей» открыто до ноября"
-      }
-    },
-    {
-      "url": "https://lb.ua/world/2026/09/06/764112_tretomu_raundi_peregovoriv_z.html",
-      "domain": "lb.ua",
-      "seenAt": "2026-09-06T18:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/b774a079d6da796e.webp",
-      "original": "У переговорах у Києві з США візьмуть участь радники Франції Британії та Німеччини",
-      "title": {
-        "uk": "У переговорах у Києві з США візьмуть участь радники Франції, Британії та Німеччини",
-        "en": "Advisers from France, Britain and Germany to Join Kyiv Talks with the US",
-        "ru": "В переговорах в Киеве с США примут участие советники Франции, Британии и Германии"
+        "uk": "Зеленський: «вікно можливостей» відкрите до листопада",
+        "en": "Zelensky: \"Window of opportunities\" is open until November",
+        "ru": "Зеленский: «окно возможностей» открыто до ноября"
       }
     },
     {
@@ -86,9 +86,9 @@
       "image": "/news/a4be6dd6b8ab1074.webp",
       "original": "UK commits £100m to boost Ukraine air defences over winter",
       "title": {
-        "uk": "Велика Британія виділяє £100 млн на посилення протиповітряної оборони України взимку",
-        "en": "UK Commits £100m to Boost Ukraine Air Defences over Winter",
-        "ru": "Великобритания выделяет £100 млн на укрепление противовоздушной обороны Украины зимой"
+        "uk": "Велика Британія виділяє £100 млн на посилення протиповітряної оборони України на зиму",
+        "en": "UK commits £100m to boost Ukraine air defences over winter",
+        "ru": "Великобритания выделяет £100 млн на усиление противовоздушной обороны Украины на зиму"
       }
     },
     {
@@ -98,9 +98,22 @@
       "sourceCountry": "Romania",
       "original": "Rusia a trimis rachete Oreșnik în Belarus",
       "title": {
-        "uk": "Росія відправила ракети «Орєшнік» до Білорусі",
-        "en": "Russia Sends Oreshnik Missiles to Belarus",
+        "uk": "Росія відправила ракети «Орєшник» до Білорусі",
+        "en": "Russia sends Oreshnyk missiles to Belarus",
         "ru": "Россия отправила ракеты «Орешник» в Беларусь"
+      }
+    },
+    {
+      "url": "https://fakti.bg/world/1079803-berlin-preduprejdava-rusia-proizvejda-mnogo-poveche-orajia-otkolkoto-sa-neobhodimi-za-voinata-v-ukraina",
+      "domain": "fakti.bg",
+      "seenAt": "2026-09-09T20:00:00.000Z",
+      "sourceCountry": "Bulgaria",
+      "image": "/news/f4622ec052c86570.webp",
+      "original": "Берлин предупреждава : Русия произвежда много повече оръжия , отколкото са ѝ необходими за войната в Украйна ᐉ Новини от Fakti . bg - Свят",
+      "title": {
+        "uk": "Берлін попереджає: Росія виробляє набагато більше зброї, ніж їй потрібно для війни в Україні",
+        "en": "Berlin warns: Russia is producing far more weapons than it needs for the war in Ukraine",
+        "ru": "Берлин предупреждает: Россия производит намного больше оружия, чем ей нужно для войны в Украине"
       }
     },
     {
@@ -110,22 +123,9 @@
       "sourceCountry": "Ukraine",
       "original": "Запорізька АЕС - МАГАТЕ домовилося про припинення вогню для ремонту - новини енергетики",
       "title": {
-        "uk": "МАГАТЕ домовилося про припинення вогню для ремонту Запорізької АЕС",
-        "en": "IAEA Negotiated a Ceasefire for Repairs at Zaporizhzhia Nuclear Power Plant",
-        "ru": "МАГАТЭ договорилось о прекращении огня для ремонта Запорожской АЭС"
-      }
-    },
-    {
-      "url": "https://www.mediafax.ro/externe/batalia-pentru-donbas-ucraina-se-pregateste-pentru-cele-mai-grele-lupte-ale-anului-23804137",
-      "domain": "mediafax.ro",
-      "seenAt": "2026-09-09T09:45:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/5a62cb8dfe699583.webp",
-      "original": "Bătălia pentru Donbas : Ucraina se pregătește pentru cele mai grele lupte ale anului",
-      "title": {
-        "uk": "Битва за Донбас: Україна готується до найважчих боїв року",
-        "en": "The Battle for Donbas: Ukraine Prepares for the Toughest Battles of the Year",
-        "ru": "Битва за Донбасс: Украина готовится к самым тяжёлым боям года"
+        "uk": "Запорізька АЕС: МАГАТЕ домовилося про припинення вогню для проведення ремонту",
+        "en": "Zaporizhzhia NPP: IAEA brokered a ceasefire for repairs",
+        "ru": "Запорожская АЭС: МАГАТЭ договорилось о прекращении огня для проведения ремонта"
       }
     }
   ]
