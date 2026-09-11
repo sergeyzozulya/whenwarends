@@ -1,20 +1,7 @@
 {
-  "asOf": "2026-09-10",
+  "asOf": "2026-09-11",
   "source": "gdelt",
   "articles": [
-    {
-      "url": "https://time.com/article/2026/09/05/putin-pauses-strikes-kyiv-trump-envoys-visit-russia-ukraine/",
-      "domain": "time.com",
-      "seenAt": "2026-09-05T18:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/0b21039c06ac7bd1.webp",
-      "original": "Putin Pauses Strikes on Kyiv as Trump Envoys Visit Russia and Ukraine",
-      "title": {
-        "uk": "Путін призупинив удари по Києву, поки посланці Трампа відвідують Росію та Україну",
-        "en": "Putin pauses strikes on Kyiv as Trump envoys visit Russia and Ukraine",
-        "ru": "Путин приостановил удары по Киеву во время визита посланников Трампа в Россию и Украину"
-      }
-    },
     {
       "url": "https://www.dw.com/en/us-envoys-witkoff-and-kushner-hold-ukraine-talks-after-meeting-putin/a-79054779",
       "domain": "dw.com",
@@ -29,19 +16,6 @@
       }
     },
     {
-      "url": "https://en.interfax.com.ua/news/general/1199216.html",
-      "domain": "en.interfax.com.ua",
-      "seenAt": "2026-09-05T13:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/26a0619bbf0b09f7.webp",
-      "original": "Budanov : Ukrainian ceasefire proposal conveyed to Russian leadership , no response received",
-      "title": {
-        "uk": "Буданов: пропозицію України щодо припинення вогню передано керівництву Росії, відповіді не надійшло",
-        "en": "Budanov: Ukrainian ceasefire proposal conveyed to Russian leadership, no response received",
-        "ru": "Буданов: предложение Украины о прекращении огня передано руководству России, ответа не последовало"
-      }
-    },
-    {
       "url": "https://glavcom.ua/country/incidents/putin-visunuv-ssha-shche-zhorstkishij-ultimatum-shchodo-ukrajini-bloomberg-1141127.html",
       "domain": "glavcom.ua",
       "seenAt": "2026-09-06T16:30:00.000Z",
@@ -49,7 +23,7 @@
       "original": "Путін висунув США ще жорсткіший ультиматум щодо України – Bloomberg",
       "title": {
         "uk": "Путін висунув США ще жорсткіший ультиматум щодо України — Bloomberg",
-        "en": "Putin presents US with an even harsher ultimatum on Ukraine — Bloomberg",
+        "en": "Putin issues even harsher ultimatum to the US on Ukraine — Bloomberg",
         "ru": "Путин выдвинул США ещё более жёсткий ультиматум по Украине — Bloomberg"
       }
     },
@@ -60,9 +34,9 @@
       "sourceCountry": "Ukraine",
       "original": "Вимоги Путіна виходять за межі Донбасу – в ISW розкрили цілі – карта бойових дій в Україні",
       "title": {
-        "uk": "Вимоги Путіна виходять за межі Донбасу — в ISW розкрили цілі",
-        "en": "Putin's demands extend beyond Donbas — ISW reveals goals",
-        "ru": "Требования Путина выходят за пределы Донбасса — в ISW раскрыли цели"
+        "uk": "Вимоги Путіна виходять за межі Донбасу — ISW розкрив цілі",
+        "en": "Putin's demands go beyond Donbas — ISW reveals goals",
+        "ru": "Требования Путина выходят за пределы Донбасса — ISW раскрыл цели"
       }
     },
     {
@@ -73,9 +47,9 @@
       "image": "/news/f341927fb7bd11b5.webp",
       "original": "Зеленский :  Окно возможностей  открыто до ноября",
       "title": {
-        "uk": "Зеленський: «вікно можливостей» відкрите до листопада",
-        "en": "Zelensky: \"Window of opportunities\" is open until November",
-        "ru": "Зеленский: «окно возможностей» открыто до ноября"
+        "uk": "Зеленський: «Вікно можливостей» відкрите до листопада",
+        "en": "Zelensky: \"Window of opportunity\" is open until November",
+        "ru": "Зеленский: «Окно возможностей» открыто до ноября"
       }
     },
     {
@@ -86,9 +60,9 @@
       "image": "/news/a4be6dd6b8ab1074.webp",
       "original": "UK commits £100m to boost Ukraine air defences over winter",
       "title": {
-        "uk": "Велика Британія виділяє £100 млн на посилення протиповітряної оборони України на зиму",
+        "uk": "Велика Британія виділяє £100 млн на посилення протиповітряної оборони України взимку",
         "en": "UK commits £100m to boost Ukraine air defences over winter",
-        "ru": "Великобритания выделяет £100 млн на усиление противовоздушной обороны Украины на зиму"
+        "ru": "Великобритания выделяет £100 млн на усиление противовоздушной обороны Украины зимой"
       }
     },
     {
@@ -98,9 +72,9 @@
       "sourceCountry": "Romania",
       "original": "Rusia a trimis rachete Oreșnik în Belarus",
       "title": {
-        "uk": "Росія відправила ракети «Орєшник» до Білорусі",
-        "en": "Russia sends Oreshnyk missiles to Belarus",
-        "ru": "Россия отправила ракеты «Орешник» в Беларусь"
+        "uk": "Росія перекинула ракети «Орєшнік» до Білорусі",
+        "en": "Russia has sent Oreshnik missiles to Belarus",
+        "ru": "Россия перебросила ракеты «Орешник» в Беларусь"
       }
     },
     {
@@ -113,7 +87,7 @@
       "title": {
         "uk": "Берлін попереджає: Росія виробляє набагато більше зброї, ніж їй потрібно для війни в Україні",
         "en": "Berlin warns: Russia is producing far more weapons than it needs for the war in Ukraine",
-        "ru": "Берлин предупреждает: Россия производит намного больше оружия, чем ей нужно для войны в Украине"
+        "ru": "Берлин предупреждает: Россия производит гораздо больше оружия, чем ей нужно для войны на Украине"
       }
     },
     {
@@ -126,6 +100,32 @@
         "uk": "Запорізька АЕС: МАГАТЕ домовилося про припинення вогню для проведення ремонту",
         "en": "Zaporizhzhia NPP: IAEA brokered a ceasefire for repairs",
         "ru": "Запорожская АЭС: МАГАТЭ договорилось о прекращении огня для проведения ремонта"
+      }
+    },
+    {
+      "url": "https://www.unian.net/war/bolee-200-kvadratnyh-kilometrov-za-odin-udar-vsu-prepodnesli-rossii-neozhidannyy-syurpriz-13496298.html",
+      "domain": "unian.net",
+      "seenAt": "2026-09-11T05:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/08b09d6143afa322.webp",
+      "original": "Более 200 квадратных километров за один удар : ВСУ преподнесли России неожиданный сюрприз",
+      "title": {
+        "uk": "Понад 200 квадратних кілометрів за один удар: ЗСУ зробили Росії несподіваний сюрприз",
+        "en": "Over 200 square kilometres in one strike: Ukraine's armed forces deliver an unexpected surprise to Russia",
+        "ru": "Более 200 квадратных километров за один удар: ВСУ преподнесли России неожиданный сюрприз"
+      }
+    },
+    {
+      "url": "https://theweek.com/world-news/is-ukraine-losing-the-war-with-russia",
+      "domain": "theweek.com",
+      "seenAt": "2026-09-10T14:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/b36ed942c1386404.webp",
+      "original": "Is Ukraine losing the war with Russia ?",
+      "title": {
+        "uk": "Чи програє Україна війну з Росією?",
+        "en": "Is Ukraine losing the war with Russia?",
+        "ru": "Проигрывает ли Украина войну с Россией?"
       }
     }
   ]
