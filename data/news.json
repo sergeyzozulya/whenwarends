@@ -1,80 +1,81 @@
 {
-  "asOf": "2026-09-12",
+  "asOf": "2026-09-13",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.vanguardngr.com/2026/09/putin-says-european-troop-deployment-in-ukraine-would-be-war-against-russia/",
-      "domain": "vanguardngr.com",
-      "seenAt": "2026-09-11T22:30:00.000Z",
-      "sourceCountry": "Nigeria",
-      "image": "/news/d367ec1d3eee982e.webp",
-      "original": "Putin says European troop deployment in Ukraine would be  war against Russia",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/13/putin-ukraine-nato-russia-forever-war-crime-against-humanity-western-democracies",
+      "domain": "theguardian.com",
+      "seenAt": "2026-09-13T06:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Putin would rather keep killing than admit he lost . As a winter of misery looms in Ukraine , Nato must step in | Simon Tisdall",
       "title": {
-        "uk": "Путін заявив, що розгортання європейських військ в Україні було б «війною проти Росії»",
-        "en": "Putin says European troop deployment in Ukraine would be 'war against Russia'",
-        "ru": "Путин заявил, что развёртывание европейских войск на Украине было бы «войной против России»"
+        "uk": "Путін воліє продовжувати вбивати, ніж визнати поразку. Поки Україні загрожує зима горя, НАТО має втрутитися",
+        "en": "Putin would rather keep killing than admit he lost. As a winter of misery looms in Ukraine, NATO must step in",
+        "ru": "Путин предпочитает продолжать убивать, чем признать поражение. Пока Украине грозит зима горя, НАТО должно вмешаться"
       }
     },
     {
-      "url": "https://glavcom.ua/country/incidents/putin-visunuv-ssha-shche-zhorstkishij-ultimatum-shchodo-ukrajini-bloomberg-1141127.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-09-06T16:30:00.000Z",
+      "url": "https://www.bagnet.org/news/politics/1403257/putin-poluchil-signal-ot-trampa-voynu-mozhno-prodolzhat-beznakazanno-the-hill",
+      "domain": "bagnet.org",
+      "seenAt": "2026-09-12T12:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Путін висунув США ще жорсткіший ультиматум щодо України – Bloomberg",
+      "image": "/news/93c6e99bb5fe734a.webp",
+      "original": "Путин получил сигнал от Трампа : войну можно продолжать безнаказанно – The Hill",
       "title": {
-        "uk": "Путін висунув США ще жорсткіший ультиматум щодо України — Bloomberg",
-        "en": "Putin presented the US with an even harsher ultimatum on Ukraine — Bloomberg",
-        "ru": "Путин выдвинул США ещё более жёсткий ультиматум по Украине — Bloomberg"
+        "uk": "Путін отримав сигнал від Трампа: війну можна продовжувати безкарно — The Hill",
+        "en": "Putin received a signal from Trump: the war can continue with impunity — The Hill",
+        "ru": "Путин получил сигнал от Трампа: войну можно продолжать безнаказанно — The Hill"
       }
     },
     {
-      "url": "https://www.dw.com/en/us-envoys-witkoff-and-kushner-hold-ukraine-talks-after-meeting-putin/a-79054779",
-      "domain": "dw.com",
-      "seenAt": "2026-09-06T22:30:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/cbf827c5bd3df1d7.webp",
-      "original": "Witkoff and Kushner hold Ukraine talks after meeting Putin",
+      "url": "https://www.delfi.lv/46713439/arzemes/120134085/ukrainas-dronu-uzbrukumos-krievija-skarti-militarie-un-rupniecibas-objekti",
+      "domain": "delfi.lv",
+      "seenAt": "2026-09-12T09:30:00.000Z",
+      "sourceCountry": "Latvia",
+      "image": "/news/03615f6e12daa2cf.webp",
+      "original": "Ukrainas dronu uzbrukumos Krievijā skarti militārie un rūpniecības objekti",
       "title": {
-        "uk": "Віткофф і Кушнер провели переговори щодо України після зустрічі з Путіним",
-        "en": "Witkoff and Kushner hold Ukraine talks after meeting Putin",
-        "ru": "Уиткофф и Кушнер провели переговоры по Украине после встречи с Путиным"
+        "uk": "Удари дронів України по Росії вразили військові та промислові об'єкти",
+        "en": "Ukraine's drone strikes in Russia hit military and industrial targets",
+        "ru": "Удары дронов Украины по России поразили военные и промышленные объекты"
       }
     },
     {
-      "url": "https://www.svoboda.org/a/zelenskiy-estj-okno-vozmozhnostey-do-noyabrya/33849455.html",
-      "domain": "svoboda.org",
-      "seenAt": "2026-09-07T20:30:00.000Z",
-      "sourceCountry": "Russia",
-      "image": "/news/f341927fb7bd11b5.webp",
-      "original": "Зеленский :  Окно возможностей  открыто до ноября",
-      "title": {
-        "uk": "Зеленський: «Вікно можливостей» відкрите до листопада",
-        "en": "Zelensky: 'Window of opportunities' is open until November",
-        "ru": "Зеленский: «Окно возможностей» открыто до ноября"
-      }
-    },
-    {
-      "url": "https://fakty.ua/478530-ledyanoj-dush-dlya-teh-kto-zhdal-skorogo-mira-v-ssha-prizvali-gotovitsya-k-zatyazhnoj-vojne",
+      "url": "https://fakty.ua/478525-budanov-raskryl-usloviya-zaversheniya-vojny-na-chto-gotova-ukraina",
       "domain": "fakty.ua",
-      "seenAt": "2026-09-12T06:45:00.000Z",
+      "seenAt": "2026-09-11T16:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Крижаний душ для всіх , хто чекав на швидкий мир",
+      "original": "Буданов розкрив умови завершення війни : на що готова Україна",
       "title": {
-        "uk": "Крижаний душ для всіх, хто чекав на швидкий мир",
-        "en": "A cold shower for all those who were waiting for a quick peace",
-        "ru": "Холодный душ для всех, кто ждал быстрого мира"
+        "uk": "Буданов розкрив умови завершення війни: на що готова Україна",
+        "en": "Budanov revealed the conditions for ending the war: what Ukraine is ready for",
+        "ru": "Буданов раскрыл условия завершения войны: на что готова Украина"
       }
     },
     {
-      "url": "https://www.stiripesurse.ro/rusia-rachete-oresnik-belarus-avertisment-ucraina_3918124",
-      "domain": "stiripesurse.ro",
-      "seenAt": "2026-09-08T04:00:00.000Z",
-      "sourceCountry": "Romania",
-      "original": "Rusia a trimis rachete Oreșnik în Belarus",
+      "url": "https://theweek.com/world-news/is-ukraine-losing-the-war-with-russia",
+      "domain": "theweek.com",
+      "seenAt": "2026-09-10T14:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/b36ed942c1386404.webp",
+      "original": "Is Ukraine losing the war with Russia ?",
       "title": {
-        "uk": "Росія направила ракети «Орєшнік» до Білорусі",
-        "en": "Russia has sent Oreshnik missiles to Belarus",
-        "ru": "Россия отправила ракеты «Орешник» в Белоруссию"
+        "uk": "Чи програє Україна війну з Росією?",
+        "en": "Is Ukraine losing the war with Russia?",
+        "ru": "Проигрывает ли Украина войну с Россией?"
+      }
+    },
+    {
+      "url": "https://fakti.bg/world/1079803-berlin-preduprejdava-rusia-proizvejda-mnogo-poveche-orajia-otkolkoto-sa-neobhodimi-za-voinata-v-ukraina",
+      "domain": "fakti.bg",
+      "seenAt": "2026-09-09T20:00:00.000Z",
+      "sourceCountry": "Bulgaria",
+      "image": "/news/f4622ec052c86570.webp",
+      "original": "Берлин предупреждава : Русия произвежда много повече оръжия , отколкото са ѝ необходими за войната в Украйна ᐉ Новини от Fakti . bg - Свят",
+      "title": {
+        "uk": "Берлін попереджає: Росія виробляє набагато більше зброї, ніж їй потрібно для війни в Україні",
+        "en": "Berlin warns: Russia is producing far more weapons than it needs for the war in Ukraine",
+        "ru": "Берлин предупреждает: Россия производит гораздо больше оружия, чем ей необходимо для войны в Украине"
       }
     },
     {
@@ -85,48 +86,46 @@
       "image": "/news/a4be6dd6b8ab1074.webp",
       "original": "UK commits £100m to boost Ukraine air defences over winter",
       "title": {
-        "uk": "Велика Британія виділяє £100 млн на посилення протиповітряної оборони України взимку",
-        "en": "UK commits £100 million to boost Ukraine's air defences over winter",
-        "ru": "Великобритания выделяет £100 млн на усиление противовоздушной обороны Украины зимой"
+        "uk": "Велика Британія виділяє 100 млн фунтів стерлінгів на зміцнення протиповітряної оборони України на зиму",
+        "en": "UK commits £100 million to boost Ukraine air defences over winter",
+        "ru": "Великобритания выделяет 100 млн фунтов стерлингов на укрепление ПВО Украины на зиму"
       }
     },
     {
-      "url": "https://informer.rs/planeta/vesti/1148874/nemacka-raketa-2000-kilometara-moskva",
-      "domain": "informer.rs",
-      "seenAt": "2026-09-12T03:30:00.000Z",
-      "sourceCountry": "Serbia",
-      "image": "/news/c460479cddcdc047.webp",
-      "original": "Nemačka razvija rakete dometa preko 2 . 000 kilometara , Moskva upozorava da bi njihove baze postale vojne mete",
+      "url": "https://www.illawarramercury.com.au/story/9345703/russia-launches-heavy-attack-on-kyiv-after-ceasefire/",
+      "domain": "illawarramercury.com.au",
+      "seenAt": "2026-09-08T04:30:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/17a2d0de9f1bfb77.webp",
+      "original": "Russia launches heavy attack on Kyiv after ceasefire",
       "title": {
-        "uk": "Німеччина розробляє ракети з дальністю понад 2 000 кілометрів; Москва попереджає, що їхні бази стануть військовими цілями",
-        "en": "Germany developing missiles with range over 2,000 kilometres; Moscow warns their bases would become military targets",
-        "ru": "Германия разрабатывает ракеты дальностью свыше 2 000 километров; Москва предупреждает, что их базы станут военными целями"
+        "uk": "Росія завдала масованого удару по Києву після перемир'я",
+        "en": "Russia launches heavy attack on Kyiv after ceasefire",
+        "ru": "Россия нанесла массированный удар по Киеву после перемирия"
       }
     },
     {
-      "url": "https://24tv.ua/budanov-skazav-yak-zakinchitsya-viyna-ukrayini_n3140443",
-      "domain": "24tv.ua",
-      "seenAt": "2026-09-11T14:30:00.000Z",
+      "url": "https://www.stiripesurse.ro/rusia-rachete-oresnik-belarus-avertisment-ucraina_3918124",
+      "domain": "stiripesurse.ro",
+      "seenAt": "2026-09-08T04:00:00.000Z",
+      "sourceCountry": "Romania",
+      "original": "Rusia a trimis rachete Oreșnik în Belarus",
+      "title": {
+        "uk": "Росія відправила ракети «Орешник» до Білорусі",
+        "en": "Russia has sent Oreshnyk missiles to Belarus",
+        "ru": "Россия отправила ракеты «Орешник» в Беларусь"
+      }
+    },
+    {
+      "url": "https://war.obozrevatel.com/ukr/rosii-potriben-ne-lishe-donbas-v-isw-rozkrili-tsili-armii-putina-karta.htm",
+      "domain": "war.obozrevatel.com",
+      "seenAt": "2026-09-07T06:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/74b9c3bafbb6a1ca.webp",
-      "original": "Буданов сказав , як закінчиться війна в Україні",
+      "original": "Вимоги Путіна виходять за межі Донбасу – в ISW розкрили цілі – карта бойових дій в Україні",
       "title": {
-        "uk": "Буданов сказав, як закінчиться війна в Україні",
-        "en": "Budanov said how the war in Ukraine will end",
-        "ru": "Буданов рассказал, как закончится война на Украине"
-      }
-    },
-    {
-      "url": "https://korrespondent.net/ukraine/4911130-nazvany-potery-rossyy-po-sostoianyui-na-12-sentiabria",
-      "domain": "korrespondent.net",
-      "seenAt": "2026-09-12T05:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/e3b414dec3f5e6a8.webp",
-      "original": "Названы потери России по состоянию на 12 сентября",
-      "title": {
-        "uk": "Названо втрати Росії станом на 12 вересня",
-        "en": "Russia's losses as of 12 September reported",
-        "ru": "Названы потери России по состоянию на 12 сентября"
+        "uk": "Вимоги Путіна виходять за межі Донбасу — ISW розкрив цілі",
+        "en": "Putin's demands go beyond Donbas — ISW reveals his goals",
+        "ru": "Требования Путина выходят за пределы Донбасса — в ISW раскрыли его цели"
       }
     }
   ]
