@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-15",
+  "asOf": "2026-09-16",
   "source": "gdelt",
   "articles": [
     {
@@ -10,22 +10,9 @@
       "image": "/news/fe8ceb1f17d4a858.webp",
       "original": "Budanov : Most realistic option for ending hostilities is along actual frontline , with security guarantees",
       "title": {
-        "uk": "Буданов: найреалістичніший варіант припинення бойових дій — по фактичній лінії фронту з гарантіями безпеки",
-        "en": "Budanov: most realistic option for ending hostilities is along actual frontline, with security guarantees",
-        "ru": "Буданов: наиболее реалистичный вариант прекращения боевых действий — по фактической линии фронта с гарантиями безопасности"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/84060",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-08T23:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/206e528de5949ddc.webp",
-      "original": "Trump , Putin Discuss Ukraine in Hour - Long ,  Extremely Frank  Call",
-      "title": {
-        "uk": "Трамп і Путін обговорили Україну в годинній «вкрай відвертій» розмові",
-        "en": "Trump and Putin discuss Ukraine in hour-long \"extremely frank\" call",
-        "ru": "Трамп и Путин обсудили Украину в часовом «крайне откровенном» разговоре"
+        "uk": "Буданов: Найреалістичніший варіант завершення бойових дій — по фактичній лінії фронту з гарантіями безпеки",
+        "en": "Budanov: Most realistic option for ending hostilities is along the actual frontline, with security guarantees",
+        "ru": "Буданов: Наиболее реалистичный вариант прекращения боевых действий — по фактической линии фронта с гарантиями безопасности"
       }
     },
     {
@@ -35,22 +22,22 @@
       "sourceCountry": "United Kingdom",
       "original": "Putin would rather keep killing than admit he lost . As a winter of misery looms in Ukraine , Nato must step in | Simon Tisdall",
       "title": {
-        "uk": "Путін воліє продовжувати вбивати, ніж визнати поразку. Коли над Україною нависає зима горя, НАТО мусить втрутитися",
-        "en": "Putin would rather keep killing than admit he lost. As a winter of misery looms in Ukraine, NATO must step in",
-        "ru": "Путин предпочитает продолжать убивать, чем признать поражение. Пока над Украиной нависает зима горя, НАТО должно вмешаться"
+        "uk": "Путін воліє продовжувати вбивати, ніж визнати поразку. Поки Україні загрожує зима злиднів, НАТО має втрутитися | Саймон Тіздалл",
+        "en": "Putin would rather keep killing than admit he lost. As a winter of misery looms in Ukraine, NATO must step in | Simon Tisdall",
+        "ru": "Путин предпочтёт продолжать убивать, чем признать поражение. Пока Украине грозит зима лишений, НАТО должно вмешаться | Саймон Тисдалл"
       }
     },
     {
-      "url": "https://gazeta.ua/ru/articles/life/_front-menyaet-dinamiku-rf-davit-v-harkovskoj-oblasti-vsu-vozvraschayut-pozicii-u-limana-isw/1258511",
-      "domain": "gazeta.ua",
-      "seenAt": "2026-09-12T09:15:00.000Z",
+      "url": "https://24tv.ua/zelenskiy-zayaviv-pro-gotovnist-ukrayini-do-energetichnogo-peremirya_n3140932",
+      "domain": "24tv.ua",
+      "seenAt": "2026-09-12T16:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/22b1b815b2b0ecc7.webp",
-      "original": "Фронт в Украине - Россия наступает в Харьковской области и пытается окружить Орехов",
+      "image": "/news/f14d7a2f95d498ec.webp",
+      "original": "Зеленський заявив про готовність України до енергетичного перемир  я з Росією",
       "title": {
-        "uk": "Фронт в Україні: Росія наступає на Харківщині та намагається оточити Оріхів",
-        "en": "Front in Ukraine: Russia advances in Kharkiv region and attempts to encircle Orekhiv",
-        "ru": "Фронт в Украине: Россия наступает в Харьковской области и пытается окружить Орехов"
+        "uk": "Зеленський заявив про готовність України до енергетичного перемир'я з Росією",
+        "en": "Zelensky announced Ukraine's readiness for an energy ceasefire with Russia",
+        "ru": "Зеленский заявил о готовности Украины к энергетическому перемирию с Россией"
       }
     },
     {
@@ -62,8 +49,8 @@
       "original": "Операція ЗСУ в районі Лиману може стати однією з найважливіших наземних кампаній у цій війні The Telegraph",
       "title": {
         "uk": "Операція ЗСУ в районі Лиману може стати однією з найважливіших наземних кампаній у цій війні — The Telegraph",
-        "en": "Ukraine's operation near Lyman could become one of the most important land campaigns in this war — The Telegraph",
-        "ru": "Операция ВСУ в районе Лимана может стать одной из важнейших наземных кампаний в этой войне — The Telegraph"
+        "en": "Ukraine's Armed Forces operation near Lyman could become one of the most important land campaigns of this war — The Telegraph",
+        "ru": "Операция ВСУ в районе Лимана может стать одной из важнейших наземных кампаний этой войны — The Telegraph"
       }
     },
     {
@@ -80,6 +67,32 @@
       }
     },
     {
+      "url": "https://www.dialog.ua/war/ukraina-otkryla-novyy-front-voyny-s-rossiey-v-afrike-cnn.html",
+      "domain": "dialog.ua",
+      "seenAt": "2026-09-12T14:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/156dd63094e525d0.webp",
+      "original": "Украина открыла новый фронт войны с Россией в Африке – CNN",
+      "title": {
+        "uk": "Україна відкрила новий фронт війни з Росією в Африці — CNN",
+        "en": "Ukraine opened a new front in the war with Russia in Africa — CNN",
+        "ru": "Украина открыла новый фронт войны с Россией в Африке — CNN"
+      }
+    },
+    {
+      "url": "https://www.standartnews.com/svyat/mirnoto-sporazumenie-e-pochti-dogovoreno-kashnar-kaza-uslovieto-646768.html",
+      "domain": "standartnews.com",
+      "seenAt": "2026-09-13T06:15:00.000Z",
+      "sourceCountry": "Bulgaria",
+      "image": "/news/381651a10f1b606f.webp",
+      "original": "Мирното споразумение е почти договорено . Къшнър каза условието",
+      "title": {
+        "uk": "Мирна угода майже погоджена — Кушнер назвав умову",
+        "en": "Peace deal is almost agreed — Kushner named the condition",
+        "ru": "Мирное соглашение почти согласовано — Кушнер назвал условие"
+      }
+    },
+    {
       "url": "https://elpais.com/internacional/2026-09-10/amnistia-acusa-de-trata-de-personas-a-rusia-por-reclutar-a-la-fuerza-extranjeros-para-luchar-en-ucrania.html",
       "domain": "elpais.com",
       "seenAt": "2026-09-10T14:15:00.000Z",
@@ -87,47 +100,35 @@
       "image": "/news/51bc21989799030f.webp",
       "original": "Amnistía acusa de trata de personas a Rusia por reclutar a la fuerza extranjeros para luchar en Ucrania",
       "title": {
-        "uk": "Amnesty International звинувачує Росію в торгівлі людьми через примусовий набір іноземців для боротьби в Україні",
+        "uk": "Amnesty International звинувачує Росію у торгівлі людьми через примусовий набір іноземців для участі у війні в Україні",
         "en": "Amnesty International accuses Russia of human trafficking for forcibly recruiting foreigners to fight in Ukraine",
-        "ru": "Amnesty International обвиняет Россию в торговле людьми за принудительный набор иностранцев для участия в войне в Украине"
+        "ru": "Amnesty International обвиняет Россию в торговле людьми в связи с принудительным набором иностранцев для войны в Украине"
       }
     },
     {
-      "url": "https://www.kommersant.ru/doc/8953601",
-      "domain": "kommersant.ru",
-      "seenAt": "2026-09-13T08:15:00.000Z",
-      "sourceCountry": "Russia",
-      "original": "Ушаков : Турция и другие страны готовы предоставить площадки",
-      "title": {
-        "uk": "Ушаков: Туреччина та інші країни готові надати майданчики для переговорів",
-        "en": "Ushakov: Turkey and other countries are ready to provide venues for negotiations",
-        "ru": "Ушаков: Турция и другие страны готовы предоставить площадки для переговоров"
-      }
-    },
-    {
-      "url": "https://korrespondent.net/ukraine/4911130-nazvany-potery-rossyy-po-sostoianyui-na-12-sentiabria",
-      "domain": "korrespondent.net",
-      "seenAt": "2026-09-12T05:45:00.000Z",
+      "url": "https://gazeta.ua/ru/articles/donbas/_za-sutki-na-fronte-proizoshlo-237-boevyh-stolknovenij/1258506",
+      "domain": "gazeta.ua",
+      "seenAt": "2026-09-12T06:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/e3b414dec3f5e6a8.webp",
-      "original": "Названы потери России по состоянию на 12 сентября",
+      "image": "/news/8d356a041a523f12.webp",
+      "original": "Война в Украине - наибольшее количество боевых столкновений зафиксировано на Покровском направлении",
       "title": {
-        "uk": "Названо втрати Росії станом на 12 вересня",
-        "en": "Russia's losses as of September 12 reported",
-        "ru": "Названы потери России по состоянию на 12 сентября"
+        "uk": "Війна в Україні — найбільша кількість бойових зіткнень зафіксована на Покровському напрямку",
+        "en": "War in Ukraine — the highest number of combat clashes recorded on the Pokrovsk direction",
+        "ru": "Война на Украине — наибольшее количество боевых столкновений зафиксировано на Покровском направлении"
       }
     },
     {
-      "url": "https://fraza.ua/weekly-digest-of-events-in-ukraine-september-5-12-2026-briefly-about-the-main-developments/",
-      "domain": "fraza.ua",
-      "seenAt": "2026-09-12T14:00:00.000Z",
+      "url": "https://www.unian.net/war/voyna-v-ukraine-v-velikobritanii-rasskazali-v-kakoy-period-rf-ponesla-naibolshie-poteri-13497267.html",
+      "domain": "unian.net",
+      "seenAt": "2026-09-12T01:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/6d8df03016c25f4b.webp",
-      "original": "Weekly Digest of Events in Ukraine ( September 5 – 12 , 2026 ): briefly about the main developments",
+      "image": "/news/93d049a9a9e607a2.webp",
+      "original": "Война в Украине : в Великобритании рассказали , в какой период РФ понесла наибольшие потери",
       "title": {
-        "uk": "Тижневий огляд подій в Україні (5–12 вересня 2026 року): коротко про головне",
-        "en": "Weekly digest of events in Ukraine (September 5–12, 2026): briefly about the main developments",
-        "ru": "Еженедельный дайджест событий в Украине (5–12 сентября 2026 г.): кратко о главном"
+        "uk": "Війна в Україні: у Великій Британії розповіли, в який період РФ понесла найбільші втрати",
+        "en": "War in Ukraine: Britain revealed in which period Russia suffered its greatest losses",
+        "ru": "Война на Украине: в Великобритании рассказали, в какой период РФ понесла наибольшие потери"
       }
     }
   ]
