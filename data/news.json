@@ -1,82 +1,56 @@
 {
-  "asOf": "2026-09-17",
+  "asOf": "2026-09-18",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.vanguardngr.com/2026/09/putin-says-european-troop-deployment-in-ukraine-would-be-war-against-russia/",
-      "domain": "vanguardngr.com",
-      "seenAt": "2026-09-11T22:30:00.000Z",
-      "sourceCountry": "Nigeria",
-      "image": "/news/d367ec1d3eee982e.webp",
-      "original": "Putin says European troop deployment in Ukraine would be  war against Russia",
+      "url": "https://www.moneycontrol.com/world/putin-says-russia-poses-no-threat-to-europe-but-warns-sending-troops-to-ukraine-will-mean-war-article-14028298.html",
+      "domain": "moneycontrol.com",
+      "seenAt": "2026-09-12T03:30:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/a42e8b287da2b905.webp",
+      "original": "Putin says Russia poses  no threat  to Europe but warns sending troops to Ukraine will mean war",
       "title": {
-        "uk": "Путін заявив, що розгортання європейських військ в Україні стане «війною проти Росії»",
-        "en": "Putin says European troop deployment in Ukraine would be 'war against Russia'",
-        "ru": "Путин заявил, что развёртывание европейских войск на Украине будет «войной против России»"
+        "uk": "Путін заявив, що Росія не становить «загрози» для Європи, але попередив: відправка військ в Україну означатиме війну",
+        "en": "Putin says Russia poses no threat to Europe but warns sending troops to Ukraine will mean war",
+        "ru": "Путин заявил, что Россия не представляет «угрозы» для Европы, но предупредил: отправка войск в Украину будет означать войну"
       }
     },
     {
-      "url": "https://en.interfax.com.ua/news/general/1202675.html",
-      "domain": "en.interfax.com.ua",
-      "seenAt": "2026-09-11T11:45:00.000Z",
+      "url": "https://fakty.ua/478525-budanov-raskryl-usloviya-zaversheniya-vojny-na-chto-gotova-ukraina",
+      "domain": "fakty.ua",
+      "seenAt": "2026-09-11T16:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/fe8ceb1f17d4a858.webp",
-      "original": "Budanov : Most realistic option for ending hostilities is along actual frontline , with security guarantees",
+      "original": "Буданов розкрив умови завершення війни : на що готова Україна",
       "title": {
-        "uk": "Буданов: найреалістичніший варіант припинення бойових дій — по фактичній лінії фронту з гарантіями безпеки",
-        "en": "Budanov: Most realistic option for ending hostilities is along actual frontline, with security guarantees",
-        "ru": "Буданов: наиболее реалистичный вариант прекращения боевых действий — по фактической линии фронта с гарантиями безопасности"
+        "uk": "Буданов розкрив умови завершення війни: на що готова Україна",
+        "en": "Budanov reveals conditions for ending the war: what Ukraine is prepared for",
+        "ru": "Буданов раскрыл условия завершения войны: на что готова Украина"
       }
     },
     {
-      "url": "https://www.radiosvoboda.org/a/news-viyna-rosia-vtraty/33852836.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-09-12T06:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/88f100b6ebedca1e.webp",
-      "original": "Генштаб ЗСУ : втрати особового складу РФ у війні перевищили мільйон 505 тисяч",
+      "url": "https://www.dw.com/es/volidimir-zelenski-se-muestra-en-dw-dispuesto-a-reunirse-con-putin-en-miami/a-79242877",
+      "domain": "dw.com",
+      "seenAt": "2026-09-12T08:15:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/3b698a2b47e3d4e8.webp",
+      "original": "Entrevista : Zelenski dispuesto a reunirse con Putin en Miami",
       "title": {
-        "uk": "Генштаб ЗСУ: втрати особового складу РФ у війні перевищили 1 505 000",
-        "en": "Ukrainian General Staff: Russian personnel losses in the war exceed 1,505,000",
-        "ru": "Генштаб ВСУ: потери личного состава РФ в войне превысили 1 505 000"
+        "uk": "Інтерв'ю: Зеленський готовий зустрітися з Путіним у Маямі",
+        "en": "Interview: Zelensky willing to meet Putin in Miami",
+        "ru": "Интервью: Зеленский готов встретиться с Путиным в Майами"
       }
     },
     {
-      "url": "https://uainfo.org/blognews/1789120661-operatsiya-zsu-v-rayoni-limanu-mozhe-stati-odnieyu-z-nayvazhlivishih.html",
-      "domain": "uainfo.org",
-      "seenAt": "2026-09-11T12:30:00.000Z",
+      "url": "https://ua.korrespondent.net/ukraine/4911031-hur-otsinylo-koly-rosiia-vycherpaie-resursy-dlia-viiny",
+      "domain": "ua.korrespondent.net",
+      "seenAt": "2026-09-11T14:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/05c7fc158512696c.webp",
-      "original": "Операція ЗСУ в районі Лиману може стати однією з найважливіших наземних кампаній у цій війні The Telegraph",
+      "image": "/news/3ff821b17e319af7.webp",
+      "original": "ГУР оцінило , коли Росія вичерпає ресурси для війни",
       "title": {
-        "uk": "Операція ЗСУ в районі Лиману може стати однією з найважливіших наземних кампаній у цій війні — The Telegraph",
-        "en": "Ukraine's operation near Lyman could be one of the most important ground campaigns in this war — The Telegraph",
-        "ru": "Операция ВСУ в районе Лимана может стать одной из важнейших наземных кампаний в этой войне — The Telegraph"
-      }
-    },
-    {
-      "url": "https://war.obozrevatel.com/poteri-rossii-nosyat-strategicheskij-harakter-ukraina-vpervyie-s-2022-goda-provodit-nastuplenie-dayuschee-zametnyie-rezultatyi.htm",
-      "domain": "war.obozrevatel.com",
-      "seenAt": "2026-09-12T08:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Егор Чернев : Потери России носят стратегический характер : Украина впервые с 2022 года проводит наступление , дающее заметные результаты Блоги",
-      "title": {
-        "uk": "Єгор Чернєв: втрати Росії мають стратегічний характер — Україна вперше з 2022 року проводить наступ із помітними результатами",
-        "en": "Ehor Cherniev: Russia's losses are strategic — Ukraine is conducting an offensive with notable results for the first time since 2022",
-        "ru": "Егор Чернев: потери России носят стратегический характер — Украина впервые с 2022 года проводит наступление с заметными результатами"
-      }
-    },
-    {
-      "url": "https://glavred.info/war/putin-gotovit-rossiyu-k-zatyazhnoy-voyne-v-isw-raskryli-novyy-plan-kremlya-10795757.html",
-      "domain": "glavred.info",
-      "seenAt": "2026-09-11T06:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/388b9799a047ca14.webp",
-      "original": "Путин готовит Россию к затяжной войне : в ISW раскрыли новый план Кремля",
-      "title": {
-        "uk": "Путін готує Росію до затяжної війни: в ISW розкрили новий план Кремля",
-        "en": "Putin is preparing Russia for a prolonged war: ISW reveals Kremlin's new plan",
-        "ru": "Путин готовит Россию к затяжной войне: в ISW раскрыли новый план Кремля"
+        "uk": "ГУР оцінило, коли Росія вичерпає ресурси для війни",
+        "en": "Ukrainian military intelligence assessed when Russia will exhaust its war resources",
+        "ru": "ГУР оценило, когда Россия исчерпает ресурсы для войны"
       }
     },
     {
@@ -88,34 +62,47 @@
       "original": "Українські оператори дронів воюють проти росіян у пустелях Африки : CNN розкрив деталі секретних операцій",
       "title": {
         "uk": "Українські оператори дронів воюють проти росіян у пустелях Африки: CNN розкрив деталі секретних операцій",
-        "en": "Ukrainian drone operators fighting Russians in African deserts: CNN reveals details of secret operations",
-        "ru": "Украинские операторы дронов воюют против россиян в пустынях Африки: CNN раскрыл детали тайных операций"
+        "en": "Ukrainian drone operators fight Russians in African deserts: CNN reveals details of secret operations",
+        "ru": "Украинские операторы дронов воюют против россиян в пустынях Африки: CNN раскрыл детали секретных операций"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/84288",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-11T13:15:00.000Z",
+      "url": "https://www.radiosvoboda.org/a/news-viyna-rosia-vtraty/33852836.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-09-12T06:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/abe1406d2b552a3b.webp",
-      "original": "Ukraine Is Losing Its Tech Edge to Russia , Former Google CEO Says",
+      "image": "/news/88f100b6ebedca1e.webp",
+      "original": "Генштаб ЗСУ : втрати особового складу РФ у війні перевищили мільйон 505 тисяч",
       "title": {
-        "uk": "Україна втрачає технологічну перевагу над Росією — колишній генеральний директор Google",
-        "en": "Ukraine is losing its tech edge to Russia, former Google CEO says",
-        "ru": "Украина теряет технологическое преимущество перед Россией, считает бывший генеральный директор Google"
+        "uk": "Генштаб ЗСУ: втрати особового складу РФ у війні перевищили мільйон 505 тисяч",
+        "en": "Ukrainian General Staff: Russian personnel losses in the war exceed 1,505,000",
+        "ru": "Генштаб ВСУ: потери личного состава РФ в войне превысили 1 505 000"
       }
     },
     {
-      "url": "https://kontrakty.ua/article/297255",
-      "domain": "kontrakty.ua",
-      "seenAt": "2026-09-12T18:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/6eb4efa2fe83b0b2.webp",
-      "original": "Зеленський готовий зустрітися з Путіним : президент назвав умову , за якої це станеться",
+      "url": "https://ru.euronews.com/my-europe/2026/09/11/war-in-ukraine-counteroffensive-liman",
+      "domain": "ru.euronews.com",
+      "seenAt": "2026-09-11T14:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/4f4dfe2a0dfedbc2.webp",
+      "original": "Контратака ВСУ под Лиманом : российские  военкоры  заговорили об отходе",
       "title": {
-        "uk": "Зеленський готовий зустрітися з Путіним: президент назвав умову, за якої це станеться",
-        "en": "Zelensky is ready to meet Putin: the president states his condition for such a meeting",
-        "ru": "Зеленский готов встретиться с Путиным: президент назвал условие, при котором это произойдёт"
+        "uk": "Контратака ЗСУ під Лиманом: російські «воєнкори» заговорили про відхід",
+        "en": "Ukrainian counterattack near Lyman: Russian military bloggers speak of retreat",
+        "ru": "Контратака ВСУ под Лиманом: российские «военкоры» заговорили об отходе"
+      }
+    },
+    {
+      "url": "https://www.unian.net/war/voyna-v-ukraine-perezhivaet-tihuyu-revolyuciyu-nazemnyh-dronov-voennye-13497177.html",
+      "domain": "unian.net",
+      "seenAt": "2026-09-12T04:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/b17fe67d8a51b8b5.webp",
+      "original": "Война в Украине переживает тихую революцию наземных дронов – военные",
+      "title": {
+        "uk": "Війна в Україні переживає тиху революцію наземних дронів — військові",
+        "en": "War in Ukraine is experiencing a quiet ground drone revolution — military",
+        "ru": "Война в Украине переживает тихую революцию наземных дронов — военные"
       }
     },
     {
@@ -126,9 +113,22 @@
       "image": "/news/6afaffe7bb6b9a76.webp",
       "original": "Russian nuclear head says Ukraine attacked fuel trucks , endangered Zaporizhzhia plant",
       "title": {
-        "uk": "Голова російського ядерного відомства заявив, що Україна атакувала паливні вантажівки та поставила під загрозу Запорізьку АЕС",
+        "uk": "Глава російського ядерного відомства заявив, що Україна атакувала паливні вантажівки та поставила під загрозу Запорізьку АЕС",
         "en": "Russian nuclear head says Ukraine attacked fuel trucks, endangered Zaporizhzhia plant",
-        "ru": "Глава российского ядерного ведомства заявил, что Украина атаковала топливные грузовики и создала угрозу для Запорожской АЭС"
+        "ru": "Глава российского ядерного ведомства заявил, что Украина атаковала топливные грузовики и создала угрозу Запорожской АЭС"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/84288",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-09-11T13:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/abe1406d2b552a3b.webp",
+      "original": "Ukraine Is Losing Its Tech Edge to Russia , Former Google CEO Says",
+      "title": {
+        "uk": "Колишній генеральний директор Google заявив, що Україна втрачає технологічну перевагу над Росією",
+        "en": "Ukraine is losing its tech edge to Russia, former Google CEO says",
+        "ru": "Бывший генеральный директор Google заявил, что Украина теряет технологическое преимущество над Россией"
       }
     }
   ]
