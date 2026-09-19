@@ -1,108 +1,44 @@
 {
-  "asOf": "2026-09-18",
+  "asOf": "2026-09-19",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.moneycontrol.com/world/putin-says-russia-poses-no-threat-to-europe-but-warns-sending-troops-to-ukraine-will-mean-war-article-14028298.html",
-      "domain": "moneycontrol.com",
-      "seenAt": "2026-09-12T03:30:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/a42e8b287da2b905.webp",
-      "original": "Putin says Russia poses  no threat  to Europe but warns sending troops to Ukraine will mean war",
+      "url": "https://www.rferl.org/a/zelenskyy-putin-trump-miami-g20-war-talks/33853066.html",
+      "domain": "rferl.org",
+      "seenAt": "2026-09-13T00:30:00.000Z",
+      "sourceCountry": "Russia",
+      "image": "/news/fe3314e53232eccd.webp",
+      "original": "Russian Strikes Kill 9 Across Ukraine , As Zelenskyy Offers To Meet Putin At Miami G20",
       "title": {
-        "uk": "Путін заявив, що Росія не становить «загрози» для Європи, але попередив: відправка військ в Україну означатиме війну",
-        "en": "Putin says Russia poses no threat to Europe but warns sending troops to Ukraine will mean war",
-        "ru": "Путин заявил, что Россия не представляет «угрозы» для Европы, но предупредил: отправка войск в Украину будет означать войну"
+        "uk": "Російські удари вбили 9 людей по всій Україні, поки Зеленський пропонує зустрітися з Путіним на G20 в Маямі",
+        "en": "Russian Strikes Kill 9 Across Ukraine, as Zelenskyy Offers to Meet Putin at Miami G20",
+        "ru": "Российские удары убили 9 человек по всей Украине, пока Зеленский предложил встретиться с Путиным на G20 в Майами"
       }
     },
     {
-      "url": "https://fakty.ua/478525-budanov-raskryl-usloviya-zaversheniya-vojny-na-chto-gotova-ukraina",
-      "domain": "fakty.ua",
-      "seenAt": "2026-09-11T16:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Буданов розкрив умови завершення війни : на що готова Україна",
+      "url": "https://www.svoboda.org/a/lavrov-prekrascheniya-ognya-v-ukraine-ne-budet-dazhe-v-sluchae-peregovorov/33853056.html",
+      "domain": "svoboda.org",
+      "seenAt": "2026-09-12T20:00:00.000Z",
+      "sourceCountry": "Russia",
+      "image": "/news/8bb4d48d33802d73.webp",
+      "original": "Лавров : прекращения огня в Украине не будет даже в случае переговоров",
       "title": {
-        "uk": "Буданов розкрив умови завершення війни: на що готова Україна",
-        "en": "Budanov reveals conditions for ending the war: what Ukraine is prepared for",
-        "ru": "Буданов раскрыл условия завершения войны: на что готова Украина"
+        "uk": "Лавров: припинення вогню в Україні не буде навіть у разі переговорів",
+        "en": "Lavrov: There Will Be No Ceasefire in Ukraine Even in the Event of Negotiations",
+        "ru": "Лавров: прекращения огня в Украине не будет даже в случае переговоров"
       }
     },
     {
-      "url": "https://www.dw.com/es/volidimir-zelenski-se-muestra-en-dw-dispuesto-a-reunirse-con-putin-en-miami/a-79242877",
-      "domain": "dw.com",
-      "seenAt": "2026-09-12T08:15:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/3b698a2b47e3d4e8.webp",
-      "original": "Entrevista : Zelenski dispuesto a reunirse con Putin en Miami",
-      "title": {
-        "uk": "Інтерв'ю: Зеленський готовий зустрітися з Путіним у Маямі",
-        "en": "Interview: Zelensky willing to meet Putin in Miami",
-        "ru": "Интервью: Зеленский готов встретиться с Путиным в Майами"
-      }
-    },
-    {
-      "url": "https://ua.korrespondent.net/ukraine/4911031-hur-otsinylo-koly-rosiia-vycherpaie-resursy-dlia-viiny",
-      "domain": "ua.korrespondent.net",
-      "seenAt": "2026-09-11T14:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/3ff821b17e319af7.webp",
-      "original": "ГУР оцінило , коли Росія вичерпає ресурси для війни",
-      "title": {
-        "uk": "ГУР оцінило, коли Росія вичерпає ресурси для війни",
-        "en": "Ukrainian military intelligence assessed when Russia will exhaust its war resources",
-        "ru": "ГУР оценило, когда Россия исчерпает ресурсы для войны"
-      }
-    },
-    {
-      "url": "https://www.unian.ua/world/ukrajinski-operatori-droniv-voyuyut-proti-rosiyan-u-pustelyah-afriki-cnn-rozkriv-detali-sekretnih-operaciy-13497393.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-09-12T10:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/447b89a4a786e328.webp",
-      "original": "Українські оператори дронів воюють проти росіян у пустелях Африки : CNN розкрив деталі секретних операцій",
-      "title": {
-        "uk": "Українські оператори дронів воюють проти росіян у пустелях Африки: CNN розкрив деталі секретних операцій",
-        "en": "Ukrainian drone operators fight Russians in African deserts: CNN reveals details of secret operations",
-        "ru": "Украинские операторы дронов воюют против россиян в пустынях Африки: CNN раскрыл детали секретных операций"
-      }
-    },
-    {
-      "url": "https://www.radiosvoboda.org/a/news-viyna-rosia-vtraty/33852836.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-09-12T06:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/88f100b6ebedca1e.webp",
-      "original": "Генштаб ЗСУ : втрати особового складу РФ у війні перевищили мільйон 505 тисяч",
-      "title": {
-        "uk": "Генштаб ЗСУ: втрати особового складу РФ у війні перевищили мільйон 505 тисяч",
-        "en": "Ukrainian General Staff: Russian personnel losses in the war exceed 1,505,000",
-        "ru": "Генштаб ВСУ: потери личного состава РФ в войне превысили 1 505 000"
-      }
-    },
-    {
-      "url": "https://ru.euronews.com/my-europe/2026/09/11/war-in-ukraine-counteroffensive-liman",
-      "domain": "ru.euronews.com",
-      "seenAt": "2026-09-11T14:30:00.000Z",
+      "url": "https://fortune.com/2026/09/12/europe-peacekeeping-force-ukraine-putin-troops-war-russia/",
+      "domain": "fortune.com",
+      "seenAt": "2026-09-12T18:30:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/4f4dfe2a0dfedbc2.webp",
-      "original": "Контратака ВСУ под Лиманом : российские  военкоры  заговорили об отходе",
+      "image": "/news/f67870ce7de32c0f.webp",
+      "original": "As Europe weighs a Ukraine peacekeeping force , Putin warns sending troops  means a war with Russia",
       "title": {
-        "uk": "Контратака ЗСУ під Лиманом: російські «воєнкори» заговорили про відхід",
-        "en": "Ukrainian counterattack near Lyman: Russian military bloggers speak of retreat",
-        "ru": "Контратака ВСУ под Лиманом: российские «военкоры» заговорили об отходе"
-      }
-    },
-    {
-      "url": "https://www.unian.net/war/voyna-v-ukraine-perezhivaet-tihuyu-revolyuciyu-nazemnyh-dronov-voennye-13497177.html",
-      "domain": "unian.net",
-      "seenAt": "2026-09-12T04:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/b17fe67d8a51b8b5.webp",
-      "original": "Война в Украине переживает тихую революцию наземных дронов – военные",
-      "title": {
-        "uk": "Війна в Україні переживає тиху революцію наземних дронів — військові",
-        "en": "War in Ukraine is experiencing a quiet ground drone revolution — military",
-        "ru": "Война в Украине переживает тихую революцию наземных дронов — военные"
+        "uk": "Поки Європа розглядає введення миротворчих сил в Україну, Путін попереджає, що відправка військ «означає війну з Росією»",
+        "en": "As Europe Weighs a Ukraine Peacekeeping Force, Putin Warns Sending Troops 'Means a War with Russia'",
+        "ru": "Пока Европа рассматривает введение миротворческих сил в Украину, Путин предупреждает, что отправка войск «означает войну с Россией»"
       }
     },
     {
@@ -113,22 +49,85 @@
       "image": "/news/6afaffe7bb6b9a76.webp",
       "original": "Russian nuclear head says Ukraine attacked fuel trucks , endangered Zaporizhzhia plant",
       "title": {
-        "uk": "Глава російського ядерного відомства заявив, що Україна атакувала паливні вантажівки та поставила під загрозу Запорізьку АЕС",
-        "en": "Russian nuclear head says Ukraine attacked fuel trucks, endangered Zaporizhzhia plant",
-        "ru": "Глава российского ядерного ведомства заявил, что Украина атаковала топливные грузовики и создала угрозу Запорожской АЭС"
+        "uk": "Голова ядерного відомства Росії заявив, що Україна атакувала паливні вантажівки та поставила під загрозу Запорізьку АЕС",
+        "en": "Russian Nuclear Head Says Ukraine Attacked Fuel Trucks, Endangered Zaporizhzhia Plant",
+        "ru": "Глава ядерного ведомства России заявил, что Украина атаковала топливные грузовики и поставила под угрозу Запорожскую АЭС"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/84288",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-11T13:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/abe1406d2b552a3b.webp",
-      "original": "Ukraine Is Losing Its Tech Edge to Russia , Former Google CEO Says",
+      "url": "https://www.canberratimes.com.au/story/9349032/ukraine-reports-first-battle-between-naval-drones/",
+      "domain": "canberratimes.com.au",
+      "seenAt": "2026-09-13T05:30:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/e250d005c33dbf8e.webp",
+      "original": "Ukraine reports  first battle  between naval drones",
       "title": {
-        "uk": "Колишній генеральний директор Google заявив, що Україна втрачає технологічну перевагу над Росією",
-        "en": "Ukraine is losing its tech edge to Russia, former Google CEO says",
-        "ru": "Бывший генеральный директор Google заявил, что Украина теряет технологическое преимущество над Россией"
+        "uk": "Україна повідомила про «першу битву» між морськими дронами",
+        "en": "Ukraine Reports 'First Battle' Between Naval Drones",
+        "ru": "Украина сообщила о «первом сражении» между морскими дронами"
+      }
+    },
+    {
+      "url": "https://glavcom.ua/country/incidents/ukrajina-vojuje-proti-rosiji-v-afritsi-detali-sekretnikh-misij-vid-cnn-1142469.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-09-12T13:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Україна воює проти Росії в Африці : деталі секретних місій від CNN",
+      "title": {
+        "uk": "Україна воює проти Росії в Африці: деталі секретних місій від CNN",
+        "en": "Ukraine Is Fighting Russia in Africa: Details of Secret Missions from CNN",
+        "ru": "Украина воюет против России в Африке: детали секретных миссий от CNN"
+      }
+    },
+    {
+      "url": "http://www.merkur.de/politik/rekordreichweite-3200-km-ukraine-krieg-drohnen-treffen-sibirien-zr-94486304.html",
+      "domain": "merkur.de",
+      "seenAt": "2026-09-12T18:30:00.000Z",
+      "sourceCountry": "Germany",
+      "original": "Ukraine - Krieg : Drohnen treffen Sibirien – Rekordreichweite 3200 km",
+      "title": {
+        "uk": "Війна в Україні: дрони вдарили по Сибіру — рекордна дальність 3200 км",
+        "en": "Ukraine War: Drones Strike Siberia — Record Range of 3,200 km",
+        "ru": "Война в Украине: дроны ударили по Сибири — рекордная дальность 3200 км"
+      }
+    },
+    {
+      "url": "https://www.koreaherald.com/article/10871552",
+      "domain": "koreaherald.com",
+      "seenAt": "2026-09-13T03:00:00.000Z",
+      "sourceCountry": "South Korea",
+      "image": "/news/487f323ee680dfdc.webp",
+      "original": "Ukraine braces for harsh winter as Russian attacks hit economy",
+      "title": {
+        "uk": "Україна готується до суворої зими, поки російські атаки б'ють по економіці",
+        "en": "Ukraine Braces for Harsh Winter as Russian Attacks Hit Economy",
+        "ru": "Украина готовится к суровой зиме, пока российские атаки бьют по экономике"
+      }
+    },
+    {
+      "url": "https://24tv.ua/zelenskiy-zayaviv-pro-gotovnist-ukrayini-do-energetichnogo-peremirya_n3140932",
+      "domain": "24tv.ua",
+      "seenAt": "2026-09-12T16:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/f14d7a2f95d498ec.webp",
+      "original": "Зеленський заявив про готовність України до енергетичного перемир  я з Росією",
+      "title": {
+        "uk": "Зеленський заявив про готовність України до енергетичного перемир'я з Росією",
+        "en": "Zelenskyy Announced Ukraine's Readiness for an Energy Truce with Russia",
+        "ru": "Зеленский заявил о готовности Украины к энергетическому перемирию с Россией"
+      }
+    },
+    {
+      "url": "https://kontrakty.ua/article/297254",
+      "domain": "kontrakty.ua",
+      "seenAt": "2026-09-12T18:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/9206b73f250b593e.webp",
+      "original": "Росія почала урізати зарплати бюджетникам заради виплат новим  СВОшникам , - розвідка",
+      "title": {
+        "uk": "Росія почала урізати зарплати бюджетникам заради виплат новим «СВОшникам» — розвідка",
+        "en": "Russia Has Started Cutting Public Sector Salaries to Fund Payments to New Military Recruits — Intelligence",
+        "ru": "Россия начала урезать зарплаты бюджетникам ради выплат новым «СВОшникам» — разведка"
       }
     }
   ]
