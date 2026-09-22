@@ -1,133 +1,134 @@
 {
-  "asOf": "2026-09-20",
+  "asOf": "2026-09-22",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.cbsnews.com/news/ukraine-drone-attack-moscow-russia/",
-      "domain": "cbsnews.com",
-      "seenAt": "2026-09-20T11:30:00.000Z",
+      "url": "https://www.irishtimes.com/world/2026/09/21/ukraine-hits-moscow-with-largest-ever-drone-attack/",
+      "domain": "irishtimes.com",
+      "seenAt": "2026-09-21T09:15:00.000Z",
+      "sourceCountry": "Ireland",
+      "image": "/news/97e1c241102fc55c.webp",
+      "original": "Ukraine hits Moscow with  largest ever  drone attack – The Irish Times",
+      "title": {
+        "uk": "Україна завдала удару по Москві «найбільшою за всю історію» атакою дронів",
+        "en": "Ukraine hits Moscow with 'largest ever' drone attack",
+        "ru": "Украина нанесла удар по Москве «крупнейшей за всю историю» атакой дронов"
+      }
+    },
+    {
+      "url": "https://time.com/article/2026/09/21/what-russia-s-parliamentary-election-results-mean-for-putin-and-the-war/",
+      "domain": "time.com",
+      "seenAt": "2026-09-21T21:15:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/52bb1802d03f830b.webp",
-      "original": "Ukraine launches 1 , 000 drones at Russia , including hundreds fired at Moscow in what mayor describes as  largest ever  attack",
+      "image": "/news/a5fbcd9f8a0a4198.webp",
+      "original": "What Russia Parliamentary Election Results Mean for Putin and the War",
       "title": {
-        "uk": "Україна запустила 1 000 дронів по Росії, зокрема сотні — по Москві: мер назвав це «найбільшою атакою в історії»",
-        "en": "Ukraine launches 1,000 drones at Russia, including hundreds fired at Moscow in what mayor describes as 'largest ever' attack",
-        "ru": "Украина запустила 1 000 дронов по России, в том числе сотни — по Москве: мэр назвал это «крупнейшей атакой в истории»"
+        "uk": "Що означають результати парламентських виборів у Росії для Путіна та війни",
+        "en": "What Russia parliamentary election results mean for Putin and the war",
+        "ru": "Что означают результаты парламентских выборов в России для Путина и войны"
       }
     },
     {
-      "url": "https://www.themoscowtimes.com/2026/09/20/russian-election-cast-as-test-of-support-for-ukraine-war-enters-final-day-a93752",
-      "domain": "themoscowtimes.com",
-      "seenAt": "2026-09-20T07:30:00.000Z",
+      "url": "https://www.rferl.org/a/33860268.html",
+      "domain": "rferl.org",
+      "seenAt": "2026-09-21T11:15:00.000Z",
       "sourceCountry": "Russia",
-      "image": "/news/3a27c2b1e0f8e2c0.webp",
-      "original": "Russian Election , Cast as Test of Support for Ukraine War , Enters Final Day",
+      "image": "/news/03cf1ad665030599.webp",
+      "original": "Russia Announces Election Results Cementing Putin Power ; EU Slams  Veneer Of Democracy",
       "title": {
-        "uk": "Вибори в Росії, подані як перевірка підтримки війни в Україні, входять в останній день",
-        "en": "Russian election, cast as test of support for Ukraine war, enters final day",
-        "ru": "Выборы в России, позиционируемые как проверка поддержки войны в Украине, входят в финальный день"
+        "uk": "Росія оголосила результати виборів, що зміцнюють владу Путіна; ЄС засудив «видимість демократії»",
+        "en": "Russia announces election results cementing Putin's power; EU slams 'veneer of democracy'",
+        "ru": "Россия объявила результаты выборов, закрепляющих власть Путина; ЕС осудил «видимость демократии»"
       }
     },
     {
-      "url": "http://www.jpost.com/international/internationalrussia-ukraine-war/article-909135",
-      "domain": "jpost.com",
-      "seenAt": "2026-09-20T02:45:00.000Z",
-      "sourceCountry": "Israel",
-      "image": "/news/9c37fd13c7492833.webp",
-      "original": "Vladimir Putin prepares Russian draft surge , European hybrid attacks after Duma election",
+      "url": "https://www.theguardian.com/world/2026/sep/22/ukraine-war-briefing-sanctions-must-continue-eus-top-diplomat-stresses-as-russian-attacks-kill-five",
+      "domain": "theguardian.com",
+      "seenAt": "2026-09-22T02:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Ukraine war briefing : Sanctions must continue , EU top diplomat stresses , as Russian attacks kill five | Ukraine",
       "title": {
-        "uk": "Владімір Путін готує нову хвилю мобілізації та гібридні атаки на Європу після виборів до Думи",
-        "en": "Vladimir Putin prepares Russian draft surge, European hybrid attacks after Duma election",
-        "ru": "Владимир Путин готовит новую волну призыва и гибридные атаки на Европу после выборов в Думу"
+        "uk": "Зведення про війну в Україні: санкції мають тривати, наголошує головний дипломат ЄС, тоді як російські удари забрали п'ять життів",
+        "en": "Ukraine war briefing: Sanctions must continue, EU top diplomat stresses, as Russian attacks kill five",
+        "ru": "Сводка по войне в Украине: санкции должны продолжаться, подчёркивает главный дипломат ЕС, пока российские удары унесли пять жизней"
       }
     },
     {
-      "url": "https://interfax.com.ua/news/political/1206991.html",
-      "domain": "interfax.com.ua",
-      "seenAt": "2026-09-20T06:45:00.000Z",
+      "url": "https://www.nzherald.co.nz/world/trump-to-confront-zelenskyy-over-ukraine-strikes-on-russian-oil-refineries/NXDLJQDMVVH43JMACYQ3PWUX3Q/",
+      "domain": "nzherald.co.nz",
+      "seenAt": "2026-09-21T22:15:00.000Z",
+      "sourceCountry": "New Zealand",
+      "image": "/news/95388dc654d7efed.webp",
+      "original": "Trump to confront Zelenskyy over Ukraine strikes on Russian oil refineries",
+      "title": {
+        "uk": "Трамп має намір поставити Зеленському питання щодо ударів України по російських нафтопереробних заводах",
+        "en": "Trump to confront Zelenskyy over Ukraine strikes on Russian oil refineries",
+        "ru": "Трамп намерен поставить Зеленскому вопрос об ударах Украины по российским нефтеперерабатывающим заводам"
+      }
+    },
+    {
+      "url": "https://24tv.ua/ru/rossija-nakaplivaet-ballisticheskoe-oruzhie-dlja-nanesenija-udarov-zimoj-chto-na-jeto-ukazyvaet_n3145924",
+      "domain": "24tv.ua",
+      "seenAt": "2026-09-21T10:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/7a3b8e37f5e2f730.webp",
-      "original": "Кремль намагається викривити ситуацію на полі бою на тлі виборів та генасамблеї ООН – ISW",
+      "image": "/news/71394e77488fcf1f.webp",
+      "original": "Россия накапливает баллистическое оружие для нанесения ударов зимой – что на это указывает",
       "title": {
-        "uk": "Кремль намагається викривити ситуацію на полі бою на тлі виборів та Генасамблеї ООН — ISW",
-        "en": "Kremlin attempting to distort battlefield situation amid elections and UN General Assembly — ISW",
-        "ru": "Кремль пытается исказить ситуацию на поле боя на фоне выборов и Генассамблеи ООН — ISW"
+        "uk": "Росія накопичує балістичне озброєння для ударів узимку — що на це вказує",
+        "en": "Russia is stockpiling ballistic weapons for winter strikes — what points to this",
+        "ru": "Россия накапливает баллистическое оружие для ударов зимой — что на это указывает"
       }
     },
     {
-      "url": "https://ziare.com/razboi-ucraina/ofensiva-operatiunea-vivaldi-sate-eliberare-2036411",
-      "domain": "ziare.com",
-      "seenAt": "2026-09-20T11:45:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/16cc2a39e7b193da.webp",
-      "original": "Operațiunea „ Vivaldi : trupele ucrainene își extind ofensiva în nordul regiunii Donețk . 125 de kilometri pătrați , eliberați",
-      "title": {
-        "uk": "Операція «Вівальді»: українські війська розширюють наступ на півночі Донецької області — звільнено 125 квадратних кілометрів",
-        "en": "Operation \"Vivaldi\": Ukrainian troops expand offensive in northern Donetsk region, 125 square kilometres liberated",
-        "ru": "Операция «Вивальди»: украинские войска расширяют наступление на севере Донецкой области — освобождено 125 квадратных километров"
-      }
-    },
-    {
-      "url": "https://www.lrt.lt/naujienos/pasaulyje/6/3057159/karas-ukrainoje-rusija-desimtys-ukrainos-dronu-smoge-maskvai-ir-kitiems-regionams",
-      "domain": "lrt.lt",
-      "seenAt": "2026-09-20T07:30:00.000Z",
-      "sourceCountry": "Lithuania",
-      "image": "/news/3674fb9d059fc332.webp",
-      "original": "Karas Ukrainoje . Per Rusijos drono smūgį Kyjivo srityje žuvo moteris ir du jos vaikai",
-      "title": {
-        "uk": "Війна в Україні. Внаслідок удару російського дрона на Київщині загинули жінка та двоє її дітей",
-        "en": "War in Ukraine: Woman and her two children killed by Russian drone strike in Kyiv region",
-        "ru": "Война в Украине. В результате удара российского дрона в Киевской области погибли женщина и двое её детей"
-      }
-    },
-    {
-      "url": "https://www.news.at/politik/fico-kritisiert-kriegstreiber-innerhalb-der-nato",
-      "domain": "news.at",
-      "seenAt": "2026-09-20T04:45:00.000Z",
-      "sourceCountry": "Austria",
-      "image": "/news/a576d3aa5e68dd6c.webp",
-      "original": "Fico kritisiert  Kriegstreiber  innerhalb der NATO",
-      "title": {
-        "uk": "Фіцо розкритикував «підбурювачів до війни» всередині НАТО",
-        "en": "Fico criticises \"warmongers\" within NATO",
-        "ru": "Фицо раскритиковал «поджигателей войны» внутри НАТО"
-      }
-    },
-    {
-      "url": "https://www.actualno.com/asia/turcija-predlaga-pomosht-na-rusija-i-ukrajna-za-prekratjavane-na-boevete-v-cherno-more-news_2641322.html",
-      "domain": "actualno.com",
-      "seenAt": "2026-09-20T06:15:00.000Z",
-      "sourceCountry": "Bulgaria",
-      "image": "/news/f7499286c8bbd4d1.webp",
-      "original": "Турция предлага помощ на Русия и Украйна за прекратяване на боевете в Черно море",
-      "title": {
-        "uk": "Туреччина пропонує допомогу Росії та Україні для припинення бойових дій у Чорному морі",
-        "en": "Turkey offers to help Russia and Ukraine end fighting in the Black Sea",
-        "ru": "Турция предлагает помощь России и Украине для прекращения боевых действий в Чёрном море"
-      }
-    },
-    {
-      "url": "https://news.bg/konflikti/daniya-predostavya-na-ukrayna-izvanreden-paket-voenna-pomosht-ot-275-mln-dolara.html",
-      "domain": "news.bg",
-      "seenAt": "2026-09-20T00:00:00.000Z",
-      "sourceCountry": "Bulgaria",
-      "original": "Дания предоставя на Украйна извънреден пакет военна помощ от 275 млн . долара",
-      "title": {
-        "uk": "Данія надає Україні надзвичайний пакет військової допомоги на 275 мільйонів доларів",
-        "en": "Denmark provides Ukraine with emergency military aid package worth $275 million",
-        "ru": "Дания предоставляет Украине экстренный пакет военной помощи на 275 миллионов долларов"
-      }
-    },
-    {
-      "url": "https://vlasti.net/news/368067",
-      "domain": "vlasti.net",
-      "seenAt": "2026-09-20T09:30:00.000Z",
+      "url": "https://24tv.ua/military/operatsiya-vivaldi-zsu-desantuvali-nazemnih-robotiv-dlya-prorivu_n3145512",
+      "domain": "24tv.ua",
+      "seenAt": "2026-09-20T16:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Британські військові попереджають : країна вже в « сірій зоні » війни з Росією – Express / vlasti . net",
+      "image": "/news/5d53ab430459fb66.webp",
+      "original": "Операція Вівальді - ЗСУ десантували наземних роботів для прориву оборони Росії",
       "title": {
-        "uk": "Британські військові попереджають: країна вже у «сірій зоні» війни з Росією",
-        "en": "British military warns the country is already in the \"grey zone\" of war with Russia",
-        "ru": "Британские военные предупреждают: страна уже находится в «серой зоне» войны с Россией"
+        "uk": "Операція «Вівальді»: ЗСУ десантували наземних роботів для прориву оборони Росії",
+        "en": "Operation Vivaldi: Ukrainian forces deployed ground robots to break through Russian defences",
+        "ru": "Операция «Вивальди»: ВСУ высадили наземных роботов для прорыва обороны России"
+      }
+    },
+    {
+      "url": "https://www.dw.com/uk/tureccina-peredala-ukraini-ta-rf-propozicii-sodo-peremira-v-cornomu-mori/a-79360229",
+      "domain": "dw.com",
+      "seenAt": "2026-09-21T16:45:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/036741e1be7aacda.webp",
+      "original": "Туреччина передала пропозиції щодо перемир  я в Чорному морі",
+      "title": {
+        "uk": "Туреччина передала пропозиції щодо перемир'я в Чорному морі",
+        "en": "Turkey conveyed Black Sea ceasefire proposals",
+        "ru": "Турция передала предложения о перемирии в Чёрном море"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/85030",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-09-21T19:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/74093a474921f027.webp",
+      "original": "Russia  Partial Mobilization  Turns 4 : Is Another Draft Coming ?",
+      "title": {
+        "uk": "Чотири роки «часткової мобілізації» в Росії: чи буде новий призов?",
+        "en": "Russia 'partial mobilization' turns 4: is another draft coming?",
+        "ru": "«Частичной мобилизации» в России исполняется 4 года: будет ли новый призыв?"
+      }
+    },
+    {
+      "url": "https://www.radiosvoboda.org/a/news-sumshchyna-rosiya-viyna-trehubov/33859757.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-09-20T16:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/dadb77b5c3d24869.webp",
+      "original": "На Сумщині російські військові зайняли смугу вздовж кордону глибиною до 4 км – Трегубов",
+      "title": {
+        "uk": "На Сумщині російські військові зайняли смугу вздовж кордону глибиною до 4 км — Трегубов",
+        "en": "Russian forces have occupied a strip up to 4 km deep along the border in Sumy region — Trehubov",
+        "ru": "В Сумской области российские военные заняли полосу вдоль границы глубиной до 4 км — Трегубов"
       }
     }
   ]
