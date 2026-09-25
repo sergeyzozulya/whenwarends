@@ -1,133 +1,132 @@
 {
-  "asOf": "2026-09-23",
+  "asOf": "2026-09-25",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.bendigoadvertiser.com.au/story/9356350/russia-pounds-kyiv-hours-after-zelenskiy-trump-talks/",
-      "domain": "bendigoadvertiser.com.au",
-      "seenAt": "2026-09-23T12:30:00.000Z",
-      "sourceCountry": "Australia",
-      "image": "/news/c00e31f9c21a5559.webp",
-      "original": "Russia pounds Kyiv hours after Zelenskiy - Trump talks",
-      "title": {
-        "uk": "Росія завдала ударів по Києву через кілька годин після переговорів Зеленського з Трампом",
-        "en": "Russia pounds Kyiv hours after Zelenskyy-Trump talks",
-        "ru": "Россия наносит удары по Киеву спустя несколько часов после переговоров Зеленского с Трампом"
-      }
-    },
-    {
-      "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-zelenskyy-ready-004330000.html",
-      "domain": "aol.co.uk",
-      "seenAt": "2026-09-23T04:45:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/545c3b1caa3de23b.webp",
-      "original": "Ukraine war briefing : Zelenskyy ready for  energy ceasefire , as Nato warns Putin becoming  increasingly cavalier",
-      "title": {
-        "uk": "Зведення про війну в Україні: Зеленський готовий до «енергетичного перемир'я», НАТО попереджає про дедалі більшу безрозсудність Путіна",
-        "en": "Ukraine war briefing: Zelenskyy ready for energy ceasefire, as NATO warns Putin becoming increasingly cavalier",
-        "ru": "Сводка о войне в Украине: Зеленский готов к «энергетическому перемирию», НАТО предупреждает о нарастающей безрассудности Путина"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/85184",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-23T08:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/e7bd38f4e19aceec.webp",
-      "original": "Rubio to Meet Lavrov at UN After Trump - Zelensky Talks",
-      "title": {
-        "uk": "Рубіо зустрінеться з Лавровим в ООН після переговорів Трампа та Зеленського",
-        "en": "Rubio to meet Lavrov at UN after Trump-Zelensky talks",
-        "ru": "Рубио встретится с Лавровым в ООН после переговоров Трампа и Зеленского"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/85193",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-23T08:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/e073b60019d3a40d.webp",
-      "original": "Stubb :  You Guys Are Not Going to Win Thi – Putin Must Come to the Peace Table",
-      "title": {
-        "uk": "Стубб: «Ви не переможете» — Путін повинен прийти до столу переговорів",
-        "en": "Stubb: \"You guys are not going to win this\" — Putin must come to the peace table",
-        "ru": "Стубб: «Вы не победите» — Путин должен прийти за стол переговоров"
-      }
-    },
-    {
-      "url": "https://www.sbs.com.au/news/article/ukraine-and-us-want-the-war-with-russia-over-by-winter-but-can-it-be-done/gdwbpnm8x",
-      "domain": "sbs.com.au",
-      "seenAt": "2026-09-23T01:00:00.000Z",
-      "sourceCountry": "Australia",
-      "original": "Ukraine and US want the war with Russia over by winter , but can it be done ?",
-      "title": {
-        "uk": "Україна та США хочуть завершити війну з Росією до зими, але чи можливо це?",
-        "en": "Ukraine and US want the war with Russia over by winter, but can it be done?",
-        "ru": "Украина и США хотят завершить войну с Россией до зимы, но возможно ли это?"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/85181",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-23T08:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/1d071459e34dc09a.webp",
-      "original": "7 Takeaways From Zelensky After Trump Meeting",
-      "title": {
-        "uk": "7 висновків зі слів Зеленського після зустрічі з Трампом",
-        "en": "7 takeaways from Zelensky after Trump meeting",
-        "ru": "7 выводов из слов Зеленского после встречи с Трампом"
-      }
-    },
-    {
-      "url": "https://www.unian.ua/world/viyna-v-ukrajini-pyeskov-vidreaguvav-na-propoziciyu-shchodo-timchasovogo-peremir-ya-13507005.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-09-22T15:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/b7c1c11365f46308.webp",
-      "original": "Війна в Україні : Пєсков відреагував на пропозицію щодо тимчасового перемир  я",
-      "title": {
-        "uk": "Війна в Україні: Пєсков відреагував на пропозицію щодо тимчасового перемир'я",
-        "en": "War in Ukraine: Peskov reacts to proposal for temporary ceasefire",
-        "ru": "Война в Украине: Песков отреагировал на предложение о временном перемирии"
-      }
-    },
-    {
-      "url": "https://www.nzherald.co.nz/world/trump-to-confront-zelenskyy-over-ukraine-strikes-on-russian-oil-refineries/NXDLJQDMVVH43JMACYQ3PWUX3Q/",
-      "domain": "nzherald.co.nz",
-      "seenAt": "2026-09-21T22:15:00.000Z",
-      "sourceCountry": "New Zealand",
-      "image": "/news/95388dc654d7efed.webp",
-      "original": "Trump to confront Zelenskyy over Ukraine strikes on Russian oil refineries",
-      "title": {
-        "uk": "Трамп збирається вказати Зеленському на удари по російських нафтопереробних заводах",
-        "en": "Trump to confront Zelenskyy over Ukraine strikes on Russian oil refineries",
-        "ru": "Трамп намерен поднять вопрос ударов Украины по российским нефтеперерабатывающим заводам"
-      }
-    },
-    {
-      "url": "https://time.com/article/2026/09/21/what-russia-s-parliamentary-election-results-mean-for-putin-and-the-war/",
-      "domain": "time.com",
-      "seenAt": "2026-09-21T21:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/a5fbcd9f8a0a4198.webp",
-      "original": "What Russia Parliamentary Election Results Mean for Putin and the War",
-      "title": {
-        "uk": "Що означають результати парламентських виборів у Росії для Путіна і війни",
-        "en": "What Russia parliamentary election results mean for Putin and the war",
-        "ru": "Что означают результаты парламентских выборов в России для Путина и войны"
-      }
-    },
-    {
-      "url": "https://www.investor.bg/a/593-sigurnost-i-otbrana/436921-raytheon-e-gotova-da-dade-tehnologiya-na-raketite-za-patriot-na-kiev",
-      "domain": "investor.bg",
+      "url": "https://timesofindia.indiatimes.com/world/europe/zelenskyy-after-meeting-trump-says-ukraine-ready-for-energy-ceasefire-with-russia/articleshow/134424353.cms",
+      "domain": "timesofindia.indiatimes.com",
       "seenAt": "2026-09-23T05:45:00.000Z",
-      "sourceCountry": "Bulgaria",
-      "original": "Raytheon е готова да даде технология на ракетите за Patriot на Киев",
+      "sourceCountry": "India",
+      "image": "/news/8cb83fea1c2dc604.webp",
+      "original": "Zelenskyy , after meeting Trump , says Ukraine ready for  energy ceasefire  with Russia",
       "title": {
-        "uk": "Raytheon готова передати Києву технологію ракет Patriot",
-        "en": "Raytheon ready to give Patriot missile technology to Kyiv",
-        "ru": "Raytheon готова передать Киеву технологию ракет Patriot"
+        "uk": "Зеленський після зустрічі з Трампом заявив, що Україна готова до «енергетичного перемир'я» з Росією",
+        "en": "Zelenskyy, after meeting Trump, says Ukraine ready for energy ceasefire with Russia",
+        "ru": "Зеленский после встречи с Трампом заявил, что Украина готова к «энергетическому перемирию» с Россией"
+      }
+    },
+    {
+      "url": "https://www.radiosvoboda.org/a/news-rosija-ne-robytyme-pauzy-u-vijni-lavrov/33863006.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-09-23T19:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/082552fbfd9dedd8.webp",
+      "original": "Росія не робитиме паузи у війні заради переговорів – Лавров у Раді безпеки ООН",
+      "title": {
+        "uk": "Росія не робитиме паузи у війні заради переговорів — Лавров у Раді безпеки ООН",
+        "en": "Russia will not pause the war for negotiations — Lavrov at the UN Security Council",
+        "ru": "Россия не будет делать паузы в войне ради переговоров — Лавров в Совете безопасности ООН"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/85271",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-09-24T04:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/8f6f3ad8cbbe2482.webp",
+      "original": "Deadly Kyiv Missile Attack Hits as Ukraine Presses for Ceasefire at UN",
+      "title": {
+        "uk": "Смертоносний ракетний удар по Києву стався, коли Україна домагалася перемир'я в ООН",
+        "en": "Deadly Kyiv missile attack hits as Ukraine presses for ceasefire at UN",
+        "ru": "Смертоносный ракетный удар по Киеву произошёл, когда Украина добивалась прекращения огня в ООН"
+      }
+    },
+    {
+      "url": "https://en.interfax.com.ua/news/general/1208934.html",
+      "domain": "en.interfax.com.ua",
+      "seenAt": "2026-09-23T16:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/e1dda5a2d8f6c418.webp",
+      "original": "Ukraine agrees to full , immediate , unconditional ceasefire , calls on Russia to do same – joint statement by 51 UN member states",
+      "title": {
+        "uk": "Україна погодилася на повне, негайне та беззастережне припинення вогню й закликала Росію зробити те саме — спільна заява 51 держави-члена ООН",
+        "en": "Ukraine agrees to full, immediate, unconditional ceasefire, calls on Russia to do same — joint statement by 51 UN member states",
+        "ru": "Украина согласилась на полное, немедленное и безоговорочное прекращение огня и призвала Россию сделать то же — совместное заявление 51 государства — члена ООН"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/9/23/trump-administration-invites-putin-to-attend-g20-summit-in-miami",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-09-23T21:15:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Trump administration invites Putin to attend G20 summit in Miami",
+      "title": {
+        "uk": "Адміністрація Трампа запросила Путіна взяти участь у саміті G20 в Маямі",
+        "en": "Trump administration invites Putin to attend G20 summit in Miami",
+        "ru": "Администрация Трампа пригласила Путина принять участие в саммите G20 в Майами"
+      }
+    },
+    {
+      "url": "https://fakty.ua/479245-kreml-sdelal-rezkij-shag-posle-predlozheniya-o-peremirii-u-putina-ozvuchili-zhestkuyu-poziciyu",
+      "domain": "fakty.ua",
+      "seenAt": "2026-09-25T05:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Кремль зробив різкий крок після пропозиції про перемир  я",
+      "title": {
+        "uk": "Кремль зробив різкий крок після пропозиції про перемир'я",
+        "en": "Kremlin makes sharp move following ceasefire proposal",
+        "ru": "Кремль сделал резкий шаг после предложения о перемирии"
+      }
+    },
+    {
+      "url": "https://gordonua.com/ukr/section-politics/news-dyplomatyya-yly-adskye-sanktsyy-v-hosdepe-rasskazaly-kak-ssha-khotyat-zavershyt-voynu-v-ukrayne-24-09-2026.html",
+      "domain": "gordonua.com",
+      "seenAt": "2026-09-24T18:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Дипломатія чи  пекельні санкції : у Держдепі розповіли , як США хочуть завершити війну в Україні",
+      "title": {
+        "uk": "Дипломатія чи «пекельні санкції»: у Держдепі розповіли, як США хочуть завершити війну в Україні",
+        "en": "Diplomacy or \"hellish sanctions\": State Department explains how the US wants to end the war in Ukraine",
+        "ru": "Дипломатия или «адские санкции»: в Госдепе рассказали, как США хотят завершить войну на Украине"
+      }
+    },
+    {
+      "url": "https://www.newsbomb.gr/kosmos/story/1765738/mystiki-ypiresia-danias-tous-epomenous-mines-i-rosia-borei-na-epitethei-se-xora-tou-nato",
+      "domain": "newsbomb.gr",
+      "seenAt": "2026-09-24T19:45:00.000Z",
+      "sourceCountry": "Greece",
+      "image": "/news/f8ae0616d83ef509.webp",
+      "original": "Μυστική Υπηρεσία Δανίας : Τους επόμενους μήνες η Ρωσία μπορεί να επιτεθεί σε χώρα του ΝΑΤΟ",
+      "title": {
+        "uk": "Розвідка Данії: Росія може напасти на країну НАТО найближчими місяцями",
+        "en": "Danish intelligence: Russia may attack a NATO country in the coming months",
+        "ru": "Разведка Дании: Россия может напасть на страну НАТО в ближайшие месяцы"
+      }
+    },
+    {
+      "url": "https://www.digi24.ro/stiri/externe/finlanda-si-ucraina-au-semnat-un-acord-major-privind-dronele-alexander-stubb-rusiei-i-ar-putea-lua-ani-sa-cucereasca-donbasul-3961989",
+      "domain": "digi24.ro",
+      "seenAt": "2026-09-24T07:30:00.000Z",
+      "sourceCountry": "Romania",
+      "image": "/news/171133e0d0cc36ff.webp",
+      "original": "Finlanda și Ucraina au semnat un acord major privind dronele . Alexander Stubb : Rusiei i - ar putea lua ani să cucerească Donbasul",
+      "title": {
+        "uk": "Фінляндія та Україна підписали важливу угоду щодо дронів. Стубб: Росії можуть знадобитися роки, щоб захопити Донбас",
+        "en": "Finland and Ukraine sign major drone agreement. Stubb: It could take Russia years to conquer Donbas",
+        "ru": "Финляндия и Украина подписали крупное соглашение по дронам. Стубб: России могут понадобиться годы, чтобы захватить Донбасс"
+      }
+    },
+    {
+      "url": "https://glavred.info/world/rf-gotovit-mobilizaciyu-i-novoe-nastuplenie-makron-raskryl-cel-kremlya-10799147.html",
+      "domain": "glavred.info",
+      "seenAt": "2026-09-24T23:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/970a575922bcac92.webp",
+      "original": "РФ готовит мобилизацию и новое наступление : Макрон раскрыл цель Кремля",
+      "title": {
+        "uk": "РФ готує мобілізацію та новий наступ: Макрон розкрив мету Кремля",
+        "en": "Russia prepares mobilisation and new offensive: Macron reveals Kremlin's goal",
+        "ru": "РФ готовит мобилизацию и новое наступление: Макрон раскрыл цель Кремля"
       }
     }
   ]
