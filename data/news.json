@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-25",
+  "asOf": "2026-09-26",
   "source": "gdelt",
   "articles": [
     {
@@ -11,7 +11,7 @@
       "original": "Zelenskyy , after meeting Trump , says Ukraine ready for  energy ceasefire  with Russia",
       "title": {
         "uk": "Зеленський після зустрічі з Трампом заявив, що Україна готова до «енергетичного перемир'я» з Росією",
-        "en": "Zelenskyy, after meeting Trump, says Ukraine ready for energy ceasefire with Russia",
+        "en": "Zelenskyy, after meeting Trump, says Ukraine ready for 'energy ceasefire' with Russia",
         "ru": "Зеленский после встречи с Трампом заявил, что Украина готова к «энергетическому перемирию» с Россией"
       }
     },
@@ -25,7 +25,7 @@
       "title": {
         "uk": "Росія не робитиме паузи у війні заради переговорів — Лавров у Раді безпеки ООН",
         "en": "Russia will not pause the war for negotiations — Lavrov at the UN Security Council",
-        "ru": "Россия не будет делать паузы в войне ради переговоров — Лавров в Совете безопасности ООН"
+        "ru": "Россия не будет делать паузу в войне ради переговоров — Лавров в Совете Безопасности ООН"
       }
     },
     {
@@ -36,9 +36,9 @@
       "image": "/news/8f6f3ad8cbbe2482.webp",
       "original": "Deadly Kyiv Missile Attack Hits as Ukraine Presses for Ceasefire at UN",
       "title": {
-        "uk": "Смертоносний ракетний удар по Києву стався, коли Україна домагалася перемир'я в ООН",
+        "uk": "Смертоносний ракетний удар по Києву стався, поки Україна домагалася припинення вогню в ООН",
         "en": "Deadly Kyiv missile attack hits as Ukraine presses for ceasefire at UN",
-        "ru": "Смертоносный ракетный удар по Киеву произошёл, когда Украина добивалась прекращения огня в ООН"
+        "ru": "Смертоносный ракетный удар по Киеву произошёл в момент, когда Украина добивалась прекращения огня в ООН"
       }
     },
     {
@@ -49,9 +49,22 @@
       "image": "/news/e1dda5a2d8f6c418.webp",
       "original": "Ukraine agrees to full , immediate , unconditional ceasefire , calls on Russia to do same – joint statement by 51 UN member states",
       "title": {
-        "uk": "Україна погодилася на повне, негайне та беззастережне припинення вогню й закликала Росію зробити те саме — спільна заява 51 держави-члена ООН",
+        "uk": "Україна погоджується на повне, негайне та беззастережне припинення вогню і закликає Росію зробити те саме — спільна заява 51 країни-члена ООН",
         "en": "Ukraine agrees to full, immediate, unconditional ceasefire, calls on Russia to do same — joint statement by 51 UN member states",
-        "ru": "Украина согласилась на полное, немедленное и безоговорочное прекращение огня и призвала Россию сделать то же — совместное заявление 51 государства — члена ООН"
+        "ru": "Украина соглашается на полное, немедленное и безоговорочное прекращение огня и призывает Россию сделать то же — совместное заявление 51 государства-члена ООН"
+      }
+    },
+    {
+      "url": "https://uainfo.org/blognews/1790246951-kreml-viddaniy-prodovzhennyu-viyni-rosiya-faktichno-vidhilila.html",
+      "domain": "uainfo.org",
+      "seenAt": "2026-09-24T12:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/839126557267f548.webp",
+      "original": "Кремль відданий продовженню війни : Росія фактично відхилила пропозицію про енергетичне перемир  я",
+      "title": {
+        "uk": "Кремль відданий продовженню війни: Росія фактично відхилила пропозицію про енергетичне перемир'я",
+        "en": "Kremlin committed to continuing the war: Russia effectively rejected the energy ceasefire proposal",
+        "ru": "Кремль привержен продолжению войны: Россия фактически отвергла предложение об энергетическом перемирии"
       }
     },
     {
@@ -61,33 +74,22 @@
       "sourceCountry": "United States",
       "original": "Trump administration invites Putin to attend G20 summit in Miami",
       "title": {
-        "uk": "Адміністрація Трампа запросила Путіна взяти участь у саміті G20 в Маямі",
+        "uk": "Адміністрація Трампа запросила Путіна взяти участь у саміті G20 у Маямі",
         "en": "Trump administration invites Putin to attend G20 summit in Miami",
         "ru": "Администрация Трампа пригласила Путина принять участие в саммите G20 в Майами"
       }
     },
     {
-      "url": "https://fakty.ua/479245-kreml-sdelal-rezkij-shag-posle-predlozheniya-o-peremirii-u-putina-ozvuchili-zhestkuyu-poziciyu",
-      "domain": "fakty.ua",
-      "seenAt": "2026-09-25T05:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Кремль зробив різкий крок після пропозиції про перемир  я",
+      "url": "https://www.lsm.lv/raksts/zinas/arzemes/25.09.2026-ukrainas-izlukdati-krievija-ziema-plano-plasus-triecienus-ukrainas-energetikas-infrastrukturai.a664726/",
+      "domain": "lsm.lv",
+      "seenAt": "2026-09-25T05:45:00.000Z",
+      "sourceCountry": "Latvia",
+      "image": "/news/8715c38e8a56d134.webp",
+      "original": "Ukrainas izlūkdati : Krievija ziemā plāno plašus triecienus Ukrainas enerģētikas infrastruktūrai",
       "title": {
-        "uk": "Кремль зробив різкий крок після пропозиції про перемир'я",
-        "en": "Kremlin makes sharp move following ceasefire proposal",
-        "ru": "Кремль сделал резкий шаг после предложения о перемирии"
-      }
-    },
-    {
-      "url": "https://gordonua.com/ukr/section-politics/news-dyplomatyya-yly-adskye-sanktsyy-v-hosdepe-rasskazaly-kak-ssha-khotyat-zavershyt-voynu-v-ukrayne-24-09-2026.html",
-      "domain": "gordonua.com",
-      "seenAt": "2026-09-24T18:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Дипломатія чи  пекельні санкції : у Держдепі розповіли , як США хочуть завершити війну в Україні",
-      "title": {
-        "uk": "Дипломатія чи «пекельні санкції»: у Держдепі розповіли, як США хочуть завершити війну в Україні",
-        "en": "Diplomacy or \"hellish sanctions\": State Department explains how the US wants to end the war in Ukraine",
-        "ru": "Дипломатия или «адские санкции»: в Госдепе рассказали, как США хотят завершить войну на Украине"
+        "uk": "Розвідка України: Росія планує взимку масштабні удари по енергетичній інфраструктурі України",
+        "en": "Ukrainian intelligence: Russia plans extensive strikes on Ukraine's energy infrastructure in winter",
+        "ru": "Разведка Украины: Россия планирует зимой масштабные удары по энергетической инфраструктуре Украины"
       }
     },
     {
@@ -98,9 +100,9 @@
       "image": "/news/f8ae0616d83ef509.webp",
       "original": "Μυστική Υπηρεσία Δανίας : Τους επόμενους μήνες η Ρωσία μπορεί να επιτεθεί σε χώρα του ΝΑΤΟ",
       "title": {
-        "uk": "Розвідка Данії: Росія може напасти на країну НАТО найближчими місяцями",
+        "uk": "Розвідка Данії: найближчими місяцями Росія може напасти на країну НАТО",
         "en": "Danish intelligence: Russia may attack a NATO country in the coming months",
-        "ru": "Разведка Дании: Россия может напасть на страну НАТО в ближайшие месяцы"
+        "ru": "Разведка Дании: в ближайшие месяцы Россия может напасть на страну НАТО"
       }
     },
     {
@@ -111,22 +113,21 @@
       "image": "/news/171133e0d0cc36ff.webp",
       "original": "Finlanda și Ucraina au semnat un acord major privind dronele . Alexander Stubb : Rusiei i - ar putea lua ani să cucerească Donbasul",
       "title": {
-        "uk": "Фінляндія та Україна підписали важливу угоду щодо дронів. Стубб: Росії можуть знадобитися роки, щоб захопити Донбас",
-        "en": "Finland and Ukraine sign major drone agreement. Stubb: It could take Russia years to conquer Donbas",
-        "ru": "Финляндия и Украина подписали крупное соглашение по дронам. Стубб: России могут понадобиться годы, чтобы захватить Донбасс"
+        "uk": "Фінляндія та Україна підписали велику угоду щодо дронів. Стубб: Росії можуть знадобитися роки, щоб захопити Донбас",
+        "en": "Finland and Ukraine sign major drone agreement. Stubb: It could take Russia years to conquer the Donbas",
+        "ru": "Финляндия и Украина подписали крупное соглашение о дронах. Стубб: России могут потребоваться годы, чтобы завоевать Донбасс"
       }
     },
     {
-      "url": "https://glavred.info/world/rf-gotovit-mobilizaciyu-i-novoe-nastuplenie-makron-raskryl-cel-kremlya-10799147.html",
-      "domain": "glavred.info",
-      "seenAt": "2026-09-24T23:15:00.000Z",
+      "url": "https://gordonua.com/ukr/section-politics/news-dyplomatyya-yly-adskye-sanktsyy-v-hosdepe-rasskazaly-kak-ssha-khotyat-zavershyt-voynu-v-ukrayne-24-09-2026.html",
+      "domain": "gordonua.com",
+      "seenAt": "2026-09-24T18:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/970a575922bcac92.webp",
-      "original": "РФ готовит мобилизацию и новое наступление : Макрон раскрыл цель Кремля",
+      "original": "Дипломатія чи  пекельні санкції : у Держдепі розповіли , як США хочуть завершити війну в Україні",
       "title": {
-        "uk": "РФ готує мобілізацію та новий наступ: Макрон розкрив мету Кремля",
-        "en": "Russia prepares mobilisation and new offensive: Macron reveals Kremlin's goal",
-        "ru": "РФ готовит мобилизацию и новое наступление: Макрон раскрыл цель Кремля"
+        "uk": "Дипломатія чи «пекельні санкції»: у Держдепі розповіли, як США хочуть завершити війну в Україні",
+        "en": "Diplomacy or 'hellish sanctions': State Department reveals how the US wants to end the war in Ukraine",
+        "ru": "Дипломатия или «адские санкции»: в Госдепе рассказали, как США хотят завершить войну на Украине"
       }
     }
   ]
