@@ -1,18 +1,18 @@
 {
-  "asOf": "2026-09-27",
+  "asOf": "2026-09-28",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.kyivpost.com/post/85494",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-27T07:30:00.000Z",
+      "url": "https://www.unian.ua/war/viyna-v-ukrajini-putin-hoche-zmusiti-kijiv-kapitulyuvati-do-vesni-isw-13512003.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-09-28T06:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/cb0f42a4a6efacfb.webp",
-      "original": "Zelensky Says Putin Keeps Finding Excuses to Continue War",
+      "image": "/news/3f05484b4f9ece33.webp",
+      "original": "Війна в Україні : Путін хоче змусити Київ капітулювати до весни , – ISW",
       "title": {
-        "uk": "Зеленський каже, що Путін продовжує шукати приводи для продовження війни",
-        "en": "Zelensky Says Putin Keeps Finding Excuses to Continue War",
-        "ru": "Зеленский говорит, что Путин продолжает искать поводы для продолжения войны"
+        "uk": "Війна в Україні: Путін хоче змусити Київ капітулювати до весни — ISW",
+        "en": "War in Ukraine: Putin wants to force Kyiv to capitulate before spring — ISW",
+        "ru": "Война в Украине: Путин хочет вынудить Киев капитулировать до весны — ISW"
       }
     },
     {
@@ -23,9 +23,35 @@
       "image": "/news/082552fbfd9dedd8.webp",
       "original": "Росія не робитиме паузи у війні заради переговорів – Лавров у Раді безпеки ООН",
       "title": {
-        "uk": "Росія не робитиме паузи у війні заради переговорів — Лавров у Раді безпеки ООН",
+        "uk": "Росія не робитиме паузи у війні заради переговорів — Лавров у Раді Безпеки ООН",
         "en": "Russia will not pause the war for negotiations — Lavrov at the UN Security Council",
-        "ru": "Россия не будет делать паузы в войне ради переговоров — Лавров в Совете безопасности ООН"
+        "ru": "Россия не будет делать паузы в войне ради переговоров — Лавров в Совете Безопасности ООН"
+      }
+    },
+    {
+      "url": "https://en.interfax.com.ua/news/general/1208934.html",
+      "domain": "en.interfax.com.ua",
+      "seenAt": "2026-09-23T16:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/e1dda5a2d8f6c418.webp",
+      "original": "Ukraine agrees to full , immediate , unconditional ceasefire , calls on Russia to do same – joint statement by 51 UN member states",
+      "title": {
+        "uk": "Україна погодилася на повне, негайне та беззастережне припинення вогню і закликала Росію зробити те саме — спільна заява 51 країни — члена ООН",
+        "en": "Ukraine agrees to full, immediate, unconditional ceasefire, calls on Russia to do same — joint statement by 51 UN member states",
+        "ru": "Украина согласилась на полное, немедленное и безоговорочное прекращение огня и призвала Россию сделать то же — совместное заявление 51 государства — члена ООН"
+      }
+    },
+    {
+      "url": "https://www.canberratimes.com.au/story/9356378/russia-ukraine-voiced-interest-in-limited-truce-rubio/",
+      "domain": "canberratimes.com.au",
+      "seenAt": "2026-09-23T21:15:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/8dc8abb3602da65c.webp",
+      "original": "Russia , Ukraine voiced interest in limited truce : Rubio",
+      "title": {
+        "uk": "Росія та Україна висловили зацікавленість в обмеженому перемир'ї — Рубіо",
+        "en": "Russia and Ukraine voiced interest in limited truce — Rubio",
+        "ru": "Россия и Украина выразили заинтересованность в ограниченном перемирии — Рубио"
       }
     },
     {
@@ -36,47 +62,9 @@
       "image": "/news/8cb83fea1c2dc604.webp",
       "original": "Zelenskyy , after meeting Trump , says Ukraine ready for  energy ceasefire  with Russia",
       "title": {
-        "uk": "Зеленський після зустрічі з Трампом заявив, що Україна готова до енергетичного перемир'я з Росією",
+        "uk": "Зеленський після зустрічі з Трампом заявив, що Україна готова до «енергетичного перемир'я» з Росією",
         "en": "Zelenskyy, after meeting Trump, says Ukraine ready for energy ceasefire with Russia",
-        "ru": "Зеленский после встречи с Трампом заявил, что Украина готова к энергетическому перемирию с Россией"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/85271",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-24T04:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/8f6f3ad8cbbe2482.webp",
-      "original": "Deadly Kyiv Missile Attack Hits as Ukraine Presses for Ceasefire at UN",
-      "title": {
-        "uk": "Смертоносний ракетний удар по Києву стався в той час, як Україна домагається перемир'я в ООН",
-        "en": "Deadly Kyiv missile attack hits as Ukraine presses for ceasefire at UN",
-        "ru": "Смертоносный ракетный удар по Киеву нанесён в то время, как Украина добивается перемирия в ООН"
-      }
-    },
-    {
-      "url": "https://www.eurointegration.com.ua/news/2026/09/23/7246136/",
-      "domain": "eurointegration.com.ua",
-      "seenAt": "2026-09-23T21:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/807a6a6c97e3337c.webp",
-      "original": "В ООН 50 країн та ЄС закликали Росію до припинення вогню , США не підтримали",
-      "title": {
-        "uk": "В ООН 50 країн та ЄС закликали Росію до припинення вогню, США не підтримали",
-        "en": "At the UN, 50 countries and the EU called on Russia to cease fire; the US did not join",
-        "ru": "В ООН 50 стран и ЕС призвали Россию к прекращению огня, США не поддержали"
-      }
-    },
-    {
-      "url": "https://fakty.ua/479245-kreml-sdelal-rezkij-shag-posle-predlozheniya-o-peremirii-u-putina-ozvuchili-zhestkuyu-poziciyu",
-      "domain": "fakty.ua",
-      "seenAt": "2026-09-25T05:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Кремль зробив різкий крок після пропозиції про перемир  я",
-      "title": {
-        "uk": "Кремль зробив різкий крок після пропозиції про перемир'я",
-        "en": "Kremlin makes sharp move after ceasefire proposal",
-        "ru": "Кремль сделал резкий шаг после предложения о перемирии"
+        "ru": "Зеленский после встречи с Трампом заявил, что Украина готова к «энергетическому перемирию» с Россией"
       }
     },
     {
@@ -92,42 +80,54 @@
       }
     },
     {
-      "url": "https://www.lsm.lv/raksts/zinas/arzemes/25.09.2026-ukrainas-izlukdati-krievija-ziema-plano-plasus-triecienus-ukrainas-energetikas-infrastrukturai.a664726/",
-      "domain": "lsm.lv",
-      "seenAt": "2026-09-25T05:45:00.000Z",
-      "sourceCountry": "Latvia",
-      "image": "/news/8715c38e8a56d134.webp",
-      "original": "Ukrainas izlūkdati : Krievija ziemā plāno plašus triecienus Ukrainas enerģētikas infrastruktūrai",
-      "title": {
-        "uk": "Розвідка України: Росія взимку планує масштабні удари по енергетичній інфраструктурі України",
-        "en": "Ukrainian intelligence: Russia plans large-scale strikes on Ukraine's energy infrastructure this winter",
-        "ru": "Разведка Украины: Россия зимой планирует масштабные удары по энергетической инфраструктуре Украины"
-      }
-    },
-    {
-      "url": "https://www.digi24.ro/stiri/externe/finlanda-si-ucraina-au-semnat-un-acord-major-privind-dronele-alexander-stubb-rusiei-i-ar-putea-lua-ani-sa-cucereasca-donbasul-3961989",
-      "domain": "digi24.ro",
-      "seenAt": "2026-09-24T07:30:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/171133e0d0cc36ff.webp",
-      "original": "Finlanda și Ucraina au semnat un acord major privind dronele . Alexander Stubb : Rusiei i - ar putea lua ani să cucerească Donbasul",
-      "title": {
-        "uk": "Фінляндія та Україна підписали важливу угоду щодо дронів; Стубб: Росії можуть знадобитися роки, щоб захопити Донбас",
-        "en": "Finland and Ukraine sign major drone agreement; Stubb says it could take Russia years to conquer Donbas",
-        "ru": "Финляндия и Украина подписали важное соглашение о дронах; Стубб: России может потребоваться несколько лет, чтобы захватить Донбасс"
-      }
-    },
-    {
-      "url": "https://glavred.info/world/rf-gotovit-mobilizaciyu-i-novoe-nastuplenie-makron-raskryl-cel-kremlya-10799147.html",
-      "domain": "glavred.info",
-      "seenAt": "2026-09-24T23:15:00.000Z",
+      "url": "https://glavcom.ua/country/ukrajina-ssha-ta-rf-sjadut-za-stil-perehovoriv-budanov-rozkriv-detali-vazhlivoji-zustrichi-1145567.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-09-27T20:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/970a575922bcac92.webp",
-      "original": "РФ готовит мобилизацию и новое наступление : Макрон раскрыл цель Кремля",
+      "original": "Україна , США та РФ сядуть за стіл переговорів : Буданов розкрив деталі важливої зустрічі",
       "title": {
-        "uk": "РФ готує мобілізацію та нове наступ: Макрон розкрив мету Кремля",
-        "en": "Russia is preparing mobilization and a new offensive: Macron reveals the Kremlin's goal",
-        "ru": "РФ готовит мобилизацию и новое наступление: Макрон раскрыл цель Кремля"
+        "uk": "Україна, США та РФ сядуть за стіл переговорів: Буданов розкрив деталі важливої зустрічі",
+        "en": "Ukraine, the US and Russia to sit at the negotiating table: Budanov reveals details of important meeting",
+        "ru": "Украина, США и РФ сядут за стол переговоров: Буданов раскрыл детали важной встречи"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/85271",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-09-24T04:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/8f6f3ad8cbbe2482.webp",
+      "original": "Deadly Kyiv Missile Attack Hits as Ukraine Presses for Ceasefire at UN",
+      "title": {
+        "uk": "Смертоносний ракетний удар по Києву стався в момент, коли Україна добивається припинення вогню в ООН",
+        "en": "Deadly Kyiv missile attack hits as Ukraine presses for ceasefire at UN",
+        "ru": "Смертоносный ракетный удар по Киеву — в то время как Украина добивается прекращения огня в ООН"
+      }
+    },
+    {
+      "url": "https://www.wsls.com/news/world/2026/09/28/russian-drones-pound-civilian-areas-as-ukraine-claims-battlefield-breakthroughs/",
+      "domain": "wsls.com",
+      "seenAt": "2026-09-28T11:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/37ad4d2869e73f11.webp",
+      "original": "Russian drones pound civilian areas as Ukraine claims battlefield breakthroughs",
+      "title": {
+        "uk": "Російські дрони б'ють по цивільних районах, поки Україна заявляє про прориви на фронті",
+        "en": "Russian drones pound civilian areas as Ukraine claims battlefield breakthroughs",
+        "ru": "Российские дроны бьют по гражданским районам, пока Украина заявляет о прорывах на фронте"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/85519",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-09-27T17:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/798912494a97c25e.webp",
+      "original": "Zelensky Hails Gains in Lyman Axis Under Operation  Vivaldi",
+      "title": {
+        "uk": "Зеленський відзначив успіхи на Лиманському напрямку в ході операції «Вівальді»",
+        "en": "Zelensky hails gains on Lyman axis under Operation Vivaldi",
+        "ru": "Зеленский высоко оценил успехи на Лиманском направлении в ходе операции «Вивальди»"
       }
     }
   ]
