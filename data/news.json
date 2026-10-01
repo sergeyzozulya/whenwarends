@@ -1,70 +1,54 @@
 {
-  "asOf": "2026-09-30",
+  "asOf": "2026-10-01",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.unian.ua/war/viyna-v-ukrajini-putin-hoche-zmusiti-kijiv-kapitulyuvati-do-vesni-isw-13512003.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-09-28T06:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/3f05484b4f9ece33.webp",
-      "original": "Війна в Україні : Путін хоче змусити Київ капітулювати до весни , – ISW",
+      "url": "https://www.theguardian.com/world/2026/sep/29/ukraine-war-briefing-putin-orders-army-expansion-as-zelenskyy-claims-more-north-korean-troops-to-be-deployed-for-moscow",
+      "domain": "theguardian.com",
+      "seenAt": "2026-09-29T01:15:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Ukraine war briefing : Putin orders army expansion as Zelenskyy says more North Koreans to be deployed in Russia",
       "title": {
-        "uk": "Війна в Україні: Путін хоче змусити Київ капітулювати до весни — ISW",
-        "en": "War in Ukraine: Putin wants to force Kyiv to capitulate by spring — ISW",
-        "ru": "Война в Украине: Путин хочет заставить Киев капитулировать до весны — ISW"
+        "uk": "Зведення про війну в Україні: Путін наказує розширити армію, Зеленський каже, що до Росії перекинуть більше північнокорейців",
+        "en": "Ukraine war briefing: Putin orders army expansion as Zelenskyy says more North Koreans to be deployed in Russia",
+        "ru": "Сводка о войне в Украине: Путин приказывает расширить армию, Зеленский говорит о переброске в Россию ещё большего числа северокорейцев"
       }
     },
     {
-      "url": "https://www.radiosvoboda.org/a/news-rosija-ne-robytyme-pauzy-u-vijni-lavrov/33863006.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-09-23T19:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/082552fbfd9dedd8.webp",
-      "original": "Росія не робитиме паузи у війні заради переговорів – Лавров у Раді безпеки ООН",
+      "url": "https://www.theguardian.com/world/2026/oct/01/ukraine-russian-oil-refinery-strikes-defying-trump-fuel-price-warnings",
+      "domain": "theguardian.com",
+      "seenAt": "2026-10-01T13:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Ukraine persists with Russian oil refinery strikes , defying Trump on fuel price warnings",
       "title": {
-        "uk": "Росія не робитиме паузи у війні заради переговорів — Лавров у Раді безпеки ООН",
-        "en": "Russia will not pause the war for negotiations — Lavrov at the UN Security Council",
-        "ru": "Россия не будет делать паузу в войне ради переговоров — Лавров в Совете безопасности ООН"
+        "uk": "Україна продовжує завдавати ударів по російських нафтопереробних заводах, ігноруючи попередження Трампа щодо цін на пальне",
+        "en": "Ukraine persists with Russian oil refinery strikes, defying Trump on fuel price warnings",
+        "ru": "Украина продолжает наносить удары по российским нефтеперерабатывающим заводам вопреки предупреждениям Трампа о ценах на топливо"
       }
     },
     {
-      "url": "https://en.interfax.com.ua/news/general/1208934.html",
-      "domain": "en.interfax.com.ua",
-      "seenAt": "2026-09-23T16:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/e1dda5a2d8f6c418.webp",
-      "original": "Ukraine agrees to full , immediate , unconditional ceasefire , calls on Russia to do same – joint statement by 51 UN member states",
+      "url": "https://georgiatoday.ge/ukraine-latest-ukraine-regains-ground-as-russia-opens-new-winter-energy-offensive/",
+      "domain": "georgiatoday.ge",
+      "seenAt": "2026-10-01T12:00:00.000Z",
+      "sourceCountry": "Georgia",
+      "image": "/news/da81a7705f2151de.webp",
+      "original": "Ukraine Latest : Ukraine Regains Ground as Russia Opens New Winter Energy Offensive",
       "title": {
-        "uk": "Україна погодилася на повне, негайне та безумовне припинення вогню і закликає Росію зробити те саме — спільна заява 51 держави — члена ООН",
-        "en": "Ukraine agrees to full, immediate, unconditional ceasefire, calls on Russia to do same — joint statement by 51 UN member states",
-        "ru": "Украина согласилась на полное, немедленное и безоговорочное прекращение огня и призывает Россию сделать то же — совместное заявление 51 государства — члена ООН"
+        "uk": "Останні новини з України: Україна повертає позиції, поки Росія розпочинає новий зимовий наступ на енергетику",
+        "en": "Ukraine Latest: Ukraine Regains Ground as Russia Opens New Winter Energy Offensive",
+        "ru": "Последние новости с Украины: Украина возвращает позиции, пока Россия открывает новое зимнее наступление на энергетику"
       }
     },
     {
-      "url": "https://www.rbc.ua/rus/news/tramp-sumnivaetsya-shcho-putin-pogoditsya-1790750253.html",
-      "domain": "rbc.ua",
-      "seenAt": "2026-09-30T07:45:00.000Z",
+      "url": "https://zn.ua/ukr/usa/poslantsi-trampa-znajshli-obkhidnij-shljakh-do-poslablennja-sanktsij-proti-rosiji-vin-pohodivsja-the-atlantic.html",
+      "domain": "zn.ua",
+      "seenAt": "2026-09-29T14:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/fc63ac6d9716af4f.webp",
-      "original": "Трамп сумнівається , що Путін погодиться на енергетичне перемир  я з Україною",
+      "original": "Трамп погодився на послаблення санкцій проти Росії - The Atlantic розкрив план",
       "title": {
-        "uk": "Трамп сумнівається, що Путін погодиться на енергетичне перемир'я з Україною",
-        "en": "Trump doubts Putin will agree to energy ceasefire with Ukraine",
-        "ru": "Трамп сомневается, что Путин согласится на энергетическое перемирие с Украиной"
-      }
-    },
-    {
-      "url": "https://www.bfmtv.com/international/europe/ukraine/guerre-en-ukraine-de-nouvelles-frappes-russes-sur-kiev-font-deux-morts-dont-un-enfant-et-quatre-blesses_AD-202609300202.html",
-      "domain": "bfmtv.com",
-      "seenAt": "2026-09-30T07:15:00.000Z",
-      "sourceCountry": "France",
-      "image": "/news/c846492c9e5f1100.webp",
-      "original": "Guerre en Ukraine : de nouvelles frappes russes sur Kiev font deux morts , dont un enfant , et quatre blessés",
-      "title": {
-        "uk": "Війна в Україні: нові російські удари по Києву забрали два життя, серед загиблих — дитина, четверо поранені",
-        "en": "War in Ukraine: new Russian strikes on Kyiv kill two, including a child, and wound four",
-        "ru": "Война в Украине: новые российские удары по Киеву унесли две жизни, среди погибших — ребёнок, четверо ранены"
+        "uk": "Трамп погодився на послаблення санкцій проти Росії — The Atlantic розкрив план",
+        "en": "Trump agreed to ease sanctions on Russia — The Atlantic revealed the plan",
+        "ru": "Трамп согласился на смягчение санкций против России — The Atlantic раскрыл план"
       }
     },
     {
@@ -76,57 +60,72 @@
       "title": {
         "uk": "Представник Путіна провів переговори у Вашингтоні про завершення війни — Reuters",
         "en": "Putin's envoy held talks in Washington on ending the war — Reuters",
-        "ru": "Представитель Путина провёл переговоры в Вашингтоне об окончании войны — Reuters"
+        "ru": "Представитель Путина провёл переговоры в Вашингтоне о завершении войны — Reuters"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/85519",
+      "url": "https://www.rbc.ua/rus/news/tramp-sumnivaetsya-shcho-putin-pogoditsya-1790750253.html",
+      "domain": "rbc.ua",
+      "seenAt": "2026-09-30T07:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/fc63ac6d9716af4f.webp",
+      "original": "Трамп сумнівається , що Путін погодиться на енергетичне перемир  я з Україною",
+      "title": {
+        "uk": "Трамп сумнівається, що Путін погодиться на енергетичне перемир'я з Україною",
+        "en": "Trump doubts Putin will agree to an energy ceasefire with Ukraine",
+        "ru": "Трамп сомневается, что Путин согласится на энергетическое перемирие с Украиной"
+      }
+    },
+    {
+      "url": "https://www.infobae.com/america/mundo/2026/10/01/rusia-amenazo-a-europa-y-aseguro-que-sus-fabricas-de-armas-podrian-ser-objetivos-militares-del-kremlin/",
+      "domain": "infobae.com",
+      "seenAt": "2026-10-01T09:15:00.000Z",
+      "sourceCountry": "Argentina",
+      "image": "/news/e7883fa27fcda5a1.webp",
+      "original": "Rusia amenazó a Europa y aseguró que sus fábricas de armas podrían ser objetivos militares del Kremlin",
+      "title": {
+        "uk": "Росія погрожує Європі, заявляючи, що її зброярні можуть стати військовими цілями Кремля",
+        "en": "Russia threatens Europe, saying its arms factories could become Kremlin military targets",
+        "ru": "Россия угрожает Европе, заявляя, что её оружейные заводы могут стать военными целями Кремля"
+      }
+    },
+    {
+      "url": "https://www.dialog.ua/world/shvetsiya-predupredila-moskvu-chto-budet-bit-vglub-rossii-balistikoy-i.html",
+      "domain": "dialog.ua",
+      "seenAt": "2026-09-30T19:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/f3dfcb072a66361f.webp",
+      "original": "Швеция предупредила Москву , что будет бить вглубь России баллистикой и  Таурусами",
+      "title": {
+        "uk": "Швеція попередила Москву, що завдаватиме ударів углиб Росії балістичними ракетами та «Таурусами»",
+        "en": "Sweden warns Moscow it will strike deep into Russia with ballistic missiles and Taurus",
+        "ru": "Швеция предупредила Москву, что будет бить вглубь России баллистикой и «Таурусами»"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/85516",
       "domain": "kyivpost.com",
       "seenAt": "2026-09-27T17:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/798912494a97c25e.webp",
-      "original": "Zelensky Hails Gains in Lyman Axis Under Operation  Vivaldi",
+      "image": "/news/6a5d57229d6db633.webp",
+      "original": "Budanov Announces Major POW Exchange With Russia as Early as Next Week",
       "title": {
-        "uk": "Зеленський відзначив успіхи на Лиманському напрямку в ході операції «Вівальді»",
-        "en": "Zelensky hails gains in Lyman axis under Operation Vivaldi",
-        "ru": "Зеленский высоко оценил успехи на Лиманском направлении в ходе операции «Вивальди»"
+        "uk": "Буданов оголосив про масштабний обмін військовополоненими з Росією вже наступного тижня",
+        "en": "Budanov Announces Major POW Exchange With Russia as Early as Next Week",
+        "ru": "Буданов объявил о масштабном обмене военнопленными с Россией уже на следующей неделе"
       }
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/9/23/trump-administration-invites-putin-to-attend-g20-summit-in-miami",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-09-23T21:15:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Trump administration invites Putin to attend G20 summit in Miami",
+      "url": "https://timesofindia.indiatimes.com/world/europe/russia-germany-fms-meet-for-first-talks-since-2022-ukraine-war-dominates-agenda/articleshow/134513444.cms",
+      "domain": "timesofindia.indiatimes.com",
+      "seenAt": "2026-09-27T02:30:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/b2fc7a1b41fb8149.webp",
+      "original": "Russia , Germany FMs meet for first talks since 2022 , Ukraine war dominates agenda",
       "title": {
-        "uk": "Адміністрація Трампа запросила Путіна на саміт G20 у Маямі",
-        "en": "Trump administration invites Putin to attend G20 summit in Miami",
-        "ru": "Администрация Трампа пригласила Путина на саммит G20 в Майами"
-      }
-    },
-    {
-      "url": "https://www.lsm.lv/raksts/zinas/arzemes/25.09.2026-ukrainas-izlukdati-krievija-ziema-plano-plasus-triecienus-ukrainas-energetikas-infrastrukturai.a664726/",
-      "domain": "lsm.lv",
-      "seenAt": "2026-09-25T05:45:00.000Z",
-      "sourceCountry": "Latvia",
-      "image": "/news/8715c38e8a56d134.webp",
-      "original": "Ukrainas izlūkdati : Krievija ziemā plāno plašus triecienus Ukrainas enerģētikas infrastruktūrai",
-      "title": {
-        "uk": "Розвідка України: Росія взимку планує масштабні удари по енергетичній інфраструктурі країни",
-        "en": "Ukrainian intelligence: Russia plans large-scale strikes on Ukraine's energy infrastructure in winter",
-        "ru": "Разведка Украины: Россия зимой планирует масштабные удары по энергетической инфраструктуре страны"
-      }
-    },
-    {
-      "url": "https://glavcom.ua/country/ukrajina-ssha-ta-rf-sjadut-za-stil-perehovoriv-budanov-rozkriv-detali-vazhlivoji-zustrichi-1145567.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-09-27T20:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Україна , США та РФ сядуть за стіл переговорів : Буданов розкрив деталі важливої зустрічі",
-      "title": {
-        "uk": "Україна, США та РФ сядуть за стіл переговорів: Буданов розкрив деталі важливої зустрічі",
-        "en": "Ukraine, US and Russia to sit at the negotiating table: Budanov reveals details of key meeting",
-        "ru": "Украина, США и РФ сядут за стол переговоров: Буданов раскрыл детали важной встречи"
+        "uk": "Міністри закордонних справ Росії та Німеччини провели перші переговори з 2022 року, головною темою стала війна в Україні",
+        "en": "Russia, Germany foreign ministers meet for first talks since 2022, Ukraine war dominates agenda",
+        "ru": "Министры иностранных дел России и Германии провели первые переговоры с 2022 года, главной темой стала война в Украине"
       }
     }
   ]
