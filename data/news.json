@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-01",
+  "asOf": "2026-10-02",
   "source": "gdelt",
   "articles": [
     {
@@ -9,9 +9,35 @@
       "sourceCountry": "United Kingdom",
       "original": "Ukraine war briefing : Putin orders army expansion as Zelenskyy says more North Koreans to be deployed in Russia",
       "title": {
-        "uk": "Зведення про війну в Україні: Путін наказує розширити армію, Зеленський каже, що до Росії перекинуть більше північнокорейців",
+        "uk": "Зведення про війну в Україні: Путін наказав розширити армію, Зеленський повідомив про нові розгортання північнокорейських військ у Росії",
         "en": "Ukraine war briefing: Putin orders army expansion as Zelenskyy says more North Koreans to be deployed in Russia",
-        "ru": "Сводка о войне в Украине: Путин приказывает расширить армию, Зеленский говорит о переброске в Россию ещё большего числа северокорейцев"
+        "ru": "Сводка о войне в Украине: Путин приказал расширить армию, Зеленский заявил о новом развёртывании северокорейских войск в России"
+      }
+    },
+    {
+      "url": "https://www.unian.ua/war/viyna-v-ukrajini-putin-hoche-zmusiti-kijiv-kapitulyuvati-do-vesni-isw-13512003.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-09-28T06:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/3f05484b4f9ece33.webp",
+      "original": "Війна в Україні : Путін хоче змусити Київ капітулювати до весни , – ISW",
+      "title": {
+        "uk": "Війна в Україні: Путін хоче змусити Київ капітулювати до весни — ISW",
+        "en": "War in Ukraine: Putin wants to force Kyiv to capitulate by spring — ISW",
+        "ru": "Война в Украине: Путин хочет заставить Киев капитулировать до весны — ISW"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/85519",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-09-27T17:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/798912494a97c25e.webp",
+      "original": "Zelensky Hails Gains in Lyman Axis Under Operation  Vivaldi",
+      "title": {
+        "uk": "Зеленський відзначив успіхи на Лиманському напрямку в рамках операції «Вівальді»",
+        "en": "Zelensky hails gains on Lyman axis under Operation Vivaldi",
+        "ru": "Зеленский отметил успехи на Лиманском направлении в рамках операции «Вивальди»"
       }
     },
     {
@@ -21,22 +47,47 @@
       "sourceCountry": "United Kingdom",
       "original": "Ukraine persists with Russian oil refinery strikes , defying Trump on fuel price warnings",
       "title": {
-        "uk": "Україна продовжує завдавати ударів по російських нафтопереробних заводах, ігноруючи попередження Трампа щодо цін на пальне",
+        "uk": "Україна продовжує завдавати ударів по російських нафтопереробних заводах, ігноруючи попередження Трампа щодо цін на паливо",
         "en": "Ukraine persists with Russian oil refinery strikes, defying Trump on fuel price warnings",
         "ru": "Украина продолжает наносить удары по российским нефтеперерабатывающим заводам вопреки предупреждениям Трампа о ценах на топливо"
       }
     },
     {
-      "url": "https://georgiatoday.ge/ukraine-latest-ukraine-regains-ground-as-russia-opens-new-winter-energy-offensive/",
-      "domain": "georgiatoday.ge",
-      "seenAt": "2026-10-01T12:00:00.000Z",
-      "sourceCountry": "Georgia",
-      "image": "/news/da81a7705f2151de.webp",
-      "original": "Ukraine Latest : Ukraine Regains Ground as Russia Opens New Winter Energy Offensive",
+      "url": "http://www.econotimes.com/Ukraine-Deploys-FP-7-Ballistic-Missile-in-Combat-for-First-Time-1753740",
+      "domain": "econotimes.com",
+      "seenAt": "2026-10-01T23:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/de8d34161ff0656a.webp",
+      "original": "Ukraine Deploys FP - 7 Ballistic Missile in Combat for First Time",
       "title": {
-        "uk": "Останні новини з України: Україна повертає позиції, поки Росія розпочинає новий зимовий наступ на енергетику",
-        "en": "Ukraine Latest: Ukraine Regains Ground as Russia Opens New Winter Energy Offensive",
-        "ru": "Последние новости с Украины: Украина возвращает позиции, пока Россия открывает новое зимнее наступление на энергетику"
+        "uk": "Україна вперше застосувала балістичну ракету FP-7 у бойових умовах",
+        "en": "Ukraine deploys FP-7 ballistic missile in combat for the first time",
+        "ru": "Украина впервые применила баллистическую ракету FP-7 в боевых условиях"
+      }
+    },
+    {
+      "url": "https://tsn.ua/exclusive/sybiha-nazvav-varianty-peremyria-z-rosiyeiu-do-choho-hotova-ukrayina-3179678.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-10-01T20:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/14e3c7b46e6b12e9.webp",
+      "original": "Перемир  я з Росією : Сибіга назвав варіанти , на які готова Україна Ексклюзив ТСН",
+      "title": {
+        "uk": "Перемир'я з Росією: Сибіга назвав варіанти, на які готова Україна",
+        "en": "Ceasefire with Russia: Sybiha names options Ukraine is ready for",
+        "ru": "Перемирие с Россией: Сыбига назвал варианты, на которые готова Украина"
+      }
+    },
+    {
+      "url": "https://kvia.com/news/us-world/cnn-world/2026/10/01/putin-warns-west-that-russia-is-prepared-to-use-all-weapons-to-protect-baltic-exclave/",
+      "domain": "kvia.com",
+      "seenAt": "2026-10-02T04:00:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Putin warns West that Russia is prepared to use  all weapon to protect Kaliningrad",
+      "title": {
+        "uk": "Путін попередив Захід, що Росія готова застосувати всю зброю для захисту Калінінграда",
+        "en": "Putin warns West that Russia is prepared to use all weapons to protect Kaliningrad",
+        "ru": "Путин предупредил Запад, что Россия готова применить все оружие для защиты Калининграда"
       }
     },
     {
@@ -47,85 +98,34 @@
       "original": "Трамп погодився на послаблення санкцій проти Росії - The Atlantic розкрив план",
       "title": {
         "uk": "Трамп погодився на послаблення санкцій проти Росії — The Atlantic розкрив план",
-        "en": "Trump agreed to ease sanctions on Russia — The Atlantic revealed the plan",
+        "en": "Trump agreed to ease sanctions on Russia — The Atlantic reveals the plan",
         "ru": "Трамп согласился на смягчение санкций против России — The Atlantic раскрыл план"
       }
     },
     {
-      "url": "https://glavcom.ua/world/world-politics/predstavnik-putina-proviv-perehovori-u-vashinhtoni-stosovno-zavershennja-vijni-reuters-1145972.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-09-29T13:30:00.000Z",
+      "url": "https://www.unian.ua/world/dopomoga-ssha-dlya-ukrajini-tramp-perenapraviv-desyatki-milyoniv-dolariv-do-latinskoji-ameriki-13516296.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-10-02T05:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Представник Путіна провів переговори у Вашингтоні про завершення війни – Reuters",
+      "image": "/news/8adaa84fd14d4935.webp",
+      "original": "Допомога США для України : Трамп перенаправив десятки мільйонів доларів до Латинської Америки",
       "title": {
-        "uk": "Представник Путіна провів переговори у Вашингтоні про завершення війни — Reuters",
-        "en": "Putin's envoy held talks in Washington on ending the war — Reuters",
-        "ru": "Представитель Путина провёл переговоры в Вашингтоне о завершении войны — Reuters"
+        "uk": "Допомога США для України: Трамп перенаправив десятки мільйонів доларів до Латинської Америки",
+        "en": "US aid for Ukraine: Trump redirected tens of millions of dollars to Latin America",
+        "ru": "Помощь США для Украины: Трамп перенаправил десятки миллионов долларов в Латинскую Америку"
       }
     },
     {
-      "url": "https://www.rbc.ua/rus/news/tramp-sumnivaetsya-shcho-putin-pogoditsya-1790750253.html",
-      "domain": "rbc.ua",
-      "seenAt": "2026-09-30T07:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/fc63ac6d9716af4f.webp",
-      "original": "Трамп сумнівається , що Путін погодиться на енергетичне перемир  я з Україною",
+      "url": "https://en.apa.az/cis-countries/kremlin-russia-needs-peace-with-ukraine-not-ceasefire-527728",
+      "domain": "en.apa.az",
+      "seenAt": "2026-10-02T07:45:00.000Z",
+      "sourceCountry": "Azerbaijan",
+      "image": "/news/7b15137f1b4a2a92.webp",
+      "original": "Kremlin : Russia needs peace with Ukraine , not ceasefire",
       "title": {
-        "uk": "Трамп сумнівається, що Путін погодиться на енергетичне перемир'я з Україною",
-        "en": "Trump doubts Putin will agree to an energy ceasefire with Ukraine",
-        "ru": "Трамп сомневается, что Путин согласится на энергетическое перемирие с Украиной"
-      }
-    },
-    {
-      "url": "https://www.infobae.com/america/mundo/2026/10/01/rusia-amenazo-a-europa-y-aseguro-que-sus-fabricas-de-armas-podrian-ser-objetivos-militares-del-kremlin/",
-      "domain": "infobae.com",
-      "seenAt": "2026-10-01T09:15:00.000Z",
-      "sourceCountry": "Argentina",
-      "image": "/news/e7883fa27fcda5a1.webp",
-      "original": "Rusia amenazó a Europa y aseguró que sus fábricas de armas podrían ser objetivos militares del Kremlin",
-      "title": {
-        "uk": "Росія погрожує Європі, заявляючи, що її зброярні можуть стати військовими цілями Кремля",
-        "en": "Russia threatens Europe, saying its arms factories could become Kremlin military targets",
-        "ru": "Россия угрожает Европе, заявляя, что её оружейные заводы могут стать военными целями Кремля"
-      }
-    },
-    {
-      "url": "https://www.dialog.ua/world/shvetsiya-predupredila-moskvu-chto-budet-bit-vglub-rossii-balistikoy-i.html",
-      "domain": "dialog.ua",
-      "seenAt": "2026-09-30T19:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/f3dfcb072a66361f.webp",
-      "original": "Швеция предупредила Москву , что будет бить вглубь России баллистикой и  Таурусами",
-      "title": {
-        "uk": "Швеція попередила Москву, що завдаватиме ударів углиб Росії балістичними ракетами та «Таурусами»",
-        "en": "Sweden warns Moscow it will strike deep into Russia with ballistic missiles and Taurus",
-        "ru": "Швеция предупредила Москву, что будет бить вглубь России баллистикой и «Таурусами»"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/85516",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-27T17:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/6a5d57229d6db633.webp",
-      "original": "Budanov Announces Major POW Exchange With Russia as Early as Next Week",
-      "title": {
-        "uk": "Буданов оголосив про масштабний обмін військовополоненими з Росією вже наступного тижня",
-        "en": "Budanov Announces Major POW Exchange With Russia as Early as Next Week",
-        "ru": "Буданов объявил о масштабном обмене военнопленными с Россией уже на следующей неделе"
-      }
-    },
-    {
-      "url": "https://timesofindia.indiatimes.com/world/europe/russia-germany-fms-meet-for-first-talks-since-2022-ukraine-war-dominates-agenda/articleshow/134513444.cms",
-      "domain": "timesofindia.indiatimes.com",
-      "seenAt": "2026-09-27T02:30:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/b2fc7a1b41fb8149.webp",
-      "original": "Russia , Germany FMs meet for first talks since 2022 , Ukraine war dominates agenda",
-      "title": {
-        "uk": "Міністри закордонних справ Росії та Німеччини провели перші переговори з 2022 року, головною темою стала війна в Україні",
-        "en": "Russia, Germany foreign ministers meet for first talks since 2022, Ukraine war dominates agenda",
-        "ru": "Министры иностранных дел России и Германии провели первые переговоры с 2022 года, главной темой стала война в Украине"
+        "uk": "Кремль: Росії потрібен мир з Україною, а не припинення вогню",
+        "en": "Kremlin: Russia needs peace with Ukraine, not a ceasefire",
+        "ru": "Кремль: России нужен мир с Украиной, а не перемирие"
       }
     }
   ]
