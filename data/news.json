@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-04",
+  "asOf": "2026-10-05",
   "source": "gdelt",
   "articles": [
     {
@@ -9,9 +9,22 @@
       "sourceCountry": "United Kingdom",
       "original": "Ukraine war briefing : Putin orders army expansion as Zelenskyy says more North Koreans to be deployed in Russia",
       "title": {
-        "uk": "Зведення про війну в Україні: Путін наказав розширити армію, Зеленський заявив про нове розгортання північнокорейців у Росії",
+        "uk": "Зведення про війну в Україні: Путін наказав розширити армію, Зеленський повідомляє про новий контингент північнокорейців у Росії",
         "en": "Ukraine war briefing: Putin orders army expansion as Zelenskyy says more North Koreans to be deployed in Russia",
-        "ru": "Сводка о войне в Украине: Путин приказал расширить армию, Зеленский заявил о новом развёртывании северокорейцев в России"
+        "ru": "Сводка о войне в Украине: Путин приказал расширить армию, Зеленский сообщает о новом контингенте северокорейцев в России"
+      }
+    },
+    {
+      "url": "https://georgiatoday.ge/ukraine-latest-ukraine-regains-ground-as-russia-opens-new-winter-energy-offensive/",
+      "domain": "georgiatoday.ge",
+      "seenAt": "2026-10-01T12:00:00.000Z",
+      "sourceCountry": "Georgia",
+      "image": "/news/da81a7705f2151de.webp",
+      "original": "Ukraine Latest : Ukraine Regains Ground as Russia Opens New Winter Energy Offensive",
+      "title": {
+        "uk": "Останні новини про Україну: ЗСУ відвоювали позиції, Росія розпочала новий зимовий наступ на енергетику",
+        "en": "Ukraine latest: Ukraine regains ground as Russia opens new winter energy offensive",
+        "ru": "Последние новости об Украине: ВСУ отвоевали позиции, Россия начала новое зимнее наступление на энергетику"
       }
     },
     {
@@ -21,9 +34,34 @@
       "sourceCountry": "United States",
       "original": "Putin warns West that Russia is prepared to use  all weapon to protect Kaliningrad",
       "title": {
-        "uk": "Путін попередив Захід, що Росія готова використати «всю зброю» для захисту Калінінграда",
-        "en": "Putin warns West that Russia is prepared to use all weapons to protect Kaliningrad",
-        "ru": "Путин предупредил Запад, что Россия готова применить «всё оружие» для защиты Калининграда"
+        "uk": "Путін попередив Захід, що Росія готова застосувати всі засоби для захисту Калінінграда",
+        "en": "Putin warns West that Russia is prepared to use all means to protect Kaliningrad",
+        "ru": "Путин предупредил Запад, что Россия готова применить все средства для защиты Калининграда"
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/01/ukraine-russian-oil-refinery-strikes-defying-trump-fuel-price-warnings",
+      "domain": "theguardian.com",
+      "seenAt": "2026-10-01T13:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Ukraine persists with Russian oil refinery strikes , defying Trump on fuel price warnings",
+      "title": {
+        "uk": "Україна продовжує удари по нафтопереробних заводах Росії, ігноруючи застереження Трампа щодо цін на паливо",
+        "en": "Ukraine persists with Russian oil refinery strikes, defying Trump on fuel price warnings",
+        "ru": "Украина продолжает удары по российским нефтеперерабатывающим заводам, игнорируя предупреждения Трампа о ценах на топливо"
+      }
+    },
+    {
+      "url": "http://www.econotimes.com/Ukraine-Deploys-FP-7-Ballistic-Missile-in-Combat-for-First-Time-1753740",
+      "domain": "econotimes.com",
+      "seenAt": "2026-10-01T23:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/de8d34161ff0656a.webp",
+      "original": "Ukraine Deploys FP - 7 Ballistic Missile in Combat for First Time",
+      "title": {
+        "uk": "Україна вперше застосувала балістичну ракету FP-7 у бойових діях",
+        "en": "Ukraine deploys FP-7 ballistic missile in combat for the first time",
+        "ru": "Украина впервые применила баллистическую ракету FP-7 в боевых действиях"
       }
     },
     {
@@ -34,9 +72,46 @@
       "image": "/news/7b15137f1b4a2a92.webp",
       "original": "Kremlin : Russia needs peace with Ukraine , not ceasefire",
       "title": {
-        "uk": "Кремль: Росії потрібен мир з Україною, а не перемир'я",
+        "uk": "Кремль: Росія потребує миру з Україною, а не перемир'я",
         "en": "Kremlin: Russia needs peace with Ukraine, not a ceasefire",
         "ru": "Кремль: России нужен мир с Украиной, а не перемирие"
+      }
+    },
+    {
+      "url": "https://glavcom.ua/world/world-politics/predstavnik-putina-proviv-perehovori-u-vashinhtoni-stosovno-zavershennja-vijni-reuters-1145972.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-09-29T13:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Представник Путіна провів переговори у Вашингтоні про завершення війни – Reuters",
+      "title": {
+        "uk": "Представник Путіна провів переговори у Вашингтоні про завершення війни — Reuters",
+        "en": "Putin's envoy held talks in Washington on ending the war — Reuters",
+        "ru": "Представитель Путина провёл переговоры в Вашингтоне о завершении войны — Reuters"
+      }
+    },
+    {
+      "url": "https://zn.ua/ukr/usa/poslantsi-trampa-znajshli-obkhidnij-shljakh-do-poslablennja-sanktsij-proti-rosiji-vin-pohodivsja-the-atlantic.html",
+      "domain": "zn.ua",
+      "seenAt": "2026-09-29T14:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Трамп погодився на послаблення санкцій проти Росії - The Atlantic розкрив план",
+      "title": {
+        "uk": "Трамп погодився на послаблення санкцій проти Росії — The Atlantic розкрив план",
+        "en": "Trump agreed to ease sanctions against Russia — The Atlantic reveals the plan",
+        "ru": "Трамп согласился на смягчение санкций против России — The Atlantic раскрыл план"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/85841",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-10-01T16:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/56a7b511140cbbe3.webp",
+      "original": "46 , 230 Russian Troop Losses in September as Moscow Prepares 120 , 000 New Conscripts",
+      "title": {
+        "uk": "46 230 втрат російських військ у вересні, поки Москва готує 120 000 нових призовників",
+        "en": "46,230 Russian troop losses in September as Moscow prepares 120,000 new conscripts",
+        "ru": "46 230 потерь российских войск в сентябре, пока Москва готовит 120 000 новых призывников"
       }
     },
     {
@@ -50,82 +125,6 @@
         "uk": "Допомога США для України: Трамп перенаправив десятки мільйонів доларів до Латинської Америки",
         "en": "US aid for Ukraine: Trump redirected tens of millions of dollars to Latin America",
         "ru": "Помощь США Украине: Трамп перенаправил десятки миллионов долларов в Латинскую Америку"
-      }
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/01/ukraine-russian-oil-refinery-strikes-defying-trump-fuel-price-warnings",
-      "domain": "theguardian.com",
-      "seenAt": "2026-10-01T13:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "original": "Ukraine persists with Russian oil refinery strikes , defying Trump on fuel price warnings",
-      "title": {
-        "uk": "Україна продовжує завдавати ударів по російських нафтопереробних заводах, ігноруючи застереження Трампа щодо цін на паливо",
-        "en": "Ukraine persists with Russian oil refinery strikes, defying Trump on fuel price warnings",
-        "ru": "Украина продолжает наносить удары по российским нефтеперерабатывающим заводам вопреки предупреждениям Трампа о ценах на топливо"
-      }
-    },
-    {
-      "url": "https://zn.ua/ukr/usa/poslantsi-trampa-znajshli-obkhidnij-shljakh-do-poslablennja-sanktsij-proti-rosiji-vin-pohodivsja-the-atlantic.html",
-      "domain": "zn.ua",
-      "seenAt": "2026-09-29T14:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Трамп погодився на послаблення санкцій проти Росії - The Atlantic розкрив план",
-      "title": {
-        "uk": "Трамп погодився на послаблення санкцій проти Росії — The Atlantic розкрив план",
-        "en": "Trump agreed to ease sanctions against Russia — The Atlantic revealed the plan",
-        "ru": "Трамп согласился на смягчение санкций против России — The Atlantic раскрыл план"
-      }
-    },
-    {
-      "url": "http://www.econotimes.com/Ukraine-Deploys-FP-7-Ballistic-Missile-in-Combat-for-First-Time-1753740",
-      "domain": "econotimes.com",
-      "seenAt": "2026-10-01T23:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/de8d34161ff0656a.webp",
-      "original": "Ukraine Deploys FP - 7 Ballistic Missile in Combat for First Time",
-      "title": {
-        "uk": "Україна вперше застосувала балістичну ракету FP-7 у бойових умовах",
-        "en": "Ukraine deploys FP-7 ballistic missile in combat for the first time",
-        "ru": "Украина впервые применила баллистическую ракету FP-7 в боевых условиях"
-      }
-    },
-    {
-      "url": "https://georgiatoday.ge/ukraine-latest-ukraine-regains-ground-as-russia-opens-new-winter-energy-offensive/",
-      "domain": "georgiatoday.ge",
-      "seenAt": "2026-10-01T12:00:00.000Z",
-      "sourceCountry": "Georgia",
-      "image": "/news/da81a7705f2151de.webp",
-      "original": "Ukraine Latest : Ukraine Regains Ground as Russia Opens New Winter Energy Offensive",
-      "title": {
-        "uk": "Останні новини з України: Україна повертає позиції, Росія розпочинає новий зимовий наступ на енергетику",
-        "en": "Ukraine latest: Ukraine regains ground as Russia opens new winter energy offensive",
-        "ru": "Последние новости из Украины: Украина возвращает позиции, Россия начинает новое зимнее наступление на энергетику"
-      }
-    },
-    {
-      "url": "https://www.unian.net/war/limanskoe-napravlenie-operaciya-sil-oborony-mozhet-sorvat-nastuplenie-rf-na-slavyansk-13516464.html",
-      "domain": "unian.net",
-      "seenAt": "2026-10-02T08:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/9ea70396c01df86a.webp",
-      "original": "Лиманское направление – операция Сил обороны может сорвать наступление РФ на Славянск",
-      "title": {
-        "uk": "Лиманський напрямок — операція Сил оборони може зірвати наступ РФ на Слов'янськ",
-        "en": "Lyman direction: Ukraine's defence forces' operation may thwart Russia's advance on Slavyansk",
-        "ru": "Лиманское направление — операция Сил обороны может сорвать наступление РФ на Славянск"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/85516",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-09-27T17:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/6a5d57229d6db633.webp",
-      "original": "Budanov Announces Major POW Exchange With Russia as Early as Next Week",
-      "title": {
-        "uk": "Буданов оголосив про великий обмін військовополоненими з Росією вже наступного тижня",
-        "en": "Budanov announces major POW exchange with Russia as early as next week",
-        "ru": "Буданов объявил о крупном обмене военнопленными с Россией уже на следующей неделе"
       }
     }
   ]
