@@ -1,7 +1,20 @@
 {
-  "asOf": "2026-10-07",
+  "asOf": "2026-10-08",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://tsn.ua/politika/putin-nakazav-svoyiy-armiyi-vidmovytysia-vid-pravyl-viyny-zelenskyy-3179846.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-10-02T09:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/26e1b6149700f962.webp",
+      "original": "Путін наказав своїй армії відмовитися від правил війни Політика",
+      "title": {
+        "uk": "Путін наказав своїй армії відмовитися від правил війни",
+        "en": "Putin ordered his army to abandon the rules of war",
+        "ru": "Путин приказал своей армии отказаться от правил войны"
+      }
+    },
     {
       "url": "https://www.kyivpost.com/post/85841",
       "domain": "kyivpost.com",
@@ -10,9 +23,9 @@
       "image": "/news/56a7b511140cbbe3.webp",
       "original": "46 , 230 Russian Troop Losses in September as Moscow Prepares 120 , 000 New Conscripts",
       "title": {
-        "uk": "46 230 втрат росіян у вересні: Москва готує 120 000 нових призовників",
-        "en": "46,230 Russian Troop Losses in September as Moscow Prepares 120,000 New Conscripts",
-        "ru": "46 230 потерь российских войск в сентябре: Москва готовит 120 000 новых призывников"
+        "uk": "46 230 втрат російських військ у вересні — Москва готує 120 000 нових призовників",
+        "en": "46,230 Russian troop losses in September as Moscow prepares 120,000 new conscripts",
+        "ru": "46 230 потерь российских войск в сентябре — Москва готовит 120 000 новых призывников"
       }
     },
     {
@@ -23,22 +36,22 @@
       "image": "/news/5e6c4d73c53165ed.webp",
       "original": "Putin Raises Nuclear Threat Over Kaliningrad , Says Russia Monitors Arms Factories in Europe",
       "title": {
-        "uk": "Путін підвищує ядерну загрозу через Калінінград і заявляє, що Росія стежить за збройовими заводами в Європі",
-        "en": "Putin Raises Nuclear Threat Over Kaliningrad, Says Russia Monitors Arms Factories in Europe",
-        "ru": "Путин повышает ядерную угрозу из-за Калининграда и заявляет, что Россия следит за оружейными заводами в Европе"
+        "uk": "Путін посилює ядерні погрози через Калінінград і заявляє, що Росія стежить за оборонними заводами в Європі",
+        "en": "Putin raises nuclear threat over Kaliningrad, says Russia monitors arms factories in Europe",
+        "ru": "Путин усиливает ядерные угрозы из-за Калининграда и заявляет, что Россия следит за оборонными заводами в Европе"
       }
     },
     {
-      "url": "https://en.apa.az/cis-countries/kremlin-russia-needs-peace-with-ukraine-not-ceasefire-527728",
-      "domain": "en.apa.az",
-      "seenAt": "2026-10-02T07:45:00.000Z",
-      "sourceCountry": "Azerbaijan",
-      "image": "/news/7b15137f1b4a2a92.webp",
-      "original": "Kremlin : Russia needs peace with Ukraine , not ceasefire",
+      "url": "http://www.econotimes.com/Ukraine-Deploys-FP-7-Ballistic-Missile-in-Combat-for-First-Time-1753740",
+      "domain": "econotimes.com",
+      "seenAt": "2026-10-01T23:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/de8d34161ff0656a.webp",
+      "original": "Ukraine Deploys FP - 7 Ballistic Missile in Combat for First Time",
       "title": {
-        "uk": "Кремль: Росії потрібен мир з Україною, а не перемир'я",
-        "en": "Kremlin: Russia Needs Peace with Ukraine, Not a Ceasefire",
-        "ru": "Кремль: России нужен мир с Украиной, а не перемирие"
+        "uk": "Україна вперше застосувала балістичну ракету FP-7 у бою",
+        "en": "Ukraine deploys FP-7 ballistic missile in combat for first time",
+        "ru": "Украина впервые применила баллистическую ракету FP-7 в боевых условиях"
       }
     },
     {
@@ -50,46 +63,20 @@
       "original": "Сибіга розповів про чотири варіанти перемир  я з РФ",
       "title": {
         "uk": "Сибіга розповів про чотири варіанти перемир'я з РФ",
-        "en": "Sybiha Outlines Four Ceasefire Options with Russia",
-        "ru": "Сибига назвал четыре варианта перемирия с РФ"
+        "en": "Sybiha outlines four ceasefire options with Russia",
+        "ru": "Сибига рассказал о четырёх вариантах перемирия с РФ"
       }
     },
     {
-      "url": "http://www.econotimes.com/Ukraine-Deploys-FP-7-Ballistic-Missile-in-Combat-for-First-Time-1753740",
-      "domain": "econotimes.com",
-      "seenAt": "2026-10-01T23:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/de8d34161ff0656a.webp",
-      "original": "Ukraine Deploys FP - 7 Ballistic Missile in Combat for First Time",
+      "url": "https://war.obozrevatel.com/ukr/section-war/news-u-rosiyi-zapanikuvaly-cherez-ukrayinsku-operatsiyu-vivaldi-v-isw-poyasnyly-chomu-plany-voroha-zirvano-karta-02-10-2026.html",
+      "domain": "war.obozrevatel.com",
+      "seenAt": "2026-10-02T07:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Операція Вівальді – у Росії запанікували через зрив планів наступу – карта і аналіз ISW",
       "title": {
-        "uk": "Україна вперше застосувала балістичну ракету FP-7 в бою",
-        "en": "Ukraine Deploys FP-7 Ballistic Missile in Combat for First Time",
-        "ru": "Украина впервые применила баллистическую ракету FP-7 в бою"
-      }
-    },
-    {
-      "url": "https://english.aawsat.com/world/5324568-russia-attacks-ukrainian-energy-grid-forcing-power-cuts-winter-looms",
-      "domain": "english.aawsat.com",
-      "seenAt": "2026-10-01T00:45:00.000Z",
-      "sourceCountry": "Syria",
-      "image": "/news/70a80899c6432ec7.webp",
-      "original": "Russia Attacks Ukrainian Energy Grid , Forcing Power Cuts as Winter Looms",
-      "title": {
-        "uk": "Росія атакує українську енергосистему, спричиняючи відключення електроенергії напередодні зими",
-        "en": "Russia Attacks Ukrainian Energy Grid, Forcing Power Cuts as Winter Looms",
-        "ru": "Россия атакует украинскую энергосистему, вызывая отключения электроэнергии накануне зимы"
-      }
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/01/ukraine-russian-oil-refinery-strikes-defying-trump-fuel-price-warnings",
-      "domain": "theguardian.com",
-      "seenAt": "2026-10-01T13:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "original": "Ukraine persists with Russian oil refinery strikes , defying Trump on fuel price warnings",
-      "title": {
-        "uk": "Україна продовжує удари по російських нафтопереробних заводах, ігноруючи застереження Трампа щодо цін на паливо",
-        "en": "Ukraine Persists with Russian Oil Refinery Strikes, Defying Trump on Fuel Price Warnings",
-        "ru": "Украина продолжает удары по российским нефтеперерабатывающим заводам, игнорируя предупреждения Трампа о ценах на топливо"
+        "uk": "Операція «Вівальді» — у Росії запанікували через зрив планів наступу — карта і аналіз ISW",
+        "en": "Operation Vivaldi: Russia panics as advance plans collapse — map and ISW analysis",
+        "ru": "Операция «Вивальди» — в России запаниковали из-за срыва планов наступления — карта и анализ ISW"
       }
     },
     {
@@ -101,34 +88,46 @@
       "original": "Допомога США для України : Трамп перенаправив десятки мільйонів доларів до Латинської Америки",
       "title": {
         "uk": "Допомога США для України: Трамп перенаправив десятки мільйонів доларів до Латинської Америки",
-        "en": "US Aid for Ukraine: Trump Redirected Tens of Millions of Dollars to Latin America",
-        "ru": "Помощь США Украине: Трамп перенаправил десятки миллионов долларов в Латинскую Америку"
+        "en": "US aid for Ukraine: Trump redirected tens of millions of dollars to Latin America",
+        "ru": "Помощь США для Украины: Трамп перенаправил десятки миллионов долларов в Латинскую Америку"
       }
     },
     {
-      "url": "https://uainfo.org/blognews/1790923832-operatsiya-vivaldi-mozhe-zlamati-rosiyskiy-plan-nastupu.html",
-      "domain": "uainfo.org",
-      "seenAt": "2026-10-02T08:15:00.000Z",
+      "url": "https://glavcom.ua/world/world-politics/pivdenna-koreja-visunula-ukrajini-ultimatum-cherez-polonenikh-kndr-1146591.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-10-02T05:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/fbf8c0acbc38629a.webp",
-      "original": "Операція  Вівальді  може зламати російський план наступу на Слов  янськ ,",
+      "original": "Південна Корея висунула Україні ультиматум через полонених КНДР",
       "title": {
-        "uk": "Операція «Вівальді» може зламати російський план наступу на Слов'янськ",
-        "en": "Operation Vivaldi May Disrupt Russia's Offensive Plan on Sloviansk",
-        "ru": "Операция «Вивальди» может сорвать российский план наступления на Славянск"
+        "uk": "Південна Корея висунула Україні ультиматум через полонених КНДР",
+        "en": "South Korea issues ultimatum to Ukraine over North Korean POWs",
+        "ru": "Южная Корея выдвинула Украине ультиматум из-за пленных КНДР"
       }
     },
     {
-      "url": "https://www.newsweek.com/map-shows-russia-sabotage-attacks-europe-since-start-of-ukraine-war-12507606",
-      "domain": "newsweek.com",
-      "seenAt": "2026-09-30T18:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/5efd8214238cb9fa.webp",
-      "original": "Map Shows Russia Sabotage Attacks on Europe Since Start of Ukraine War",
+      "url": "https://www.welt.de/politik/article6abe6ca43ff652909b7949f3/hybrider-krieg-sicherheitsbehoerden-rechnen-mit-verschaerfung-russischer-sabotageakte-in-europa.html",
+      "domain": "welt.de",
+      "seenAt": "2026-10-02T04:15:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/04fcb757df999c4c.webp",
+      "original": "Hybrider Krieg : Sicherheitsbehörden rechnen mit Verschärfung russischer Sabotageakte in Europa",
       "title": {
-        "uk": "Карта показує диверсійні атаки Росії на Європу з початку війни в Україні",
-        "en": "Map Shows Russia Sabotage Attacks on Europe Since Start of Ukraine War",
-        "ru": "Карта диверсионных атак России на Европу с начала войны в Украине"
+        "uk": "Гібридна війна: спецслужби очікують посилення російських диверсій у Європі",
+        "en": "Hybrid war: security services expect escalation of Russian sabotage acts in Europe",
+        "ru": "Гибридная война: спецслужбы ожидают усиления российских диверсий в Европе"
+      }
+    },
+    {
+      "url": "https://www.radiosvoboda.org/a/news-povitriani-syly-ataka-rf/33868844.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-10-02T08:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/dea27e8f359cc5a9.webp",
+      "original": "Повітряні сили про нічну атаку РФ : знешкоджені 88 зі 108 дронів",
+      "title": {
+        "uk": "Повітряні сили про нічну атаку РФ: знешкоджені 88 зі 108 дронів",
+        "en": "Air Force on overnight Russian attack: 88 of 108 drones neutralised",
+        "ru": "Воздушные силы о ночной атаке РФ: нейтрализованы 88 из 108 дронов"
       }
     }
   ]
