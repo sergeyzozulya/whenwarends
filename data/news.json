@@ -1,133 +1,132 @@
 {
-  "asOf": "2026-10-08",
+  "asOf": "2026-10-09",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://tsn.ua/politika/putin-nakazav-svoyiy-armiyi-vidmovytysia-vid-pravyl-viyny-zelenskyy-3179846.html",
-      "domain": "tsn.ua",
-      "seenAt": "2026-10-02T09:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/26e1b6149700f962.webp",
-      "original": "Путін наказав своїй армії відмовитися від правил війни Політика",
+      "url": "https://ziare.com/razboi-ucraina/atac-rusia-cladire-rezidentiala-civili-ucisi-2040061",
+      "domain": "ziare.com",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "Romania",
+      "image": "/news/cd97fdd4ecd367eb.webp",
+      "original": "Cel puțin 28 de morți , între care copii , după ce Rusia a lovit o clădire rezidențială . „ Acesta este genul de „ cadou  pe care Putin și l - a făcut de ziua lui de naștere  VIDEO",
       "title": {
-        "uk": "Путін наказав своїй армії відмовитися від правил війни",
-        "en": "Putin ordered his army to abandon the rules of war",
-        "ru": "Путин приказал своей армии отказаться от правил войны"
+        "uk": "Щонайменше 28 загиблих, серед яких діти, після удару Росії по житловому будинку. «Такий",
+        "en": "At least 28 dead, including children, after Russia hit a residential building. \"This is the kind of 'gift' Putin gave himself for his birthday\"",
+        "ru": "Не менее 28 погибших, в том числе дети, после удара России по жилому дому. «Вот такой"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/85841",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-10-01T16:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/56a7b511140cbbe3.webp",
-      "original": "46 , 230 Russian Troop Losses in September as Moscow Prepares 120 , 000 New Conscripts",
-      "title": {
-        "uk": "46 230 втрат російських військ у вересні — Москва готує 120 000 нових призовників",
-        "en": "46,230 Russian troop losses in September as Moscow prepares 120,000 new conscripts",
-        "ru": "46 230 потерь российских войск в сентябре — Москва готовит 120 000 новых призывников"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/85879",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-10-01T21:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/5e6c4d73c53165ed.webp",
-      "original": "Putin Raises Nuclear Threat Over Kaliningrad , Says Russia Monitors Arms Factories in Europe",
-      "title": {
-        "uk": "Путін посилює ядерні погрози через Калінінград і заявляє, що Росія стежить за оборонними заводами в Європі",
-        "en": "Putin raises nuclear threat over Kaliningrad, says Russia monitors arms factories in Europe",
-        "ru": "Путин усиливает ядерные угрозы из-за Калининграда и заявляет, что Россия следит за оборонными заводами в Европе"
-      }
-    },
-    {
-      "url": "http://www.econotimes.com/Ukraine-Deploys-FP-7-Ballistic-Missile-in-Combat-for-First-Time-1753740",
-      "domain": "econotimes.com",
-      "seenAt": "2026-10-01T23:00:00.000Z",
+      "url": "http://www.sitkasentinel.com/stories/ukraine-grapples-with-a-shortage-of-troops-at-the-front-after-over-4-years-of-war,177119",
+      "domain": "sitkasentinel.com",
+      "seenAt": "2026-10-08T05:30:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/de8d34161ff0656a.webp",
-      "original": "Ukraine Deploys FP - 7 Ballistic Missile in Combat for First Time",
+      "image": "/news/3ee86792354ed971.webp",
+      "original": "Ukraine grapples with a shortage of troops at the front after over 4 years of war",
       "title": {
-        "uk": "Україна вперше застосувала балістичну ракету FP-7 у бою",
-        "en": "Ukraine deploys FP-7 ballistic missile in combat for first time",
-        "ru": "Украина впервые применила баллистическую ракету FP-7 в боевых условиях"
+        "uk": "Україна стикається з нестачею військ на фронті після понад 4 років війни",
+        "en": "Ukraine grapples with a shortage of troops at the front after over 4 years of war",
+        "ru": "Украина сталкивается с нехваткой войск на фронте после более чем 4 лет войны"
       }
     },
     {
-      "url": "https://uainfo.org/blognews/1790924362-sibiga-rozpoviv-pro-chotiri-varianti-peremir-ya-z-rf.html",
-      "domain": "uainfo.org",
-      "seenAt": "2026-10-02T08:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/a7ed2ec1fab69f42.webp",
-      "original": "Сибіга розповів про чотири варіанти перемир  я з РФ",
+      "url": "https://news.yam.md/ro/story/73349004",
+      "domain": "news.yam.md",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "",
+      "original": "Ucraina are o gaură în buget de 56 de miliarde de dolari . Banca Mondială : Războiul din Ucraina va continua și în 2027",
       "title": {
-        "uk": "Сибіга розповів про чотири варіанти перемир'я з РФ",
-        "en": "Sybiha outlines four ceasefire options with Russia",
-        "ru": "Сибига рассказал о четырёх вариантах перемирия с РФ"
+        "uk": "В Україні дефіцит бюджету становить 56 мільярдів доларів. Світовий банк: війна в Україні триватиме і у 2027 році",
+        "en": "Ukraine has a $56 billion budget gap. World Bank: the war in Ukraine will continue into 2027",
+        "ru": "Дефицит бюджета Украины составляет 56 миллиардов долларов. Всемирный банк: война на Украине продолжится и в 2027 году"
       }
     },
     {
-      "url": "https://war.obozrevatel.com/ukr/section-war/news-u-rosiyi-zapanikuvaly-cherez-ukrayinsku-operatsiyu-vivaldi-v-isw-poyasnyly-chomu-plany-voroha-zirvano-karta-02-10-2026.html",
-      "domain": "war.obozrevatel.com",
-      "seenAt": "2026-10-02T07:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Операція Вівальді – у Росії запанікували через зрив планів наступу – карта і аналіз ISW",
-      "title": {
-        "uk": "Операція «Вівальді» — у Росії запанікували через зрив планів наступу — карта і аналіз ISW",
-        "en": "Operation Vivaldi: Russia panics as advance plans collapse — map and ISW analysis",
-        "ru": "Операция «Вивальди» — в России запаниковали из-за срыва планов наступления — карта и анализ ISW"
-      }
-    },
-    {
-      "url": "https://www.unian.ua/world/dopomoga-ssha-dlya-ukrajini-tramp-perenapraviv-desyatki-milyoniv-dolariv-do-latinskoji-ameriki-13516296.html",
-      "domain": "unian.ua",
-      "seenAt": "2026-10-02T05:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/8adaa84fd14d4935.webp",
-      "original": "Допомога США для України : Трамп перенаправив десятки мільйонів доларів до Латинської Америки",
-      "title": {
-        "uk": "Допомога США для України: Трамп перенаправив десятки мільйонів доларів до Латинської Америки",
-        "en": "US aid for Ukraine: Trump redirected tens of millions of dollars to Latin America",
-        "ru": "Помощь США для Украины: Трамп перенаправил десятки миллионов долларов в Латинскую Америку"
-      }
-    },
-    {
-      "url": "https://glavcom.ua/world/world-politics/pivdenna-koreja-visunula-ukrajini-ultimatum-cherez-polonenikh-kndr-1146591.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-10-02T05:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Південна Корея висунула Україні ультиматум через полонених КНДР",
-      "title": {
-        "uk": "Південна Корея висунула Україні ультиматум через полонених КНДР",
-        "en": "South Korea issues ultimatum to Ukraine over North Korean POWs",
-        "ru": "Южная Корея выдвинула Украине ультиматум из-за пленных КНДР"
-      }
-    },
-    {
-      "url": "https://www.welt.de/politik/article6abe6ca43ff652909b7949f3/hybrider-krieg-sicherheitsbehoerden-rechnen-mit-verschaerfung-russischer-sabotageakte-in-europa.html",
-      "domain": "welt.de",
-      "seenAt": "2026-10-02T04:15:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/04fcb757df999c4c.webp",
-      "original": "Hybrider Krieg : Sicherheitsbehörden rechnen mit Verschärfung russischer Sabotageakte in Europa",
-      "title": {
-        "uk": "Гібридна війна: спецслужби очікують посилення російських диверсій у Європі",
-        "en": "Hybrid war: security services expect escalation of Russian sabotage acts in Europe",
-        "ru": "Гибридная война: спецслужбы ожидают усиления российских диверсий в Европе"
-      }
-    },
-    {
-      "url": "https://www.radiosvoboda.org/a/news-povitriani-syly-ataka-rf/33868844.html",
+      "url": "https://www.radiosvoboda.org/a/news-ssha-zakon-grema-zvernennja-senatoriv/33872559.html",
       "domain": "radiosvoboda.org",
-      "seenAt": "2026-10-02T08:30:00.000Z",
+      "seenAt": "2026-10-08T05:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/dea27e8f359cc5a9.webp",
-      "original": "Повітряні сили про нічну атаку РФ : знешкоджені 88 зі 108 дронів",
+      "image": "/news/02875936d6043004.webp",
+      "original": "У США сенатори закликали адміністрацію Трампа використати закон Ґрема для тиску на РФ",
       "title": {
-        "uk": "Повітряні сили про нічну атаку РФ: знешкоджені 88 зі 108 дронів",
-        "en": "Air Force on overnight Russian attack: 88 of 108 drones neutralised",
-        "ru": "Воздушные силы о ночной атаке РФ: нейтрализованы 88 из 108 дронов"
+        "uk": "У США сенатори закликали адміністрацію Трампа використати закон Ґрема для тиску на РФ",
+        "en": "US senators called on the Trump administration to use the Graham Act to pressure Russia",
+        "ru": "В США сенаторы призвали администрацию Трампа использовать закон Грэма для давления на РФ"
+      }
+    },
+    {
+      "url": "https://www.hna.de/politik/litauen-macht-weiteren-schritt-zur-aufhebung-des-atomwaffenverbots-zr-94530139.html",
+      "domain": "hna.de",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "Germany",
+      "original": "Litauen hebt Atomwaffen - Verbot auf : Russland warnt vor Eskalation",
+      "title": {
+        "uk": "Литва скасовує заборону на ядерну зброю: Росія попереджає про ескалацію",
+        "en": "Lithuania lifts nuclear weapons ban: Russia warns of escalation",
+        "ru": "Литва отменяет запрет на ядерное оружие: Россия предупреждает об эскалации"
+      }
+    },
+    {
+      "url": "https://tsn.ua/svit/lytva-pislia-proryvu-ozbroyenykh-z-bilorusi-vidpravliaye-viyska-do-kordoniv-rosiyi-pershi-detali-3184131.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/a542320fbffa46f9.webp",
+      "original": "Литва після прориву озброєних з Білорусі відправляє війська до кордонів РФ Світ",
+      "title": {
+        "uk": "Литва після прориву озброєних осіб з Білорусі направляє війська до кордонів з РФ",
+        "en": "Lithuania sends troops to Russian border after armed individuals crossed from Belarus",
+        "ru": "Литва направляет войска к границам с РФ после прорыва вооружённых лиц из Беларуси"
+      }
+    },
+    {
+      "url": "https://www.chinatimes.com/realtimenews/20261008002604-260410",
+      "domain": "chinatimes.com",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "Taiwan",
+      "original": "《 國際經濟 》 傳歐盟批准俄羅斯制裁 集中在彈道飛彈供應商 - 財經",
+      "title": {
+        "uk": "ЄС схвалив нові санкції проти Росії, зосереджені на постачальниках балістичних ракет",
+        "en": "EU reportedly approves Russia sanctions focused on ballistic missile suppliers",
+        "ru": "ЕС одобрил санкции против России, направленные против поставщиков баллистических ракет"
+      }
+    },
+    {
+      "url": "https://www.radiosvoboda.org/a/news-kyiv-udar-rf-zahybli/33872568.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/ff1fdc1f3b1fe5cd.webp",
+      "original": "У Києві внаслідок удару РФ загинули двоє людей – ДСНС",
+      "title": {
+        "uk": "У Києві внаслідок удару РФ загинули двоє людей — ДСНС",
+        "en": "Two people killed in Kyiv as a result of a Russian strike — SESU",
+        "ru": "В Киеве в результате удара РФ погибли два человека — ГСЧС"
+      }
+    },
+    {
+      "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/karas-ukrainoje-57-2780136",
+      "domain": "15min.lt",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "Lithuania",
+      "image": "/news/0f4a9ff1762b3460.webp",
+      "original": "Karas Ukrainoje . Rusijos Sasovo mieste – didžiulis gaisras : apgadintas didžiausias „ Yandex  duomenų centras",
+      "title": {
+        "uk": "У російському місті Сасово — велика пожежа: пошкоджено найбільший дата-центр «Яндекс»",
+        "en": "Huge fire in Russia's Sasovo: largest Yandex data center damaged",
+        "ru": "В российском городе Сасово — крупный пожар: повреждён крупнейший дата-центр «Яндекс»"
+      }
+    },
+    {
+      "url": "https://www.bursa.ro/reuters-veniturile-rusiei-din-petrol-si-gaze-au-scazut-cu-17-procente-88415064",
+      "domain": "bursa.ro",
+      "seenAt": "2026-10-06T08:30:00.000Z",
+      "sourceCountry": "Romania",
+      "image": "/news/d373b05b71f8e1a9.webp",
+      "original": "Reuters : Veniturile Rusiei din petrol şi gaze au scăzut cu 17 %",
+      "title": {
+        "uk": "Reuters: доходи Росії від нафти та газу скоротилися на 17%",
+        "en": "Reuters: Russia's oil and gas revenues fell by 17%",
+        "ru": "Reuters: доходы России от нефти и газа упали на 17%"
       }
     }
   ]
