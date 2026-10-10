@@ -1,7 +1,59 @@
 {
-  "asOf": "2026-10-09",
+  "asOf": "2026-10-10",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://www.the-star.co.ke/news/world/2026-10-10-trump-announces-deal-for-russian-diesel-as-zelensky-calls-it-a-gift-to-putin",
+      "domain": "the-star.co.ke",
+      "seenAt": "2026-10-10T06:45:00.000Z",
+      "sourceCountry": "Kenya",
+      "image": "/news/029150ef64c95f1b.webp",
+      "original": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
+      "title": {
+        "uk": "Трамп оголосив угоду щодо російського дизеля, тоді як Зеленський назвав її подарунком Путіну",
+        "en": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
+        "ru": "Трамп объявил о сделке по российскому дизелю, тогда как Зеленский назвал её подарком Путину"
+      }
+    },
+    {
+      "url": "https://www.index.hr/vijesti/clanak/rusi-potvrdili-putin-u-razgovoru-s-trumpom-odbio-ideju-o-zavrsetku-rata/2844079.aspx",
+      "domain": "index.hr",
+      "seenAt": "2026-10-10T06:45:00.000Z",
+      "sourceCountry": "Croatia",
+      "image": "/news/8089fcae7a651710.webp",
+      "original": "Rusi potvrdili : Putin u razgovoru s Trumpom odbio ideju o završetku rata",
+      "title": {
+        "uk": "Росіяни підтвердили: Путін у розмові з Трампом відкинув ідею завершення війни",
+        "en": "Russians confirm: Putin rejected the idea of ending the war in call with Trump",
+        "ru": "Россияне подтвердили: Путин в разговоре с Трампом отверг идею завершения войны"
+      }
+    },
+    {
+      "url": "https://www.mediafax.ro/externe/negociatorii-americani-ucraineni-si-europeni-au-discutat-sase-ore-la-miami-in-timp-ce-trump-a-anuntat-un-acord-cu-rusia-privind-motorina-23823158",
+      "domain": "mediafax.ro",
+      "seenAt": "2026-10-10T06:45:00.000Z",
+      "sourceCountry": "Romania",
+      "image": "/news/4c0dfb3dcbcd3594.webp",
+      "original": "Negociatorii americani , ucraineni și europeni au discutat șase ore la Miami , în timp ce Trump a anunțat un acord cu Rusia privind motorina",
+      "title": {
+        "uk": "Американські, українські та європейські переговорники провели шість годин у Маямі, поки Трамп оголошував угоду з Росією щодо дизельного пального",
+        "en": "American, Ukrainian and European negotiators held six hours of talks in Miami while Trump announced a deal with Russia on diesel",
+        "ru": "Американские, украинские и европейские переговорщики провели шесть часов в Майами, пока Трамп объявлял о сделке с Россией по дизелю"
+      }
+    },
+    {
+      "url": "https://www.euronews.com/2026/10/10/as-russia-escalates-its-war-the-eu-admits-its-support-for-ukraine-wont-be-enough",
+      "domain": "euronews.com",
+      "seenAt": "2026-10-10T06:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/6c17e10316db368f.webp",
+      "original": "As Russia escalates its war , the EU realises its support for Ukraine wont be enough",
+      "title": {
+        "uk": "Поки Росія посилює війну, ЄС усвідомлює, що його підтримки України буде недостатньо",
+        "en": "As Russia escalates its war, the EU realises its support for Ukraine won't be enough",
+        "ru": "По мере эскалации войны Россией ЕС осознаёт, что его поддержки Украины будет недостаточно"
+      }
+    },
     {
       "url": "https://ziare.com/razboi-ucraina/atac-rusia-cladire-rezidentiala-civili-ucisi-2040061",
       "domain": "ziare.com",
@@ -10,9 +62,21 @@
       "image": "/news/cd97fdd4ecd367eb.webp",
       "original": "Cel puțin 28 de morți , între care copii , după ce Rusia a lovit o clădire rezidențială . „ Acesta este genul de „ cadou  pe care Putin și l - a făcut de ziua lui de naștere  VIDEO",
       "title": {
-        "uk": "Щонайменше 28 загиблих, серед яких діти, після удару Росії по житловому будинку. «Такий",
-        "en": "At least 28 dead, including children, after Russia hit a residential building. \"This is the kind of 'gift' Putin gave himself for his birthday\"",
-        "ru": "Не менее 28 погибших, в том числе дети, после удара России по жилому дому. «Вот такой"
+        "uk": "Щонайменше 28 загиблих, серед них діти, після удару Росії по житловому будинку",
+        "en": "At least 28 killed, including children, after Russia struck a residential building",
+        "ru": "Не менее 28 погибших, в том числе дети, после удара России по жилому дому"
+      }
+    },
+    {
+      "url": "https://news.yam.md/ro/story/73349004",
+      "domain": "news.yam.md",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "",
+      "original": "Ucraina are o gaură în buget de 56 de miliarde de dolari . Banca Mondială : Războiul din Ucraina va continua și în 2027",
+      "title": {
+        "uk": "Україна має дефіцит бюджету в 56 мільярдів доларів. Світовий банк: війна в Україні триватиме і у 2027 році",
+        "en": "Ukraine has a $56 billion budget gap. World Bank: the war in Ukraine will continue into 2027",
+        "ru": "У Украины дыра в бюджете на 56 миллиардов долларов. Всемирный банк: война в Украине продолжится и в 2027 году"
       }
     },
     {
@@ -23,34 +87,9 @@
       "image": "/news/3ee86792354ed971.webp",
       "original": "Ukraine grapples with a shortage of troops at the front after over 4 years of war",
       "title": {
-        "uk": "Україна стикається з нестачею військ на фронті після понад 4 років війни",
+        "uk": "Україна стикається з нестачею військ на фронті після понад чотирьох років війни",
         "en": "Ukraine grapples with a shortage of troops at the front after over 4 years of war",
         "ru": "Украина сталкивается с нехваткой войск на фронте после более чем 4 лет войны"
-      }
-    },
-    {
-      "url": "https://news.yam.md/ro/story/73349004",
-      "domain": "news.yam.md",
-      "seenAt": "2026-10-08T05:30:00.000Z",
-      "sourceCountry": "",
-      "original": "Ucraina are o gaură în buget de 56 de miliarde de dolari . Banca Mondială : Războiul din Ucraina va continua și în 2027",
-      "title": {
-        "uk": "В Україні дефіцит бюджету становить 56 мільярдів доларів. Світовий банк: війна в Україні триватиме і у 2027 році",
-        "en": "Ukraine has a $56 billion budget gap. World Bank: the war in Ukraine will continue into 2027",
-        "ru": "Дефицит бюджета Украины составляет 56 миллиардов долларов. Всемирный банк: война на Украине продолжится и в 2027 году"
-      }
-    },
-    {
-      "url": "https://www.radiosvoboda.org/a/news-ssha-zakon-grema-zvernennja-senatoriv/33872559.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-10-08T05:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/02875936d6043004.webp",
-      "original": "У США сенатори закликали адміністрацію Трампа використати закон Ґрема для тиску на РФ",
-      "title": {
-        "uk": "У США сенатори закликали адміністрацію Трампа використати закон Ґрема для тиску на РФ",
-        "en": "US senators called on the Trump administration to use the Graham Act to pressure Russia",
-        "ru": "В США сенаторы призвали администрацию Трампа использовать закон Грэма для давления на РФ"
       }
     },
     {
@@ -66,6 +105,19 @@
       }
     },
     {
+      "url": "https://www.radiosvoboda.org/a/news-ssha-zakon-grema-zvernennja-senatoriv/33872559.html",
+      "domain": "radiosvoboda.org",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/02875936d6043004.webp",
+      "original": "У США сенатори закликали адміністрацію Трампа використати закон Ґрема для тиску на РФ",
+      "title": {
+        "uk": "У США сенатори закликали адміністрацію Трампа використати закон Ґрема для тиску на РФ",
+        "en": "US senators urged Trump administration to use the Graham Act to pressure Russia",
+        "ru": "В США сенаторы призвали администрацию Трампа использовать закон Грэма для давления на РФ"
+      }
+    },
+    {
       "url": "https://tsn.ua/svit/lytva-pislia-proryvu-ozbroyenykh-z-bilorusi-vidpravliaye-viyska-do-kordoniv-rosiyi-pershi-detali-3184131.html",
       "domain": "tsn.ua",
       "seenAt": "2026-10-08T05:30:00.000Z",
@@ -73,60 +125,9 @@
       "image": "/news/a542320fbffa46f9.webp",
       "original": "Литва після прориву озброєних з Білорусі відправляє війська до кордонів РФ Світ",
       "title": {
-        "uk": "Литва після прориву озброєних осіб з Білорусі направляє війська до кордонів з РФ",
-        "en": "Lithuania sends troops to Russian border after armed individuals crossed from Belarus",
-        "ru": "Литва направляет войска к границам с РФ после прорыва вооружённых лиц из Беларуси"
-      }
-    },
-    {
-      "url": "https://www.chinatimes.com/realtimenews/20261008002604-260410",
-      "domain": "chinatimes.com",
-      "seenAt": "2026-10-08T05:30:00.000Z",
-      "sourceCountry": "Taiwan",
-      "original": "《 國際經濟 》 傳歐盟批准俄羅斯制裁 集中在彈道飛彈供應商 - 財經",
-      "title": {
-        "uk": "ЄС схвалив нові санкції проти Росії, зосереджені на постачальниках балістичних ракет",
-        "en": "EU reportedly approves Russia sanctions focused on ballistic missile suppliers",
-        "ru": "ЕС одобрил санкции против России, направленные против поставщиков баллистических ракет"
-      }
-    },
-    {
-      "url": "https://www.radiosvoboda.org/a/news-kyiv-udar-rf-zahybli/33872568.html",
-      "domain": "radiosvoboda.org",
-      "seenAt": "2026-10-08T05:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/ff1fdc1f3b1fe5cd.webp",
-      "original": "У Києві внаслідок удару РФ загинули двоє людей – ДСНС",
-      "title": {
-        "uk": "У Києві внаслідок удару РФ загинули двоє людей — ДСНС",
-        "en": "Two people killed in Kyiv as a result of a Russian strike — SESU",
-        "ru": "В Киеве в результате удара РФ погибли два человека — ГСЧС"
-      }
-    },
-    {
-      "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/karas-ukrainoje-57-2780136",
-      "domain": "15min.lt",
-      "seenAt": "2026-10-08T05:30:00.000Z",
-      "sourceCountry": "Lithuania",
-      "image": "/news/0f4a9ff1762b3460.webp",
-      "original": "Karas Ukrainoje . Rusijos Sasovo mieste – didžiulis gaisras : apgadintas didžiausias „ Yandex  duomenų centras",
-      "title": {
-        "uk": "У російському місті Сасово — велика пожежа: пошкоджено найбільший дата-центр «Яндекс»",
-        "en": "Huge fire in Russia's Sasovo: largest Yandex data center damaged",
-        "ru": "В российском городе Сасово — крупный пожар: повреждён крупнейший дата-центр «Яндекс»"
-      }
-    },
-    {
-      "url": "https://www.bursa.ro/reuters-veniturile-rusiei-din-petrol-si-gaze-au-scazut-cu-17-procente-88415064",
-      "domain": "bursa.ro",
-      "seenAt": "2026-10-06T08:30:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/d373b05b71f8e1a9.webp",
-      "original": "Reuters : Veniturile Rusiei din petrol şi gaze au scăzut cu 17 %",
-      "title": {
-        "uk": "Reuters: доходи Росії від нафти та газу скоротилися на 17%",
-        "en": "Reuters: Russia's oil and gas revenues fell by 17%",
-        "ru": "Reuters: доходы России от нефти и газа упали на 17%"
+        "uk": "Литва після прориву озброєних осіб з Білорусі відправляє війська до кордонів РФ",
+        "en": "Lithuania sends troops to Russian border following armed incursion from Belarus",
+        "ru": "Литва после прорыва вооружённых лиц из Беларуси направляет войска к границам РФ"
       }
     }
   ]
