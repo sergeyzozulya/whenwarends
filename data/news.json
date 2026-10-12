@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-11",
+  "asOf": "2026-10-12",
   "source": "gdelt",
   "articles": [
     {
@@ -10,9 +10,9 @@
       "image": "/news/029150ef64c95f1b.webp",
       "original": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
       "title": {
-        "uk": "Трамп оголошує угоду щодо російського дизелю, Зеленський називає це подарунком Путіну",
+        "uk": "Трамп оголосив угоду про постачання російського дизельного палива — Зеленський назвав це подарунком Путіну",
         "en": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
-        "ru": "Трамп объявляет о сделке по российскому дизелю, Зеленский называет это подарком Путину"
+        "ru": "Трамп объявил о сделке по российскому дизелю, тогда как Зеленский назвал её подарком Путину"
       }
     },
     {
@@ -23,21 +23,9 @@
       "image": "/news/8089fcae7a651710.webp",
       "original": "Rusi potvrdili : Putin u razgovoru s Trumpom odbio ideju o završetku rata",
       "title": {
-        "uk": "Росіяни підтвердили: Путін у розмові з Трампом відкинув ідею завершення війни",
-        "en": "Russians confirmed: Putin rejected the idea of ending the war in call with Trump",
-        "ru": "Россияне подтвердили: Путин в разговоре с Трампом отверг идею завершения войны"
-      }
-    },
-    {
-      "url": "https://hnonline.sk/svet/96307105-usa-ukrajina-a-europa-diskutovali-v-miami-o-moznostiach-ukoncenia-vojny",
-      "domain": "hnonline.sk",
-      "seenAt": "2026-10-10T06:45:00.000Z",
-      "sourceCountry": "Slovak Republic",
-      "original": "USA , Ukrajina a Európa diskutovali v Miami o možnostiach ukončenia vojny",
-      "title": {
-        "uk": "США, Україна та Європа обговорили у Маямі варіанти завершення війни",
-        "en": "USA, Ukraine and Europe discussed options for ending the war in Miami",
-        "ru": "США, Украина и Европа обсудили в Майами варианты завершения войны"
+        "uk": "Росіяни підтвердили: Путін відхилив ідею завершення війни в розмові з Трампом",
+        "en": "Russians confirmed: Putin rejected the idea of ending the war in conversation with Trump",
+        "ru": "Россияне подтвердили: Путин отверг идею окончания войны в разговоре с Трампом"
       }
     },
     {
@@ -48,21 +36,34 @@
       "image": "/news/6c17e10316db368f.webp",
       "original": "As Russia escalates its war , the EU realises its support for Ukraine wont be enough",
       "title": {
-        "uk": "Зі зростанням ескалації з боку Росії ЄС усвідомлює, що його підтримки України недостатньо",
+        "uk": "Оскільки Росія посилює війну, ЄС усвідомлює, що його підтримки України недостатньо",
         "en": "As Russia escalates its war, the EU realises its support for Ukraine won't be enough",
         "ru": "По мере эскалации войны Россией ЕС осознаёт, что его поддержки Украины недостаточно"
       }
     },
     {
-      "url": "https://news.yam.md/ro/story/73349004",
-      "domain": "news.yam.md",
-      "seenAt": "2026-10-08T05:30:00.000Z",
-      "sourceCountry": "",
-      "original": "Ucraina are o gaură în buget de 56 de miliarde de dolari . Banca Mondială : Războiul din Ucraina va continua și în 2027",
+      "url": "https://hnonline.sk/svet/96307105-usa-ukrajina-a-europa-diskutovali-v-miami-o-moznostiach-ukoncenia-vojny",
+      "domain": "hnonline.sk",
+      "seenAt": "2026-10-10T06:45:00.000Z",
+      "sourceCountry": "Slovak Republic",
+      "original": "USA , Ukrajina a Európa diskutovali v Miami o možnostiach ukončenia vojny",
       "title": {
-        "uk": "Україна має бюджетну діру в 56 мільярдів доларів. Світовий банк: війна в Україні триватиме й у 2027 році",
-        "en": "Ukraine has a $56 billion budget gap. World Bank: The war in Ukraine will continue into 2027",
-        "ru": "У Украины дыра в бюджете в 56 миллиардов долларов. Всемирный банк: война в Украине продолжится и в 2027 году"
+        "uk": "США, Україна та Європа обговорили в Маямі варіанти завершення війни",
+        "en": "USA, Ukraine and Europe discussed options for ending the war at Miami talks",
+        "ru": "США, Украина и Европа обсудили в Майами варианты завершения войны"
+      }
+    },
+    {
+      "url": "https://ziare.com/razboi-ucraina/atac-rusia-cladire-rezidentiala-civili-ucisi-2040061",
+      "domain": "ziare.com",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "Romania",
+      "image": "/news/cd97fdd4ecd367eb.webp",
+      "original": "Cel puțin 28 de morți , între care copii , după ce Rusia a lovit o clădire rezidențială . „ Acesta este genul de „ cadou  pe care Putin și l - a făcut de ziua lui de naștere  VIDEO",
+      "title": {
+        "uk": "Щонайменше 28 загиблих, серед них діти, після удару Росії по житловому будинку — «Це і є подарунок Путіна самому собі на день народження»",
+        "en": "At least 28 dead, including children, after Russia struck a residential building — \"This is the kind of birthday gift Putin gave himself\"",
+        "ru": "Не менее 28 погибших, в том числе дети, после удара России по жилому зданию — «Это и есть"
       }
     },
     {
@@ -73,22 +74,46 @@
       "image": "/news/3ee86792354ed971.webp",
       "original": "Ukraine grapples with a shortage of troops at the front after over 4 years of war",
       "title": {
-        "uk": "Україна стикається з нестачею військових на фронті після понад 4 років війни",
+        "uk": "Україна зіткнулася з нестачею військ на фронті після понад 4 років війни",
         "en": "Ukraine grapples with a shortage of troops at the front after over 4 years of war",
-        "ru": "Украина сталкивается с нехваткой войск на фронте после более чем 4 лет войны"
+        "ru": "Украина столкнулась с нехваткой войск на фронте после более чем 4 лет войны"
       }
     },
     {
-      "url": "https://www.radiosvoboda.org/a/news-kyiv-udar-rf-zahybli/33872568.html",
-      "domain": "radiosvoboda.org",
+      "url": "https://www.hna.de/politik/litauen-macht-weiteren-schritt-zur-aufhebung-des-atomwaffenverbots-zr-94530139.html",
+      "domain": "hna.de",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "Germany",
+      "original": "Litauen hebt Atomwaffen - Verbot auf : Russland warnt vor Eskalation",
+      "title": {
+        "uk": "Литва скасувала заборону на ядерну зброю: Росія попереджає про ескалацію",
+        "en": "Lithuania lifts nuclear weapons ban; Russia warns of escalation",
+        "ru": "Литва отменила запрет на ядерное оружие: Россия предупреждает об эскалации"
+      }
+    },
+    {
+      "url": "https://news.yam.md/ro/story/73349004",
+      "domain": "news.yam.md",
+      "seenAt": "2026-10-08T05:30:00.000Z",
+      "sourceCountry": "",
+      "original": "Ucraina are o gaură în buget de 56 de miliarde de dolari . Banca Mondială : Războiul din Ucraina va continua și în 2027",
+      "title": {
+        "uk": "Україна має дефіцит бюджету в 56 мільярдів доларів; Світовий банк: війна в Україні триватиме і в 2027 році",
+        "en": "Ukraine has a $56 billion budget gap; World Bank says the war in Ukraine will continue into 2027",
+        "ru": "Украина имеет дефицит бюджета в 56 миллиардов долларов; Всемирный банк: война на Украине продолжится и в 2027 году"
+      }
+    },
+    {
+      "url": "https://tsn.ua/svit/lytva-pislia-proryvu-ozbroyenykh-z-bilorusi-vidpravliaye-viyska-do-kordoniv-rosiyi-pershi-detali-3184131.html",
+      "domain": "tsn.ua",
       "seenAt": "2026-10-08T05:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/ff1fdc1f3b1fe5cd.webp",
-      "original": "У Києві внаслідок удару РФ загинули двоє людей – ДСНС",
+      "image": "/news/a542320fbffa46f9.webp",
+      "original": "Литва після прориву озброєних з Білорусі відправляє війська до кордонів РФ Світ",
       "title": {
-        "uk": "У Києві внаслідок удару РФ загинули двоє людей — ДСНС",
-        "en": "Two people killed in Russian strike on Kyiv — SESU",
-        "ru": "В Киеве в результате удара РФ погибли два человека — ГСЧС"
+        "uk": "Литва після прориву озброєних із Білорусі відправляє війська до кордонів з РФ",
+        "en": "Lithuania sends troops to borders with Russia after armed incursion from Belarus",
+        "ru": "Литва после прорыва вооружённых лиц из Белоруссии направляет войска к границам с РФ"
       }
     },
     {
@@ -100,33 +125,8 @@
       "original": "У США сенатори закликали адміністрацію Трампа використати закон Ґрема для тиску на РФ",
       "title": {
         "uk": "У США сенатори закликали адміністрацію Трампа використати закон Ґрема для тиску на РФ",
-        "en": "US senators called on the Trump administration to use the Graham Act to pressure Russia",
+        "en": "US senators urged Trump administration to use the Graham Act to pressure Russia",
         "ru": "В США сенаторы призвали администрацию Трампа использовать закон Грэма для давления на РФ"
-      }
-    },
-    {
-      "url": "https://www.hna.de/politik/litauen-macht-weiteren-schritt-zur-aufhebung-des-atomwaffenverbots-zr-94530139.html",
-      "domain": "hna.de",
-      "seenAt": "2026-10-08T05:30:00.000Z",
-      "sourceCountry": "Germany",
-      "original": "Litauen hebt Atomwaffen - Verbot auf : Russland warnt vor Eskalation",
-      "title": {
-        "uk": "Литва скасувала заборону на ядерну зброю: Росія попередила про ескалацію",
-        "en": "Lithuania lifts nuclear weapons ban: Russia warns of escalation",
-        "ru": "Литва отменила запрет на ядерное оружие: Россия предупредила об эскалации"
-      }
-    },
-    {
-      "url": "https://odessa-life.od.ua/news/rf-usilivaet-davlenie-na-fronte-kreml-govorit-o-mire-a-ssha-razreshili-operaczii-s-rossijskim-toplivom",
-      "domain": "odessa-life.od.ua",
-      "seenAt": "2026-10-10T06:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/4893a0c9c10e5d76.webp",
-      "original": "РФ усиливает давление на фронте , Кремль говорит о мире",
-      "title": {
-        "uk": "РФ посилює тиск на фронті, Кремль говорить про мир",
-        "en": "Russia intensifies pressure at the front while the Kremlin talks about peace",
-        "ru": "РФ усиливает давление на фронте, Кремль говорит о мире"
       }
     }
   ]
