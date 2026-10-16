@@ -1,132 +1,132 @@
 {
-  "asOf": "2026-10-15",
+  "asOf": "2026-10-16",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.rferl.org/a/zelenskyy-vows-refinery-strikes-us-intel-disruption-russia/33877090.html",
-      "domain": "rferl.org",
+      "url": "https://www.dw.com/en/ukraine-resumes-attacks-on-russian-refineries-as-zelenskyy-says-were-done/a-79667757",
+      "domain": "dw.com",
       "seenAt": "2026-10-15T12:30:00.000Z",
-      "sourceCountry": "Russia",
-      "image": "/news/3672347036282403.webp",
-      "original": "Zelenskyy Vows Refinery Strikes , Expresses Anger At US Intel Disruption",
-      "title": {
-        "uk": "Зеленський обіцяє удари по нафтопереробних заводах і висловлює незадоволення зупинкою американської розвідки",
-        "en": "Zelenskyy vows refinery strikes, expresses anger at US intel disruption",
-        "ru": "Зеленский обещает удары по нефтеперерабатывающим заводам и выражает недовольство прекращением американской разведки"
-      }
-    },
-    {
-      "url": "https://podrobnosti.ua/2521341-tramp-vtracha-terpnnja-cherez-udari-ukrani-po-rosjskih-npz-wsj.html",
-      "domain": "podrobnosti.ua",
-      "seenAt": "2026-10-15T11:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Трамп втрачає терпіння через удари України по російських НПЗ – WSJ",
-      "title": {
-        "uk": "Трамп втрачає терпіння через удари України по російських НПЗ — WSJ",
-        "en": "Trump losing patience over Ukraine's strikes on Russian refineries — WSJ",
-        "ru": "Трамп теряет терпение из-за ударов Украины по российским НПЗ — WSJ"
-      }
-    },
-    {
-      "url": "https://www.thelocal.de/20261015/germanys-afd-and-populist-bsw-pass-motion-to-end-aid-for-ukraine",
-      "domain": "thelocal.de",
-      "seenAt": "2026-10-15T10:00:00.000Z",
       "sourceCountry": "Germany",
-      "original": "Germany AfD and populist BSW pass motion to end aid for Ukraine",
+      "image": "/news/a7a0f967f5825692.webp",
+      "original": "Zelenskyy on Trump  energy ceasefire :  Were done",
       "title": {
-        "uk": "У Німеччині AfD і популістська BSW проголосували за припинення допомоги Україні",
-        "en": "Germany AfD and populist BSW pass motion to end aid for Ukraine",
-        "ru": "В Германии AfD и популистская BSW приняли резолюцию о прекращении помощи Украине"
+        "uk": "Зеленський про «енергетичне перемир'я» Трампа: «Нам досить»",
+        "en": "Zelenskyy on Trump 'energy ceasefire': 'We're done'",
+        "ru": "Зеленский об «энергетическом перемирии» Трампа: «С нас хватит»"
       }
     },
     {
-      "url": "https://www.focus.de/politik/ausland/die-ukraine-hat-mit-einem-einzigen-angriff-auf-einen-luftwaffenstuetzpunkt-sechs-russische-su-34m-bomber-ausgeschaltet-teilt-die-marine-mit_95d32812-6d95-41df-8630-ef050d3e7879.html",
-      "domain": "focus.de",
-      "seenAt": "2026-10-15T12:45:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/2773d21e44b199df.webp",
-      "original": "Die Ukraine hat mit einem einzigen Angriff auf einen Luftwaffenstützpunkt sechs russische Su - 34M - Bomber ausgeschaltet , teilt die Marine mit",
-      "title": {
-        "uk": "Україна знищила шість російських бомбардувальників Су-34М одним ударом по авіабазі, повідомляє ВМС",
-        "en": "Ukraine knocked out six Russian Su-34M bombers in a single strike on an air base, navy says",
-        "ru": "Украина уничтожила шесть российских бомбардировщиков Су-34М одним ударом по авиабазе, сообщает ВМФ"
-      }
-    },
-    {
-      "url": "https://www.newstribune.com/news/2026/oct/15/ukraine-says-spacex-hampered-drones-for-attack/",
-      "domain": "newstribune.com",
-      "seenAt": "2026-10-15T10:00:00.000Z",
+      "url": "https://www.nbcnews.com/world/ukraine/trump-ukraine-strikes-russian-oil-disgrace-zelenskyy-starlink-rcna603848",
+      "domain": "nbcnews.com",
+      "seenAt": "2026-10-16T10:15:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/afaea6c559f9878a.webp",
-      "original": "Ukraine says SpaceX hampered drones for attack , defense | Jefferson City News Tribune",
+      "image": "/news/220eb42dcb2628de.webp",
+      "original": "Trump : Ukraine resuming strikes on Russian oil sites is a  disgrace",
       "title": {
-        "uk": "Україна заявляє, що SpaceX обмежила роботу дронів для атаки і захисту",
-        "en": "Ukraine says SpaceX hampered drones for attack, defense",
-        "ru": "Украина заявляет, что SpaceX ограничила работу дронов для атаки и обороны"
+        "uk": "Трамп: відновлення Україною ударів по російських нафтових об'єктах — «ганьба»",
+        "en": "Trump: Ukraine resuming strikes on Russian oil sites is a 'disgrace'",
+        "ru": "Трамп: возобновление Украиной ударов по российским нефтяным объектам — «позор»"
       }
     },
     {
-      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad08f14e9cf4a52398b45a2.html",
-      "domain": "elmundo.es",
-      "seenAt": "2026-10-15T12:30:00.000Z",
-      "sourceCountry": "Spain",
-      "image": "/news/f895fd74d7d5e086.webp",
-      "original": "Musk insta a Zelenski a dejar el poder en Ucrania :  Es hora de que se vaya",
+      "url": "https://www.pbs.org/newshour/politics/trumps-diesel-deal-with-putin-draws-bipartisan-criticism-from-a-frustrated-congress",
+      "domain": "pbs.org",
+      "seenAt": "2026-10-16T06:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/ce02ef5495a5aa71.webp",
+      "original": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
       "title": {
-        "uk": "Маск закликає Зеленського залишити владу в Україні: «Час іти»",
-        "en": "Musk urges Zelensky to leave power in Ukraine: \"It's time for him to go\"",
-        "ru": "Маск призывает Зеленского уйти от власти в Украине: «Пора уходить»"
+        "uk": "Угода Трампа з Путіним щодо дизельного палива викликала двопартійну критику розчарованого Конгресу",
+        "en": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
+        "ru": "Сделка Трампа с Путиным по дизельному топливу вызвала двухпартийную критику со стороны разочарованного Конгресса"
       }
     },
     {
-      "url": "https://24tv.ua/ru/ataka-reaktivnyh-shahedov-rossii-za-15-mesjaca-postroili-novuju_n3161211",
-      "domain": "24tv.ua",
-      "seenAt": "2026-10-15T12:45:00.000Z",
+      "url": "https://www.militarytimes.com/global/2026/10/15/ukrainian-officials-blame-pentagon-for-withholding-life-saving-intel-from-kyiv/",
+      "domain": "militarytimes.com",
+      "seenAt": "2026-10-16T00:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/e04ca381e76689fe.webp",
+      "original": "Ukrainian officials blame Pentagon for withholding life - saving intel from Kyiv",
+      "title": {
+        "uk": "Українські чиновники звинувачують Пентагон у приховуванні життєво важливої розвідки від Києва",
+        "en": "Ukrainian officials blame Pentagon for withholding life-saving intel from Kyiv",
+        "ru": "Украинские чиновники обвиняют Пентагон в сокрытии жизненно важных разведданных от Киева"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/15/what-is-starshield-and-who-limited-ukraines-access-to-it",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-10-15T14:30:00.000Z",
+      "sourceCountry": "United States",
+      "original": "What is Starshield , and who limited Ukraine access to it ? | Russia - Ukraine war News",
+      "title": {
+        "uk": "Що таке Starshield і хто обмежив доступ України до нього?",
+        "en": "What is Starshield, and who limited Ukraine's access to it?",
+        "ru": "Что такое Starshield и кто ограничил доступ Украины к нему?"
+      }
+    },
+    {
+      "url": "https://gazeta.ua/articles/politics/_ukrayina-otrimaye-vid-velikoyi-britaniyi-bilshe-storm-shadow-dlya-udariv-po-obyektah-u-rosiyi-bloomberg/1260348",
+      "domain": "gazeta.ua",
+      "seenAt": "2026-10-15T19:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/c0cdf9fa692ef5f0.webp",
-      "original": "Атака реактивных Шахедов – в России за 1 , 5 месяца построили новую базу для запуска дронов",
+      "image": "/news/c1094a8c1311255b.webp",
+      "original": "Україна отримає від Великої Британії більше Storm Shadow для ударів по об  єктах у Росії - Bloomberg",
       "title": {
-        "uk": "Атака реактивних «Шахедів» — у Росії за 1,5 місяця збудували нову базу для запуску дронів",
-        "en": "Jet Shahed attacks — Russia built a new drone launch base in 1.5 months",
-        "ru": "Атака реактивных «Шахедов» — в России за 1,5 месяца построили новую базу для запуска дронов"
+        "uk": "Україна отримає від Великої Британії більше Storm Shadow для ударів по об'єктах у Росії — Bloomberg",
+        "en": "Ukraine to receive more Storm Shadow missiles from the UK for strikes on targets in Russia — Bloomberg",
+        "ru": "Украина получит от Великобритании больше ракет Storm Shadow для ударов по объектам в России — Bloomberg"
       }
     },
     {
-      "url": "https://war.obozrevatel.com/section-war/news-vtraty-rosiyi-v-viyni-z-pochatku-2026-roku-perevyshchyly-350-tys-henshtab-nazvav-naybilsh-smertonosnyy-misyats-15-10-2026.html",
-      "domain": "war.obozrevatel.com",
-      "seenAt": "2026-10-15T12:30:00.000Z",
+      "url": "https://news.liga.net/ua/politics/news/menshyy-tysk-bilsha-zukhvalist-sybiha-vidpoviv-lavrovu-shchodo-peremyria",
+      "domain": "news.liga.net",
+      "seenAt": "2026-10-15T13:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Потери России в войне с начала 2026 года превысили 350 тыс . Генштаб",
+      "original": "Лавров відкинув перемир  я , Сибіга відповів на заяву РФ | Новини України",
       "title": {
-        "uk": "Втрати Росії у війні з початку 2026 року перевищили 350 тис. — Генштаб",
-        "en": "Russia's war losses since the start of 2026 exceeded 350,000 — General Staff",
-        "ru": "Потери России в войне с начала 2026 года превысили 350 тыс. — Генштаб"
+        "uk": "Лавров відкинув перемир'я, Сибіга відповів на заяву РФ",
+        "en": "Lavrov rejects ceasefire, Sybiha responds to Russia's statement",
+        "ru": "Лавров отверг перемирие, Сибига ответил на заявление РФ"
       }
     },
     {
-      "url": "https://www.azattyqasia.org/a/glava-mid-kyrgyzstana-vpervye-publichno-podtverdil-prinuditelnuyu-verbovku-kyrgyzstantsev-v-rossii-na-voynu-v-ukraine/33877077.html",
-      "domain": "azattyqasia.org",
-      "seenAt": "2026-10-15T10:00:00.000Z",
-      "sourceCountry": "",
-      "image": "/news/85c211d26f6519ee.webp",
-      "original": "Глава МИД Кыргызстана впервые публично подтвердил принудительную вербовку кыргызстанцев в России на войну в Украине",
+      "url": "https://www.aol.com/articles/eu-leaders-rally-around-zelenskiy-075900000.html",
+      "domain": "aol.com",
+      "seenAt": "2026-10-16T10:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/da6044189ae3ada4.webp",
+      "original": "EU leaders rally around Zelenskiy as Trump calls Ukrainian strikes on Russia a  disgrace",
       "title": {
-        "uk": "Глава МЗС Киргизстану вперше публічно підтвердив примусову вербовку киргизьких громадян у Росії для участі у війні в Україні",
-        "en": "Kyrgyzstan's foreign minister publicly confirms for the first time the forced recruitment of Kyrgyz citizens in Russia for the war in Ukraine",
-        "ru": "Глава МИД Кыргызстана впервые публично подтвердил принудительную вербовку кыргызстанцев в России на войну в Украине"
+        "uk": "Лідери ЄС згуртувалися навколо Зеленського, поки Трамп назвав українські удари по Росії «ганьбою»",
+        "en": "EU leaders rally around Zelenskyy as Trump calls Ukrainian strikes on Russia a 'disgrace'",
+        "ru": "Лидеры ЕС сплотились вокруг Зеленского, пока Трамп назвал украинские удары по России «позором»"
       }
     },
     {
-      "url": "https://www.leprogres.fr/defense-guerre-conflit/2026/10/15/le-redacteur-en-chef-du-media-independant-novaia-gazeta-arrete",
-      "domain": "leprogres.fr",
-      "seenAt": "2026-10-15T12:30:00.000Z",
-      "sourceCountry": "France",
-      "image": "/news/f02239b3ce31786f.webp",
-      "original": "Russie . Le rédacteur en chef du média indépendant Novaïa Gazeta arrêté",
+      "url": "https://www1.folha.uol.com.br/mundo/2026/10/editor-chefe-do-jornal-novaia-gazeta-e-interrogado-e-detido-na-russia.shtml",
+      "domain": "folha.uol.com.br",
+      "seenAt": "2026-10-15T21:45:00.000Z",
+      "sourceCountry": "Brazil",
+      "original": "Editor - chefe do jornal Novaia Gazeta é detido na Rússia - 15 / 10 / 2026 - Mundo",
       "title": {
-        "uk": "Росія: головного редактора незалежного видання «Новая газета» заарештовано",
-        "en": "Russia: editor-in-chief of independent media outlet Novaya Gazeta arrested",
-        "ru": "Россия: главный редактор независимого издания «Новая газета» арестован"
+        "uk": "Головного редактора газети «Нова газета» затримано в Росії",
+        "en": "Editor-in-chief of Novaya Gazeta newspaper detained in Russia",
+        "ru": "Главный редактор газеты «Новая газета» задержан в России"
+      }
+    },
+    {
+      "url": "https://www.infobae.com/america/mundo/2026/10/16/rusia-lanzo-un-nuevo-ataque-con-drones-contra-ucrania-al-menos-tres-muertos-y-apagones-en-ocho-regiones/",
+      "domain": "infobae.com",
+      "seenAt": "2026-10-16T10:15:00.000Z",
+      "sourceCountry": "Argentina",
+      "image": "/news/0f43b20d60ba17b2.webp",
+      "original": "Rusia lanzó un nuevo ataque con drones contra Ucrania : al menos tres muertos y apagones en ocho regiones",
+      "title": {
+        "uk": "Росія завдала нового удару дронами по Україні: щонайменше троє загиблих та відключення електроенергії у восьми регіонах",
+        "en": "Russia launches new drone attack on Ukraine: at least three dead and power outages in eight regions",
+        "ru": "Россия нанесла новый удар дронами по Украине: не менее трёх погибших и отключения электричества в восьми регионах"
       }
     }
   ]
