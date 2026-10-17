@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-16",
+  "asOf": "2026-10-17",
   "source": "gdelt",
   "articles": [
     {
@@ -10,9 +10,9 @@
       "image": "/news/a7a0f967f5825692.webp",
       "original": "Zelenskyy on Trump  energy ceasefire :  Were done",
       "title": {
-        "uk": "Зеленський про «енергетичне перемир'я» Трампа: «Нам досить»",
+        "uk": "Зеленський про «енергетичне перемир'я» Трампа: «Ми закінчили»",
         "en": "Zelenskyy on Trump 'energy ceasefire': 'We're done'",
-        "ru": "Зеленский об «энергетическом перемирии» Трампа: «С нас хватит»"
+        "ru": "Зеленский об «энергетическом перемирии» Трампа: «Мы покончили с этим»"
       }
     },
     {
@@ -23,22 +23,9 @@
       "image": "/news/220eb42dcb2628de.webp",
       "original": "Trump : Ukraine resuming strikes on Russian oil sites is a  disgrace",
       "title": {
-        "uk": "Трамп: відновлення Україною ударів по російських нафтових об'єктах — «ганьба»",
-        "en": "Trump: Ukraine resuming strikes on Russian oil sites is a 'disgrace'",
-        "ru": "Трамп: возобновление Украиной ударов по российским нефтяным объектам — «позор»"
-      }
-    },
-    {
-      "url": "https://www.pbs.org/newshour/politics/trumps-diesel-deal-with-putin-draws-bipartisan-criticism-from-a-frustrated-congress",
-      "domain": "pbs.org",
-      "seenAt": "2026-10-16T06:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/ce02ef5495a5aa71.webp",
-      "original": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
-      "title": {
-        "uk": "Угода Трампа з Путіним щодо дизельного палива викликала двопартійну критику розчарованого Конгресу",
-        "en": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
-        "ru": "Сделка Трампа с Путиным по дизельному топливу вызвала двухпартийную критику со стороны разочарованного Конгресса"
+        "uk": "Трамп назвав відновлення Україною ударів по російських нафтових об'єктах «ганьбою»",
+        "en": "Trump calls Ukraine resuming strikes on Russian oil sites a 'disgrace'",
+        "ru": "Трамп назвал возобновление Украиной ударов по российским нефтяным объектам «позором»"
       }
     },
     {
@@ -49,9 +36,9 @@
       "image": "/news/e04ca381e76689fe.webp",
       "original": "Ukrainian officials blame Pentagon for withholding life - saving intel from Kyiv",
       "title": {
-        "uk": "Українські чиновники звинувачують Пентагон у приховуванні життєво важливої розвідки від Києва",
+        "uk": "Українські чиновники звинувачують Пентагон у приховуванні розвіданих, що рятують життя",
         "en": "Ukrainian officials blame Pentagon for withholding life-saving intel from Kyiv",
-        "ru": "Украинские чиновники обвиняют Пентагон в сокрытии жизненно важных разведданных от Киева"
+        "ru": "Украинские чиновники обвинили Пентагон в сокрытии разведданных, способных спасти жизни"
       }
     },
     {
@@ -67,66 +54,81 @@
       }
     },
     {
-      "url": "https://gazeta.ua/articles/politics/_ukrayina-otrimaye-vid-velikoyi-britaniyi-bilshe-storm-shadow-dlya-udariv-po-obyektah-u-rosiyi-bloomberg/1260348",
-      "domain": "gazeta.ua",
-      "seenAt": "2026-10-15T19:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/c1094a8c1311255b.webp",
-      "original": "Україна отримає від Великої Британії більше Storm Shadow для ударів по об  єктах у Росії - Bloomberg",
-      "title": {
-        "uk": "Україна отримає від Великої Британії більше Storm Shadow для ударів по об'єктах у Росії — Bloomberg",
-        "en": "Ukraine to receive more Storm Shadow missiles from the UK for strikes on targets in Russia — Bloomberg",
-        "ru": "Украина получит от Великобритании больше ракет Storm Shadow для ударов по объектам в России — Bloomberg"
-      }
-    },
-    {
-      "url": "https://news.liga.net/ua/politics/news/menshyy-tysk-bilsha-zukhvalist-sybiha-vidpoviv-lavrovu-shchodo-peremyria",
-      "domain": "news.liga.net",
-      "seenAt": "2026-10-15T13:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Лавров відкинув перемир  я , Сибіга відповів на заяву РФ | Новини України",
-      "title": {
-        "uk": "Лавров відкинув перемир'я, Сибіга відповів на заяву РФ",
-        "en": "Lavrov rejects ceasefire, Sybiha responds to Russia's statement",
-        "ru": "Лавров отверг перемирие, Сибига ответил на заявление РФ"
-      }
-    },
-    {
-      "url": "https://www.aol.com/articles/eu-leaders-rally-around-zelenskiy-075900000.html",
-      "domain": "aol.com",
-      "seenAt": "2026-10-16T10:00:00.000Z",
+      "url": "https://www.pbs.org/newshour/politics/trumps-diesel-deal-with-putin-draws-bipartisan-criticism-from-a-frustrated-congress",
+      "domain": "pbs.org",
+      "seenAt": "2026-10-16T06:30:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/da6044189ae3ada4.webp",
-      "original": "EU leaders rally around Zelenskiy as Trump calls Ukrainian strikes on Russia a  disgrace",
+      "image": "/news/ce02ef5495a5aa71.webp",
+      "original": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
       "title": {
-        "uk": "Лідери ЄС згуртувалися навколо Зеленського, поки Трамп назвав українські удари по Росії «ганьбою»",
-        "en": "EU leaders rally around Zelenskyy as Trump calls Ukrainian strikes on Russia a 'disgrace'",
-        "ru": "Лидеры ЕС сплотились вокруг Зеленского, пока Трамп назвал украинские удары по России «позором»"
+        "uk": "Угода Трампа з Путіним щодо дизельного палива викликала двопартійну критику в Конгресі",
+        "en": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
+        "ru": "Сделка Трампа с Путиным по дизельному топливу вызвала двухпартийную критику в Конгрессе"
       }
     },
     {
-      "url": "https://www1.folha.uol.com.br/mundo/2026/10/editor-chefe-do-jornal-novaia-gazeta-e-interrogado-e-detido-na-russia.shtml",
-      "domain": "folha.uol.com.br",
-      "seenAt": "2026-10-15T21:45:00.000Z",
-      "sourceCountry": "Brazil",
-      "original": "Editor - chefe do jornal Novaia Gazeta é detido na Rússia - 15 / 10 / 2026 - Mundo",
+      "url": "https://www.thehindu.com/news/international/trump-blocking-russia-sanctions-a-historic-moment-putins-envoy/article71595853.ece",
+      "domain": "thehindu.com",
+      "seenAt": "2026-10-17T09:15:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/8ada386ca8b0f615.webp",
+      "original": "Trump blocking Russia sanctions a  historic moment : Putin envoy",
       "title": {
-        "uk": "Головного редактора газети «Нова газета» затримано в Росії",
-        "en": "Editor-in-chief of Novaya Gazeta newspaper detained in Russia",
-        "ru": "Главный редактор газеты «Новая газета» задержан в России"
+        "uk": "Блокування Трампом санкцій проти Росії — «історичний момент», каже посланник Путіна",
+        "en": "Trump blocking Russia sanctions a 'historic moment,' says Putin's envoy",
+        "ru": "Снятие Трампом санкций против России — «исторический момент», говорит посланник Путина"
       }
     },
     {
-      "url": "https://www.infobae.com/america/mundo/2026/10/16/rusia-lanzo-un-nuevo-ataque-con-drones-contra-ucrania-al-menos-tres-muertos-y-apagones-en-ocho-regiones/",
-      "domain": "infobae.com",
-      "seenAt": "2026-10-16T10:15:00.000Z",
-      "sourceCountry": "Argentina",
-      "image": "/news/0f43b20d60ba17b2.webp",
-      "original": "Rusia lanzó un nuevo ataque con drones contra Ucrania : al menos tres muertos y apagones en ocho regiones",
+      "url": "https://www.asiaone.com:443/world/russia-strikes-9-ukrainian-regions-new-report-shows-spike-civilian-casualties",
+      "domain": "asiaone.com",
+      "seenAt": "2026-10-17T04:30:00.000Z",
+      "sourceCountry": "Singapore",
+      "image": "/news/cb4b012ed2ce65b7.webp",
+      "original": "Russia strikes 9 Ukrainian regions as a new report shows a spike in civilian casualties",
       "title": {
-        "uk": "Росія завдала нового удару дронами по Україні: щонайменше троє загиблих та відключення електроенергії у восьми регіонах",
-        "en": "Russia launches new drone attack on Ukraine: at least three dead and power outages in eight regions",
-        "ru": "Россия нанесла новый удар дронами по Украине: не менее трёх погибших и отключения электричества в восьми регионах"
+        "uk": "Росія завдала ударів по 9 регіонах України на тлі зростання втрат серед цивільних",
+        "en": "Russia strikes 9 Ukrainian regions as a new report shows a spike in civilian casualties",
+        "ru": "Россия нанесла удары по 9 регионам Украины на фоне роста потерь среди гражданского населения"
+      }
+    },
+    {
+      "url": "https://www.dailystar.co.uk/news/latest-news/uk-troops-russia-wargame-37782033",
+      "domain": "dailystar.co.uk",
+      "seenAt": "2026-10-17T03:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/7a69b5c0103cc187.webp",
+      "original": "British troops rehearse deploying to Ukraine in the event of ceasefire in major Nato wargame",
+      "title": {
+        "uk": "Британські війська відпрацьовують розгортання в Україні на випадок перемир'я у масштабних навчаннях НАТО",
+        "en": "British troops rehearse deploying to Ukraine in the event of a ceasefire in major NATO wargame",
+        "ru": "Британские войска отрабатывают развёртывание на Украине на случай перемирия в масштабных учениях НАТО"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/87326",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-10-16T22:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/cbc6d6ba504beb18.webp",
+      "original": "Gerasimov Tells Putin Russian Forces Are Targeting Ukraine Bridges , Railways , Data Centers",
+      "title": {
+        "uk": "Герасимов доповів Путіну, що російські сили б'ють по мостах, залізницях і дата-центрах України",
+        "en": "Gerasimov tells Putin Russian forces are targeting Ukraine bridges, railways, data centers",
+        "ru": "Герасимов доложил Путину, что российские силы наносят удары по мостам, железным дорогам и дата-центрам Украины"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/87330",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-10-16T22:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/d26fd5bdaa89a863.webp",
+      "original": "Putin Doesnt Want Talks  in Any Format , Zelensky Says , Urges NATO to Take Drone Threats Seriously",
+      "title": {
+        "uk": "Путін не хоче переговорів «у жодному форматі», — Зеленський; закликає НАТО серйозно ставитися до загрози дронів",
+        "en": "Putin doesn't want talks 'in any format,' Zelensky says, urging NATO to take drone threats seriously",
+        "ru": "Путин не хочет переговоров «ни в каком формате», — Зеленский; призывает НАТО серьёзно отнестись к угрозе дронов"
       }
     }
   ]
