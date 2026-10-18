@@ -1,95 +1,30 @@
 {
-  "asOf": "2026-10-17",
+  "asOf": "2026-10-18",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.dw.com/en/ukraine-resumes-attacks-on-russian-refineries-as-zelenskyy-says-were-done/a-79667757",
-      "domain": "dw.com",
-      "seenAt": "2026-10-15T12:30:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/a7a0f967f5825692.webp",
-      "original": "Zelenskyy on Trump  energy ceasefire :  Were done",
+      "url": "https://www.winnipegfreepress.com/world/2026/10/18/blaze-at-st-petersburg-oil-sites-as-kyiv-launches-more-than-1000-drones-at-russia",
+      "domain": "winnipegfreepress.com",
+      "seenAt": "2026-10-18T10:30:00.000Z",
+      "sourceCountry": "Canada",
+      "original": "Blaze at St Petersburg oil sites as Kyiv launches more than 1 , 000 drones at Russia – Winnipeg Free Press",
       "title": {
-        "uk": "Зеленський про «енергетичне перемир'я» Трампа: «Ми закінчили»",
-        "en": "Zelenskyy on Trump 'energy ceasefire': 'We're done'",
-        "ru": "Зеленский об «энергетическом перемирии» Трампа: «Мы покончили с этим»"
+        "uk": "Пожежа на нафтових об'єктах Санкт-Петербурга після запуску Києвом понад 1 000 дронів по Росії",
+        "en": "Blaze at St Petersburg oil sites as Kyiv launches more than 1,000 drones at Russia",
+        "ru": "Пожар на нефтяных объектах Санкт-Петербурга после запуска Киевом более 1 000 дронов по России"
       }
     },
     {
-      "url": "https://www.nbcnews.com/world/ukraine/trump-ukraine-strikes-russian-oil-disgrace-zelenskyy-starlink-rcna603848",
-      "domain": "nbcnews.com",
-      "seenAt": "2026-10-16T10:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/220eb42dcb2628de.webp",
-      "original": "Trump : Ukraine resuming strikes on Russian oil sites is a  disgrace",
-      "title": {
-        "uk": "Трамп назвав відновлення Україною ударів по російських нафтових об'єктах «ганьбою»",
-        "en": "Trump calls Ukraine resuming strikes on Russian oil sites a 'disgrace'",
-        "ru": "Трамп назвал возобновление Украиной ударов по российским нефтяным объектам «позором»"
-      }
-    },
-    {
-      "url": "https://www.militarytimes.com/global/2026/10/15/ukrainian-officials-blame-pentagon-for-withholding-life-saving-intel-from-kyiv/",
-      "domain": "militarytimes.com",
-      "seenAt": "2026-10-16T00:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/e04ca381e76689fe.webp",
-      "original": "Ukrainian officials blame Pentagon for withholding life - saving intel from Kyiv",
-      "title": {
-        "uk": "Українські чиновники звинувачують Пентагон у приховуванні розвіданих, що рятують життя",
-        "en": "Ukrainian officials blame Pentagon for withholding life-saving intel from Kyiv",
-        "ru": "Украинские чиновники обвинили Пентагон в сокрытии разведданных, способных спасти жизни"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/15/what-is-starshield-and-who-limited-ukraines-access-to-it",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-10-15T14:30:00.000Z",
-      "sourceCountry": "United States",
-      "original": "What is Starshield , and who limited Ukraine access to it ? | Russia - Ukraine war News",
-      "title": {
-        "uk": "Що таке Starshield і хто обмежив доступ України до нього?",
-        "en": "What is Starshield, and who limited Ukraine's access to it?",
-        "ru": "Что такое Starshield и кто ограничил доступ Украины к нему?"
-      }
-    },
-    {
-      "url": "https://www.pbs.org/newshour/politics/trumps-diesel-deal-with-putin-draws-bipartisan-criticism-from-a-frustrated-congress",
-      "domain": "pbs.org",
-      "seenAt": "2026-10-16T06:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/ce02ef5495a5aa71.webp",
-      "original": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
-      "title": {
-        "uk": "Угода Трампа з Путіним щодо дизельного палива викликала двопартійну критику в Конгресі",
-        "en": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
-        "ru": "Сделка Трампа с Путиным по дизельному топливу вызвала двухпартийную критику в Конгрессе"
-      }
-    },
-    {
-      "url": "https://www.thehindu.com/news/international/trump-blocking-russia-sanctions-a-historic-moment-putins-envoy/article71595853.ece",
-      "domain": "thehindu.com",
-      "seenAt": "2026-10-17T09:15:00.000Z",
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/russia-hails-trump-waiving-sanctions-as-historic/articleshow/135010948.cms",
+      "domain": "economictimes.indiatimes.com",
+      "seenAt": "2026-10-17T09:30:00.000Z",
       "sourceCountry": "India",
-      "image": "/news/8ada386ca8b0f615.webp",
-      "original": "Trump blocking Russia sanctions a  historic moment : Putin envoy",
+      "image": "/news/4a41f2228d2a2c76.webp",
+      "original": "Russia hails Trump waiving sanctions as  historic",
       "title": {
-        "uk": "Блокування Трампом санкцій проти Росії — «історичний момент», каже посланник Путіна",
-        "en": "Trump blocking Russia sanctions a 'historic moment,' says Putin's envoy",
-        "ru": "Снятие Трампом санкций против России — «исторический момент», говорит посланник Путина"
-      }
-    },
-    {
-      "url": "https://www.asiaone.com:443/world/russia-strikes-9-ukrainian-regions-new-report-shows-spike-civilian-casualties",
-      "domain": "asiaone.com",
-      "seenAt": "2026-10-17T04:30:00.000Z",
-      "sourceCountry": "Singapore",
-      "image": "/news/cb4b012ed2ce65b7.webp",
-      "original": "Russia strikes 9 Ukrainian regions as a new report shows a spike in civilian casualties",
-      "title": {
-        "uk": "Росія завдала ударів по 9 регіонах України на тлі зростання втрат серед цивільних",
-        "en": "Russia strikes 9 Ukrainian regions as a new report shows a spike in civilian casualties",
-        "ru": "Россия нанесла удары по 9 регионам Украины на фоне роста потерь среди гражданского населения"
+        "uk": "Росія називає відмову Трампа від санкцій «історичною»",
+        "en": "Russia hails Trump waiving sanctions as 'historic'",
+        "ru": "Россия называет отказ Трампа от санкций «историческим»"
       }
     },
     {
@@ -100,35 +35,98 @@
       "image": "/news/7a69b5c0103cc187.webp",
       "original": "British troops rehearse deploying to Ukraine in the event of ceasefire in major Nato wargame",
       "title": {
-        "uk": "Британські війська відпрацьовують розгортання в Україні на випадок перемир'я у масштабних навчаннях НАТО",
+        "uk": "Британські війська відпрацьовують розгортання в Україні на випадок перемир'я в рамках масштабних навчань НАТО",
         "en": "British troops rehearse deploying to Ukraine in the event of a ceasefire in major NATO wargame",
-        "ru": "Британские войска отрабатывают развёртывание на Украине на случай перемирия в масштабных учениях НАТО"
+        "ru": "Британские войска отрабатывают развёртывание на Украине на случай перемирия в ходе масштабных учений НАТО"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/87326",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-10-16T22:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/cbc6d6ba504beb18.webp",
-      "original": "Gerasimov Tells Putin Russian Forces Are Targeting Ukraine Bridges , Railways , Data Centers",
+      "url": "https://www.moneycontrol.com/news/business/how-spacex-starlink-cuts-hobbled-ukraine-before-russian-bombardment-14054500.html",
+      "domain": "moneycontrol.com",
+      "seenAt": "2026-10-17T12:45:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/2543907ebdf1d974.webp",
+      "original": "How SpaceX Starlink cuts hobbled Ukraine before Russian bombardment",
       "title": {
-        "uk": "Герасимов доповів Путіну, що російські сили б'ють по мостах, залізницях і дата-центрах України",
-        "en": "Gerasimov tells Putin Russian forces are targeting Ukraine bridges, railways, data centers",
-        "ru": "Герасимов доложил Путину, что российские силы наносят удары по мостам, железным дорогам и дата-центрам Украины"
+        "uk": "Як обмеження SpaceX Starlink паралізували Україну перед російським бомбардуванням",
+        "en": "How SpaceX Starlink cuts hobbled Ukraine before Russian bombardment",
+        "ru": "Как ограничения SpaceX Starlink парализовали Украину перед российской бомбардировкой"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/87330",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-10-16T22:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/d26fd5bdaa89a863.webp",
-      "original": "Putin Doesnt Want Talks  in Any Format , Zelensky Says , Urges NATO to Take Drone Threats Seriously",
+      "url": "https://www.pbs.org/newshour/politics/trumps-diesel-deal-with-putin-draws-bipartisan-criticism-from-a-frustrated-congress",
+      "domain": "pbs.org",
+      "seenAt": "2026-10-16T06:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/ce02ef5495a5aa71.webp",
+      "original": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
       "title": {
-        "uk": "Путін не хоче переговорів «у жодному форматі», — Зеленський; закликає НАТО серйозно ставитися до загрози дронів",
-        "en": "Putin doesn't want talks 'in any format,' Zelensky says, urging NATO to take drone threats seriously",
-        "ru": "Путин не хочет переговоров «ни в каком формате», — Зеленский; призывает НАТО серьёзно отнестись к угрозе дронов"
+        "uk": "Угода Трампа з Путіним щодо дизельного палива викликала двопартійну критику розчарованого Конгресу",
+        "en": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
+        "ru": "Сделка Трампа с Путиным по дизельному топливу вызвала двухпартийную критику разочарованного Конгресса"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-10-16T19:45:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal | Russia - Ukraine war News",
+      "title": {
+        "uk": "Україна просувається на окупованому Донеччині, поки Трамп надає Путіну угоду щодо дизельного палива",
+        "en": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
+        "ru": "Украина продвигается на оккупированном Донетчине, пока Трамп предоставляет Путину сделку по дизельному топливу"
+      }
+    },
+    {
+      "url": "https://www.aol.co.uk/articles/trump-calls-ukraine-renewed-strikes-090555000.html",
+      "domain": "aol.co.uk",
+      "seenAt": "2026-10-16T09:45:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/f762bcdbcbf2eb3f.webp",
+      "original": "Trump calls Ukraine renewed strikes on Russian oil refineries a  disgrace",
+      "title": {
+        "uk": "Трамп назвав відновлені удари України по російських нафтопереробних заводах «ганьбою»",
+        "en": "Trump calls Ukraine's renewed strikes on Russian oil refineries a 'disgrace'",
+        "ru": "Трамп назвал возобновлённые удары Украины по российским нефтеперерабатывающим заводам «позором»"
+      }
+    },
+    {
+      "url": "https://www.dw.com/en/ukraine-resumes-attacks-on-russian-refineries-as-zelenskyy-says-were-done/a-79667757",
+      "domain": "dw.com",
+      "seenAt": "2026-10-15T12:30:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/a7a0f967f5825692.webp",
+      "original": "Zelenskyy on Trump  energy ceasefire :  Were done",
+      "title": {
+        "uk": "Зеленський про енергетичне перемир'я Трампа: «Ми закінчили»",
+        "en": "Zelenskyy on Trump energy ceasefire: 'We're done'",
+        "ru": "Зеленский об энергетическом перемирии Трампа: «Мы закончили»"
+      }
+    },
+    {
+      "url": "https://www.thelocal.de/20261015/germanys-afd-and-populist-bsw-pass-motion-to-end-aid-for-ukraine",
+      "domain": "thelocal.de",
+      "seenAt": "2026-10-15T10:00:00.000Z",
+      "sourceCountry": "Germany",
+      "original": "Germany AfD and populist BSW pass motion to end aid for Ukraine",
+      "title": {
+        "uk": "Партії АдН і BSW у Німеччині проголосували за припинення допомоги Україні",
+        "en": "Germany: AfD and populist BSW pass motion to end aid for Ukraine",
+        "ru": "В Германии партии АдГ и BSW проголосовали за прекращение помощи Украине"
+      }
+    },
+    {
+      "url": "https://www.asiaone.com:443/world/russia-strikes-9-ukrainian-regions-new-report-shows-spike-civilian-casualties",
+      "domain": "asiaone.com",
+      "seenAt": "2026-10-17T04:30:00.000Z",
+      "sourceCountry": "Singapore",
+      "image": "/news/cb4b012ed2ce65b7.webp",
+      "original": "Russia strikes 9 Ukrainian regions as a new report shows a spike in civilian casualties",
+      "title": {
+        "uk": "Росія завдала ударів по 9 регіонах України, нова доповідь фіксує зростання кількості цивільних жертв",
+        "en": "Russia strikes 9 Ukrainian regions as a new report shows a spike in civilian casualties",
+        "ru": "Россия ударила по 9 регионам Украины, новый доклад фиксирует рост числа жертв среди мирного населения"
       }
     }
   ]
