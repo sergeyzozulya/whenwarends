@@ -1,17 +1,81 @@
 {
-  "asOf": "2026-10-18",
+  "asOf": "2026-10-19",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.winnipegfreepress.com/world/2026/10/18/blaze-at-st-petersburg-oil-sites-as-kyiv-launches-more-than-1000-drones-at-russia",
-      "domain": "winnipegfreepress.com",
-      "seenAt": "2026-10-18T10:30:00.000Z",
+      "url": "https://www.theglobeandmail.com/world/article-russia-ukraine-war-drones-st-petersburg/",
+      "domain": "theglobeandmail.com",
+      "seenAt": "2026-10-18T16:00:00.000Z",
       "sourceCountry": "Canada",
-      "original": "Blaze at St Petersburg oil sites as Kyiv launches more than 1 , 000 drones at Russia – Winnipeg Free Press",
+      "image": "/news/a04fdb922be08fce.webp",
+      "original": "Ukraine launches more than 1 , 000 drones at Russia , striking oil facilities in St . Petersburg",
       "title": {
-        "uk": "Пожежа на нафтових об'єктах Санкт-Петербурга після запуску Києвом понад 1 000 дронів по Росії",
-        "en": "Blaze at St Petersburg oil sites as Kyiv launches more than 1,000 drones at Russia",
-        "ru": "Пожар на нефтяных объектах Санкт-Петербурга после запуска Киевом более 1 000 дронов по России"
+        "uk": "Україна запустила понад 1000 дронів по Росії, вдаривши по нафтових об'єктах у Санкт-Петербурзі",
+        "en": "Ukraine launches more than 1,000 drones at Russia, striking oil facilities in St. Petersburg",
+        "ru": "Украина запустила более 1000 дронов по России, поразив нефтяные объекты в Санкт-Петербурге"
+      }
+    },
+    {
+      "url": "https://www.dw.com/en/ukraine-resumes-attacks-on-russian-refineries-as-zelenskyy-says-were-done/a-79667757",
+      "domain": "dw.com",
+      "seenAt": "2026-10-15T12:30:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/a7a0f967f5825692.webp",
+      "original": "Zelenskyy on Trump  energy ceasefire :  Were done",
+      "title": {
+        "uk": "Зеленський про енергетичне перемир'я Трампа: «З цим покінчено»",
+        "en": "Zelenskyy on Trump energy ceasefire: \"We're done\"",
+        "ru": "Зеленский об энергетическом перемирии Трампа: «Мы с этим покончили»"
+      }
+    },
+    {
+      "url": "https://www.thehindu.com/news/international/zelenskyy-says-ukraine-got-no-early-warning-from-partners-as-russia-hits-power-grid-again/article71602862.ece",
+      "domain": "thehindu.com",
+      "seenAt": "2026-10-19T14:45:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/934c8bee39cfbeea.webp",
+      "original": "Zelenskyy says Ukraine got no early warning from partners as Russia hits power grid again",
+      "title": {
+        "uk": "Зеленський заявив, що Україна не отримала завчасного попередження від партнерів, поки Росія знову б'є по енергосистемі",
+        "en": "Zelenskyy says Ukraine got no early warning from partners as Russia hits power grid again",
+        "ru": "Зеленский заявил, что Украина не получила своевременного предупреждения от партнёров, пока Россия снова атакует энергосеть"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-10-16T19:45:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal | Russia - Ukraine war News",
+      "title": {
+        "uk": "Україна просувається на окупованому Донбасі, поки Трамп надає Путіну угоду з дизельним паливом",
+        "en": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
+        "ru": "Украина продвигается на оккупированном Донбассе, пока Трамп предоставляет Путину сделку по дизельному топливу"
+      }
+    },
+    {
+      "url": "https://www.dw.com/uk/dast-protileznij-rezultat-mzs-ukraini-rozkritikuvalo-ideu-zustrici-lideriv-rosii-ssa-ta-kitau/a-79699990",
+      "domain": "dw.com",
+      "seenAt": "2026-10-19T14:45:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/a5e618cd9b06c7cd.webp",
+      "original": "Саміт Путіна , Трампа і Сі : МЗС України розкритикувало ідею",
+      "title": {
+        "uk": "Саміт Путіна, Трампа і Сі: МЗС України розкритикувало ідею",
+        "en": "Putin-Trump-Xi summit: Ukraine's Foreign Ministry criticises the idea",
+        "ru": "Саммит Путина, Трампа и Си: МИД Украины раскритиковал идею"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/15/what-is-starshield-and-who-limited-ukraines-access-to-it",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-10-15T14:30:00.000Z",
+      "sourceCountry": "United States",
+      "original": "What is Starshield , and who limited Ukraine access to it ? | Russia - Ukraine war News",
+      "title": {
+        "uk": "Що таке Starshield і хто обмежив доступ України до нього?",
+        "en": "What is Starshield, and who limited Ukraine's access to it?",
+        "ru": "Что такое Starshield и кто ограничил доступ Украины к нему?"
       }
     },
     {
@@ -23,8 +87,8 @@
       "original": "Russia hails Trump waiving sanctions as  historic",
       "title": {
         "uk": "Росія називає відмову Трампа від санкцій «історичною»",
-        "en": "Russia hails Trump waiving sanctions as 'historic'",
-        "ru": "Россия называет отказ Трампа от санкций «историческим»"
+        "en": "Russia hails Trump waiving sanctions as \"historic\"",
+        "ru": "Россия называет отмену Трампом санкций «историческим» событием"
       }
     },
     {
@@ -37,71 +101,7 @@
       "title": {
         "uk": "Британські війська відпрацьовують розгортання в Україні на випадок перемир'я в рамках масштабних навчань НАТО",
         "en": "British troops rehearse deploying to Ukraine in the event of a ceasefire in major NATO wargame",
-        "ru": "Британские войска отрабатывают развёртывание на Украине на случай перемирия в ходе масштабных учений НАТО"
-      }
-    },
-    {
-      "url": "https://www.moneycontrol.com/news/business/how-spacex-starlink-cuts-hobbled-ukraine-before-russian-bombardment-14054500.html",
-      "domain": "moneycontrol.com",
-      "seenAt": "2026-10-17T12:45:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/2543907ebdf1d974.webp",
-      "original": "How SpaceX Starlink cuts hobbled Ukraine before Russian bombardment",
-      "title": {
-        "uk": "Як обмеження SpaceX Starlink паралізували Україну перед російським бомбардуванням",
-        "en": "How SpaceX Starlink cuts hobbled Ukraine before Russian bombardment",
-        "ru": "Как ограничения SpaceX Starlink парализовали Украину перед российской бомбардировкой"
-      }
-    },
-    {
-      "url": "https://www.pbs.org/newshour/politics/trumps-diesel-deal-with-putin-draws-bipartisan-criticism-from-a-frustrated-congress",
-      "domain": "pbs.org",
-      "seenAt": "2026-10-16T06:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/ce02ef5495a5aa71.webp",
-      "original": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
-      "title": {
-        "uk": "Угода Трампа з Путіним щодо дизельного палива викликала двопартійну критику розчарованого Конгресу",
-        "en": "Trump diesel deal with Putin draws bipartisan criticism from a frustrated Congress",
-        "ru": "Сделка Трампа с Путиным по дизельному топливу вызвала двухпартийную критику разочарованного Конгресса"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-10-16T19:45:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal | Russia - Ukraine war News",
-      "title": {
-        "uk": "Україна просувається на окупованому Донеччині, поки Трамп надає Путіну угоду щодо дизельного палива",
-        "en": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
-        "ru": "Украина продвигается на оккупированном Донетчине, пока Трамп предоставляет Путину сделку по дизельному топливу"
-      }
-    },
-    {
-      "url": "https://www.aol.co.uk/articles/trump-calls-ukraine-renewed-strikes-090555000.html",
-      "domain": "aol.co.uk",
-      "seenAt": "2026-10-16T09:45:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/f762bcdbcbf2eb3f.webp",
-      "original": "Trump calls Ukraine renewed strikes on Russian oil refineries a  disgrace",
-      "title": {
-        "uk": "Трамп назвав відновлені удари України по російських нафтопереробних заводах «ганьбою»",
-        "en": "Trump calls Ukraine's renewed strikes on Russian oil refineries a 'disgrace'",
-        "ru": "Трамп назвал возобновлённые удары Украины по российским нефтеперерабатывающим заводам «позором»"
-      }
-    },
-    {
-      "url": "https://www.dw.com/en/ukraine-resumes-attacks-on-russian-refineries-as-zelenskyy-says-were-done/a-79667757",
-      "domain": "dw.com",
-      "seenAt": "2026-10-15T12:30:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/a7a0f967f5825692.webp",
-      "original": "Zelenskyy on Trump  energy ceasefire :  Were done",
-      "title": {
-        "uk": "Зеленський про енергетичне перемир'я Трампа: «Ми закінчили»",
-        "en": "Zelenskyy on Trump energy ceasefire: 'We're done'",
-        "ru": "Зеленский об энергетическом перемирии Трампа: «Мы закончили»"
+        "ru": "Британские войска отрабатывают развёртывание на Украине на случай перемирия в рамках крупных учений НАТО"
       }
     },
     {
@@ -111,22 +111,22 @@
       "sourceCountry": "Germany",
       "original": "Germany AfD and populist BSW pass motion to end aid for Ukraine",
       "title": {
-        "uk": "Партії АдН і BSW у Німеччині проголосували за припинення допомоги Україні",
-        "en": "Germany: AfD and populist BSW pass motion to end aid for Ukraine",
-        "ru": "В Германии партии АдГ и BSW проголосовали за прекращение помощи Украине"
+        "uk": "Партії АдН та БСВ у Німеччині прийняли резолюцію про припинення допомоги Україні",
+        "en": "Germany's AfD and populist BSW pass motion to end aid for Ukraine",
+        "ru": "Партии АдГ и БСВ в Германии приняли резолюцию о прекращении помощи Украине"
       }
     },
     {
-      "url": "https://www.asiaone.com:443/world/russia-strikes-9-ukrainian-regions-new-report-shows-spike-civilian-casualties",
-      "domain": "asiaone.com",
-      "seenAt": "2026-10-17T04:30:00.000Z",
-      "sourceCountry": "Singapore",
-      "image": "/news/cb4b012ed2ce65b7.webp",
-      "original": "Russia strikes 9 Ukrainian regions as a new report shows a spike in civilian casualties",
+      "url": "https://www.kyivpost.com/post/87326",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-10-16T22:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/cbc6d6ba504beb18.webp",
+      "original": "Gerasimov Tells Putin Russian Forces Are Targeting Ukraine Bridges , Railways , Data Centers",
       "title": {
-        "uk": "Росія завдала ударів по 9 регіонах України, нова доповідь фіксує зростання кількості цивільних жертв",
-        "en": "Russia strikes 9 Ukrainian regions as a new report shows a spike in civilian casualties",
-        "ru": "Россия ударила по 9 регионам Украины, новый доклад фиксирует рост числа жертв среди мирного населения"
+        "uk": "Герасимов повідомив Путіну, що російські сили беруть на приціл мости, залізниці та центри обробки даних України",
+        "en": "Gerasimov tells Putin Russian forces are targeting Ukraine's bridges, railways, and data centres",
+        "ru": "Герасимов доложил Путину, что российские силы наносят удары по мостам, железным дорогам и центрам обработки данных Украины"
       }
     }
   ]
