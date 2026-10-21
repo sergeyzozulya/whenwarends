@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-20",
+  "asOf": "2026-10-21",
   "source": "gdelt",
   "articles": [
     {
@@ -10,9 +10,34 @@
       "image": "/news/a04fdb922be08fce.webp",
       "original": "Ukraine launches more than 1 , 000 drones at Russia , striking oil facilities in St . Petersburg",
       "title": {
-        "uk": "Україна запустила понад 1000 дронів по Росії, вразивши нафтові об'єкти в Санкт-Петербурзі",
+        "uk": "Україна запустила понад 1000 дронів по Росії, завдавши ударів по нафтових об'єктах у Санкт-Петербурзі",
         "en": "Ukraine launches more than 1,000 drones at Russia, striking oil facilities in St. Petersburg",
-        "ru": "Украина запустила более 1000 дронов по России, поразив нефтяные объекты в Санкт-Петербурге"
+        "ru": "Украина запустила более 1000 дронов по России, нанеся удары по нефтяным объектам в Санкт-Петербурге"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/87673",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-10-20T22:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/0b92b500a0f952ec.webp",
+      "original": "Trump Says Ukraine  Has to Want to Make a Deal  as Witkoff Heads to Russia",
+      "title": {
+        "uk": "Трамп заявив, що Україна «має хотіти домовитися», поки Вітков вирушає до Росії",
+        "en": "Trump says Ukraine 'has to want to make a deal' as Witkoff heads to Russia",
+        "ru": "Трамп заявил, что Украина «должна хотеть договориться», пока Уитков направляется в Россию"
+      }
+    },
+    {
+      "url": "https://glavcom.ua/world/world-politics/vitkoff-zajaviv-pro-peredumovi-dlja-pripinennja-vohnju-v-ukrajini-1150549.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-10-21T09:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Віткофф заявив про передумови для припинення вогню в Україні",
+      "title": {
+        "uk": "Віткофф заявив про передумови для припинення вогню в Україні",
+        "en": "Witkoff announces preconditions for a ceasefire in Ukraine",
+        "ru": "Уитков заявил о предпосылках для прекращения огня на Украине"
       }
     },
     {
@@ -23,35 +48,22 @@
       "image": "/news/934c8bee39cfbeea.webp",
       "original": "Zelenskyy says Ukraine got no early warning from partners as Russia hits power grid again",
       "title": {
-        "uk": "Зеленський заявив, що Україна не отримала завчасного попередження від партнерів, поки Росія знову атакує енергосистему",
-        "en": "Zelenskyy says Ukraine got no early warning from partners as Russia hits the power grid again",
-        "ru": "Зеленский заявил, что Украина не получила заблаговременного предупреждения от партнёров, пока Россия снова бьёт по энергосети"
+        "uk": "Зеленський заявив, що Україна не отримала завчасного попередження від партнерів, поки Росія знову вдарила по енергосистемі",
+        "en": "Zelenskyy says Ukraine got no early warning from partners as Russia hits power grid again",
+        "ru": "Зеленский заявил, что Украина не получила заблаговременного предупреждения от партнёров, пока Россия снова атаковала энергосистему"
       }
     },
     {
-      "url": "https://kp.ua/ua/politics/a737593-sibiha-zajaviv-shcho-zustrich-rf-kitaju-ta-ssha-mozhe-sponukati-putina-prodovzhuvati-vijnu",
-      "domain": "kp.ua",
-      "seenAt": "2026-10-19T10:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/044a29ee93597f65.webp",
-      "original": "Сибіга заявив , що зустріч РФ , Китаю та США може спонукати Путіна продовжувати війну",
-      "title": {
-        "uk": "Сибіга заявив, що зустріч РФ, Китаю та США може спонукати Путіна продовжувати війну",
-        "en": "Sybiha says a Russia-China-US meeting could encourage Putin to continue the war",
-        "ru": "Сибига заявил, что встреча России, Китая и США может побудить Путина продолжать войну"
-      }
-    },
-    {
-      "url": "https://www.dw.com/en/ukraine-resumes-attacks-on-russian-refineries-as-zelenskyy-says-were-done/a-79667757",
+      "url": "https://www.dw.com/uk/dast-protileznij-rezultat-mzs-ukraini-rozkritikuvalo-ideu-zustrici-lideriv-rosii-ssa-ta-kitau/a-79699990",
       "domain": "dw.com",
-      "seenAt": "2026-10-15T12:30:00.000Z",
+      "seenAt": "2026-10-19T14:45:00.000Z",
       "sourceCountry": "Germany",
-      "image": "/news/a7a0f967f5825692.webp",
-      "original": "Zelenskyy on Trump  energy ceasefire :  Were done",
+      "image": "/news/a5e618cd9b06c7cd.webp",
+      "original": "Саміт Путіна , Трампа і Сі : МЗС України розкритикувало ідею",
       "title": {
-        "uk": "Зеленський щодо «енергетичного перемир'я» Трампа: «Ми з цим покінчили»",
-        "en": "Zelensky on Trump's energy ceasefire: \"We're done\"",
-        "ru": "Зеленский об «энергетическом перемирии» Трампа: «Мы с этим покончили»"
+        "uk": "Саміт Путіна, Трампа і Сі: МЗС України розкритикувало ідею",
+        "en": "Putin-Trump-Xi summit: Ukraine's Foreign Ministry criticizes the idea",
+        "ru": "Саммит Путина, Трампа и Си: МИД Украины раскритиковал идею"
       }
     },
     {
@@ -67,6 +79,18 @@
       }
     },
     {
+      "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-10-16T19:45:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal | Russia - Ukraine war News",
+      "title": {
+        "uk": "Україна просувається на окупованому Донеччині, поки Трамп надає Путіну угоду щодо дизелю",
+        "en": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
+        "ru": "Украина продвигается на оккупированном Донбассе, пока Трамп предоставляет Путину сделку по дизелю"
+      }
+    },
+    {
       "url": "https://www.dailystar.co.uk/news/latest-news/uk-troops-russia-wargame-37782033",
       "domain": "dailystar.co.uk",
       "seenAt": "2026-10-17T03:00:00.000Z",
@@ -74,9 +98,9 @@
       "image": "/news/7a69b5c0103cc187.webp",
       "original": "British troops rehearse deploying to Ukraine in the event of ceasefire in major Nato wargame",
       "title": {
-        "uk": "Британські війська відпрацьовують розгортання в Україні на випадок перемир'я під час масштабних навчань НАТО",
+        "uk": "Британські війська відпрацьовують розгортання в Україні на випадок перемир'я у масштабних навчаннях НАТО",
         "en": "British troops rehearse deploying to Ukraine in the event of a ceasefire in major NATO wargame",
-        "ru": "Британские войска отрабатывают развёртывание на Украине в случае перемирия в ходе крупных учений НАТО"
+        "ru": "Британские войска отрабатывают развёртывание на Украине на случай перемирия в масштабных учениях НАТО"
       }
     },
     {
@@ -87,8 +111,8 @@
       "image": "/news/cbc6d6ba504beb18.webp",
       "original": "Gerasimov Tells Putin Russian Forces Are Targeting Ukraine Bridges , Railways , Data Centers",
       "title": {
-        "uk": "Герасімов доповів Путіну, що російські сили атакують мости, залізниці та центри обробки даних України",
-        "en": "Gerasimov tells Putin Russian forces are targeting Ukraine's bridges, railways and data centers",
+        "uk": "Герасимов повідомив Путіну, що російські сили атакують мости, залізниці та центри обробки даних України",
+        "en": "Gerasimov tells Putin Russian forces are targeting Ukraine's bridges, railways, and data centers",
         "ru": "Герасимов доложил Путину, что российские силы атакуют мосты, железные дороги и центры обработки данных Украины"
       }
     },
@@ -99,33 +123,9 @@
       "sourceCountry": "Germany",
       "original": "Germany AfD and populist BSW pass motion to end aid for Ukraine",
       "title": {
-        "uk": "Партії AfD та BSW у Німеччині проголосували за припинення допомоги Україні",
+        "uk": "AfD і BSW у Німеччині проголосували за резолюцію про припинення допомоги Україні",
         "en": "Germany's AfD and populist BSW pass motion to end aid for Ukraine",
-        "ru": "Партии AfD и BSW в Германии приняли резолюцию о прекращении помощи Украине"
-      }
-    },
-    {
-      "url": "https://www.obozrevatel.com/ukr/section-politics-news/news-mozhut-spratsyuvaty-zelenskyy-nazvav-try-faktory-yaki-mohly-b-zabezpechyty-prypynennya-vohnyu-v-ukrayini-20-10-2026.html",
-      "domain": "obozrevatel.com",
-      "seenAt": "2026-10-20T11:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Зеленський назвав три фактори , які могли б забезпечити припинення вогню в Україні",
-      "title": {
-        "uk": "Зеленський назвав три фактори, які могли б забезпечити припинення вогню в Україні",
-        "en": "Zelensky names three factors that could ensure a ceasefire in Ukraine",
-        "ru": "Зеленский назвал три фактора, которые могли бы обеспечить прекращение огня в Украине"
-      }
-    },
-    {
-      "url": "https://www.prokerala.com/news/articles/a1826369.html",
-      "domain": "prokerala.com",
-      "seenAt": "2026-10-19T13:15:00.000Z",
-      "sourceCountry": "India",
-      "original": "Zelensky says ready to run in wartime elections",
-      "title": {
-        "uk": "Зеленський заявив, що готовий балотуватися на виборах під час війни",
-        "en": "Zelensky says he is ready to run in wartime elections",
-        "ru": "Зеленский заявил, что готов баллотироваться на выборах в условиях войны"
+        "ru": "AfD и BSW в Германии приняли резолюцию о прекращении помощи Украине"
       }
     }
   ]
