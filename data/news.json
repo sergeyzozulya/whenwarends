@@ -1,18 +1,44 @@
 {
-  "asOf": "2026-10-21",
+  "asOf": "2026-10-22",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.theglobeandmail.com/world/article-russia-ukraine-war-drones-st-petersburg/",
-      "domain": "theglobeandmail.com",
-      "seenAt": "2026-10-18T16:00:00.000Z",
-      "sourceCountry": "Canada",
-      "image": "/news/a04fdb922be08fce.webp",
-      "original": "Ukraine launches more than 1 , 000 drones at Russia , striking oil facilities in St . Petersburg",
+      "url": "https://www.canberratimes.com.au/story/9373029/zelenskiy-pushes-for-november-talks-kyiv-hit-by-attack/",
+      "domain": "canberratimes.com.au",
+      "seenAt": "2026-10-22T10:15:00.000Z",
+      "sourceCountry": "Australia",
+      "image": "/news/541c2e823caddcce.webp",
+      "original": "Zelenskiy pushes for November talks , Kyiv hit by attack",
       "title": {
-        "uk": "Україна запустила понад 1000 дронів по Росії, завдавши ударів по нафтових об'єктах у Санкт-Петербурзі",
-        "en": "Ukraine launches more than 1,000 drones at Russia, striking oil facilities in St. Petersburg",
-        "ru": "Украина запустила более 1000 дронов по России, нанеся удары по нефтяным объектам в Санкт-Петербурге"
+        "uk": "Зеленський домагається переговорів у листопаді, Київ зазнав удару",
+        "en": "Zelenskyy pushes for November talks, Kyiv hit by attack",
+        "ru": "Зеленский добивается переговоров в ноябре, Киев подвергся удару"
+      }
+    },
+    {
+      "url": "https://www.businesstoday.in/world/story/vladimir-putin-agrees-to-three-way-peace-talks-between-russia-and-ukraine-the-us-562943-2026-10-22",
+      "domain": "businesstoday.in",
+      "seenAt": "2026-10-22T03:30:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/b49c1c30be5c7e8a.webp",
+      "original": "Vladimir Putin agrees to three way peace talks between Russia and Ukraine , the US",
+      "title": {
+        "uk": "Володимир Путін погодився на тристоронні мирні переговори між Росією, Україною та США",
+        "en": "Vladimir Putin agrees to three-way peace talks between Russia, Ukraine, and the US",
+        "ru": "Владимир Путин согласился на трёхсторонние мирные переговоры между Россией, Украиной и США"
+      }
+    },
+    {
+      "url": "https://nypost.com/2026/10/21/us-news/trump-envoy-steve-witkoff-praises-putin-as-humanitarian-as-ukraine-peace-talks-hang-in-the-balance/",
+      "domain": "nypost.com",
+      "seenAt": "2026-10-21T14:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/c47fe7413755ee9a.webp",
+      "original": "Trump envoy Steve Witkoff praises Putin as  humanitarian  as Ukraine peace talks hang in the balance",
+      "title": {
+        "uk": "Посланець Трампа Стів Уіткофф назвав Путіна «гуманістом», поки мирні переговори щодо України висять на волосині",
+        "en": "Trump envoy Steve Witkoff praises Putin as 'humanitarian' as Ukraine peace talks hang in the balance",
+        "ru": "Посланник Трампа Стив Уиткофф назвал Путина «гуманистом», пока мирные переговоры по Украине находятся под угрозой"
       }
     },
     {
@@ -23,21 +49,34 @@
       "image": "/news/0b92b500a0f952ec.webp",
       "original": "Trump Says Ukraine  Has to Want to Make a Deal  as Witkoff Heads to Russia",
       "title": {
-        "uk": "Трамп заявив, що Україна «має хотіти домовитися», поки Вітков вирушає до Росії",
+        "uk": "Трамп заявив, що Україна «має хотіти укласти угоду», поки Уіткофф їде до Росії",
         "en": "Trump says Ukraine 'has to want to make a deal' as Witkoff heads to Russia",
-        "ru": "Трамп заявил, что Украина «должна хотеть договориться», пока Уитков направляется в Россию"
+        "ru": "Трамп заявил, что Украина «должна хотеть заключить сделку», пока Уиткофф направляется в Россию"
       }
     },
     {
-      "url": "https://glavcom.ua/world/world-politics/vitkoff-zajaviv-pro-peredumovi-dlja-pripinennja-vohnju-v-ukrajini-1150549.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-10-21T09:30:00.000Z",
+      "url": "https://www.5.ua/polityka/zustrich-trampa-si-ta-putina-lyshe-zaokhotyla-b-rosiiu-prodovzhuvaty-viinu-sybiha-384959.html",
+      "domain": "5.ua",
+      "seenAt": "2026-10-19T14:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Віткофф заявив про передумови для припинення вогню в Україні",
+      "original": "Зустріч Трампа , Сі та путіна лише заохотила б росію продовжувати війну – Сибіга",
       "title": {
-        "uk": "Віткофф заявив про передумови для припинення вогню в Україні",
-        "en": "Witkoff announces preconditions for a ceasefire in Ukraine",
-        "ru": "Уитков заявил о предпосылках для прекращения огня на Украине"
+        "uk": "Зустріч Трампа, Сі та Путіна лише заохотила б Росію продовжувати війну — Сибіга",
+        "en": "A Trump-Xi-Putin meeting would only encourage Russia to continue the war — Sybiha",
+        "ru": "Встреча Трампа, Си и Путина лишь подтолкнула бы Россию продолжать войну — Сибига"
+      }
+    },
+    {
+      "url": "https://www.theglobeandmail.com/world/article-russia-ukraine-war-drones-st-petersburg/",
+      "domain": "theglobeandmail.com",
+      "seenAt": "2026-10-18T16:00:00.000Z",
+      "sourceCountry": "Canada",
+      "image": "/news/a04fdb922be08fce.webp",
+      "original": "Ukraine launches more than 1 , 000 drones at Russia , striking oil facilities in St . Petersburg",
+      "title": {
+        "uk": "Україна запустила понад 1 000 дронів по Росії, вразивши нафтові об'єкти в Санкт-Петербурзі",
+        "en": "Ukraine launches more than 1,000 drones at Russia, striking oil facilities in St. Petersburg",
+        "ru": "Украина запустила более 1 000 дронов по России, поразив нефтяные объекты в Санкт-Петербурге"
       }
     },
     {
@@ -48,46 +87,9 @@
       "image": "/news/934c8bee39cfbeea.webp",
       "original": "Zelenskyy says Ukraine got no early warning from partners as Russia hits power grid again",
       "title": {
-        "uk": "Зеленський заявив, що Україна не отримала завчасного попередження від партнерів, поки Росія знову вдарила по енергосистемі",
+        "uk": "Зеленський заявив, що Україна не отримала завчасного попередження від партнерів, поки Росія знову б'є по енергосистемі",
         "en": "Zelenskyy says Ukraine got no early warning from partners as Russia hits power grid again",
-        "ru": "Зеленский заявил, что Украина не получила заблаговременного предупреждения от партнёров, пока Россия снова атаковала энергосистему"
-      }
-    },
-    {
-      "url": "https://www.dw.com/uk/dast-protileznij-rezultat-mzs-ukraini-rozkritikuvalo-ideu-zustrici-lideriv-rosii-ssa-ta-kitau/a-79699990",
-      "domain": "dw.com",
-      "seenAt": "2026-10-19T14:45:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/a5e618cd9b06c7cd.webp",
-      "original": "Саміт Путіна , Трампа і Сі : МЗС України розкритикувало ідею",
-      "title": {
-        "uk": "Саміт Путіна, Трампа і Сі: МЗС України розкритикувало ідею",
-        "en": "Putin-Trump-Xi summit: Ukraine's Foreign Ministry criticizes the idea",
-        "ru": "Саммит Путина, Трампа и Си: МИД Украины раскритиковал идею"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/15/what-is-starshield-and-who-limited-ukraines-access-to-it",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-10-15T14:30:00.000Z",
-      "sourceCountry": "United States",
-      "original": "What is Starshield , and who limited Ukraine access to it ? | Russia - Ukraine war News",
-      "title": {
-        "uk": "Що таке Starshield і хто обмежив доступ України до нього?",
-        "en": "What is Starshield, and who limited Ukraine's access to it?",
-        "ru": "Что такое Starshield и кто ограничил доступ Украины к нему?"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-10-16T19:45:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal | Russia - Ukraine war News",
-      "title": {
-        "uk": "Україна просувається на окупованому Донеччині, поки Трамп надає Путіну угоду щодо дизелю",
-        "en": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
-        "ru": "Украина продвигается на оккупированном Донбассе, пока Трамп предоставляет Путину сделку по дизелю"
+        "ru": "Зеленский заявил, что Украина не получила заблаговременного предупреждения от партнёров, пока Россия снова атакует энергосистему"
       }
     },
     {
@@ -98,34 +100,34 @@
       "image": "/news/7a69b5c0103cc187.webp",
       "original": "British troops rehearse deploying to Ukraine in the event of ceasefire in major Nato wargame",
       "title": {
-        "uk": "Британські війська відпрацьовують розгортання в Україні на випадок перемир'я у масштабних навчаннях НАТО",
+        "uk": "Британські військові відпрацьовують розгортання в Україні на випадок припинення вогню у масштабних навчаннях НАТО",
         "en": "British troops rehearse deploying to Ukraine in the event of a ceasefire in major NATO wargame",
-        "ru": "Британские войска отрабатывают развёртывание на Украине на случай перемирия в масштабных учениях НАТО"
+        "ru": "Британские военные отрабатывают развёртывание на Украине в случае прекращения огня в масштабных учениях НАТО"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/87326",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-10-16T22:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/cbc6d6ba504beb18.webp",
-      "original": "Gerasimov Tells Putin Russian Forces Are Targeting Ukraine Bridges , Railways , Data Centers",
+      "url": "https://www.dailystar.co.uk/news/latest-news/reasons-ukraine-war-still-going-37794342",
+      "domain": "dailystar.co.uk",
+      "seenAt": "2026-10-21T12:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/c273858f296363e5.webp",
+      "original": "All the reasons why the Ukraine war is still going on – and how long it could last",
       "title": {
-        "uk": "Герасимов повідомив Путіну, що російські сили атакують мости, залізниці та центри обробки даних України",
-        "en": "Gerasimov tells Putin Russian forces are targeting Ukraine's bridges, railways, and data centers",
-        "ru": "Герасимов доложил Путину, что российские силы атакуют мосты, железные дороги и центры обработки данных Украины"
+        "uk": "Усі причини, чому війна в Україні досі триває, — і як довго вона може тривати",
+        "en": "All the reasons why the Ukraine war is still going on — and how long it could last",
+        "ru": "Все причины, почему война в Украине всё ещё продолжается, — и как долго она может длиться"
       }
     },
     {
-      "url": "https://www.thelocal.de/20261015/germanys-afd-and-populist-bsw-pass-motion-to-end-aid-for-ukraine",
-      "domain": "thelocal.de",
-      "seenAt": "2026-10-15T10:00:00.000Z",
-      "sourceCountry": "Germany",
-      "original": "Germany AfD and populist BSW pass motion to end aid for Ukraine",
+      "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-10-16T19:45:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal | Russia - Ukraine war News",
       "title": {
-        "uk": "AfD і BSW у Німеччині проголосували за резолюцію про припинення допомоги Україні",
-        "en": "Germany's AfD and populist BSW pass motion to end aid for Ukraine",
-        "ru": "AfD и BSW в Германии приняли резолюцию о прекращении помощи Украине"
+        "uk": "Україна просувається в окупованому Донецьку, поки Трамп укладає з Путіним дизельну угоду",
+        "en": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
+        "ru": "Украина продвигается в оккупированном Донецке, пока Трамп заключает с Путиным дизельную сделку"
       }
     }
   ]
