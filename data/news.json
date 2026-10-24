@@ -1,7 +1,33 @@
 {
-  "asOf": "2026-10-23",
+  "asOf": "2026-10-24",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "http://www.thejakartapost.com/world/2026/10/24/russia-ukraine-agree-on-ceasefire-in-embattled-town-to-hold-peace-talks",
+      "domain": "thejakartapost.com",
+      "seenAt": "2026-10-24T08:30:00.000Z",
+      "sourceCountry": "Indonesia",
+      "image": "/news/a1bb1ab241d43eff.webp",
+      "original": "Russia , Ukraine agree on ceasefire in embattled town , to hold peace talks - Europe",
+      "title": {
+        "uk": "Росія та Україна домовились про припинення вогню в охопленому боями місті та проведення мирних переговорів",
+        "en": "Russia, Ukraine agree on ceasefire in embattled town, to hold peace talks",
+        "ru": "Россия и Украина договорились о прекращении огня в осаждённом городе и проведении мирных переговоров"
+      }
+    },
+    {
+      "url": "https://www.ksl.com:443/article/51640273/zelenskyy-says-ukrainian-russian-and-us-negotiators-to-meet-in-early-november-in-abu-dhabi",
+      "domain": "ksl.com",
+      "seenAt": "2026-10-23T23:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/8f516f6446c96523.webp",
+      "original": "Zelenskyy says Ukrainian , Russian and US negotiators to meet in early November in Abu Dhabi",
+      "title": {
+        "uk": "Зеленський заявив, що українські, російські та американські переговорники зустрінуться на початку листопада в Абу-Дабі",
+        "en": "Zelenskyy says Ukrainian, Russian and US negotiators to meet in early November in Abu Dhabi",
+        "ru": "Зеленский заявил, что украинские, российские и американские переговорщики встретятся в начале ноября в Абу-Даби"
+      }
+    },
     {
       "url": "https://tert.am/en/news/2026/10/22/Ukraine%20ceasefire/4287715",
       "domain": "tert.am",
@@ -10,48 +36,46 @@
       "image": "/news/f5cacb17df0bd59f.webp",
       "original": "Zelenskyy backs freezing front line as first step towards Ukraine ceasefire",
       "title": {
-        "uk": "Зеленський підтримує заморожування лінії фронту як перший крок до припинення вогню в Україні",
+        "uk": "Зеленський підтримав заморожування лінії фронту як перший крок до припинення вогню в Україні",
         "en": "Zelenskyy backs freezing front line as first step towards Ukraine ceasefire",
-        "ru": "Зеленский поддерживает заморозку линии фронта как первый шаг к прекращению огня на Украине"
+        "ru": "Зеленский поддержал заморозку линии фронта как первый шаг к прекращению огня на Украине"
       }
     },
     {
-      "url": "https://www.koreaherald.com/article/10911381",
-      "domain": "koreaherald.com",
-      "seenAt": "2026-10-22T05:15:00.000Z",
-      "sourceCountry": "South Korea",
-      "image": "/news/fba2fb42fdfc0dbf.webp",
-      "original": "Putin agrees to resume 3 - way peace talks with Ukraine and US",
-      "title": {
-        "uk": "Путін погодився відновити тристоронні мирні переговори з Україною та США",
-        "en": "Putin agrees to resume 3-way peace talks with Ukraine and US",
-        "ru": "Путин согласился возобновить трёхсторонние мирные переговоры с Украиной и США"
-      }
-    },
-    {
-      "url": "https://www.aol.com/articles/putin-says-talks-must-focus-212348000.html",
-      "domain": "aol.com",
-      "seenAt": "2026-10-22T22:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/d605c3e0ed74087c.webp",
-      "original": "Putin says talks must focus on security for Russia , Ukraine and Europe overall",
-      "title": {
-        "uk": "Путін заявив, що переговори мають зосередитися на безпеці Росії, України та Європи загалом",
-        "en": "Putin says talks must focus on security for Russia, Ukraine and Europe overall",
-        "ru": "Путин заявил, что переговоры должны сосредоточиться на безопасности России, Украины и Европы в целом"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/87673",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-10-20T22:15:00.000Z",
+      "url": "https://glavcom.ua/world/observe/isw-rozkriv-spravzhni-teritorialni-ambitsiji-kremlja-1151159.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-10-24T08:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/0b92b500a0f952ec.webp",
-      "original": "Trump Says Ukraine  Has to Want to Make a Deal  as Witkoff Heads to Russia",
+      "original": "ISW розкрив справжні територіальні амбіції Кремля",
       "title": {
-        "uk": "Трамп заявив, що Україна має хотіти укласти угоду, поки Віткофф їде до Росії",
-        "en": "Trump says Ukraine has to want to make a deal as Witkoff heads to Russia",
-        "ru": "Трамп заявил, что Украина должна хотеть заключить сделку, пока Виткофф направляется в Россию"
+        "uk": "ISW розкрив справжні територіальні амбіції Кремля",
+        "en": "ISW reveals Kremlin's true territorial ambitions",
+        "ru": "ISW раскрыл истинные территориальные амбиции Кремля"
+      }
+    },
+    {
+      "url": "https://www.winnipegfreepress.com/world/2026/10/24/ukraine-says-starlink-speed-limits-lifted-after-a-slowdown-that-hobbled-its-drones",
+      "domain": "winnipegfreepress.com",
+      "seenAt": "2026-10-24T11:45:00.000Z",
+      "sourceCountry": "Canada",
+      "original": "Ukraine says Starlink speed limits lifted after a slowdown that hobbled its drones – Winnipeg Free Press",
+      "title": {
+        "uk": "Україна повідомила про зняття обмежень швидкості Starlink після сповільнення, яке перешкоджало роботі дронів",
+        "en": "Ukraine says Starlink speed limits lifted after a slowdown that hobbled its drones",
+        "ru": "Украина сообщила о снятии ограничений скорости Starlink после замедления, которое мешало работе дронов"
+      }
+    },
+    {
+      "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-russian-diesel-012054000.html",
+      "domain": "aol.co.uk",
+      "seenAt": "2026-10-24T03:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/04a295089fc83c95.webp",
+      "original": "Ukraine war briefing : Russian diesel tankers headed for North America , says Moscow , as US tries to revive peace talks",
+      "title": {
+        "uk": "Огляд війни в Україні: російські танкери з дизелем прямують до Північної Америки, повідомляє Москва, поки США намагаються відновити мирні переговори",
+        "en": "Ukraine war briefing: Russian diesel tankers headed for North America, says Moscow, as US tries to revive peace talks",
+        "ru": "Обзор войны на Украине: российские танкеры с дизелем направляются в Северную Америку, сообщает Москва, тогда как США пытаются возобновить мирные переговоры"
       }
     },
     {
@@ -63,34 +87,20 @@
       "original": "Trump envoy Steve Witkoff praises Putin as  humanitarian  as Ukraine peace talks hang in the balance",
       "title": {
         "uk": "Посланець Трампа Стів Віткофф назвав Путіна «гуманістом», поки мирні переговори щодо України залишаються під питанням",
-        "en": "Trump envoy Steve Witkoff praises Putin as 'humanitarian' as Ukraine peace talks hang in the balance",
-        "ru": "Посланник Трампа Стив Виткофф назвал Путина «гуманистом», пока мирные переговоры по Украине остаются под вопросом"
+        "en": "Trump envoy Steve Witkoff praises Putin as \"humanitarian\" as Ukraine peace talks hang in the balance",
+        "ru": "Посланник Трампа Стив Уиткофф назвал Путина «гуманистом», пока мирные переговоры по Украине висят на волоске"
       }
     },
     {
-      "url": "https://www.theglobeandmail.com/world/article-russia-ukraine-war-drones-st-petersburg/",
-      "domain": "theglobeandmail.com",
-      "seenAt": "2026-10-18T16:00:00.000Z",
-      "sourceCountry": "Canada",
-      "image": "/news/a04fdb922be08fce.webp",
-      "original": "Ukraine launches more than 1 , 000 drones at Russia , striking oil facilities in St . Petersburg",
+      "url": "https://www.latimes.com/world-nation/story/2026-10-18/st-petersburg-oil-facilities-ablaze-as-ukraine-launches-more-than-1-000-drones-at-russia",
+      "domain": "latimes.com",
+      "seenAt": "2026-10-18T18:00:00.000Z",
+      "sourceCountry": "United States",
+      "original": "St . Petersburg oil facilities ablaze as Ukraine launches more than 1 , 000 drones at Russia",
       "title": {
-        "uk": "Україна запустила понад 1 000 дронів по Росії, вразивши нафтові об'єкти в Санкт-Петербурзі",
-        "en": "Ukraine launches more than 1,000 drones at Russia, striking oil facilities in St. Petersburg",
-        "ru": "Украина запустила более 1 000 дронов по России, поразив нефтяные объекты в Санкт-Петербурге"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/87414",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-10-18T12:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/3d8979394da323b9.webp",
-      "original": "Zelensky : Russia Hit Energy Grid 76 Times Since Ceasefire Call",
-      "title": {
-        "uk": "Зеленський: Росія завдала 76 ударів по енергосистемі з моменту оголошення режиму припинення вогню",
-        "en": "Zelensky: Russia hit energy grid 76 times since ceasefire call",
-        "ru": "Зеленский: Россия нанесла 76 ударов по энергосистеме с момента объявления режима прекращения огня"
+        "uk": "Нафтові об'єкти в Санкт-Петербурзі охопила пожежа після запуску Україною понад 1000 дронів по Росії",
+        "en": "St. Petersburg oil facilities ablaze as Ukraine launches more than 1,000 drones at Russia",
+        "ru": "Нефтяные объекты в Санкт-Петербурге охвачены огнём после запуска Украиной более 1000 дронов по России"
       }
     },
     {
@@ -101,34 +111,22 @@
       "image": "/news/f7ddb1c23344a5d8.webp",
       "original": "Россия действует на пределе своих возможностей на фронте – ВСУ оценили потенциал противника",
       "title": {
-        "uk": "Росія діє на межі своїх можливостей на фронті — ЗСУ оцінили потенціал противника",
-        "en": "Russia is operating at the limit of its capabilities on the front — Ukraine's Armed Forces assess enemy potential",
+        "uk": "Росія діє на межі своїх можливостей на фронті — ЗСУ оцінили потенціал супротивника",
+        "en": "Russia is operating at the limits of its capabilities on the front — Ukrainian Armed Forces assess the enemy's potential",
         "ru": "Россия действует на пределе своих возможностей на фронте — ВСУ оценили потенциал противника"
       }
     },
     {
-      "url": "https://www.dailystar.co.uk/news/latest-news/uk-troops-russia-wargame-37782033",
-      "domain": "dailystar.co.uk",
-      "seenAt": "2026-10-17T03:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/7a69b5c0103cc187.webp",
-      "original": "British troops rehearse deploying to Ukraine in the event of ceasefire in major Nato wargame",
+      "url": "https://interfax.com.ua/news/political/1225263.html",
+      "domain": "interfax.com.ua",
+      "seenAt": "2026-10-23T13:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/c9ea56d7a917423a.webp",
+      "original": "United for Ukraine  закликала європейські країни розробити механізми використання заморожених активів РФ для підтримки України",
       "title": {
-        "uk": "Британські військові відпрацювали розгортання в Україні на випадок припинення вогню під час масштабних навчань НАТО",
-        "en": "British troops rehearse deploying to Ukraine in the event of ceasefire in major NATO wargame",
-        "ru": "Британские военные отрабатывают развёртывание на Украине на случай прекращения огня в ходе крупных учений НАТО"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-10-16T19:45:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal | Russia - Ukraine war News",
-      "title": {
-        "uk": "Україна просувається на окупованому Донецьку, поки Трамп надає Путіну угоду щодо дизелю",
-        "en": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
-        "ru": "Украина наступает на оккупированном Донбассе, пока Трамп предоставляет Путину сделку по дизельному топливу"
+        "uk": "United for Ukraine закликала європейські країни розробити механізми використання заморожених активів РФ для підтримки України",
+        "en": "United for Ukraine calls on European countries to develop mechanisms for using frozen Russian assets to support Ukraine",
+        "ru": "United for Ukraine призвала европейские страны разработать механизмы использования замороженных активов РФ для поддержки Украины"
       }
     }
   ]
