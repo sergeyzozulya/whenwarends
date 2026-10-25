@@ -1,44 +1,30 @@
 {
-  "asOf": "2026-10-24",
+  "asOf": "2026-10-25",
   "source": "gdelt",
   "articles": [
     {
-      "url": "http://www.thejakartapost.com/world/2026/10/24/russia-ukraine-agree-on-ceasefire-in-embattled-town-to-hold-peace-talks",
-      "domain": "thejakartapost.com",
-      "seenAt": "2026-10-24T08:30:00.000Z",
-      "sourceCountry": "Indonesia",
-      "image": "/news/a1bb1ab241d43eff.webp",
-      "original": "Russia , Ukraine agree on ceasefire in embattled town , to hold peace talks - Europe",
+      "url": "https://www.hindustantimes.com/world-news/real-way-to-end-it-zelensky-open-to-freezing-ukraine-russia-front-lines-to-end-war-101792600594930.html",
+      "domain": "hindustantimes.com",
+      "seenAt": "2026-10-21T18:15:00.000Z",
+      "sourceCountry": "India",
+      "original": "Real way to end it : Zelensky open to freezing Ukraine - Russia front lines to end war",
       "title": {
-        "uk": "Росія та Україна домовились про припинення вогню в охопленому боями місті та проведення мирних переговорів",
-        "en": "Russia, Ukraine agree on ceasefire in embattled town, to hold peace talks",
-        "ru": "Россия и Украина договорились о прекращении огня в осаждённом городе и проведении мирных переговоров"
+        "uk": "Реальний шлях до завершення: Зеленський готовий заморозити лінії фронту між Україною та Росією",
+        "en": "Real way to end it: Zelensky open to freezing Ukraine-Russia front lines to end war",
+        "ru": "Реальный путь к завершению: Зеленский готов заморозить линии фронта между Украиной и Россией"
       }
     },
     {
-      "url": "https://www.ksl.com:443/article/51640273/zelenskyy-says-ukrainian-russian-and-us-negotiators-to-meet-in-early-november-in-abu-dhabi",
-      "domain": "ksl.com",
-      "seenAt": "2026-10-23T23:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/8f516f6446c96523.webp",
-      "original": "Zelenskyy says Ukrainian , Russian and US negotiators to meet in early November in Abu Dhabi",
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/no-power-no-water-and-winter-approaching-how-melania-trump-got-involved-in-rescuing-ukraines-forgotten-city-after-weeks-of-unusual-negotiations/articleshow/135170946.cms",
+      "domain": "economictimes.indiatimes.com",
+      "seenAt": "2026-10-24T14:15:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/8f0c46ee69f0b054.webp",
+      "original": "No power , no water and winter approaching : How Melania Trump got involved in rescuing Ukraine forgotten city after weeks of unusual negotiations",
       "title": {
-        "uk": "Зеленський заявив, що українські, російські та американські переговорники зустрінуться на початку листопада в Абу-Дабі",
-        "en": "Zelenskyy says Ukrainian, Russian and US negotiators to meet in early November in Abu Dhabi",
-        "ru": "Зеленский заявил, что украинские, российские и американские переговорщики встретятся в начале ноября в Абу-Даби"
-      }
-    },
-    {
-      "url": "https://tert.am/en/news/2026/10/22/Ukraine%20ceasefire/4287715",
-      "domain": "tert.am",
-      "seenAt": "2026-10-22T06:00:00.000Z",
-      "sourceCountry": "Armenia",
-      "image": "/news/f5cacb17df0bd59f.webp",
-      "original": "Zelenskyy backs freezing front line as first step towards Ukraine ceasefire",
-      "title": {
-        "uk": "Зеленський підтримав заморожування лінії фронту як перший крок до припинення вогню в Україні",
-        "en": "Zelenskyy backs freezing front line as first step towards Ukraine ceasefire",
-        "ru": "Зеленский поддержал заморозку линии фронта как первый шаг к прекращению огня на Украине"
+        "uk": "Без світла, без води і назустріч зимі: як Мелані Трамп долучилася до порятунку забутого міста України після тижнів незвичних переговорів",
+        "en": "No power, no water and winter approaching: How Melania Trump got involved in rescuing Ukraine's forgotten city after weeks of unusual negotiations",
+        "ru": "Без света, без воды и надвигающаяся зима: как Мелания Трамп включилась в спасение забытого города Украины после недель необычных переговоров"
       }
     },
     {
@@ -54,28 +40,42 @@
       }
     },
     {
-      "url": "https://www.winnipegfreepress.com/world/2026/10/24/ukraine-says-starlink-speed-limits-lifted-after-a-slowdown-that-hobbled-its-drones",
-      "domain": "winnipegfreepress.com",
-      "seenAt": "2026-10-24T11:45:00.000Z",
-      "sourceCountry": "Canada",
-      "original": "Ukraine says Starlink speed limits lifted after a slowdown that hobbled its drones – Winnipeg Free Press",
+      "url": "https://www.businesstoday.in/world/story/vladimir-putin-agrees-to-three-way-peace-talks-between-russia-and-ukraine-the-us-562943-2026-10-22",
+      "domain": "businesstoday.in",
+      "seenAt": "2026-10-22T03:30:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/b49c1c30be5c7e8a.webp",
+      "original": "Vladimir Putin agrees to three way peace talks between Russia and Ukraine , the US",
       "title": {
-        "uk": "Україна повідомила про зняття обмежень швидкості Starlink після сповільнення, яке перешкоджало роботі дронів",
-        "en": "Ukraine says Starlink speed limits lifted after a slowdown that hobbled its drones",
-        "ru": "Украина сообщила о снятии ограничений скорости Starlink после замедления, которое мешало работе дронов"
+        "uk": "Владімір Путін погодився на тристоронні мирні переговори між Росією, Україною та США",
+        "en": "Vladimir Putin agrees to three-way peace talks between Russia, Ukraine and the US",
+        "ru": "Владимир Путин согласился на трёхсторонние мирные переговоры между Россией, Украиной и США"
       }
     },
     {
-      "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-russian-diesel-012054000.html",
-      "domain": "aol.co.uk",
-      "seenAt": "2026-10-24T03:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/04a295089fc83c95.webp",
-      "original": "Ukraine war briefing : Russian diesel tankers headed for North America , says Moscow , as US tries to revive peace talks",
+      "url": "https://www.chicagotribune.com/2026/10/24/musk-behind-starlink-speed-restriction-in-ukraine/",
+      "domain": "chicagotribune.com",
+      "seenAt": "2026-10-24T21:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/085063e4cda87ef4.webp",
+      "original": "Musk says he was behind Starlink speed restriction in Ukraine",
       "title": {
-        "uk": "Огляд війни в Україні: російські танкери з дизелем прямують до Північної Америки, повідомляє Москва, поки США намагаються відновити мирні переговори",
-        "en": "Ukraine war briefing: Russian diesel tankers headed for North America, says Moscow, as US tries to revive peace talks",
-        "ru": "Обзор войны на Украине: российские танкеры с дизелем направляются в Северную Америку, сообщает Москва, тогда как США пытаются возобновить мирные переговоры"
+        "uk": "Маск заявив, що саме він стоїть за обмеженням швидкості Starlink в Україні",
+        "en": "Musk says he was behind Starlink speed restriction in Ukraine",
+        "ru": "Маск заявил, что именно он стоит за ограничением скорости Starlink в Украине"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/87673",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-10-20T22:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/0b92b500a0f952ec.webp",
+      "original": "Trump Says Ukraine  Has to Want to Make a Deal  as Witkoff Heads to Russia",
+      "title": {
+        "uk": "Трамп каже, що Україна «має хотіти домовитися», поки Віткофф їде до Росії",
+        "en": "Trump says Ukraine 'has to want to make a deal' as Witkoff heads to Russia",
+        "ru": "Трамп заявил, что Украина «должна хотеть договориться», пока Виткофф направляется в Россию"
       }
     },
     {
@@ -86,21 +86,22 @@
       "image": "/news/c47fe7413755ee9a.webp",
       "original": "Trump envoy Steve Witkoff praises Putin as  humanitarian  as Ukraine peace talks hang in the balance",
       "title": {
-        "uk": "Посланець Трампа Стів Віткофф назвав Путіна «гуманістом», поки мирні переговори щодо України залишаються під питанням",
-        "en": "Trump envoy Steve Witkoff praises Putin as \"humanitarian\" as Ukraine peace talks hang in the balance",
-        "ru": "Посланник Трампа Стив Уиткофф назвал Путина «гуманистом», пока мирные переговоры по Украине висят на волоске"
+        "uk": "Посланець Трампа Стів Віткофф назвав Путіна «гуманістом», поки мирні переговори щодо України опинилися під загрозою",
+        "en": "Trump envoy Steve Witkoff praises Putin as 'humanitarian' as Ukraine peace talks hang in the balance",
+        "ru": "Посланник Трампа Стив Виткофф назвал Путина «гуманистом», пока мирные переговоры по Украине висят на волоске"
       }
     },
     {
-      "url": "https://www.latimes.com/world-nation/story/2026-10-18/st-petersburg-oil-facilities-ablaze-as-ukraine-launches-more-than-1-000-drones-at-russia",
-      "domain": "latimes.com",
-      "seenAt": "2026-10-18T18:00:00.000Z",
-      "sourceCountry": "United States",
-      "original": "St . Petersburg oil facilities ablaze as Ukraine launches more than 1 , 000 drones at Russia",
+      "url": "https://tsn.ua/ukrayina/peremyria-v-oleshkakh-pid-pytanniam-shcho-moze-zirvaty-plany-z-evakuatsiyi-liudey-isw-3199023.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-10-25T09:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/7558e0068d9d14db.webp",
+      "original": "Перемир  я в Олешках на Херсонщині аналітики ISW назвали невирішені питання Укрaїнa",
       "title": {
-        "uk": "Нафтові об'єкти в Санкт-Петербурзі охопила пожежа після запуску Україною понад 1000 дронів по Росії",
-        "en": "St. Petersburg oil facilities ablaze as Ukraine launches more than 1,000 drones at Russia",
-        "ru": "Нефтяные объекты в Санкт-Петербурге охвачены огнём после запуска Украиной более 1000 дронов по России"
+        "uk": "Перемир'я в Олешках: аналітики ISW назвали невирішені питання",
+        "en": "Ceasefire in Oleshky: ISW analysts identify unresolved issues",
+        "ru": "Перемирие в Олешках: аналитики ISW назвали нерешённые вопросы"
       }
     },
     {
@@ -111,22 +112,22 @@
       "image": "/news/f7ddb1c23344a5d8.webp",
       "original": "Россия действует на пределе своих возможностей на фронте – ВСУ оценили потенциал противника",
       "title": {
-        "uk": "Росія діє на межі своїх можливостей на фронті — ЗСУ оцінили потенціал супротивника",
-        "en": "Russia is operating at the limits of its capabilities on the front — Ukrainian Armed Forces assess the enemy's potential",
+        "uk": "Росія діє на межі своїх можливостей на фронті — ЗСУ оцінили потенціал противника",
+        "en": "Russia is operating at the limit of its capabilities on the front – Ukraine's armed forces assess the enemy's potential",
         "ru": "Россия действует на пределе своих возможностей на фронте — ВСУ оценили потенциал противника"
       }
     },
     {
-      "url": "https://interfax.com.ua/news/political/1225263.html",
-      "domain": "interfax.com.ua",
-      "seenAt": "2026-10-23T13:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/c9ea56d7a917423a.webp",
-      "original": "United for Ukraine  закликала європейські країни розробити механізми використання заморожених активів РФ для підтримки України",
+      "url": "https://www.channelnewsasia.com/world/ukraine-russia-saint-petersburg-strike-6469746",
+      "domain": "channelnewsasia.com",
+      "seenAt": "2026-10-18T18:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/b4cb03f97ace9619.webp",
+      "original": "Ukraine sets Saint Petersburg refinery ablaze in large - scale drone attack",
       "title": {
-        "uk": "United for Ukraine закликала європейські країни розробити механізми використання заморожених активів РФ для підтримки України",
-        "en": "United for Ukraine calls on European countries to develop mechanisms for using frozen Russian assets to support Ukraine",
-        "ru": "United for Ukraine призвала европейские страны разработать механизмы использования замороженных активов РФ для поддержки Украины"
+        "uk": "Україна підпалила нафтопереробний завод у Санкт-Петербурзі в масштабній дроновій атаці",
+        "en": "Ukraine sets Saint Petersburg refinery ablaze in large-scale drone attack",
+        "ru": "Украина подожгла нефтеперерабатывающий завод в Санкт-Петербурге в масштабной дроновой атаке"
       }
     }
   ]
