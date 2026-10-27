@@ -115,10 +115,10 @@
     "question": "Russia x Ukraine ceasefire agreement by October 31, 2026?",
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.0185,
-    "liquidity_usd": 137194.69238,
+    "current_price": 0.012,
+    "liquidity_usd": 159962.04253,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:2264327",
@@ -126,10 +126,10 @@
     "question": "Russia x Ukraine ceasefire by October 31, 2026?",
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.009,
-    "liquidity_usd": 75437.49845,
+    "current_price": 0.0085,
+    "liquidity_usd": 78482.19636,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:3913254",
@@ -138,9 +138,9 @@
     "resolution_date": "2026-10-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.006,
-    "liquidity_usd": 18087.73979,
+    "liquidity_usd": 20068.68205,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "manifold:EQtgql8AR2",
@@ -151,7 +151,7 @@
     "current_price": 0.0824986468803562,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-10-26T14:59:49.420Z"
+    "last_updated": "2026-10-27T14:12:57.873Z"
   },
   {
     "market_id": "polymarket:4338145",
@@ -159,10 +159,10 @@
     "question": "Russia x Ukraine ceasefire agreement by November 30, 2026?",
     "resolution_date": "2026-11-30T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.075,
-    "liquidity_usd": 55253.8871,
+    "current_price": 0.065,
+    "liquidity_usd": 57211.0636,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "manifold:2QNgzytgzn",
@@ -173,7 +173,7 @@
     "current_price": 0.29999999999999993,
     "liquidity_usd": null,
     "liquidity_mana": 452,
-    "last_updated": "2026-10-26T14:59:49.420Z"
+    "last_updated": "2026-10-27T14:12:57.873Z"
   },
   {
     "market_id": "polymarket:2243897",
@@ -181,10 +181,10 @@
     "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.165,
-    "liquidity_usd": 125181.7392,
+    "current_price": 0.155,
+    "liquidity_usd": 137655.4381,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:665224",
@@ -192,10 +192,10 @@
     "question": "Ukraine signs peace deal with Russia before 2027?",
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.085,
-    "liquidity_usd": 75209.6806,
+    "current_price": 0.095,
+    "liquidity_usd": 67665.2045,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:2264328",
@@ -204,9 +204,9 @@
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.135,
-    "liquidity_usd": 228986.6879,
+    "liquidity_usd": 194648.4062,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "manifold:EzZLpOlLCg",
@@ -217,7 +217,7 @@
     "current_price": 0.07155353827588105,
     "liquidity_usd": null,
     "liquidity_mana": 1000,
-    "last_updated": "2026-10-26T14:59:49.420Z"
+    "last_updated": "2026-10-27T14:12:57.873Z"
   },
   {
     "market_id": "manifold:UtgtL9ORLq",
@@ -225,10 +225,10 @@
     "question": "Ukraine war ends in 2026?",
     "resolution_date": "2026-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.0756367790553753,
+    "current_price": 0.09634452545668147,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-10-26T14:59:49.420Z"
+    "last_updated": "2026-10-27T14:12:57.873Z"
   },
   {
     "market_id": "manifold:A0P8sZglZN",
@@ -239,7 +239,7 @@
     "current_price": 0.14999999999999994,
     "liquidity_usd": null,
     "liquidity_mana": 100,
-    "last_updated": "2026-10-26T14:59:49.420Z"
+    "last_updated": "2026-10-27T14:12:57.873Z"
   },
   {
     "market_id": "manifold:UlZEC6Rys2",
@@ -258,10 +258,10 @@
     "question": "Russia x Ukraine ceasefire agreement by January 31, 2027?",
     "resolution_date": "2027-01-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.245,
-    "liquidity_usd": 64160.1825,
+    "current_price": 0.235,
+    "liquidity_usd": 75456.035,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "manifold:OgUy9yu6Zy",
@@ -269,10 +269,10 @@
     "question": "Will the Russia-Ukraine war end before the end of 2026?",
     "resolution_date": "2027-02-01T04:59:00.000Z",
     "category": "war_end",
-    "current_price": 0.0810490934423994,
+    "current_price": 0.09634452545668143,
     "liquidity_usd": null,
     "liquidity_mana": 1005,
-    "last_updated": "2026-10-26T14:59:49.420Z"
+    "last_updated": "2026-10-27T14:12:57.873Z"
   },
   {
     "market_id": "polymarket:4338144",
@@ -280,10 +280,10 @@
     "question": "Russia x Ukraine ceasefire agreement by February 28, 2027?",
     "resolution_date": "2027-02-28T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.29,
-    "liquidity_usd": 47642.957,
+    "current_price": 0.275,
+    "liquidity_usd": 54755.3251,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:3701687",
@@ -292,9 +292,9 @@
     "resolution_date": "2027-03-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.345,
-    "liquidity_usd": 61484.1391,
+    "liquidity_usd": 81930.0728,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:5998481",
@@ -303,9 +303,9 @@
     "resolution_date": "2027-03-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.265,
-    "liquidity_usd": 140427.5668,
+    "liquidity_usd": 149082.0206,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:4338135",
@@ -313,10 +313,10 @@
     "question": "Russia x Ukraine ceasefire agreement by April 30, 2027?",
     "resolution_date": "2027-04-30T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.415,
-    "liquidity_usd": 48969.5928,
+    "current_price": 0.405,
+    "liquidity_usd": 50800.4989,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:4338136",
@@ -324,10 +324,10 @@
     "question": "Russia x Ukraine ceasefire agreement by May 31, 2027?",
     "resolution_date": "2027-05-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.495,
-    "liquidity_usd": 78343.6712,
+    "current_price": 0.49,
+    "liquidity_usd": 87048.0165,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:3701688",
@@ -335,10 +335,10 @@
     "question": "Russia x Ukraine ceasefire agreement by June 30, 2027?",
     "resolution_date": "2027-06-30T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.525,
-    "liquidity_usd": 84900.6397,
+    "current_price": 0.53,
+    "liquidity_usd": 93572.1844,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:4338138",
@@ -346,10 +346,10 @@
     "question": "Russia x Ukraine ceasefire agreement by July 31, 2027?",
     "resolution_date": "2027-07-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.56,
-    "liquidity_usd": 64067.2485,
+    "current_price": 0.565,
+    "liquidity_usd": 71214.5161,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:4338141",
@@ -357,10 +357,10 @@
     "question": "Russia x Ukraine ceasefire agreement by August 31, 2027?",
     "resolution_date": "2027-08-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.625,
-    "liquidity_usd": 75651.4407,
+    "current_price": 0.605,
+    "liquidity_usd": 69010.1156,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:4338139",
@@ -368,10 +368,10 @@
     "question": "Russia x Ukraine ceasefire agreement by September 30, 2027?",
     "resolution_date": "2027-09-30T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.64,
-    "liquidity_usd": 67060.5871,
+    "current_price": 0.635,
+    "liquidity_usd": 72967.652,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:4338137",
@@ -380,9 +380,9 @@
     "resolution_date": "2027-10-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.645,
-    "liquidity_usd": 85380.7985,
+    "liquidity_usd": 94200.9538,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:4338142",
@@ -391,9 +391,9 @@
     "resolution_date": "2027-11-30T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.675,
-    "liquidity_usd": 83813.2978,
+    "liquidity_usd": 96843.0965,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:4338140",
@@ -401,10 +401,10 @@
     "question": "Russia x Ukraine ceasefire agreement by December 31, 2027?",
     "resolution_date": "2027-12-31T00:00:00.000Z",
     "category": "war_end",
-    "current_price": 0.71,
-    "liquidity_usd": 134315.5419,
+    "current_price": 0.705,
+    "liquidity_usd": 144677.2009,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   },
   {
     "market_id": "polymarket:5998480",
@@ -413,8 +413,8 @@
     "resolution_date": "2027-12-31T00:00:00.000Z",
     "category": "war_end",
     "current_price": 0.525,
-    "liquidity_usd": 76787.3602,
+    "liquidity_usd": 79416.6267,
     "liquidity_mana": null,
-    "last_updated": "2026-10-26T14:59:48.748Z"
+    "last_updated": "2026-10-27T14:12:57.807Z"
   }
 ]
