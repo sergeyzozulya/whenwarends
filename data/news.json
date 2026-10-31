@@ -1,7 +1,20 @@
 {
-  "asOf": "2026-10-27",
+  "asOf": "2026-10-31",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://www.nbcnews.com/world/ukraine/elon-musk-spacex-closed-ukraine-starlink-loophole-limits-hit-drone-rcna605494",
+      "domain": "nbcnews.com",
+      "seenAt": "2026-10-25T11:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/65cb85162bf0d102.webp",
+      "original": "Elon Musk says SpaceX closed Ukraine Starlink  loophole  after limits hit drone operations",
+      "title": {
+        "uk": "Ілон Маск заявив, що SpaceX закрила «лазівку» в Starlink для України після того, як обмеження вплинули на роботу дронів",
+        "en": "Elon Musk says SpaceX closed Ukraine Starlink 'loophole' after limits hit drone operations",
+        "ru": "Илон Маск заявил, что SpaceX закрыла «лазейку» в Starlink для Украины после того, как ограничения повлияли на работу дронов"
+      }
+    },
     {
       "url": "https://www.latimes.com/world-nation/story/2026-10-25/ukraine-disputes-musk-claim-of-violating-starlinks-terms-of-service",
       "domain": "latimes.com",
@@ -9,111 +22,73 @@
       "sourceCountry": "United States",
       "original": "Ukraine disputes Musk claim of violating Starlink terms of service",
       "title": {
-        "uk": "Україна заперечує заяву Маска про порушення умов використання Starlink",
+        "uk": "Україна заперечує твердження Маска про порушення умов використання Starlink",
         "en": "Ukraine disputes Musk claim of violating Starlink terms of service",
-        "ru": "Украина оспаривает заявление Маска о нарушении условий использования Starlink"
+        "ru": "Украина опровергает заявление Маска о нарушении условий использования Starlink"
       }
     },
     {
-      "url": "https://www.ksl.com:443/article/51640273/zelenskyy-says-ukrainian-russian-and-us-negotiators-to-meet-in-early-november-in-abu-dhabi",
-      "domain": "ksl.com",
-      "seenAt": "2026-10-23T23:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/8f516f6446c96523.webp",
-      "original": "Zelenskyy says Ukrainian , Russian and US negotiators to meet in early November in Abu Dhabi",
+      "url": "http://www.jpost.com/international/internationalrussia-ukraine-war/article-912989",
+      "domain": "jpost.com",
+      "seenAt": "2026-10-27T05:15:00.000Z",
+      "sourceCountry": "Israel",
+      "image": "/news/3b05adb55c405a6e.webp",
+      "original": "Russia , Ukraine agree to local ceasefire for humanitarian operation in Oleshky",
       "title": {
-        "uk": "Зеленський повідомив про зустріч переговорників України, Росії та США на початку листопада в Абу-Дабі",
-        "en": "Zelenskyy says Ukrainian, Russian and US negotiators to meet in early November in Abu Dhabi",
-        "ru": "Зеленский сообщил о встрече переговорщиков Украины, России и США в начале ноября в Абу-Даби"
+        "uk": "Росія та Україна домовилися про місцеве припинення вогню для гуманітарної операції в Олешках",
+        "en": "Russia, Ukraine agree to local ceasefire for humanitarian operation in Oleshky",
+        "ru": "Россия и Украина договорились о местном прекращении огня для гуманитарной операции в Олёшках"
       }
     },
     {
-      "url": "https://www.wesh.com/article/what-to-know-about-the-melania-trump-brokered-ceasefire-in-russian-occupied-oleshky-russia-ukraine-war-europe/74237633",
-      "domain": "wesh.com",
-      "seenAt": "2026-10-24T16:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/4ebf8666d9250916.webp",
-      "original": "What to know about the Melania Trump - brokered ceasefire in Russian - occupied Oleshky",
+      "url": "https://lineadirectaportal.com/internacional/zelensky-rechaza-ceder-el-donbas-y-propone-congelar-la-guerra-en-ucrania-2026-10-25__1727179",
+      "domain": "lineadirectaportal.com",
+      "seenAt": "2026-10-26T07:15:00.000Z",
+      "sourceCountry": "Mexico",
+      "image": "/news/14be6aa0a154333c.webp",
+      "original": "Zelensky rechaza ceder el Donbás y propone congelar la guerra en Ucrania",
       "title": {
-        "uk": "Що треба знати про перемир'я в окупованих Росією Олешках, організоване Меланією Трамп",
-        "en": "What to know about the Melania Trump-brokered ceasefire in Russian-occupied Oleshky",
-        "ru": "Что нужно знать о перемирии в оккупированных Россией Олешках, заключённом при посредничестве Мелании Трамп"
+        "uk": "Зеленський відмовляється поступитися Донбасом і пропонує заморозити війну в Україні",
+        "en": "Zelensky rejects ceding the Donbas and proposes freezing the war in Ukraine",
+        "ru": "Зеленский отказывается уступать Донбасс и предлагает заморозить войну на Украине"
       }
     },
     {
-      "url": "https://tsn.ua/ukrayina/peremyria-v-oleshkakh-pid-pytanniam-shcho-moze-zirvaty-plany-z-evakuatsiyi-liudey-isw-3199023.html",
+      "url": "https://zn.ua/ukr/WORLD/sprobi-trampa-zaznajut-krakhu-senator-respublikanets-rozkritikuvav-politiku-postupok-kremlju.html",
+      "domain": "zn.ua",
+      "seenAt": "2026-10-27T05:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Сенатор - республіканець розкритикував Трампа - позиція щодо України та Росії",
+      "title": {
+        "uk": "Сенатор-республіканець розкритикував Трампа за позицію щодо України та Росії",
+        "en": "Republican senator criticises Trump's stance on Ukraine and Russia",
+        "ru": "Сенатор-республиканец раскритиковал Трампа за позицию по Украине и России"
+      }
+    },
+    {
+      "url": "https://tsn.ua/ato/isteryka-z-bloheriv-zsu-zirvaly-plany-nastupu-rf-na-dva-kliuchovi-mista-armiiu-putina-vidkynuly-3198795.html",
       "domain": "tsn.ua",
-      "seenAt": "2026-10-25T09:30:00.000Z",
+      "seenAt": "2026-10-24T16:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/7558e0068d9d14db.webp",
-      "original": "Перемир  я в Олешках на Херсонщині аналітики ISW назвали невирішені питання Укрaїнa",
+      "image": "/news/a06b6a57e89d3ce5.webp",
+      "original": "Операція Вівальді ЗСУ зірвали російський наступ на Слов  янськ і Краматорськ , Жорін про наслідки",
       "title": {
-        "uk": "Перемир'я в Олешках на Херсонщині: аналітики ISW назвали невирішені питання",
-        "en": "Oleshky ceasefire in Kherson region: ISW analysts name unresolved issues",
-        "ru": "Перемирие в Олешках на Херсонщине: аналитики ISW назвали нерешённые вопросы"
+        "uk": "Операція «Вівальді»: ЗСУ зірвали російський наступ на Слов'янськ і Краматорськ — Жорін про наслідки",
+        "en": "Operation Vivaldi: Ukrainian forces foil Russian offensive on Slovyansk and Kramatorsk — Zhorin on the consequences",
+        "ru": "Операция «Вивальди»: ВСУ сорвали российское наступление на Славянск и Краматорск — Жорин о последствиях"
       }
     },
     {
-      "url": "https://glavcom.ua/world/observe/isw-rozkriv-spravzhni-teritorialni-ambitsiji-kremlja-1151159.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-10-24T08:15:00.000Z",
+      "url": "https://www.unian.net/war/mirnye-peregovory-chego-ukraina-ozhidaet-ot-trehstoronney-vstrechi-s-predstavitelyami-rf-i-ssha-13539837.html",
+      "domain": "unian.net",
+      "seenAt": "2026-10-25T19:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "ISW розкрив справжні територіальні амбіції Кремля",
+      "image": "/news/3d9c174958549325.webp",
+      "original": "Мирные переговоры : чего Украина ожидает от трехсторонней встречи с представителями РФ и США",
       "title": {
-        "uk": "ISW розкрив справжні територіальні амбіції Кремля",
-        "en": "ISW reveals Kremlin's true territorial ambitions",
-        "ru": "ISW раскрыл истинные территориальные амбиции Кремля"
-      }
-    },
-    {
-      "url": "https://glavcom.ua/country/incidents/isw-rosijska-armija-druhij-misjats-pospil-vtrachaje-teritoriji-v-ukrajini-1151137.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-10-23T23:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "ISW : Російська армія другий місяць поспіль втрачає території в Україні",
-      "title": {
-        "uk": "ISW: Російська армія другий місяць поспіль втрачає території в Україні",
-        "en": "ISW: Russian army loses territory in Ukraine for the second month in a row",
-        "ru": "ISW: российская армия второй месяц подряд теряет территории в Украине"
-      }
-    },
-    {
-      "url": "https://tert.am/en/news/2026/10/22/Ukraine%20ceasefire/4287715",
-      "domain": "tert.am",
-      "seenAt": "2026-10-22T06:00:00.000Z",
-      "sourceCountry": "Armenia",
-      "image": "/news/f5cacb17df0bd59f.webp",
-      "original": "Zelenskyy backs freezing front line as first step towards Ukraine ceasefire",
-      "title": {
-        "uk": "Зеленський підтримує заморожування лінії фронту як перший крок до припинення вогню в Україні",
-        "en": "Zelenskyy backs freezing front line as first step towards Ukraine ceasefire",
-        "ru": "Зеленский поддерживает заморозку линии фронта как первый шаг к прекращению огня на Украине"
-      }
-    },
-    {
-      "url": "https://www.aol.com/articles/putin-says-talks-must-focus-212348000.html",
-      "domain": "aol.com",
-      "seenAt": "2026-10-22T22:45:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/d605c3e0ed74087c.webp",
-      "original": "Putin says talks must focus on security for Russia , Ukraine and Europe overall",
-      "title": {
-        "uk": "Путін заявив, що переговори мають зосередитися на безпеці Росії, України та Європи загалом",
-        "en": "Putin says talks must focus on security for Russia, Ukraine and Europe overall",
-        "ru": "Путин заявил, что переговоры должны быть сосредоточены на безопасности России, Украины и Европы в целом"
-      }
-    },
-    {
-      "url": "https://nypost.com/2026/10/21/us-news/trump-envoy-steve-witkoff-praises-putin-as-humanitarian-as-ukraine-peace-talks-hang-in-the-balance/",
-      "domain": "nypost.com",
-      "seenAt": "2026-10-21T14:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/c47fe7413755ee9a.webp",
-      "original": "Trump envoy Steve Witkoff praises Putin as  humanitarian  as Ukraine peace talks hang in the balance",
-      "title": {
-        "uk": "Посланець Трампа Стів Віткофф назвав Путіна «гуманістом», поки мирні переговори щодо України залишаються під питанням",
-        "en": "Trump envoy Steve Witkoff praises Putin as 'humanitarian' as Ukraine peace talks hang in the balance",
-        "ru": "Посланник Трампа Стив Уиткофф назвал Путина «гуманистом», пока мирные переговоры по Украине остаются под вопросом"
+        "uk": "Мирні переговори: чого Україна очікує від тристоронньої зустрічі з представниками РФ та США",
+        "en": "Peace talks: what Ukraine expects from a trilateral meeting with Russia and the US",
+        "ru": "Мирные переговоры: чего Украина ожидает от трёхсторонней встречи с представителями РФ и США"
       }
     },
     {
@@ -124,9 +99,35 @@
       "image": "/news/bd402a9d854671ad.webp",
       "original": "Zelensky celebrates as Ukraine hits Putin war factory with British missile",
       "title": {
-        "uk": "Зеленський привітав удар України британською ракетою по військовому заводу Путіна",
+        "uk": "Зеленський святкує: Україна вдарила по військовому заводу Путіна британською ракетою",
         "en": "Zelensky celebrates as Ukraine hits Putin war factory with British missile",
-        "ru": "Зеленский поздравил с ударом Украины британской ракетой по военному заводу Путина"
+        "ru": "Зеленский празднует: Украина нанесла удар по военному заводу Путина британской ракетой"
+      }
+    },
+    {
+      "url": "https://www.unian.ua/war/u-2022-mu-putin-gotoviy-buv-viddati-chastinu-teritoriy-ft-diznavsya-pro-tayemniy-mirniy-plan-13538967.html",
+      "domain": "unian.ua",
+      "seenAt": "2026-10-24T15:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/69626bf96a61255a.webp",
+      "original": "У 2022 році Зеленський відхилив мирний план , проти якого не заперечував Путін",
+      "title": {
+        "uk": "У 2022 році Зеленський відхилив мирний план, проти якого не заперечував Путін",
+        "en": "In 2022, Zelensky rejected a peace plan that Putin did not object to",
+        "ru": "В 2022 году Зеленский отверг мирный план, против которого не возражал Путин"
+      }
+    },
+    {
+      "url": "https://nypost.com/2026/10/24/us-news/melania-trump-hints-she-could-go-to-ukraine-to-see-her-cease-fire-in-action/",
+      "domain": "nypost.com",
+      "seenAt": "2026-10-24T23:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/2be9efbad2103ea8.webp",
+      "original": "Melania Trump hints she could go to Ukraine to see her cease - fire in action",
+      "title": {
+        "uk": "Меланія Трамп натякнула, що може поїхати до України, щоб побачити перемир'я в дії",
+        "en": "Melania Trump hints she could go to Ukraine to see her cease-fire in action",
+        "ru": "Мелания Трамп намекнула, что может поехать на Украину, чтобы увидеть перемирие в действии"
       }
     }
   ]
