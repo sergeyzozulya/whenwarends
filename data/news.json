@@ -1,80 +1,43 @@
 {
-  "asOf": "2026-11-01",
+  "asOf": "2026-11-02",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://cyprusnews.eu/cnn-kosmos/melania-trump-brokered-one-city-ceasefire-between-russia-and-ukraine-takes-effect/",
-      "domain": "cyprusnews.eu",
+      "url": "http://www.jpost.com/international/internationalrussia-ukraine-war/article-912989",
+      "domain": "jpost.com",
       "seenAt": "2026-10-27T05:15:00.000Z",
-      "sourceCountry": "Greece",
-      "image": "/news/e512ad665c18e52f.webp",
-      "original": "Melania Trump - brokered one - city ceasefire between Russia and Ukraine takes effect",
+      "sourceCountry": "Israel",
+      "image": "/news/3b05adb55c405a6e.webp",
+      "original": "Russia , Ukraine agree to local ceasefire for humanitarian operation in Oleshky",
       "title": {
-        "uk": "Перемир'я між Росією та Україною в одному місті, організоване Меланією Трамп, набрало чинності",
-        "en": "Melania Trump-brokered one-city ceasefire between Russia and Ukraine takes effect",
-        "ru": "Перемирие между Россией и Украиной в одном городе, организованное Меланией Трамп, вступило в силу"
+        "uk": "Росія та Україна домовилися про місцеве припинення вогню для гуманітарної операції в Олешках",
+        "en": "Russia and Ukraine agree to local ceasefire for humanitarian operation in Oleshky",
+        "ru": "Россия и Украина договорились о местном прекращении огня для гуманитарной операции в Олёшках"
       }
     },
     {
-      "url": "https://www.hindustantimes.com/world-news/ukraine-us-russia-expected-to-hold-trilateral-talks-in-november-says-zelensky-101792982005265.html",
-      "domain": "hindustantimes.com",
-      "seenAt": "2026-10-26T07:15:00.000Z",
-      "sourceCountry": "India",
-      "original": "Ukraine , US , Russia expected to hold trilateral talks in November , says Zelensky",
-      "title": {
-        "uk": "Україна, США та Росія проведуть тристоронні переговори у листопаді, — Зеленський",
-        "en": "Ukraine, US, Russia expected to hold trilateral talks in November, says Zelensky",
-        "ru": "Украина, США и Россия проведут трёхсторонние переговоры в ноябре — Зеленский"
-      }
-    },
-    {
-      "url": "https://news.mail.ru/politics/72868673/",
-      "domain": "news.mail.ru",
-      "seenAt": "2026-10-27T05:15:00.000Z",
-      "sourceCountry": "Russia",
-      "image": "/news/742ce556f5db4b44.webp",
-      "original": "Зеленский хочет заморозить конфликт с Россией : мнение британского аналитика , требования Киева и срыв переговоров",
-      "title": {
-        "uk": "Зеленський хоче заморозити конфлікт із Росією: думка британського аналітика, вимоги Києва та зрив переговорів",
-        "en": "Zelensky wants to freeze the conflict with Russia: British analyst's view, Kyiv's demands and collapse of talks",
-        "ru": "Зеленский хочет заморозить конфликт с Россией: мнение британского аналитика, требования Киева и срыв переговоров"
-      }
-    },
-    {
-      "url": "https://glavcom.ua/country/incidents/podvijna-balistichna-ataka-na-kijiv-rezhim-tishi-v-oleshkakh-holovne-za-nich-27-zhovtnja-1151640.html",
-      "domain": "glavcom.ua",
+      "url": "https://zn.ua/ukr/war/cherhovij-udar-rf-po-pivdennomu-mostu-metro-pratsjuje-zi-zminami-na-dvokh-linijakh.html",
+      "domain": "zn.ua",
       "seenAt": "2026-10-27T05:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Подвійна балістична атака на Київ , режим тиші в Олешках : головне за ніч 27 жовтня",
+      "original": "Удар по Києву 27 жовтня - пошкоджено Південний міст і метро - новини України",
       "title": {
-        "uk": "Подвійна балістична атака на Київ, режим тиші в Олешках: головне за ніч 27 жовтня",
-        "en": "Double ballistic attack on Kyiv, ceasefire regime in Oleshky: main events of the night of October 27",
-        "ru": "Двойная баллистическая атака на Киев, режим тишины в Алёшках: главное за ночь 27 октября"
+        "uk": "Удар по Києву 27 жовтня: пошкоджено Південний міст і метро",
+        "en": "Strike on Kyiv on 27 October: Southern Bridge and metro damaged",
+        "ru": "Удар по Киеву 27 октября: повреждены Южный мост и метро"
       }
     },
     {
-      "url": "https://www.latimes.com/world-nation/story/2026-10-25/ukraine-disputes-musk-claim-of-violating-starlinks-terms-of-service",
-      "domain": "latimes.com",
-      "seenAt": "2026-10-25T18:00:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Ukraine disputes Musk claim of violating Starlink terms of service",
-      "title": {
-        "uk": "Україна заперечує заяву Маска про порушення умов використання Starlink",
-        "en": "Ukraine disputes Musk claim of violating Starlink terms of service",
-        "ru": "Украина опровергает заявление Маска о нарушении условий использования Starlink"
-      }
-    },
-    {
-      "url": "https://www.politico.eu/article/elon-musk-5-ways-eu-starlink/",
-      "domain": "politico.eu",
+      "url": "https://unn.ua/news/ukrainu-chekaie-zhorstoka-zyma-a-putin-ne-prahne-myru-tryvozhne-poperedzhennia-kallas",
+      "domain": "unn.ua",
       "seenAt": "2026-10-27T05:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/7d198913cd75efdf.webp",
-      "original": "Europe vs . Elon : 5 ways the EU is trying to squeeze out Musk Starlink – POLITICO",
+      "sourceCountry": "",
+      "image": "/news/6f04bd70bf7f5fbd.webp",
+      "original": "Україну чекає  жорстока зима , а путін не прагне миру – тривожне попередження Каллас",
       "title": {
-        "uk": "Європа проти Ілона: 5 способів, якими ЄС намагається витіснити Starlink Маска",
-        "en": "Europe vs. Elon: 5 ways the EU is trying to squeeze out Musk's Starlink",
-        "ru": "Европа против Илона: 5 способов, которыми ЕС пытается вытеснить Starlink Маска"
+        "uk": "Україну чекає жорстока зима, а Путін не прагне миру — тривожне попередження Каллас",
+        "en": "Ukraine faces a brutal winter and Putin is not seeking peace — Kallas's alarming warning",
+        "ru": "Украину ждёт жестокая зима, а Путин не стремится к миру — тревожное предупреждение Каллас"
       }
     },
     {
@@ -90,6 +53,19 @@
       }
     },
     {
+      "url": "https://news.mail.ru/politics/72868673/",
+      "domain": "news.mail.ru",
+      "seenAt": "2026-10-27T05:15:00.000Z",
+      "sourceCountry": "Russia",
+      "image": "/news/742ce556f5db4b44.webp",
+      "original": "Зеленский хочет заморозить конфликт с Россией : мнение британского аналитика , требования Киева и срыв переговоров",
+      "title": {
+        "uk": "Зеленський хоче заморозити конфлікт з Росією: думка британського аналітика, вимоги Києва та зрив переговорів",
+        "en": "Zelensky wants to freeze the conflict with Russia: British analyst's view, Kyiv's demands and breakdown of talks",
+        "ru": "Зеленский хочет заморозить конфликт с Россией: мнение британского аналитика, требования Киева и срыв переговоров"
+      }
+    },
+    {
       "url": "https://zn.ua/ukr/WORLD/sprobi-trampa-zaznajut-krakhu-senator-respublikanets-rozkritikuvav-politiku-postupok-kremlju.html",
       "domain": "zn.ua",
       "seenAt": "2026-10-27T05:15:00.000Z",
@@ -97,34 +73,60 @@
       "original": "Сенатор - республіканець розкритикував Трампа - позиція щодо України та Росії",
       "title": {
         "uk": "Сенатор-республіканець розкритикував Трампа за позицію щодо України та Росії",
-        "en": "Republican senator criticizes Trump's stance on Ukraine and Russia",
+        "en": "Republican senator criticises Trump over his position on Ukraine and Russia",
         "ru": "Сенатор-республиканец раскритиковал Трампа за позицию по Украине и России"
       }
     },
     {
-      "url": "https://www.asahi.com/articles/ASVBW0RTYVBWUHBI02FM.html",
-      "domain": "asahi.com",
+      "url": "https://unn.ua/news/yevropa-vstupyla-v-novu-eru-temriavy-prezydent-finliandii-poperedyv-pro-nebezpechni-zminy-u-sviti",
+      "domain": "unn.ua",
       "seenAt": "2026-10-27T05:15:00.000Z",
-      "sourceCountry": "Japan",
-      "image": "/news/fef55cf3da653aa7.webp",
-      "original": "ロシアが 「 人身取引 」 で29カ国の外国人を動員 国連独立委が認定 ： 朝日新聞",
+      "sourceCountry": "",
+      "image": "/news/65e18dbe06542063.webp",
+      "original": "Європа вступила в нову  еру темряви  – президент Фінляндії попередив про небезпечні зміни у світі",
       "title": {
-        "uk": "Росія залучила іноземців із 29 країн через «торгівлю людьми» — встановила незалежна комісія ООН",
-        "en": "Russia recruited foreigners from 29 countries through human trafficking, UN independent commission finds",
-        "ru": "Россия вербовала иностранцев из 29 стран через торговлю людьми — установила независимая комиссия ООН"
+        "uk": "Європа вступила в нову «еру темряви» — президент Фінляндії попередив про небезпечні зміни у світі",
+        "en": "Europe has entered a new \"era of darkness\" — Finnish president warns of dangerous changes in the world",
+        "ru": "Европа вступила в новую «эру тьмы» — президент Финляндии предупредил об опасных изменениях в мире"
       }
     },
     {
-      "url": "https://www.heute.at/s/briten-minister-warnt-russland-koennte-2030-angreifen-120272167",
-      "domain": "heute.at",
-      "seenAt": "2026-10-25T18:00:00.000Z",
-      "sourceCountry": "Austria",
-      "image": "/news/0e001fcea6b2c07e.webp",
-      "original": "Nur noch 1 . 000 Tage – Briten - Minister warnt : Russland könnte 2030 angreifen",
+      "url": "https://news.bg/int-politics/rusiya-prodalzhava-da-othvarlya-ideyata-za-primirie.html",
+      "domain": "news.bg",
+      "seenAt": "2026-10-27T05:15:00.000Z",
+      "sourceCountry": "Bulgaria",
+      "image": "/news/40e0e501e0d4c1f2.webp",
+      "original": "Русия продължава да отхвърля идеята за примирие",
       "title": {
-        "uk": "Лише 1000 днів: британський міністр попереджає, що Росія може напасти у 2030 році",
-        "en": "Only 1,000 days left: UK minister warns Russia could attack by 2030",
-        "ru": "Всего 1000 дней: британский министр предупреждает, что Россия может напасть в 2030 году"
+        "uk": "Росія продовжує відкидати ідею перемир'я",
+        "en": "Russia continues to reject the idea of a ceasefire",
+        "ru": "Россия продолжает отвергать идею перемирия"
+      }
+    },
+    {
+      "url": "https://spravy.pozri.sk/clanok/trumpova-administrativa-udajne-presadzuje-orbana-na-celo-osn-pocita-s-podporou-ruska-a-ciny/1615407",
+      "domain": "spravy.pozri.sk",
+      "seenAt": "2026-10-27T05:15:00.000Z",
+      "sourceCountry": "Slovak Republic",
+      "image": "/news/29d3ee91a78d6ec0.webp",
+      "original": "Trumpova administratíva údajne presadzuje Orbána na čelo OSN , počíta s podporou Ruska a Číny",
+      "title": {
+        "uk": "Адміністрація Трампа нібито просуває Орбана на пост голови ООН, розраховуючи на підтримку Росії та Китаю",
+        "en": "Trump administration reportedly pushing Orbán for UN chief, counting on support from Russia and China",
+        "ru": "Администрация Трампа якобы продвигает Орбана на пост главы ООН, рассчитывая на поддержку России и Китая"
+      }
+    },
+    {
+      "url": "https://news.mail.ru/society/72868771/",
+      "domain": "news.mail.ru",
+      "seenAt": "2026-10-27T05:15:00.000Z",
+      "sourceCountry": "Russia",
+      "image": "/news/3aea6c2e345f9491.webp",
+      "original": "Российские военные нашли склад с оружием НАТО при освобождении Общего",
+      "title": {
+        "uk": "Російські військові знайшли склад зі зброєю НАТО під час захоплення Загального",
+        "en": "Russian military found a NATO weapons depot during the capture of Obshcheye",
+        "ru": "Российские военные нашли склад с оружием НАТО при освобождении Общего"
       }
     }
   ]
