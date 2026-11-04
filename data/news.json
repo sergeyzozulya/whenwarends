@@ -1,132 +1,133 @@
 {
-  "asOf": "2026-11-02",
+  "asOf": "2026-11-04",
   "source": "gdelt",
   "articles": [
     {
-      "url": "http://www.jpost.com/international/internationalrussia-ukraine-war/article-912989",
-      "domain": "jpost.com",
-      "seenAt": "2026-10-27T05:15:00.000Z",
-      "sourceCountry": "Israel",
-      "image": "/news/3b05adb55c405a6e.webp",
-      "original": "Russia , Ukraine agree to local ceasefire for humanitarian operation in Oleshky",
+      "url": "https://www.channelnewsasia.com/world/russia-ukraine-us-trilateral-talks-6516046",
+      "domain": "channelnewsasia.com",
+      "seenAt": "2026-11-03T11:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/3a5933185f929c12.webp",
+      "original": "US to mediate trilateral talks with Ukraine , Russia in Abu Dhabi next week , US envoy says",
       "title": {
-        "uk": "Росія та Україна домовилися про місцеве припинення вогню для гуманітарної операції в Олешках",
-        "en": "Russia and Ukraine agree to local ceasefire for humanitarian operation in Oleshky",
-        "ru": "Россия и Украина договорились о местном прекращении огня для гуманитарной операции в Олёшках"
+        "uk": "США виступлять посередником на тристоронніх переговорах України, Росії та США в Абу-Дабі наступного тижня, заявив американський посланець",
+        "en": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says",
+        "ru": "США выступят посредником на трёхсторонних переговорах с Украиной и Россией в Абу-Даби на следующей неделе, заявил американский посланник"
       }
     },
     {
-      "url": "https://zn.ua/ukr/war/cherhovij-udar-rf-po-pivdennomu-mostu-metro-pratsjuje-zi-zminami-na-dvokh-linijakh.html",
-      "domain": "zn.ua",
-      "seenAt": "2026-10-27T05:15:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Удар по Києву 27 жовтня - пошкоджено Південний міст і метро - новини України",
+      "url": "https://www.aljazeera.com/news/2026/11/3/at-least-73-injured-as-russia-bombs-ukrainian-hospital-and-power-plants",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-11-03T11:15:00.000Z",
+      "sourceCountry": "United States",
+      "original": "At least 73 injured as Russia bombs Ukrainian hospital and power plants",
       "title": {
-        "uk": "Удар по Києву 27 жовтня: пошкоджено Південний міст і метро",
-        "en": "Strike on Kyiv on 27 October: Southern Bridge and metro damaged",
-        "ru": "Удар по Киеву 27 октября: повреждены Южный мост и метро"
+        "uk": "Щонайменше 73 поранених: Росія завдала удару по українській лікарні та електростанціях",
+        "en": "At least 73 injured as Russia bombs Ukrainian hospital and power plants",
+        "ru": "Не менее 73 раненых: Россия нанесла удар по украинской больнице и электростанциям"
       }
     },
     {
-      "url": "https://unn.ua/news/ukrainu-chekaie-zhorstoka-zyma-a-putin-ne-prahne-myru-tryvozhne-poperedzhennia-kallas",
+      "url": "http://www.idahopress.com/news/world/death-toll-hits-29-after-russian-strike-on-ukrainian-aid-site-with-48-still-missing/article_a4d8f461-322b-550c-af47-fe4a754497b6.html",
+      "domain": "idahopress.com",
+      "seenAt": "2026-11-03T11:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/cc92b7db4b97268d.webp",
+      "original": "Death toll hits 29 after Russian strike on Ukrainian aid site , with 48 still missing",
+      "title": {
+        "uk": "Кількість загиблих після російського удару по українському пункту видачі допомоги зросла до 29, ще 48 вважаються зниклими безвісти",
+        "en": "Death toll hits 29 after Russian strike on Ukrainian aid site, with 48 still missing",
+        "ru": "Число погибших после российского удара по украинскому пункту раздачи помощи достигло 29, ещё 48 числятся пропавшими без вести"
+      }
+    },
+    {
+      "url": "https://www.koreaherald.com/article/10925120",
+      "domain": "koreaherald.com",
+      "seenAt": "2026-11-04T01:30:00.000Z",
+      "sourceCountry": "South Korea",
+      "image": "/news/cffcf05a09213e3e.webp",
+      "original": "Melania Trump to meet Ukrainian , Russian representatives at White House this week",
+      "title": {
+        "uk": "Меланія Трамп цього тижня зустрінеться з українськими та російськими представниками в Білому домі",
+        "en": "Melania Trump to meet Ukrainian, Russian representatives at White House this week",
+        "ru": "Мелания Трамп на этой неделе встретится с украинскими и российскими представителями в Белом доме"
+      }
+    },
+    {
+      "url": "https://www.channelnewsasia.com/world/russia-ukraine-war-black-sea-nato-6516256",
+      "domain": "channelnewsasia.com",
+      "seenAt": "2026-11-03T11:15:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/5cd1a21ffcb27faf.webp",
+      "original": "Russia - Ukraine war widens in the Black Sea in a test of NATO red lines",
+      "title": {
+        "uk": "Війна між Росією та Україною розширюється у Чорному морі: випробування червоних ліній НАТО",
+        "en": "Russia-Ukraine war widens in the Black Sea in a test of NATO red lines",
+        "ru": "Война между Россией и Украиной расширяется в Чёрном море: испытание красных линий НАТО"
+      }
+    },
+    {
+      "url": "https://www.manilatimes.net/2026/11/03/world/americas-emea/multinational-ukraine-force-to-hold-first-exercise-in-poland/2460176",
+      "domain": "manilatimes.net",
+      "seenAt": "2026-11-03T02:15:00.000Z",
+      "sourceCountry": "Philippines",
+      "image": "/news/4a3116b1da3f32a0.webp",
+      "original": "Multinational Ukraine force to hold first exercise in Poland",
+      "title": {
+        "uk": "Багатонаціональні сили підтримки України проведуть перші навчання в Польщі",
+        "en": "Multinational Ukraine force to hold first exercise in Poland",
+        "ru": "Многонациональные силы поддержки Украины проведут первые учения в Польше"
+      }
+    },
+    {
+      "url": "https://unn.ua/news/zelenskyi-prybuv-do-berlina-na-zustrich-z-mertsom-pered-perehovoramy-v-abu-dabi",
       "domain": "unn.ua",
-      "seenAt": "2026-10-27T05:15:00.000Z",
+      "seenAt": "2026-11-03T11:15:00.000Z",
       "sourceCountry": "",
-      "image": "/news/6f04bd70bf7f5fbd.webp",
-      "original": "Україну чекає  жорстока зима , а путін не прагне миру – тривожне попередження Каллас",
+      "image": "/news/4887401e2152a673.webp",
+      "original": "Зеленський прибув до Берліна на зустріч з Мерцом перед переговорами в Абу - Дабі",
       "title": {
-        "uk": "Україну чекає жорстока зима, а Путін не прагне миру — тривожне попередження Каллас",
-        "en": "Ukraine faces a brutal winter and Putin is not seeking peace — Kallas's alarming warning",
-        "ru": "Украину ждёт жестокая зима, а Путин не стремится к миру — тревожное предупреждение Каллас"
+        "uk": "Зеленський прибув до Берліна на зустріч з Мерцом перед переговорами в Абу-Дабі",
+        "en": "Zelensky arrives in Berlin to meet Merz ahead of Abu Dhabi talks",
+        "ru": "Зеленский прибыл в Берлин на встречу с Мерцем накануне переговоров в Абу-Даби"
       }
     },
     {
-      "url": "https://glavcom.ua/world/observe/jevropa-hotuje-miljoni-ljudej-do-mozhlivoji-vijni-z-rosijeju-1151639.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-10-27T05:15:00.000Z",
+      "url": "https://focus.ua/voennye-novosti/773526-mirnye-peregovory-po-ukraine-putin-ne-verit-chto-tramp-dogovoritsya-s-kievom-bloomberg",
+      "domain": "focus.ua",
+      "seenAt": "2026-11-04T01:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Європа готує мільйони людей до можливої війни з Росією",
+      "image": "/news/23c8abb8f13329c4.webp",
+      "original": "Мирные переговоры по Украине Путин не верит , что Трамп договорится с Киевом Bloomberg",
       "title": {
-        "uk": "Європа готує мільйони людей до можливої війни з Росією",
-        "en": "Europe is preparing millions of people for a possible war with Russia",
-        "ru": "Европа готовит миллионы людей к возможной войне с Россией"
+        "uk": "Мирні переговори щодо України: Путін не вірить, що Трамп домовиться з Києвом — Bloomberg",
+        "en": "Ukraine peace talks: Putin does not believe Trump will reach a deal with Kyiv — Bloomberg",
+        "ru": "Мирные переговоры по Украине: Путин не верит, что Трамп договорится с Киевом — Bloomberg"
       }
     },
     {
-      "url": "https://news.mail.ru/politics/72868673/",
-      "domain": "news.mail.ru",
-      "seenAt": "2026-10-27T05:15:00.000Z",
-      "sourceCountry": "Russia",
-      "image": "/news/742ce556f5db4b44.webp",
-      "original": "Зеленский хочет заморозить конфликт с Россией : мнение британского аналитика , требования Киева и срыв переговоров",
-      "title": {
-        "uk": "Зеленський хоче заморозити конфлікт з Росією: думка британського аналітика, вимоги Києва та зрив переговорів",
-        "en": "Zelensky wants to freeze the conflict with Russia: British analyst's view, Kyiv's demands and breakdown of talks",
-        "ru": "Зеленский хочет заморозить конфликт с Россией: мнение британского аналитика, требования Киева и срыв переговоров"
-      }
-    },
-    {
-      "url": "https://zn.ua/ukr/WORLD/sprobi-trampa-zaznajut-krakhu-senator-respublikanets-rozkritikuvav-politiku-postupok-kremlju.html",
+      "url": "https://zn.ua/ukr/war/zelenskij-zajaviv-pro-kibervidpovid-rosiji-pislja-zlamu-sistemi-ukrajinskoho-opovishchennja.html",
       "domain": "zn.ua",
-      "seenAt": "2026-10-27T05:15:00.000Z",
+      "seenAt": "2026-11-03T02:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Сенатор - республіканець розкритикував Трампа - позиція щодо України та Росії",
+      "original": "Кібератака на Росію - Зеленський підтвердив злам системи оповіщення - новини війни",
       "title": {
-        "uk": "Сенатор-республіканець розкритикував Трампа за позицію щодо України та Росії",
-        "en": "Republican senator criticises Trump over his position on Ukraine and Russia",
-        "ru": "Сенатор-республиканец раскритиковал Трампа за позицию по Украине и России"
+        "uk": "Кібератака на Росію: Зеленський підтвердив злам системи оповіщення",
+        "en": "Cyberattack on Russia: Zelensky confirms hacking of warning system",
+        "ru": "Кибератака на Россию: Зеленский подтвердил взлом системы оповещения"
       }
     },
     {
-      "url": "https://unn.ua/news/yevropa-vstupyla-v-novu-eru-temriavy-prezydent-finliandii-poperedyv-pro-nebezpechni-zminy-u-sviti",
-      "domain": "unn.ua",
-      "seenAt": "2026-10-27T05:15:00.000Z",
-      "sourceCountry": "",
-      "image": "/news/65e18dbe06542063.webp",
-      "original": "Європа вступила в нову  еру темряви  – президент Фінляндії попередив про небезпечні зміни у світі",
+      "url": "https://ain.ua:443/2026/11/03/rosiia-naroshhuje-zastosuvannia-reb-proti-starlink-fles-nazivav-virobnika-i-cinu-kompleksu-v-15-mln/",
+      "domain": "ain.ua",
+      "seenAt": "2026-11-03T11:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/61dc2054bc37fea2.webp",
+      "original": "Росія нарощує застосування РЕБ проти Starlink « Флеш » називав виробника й ціну комплексу в $1 , 5 млн",
       "title": {
-        "uk": "Європа вступила в нову «еру темряви» — президент Фінляндії попередив про небезпечні зміни у світі",
-        "en": "Europe has entered a new \"era of darkness\" — Finnish president warns of dangerous changes in the world",
-        "ru": "Европа вступила в новую «эру тьмы» — президент Финляндии предупредил об опасных изменениях в мире"
-      }
-    },
-    {
-      "url": "https://news.bg/int-politics/rusiya-prodalzhava-da-othvarlya-ideyata-za-primirie.html",
-      "domain": "news.bg",
-      "seenAt": "2026-10-27T05:15:00.000Z",
-      "sourceCountry": "Bulgaria",
-      "image": "/news/40e0e501e0d4c1f2.webp",
-      "original": "Русия продължава да отхвърля идеята за примирие",
-      "title": {
-        "uk": "Росія продовжує відкидати ідею перемир'я",
-        "en": "Russia continues to reject the idea of a ceasefire",
-        "ru": "Россия продолжает отвергать идею перемирия"
-      }
-    },
-    {
-      "url": "https://spravy.pozri.sk/clanok/trumpova-administrativa-udajne-presadzuje-orbana-na-celo-osn-pocita-s-podporou-ruska-a-ciny/1615407",
-      "domain": "spravy.pozri.sk",
-      "seenAt": "2026-10-27T05:15:00.000Z",
-      "sourceCountry": "Slovak Republic",
-      "image": "/news/29d3ee91a78d6ec0.webp",
-      "original": "Trumpova administratíva údajne presadzuje Orbána na čelo OSN , počíta s podporou Ruska a Číny",
-      "title": {
-        "uk": "Адміністрація Трампа нібито просуває Орбана на пост голови ООН, розраховуючи на підтримку Росії та Китаю",
-        "en": "Trump administration reportedly pushing Orbán for UN chief, counting on support from Russia and China",
-        "ru": "Администрация Трампа якобы продвигает Орбана на пост главы ООН, рассчитывая на поддержку России и Китая"
-      }
-    },
-    {
-      "url": "https://news.mail.ru/society/72868771/",
-      "domain": "news.mail.ru",
-      "seenAt": "2026-10-27T05:15:00.000Z",
-      "sourceCountry": "Russia",
-      "image": "/news/3aea6c2e345f9491.webp",
-      "original": "Российские военные нашли склад с оружием НАТО при освобождении Общего",
-      "title": {
-        "uk": "Російські військові знайшли склад зі зброєю НАТО під час захоплення Загального",
-        "en": "Russian military found a NATO weapons depot during the capture of Obshcheye",
-        "ru": "Российские военные нашли склад с оружием НАТО при освобождении Общего"
+        "uk": "Росія нарощує застосування РЕБ проти Starlink",
+        "en": "Russia increasing use of electronic warfare against Starlink",
+        "ru": "Россия наращивает применение РЭБ против Starlink"
       }
     }
   ]
