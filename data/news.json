@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-04",
+  "asOf": "2026-11-05",
   "source": "gdelt",
   "articles": [
     {
@@ -10,34 +10,9 @@
       "image": "/news/3a5933185f929c12.webp",
       "original": "US to mediate trilateral talks with Ukraine , Russia in Abu Dhabi next week , US envoy says",
       "title": {
-        "uk": "США виступлять посередником на тристоронніх переговорах України, Росії та США в Абу-Дабі наступного тижня, заявив американський посланець",
+        "uk": "США виступлять посередником у тристоронніх переговорах з Україною та Росією в Абу-Дабі наступного тижня, заявив американський посланець",
         "en": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says",
-        "ru": "США выступят посредником на трёхсторонних переговорах с Украиной и Россией в Абу-Даби на следующей неделе, заявил американский посланник"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/3/at-least-73-injured-as-russia-bombs-ukrainian-hospital-and-power-plants",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-11-03T11:15:00.000Z",
-      "sourceCountry": "United States",
-      "original": "At least 73 injured as Russia bombs Ukrainian hospital and power plants",
-      "title": {
-        "uk": "Щонайменше 73 поранених: Росія завдала удару по українській лікарні та електростанціях",
-        "en": "At least 73 injured as Russia bombs Ukrainian hospital and power plants",
-        "ru": "Не менее 73 раненых: Россия нанесла удар по украинской больнице и электростанциям"
-      }
-    },
-    {
-      "url": "http://www.idahopress.com/news/world/death-toll-hits-29-after-russian-strike-on-ukrainian-aid-site-with-48-still-missing/article_a4d8f461-322b-550c-af47-fe4a754497b6.html",
-      "domain": "idahopress.com",
-      "seenAt": "2026-11-03T11:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/cc92b7db4b97268d.webp",
-      "original": "Death toll hits 29 after Russian strike on Ukrainian aid site , with 48 still missing",
-      "title": {
-        "uk": "Кількість загиблих після російського удару по українському пункту видачі допомоги зросла до 29, ще 48 вважаються зниклими безвісти",
-        "en": "Death toll hits 29 after Russian strike on Ukrainian aid site, with 48 still missing",
-        "ru": "Число погибших после российского удара по украинскому пункту раздачи помощи достигло 29, ещё 48 числятся пропавшими без вести"
+        "ru": "США выступят посредником в трёхсторонних переговорах с Украиной и Россией в Абу-Даби на следующей неделе, заявил американский посланник"
       }
     },
     {
@@ -48,9 +23,34 @@
       "image": "/news/cffcf05a09213e3e.webp",
       "original": "Melania Trump to meet Ukrainian , Russian representatives at White House this week",
       "title": {
-        "uk": "Меланія Трамп цього тижня зустрінеться з українськими та російськими представниками в Білому домі",
+        "uk": "Меланія Трамп цього тижня зустрінеться з українськими та російськими представниками у Білому домі",
         "en": "Melania Trump to meet Ukrainian, Russian representatives at White House this week",
         "ru": "Мелания Трамп на этой неделе встретится с украинскими и российскими представителями в Белом доме"
+      }
+    },
+    {
+      "url": "https://unn.ua/news/zelenskyi-prybuv-do-berlina-na-zustrich-z-mertsom-pered-perehovoramy-v-abu-dabi",
+      "domain": "unn.ua",
+      "seenAt": "2026-11-03T11:15:00.000Z",
+      "sourceCountry": "",
+      "image": "/news/4887401e2152a673.webp",
+      "original": "Зеленський прибув до Берліна на зустріч з Мерцом перед переговорами в Абу - Дабі",
+      "title": {
+        "uk": "Зеленський прибув до Берліна на зустріч з Мерцом перед переговорами в Абу-Дабі",
+        "en": "Zelensky arrives in Berlin to meet Merz ahead of Abu Dhabi talks",
+        "ru": "Зеленский прибыл в Берлин на встречу с Мерцем перед переговорами в Абу-Даби"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/3/at-least-73-injured-as-russia-bombs-ukrainian-hospital-and-power-plants",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-11-03T11:15:00.000Z",
+      "sourceCountry": "United States",
+      "original": "At least 73 injured as Russia bombs Ukrainian hospital and power plants",
+      "title": {
+        "uk": "Щонайменше 73 поранених: Росія завдала ударів по українській лікарні та електростанціях",
+        "en": "At least 73 injured as Russia bombs Ukrainian hospital and power plants",
+        "ru": "Не менее 73 пострадавших в результате российских ударов по украинской больнице и электростанциям"
       }
     },
     {
@@ -61,9 +61,9 @@
       "image": "/news/5cd1a21ffcb27faf.webp",
       "original": "Russia - Ukraine war widens in the Black Sea in a test of NATO red lines",
       "title": {
-        "uk": "Війна між Росією та Україною розширюється у Чорному морі: випробування червоних ліній НАТО",
+        "uk": "Російсько-українська війна розширюється в Чорному морі, випробовуючи червоні лінії НАТО",
         "en": "Russia-Ukraine war widens in the Black Sea in a test of NATO red lines",
-        "ru": "Война между Россией и Украиной расширяется в Чёрном море: испытание красных линий НАТО"
+        "ru": "Российско-украинская война расширяется в Чёрном море, проверяя красные линии НАТО"
       }
     },
     {
@@ -80,32 +80,6 @@
       }
     },
     {
-      "url": "https://unn.ua/news/zelenskyi-prybuv-do-berlina-na-zustrich-z-mertsom-pered-perehovoramy-v-abu-dabi",
-      "domain": "unn.ua",
-      "seenAt": "2026-11-03T11:15:00.000Z",
-      "sourceCountry": "",
-      "image": "/news/4887401e2152a673.webp",
-      "original": "Зеленський прибув до Берліна на зустріч з Мерцом перед переговорами в Абу - Дабі",
-      "title": {
-        "uk": "Зеленський прибув до Берліна на зустріч з Мерцом перед переговорами в Абу-Дабі",
-        "en": "Zelensky arrives in Berlin to meet Merz ahead of Abu Dhabi talks",
-        "ru": "Зеленский прибыл в Берлин на встречу с Мерцем накануне переговоров в Абу-Даби"
-      }
-    },
-    {
-      "url": "https://focus.ua/voennye-novosti/773526-mirnye-peregovory-po-ukraine-putin-ne-verit-chto-tramp-dogovoritsya-s-kievom-bloomberg",
-      "domain": "focus.ua",
-      "seenAt": "2026-11-04T01:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/23c8abb8f13329c4.webp",
-      "original": "Мирные переговоры по Украине Путин не верит , что Трамп договорится с Киевом Bloomberg",
-      "title": {
-        "uk": "Мирні переговори щодо України: Путін не вірить, що Трамп домовиться з Києвом — Bloomberg",
-        "en": "Ukraine peace talks: Putin does not believe Trump will reach a deal with Kyiv — Bloomberg",
-        "ru": "Мирные переговоры по Украине: Путин не верит, что Трамп договорится с Киевом — Bloomberg"
-      }
-    },
-    {
       "url": "https://zn.ua/ukr/war/zelenskij-zajaviv-pro-kibervidpovid-rosiji-pislja-zlamu-sistemi-ukrajinskoho-opovishchennja.html",
       "domain": "zn.ua",
       "seenAt": "2026-11-03T02:15:00.000Z",
@@ -113,21 +87,47 @@
       "original": "Кібератака на Росію - Зеленський підтвердив злам системи оповіщення - новини війни",
       "title": {
         "uk": "Кібератака на Росію: Зеленський підтвердив злам системи оповіщення",
-        "en": "Cyberattack on Russia: Zelensky confirms hacking of warning system",
+        "en": "Cyberattack on Russia: Zelensky confirms hack of warning system",
         "ru": "Кибератака на Россию: Зеленский подтвердил взлом системы оповещения"
       }
     },
     {
-      "url": "https://ain.ua:443/2026/11/03/rosiia-naroshhuje-zastosuvannia-reb-proti-starlink-fles-nazivav-virobnika-i-cinu-kompleksu-v-15-mln/",
-      "domain": "ain.ua",
+      "url": "https://interfax.com.ua/news/general/1230414.html",
+      "domain": "interfax.com.ua",
       "seenAt": "2026-11-03T11:15:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/61dc2054bc37fea2.webp",
-      "original": "Росія нарощує застосування РЕБ проти Starlink « Флеш » називав виробника й ціну комплексу в $1 , 5 млн",
+      "image": "/news/f1d00b081435cb7b.webp",
+      "original": "Сили оборони в жовтні уразили щонайменше 30 важливих об  єктів на території РФ – Міноборони",
       "title": {
-        "uk": "Росія нарощує застосування РЕБ проти Starlink",
-        "en": "Russia increasing use of electronic warfare against Starlink",
-        "ru": "Россия наращивает применение РЭБ против Starlink"
+        "uk": "Сили оборони в жовтні уразили щонайменше 30 важливих об'єктів на території РФ — Міноборони",
+        "en": "Ukrainian defence forces struck at least 30 important targets in Russia in October — Defence Ministry",
+        "ru": "Силы обороны Украины в октябре поразили не менее 30 важных объектов на территории РФ — Минобороны"
+      }
+    },
+    {
+      "url": "https://orf.at/stories/3447032/",
+      "domain": "orf.at",
+      "seenAt": "2026-11-04T01:30:00.000Z",
+      "sourceCountry": "Austria",
+      "image": "/news/8903ea4a5e0e5d5e.webp",
+      "original": "Vorwurf des Landesverrats gegen Selenskyjs Ex - Sprecherin",
+      "title": {
+        "uk": "Колишню речницю Зеленського звинуватили у державній зраді",
+        "en": "Treason charges filed against Zelensky's former spokeswoman",
+        "ru": "Бывшей пресс-секретарю Зеленского предъявлено обвинение в государственной измене"
+      }
+    },
+    {
+      "url": "https://news.ltn.com.tw/news/world/breakingnews/5628259",
+      "domain": "news.ltn.com.tw",
+      "seenAt": "2026-11-03T11:15:00.000Z",
+      "sourceCountry": "Taiwan",
+      "image": "/news/5e5423ab4f38c4fb.webp",
+      "original": "俄防長又訪中 大讚俄中戰略協作夥伴關係達 「 前所未有的高水平 」 - 國際",
+      "title": {
+        "uk": "Міністр оборони Росії знову відвідав Китай і назвав рівень стратегічного партнерства «безпрецедентним»",
+        "en": "Russian defence minister visits China again, hails Russia-China strategic partnership as reaching unprecedented level",
+        "ru": "Министр обороны России вновь посетил Китай и назвал уровень российско-китайского стратегического партнёрства «беспрецедентным»"
       }
     }
   ]
