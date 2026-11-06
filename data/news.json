@@ -1,133 +1,133 @@
 {
-  "asOf": "2026-11-05",
+  "asOf": "2026-11-06",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.channelnewsasia.com/world/russia-ukraine-us-trilateral-talks-6516046",
-      "domain": "channelnewsasia.com",
-      "seenAt": "2026-11-03T11:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/3a5933185f929c12.webp",
-      "original": "US to mediate trilateral talks with Ukraine , Russia in Abu Dhabi next week , US envoy says",
-      "title": {
-        "uk": "США виступлять посередником у тристоронніх переговорах з Україною та Росією в Абу-Дабі наступного тижня, заявив американський посланець",
-        "en": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says",
-        "ru": "США выступят посредником в трёхсторонних переговорах с Украиной и Россией в Абу-Даби на следующей неделе, заявил американский посланник"
-      }
-    },
-    {
-      "url": "https://www.koreaherald.com/article/10925120",
-      "domain": "koreaherald.com",
-      "seenAt": "2026-11-04T01:30:00.000Z",
-      "sourceCountry": "South Korea",
-      "image": "/news/cffcf05a09213e3e.webp",
-      "original": "Melania Trump to meet Ukrainian , Russian representatives at White House this week",
-      "title": {
-        "uk": "Меланія Трамп цього тижня зустрінеться з українськими та російськими представниками у Білому домі",
-        "en": "Melania Trump to meet Ukrainian, Russian representatives at White House this week",
-        "ru": "Мелания Трамп на этой неделе встретится с украинскими и российскими представителями в Белом доме"
-      }
-    },
-    {
-      "url": "https://unn.ua/news/zelenskyi-prybuv-do-berlina-na-zustrich-z-mertsom-pered-perehovoramy-v-abu-dabi",
-      "domain": "unn.ua",
-      "seenAt": "2026-11-03T11:15:00.000Z",
-      "sourceCountry": "",
-      "image": "/news/4887401e2152a673.webp",
-      "original": "Зеленський прибув до Берліна на зустріч з Мерцом перед переговорами в Абу - Дабі",
-      "title": {
-        "uk": "Зеленський прибув до Берліна на зустріч з Мерцом перед переговорами в Абу-Дабі",
-        "en": "Zelensky arrives in Berlin to meet Merz ahead of Abu Dhabi talks",
-        "ru": "Зеленский прибыл в Берлин на встречу с Мерцем перед переговорами в Абу-Даби"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/3/at-least-73-injured-as-russia-bombs-ukrainian-hospital-and-power-plants",
+      "url": "https://www.aljazeera.com/news/2026/11/6/trump-met-russian-envoy-after-he-appeared-with-melania-trump-and-ukrainians",
       "domain": "aljazeera.com",
-      "seenAt": "2026-11-03T11:15:00.000Z",
+      "seenAt": "2026-11-06T01:30:00.000Z",
       "sourceCountry": "United States",
-      "original": "At least 73 injured as Russia bombs Ukrainian hospital and power plants",
+      "original": "Trump met Russian envoy after he appeared with Melania Trump and Ukrainians",
       "title": {
-        "uk": "Щонайменше 73 поранених: Росія завдала ударів по українській лікарні та електростанціях",
-        "en": "At least 73 injured as Russia bombs Ukrainian hospital and power plants",
-        "ru": "Не менее 73 пострадавших в результате российских ударов по украинской больнице и электростанциям"
+        "uk": "Трамп зустрівся з посланцем Росії після його появи разом із Меланією Трамп і українцями",
+        "en": "Trump met Russian envoy after he appeared with Melania Trump and Ukrainians",
+        "ru": "Трамп встретился с посланником России после его появления вместе с Меланией Трамп и украинцами"
       }
     },
     {
-      "url": "https://www.channelnewsasia.com/world/russia-ukraine-war-black-sea-nato-6516256",
-      "domain": "channelnewsasia.com",
-      "seenAt": "2026-11-03T11:15:00.000Z",
+      "url": "https://www.koreaherald.com/article/10928058",
+      "domain": "koreaherald.com",
+      "seenAt": "2026-11-06T01:00:00.000Z",
+      "sourceCountry": "South Korea",
+      "image": "/news/0d93e934d78680e9.webp",
+      "original": "Melania Trump calls for lasting peace after brokering local Russia - Ukraine ceasefire",
+      "title": {
+        "uk": "Меланія Трамп закликала до тривалого миру після укладення локального перемир'я між Росією та Україною",
+        "en": "Melania Trump calls for lasting peace after brokering local Russia-Ukraine ceasefire",
+        "ru": "Мелания Трамп призвала к долгосрочному миру после заключения местного перемирия между Россией и Украиной"
+      }
+    },
+    {
+      "url": "https://www.lrt.lt/naujienos/pasaulyje/6/3106170/kushneris-pristate-penkiu-punktu-plana-naujai-europos-saugumo-sistemai-sukurti",
+      "domain": "lrt.lt",
+      "seenAt": "2026-11-06T14:00:00.000Z",
+      "sourceCountry": "Lithuania",
+      "image": "/news/36edd2ee3940c77a.webp",
+      "original": "Kushneris pristatė penkių punktų planą naujai Europos saugumo sistemai sukurti",
+      "title": {
+        "uk": "Кушнер представив п'ятипунктовий план нової системи безпеки для Європи",
+        "en": "Kushner presented a five-point plan for a new European security system",
+        "ru": "Кушнер представил пятипунктовый план новой системы безопасности для Европы"
+      }
+    },
+    {
+      "url": "https://fakti.bg/world/1098115-litva-predupredi-putin-nama-da-pregovara-do-proletta-na-2027-g-a-ukraina-a-chaka-tejka-zima",
+      "domain": "fakti.bg",
+      "seenAt": "2026-11-06T11:00:00.000Z",
+      "sourceCountry": "Bulgaria",
+      "image": "/news/52b54a58e5103863.webp",
+      "original": "Науседа : Русия отлага преговорите до пролетта на 2027 г .",
+      "title": {
+        "uk": "Науседа: Росія відкладає переговори до весни 2027 року",
+        "en": "Nausėda: Russia is delaying negotiations until spring 2027",
+        "ru": "Науседа: Россия откладывает переговоры до весны 2027 года"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/89324",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-11-06T11:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/f65ad9639f23f465.webp",
+      "original": "Zelensky : Ukraine Has Not Received $16 Billion in Previously Agreed US Aid",
+      "title": {
+        "uk": "Зеленський: Україна не отримала $16 млрд із раніше узгодженої допомоги США",
+        "en": "Zelensky: Ukraine has not received $16 billion in previously agreed US aid",
+        "ru": "Зеленский: Украина не получила $16 миллиардов из ранее согласованной помощи США"
+      }
+    },
+    {
+      "url": "https://tsn.ua/politika/kreml-vidpravyv-dmytriyeva-do-melaniyi-tramp-ne-prosto-tak-shcho-rosiia-khoche-otrymaty-vid-ssha-3209623.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-11-06T09:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/934dabf32a929cff.webp",
+      "original": "Кремль використовує гуманітарну кризу в Олешках для впливу на команду Трампа ISW Політика",
+      "title": {
+        "uk": "Кремль використовує гуманітарну кризу в Олешках для впливу на команду Трампа — ISW",
+        "en": "Kremlin uses Oleshky humanitarian crisis to influence Trump's team — ISW",
+        "ru": "Кремль использует гуманитарный кризис в Олёшках для влияния на команду Трампа — ISW"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/6/rocket-launcher-deal-illustrates-deepening-russia-iran-relations",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-11-06T12:00:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/5cd1a21ffcb27faf.webp",
-      "original": "Russia - Ukraine war widens in the Black Sea in a test of NATO red lines",
+      "original": "Rocket launcher deal illustrates deepening Russia - Iran relations",
       "title": {
-        "uk": "Російсько-українська війна розширюється в Чорному морі, випробовуючи червоні лінії НАТО",
-        "en": "Russia-Ukraine war widens in the Black Sea in a test of NATO red lines",
-        "ru": "Российско-украинская война расширяется в Чёрном море, проверяя красные линии НАТО"
+        "uk": "Угода про ракетні пускові установки свідчить про поглиблення відносин між Росією та Іраном",
+        "en": "Rocket launcher deal illustrates deepening Russia-Iran relations",
+        "ru": "Сделка о ракетных пусковых установках свидетельствует об углублении отношений России и Ирана"
       }
     },
     {
-      "url": "https://www.manilatimes.net/2026/11/03/world/americas-emea/multinational-ukraine-force-to-hold-first-exercise-in-poland/2460176",
-      "domain": "manilatimes.net",
-      "seenAt": "2026-11-03T02:15:00.000Z",
-      "sourceCountry": "Philippines",
-      "image": "/news/4a3116b1da3f32a0.webp",
-      "original": "Multinational Ukraine force to hold first exercise in Poland",
-      "title": {
-        "uk": "Багатонаціональні сили підтримки України проведуть перші навчання в Польщі",
-        "en": "Multinational Ukraine force to hold first exercise in Poland",
-        "ru": "Многонациональные силы поддержки Украины проведут первые учения в Польше"
-      }
-    },
-    {
-      "url": "https://zn.ua/ukr/war/zelenskij-zajaviv-pro-kibervidpovid-rosiji-pislja-zlamu-sistemi-ukrajinskoho-opovishchennja.html",
-      "domain": "zn.ua",
-      "seenAt": "2026-11-03T02:15:00.000Z",
+      "url": "https://24tv.ua/zavershennya-viyni-ukrayini-ryutte-skazav-hto-peremozhe_n3174937",
+      "domain": "24tv.ua",
+      "seenAt": "2026-11-06T06:30:00.000Z",
       "sourceCountry": "Ukraine",
-      "original": "Кібератака на Росію - Зеленський підтвердив злам системи оповіщення - новини війни",
+      "image": "/news/03108c447fdd6997.webp",
+      "original": "Завершення війни в Україні - Рютте сказав , хто переможе",
       "title": {
-        "uk": "Кібератака на Росію: Зеленський підтвердив злам системи оповіщення",
-        "en": "Cyberattack on Russia: Zelensky confirms hack of warning system",
-        "ru": "Кибератака на Россию: Зеленский подтвердил взлом системы оповещения"
+        "uk": "Завершення війни в Україні — Рютте сказав, хто переможе",
+        "en": "End of war in Ukraine — Rutte says who will win",
+        "ru": "Конец войны в Украине — Рютте сказал, кто победит"
       }
     },
     {
-      "url": "https://interfax.com.ua/news/general/1230414.html",
-      "domain": "interfax.com.ua",
-      "seenAt": "2026-11-03T11:15:00.000Z",
+      "url": "https://www.rbc.ua/rus/news/ukrayina-mogla-provesti-vibori-vzimku-ale-1793919555.html",
+      "domain": "rbc.ua",
+      "seenAt": "2026-11-06T01:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/f1d00b081435cb7b.webp",
-      "original": "Сили оборони в жовтні уразили щонайменше 30 важливих об  єктів на території РФ – Міноборони",
+      "image": "/news/92bc17be61175b50.webp",
+      "original": "Зеленський заявив , що Україна може провести вибори взимку",
       "title": {
-        "uk": "Сили оборони в жовтні уразили щонайменше 30 важливих об'єктів на території РФ — Міноборони",
-        "en": "Ukrainian defence forces struck at least 30 important targets in Russia in October — Defence Ministry",
-        "ru": "Силы обороны Украины в октябре поразили не менее 30 важных объектов на территории РФ — Минобороны"
+        "uk": "Зеленський заявив, що Україна може провести вибори взимку",
+        "en": "Zelensky says Ukraine could hold elections in winter",
+        "ru": "Зеленский заявил, что Украина может провести выборы зимой"
       }
     },
     {
-      "url": "https://orf.at/stories/3447032/",
-      "domain": "orf.at",
-      "seenAt": "2026-11-04T01:30:00.000Z",
-      "sourceCountry": "Austria",
-      "image": "/news/8903ea4a5e0e5d5e.webp",
-      "original": "Vorwurf des Landesverrats gegen Selenskyjs Ex - Sprecherin",
+      "url": "https://glavred.info/war/vzryvy-i-masshtabnye-pozhary-v-rossii-novaya-volna-bespilotnikov-atakuet-npz-10809800.html",
+      "domain": "glavred.info",
+      "seenAt": "2026-11-06T06:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/761b0ecec8cf5171.webp",
+      "original": "Дроны атаковали Краснодарский край горит один из крупнейших НПЗ РФ",
       "title": {
-        "uk": "Колишню речницю Зеленського звинуватили у державній зраді",
-        "en": "Treason charges filed against Zelensky's former spokeswoman",
-        "ru": "Бывшей пресс-секретарю Зеленского предъявлено обвинение в государственной измене"
-      }
-    },
-    {
-      "url": "https://news.ltn.com.tw/news/world/breakingnews/5628259",
-      "domain": "news.ltn.com.tw",
-      "seenAt": "2026-11-03T11:15:00.000Z",
-      "sourceCountry": "Taiwan",
-      "image": "/news/5e5423ab4f38c4fb.webp",
-      "original": "俄防長又訪中 大讚俄中戰略協作夥伴關係達 「 前所未有的高水平 」 - 國際",
-      "title": {
-        "uk": "Міністр оборони Росії знову відвідав Китай і назвав рівень стратегічного партнерства «безпрецедентним»",
-        "en": "Russian defence minister visits China again, hails Russia-China strategic partnership as reaching unprecedented level",
-        "ru": "Министр обороны России вновь посетил Китай и назвал уровень российско-китайского стратегического партнёрства «беспрецедентным»"
+        "uk": "Дрони атакували Краснодарський край, горить один із найбільших НПЗ РФ",
+        "en": "Drones attacked Krasnodar region, one of Russia's largest oil refineries on fire",
+        "ru": "Дроны атаковали Краснодарский край, горит один из крупнейших НПЗ РФ"
       }
     }
   ]
