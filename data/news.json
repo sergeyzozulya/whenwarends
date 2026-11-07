@@ -1,30 +1,81 @@
 {
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-07",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.aljazeera.com/news/2026/11/6/trump-met-russian-envoy-after-he-appeared-with-melania-trump-and-ukrainians",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-11-06T01:30:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Trump met Russian envoy after he appeared with Melania Trump and Ukrainians",
+      "url": "https://www.rte.ie/news/2026/1106/1598206-trump-russia-ukraine/",
+      "domain": "rte.ie",
+      "seenAt": "2026-11-06T03:30:00.000Z",
+      "sourceCountry": "Ireland",
+      "image": "/news/c925b0689af120c9.webp",
+      "original": "Trump predicts deal with Russia on Ukraine and Europe",
       "title": {
-        "uk": "Трамп зустрівся з посланцем Росії після його появи разом із Меланією Трамп і українцями",
-        "en": "Trump met Russian envoy after he appeared with Melania Trump and Ukrainians",
-        "ru": "Трамп встретился с посланником России после его появления вместе с Меланией Трамп и украинцами"
+        "uk": "Трамп прогнозує угоду з Росією щодо України та Європи",
+        "en": "Trump predicts deal with Russia on Ukraine and Europe",
+        "ru": "Трамп прогнозирует сделку с Россией по Украине и Европе"
       }
     },
     {
-      "url": "https://www.koreaherald.com/article/10928058",
-      "domain": "koreaherald.com",
-      "seenAt": "2026-11-06T01:00:00.000Z",
-      "sourceCountry": "South Korea",
-      "image": "/news/0d93e934d78680e9.webp",
-      "original": "Melania Trump calls for lasting peace after brokering local Russia - Ukraine ceasefire",
+      "url": "https://tsn.ua/politika/my-ne-khochemo-shchob-nas-podilyla-rosiia-zelenskyy-nazvav-kliuchovi-temy-perehovoriv-pro-myr-3210403.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-11-07T07:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/0dadda451c201647.webp",
+      "original": "Мирні переговори - Зеленський назвав ключові теми в Абу - Дабі Політика",
       "title": {
-        "uk": "Меланія Трамп закликала до тривалого миру після укладення локального перемир'я між Росією та Україною",
-        "en": "Melania Trump calls for lasting peace after brokering local Russia-Ukraine ceasefire",
-        "ru": "Мелания Трамп призвала к долгосрочному миру после заключения местного перемирия между Россией и Украиной"
+        "uk": "Мирні переговори: Зеленський назвав ключові теми в Абу-Дабі",
+        "en": "Peace talks: Zelensky named key topics for Abu Dhabi",
+        "ru": "Мирные переговоры: Зеленский назвал ключевые темы в Абу-Даби"
+      }
+    },
+    {
+      "url": "https://tsn.ua/politika/znyshchuvatymu-vsiu-infrastrukturu-putin-shantazuye-ukrayinu-i-khoche-novykh-postupok-ft-rozkrylo-pohrozy-3210555.html",
+      "domain": "tsn.ua",
+      "seenAt": "2026-11-07T11:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/1eabc344d85a0114.webp",
+      "original": "Мирні переговори - Путін висуває Україні ультиматум подробиці FT Політика",
+      "title": {
+        "uk": "Мирні переговори: Путін висуває Україні ультиматум — подробиці FT",
+        "en": "Peace talks: Putin issues ultimatum to Ukraine — FT details",
+        "ru": "Мирные переговоры: Путин выдвигает Украине ультиматум — подробности FT"
+      }
+    },
+    {
+      "url": "https://www.freemalaysiatoday.com/category/world/2026/11/07/russian-strikes-hit-power-facilities-around-kyiv-damaging-major-bridge",
+      "domain": "freemalaysiatoday.com",
+      "seenAt": "2026-11-07T11:30:00.000Z",
+      "sourceCountry": "Malaysia",
+      "image": "/news/f865daa3e9b278d1.webp",
+      "original": "Russian strikes hit power facilities around Kyiv , damaging major bridge",
+      "title": {
+        "uk": "Російські удари по об'єктах енергетики поблизу Києва пошкодили великий міст",
+        "en": "Russian strikes hit power facilities around Kyiv, damaging major bridge",
+        "ru": "Российские удары по энергообъектам вблизи Киева повредили крупный мост"
+      }
+    },
+    {
+      "url": "https://news.webindia123.com/news/Articles/World/20261107/4516916.html",
+      "domain": "news.webindia123.com",
+      "seenAt": "2026-11-07T05:00:00.000Z",
+      "sourceCountry": "India",
+      "original": "Zelenskyy warns against Russia - Europe security deal , says it could be  dangerous  for EU",
+      "title": {
+        "uk": "Зеленський застерігає від угоди про безпеку між Росією та Європою, називаючи її «небезпечною» для ЄС",
+        "en": "Zelensky warns against Russia-Europe security deal, says it could be 'dangerous' for EU",
+        "ru": "Зеленский предостерегает от соглашения о безопасности между Россией и Европой, называя его «опасным» для ЕС"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/6/rocket-launcher-deal-illustrates-deepening-russia-iran-relations",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-11-06T12:00:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Rocket launcher deal illustrates deepening Russia - Iran relations",
+      "title": {
+        "uk": "Угода про ракетні пускові установки свідчить про поглиблення відносин Росії та Ірану",
+        "en": "Rocket launcher deal illustrates deepening Russia-Iran relations",
+        "ru": "Сделка по ракетным пусковым установкам иллюстрирует углубление российско-иранских отношений"
       }
     },
     {
@@ -36,7 +87,7 @@
       "original": "Kushneris pristatė penkių punktų planą naujai Europos saugumo sistemai sukurti",
       "title": {
         "uk": "Кушнер представив п'ятипунктовий план нової системи безпеки для Європи",
-        "en": "Kushner presented a five-point plan for a new European security system",
+        "en": "Kushner presented five-point plan for new European security system",
         "ru": "Кушнер представил пятипунктовый план новой системы безопасности для Европы"
       }
     },
@@ -49,85 +100,34 @@
       "original": "Науседа : Русия отлага преговорите до пролетта на 2027 г .",
       "title": {
         "uk": "Науседа: Росія відкладає переговори до весни 2027 року",
-        "en": "Nausėda: Russia is delaying negotiations until spring 2027",
+        "en": "Nauseda: Russia is delaying talks until spring 2027",
         "ru": "Науседа: Россия откладывает переговоры до весны 2027 года"
       }
     },
     {
-      "url": "https://www.kyivpost.com/post/89324",
+      "url": "https://www.kyivpost.com/post/89319",
       "domain": "kyivpost.com",
       "seenAt": "2026-11-06T11:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/f65ad9639f23f465.webp",
-      "original": "Zelensky : Ukraine Has Not Received $16 Billion in Previously Agreed US Aid",
+      "image": "/news/86f47c3f79979e4a.webp",
+      "original": "US Midterms Offer Hope on Ukraine Aid , Russia Scrutiny : Analysts",
       "title": {
-        "uk": "Зеленський: Україна не отримала $16 млрд із раніше узгодженої допомоги США",
-        "en": "Zelensky: Ukraine has not received $16 billion in previously agreed US aid",
-        "ru": "Зеленский: Украина не получила $16 миллиардов из ранее согласованной помощи США"
+        "uk": "Проміжні вибори у США дають надію на допомогу Україні та посилення контролю над Росією — аналітики",
+        "en": "US midterms offer hope on Ukraine aid, Russia scrutiny — analysts",
+        "ru": "Промежуточные выборы в США дают надежду на помощь Украине и усиление контроля над Россией — аналитики"
       }
     },
     {
-      "url": "https://tsn.ua/politika/kreml-vidpravyv-dmytriyeva-do-melaniyi-tramp-ne-prosto-tak-shcho-rosiia-khoche-otrymaty-vid-ssha-3209623.html",
-      "domain": "tsn.ua",
-      "seenAt": "2026-11-06T09:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/934dabf32a929cff.webp",
-      "original": "Кремль використовує гуманітарну кризу в Олешках для впливу на команду Трампа ISW Політика",
+      "url": "http://www.bgnes.com/politics/coalition-of-the-willing-to-hold-first-joint-military-exercises-in-poland",
+      "domain": "bgnes.com",
+      "seenAt": "2026-11-03T11:15:00.000Z",
+      "sourceCountry": "Bulgaria",
+      "image": "/news/c8630deb3f66e615.webp",
+      "original": "Coalition of the Willing to hold first joint military exercises in Poland",
       "title": {
-        "uk": "Кремль використовує гуманітарну кризу в Олешках для впливу на команду Трампа — ISW",
-        "en": "Kremlin uses Oleshky humanitarian crisis to influence Trump's team — ISW",
-        "ru": "Кремль использует гуманитарный кризис в Олёшках для влияния на команду Трампа — ISW"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/6/rocket-launcher-deal-illustrates-deepening-russia-iran-relations",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-11-06T12:00:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Rocket launcher deal illustrates deepening Russia - Iran relations",
-      "title": {
-        "uk": "Угода про ракетні пускові установки свідчить про поглиблення відносин між Росією та Іраном",
-        "en": "Rocket launcher deal illustrates deepening Russia-Iran relations",
-        "ru": "Сделка о ракетных пусковых установках свидетельствует об углублении отношений России и Ирана"
-      }
-    },
-    {
-      "url": "https://24tv.ua/zavershennya-viyni-ukrayini-ryutte-skazav-hto-peremozhe_n3174937",
-      "domain": "24tv.ua",
-      "seenAt": "2026-11-06T06:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/03108c447fdd6997.webp",
-      "original": "Завершення війни в Україні - Рютте сказав , хто переможе",
-      "title": {
-        "uk": "Завершення війни в Україні — Рютте сказав, хто переможе",
-        "en": "End of war in Ukraine — Rutte says who will win",
-        "ru": "Конец войны в Украине — Рютте сказал, кто победит"
-      }
-    },
-    {
-      "url": "https://www.rbc.ua/rus/news/ukrayina-mogla-provesti-vibori-vzimku-ale-1793919555.html",
-      "domain": "rbc.ua",
-      "seenAt": "2026-11-06T01:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/92bc17be61175b50.webp",
-      "original": "Зеленський заявив , що Україна може провести вибори взимку",
-      "title": {
-        "uk": "Зеленський заявив, що Україна може провести вибори взимку",
-        "en": "Zelensky says Ukraine could hold elections in winter",
-        "ru": "Зеленский заявил, что Украина может провести выборы зимой"
-      }
-    },
-    {
-      "url": "https://glavred.info/war/vzryvy-i-masshtabnye-pozhary-v-rossii-novaya-volna-bespilotnikov-atakuet-npz-10809800.html",
-      "domain": "glavred.info",
-      "seenAt": "2026-11-06T06:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/761b0ecec8cf5171.webp",
-      "original": "Дроны атаковали Краснодарский край горит один из крупнейших НПЗ РФ",
-      "title": {
-        "uk": "Дрони атакували Краснодарський край, горить один із найбільших НПЗ РФ",
-        "en": "Drones attacked Krasnodar region, one of Russia's largest oil refineries on fire",
-        "ru": "Дроны атаковали Краснодарский край, горит один из крупнейших НПЗ РФ"
+        "uk": "Коаліція охочих проведе перші спільні військові навчання в Польщі",
+        "en": "Coalition of the Willing to hold first joint military exercises in Poland",
+        "ru": "Коалиция желающих проведёт первые совместные военные учения в Польше"
       }
     }
   ]
