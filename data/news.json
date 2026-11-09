@@ -1,57 +1,107 @@
 {
-  "asOf": "2026-11-07",
+  "asOf": "2026-11-09",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.rte.ie/news/2026/1106/1598206-trump-russia-ukraine/",
-      "domain": "rte.ie",
-      "seenAt": "2026-11-06T03:30:00.000Z",
-      "sourceCountry": "Ireland",
-      "image": "/news/c925b0689af120c9.webp",
-      "original": "Trump predicts deal with Russia on Ukraine and Europe",
+      "url": "https://www.newindianexpress.com/world/2026/Nov/09/what-to-know-about-upcoming-peace-talks-involving-russian-ukrainian-and-us-officials",
+      "domain": "newindianexpress.com",
+      "seenAt": "2026-11-09T06:30:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/80631254183bc323.webp",
+      "original": "What to know about upcoming peace talks involving Russian , Ukrainian and US officials",
       "title": {
-        "uk": "Трамп прогнозує угоду з Росією щодо України та Європи",
-        "en": "Trump predicts deal with Russia on Ukraine and Europe",
-        "ru": "Трамп прогнозирует сделку с Россией по Украине и Европе"
+        "uk": "Що варто знати про майбутні мирні переговори за участю представників Росії, України та США",
+        "en": "What to know about upcoming peace talks involving Russian, Ukrainian and US officials",
+        "ru": "Что нужно знать о предстоящих мирных переговорах с участием представителей России, Украины и США"
       }
     },
     {
-      "url": "https://tsn.ua/politika/my-ne-khochemo-shchob-nas-podilyla-rosiia-zelenskyy-nazvav-kliuchovi-temy-perehovoriv-pro-myr-3210403.html",
-      "domain": "tsn.ua",
-      "seenAt": "2026-11-07T07:00:00.000Z",
+      "url": "https://www.capeandislands.org/2026-11-08/europe-to-join-u-s-brokered-ukraine-talks-in-abu-dhabi-defying-kremlin-objections",
+      "domain": "capeandislands.org",
+      "seenAt": "2026-11-08T20:30:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Europe to join U . S .- brokered Ukraine talks in Abu Dhabi , defying Kremlin objections",
+      "title": {
+        "uk": "Європа приєднається до переговорів щодо України в Абу-Дабі під егідою США, попри заперечення Кремля",
+        "en": "Europe to join US-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections",
+        "ru": "Европа присоединится к переговорам по Украине в Абу-Даби под эгидой США вопреки возражениям Кремля"
+      }
+    },
+    {
+      "url": "https://war.obozrevatel.com/section-war/news-rosiya-natsilylas-na-enerhetyku-ukrayiny-na-tli-kolosalnykh-vtrat-na-poli-boyu-isw-09-11-2026.html",
+      "domain": "war.obozrevatel.com",
+      "seenAt": "2026-11-09T05:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/0dadda451c201647.webp",
-      "original": "Мирні переговори - Зеленський назвав ключові теми в Абу - Дабі Політика",
+      "original": "Россия нацелилась на энергетику Украины на фоне колоссальных потерь на поле боя – анализ ISW",
       "title": {
-        "uk": "Мирні переговори: Зеленський назвав ключові теми в Абу-Дабі",
-        "en": "Peace talks: Zelensky named key topics for Abu Dhabi",
-        "ru": "Мирные переговоры: Зеленский назвал ключевые темы в Абу-Даби"
+        "uk": "Росія атакує енергетику України на тлі колосальних втрат на полі бою — аналіз ISW",
+        "en": "Russia targets Ukraine's energy infrastructure amid colossal battlefield losses — ISW analysis",
+        "ru": "Россия нацелилась на энергетику Украины на фоне колоссальных потерь на поле боя — анализ ISW"
       }
     },
     {
-      "url": "https://tsn.ua/politika/znyshchuvatymu-vsiu-infrastrukturu-putin-shantazuye-ukrayinu-i-khoche-novykh-postupok-ft-rozkrylo-pohrozy-3210555.html",
-      "domain": "tsn.ua",
-      "seenAt": "2026-11-07T11:30:00.000Z",
+      "url": "https://www.livemint.com/news/world/hacked-records-show-400-000-russians-killed-in-war-on-ukraine-11794157943924.html",
+      "domain": "livemint.com",
+      "seenAt": "2026-11-08T18:30:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/c9dc14fbb43000a9.webp",
+      "original": "Hacked Records Show 400 , 000 Russians Killed in War on Ukraine",
+      "title": {
+        "uk": "Зламані записи свідчать про загибель 400 000 росіян у війні проти України",
+        "en": "Hacked records show 400,000 Russians killed in war on Ukraine",
+        "ru": "Взломанные данные свидетельствуют о гибели 400 000 россиян в войне против Украины"
+      }
+    },
+    {
+      "url": "https://www.dw.com/en/trump-raises-prospect-of-big-beautiful-russia-ukraine-deal/a-79871394",
+      "domain": "dw.com",
+      "seenAt": "2026-11-06T00:30:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/bd805eb6f8c7ca17.webp",
+      "original": "Trump teases  big , beautiful  Russia - Ukraine deal",
+      "title": {
+        "uk": "Трамп натякнув на «велику, прекрасну» угоду між Росією та Україною",
+        "en": "Trump teases \"big, beautiful\" Russia-Ukraine deal",
+        "ru": "Трамп намекнул на «большую, красивую» сделку между Россией и Украиной"
+      }
+    },
+    {
+      "url": "https://kontrakty.ua/article/301092",
+      "domain": "kontrakty.ua",
+      "seenAt": "2026-11-08T09:00:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/1eabc344d85a0114.webp",
-      "original": "Мирні переговори - Путін висуває Україні ультиматум подробиці FT Політика",
+      "image": "/news/b8add21a0c474d71.webp",
+      "original": "Європа висунула жорсткий ультиматум Кремлю перед переговорами Bloomberg",
       "title": {
-        "uk": "Мирні переговори: Путін висуває Україні ультиматум — подробиці FT",
-        "en": "Peace talks: Putin issues ultimatum to Ukraine — FT details",
-        "ru": "Мирные переговоры: Путин выдвигает Украине ультиматум — подробности FT"
+        "uk": "Європа висунула жорсткий ультиматум Кремлю перед переговорами — Bloomberg",
+        "en": "Europe issues tough ultimatum to Kremlin ahead of negotiations — Bloomberg",
+        "ru": "Европа выдвинула жёсткий ультиматум Кремлю накануне переговоров — Bloomberg"
       }
     },
     {
-      "url": "https://www.freemalaysiatoday.com/category/world/2026/11/07/russian-strikes-hit-power-facilities-around-kyiv-damaging-major-bridge",
-      "domain": "freemalaysiatoday.com",
-      "seenAt": "2026-11-07T11:30:00.000Z",
-      "sourceCountry": "Malaysia",
-      "image": "/news/f865daa3e9b278d1.webp",
-      "original": "Russian strikes hit power facilities around Kyiv , damaging major bridge",
+      "url": "https://www.eurointegration.com.ua/news/2026/11/8/7249531/",
+      "domain": "eurointegration.com.ua",
+      "seenAt": "2026-11-08T10:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/e79342a36d37bc7e.webp",
+      "original": "ЗМІ : Кушнер хоче використати формат Ради Росія - НАТО для розмов про повоєнну безпеку в Європі",
       "title": {
-        "uk": "Російські удари по об'єктах енергетики поблизу Києва пошкодили великий міст",
-        "en": "Russian strikes hit power facilities around Kyiv, damaging major bridge",
-        "ru": "Российские удары по энергообъектам вблизи Киева повредили крупный мост"
+        "uk": "ЗМІ: Кушнер хоче використати формат Ради Росія — НАТО для розмов про повоєнну безпеку в Європі",
+        "en": "Media: Kushner wants to use the NATO-Russia Council format for talks on post-war European security",
+        "ru": "СМИ: Кушнер хочет использовать формат Совета Россия — НАТО для переговоров о послевоенной безопасности в Европе"
+      }
+    },
+    {
+      "url": "https://kontrakty.ua/article/301031",
+      "domain": "kontrakty.ua",
+      "seenAt": "2026-11-07T17:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/e316eca8a1f3732c.webp",
+      "original": "Путін погрожує знищити всю інфраструктуру України до 2027 року , - FT",
+      "title": {
+        "uk": "Путін погрожує знищити всю інфраструктуру України до 2027 року — FT",
+        "en": "Putin threatens to destroy all of Ukraine's infrastructure by 2027 — FT",
+        "ru": "Путин угрожает уничтожить всю инфраструктуру Украины к 2027 году — FT"
       }
     },
     {
@@ -62,72 +112,21 @@
       "original": "Zelenskyy warns against Russia - Europe security deal , says it could be  dangerous  for EU",
       "title": {
         "uk": "Зеленський застерігає від угоди про безпеку між Росією та Європою, називаючи її «небезпечною» для ЄС",
-        "en": "Zelensky warns against Russia-Europe security deal, says it could be 'dangerous' for EU",
-        "ru": "Зеленский предостерегает от соглашения о безопасности между Россией и Европой, называя его «опасным» для ЕС"
+        "en": "Zelensky warns against Russia-Europe security deal, says it could be \"dangerous\" for EU",
+        "ru": "Зеленский предупреждает об опасности соглашения о безопасности между Россией и Европой для ЕС"
       }
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/6/rocket-launcher-deal-illustrates-deepening-russia-iran-relations",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-11-06T12:00:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Rocket launcher deal illustrates deepening Russia - Iran relations",
+      "url": "https://www.manilatimes.net/2026/11/03/world/americas-emea/multinational-ukraine-force-to-hold-first-exercise-in-poland/2460176",
+      "domain": "manilatimes.net",
+      "seenAt": "2026-11-03T02:15:00.000Z",
+      "sourceCountry": "Philippines",
+      "image": "/news/4a3116b1da3f32a0.webp",
+      "original": "Multinational Ukraine force to hold first exercise in Poland",
       "title": {
-        "uk": "Угода про ракетні пускові установки свідчить про поглиблення відносин Росії та Ірану",
-        "en": "Rocket launcher deal illustrates deepening Russia-Iran relations",
-        "ru": "Сделка по ракетным пусковым установкам иллюстрирует углубление российско-иранских отношений"
-      }
-    },
-    {
-      "url": "https://www.lrt.lt/naujienos/pasaulyje/6/3106170/kushneris-pristate-penkiu-punktu-plana-naujai-europos-saugumo-sistemai-sukurti",
-      "domain": "lrt.lt",
-      "seenAt": "2026-11-06T14:00:00.000Z",
-      "sourceCountry": "Lithuania",
-      "image": "/news/36edd2ee3940c77a.webp",
-      "original": "Kushneris pristatė penkių punktų planą naujai Europos saugumo sistemai sukurti",
-      "title": {
-        "uk": "Кушнер представив п'ятипунктовий план нової системи безпеки для Європи",
-        "en": "Kushner presented five-point plan for new European security system",
-        "ru": "Кушнер представил пятипунктовый план новой системы безопасности для Европы"
-      }
-    },
-    {
-      "url": "https://fakti.bg/world/1098115-litva-predupredi-putin-nama-da-pregovara-do-proletta-na-2027-g-a-ukraina-a-chaka-tejka-zima",
-      "domain": "fakti.bg",
-      "seenAt": "2026-11-06T11:00:00.000Z",
-      "sourceCountry": "Bulgaria",
-      "image": "/news/52b54a58e5103863.webp",
-      "original": "Науседа : Русия отлага преговорите до пролетта на 2027 г .",
-      "title": {
-        "uk": "Науседа: Росія відкладає переговори до весни 2027 року",
-        "en": "Nauseda: Russia is delaying talks until spring 2027",
-        "ru": "Науседа: Россия откладывает переговоры до весны 2027 года"
-      }
-    },
-    {
-      "url": "https://www.kyivpost.com/post/89319",
-      "domain": "kyivpost.com",
-      "seenAt": "2026-11-06T11:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/86f47c3f79979e4a.webp",
-      "original": "US Midterms Offer Hope on Ukraine Aid , Russia Scrutiny : Analysts",
-      "title": {
-        "uk": "Проміжні вибори у США дають надію на допомогу Україні та посилення контролю над Росією — аналітики",
-        "en": "US midterms offer hope on Ukraine aid, Russia scrutiny — analysts",
-        "ru": "Промежуточные выборы в США дают надежду на помощь Украине и усиление контроля над Россией — аналитики"
-      }
-    },
-    {
-      "url": "http://www.bgnes.com/politics/coalition-of-the-willing-to-hold-first-joint-military-exercises-in-poland",
-      "domain": "bgnes.com",
-      "seenAt": "2026-11-03T11:15:00.000Z",
-      "sourceCountry": "Bulgaria",
-      "image": "/news/c8630deb3f66e615.webp",
-      "original": "Coalition of the Willing to hold first joint military exercises in Poland",
-      "title": {
-        "uk": "Коаліція охочих проведе перші спільні військові навчання в Польщі",
-        "en": "Coalition of the Willing to hold first joint military exercises in Poland",
-        "ru": "Коалиция желающих проведёт первые совместные военные учения в Польше"
+        "uk": "Багатонаціональні сили підтримки України проведуть перші навчання в Польщі",
+        "en": "Multinational Ukraine force to hold first exercise in Poland",
+        "ru": "Многонациональные силы поддержки Украины проведут первые учения в Польше"
       }
     }
   ]
