@@ -1,18 +1,42 @@
 {
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-10",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.newindianexpress.com/world/2026/Nov/09/what-to-know-about-upcoming-peace-talks-involving-russian-ukrainian-and-us-officials",
-      "domain": "newindianexpress.com",
-      "seenAt": "2026-11-09T06:30:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/80631254183bc323.webp",
-      "original": "What to know about upcoming peace talks involving Russian , Ukrainian and US officials",
+      "url": "https://localnews8.com/news/national-world/cnn-world/2026/11/09/ukraine-peace-talks-to-restart-after-9-months-what-makes-them-different-this-time/",
+      "domain": "localnews8.com",
+      "seenAt": "2026-11-10T01:00:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Ukraine peace talks to restart after 9 months . What makes them different this time ? - LocalNews8 . com",
       "title": {
-        "uk": "Що варто знати про майбутні мирні переговори за участю представників Росії, України та США",
-        "en": "What to know about upcoming peace talks involving Russian, Ukrainian and US officials",
-        "ru": "Что нужно знать о предстоящих мирных переговорах с участием представителей России, Украины и США"
+        "uk": "Мирні переговори щодо України відновлюються після 9 місяців перерви. Що на цей раз інакше?",
+        "en": "Ukraine peace talks to restart after 9 months. What makes them different this time?",
+        "ru": "Мирные переговоры по Украине возобновляются после 9 месяцев перерыва. Чем они отличаются на этот раз?"
+      }
+    },
+    {
+      "url": "https://www.thenationalnews.com/news/us/2026/11/09/russia-ukraine-war-abu-dhabi-ceasefire-talks/",
+      "domain": "thenationalnews.com",
+      "seenAt": "2026-11-10T03:30:00.000Z",
+      "sourceCountry": "",
+      "image": "/news/8bcb477f4d936929.webp",
+      "original": "Russia rejects Ukraine war  freeze  and claims Kyiv would use pause to rearm",
+      "title": {
+        "uk": "Росія відкидає «заморозку» війни в Україні та стверджує, що Київ скористається паузою для переозброєння",
+        "en": "Russia rejects Ukraine war 'freeze' and claims Kyiv would use pause to rearm",
+        "ru": "Россия отвергает «заморозку» войны в Украине и утверждает, что Киев воспользуется паузой для перевооружения"
+      }
+    },
+    {
+      "url": "https://www.hindustantimes.com/world-news/donald-trump-is-in-a-hurry-for-peace-in-ukraine-vladimir-putin-is-not-101794279588972.html",
+      "domain": "hindustantimes.com",
+      "seenAt": "2026-11-10T04:30:00.000Z",
+      "sourceCountry": "India",
+      "original": "Donald Trump is in a hurry for peace in Ukraine . Vladimir Putin is not",
+      "title": {
+        "uk": "Дональд Трамп поспішає з миром в Україні. Володимир Путін — ні",
+        "en": "Donald Trump is in a hurry for peace in Ukraine. Vladimir Putin is not",
+        "ru": "Дональд Трамп торопится с миром в Украине. Владимир Путин — нет"
       }
     },
     {
@@ -22,34 +46,9 @@
       "sourceCountry": "United States",
       "original": "Europe to join U . S .- brokered Ukraine talks in Abu Dhabi , defying Kremlin objections",
       "title": {
-        "uk": "Європа приєднається до переговорів щодо України в Абу-Дабі під егідою США, попри заперечення Кремля",
+        "uk": "Європа приєднається до переговорів щодо України в Абу-Дабі за посередництва США, попри заперечення Кремля",
         "en": "Europe to join US-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections",
-        "ru": "Европа присоединится к переговорам по Украине в Абу-Даби под эгидой США вопреки возражениям Кремля"
-      }
-    },
-    {
-      "url": "https://war.obozrevatel.com/section-war/news-rosiya-natsilylas-na-enerhetyku-ukrayiny-na-tli-kolosalnykh-vtrat-na-poli-boyu-isw-09-11-2026.html",
-      "domain": "war.obozrevatel.com",
-      "seenAt": "2026-11-09T05:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Россия нацелилась на энергетику Украины на фоне колоссальных потерь на поле боя – анализ ISW",
-      "title": {
-        "uk": "Росія атакує енергетику України на тлі колосальних втрат на полі бою — аналіз ISW",
-        "en": "Russia targets Ukraine's energy infrastructure amid colossal battlefield losses — ISW analysis",
-        "ru": "Россия нацелилась на энергетику Украины на фоне колоссальных потерь на поле боя — анализ ISW"
-      }
-    },
-    {
-      "url": "https://www.livemint.com/news/world/hacked-records-show-400-000-russians-killed-in-war-on-ukraine-11794157943924.html",
-      "domain": "livemint.com",
-      "seenAt": "2026-11-08T18:30:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/c9dc14fbb43000a9.webp",
-      "original": "Hacked Records Show 400 , 000 Russians Killed in War on Ukraine",
-      "title": {
-        "uk": "Зламані записи свідчать про загибель 400 000 росіян у війні проти України",
-        "en": "Hacked records show 400,000 Russians killed in war on Ukraine",
-        "ru": "Взломанные данные свидетельствуют о гибели 400 000 россиян в войне против Украины"
+        "ru": "Европа присоединится к переговорам по Украине в Абу-Даби при посредничестве США, вопреки возражениям Кремля"
       }
     },
     {
@@ -60,35 +59,9 @@
       "image": "/news/bd805eb6f8c7ca17.webp",
       "original": "Trump teases  big , beautiful  Russia - Ukraine deal",
       "title": {
-        "uk": "Трамп натякнув на «велику, прекрасну» угоду між Росією та Україною",
-        "en": "Trump teases \"big, beautiful\" Russia-Ukraine deal",
-        "ru": "Трамп намекнул на «большую, красивую» сделку между Россией и Украиной"
-      }
-    },
-    {
-      "url": "https://kontrakty.ua/article/301092",
-      "domain": "kontrakty.ua",
-      "seenAt": "2026-11-08T09:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/b8add21a0c474d71.webp",
-      "original": "Європа висунула жорсткий ультиматум Кремлю перед переговорами Bloomberg",
-      "title": {
-        "uk": "Європа висунула жорсткий ультиматум Кремлю перед переговорами — Bloomberg",
-        "en": "Europe issues tough ultimatum to Kremlin ahead of negotiations — Bloomberg",
-        "ru": "Европа выдвинула жёсткий ультиматум Кремлю накануне переговоров — Bloomberg"
-      }
-    },
-    {
-      "url": "https://www.eurointegration.com.ua/news/2026/11/8/7249531/",
-      "domain": "eurointegration.com.ua",
-      "seenAt": "2026-11-08T10:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/e79342a36d37bc7e.webp",
-      "original": "ЗМІ : Кушнер хоче використати формат Ради Росія - НАТО для розмов про повоєнну безпеку в Європі",
-      "title": {
-        "uk": "ЗМІ: Кушнер хоче використати формат Ради Росія — НАТО для розмов про повоєнну безпеку в Європі",
-        "en": "Media: Kushner wants to use the NATO-Russia Council format for talks on post-war European security",
-        "ru": "СМИ: Кушнер хочет использовать формат Совета Россия — НАТО для переговоров о послевоенной безопасности в Европе"
+        "uk": "Трамп анонсує «велику, прекрасну» угоду між Росією та Україною",
+        "en": "Trump teases 'big, beautiful' Russia-Ukraine deal",
+        "ru": "Трамп анонсирует «большую, прекрасную» сделку между Россией и Украиной"
       }
     },
     {
@@ -105,28 +78,54 @@
       }
     },
     {
-      "url": "https://news.webindia123.com/news/Articles/World/20261107/4516916.html",
-      "domain": "news.webindia123.com",
-      "seenAt": "2026-11-07T05:00:00.000Z",
+      "url": "https://www.livemint.com/news/world/hacked-records-show-400-000-russians-killed-in-war-on-ukraine-11794157943924.html",
+      "domain": "livemint.com",
+      "seenAt": "2026-11-08T18:30:00.000Z",
       "sourceCountry": "India",
-      "original": "Zelenskyy warns against Russia - Europe security deal , says it could be  dangerous  for EU",
+      "image": "/news/c9dc14fbb43000a9.webp",
+      "original": "Hacked Records Show 400 , 000 Russians Killed in War on Ukraine",
       "title": {
-        "uk": "Зеленський застерігає від угоди про безпеку між Росією та Європою, називаючи її «небезпечною» для ЄС",
-        "en": "Zelensky warns against Russia-Europe security deal, says it could be \"dangerous\" for EU",
-        "ru": "Зеленский предупреждает об опасности соглашения о безопасности между Россией и Европой для ЕС"
+        "uk": "Зламані бази даних свідчать про 400 000 загиблих росіян у війні проти України",
+        "en": "Hacked records show 400,000 Russians killed in war on Ukraine",
+        "ru": "Взломанные базы данных свидетельствуют о 400 000 погибших россиян в войне против Украины"
       }
     },
     {
-      "url": "https://www.manilatimes.net/2026/11/03/world/americas-emea/multinational-ukraine-force-to-hold-first-exercise-in-poland/2460176",
-      "domain": "manilatimes.net",
-      "seenAt": "2026-11-03T02:15:00.000Z",
-      "sourceCountry": "Philippines",
-      "image": "/news/4a3116b1da3f32a0.webp",
-      "original": "Multinational Ukraine force to hold first exercise in Poland",
+      "url": "https://www.eurointegration.com.ua/news/2026/11/8/7249531/",
+      "domain": "eurointegration.com.ua",
+      "seenAt": "2026-11-08T10:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/e79342a36d37bc7e.webp",
+      "original": "ЗМІ : Кушнер хоче використати формат Ради Росія - НАТО для розмов про повоєнну безпеку в Європі",
       "title": {
-        "uk": "Багатонаціональні сили підтримки України проведуть перші навчання в Польщі",
-        "en": "Multinational Ukraine force to hold first exercise in Poland",
-        "ru": "Многонациональные силы поддержки Украины проведут первые учения в Польше"
+        "uk": "ЗМІ: Кушнер хоче використати формат Ради Росія — НАТО для розмов про повоєнну безпеку в Європі",
+        "en": "Media: Kushner wants to use Russia-NATO Council format for talks on post-war security in Europe",
+        "ru": "СМИ: Кушнер хочет использовать формат Совета Россия — НАТО для переговоров о послевоенной безопасности в Европе"
+      }
+    },
+    {
+      "url": "https://www.lindependant.fr/2026/11/10/guerre-en-ukraine-la-russie-continue-de-perdre-du-terrain-en-ukraine-les-troupes-de-moscou-ont-deja-perdu-la-moitie-des-territoires-conquis-cette-13644551.php",
+      "domain": "lindependant.fr",
+      "seenAt": "2026-11-10T06:00:00.000Z",
+      "sourceCountry": "France",
+      "image": "/news/3b6173a78281f66e.webp",
+      "original": "Guerre en Ukraine : la Russie continue de perdre du terrain en Ukraine , les troupes de Moscou ont déjà perdu la moitié des territoires conquis cette année",
+      "title": {
+        "uk": "Росія продовжує втрачати позиції в Україні: війська Москви вже втратили половину захоплених цього року територій",
+        "en": "Russia continues to lose ground in Ukraine: Moscow's troops have already lost half the territories conquered this year",
+        "ru": "Россия продолжает терять позиции в Украине: войска Москвы уже потеряли половину захваченных в этом году территорий"
+      }
+    },
+    {
+      "url": "https://glavcom.ua/world/observe/u-rehionakh-rf-zakinchujutsja-hroshi-na-viplati-rodinam-zahiblikh-vijskovikh-1154518.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-11-10T06:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "У регіонах РФ закінчуються гроші на виплати родинам загиблих військових",
+      "title": {
+        "uk": "У регіонах РФ закінчуються гроші на виплати родинам загиблих військових",
+        "en": "Russian regions are running out of money for payments to families of killed soldiers",
+        "ru": "В регионах РФ заканчиваются деньги на выплаты семьям погибших военных"
       }
     }
   ]
