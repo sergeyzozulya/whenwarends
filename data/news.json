@@ -1,17 +1,56 @@
 {
-  "asOf": "2026-11-10",
+  "asOf": "2026-11-12",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://localnews8.com/news/national-world/cnn-world/2026/11/09/ukraine-peace-talks-to-restart-after-9-months-what-makes-them-different-this-time/",
-      "domain": "localnews8.com",
-      "seenAt": "2026-11-10T01:00:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Ukraine peace talks to restart after 9 months . What makes them different this time ? - LocalNews8 . com",
+      "url": "https://www.wenxuecity.com/news/2026/11/11/126833386.html",
+      "domain": "wenxuecity.com",
+      "seenAt": "2026-11-12T00:30:00.000Z",
+      "sourceCountry": "China",
+      "original": "俄乌会谈仅达成换俘共识 领土与安保仍无突破",
       "title": {
-        "uk": "Мирні переговори щодо України відновлюються після 9 місяців перерви. Що на цей раз інакше?",
-        "en": "Ukraine peace talks to restart after 9 months. What makes them different this time?",
-        "ru": "Мирные переговоры по Украине возобновляются после 9 месяцев перерыва. Чем они отличаются на этот раз?"
+        "uk": "Переговори між Росією та Україною досягли лише домовленості про обмін полоненими, прориву щодо територій та безпеки немає",
+        "en": "Russia-Ukraine talks reach only prisoner exchange consensus, no breakthrough on territory or security",
+        "ru": "Переговоры России и Украины достигли лишь консенсуса по обмену пленными, прорыва по территориям и безопасности нет"
+      }
+    },
+    {
+      "url": "https://24tv.ua/peregovori-abu-dabi-nato-nagolosili-shho-dolyu-teritoriy-virishuye_n3178736",
+      "domain": "24tv.ua",
+      "seenAt": "2026-11-12T07:00:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/0041ce6d6ee3b964.webp",
+      "original": "Переговори в Абу - Дабі - у НАТО наголосили , що долю територій вирішує лише Україна",
+      "title": {
+        "uk": "Переговори в Абу-Дабі: у НАТО наголосили, що долю територій вирішує лише Україна",
+        "en": "Abu Dhabi talks: NATO stressed that only Ukraine decides the fate of its territories",
+        "ru": "Переговоры в Абу-Даби: в НАТО подчеркнули, что судьбу территорий определяет только Украина"
+      }
+    },
+    {
+      "url": "https://espreso.tv/viyna-z-rosiyeyu-edina-pozitsiya-z-es-i-ssha-zimoviy-plan-dlya-ukraini-golovni-zayavi-zelenskogo-pislya-1-go-raundu-peregovoriv-v-abu-dabi",
+      "domain": "espreso.tv",
+      "seenAt": "2026-11-11T01:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/4d83e2d61c16aa9a.webp",
+      "original": "Зимовий план , Донбас і спільна позиція з ЄС та США : заяви Зеленського після Абу - Дабі",
+      "title": {
+        "uk": "Зимовий план, Донбас і спільна позиція з ЄС та США: заяви Зеленського після Абу-Дабі",
+        "en": "Winter plan, Donbas, and joint position with EU and US: Zelensky's statements after Abu Dhabi",
+        "ru": "Зимний план, Донбасс и совместная позиция с ЕС и США: заявления Зеленского после Абу-Даби"
+      }
+    },
+    {
+      "url": "https://daily.com.ua/partners-news/ukraina-pragne-10-rokiv-pidtrymky-dlya-800-tysyachnoi-armii-pislya-viiny-afp/",
+      "domain": "daily.com.ua",
+      "seenAt": "2026-11-12T03:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/6059457212a5f383.webp",
+      "original": "Україна прагне 10 років підтримки для 800 - тисячної армії після війни - AFP",
+      "title": {
+        "uk": "Україна прагне 10 років підтримки для 800-тисячної армії після війни — AFP",
+        "en": "Ukraine seeks 10 years of support for an 800,000-strong army after the war — AFP",
+        "ru": "Украина добивается 10 лет поддержки для армии в 800 тысяч человек после войны — AFP"
       }
     },
     {
@@ -22,21 +61,22 @@
       "image": "/news/8bcb477f4d936929.webp",
       "original": "Russia rejects Ukraine war  freeze  and claims Kyiv would use pause to rearm",
       "title": {
-        "uk": "Росія відкидає «заморозку» війни в Україні та стверджує, що Київ скористається паузою для переозброєння",
-        "en": "Russia rejects Ukraine war 'freeze' and claims Kyiv would use pause to rearm",
-        "ru": "Россия отвергает «заморозку» войны в Украине и утверждает, что Киев воспользуется паузой для перевооружения"
+        "uk": "Росія відкидає «заморозку» війни в Україні та стверджує, що Київ використає паузу для переозброєння",
+        "en": "Russia rejects Ukraine war freeze and claims Kyiv would use pause to rearm",
+        "ru": "Россия отвергает «заморозку» войны на Украине и утверждает, что Киев использует паузу для перевооружения"
       }
     },
     {
-      "url": "https://www.hindustantimes.com/world-news/donald-trump-is-in-a-hurry-for-peace-in-ukraine-vladimir-putin-is-not-101794279588972.html",
-      "domain": "hindustantimes.com",
-      "seenAt": "2026-11-10T04:30:00.000Z",
+      "url": "https://www.livemint.com/news/world/hacked-records-show-400-000-russians-killed-in-war-on-ukraine-11794157943924.html",
+      "domain": "livemint.com",
+      "seenAt": "2026-11-08T18:30:00.000Z",
       "sourceCountry": "India",
-      "original": "Donald Trump is in a hurry for peace in Ukraine . Vladimir Putin is not",
+      "image": "/news/c9dc14fbb43000a9.webp",
+      "original": "Hacked Records Show 400 , 000 Russians Killed in War on Ukraine",
       "title": {
-        "uk": "Дональд Трамп поспішає з миром в Україні. Володимир Путін — ні",
-        "en": "Donald Trump is in a hurry for peace in Ukraine. Vladimir Putin is not",
-        "ru": "Дональд Трамп торопится с миром в Украине. Владимир Путин — нет"
+        "uk": "Зламані записи свідчать про загибель 400 000 росіян у війні проти України",
+        "en": "Hacked records show 400,000 Russians killed in war on Ukraine",
+        "ru": "Взломанные записи свидетельствуют о гибели 400 000 россиян в войне против Украины"
       }
     },
     {
@@ -46,22 +86,9 @@
       "sourceCountry": "United States",
       "original": "Europe to join U . S .- brokered Ukraine talks in Abu Dhabi , defying Kremlin objections",
       "title": {
-        "uk": "Європа приєднається до переговорів щодо України в Абу-Дабі за посередництва США, попри заперечення Кремля",
+        "uk": "Європа приєднається до переговорів щодо України в Абу-Дабі під егідою США всупереч запереченням Кремля",
         "en": "Europe to join US-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections",
-        "ru": "Европа присоединится к переговорам по Украине в Абу-Даби при посредничестве США, вопреки возражениям Кремля"
-      }
-    },
-    {
-      "url": "https://www.dw.com/en/trump-raises-prospect-of-big-beautiful-russia-ukraine-deal/a-79871394",
-      "domain": "dw.com",
-      "seenAt": "2026-11-06T00:30:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/bd805eb6f8c7ca17.webp",
-      "original": "Trump teases  big , beautiful  Russia - Ukraine deal",
-      "title": {
-        "uk": "Трамп анонсує «велику, прекрасну» угоду між Росією та Україною",
-        "en": "Trump teases 'big, beautiful' Russia-Ukraine deal",
-        "ru": "Трамп анонсирует «большую, прекрасную» сделку между Россией и Украиной"
+        "ru": "Европа присоединится к переговорам по Украине в Абу-Даби под посредничеством США вопреки возражениям Кремля"
       }
     },
     {
@@ -78,42 +105,16 @@
       }
     },
     {
-      "url": "https://www.livemint.com/news/world/hacked-records-show-400-000-russians-killed-in-war-on-ukraine-11794157943924.html",
-      "domain": "livemint.com",
-      "seenAt": "2026-11-08T18:30:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/c9dc14fbb43000a9.webp",
-      "original": "Hacked Records Show 400 , 000 Russians Killed in War on Ukraine",
+      "url": "https://www.aol.co.uk/articles/ukraine-captures-first-indonesian-prisoner-053327000.html",
+      "domain": "aol.co.uk",
+      "seenAt": "2026-11-11T06:30:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/0c8278ad343021b5.webp",
+      "original": "Ukraine captures first Indonesian prisoner of war amid surge in Russian recruitment",
       "title": {
-        "uk": "Зламані бази даних свідчать про 400 000 загиблих росіян у війні проти України",
-        "en": "Hacked records show 400,000 Russians killed in war on Ukraine",
-        "ru": "Взломанные базы данных свидетельствуют о 400 000 погибших россиян в войне против Украины"
-      }
-    },
-    {
-      "url": "https://www.eurointegration.com.ua/news/2026/11/8/7249531/",
-      "domain": "eurointegration.com.ua",
-      "seenAt": "2026-11-08T10:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/e79342a36d37bc7e.webp",
-      "original": "ЗМІ : Кушнер хоче використати формат Ради Росія - НАТО для розмов про повоєнну безпеку в Європі",
-      "title": {
-        "uk": "ЗМІ: Кушнер хоче використати формат Ради Росія — НАТО для розмов про повоєнну безпеку в Європі",
-        "en": "Media: Kushner wants to use Russia-NATO Council format for talks on post-war security in Europe",
-        "ru": "СМИ: Кушнер хочет использовать формат Совета Россия — НАТО для переговоров о послевоенной безопасности в Европе"
-      }
-    },
-    {
-      "url": "https://www.lindependant.fr/2026/11/10/guerre-en-ukraine-la-russie-continue-de-perdre-du-terrain-en-ukraine-les-troupes-de-moscou-ont-deja-perdu-la-moitie-des-territoires-conquis-cette-13644551.php",
-      "domain": "lindependant.fr",
-      "seenAt": "2026-11-10T06:00:00.000Z",
-      "sourceCountry": "France",
-      "image": "/news/3b6173a78281f66e.webp",
-      "original": "Guerre en Ukraine : la Russie continue de perdre du terrain en Ukraine , les troupes de Moscou ont déjà perdu la moitié des territoires conquis cette année",
-      "title": {
-        "uk": "Росія продовжує втрачати позиції в Україні: війська Москви вже втратили половину захоплених цього року територій",
-        "en": "Russia continues to lose ground in Ukraine: Moscow's troops have already lost half the territories conquered this year",
-        "ru": "Россия продолжает терять позиции в Украине: войска Москвы уже потеряли половину захваченных в этом году территорий"
+        "uk": "Україна взяла в полон першого індонезійського військовополоненого на тлі зростання вербування до армії Росії",
+        "en": "Ukraine captures first Indonesian prisoner of war amid surge in Russian recruitment",
+        "ru": "Украина взяла в плен первого индонезийского военнопленного на фоне роста вербовки в российскую армию"
       }
     },
     {
