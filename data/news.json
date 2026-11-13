@@ -1,56 +1,30 @@
 {
-  "asOf": "2026-11-12",
+  "asOf": "2026-11-13",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.wenxuecity.com/news/2026/11/11/126833386.html",
-      "domain": "wenxuecity.com",
-      "seenAt": "2026-11-12T00:30:00.000Z",
-      "sourceCountry": "China",
-      "original": "俄乌会谈仅达成换俘共识 领土与安保仍无突破",
+      "url": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks",
+      "domain": "theguardian.com",
+      "seenAt": "2026-11-10T06:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "US officials seek  final end  to Russia - Ukraine war as Abu Dhabi talks begin | Ukraine",
       "title": {
-        "uk": "Переговори між Росією та Україною досягли лише домовленості про обмін полоненими, прориву щодо територій та безпеки немає",
-        "en": "Russia-Ukraine talks reach only prisoner exchange consensus, no breakthrough on territory or security",
-        "ru": "Переговоры России и Украины достигли лишь консенсуса по обмену пленными, прорыва по территориям и безопасности нет"
+        "uk": "Американські чиновники прагнуть «остаточного завершення» війни між Росією та Україною на початку переговорів в Абу-Дабі",
+        "en": "US officials seek 'final end' to Russia-Ukraine war as Abu Dhabi talks begin",
+        "ru": "Американские чиновники добиваются «окончательного завершения» войны между Россией и Украиной на фоне начала переговоров в Абу-Даби"
       }
     },
     {
-      "url": "https://24tv.ua/peregovori-abu-dabi-nato-nagolosili-shho-dolyu-teritoriy-virishuye_n3178736",
-      "domain": "24tv.ua",
-      "seenAt": "2026-11-12T07:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/0041ce6d6ee3b964.webp",
-      "original": "Переговори в Абу - Дабі - у НАТО наголосили , що долю територій вирішує лише Україна",
+      "url": "https://www.elimparcial.com/mundo/2026/11/12/putin-propone-abrir-un-corredor-humanitario-en-kostiantinivka-ciudad-disputada-de-ucrania-mientras-amenaza-con-reanudar-la-guerra-si-europa-despliega-tropas-de-paz-en-territorio-ucraniano/",
+      "domain": "elimparcial.com",
+      "seenAt": "2026-11-13T00:45:00.000Z",
+      "sourceCountry": "Mexico",
+      "image": "/news/1d2b19f43b2a97d5.webp",
+      "original": "Putin propone abrir un corredor humanitario en Kostiantinivka , ciudad disputada de Ucrania , mientras amenaza con reanudar la guerra si Europa despliega tropas de paz en territorio ucraniano",
       "title": {
-        "uk": "Переговори в Абу-Дабі: у НАТО наголосили, що долю територій вирішує лише Україна",
-        "en": "Abu Dhabi talks: NATO stressed that only Ukraine decides the fate of its territories",
-        "ru": "Переговоры в Абу-Даби: в НАТО подчеркнули, что судьбу территорий определяет только Украина"
-      }
-    },
-    {
-      "url": "https://espreso.tv/viyna-z-rosiyeyu-edina-pozitsiya-z-es-i-ssha-zimoviy-plan-dlya-ukraini-golovni-zayavi-zelenskogo-pislya-1-go-raundu-peregovoriv-v-abu-dabi",
-      "domain": "espreso.tv",
-      "seenAt": "2026-11-11T01:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/4d83e2d61c16aa9a.webp",
-      "original": "Зимовий план , Донбас і спільна позиція з ЄС та США : заяви Зеленського після Абу - Дабі",
-      "title": {
-        "uk": "Зимовий план, Донбас і спільна позиція з ЄС та США: заяви Зеленського після Абу-Дабі",
-        "en": "Winter plan, Donbas, and joint position with EU and US: Zelensky's statements after Abu Dhabi",
-        "ru": "Зимний план, Донбасс и совместная позиция с ЕС и США: заявления Зеленского после Абу-Даби"
-      }
-    },
-    {
-      "url": "https://daily.com.ua/partners-news/ukraina-pragne-10-rokiv-pidtrymky-dlya-800-tysyachnoi-armii-pislya-viiny-afp/",
-      "domain": "daily.com.ua",
-      "seenAt": "2026-11-12T03:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/6059457212a5f383.webp",
-      "original": "Україна прагне 10 років підтримки для 800 - тисячної армії після війни - AFP",
-      "title": {
-        "uk": "Україна прагне 10 років підтримки для 800-тисячної армії після війни — AFP",
-        "en": "Ukraine seeks 10 years of support for an 800,000-strong army after the war — AFP",
-        "ru": "Украина добивается 10 лет поддержки для армии в 800 тысяч человек после войны — AFP"
+        "uk": "Путін пропонує відкрити гуманітарний коридор у Костянтинівці, водночас погрожуючи відновити війну, якщо Європа розгорне миротворчі сили в Україні",
+        "en": "Putin proposes opening a humanitarian corridor in Kostiantynivka while threatening to resume the war if Europe deploys peacekeeping troops in Ukraine",
+        "ru": "Путин предлагает открыть гуманитарный коридор в Константиновке, угрожая возобновить войну, если Европа развернёт миротворческие силы в Украине"
       }
     },
     {
@@ -61,9 +35,9 @@
       "image": "/news/8bcb477f4d936929.webp",
       "original": "Russia rejects Ukraine war  freeze  and claims Kyiv would use pause to rearm",
       "title": {
-        "uk": "Росія відкидає «заморозку» війни в Україні та стверджує, що Київ використає паузу для переозброєння",
-        "en": "Russia rejects Ukraine war freeze and claims Kyiv would use pause to rearm",
-        "ru": "Россия отвергает «заморозку» войны на Украине и утверждает, что Киев использует паузу для перевооружения"
+        "uk": "Росія відкидає «заморожування» війни в Україні та стверджує, що Київ використає паузу для переозброєння",
+        "en": "Russia rejects Ukraine war 'freeze' and claims Kyiv would use pause to rearm",
+        "ru": "Россия отвергает «заморозку» войны на Украине и утверждает, что Киев воспользуется паузой для перевооружения"
       }
     },
     {
@@ -74,34 +48,35 @@
       "image": "/news/c9dc14fbb43000a9.webp",
       "original": "Hacked Records Show 400 , 000 Russians Killed in War on Ukraine",
       "title": {
-        "uk": "Зламані записи свідчать про загибель 400 000 росіян у війні проти України",
+        "uk": "Зламані бази даних свідчать про 400 000 загиблих росіян у війні проти України",
         "en": "Hacked records show 400,000 Russians killed in war on Ukraine",
-        "ru": "Взломанные записи свидетельствуют о гибели 400 000 россиян в войне против Украины"
+        "ru": "Взломанные базы данных свидетельствуют о 400 000 погибших россиян в войне против Украины"
       }
     },
     {
-      "url": "https://www.capeandislands.org/2026-11-08/europe-to-join-u-s-brokered-ukraine-talks-in-abu-dhabi-defying-kremlin-objections",
-      "domain": "capeandislands.org",
-      "seenAt": "2026-11-08T20:30:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Europe to join U . S .- brokered Ukraine talks in Abu Dhabi , defying Kremlin objections",
+      "url": "https://www.thehindu.com/news/international/ukraines-zelenskyy-says-he-is-pleased-with-messages-from-us-envoys-on-diplomatic-efforts-to-end-war/article71687545.ece",
+      "domain": "thehindu.com",
+      "seenAt": "2026-11-11T01:00:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/ed1804d4859df028.webp",
+      "original": "Ukraine Zelenskyy says he is pleased with messages from U . S . envoys on diplomatic efforts to end war",
       "title": {
-        "uk": "Європа приєднається до переговорів щодо України в Абу-Дабі під егідою США всупереч запереченням Кремля",
-        "en": "Europe to join US-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections",
-        "ru": "Европа присоединится к переговорам по Украине в Абу-Даби под посредничеством США вопреки возражениям Кремля"
+        "uk": "Зеленський заявив, що задоволений повідомленнями від американських посланців щодо дипломатичних зусиль для завершення війни",
+        "en": "Zelensky says he is pleased with messages from US envoys on diplomatic efforts to end war",
+        "ru": "Зеленский заявил, что доволен посланиями американских дипломатов относительно усилий по завершению войны"
       }
     },
     {
-      "url": "https://kontrakty.ua/article/301031",
-      "domain": "kontrakty.ua",
-      "seenAt": "2026-11-07T17:30:00.000Z",
+      "url": "https://daily.com.ua/partners-news/ukraina-pragne-10-rokiv-pidtrymky-dlya-800-tysyachnoi-armii-pislya-viiny-afp/",
+      "domain": "daily.com.ua",
+      "seenAt": "2026-11-12T03:45:00.000Z",
       "sourceCountry": "Ukraine",
-      "image": "/news/e316eca8a1f3732c.webp",
-      "original": "Путін погрожує знищити всю інфраструктуру України до 2027 року , - FT",
+      "image": "/news/6059457212a5f383.webp",
+      "original": "Україна прагне 10 років підтримки для 800 - тисячної армії після війни - AFP",
       "title": {
-        "uk": "Путін погрожує знищити всю інфраструктуру України до 2027 року — FT",
-        "en": "Putin threatens to destroy all of Ukraine's infrastructure by 2027 — FT",
-        "ru": "Путин угрожает уничтожить всю инфраструктуру Украины к 2027 году — FT"
+        "uk": "Україна прагне 10 років підтримки для армії у 800 000 осіб після війни — AFP",
+        "en": "Ukraine seeks 10 years of support for 800,000-strong army after the war — AFP",
+        "ru": "Украина добивается 10 лет поддержки для армии в 800 000 человек после войны — AFP"
       }
     },
     {
@@ -114,19 +89,45 @@
       "title": {
         "uk": "Україна взяла в полон першого індонезійського військовополоненого на тлі зростання вербування до армії Росії",
         "en": "Ukraine captures first Indonesian prisoner of war amid surge in Russian recruitment",
-        "ru": "Украина взяла в плен первого индонезийского военнопленного на фоне роста вербовки в российскую армию"
+        "ru": "Украина захватила первого индонезийского военнопленного на фоне роста вербовки в российскую армию"
       }
     },
     {
-      "url": "https://glavcom.ua/world/observe/u-rehionakh-rf-zakinchujutsja-hroshi-na-viplati-rodinam-zahiblikh-vijskovikh-1154518.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-11-10T06:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "У регіонах РФ закінчуються гроші на виплати родинам загиблих військових",
+      "url": "https://www.hindustantimes.com/world-news/donald-trump-is-in-a-hurry-for-peace-in-ukraine-vladimir-putin-is-not-101794279588972.html",
+      "domain": "hindustantimes.com",
+      "seenAt": "2026-11-10T04:30:00.000Z",
+      "sourceCountry": "India",
+      "original": "Donald Trump is in a hurry for peace in Ukraine . Vladimir Putin is not",
       "title": {
-        "uk": "У регіонах РФ закінчуються гроші на виплати родинам загиблих військових",
-        "en": "Russian regions are running out of money for payments to families of killed soldiers",
-        "ru": "В регионах РФ заканчиваются деньги на выплаты семьям погибших военных"
+        "uk": "Дональд Трамп поспішає з миром в Україні. Владімір Путін — ні",
+        "en": "Donald Trump is in a hurry for peace in Ukraine. Vladimir Putin is not",
+        "ru": "Дональд Трамп торопится с миром на Украине. Владимир Путин — нет"
+      }
+    },
+    {
+      "url": "https://www.lindependant.fr/2026/11/10/guerre-en-ukraine-la-russie-continue-de-perdre-du-terrain-en-ukraine-les-troupes-de-moscou-ont-deja-perdu-la-moitie-des-territoires-conquis-cette-13644551.php",
+      "domain": "lindependant.fr",
+      "seenAt": "2026-11-10T06:00:00.000Z",
+      "sourceCountry": "France",
+      "image": "/news/3b6173a78281f66e.webp",
+      "original": "Guerre en Ukraine : la Russie continue de perdre du terrain en Ukraine , les troupes de Moscou ont déjà perdu la moitié des territoires conquis cette année",
+      "title": {
+        "uk": "Війна в Україні: Росія продовжує втрачати позиції — Москва вже втратила половину захоплених цього року територій",
+        "en": "War in Ukraine: Russia continues to lose ground, Moscow's troops have already lost half the territories conquered this year",
+        "ru": "Война в Украине: Россия продолжает терять позиции — войска Москвы уже утратили половину захваченных в этом году территорий"
+      }
+    },
+    {
+      "url": "https://zn.ua/ukr/WORLD/ssha-zaklikali-rosiju-pidhotuvati-novu-propozitsiju-shchodo-bezpekovoji-uhodi-z-jevropoju-axios.html",
+      "domain": "zn.ua",
+      "seenAt": "2026-11-12T05:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/a6de582aa27dd4c2.webp",
+      "original": "Угода про безпеку в Європі - США закликали РФ до нової ініціативи – ZN . ua",
+      "title": {
+        "uk": "Угода про безпеку в Європі: США закликали РФ до нової ініціативи",
+        "en": "European security deal: US calls on Russia for a new initiative",
+        "ru": "Соглашение о безопасности в Европе: США призвали Россию к новой инициативе"
       }
     }
   ]
