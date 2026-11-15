@@ -1,29 +1,43 @@
 {
-  "asOf": "2026-11-14",
+  "asOf": "2026-11-15",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks",
-      "domain": "theguardian.com",
-      "seenAt": "2026-11-10T06:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "original": "US officials seek  final end  to Russia - Ukraine war as Abu Dhabi talks begin | Ukraine",
+      "url": "https://kesq.com/news/national-world/cnn-world/2026/11/14/us-floated-idea-of-ukraine-swapping-land-for-nato-membership-zelensky-says/",
+      "domain": "kesq.com",
+      "seenAt": "2026-11-14T21:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/dc4b252598807325.webp",
+      "original": "US floated idea of Ukraine swapping land for NATO membership , Zelensky says",
       "title": {
-        "uk": "Американські чиновники прагнуть «остаточного завершення» війни між Росією та Україною на початку переговорів в Абу-Дабі",
-        "en": "US officials seek final end to Russia-Ukraine war as Abu Dhabi talks begin",
-        "ru": "Американские чиновники стремятся к «окончательному завершению» войны между Россией и Украиной на фоне начала переговоров в Абу-Даби"
+        "uk": "США висунули ідею про обмін землі на членство України в НАТО, — Зеленський",
+        "en": "US floated idea of Ukraine swapping land for NATO membership, Zelensky says",
+        "ru": "США выдвинули идею обмена территорий на членство Украины в НАТО, — Зеленский"
       }
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/10/ukraine-war-briefing-battlefield-gains-bolstering-kyivs-hand-in-us-led-peace-talks-zelenskyy-says",
-      "domain": "theguardian.com",
-      "seenAt": "2026-11-10T02:30:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "original": "Ukraine war briefing : battlefield gains bolstering Kyiv hand in US - led peace talks , Zelenskyy says | Ukraine",
+      "url": "https://www.newsday.com/news/nation/russia-ukraine-war-nato-us-zelenskyy-n54910",
+      "domain": "newsday.com",
+      "seenAt": "2026-11-14T20:00:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/69408f9f407a6a72.webp",
+      "original": "Zelenskyy says a new European security framework floated by US could benefit Putin",
       "title": {
-        "uk": "Брифінг про війну в Україні: успіхи на полі бою зміцнюють позиції Києва на мирних переговорах під керівництвом США, заявив Зеленський",
-        "en": "Ukraine war briefing: battlefield gains bolstering Kyiv's hand in US-led peace talks, Zelenskyy says",
-        "ru": "Брифинг о войне в Украине: успехи на поле боя укрепляют позиции Киева на мирных переговорах под руководством США, заявил Зеленский"
+        "uk": "Зеленський каже, що запропонована США нова система безпеки для Європи може бути вигідна Путіну",
+        "en": "Zelenskyy says a new European security framework floated by US could benefit Putin",
+        "ru": "Зеленский заявил, что предложенная США новая система безопасности для Европы может быть выгодна Путину"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/13/russias-demands-come-from-different-reality-as-war-efforts-stagnates",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-11-13T18:00:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Ukraine claims record 3 , 000 Russian casualties in one day as war drags on",
+      "title": {
+        "uk": "Україна заявила про рекордні 3 000 втрат росіян за один день, поки війна затягується",
+        "en": "Ukraine claims record 3,000 Russian casualties in one day as war drags on",
+        "ru": "Украина сообщила о рекордных 3 000 потерях россиян за один день, пока война затягивается"
       }
     },
     {
@@ -34,21 +48,21 @@
       "image": "/news/35df86d8f10cb203.webp",
       "original": "Ukraine launches nearly 1200 drones at Russia",
       "title": {
-        "uk": "Україна запустила майже 1200 дронів по Росії",
+        "uk": "Україна запустила майже 1 200 дронів по Росії",
         "en": "Ukraine launches nearly 1,200 drones at Russia",
-        "ru": "Украина запустила почти 1200 дронов по России"
+        "ru": "Украина запустила почти 1 200 дронов по России"
       }
     },
     {
-      "url": "https://glavcom.ua/world/world-politics/hlava-diplomatiji-jes-nazvala-holovnu-pereshkodu-dlja-miru-v-ukrajini-ta-zvernulasja-do-rf-1155504.html",
-      "domain": "glavcom.ua",
-      "seenAt": "2026-11-13T18:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "original": "Глава дипломатії ЄС назвала головну перешкоду для миру в Україні та звернулася до РФ",
+      "url": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks",
+      "domain": "theguardian.com",
+      "seenAt": "2026-11-10T06:00:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "US officials seek  final end  to Russia - Ukraine war as Abu Dhabi talks begin | Ukraine",
       "title": {
-        "uk": "Глава дипломатії ЄС назвала головну перешкоду для миру в Україні та звернулася до РФ",
-        "en": "EU foreign policy chief names main obstacle to peace in Ukraine and addresses Russia",
-        "ru": "Глава дипломатии ЕС назвала главное препятствие для мира в Украине и обратилась к РФ"
+        "uk": "Американські чиновники прагнуть «остаточного завершення» війни між Росією та Україною з початком переговорів в Абу-Дабі",
+        "en": "US officials seek 'final end' to Russia-Ukraine war as Abu Dhabi talks begin",
+        "ru": "Американские чиновники добиваются «окончательного конца» войны между Россией и Украиной с началом переговоров в Абу-Даби"
       }
     },
     {
@@ -60,21 +74,20 @@
       "original": "Russia rejects Ukraine war  freeze  and claims Kyiv would use pause to rearm",
       "title": {
         "uk": "Росія відкидає «заморожування» війни в Україні та стверджує, що Київ використає паузу для переозброєння",
-        "en": "Russia rejects Ukraine war freeze and claims Kyiv would use pause to rearm",
-        "ru": "Россия отвергает «заморозку» войны в Украине и утверждает, что Киев использует паузу для перевооружения"
+        "en": "Russia rejects Ukraine war 'freeze' and claims Kyiv would use pause to rearm",
+        "ru": "Россия отвергает «заморозку» войны на Украине и утверждает, что Киев использует паузу для перевооружения"
       }
     },
     {
-      "url": "https://www.elimparcial.com/mundo/2026/11/12/putin-propone-abrir-un-corredor-humanitario-en-kostiantinivka-ciudad-disputada-de-ucrania-mientras-amenaza-con-reanudar-la-guerra-si-europa-despliega-tropas-de-paz-en-territorio-ucraniano/",
-      "domain": "elimparcial.com",
-      "seenAt": "2026-11-13T00:45:00.000Z",
-      "sourceCountry": "Mexico",
-      "image": "/news/1d2b19f43b2a97d5.webp",
-      "original": "Putin propone abrir un corredor humanitario en Kostiantinivka , ciudad disputada de Ucrania , mientras amenaza con reanudar la guerra si Europa despliega tropas de paz en territorio ucraniano",
+      "url": "https://www.hindustantimes.com/world-news/us-news/us-asks-russia-to-propose-new-security-deal-with-europe-as-trump-pushes-for-ukraine-peace-talks-report-101794453800852.html",
+      "domain": "hindustantimes.com",
+      "seenAt": "2026-11-12T04:00:00.000Z",
+      "sourceCountry": "India",
+      "original": "US asks Russia to propose new security deal with Europe as Trump pushes for Ukraine peace talks : Report",
       "title": {
-        "uk": "Путін пропонує відкрити гуманітарний коридор у Костянтинівці та погрожує відновити війну, якщо Європа розгорне миротворців в Україні",
-        "en": "Putin proposes opening a humanitarian corridor in Kostiantynivka while threatening to resume war if Europe deploys peacekeepers in Ukraine",
-        "ru": "Путин предлагает открыть гуманитарный коридор в Константиновке и угрожает возобновить войну, если Европа развернёт миротворцев на Украине"
+        "uk": "США закликали Росію запропонувати нову угоду з безпеки для Європи на тлі зусиль Трампа щодо мирних переговорів — ЗМІ",
+        "en": "US asks Russia to propose new security deal with Europe as Trump pushes for Ukraine peace talks: Report",
+        "ru": "США попросили Россию предложить новое соглашение по безопасности для Европы на фоне усилий Трампа по мирным переговорам — СМИ"
       }
     },
     {
@@ -85,35 +98,9 @@
       "image": "/news/c9dc14fbb43000a9.webp",
       "original": "Hacked Records Show 400 , 000 Russians Killed in War on Ukraine",
       "title": {
-        "uk": "Зламані бази даних свідчать про 400 000 загиблих росіян у війні проти України",
+        "uk": "Зламані записи свідчать про 400 000 загиблих росіян у війні проти України",
         "en": "Hacked records show 400,000 Russians killed in war on Ukraine",
-        "ru": "Взломанные базы данных свидетельствуют о 400 000 погибших россиян в войне против Украины"
-      }
-    },
-    {
-      "url": "https://www.aol.co.uk/articles/ukraine-captures-first-indonesian-prisoner-053327000.html",
-      "domain": "aol.co.uk",
-      "seenAt": "2026-11-11T06:30:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "image": "/news/0c8278ad343021b5.webp",
-      "original": "Ukraine captures first Indonesian prisoner of war amid surge in Russian recruitment",
-      "title": {
-        "uk": "Україна взяла в полон першого індонезійського військовополоненого на фоні зростання вербування до армії Росії",
-        "en": "Ukraine captures first Indonesian prisoner of war amid surge in Russian recruitment",
-        "ru": "Украина захватила первого индонезийского военнопленного на фоне роста вербовки в армию России"
-      }
-    },
-    {
-      "url": "https://24tv.ua/peregovori-abu-dabi-nato-nagolosili-shho-dolyu-teritoriy-virishuye_n3178736",
-      "domain": "24tv.ua",
-      "seenAt": "2026-11-12T07:00:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/0041ce6d6ee3b964.webp",
-      "original": "Переговори в Абу - Дабі - у НАТО наголосили , що долю територій вирішує лише Україна",
-      "title": {
-        "uk": "Переговори в Абу-Дабі: у НАТО наголосили, що долю територій вирішує лише Україна",
-        "en": "Abu Dhabi talks: NATO stresses that only Ukraine decides the fate of its territories",
-        "ru": "Переговоры в Абу-Даби: в НАТО подчеркнули, что судьбу территорий решает только Украина"
+        "ru": "Взломанные данные свидетельствуют о 400 000 погибших россиян в войне против Украины"
       }
     },
     {
@@ -124,9 +111,22 @@
       "image": "/news/4e68ebd813d3a056.webp",
       "original": "Ireland faces pressure to stop sending Russia an ingredient vital to its war on Ukraine",
       "title": {
-        "uk": "Ірландія перебуває під тиском через постачання Росії компонента, важливого для ведення війни проти України",
+        "uk": "Ірландія зазнає тиску щодо припинення постачання Росії компонента, важливого для її війни проти України",
         "en": "Ireland faces pressure to stop sending Russia an ingredient vital to its war on Ukraine",
-        "ru": "Ирландия под давлением из-за поставок России компонента, важного для ведения войны против Украины"
+        "ru": "Ирландия под давлением: от неё требуют прекратить поставки России компонента, важного для войны против Украины"
+      }
+    },
+    {
+      "url": "https://www.dw.com/en/g7-ministers-meet-as-europe-seeks-greater-say-in-ukraine-peace-talks/a-79894960",
+      "domain": "dw.com",
+      "seenAt": "2026-11-09T05:00:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/25f77e2c7ccbe608.webp",
+      "original": "G7 meet as Europe seeks greater say in Ukraine peace talks",
+      "title": {
+        "uk": "Зустріч G7 на тлі прагнення Європи до більшої ролі в мирних переговорах щодо України",
+        "en": "G7 meet as Europe seeks greater say in Ukraine peace talks",
+        "ru": "Встреча G7 на фоне стремления Европы к большей роли в мирных переговорах по Украине"
       }
     }
   ]
