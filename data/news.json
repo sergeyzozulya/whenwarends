@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-15",
+  "asOf": "2026-11-17",
   "source": "gdelt",
   "articles": [
     {
@@ -10,22 +10,48 @@
       "image": "/news/dc4b252598807325.webp",
       "original": "US floated idea of Ukraine swapping land for NATO membership , Zelensky says",
       "title": {
-        "uk": "США висунули ідею про обмін землі на членство України в НАТО, — Зеленський",
+        "uk": "США запропонували ідею обміну земель України на членство в НАТО, заявляє Зеленський",
         "en": "US floated idea of Ukraine swapping land for NATO membership, Zelensky says",
-        "ru": "США выдвинули идею обмена территорий на членство Украины в НАТО, — Зеленский"
+        "ru": "США выдвинули идею обмена территорий Украины на членство в НАТО, заявляет Зеленский"
       }
     },
     {
-      "url": "https://www.newsday.com/news/nation/russia-ukraine-war-nato-us-zelenskyy-n54910",
-      "domain": "newsday.com",
+      "url": "https://www.kcbd.com/2026/11/14/trump-xi-putin-plan-an-unprecedented-joint-meeting-white-house-says/",
+      "domain": "kcbd.com",
       "seenAt": "2026-11-14T20:00:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/69408f9f407a6a72.webp",
-      "original": "Zelenskyy says a new European security framework floated by US could benefit Putin",
+      "image": "/news/9ab3fdba54a664da.webp",
+      "original": "Trump , Xi and Putin plan an unprecedented joint meeting , White House says",
       "title": {
-        "uk": "Зеленський каже, що запропонована США нова система безпеки для Європи може бути вигідна Путіну",
-        "en": "Zelenskyy says a new European security framework floated by US could benefit Putin",
-        "ru": "Зеленский заявил, что предложенная США новая система безопасности для Европы может быть выгодна Путину"
+        "uk": "Трамп, Сі і Путін планують безпрецедентну спільну зустріч, повідомляє Білий дім",
+        "en": "Trump, Xi and Putin plan an unprecedented joint meeting, White House says",
+        "ru": "Трамп, Си и Путин планируют беспрецедентную совместную встречу, сообщает Белый дом"
+      }
+    },
+    {
+      "url": "https://www.ibtimes.co.uk/zelensky-starshield-speed-cap-ukrainian-interceptor-drones-1832398",
+      "domain": "ibtimes.co.uk",
+      "seenAt": "2026-11-16T08:15:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/3414676bf7f755bf.webp",
+      "original": "Zelensky Begs Musk To Be on  Right Side of History  After 100 Mph Starlink Cap Slows Ukraine Air Defence",
+      "title": {
+        "uk": "Зеленський просить Маска стати на «правильний бік історії» після того, як обмеження швидкості Starlink уповільнило повітряну оборону України",
+        "en": "Zelensky begs Musk to be on 'right side of history' after Starlink speed cap slows Ukraine air defence",
+        "ru": "Зеленский просит Маска встать на «правильную сторону истории» после того, как ограничение скорости Starlink замедлило воздушную оборону Украины"
+      }
+    },
+    {
+      "url": "https://www.rferl.org/a/33895568.html",
+      "domain": "rferl.org",
+      "seenAt": "2026-11-12T01:30:00.000Z",
+      "sourceCountry": "Russia",
+      "image": "/news/97fe2fb5f6418901.webp",
+      "original": "Abu Dhabi Talks Advance Diplomacy , Not Peace , As Russia Seeks Broader Security Bargain",
+      "title": {
+        "uk": "Переговори в Абу-Дабі просунули дипломатію, але не мир, оскільки Росія прагне ширшої угоди з безпеки",
+        "en": "Abu Dhabi talks advance diplomacy, not peace, as Russia seeks broader security bargain",
+        "ru": "Переговоры в Абу-Даби продвинули дипломатию, но не мир, поскольку Россия добивается более широкой сделки по безопасности"
       }
     },
     {
@@ -35,9 +61,46 @@
       "sourceCountry": "United States",
       "original": "Ukraine claims record 3 , 000 Russian casualties in one day as war drags on",
       "title": {
-        "uk": "Україна заявила про рекордні 3 000 втрат росіян за один день, поки війна затягується",
+        "uk": "Україна заявляє про рекордні 3 000 російських втрат за один день, поки війна затягується",
         "en": "Ukraine claims record 3,000 Russian casualties in one day as war drags on",
-        "ru": "Украина сообщила о рекордных 3 000 потерях россиян за один день, пока война затягивается"
+        "ru": "Украина заявляет о рекордных 3 000 российских потерях за один день, пока война затягивается"
+      }
+    },
+    {
+      "url": "https://www.infobae.com/america/mundo/2026/11/14/emmanuel-macron-alerto-que-reducir-la-ayuda-a-ucrania-prepararia-el-terreno-para-otra-guerra-en-europa/",
+      "domain": "infobae.com",
+      "seenAt": "2026-11-14T21:00:00.000Z",
+      "sourceCountry": "Argentina",
+      "image": "/news/0a5f2861560440e2.webp",
+      "original": "Emmanuel Macron alertó que reducir la ayuda a Ucrania prepararía el terreno para otra guerra en Europa",
+      "title": {
+        "uk": "Еммануель Макрон попередив, що скорочення допомоги Україні готує ґрунт для нової війни в Європі",
+        "en": "Emmanuel Macron warned that reducing aid to Ukraine would pave the way for another war in Europe",
+        "ru": "Эммануэль Макрон предупредил, что сокращение помощи Украине подготовит почву для новой войны в Европе"
+      }
+    },
+    {
+      "url": "https://www.hurriyetdailynews.com/russian-economy-growth-slows-to-1-percent-in-third-quarter-229399",
+      "domain": "hurriyetdailynews.com",
+      "seenAt": "2026-11-15T07:45:00.000Z",
+      "sourceCountry": "Turkey",
+      "original": "Russian economy growth slows to 1 percent in third quarter",
+      "title": {
+        "uk": "Зростання економіки Росії сповільнилося до 1% у третьому кварталі",
+        "en": "Russian economy growth slows to 1 percent in third quarter",
+        "ru": "Рост экономики России замедлился до 1 процента в третьем квартале"
+      }
+    },
+    {
+      "url": "https://www.lifo.gr/now/world/esthonia-kleinei-ta-synora-tis-me-ti-rosia-meta-tin-epithesi-enantion-etaireias",
+      "domain": "lifo.gr",
+      "seenAt": "2026-11-16T08:15:00.000Z",
+      "sourceCountry": "Greece",
+      "original": "Εσθονία : Κλείνει τα σύνορά της με τη Ρωσία μετά την επίθεση εναντίον εταιρείας κατασκευής drones",
+      "title": {
+        "uk": "Естонія закриває кордон з Росією після нападу на компанію з виробництва дронів",
+        "en": "Estonia closes its border with Russia after attack on drone manufacturing company",
+        "ru": "Эстония закрывает границу с Россией после нападения на компанию по производству дронов"
       }
     },
     {
@@ -54,56 +117,6 @@
       }
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks",
-      "domain": "theguardian.com",
-      "seenAt": "2026-11-10T06:00:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "original": "US officials seek  final end  to Russia - Ukraine war as Abu Dhabi talks begin | Ukraine",
-      "title": {
-        "uk": "Американські чиновники прагнуть «остаточного завершення» війни між Росією та Україною з початком переговорів в Абу-Дабі",
-        "en": "US officials seek 'final end' to Russia-Ukraine war as Abu Dhabi talks begin",
-        "ru": "Американские чиновники добиваются «окончательного конца» войны между Россией и Украиной с началом переговоров в Абу-Даби"
-      }
-    },
-    {
-      "url": "https://www.thenationalnews.com/news/us/2026/11/09/russia-ukraine-war-abu-dhabi-ceasefire-talks/",
-      "domain": "thenationalnews.com",
-      "seenAt": "2026-11-10T03:30:00.000Z",
-      "sourceCountry": "",
-      "image": "/news/8bcb477f4d936929.webp",
-      "original": "Russia rejects Ukraine war  freeze  and claims Kyiv would use pause to rearm",
-      "title": {
-        "uk": "Росія відкидає «заморожування» війни в Україні та стверджує, що Київ використає паузу для переозброєння",
-        "en": "Russia rejects Ukraine war 'freeze' and claims Kyiv would use pause to rearm",
-        "ru": "Россия отвергает «заморозку» войны на Украине и утверждает, что Киев использует паузу для перевооружения"
-      }
-    },
-    {
-      "url": "https://www.hindustantimes.com/world-news/us-news/us-asks-russia-to-propose-new-security-deal-with-europe-as-trump-pushes-for-ukraine-peace-talks-report-101794453800852.html",
-      "domain": "hindustantimes.com",
-      "seenAt": "2026-11-12T04:00:00.000Z",
-      "sourceCountry": "India",
-      "original": "US asks Russia to propose new security deal with Europe as Trump pushes for Ukraine peace talks : Report",
-      "title": {
-        "uk": "США закликали Росію запропонувати нову угоду з безпеки для Європи на тлі зусиль Трампа щодо мирних переговорів — ЗМІ",
-        "en": "US asks Russia to propose new security deal with Europe as Trump pushes for Ukraine peace talks: Report",
-        "ru": "США попросили Россию предложить новое соглашение по безопасности для Европы на фоне усилий Трампа по мирным переговорам — СМИ"
-      }
-    },
-    {
-      "url": "https://www.livemint.com/news/world/hacked-records-show-400-000-russians-killed-in-war-on-ukraine-11794157943924.html",
-      "domain": "livemint.com",
-      "seenAt": "2026-11-08T18:30:00.000Z",
-      "sourceCountry": "India",
-      "image": "/news/c9dc14fbb43000a9.webp",
-      "original": "Hacked Records Show 400 , 000 Russians Killed in War on Ukraine",
-      "title": {
-        "uk": "Зламані записи свідчать про 400 000 загиблих росіян у війні проти України",
-        "en": "Hacked records show 400,000 Russians killed in war on Ukraine",
-        "ru": "Взломанные данные свидетельствуют о 400 000 погибших россиян в войне против Украины"
-      }
-    },
-    {
       "url": "https://abcnews.com/Business/wireStory/ireland-faces-pressure-stop-sending-russia-ingredient-vital-138069913",
       "domain": "abcnews.com",
       "seenAt": "2026-11-12T07:00:00.000Z",
@@ -113,20 +126,7 @@
       "title": {
         "uk": "Ірландія зазнає тиску щодо припинення постачання Росії компонента, важливого для її війни проти України",
         "en": "Ireland faces pressure to stop sending Russia an ingredient vital to its war on Ukraine",
-        "ru": "Ирландия под давлением: от неё требуют прекратить поставки России компонента, важного для войны против Украины"
-      }
-    },
-    {
-      "url": "https://www.dw.com/en/g7-ministers-meet-as-europe-seeks-greater-say-in-ukraine-peace-talks/a-79894960",
-      "domain": "dw.com",
-      "seenAt": "2026-11-09T05:00:00.000Z",
-      "sourceCountry": "Germany",
-      "image": "/news/25f77e2c7ccbe608.webp",
-      "original": "G7 meet as Europe seeks greater say in Ukraine peace talks",
-      "title": {
-        "uk": "Зустріч G7 на тлі прагнення Європи до більшої ролі в мирних переговорах щодо України",
-        "en": "G7 meet as Europe seeks greater say in Ukraine peace talks",
-        "ru": "Встреча G7 на фоне стремления Европы к большей роли в мирных переговорах по Украине"
+        "ru": "Ирландия испытывает давление с требованием прекратить поставки России компонента, необходимого для её войны против Украины"
       }
     }
   ]
