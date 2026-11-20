@@ -1,82 +1,109 @@
 {
-  "asOf": "2026-11-17",
+  "asOf": "2026-11-20",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://kesq.com/news/national-world/cnn-world/2026/11/14/us-floated-idea-of-ukraine-swapping-land-for-nato-membership-zelensky-says/",
-      "domain": "kesq.com",
-      "seenAt": "2026-11-14T21:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/dc4b252598807325.webp",
-      "original": "US floated idea of Ukraine swapping land for NATO membership , Zelensky says",
+      "url": "https://interfax.com.ua/news/general/1239544.html",
+      "domain": "interfax.com.ua",
+      "seenAt": "2026-11-20T00:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/c15b78e35d6d114d.webp",
+      "original": "Лідери України , Німеччини , Франції та Британії закликали РФ до енергетичного перемир  я на зиму та узгодили принципи гарантій безпеки",
       "title": {
-        "uk": "США запропонували ідею обміну земель України на членство в НАТО, заявляє Зеленський",
-        "en": "US floated idea of Ukraine swapping land for NATO membership, Zelensky says",
-        "ru": "США выдвинули идею обмена территорий Украины на членство в НАТО, заявляет Зеленский"
+        "uk": "Лідери України, Німеччини, Франції та Британії закликали РФ до енергетичного перемир'я на зиму та узгодили принципи гарантій безпеки",
+        "en": "Leaders of Ukraine, Germany, France and Britain called on Russia for a winter energy ceasefire and agreed on security guarantee principles",
+        "ru": "Лидеры Украины, Германии, Франции и Великобритании призвали РФ к энергетическому перемирию на зиму и согласовали принципы гарантий безопасности"
       }
     },
     {
-      "url": "https://www.kcbd.com/2026/11/14/trump-xi-putin-plan-an-unprecedented-joint-meeting-white-house-says/",
-      "domain": "kcbd.com",
-      "seenAt": "2026-11-14T20:00:00.000Z",
+      "url": "https://foreignpolicy.com/2026/11/19/ukraine-drones-diplomacy-russian-strikes-putin-xi-trump-trilateral/",
+      "domain": "foreignpolicy.com",
+      "seenAt": "2026-11-20T01:30:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/9ab3fdba54a664da.webp",
-      "original": "Trump , Xi and Putin plan an unprecedented joint meeting , White House says",
+      "image": "/news/640efadee1cc2270.webp",
+      "original": "In Ukraine , the Drones Are Flying Faster Than the Diplomacy",
       "title": {
-        "uk": "Трамп, Сі і Путін планують безпрецедентну спільну зустріч, повідомляє Білий дім",
-        "en": "Trump, Xi and Putin plan an unprecedented joint meeting, White House says",
-        "ru": "Трамп, Си и Путин планируют беспрецедентную совместную встречу, сообщает Белый дом"
+        "uk": "В Україні дрони летять швидше, ніж розвивається дипломатія",
+        "en": "In Ukraine, the Drones Are Flying Faster Than the Diplomacy",
+        "ru": "На Украине дроны летят быстрее, чем развивается дипломатия"
       }
     },
     {
-      "url": "https://www.ibtimes.co.uk/zelensky-starshield-speed-cap-ukrainian-interceptor-drones-1832398",
-      "domain": "ibtimes.co.uk",
-      "seenAt": "2026-11-16T08:15:00.000Z",
+      "url": "https://lancasteronline.com/news/world/kushner-says-he-believes-russia-is-comfortable-with-nato-like-security-guarantees-for-ukraine/article_0b400996-8379-55cc-b8c9-6703468a032f.html",
+      "domain": "lancasteronline.com",
+      "seenAt": "2026-11-20T03:45:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/d25dd127400ddc12.webp",
+      "original": "Kushner says he believes Russia is  comfortable  with NATO - like security guarantees for Ukraine | World News",
+      "title": {
+        "uk": "Кушнер заявив, що Росія «комфортно» ставиться до гарантій безпеки для України на кшталт НАТО",
+        "en": "Kushner says he believes Russia is 'comfortable' with NATO-like security guarantees for Ukraine",
+        "ru": "Кушнер заявил, что Россия «комфортно» воспринимает гарантии безопасности для Украины по образцу НАТО"
+      }
+    },
+    {
+      "url": "https://www.dw.com/en/new-ukraine-talks-including-europe-to-be-held-soon-merz/a-79997961",
+      "domain": "dw.com",
+      "seenAt": "2026-11-20T00:15:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/b40cd11acbf47d0f.webp",
+      "original": "New Ukraine talks including Europe to be held  soon  Merz",
+      "title": {
+        "uk": "Нові переговори щодо України за участі Європи відбудуться «незабаром» — Мерц",
+        "en": "New Ukraine talks including Europe to be held 'soon' — Merz",
+        "ru": "Новые переговоры по Украине с участием Европы состоятся «в ближайшее время» — Мерц"
+      }
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/world/europe/ukraine-strikes-putins-prized-crimean-bridge-destroys-central-road-section-ahead-of-us-china-meet/articleshow/135944199.cms",
+      "domain": "timesofindia.indiatimes.com",
+      "seenAt": "2026-11-18T01:15:00.000Z",
+      "sourceCountry": "India",
+      "image": "/news/eef26b3527271f69.webp",
+      "original": "Ukraine strikes Putin prized Crimean Bridge , destroys central road section ahead of US - China meet",
+      "title": {
+        "uk": "Україна вдарила по Кримському мосту, знищивши центральну дорожню секцію напередодні зустрічі США та Китаю",
+        "en": "Ukraine strikes Putin's prized Crimean Bridge, destroys central road section ahead of US-China meet",
+        "ru": "Украина нанесла удар по Крымскому мосту, уничтожив центральный дорожный пролёт накануне встречи США и Китая"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/news/world/europe/donald-trump-vladimir-putin-russia-ukraine-b3087755.html",
+      "domain": "independent.co.uk",
+      "seenAt": "2026-11-19T19:30:00.000Z",
       "sourceCountry": "United Kingdom",
-      "image": "/news/3414676bf7f755bf.webp",
-      "original": "Zelensky Begs Musk To Be on  Right Side of History  After 100 Mph Starlink Cap Slows Ukraine Air Defence",
+      "image": "/news/d29d14e180e33c4e.webp",
+      "original": "The scale of Russia war on Ukraine laid bare as Putin embraces Trump in China",
       "title": {
-        "uk": "Зеленський просить Маска стати на «правильний бік історії» після того, як обмеження швидкості Starlink уповільнило повітряну оборону України",
-        "en": "Zelensky begs Musk to be on 'right side of history' after Starlink speed cap slows Ukraine air defence",
-        "ru": "Зеленский просит Маска встать на «правильную сторону истории» после того, как ограничение скорости Starlink замедлило воздушную оборону Украины"
+        "uk": "Масштаб російської війни проти України оголено — на тлі того, як Путін зустрівся з Трампом у Китаї",
+        "en": "The scale of Russia's war on Ukraine laid bare as Putin embraces Trump in China",
+        "ru": "Масштаб российской войны против Украины обнажён на фоне встречи Путина с Трампом в Китае"
       }
     },
     {
-      "url": "https://www.rferl.org/a/33895568.html",
-      "domain": "rferl.org",
-      "seenAt": "2026-11-12T01:30:00.000Z",
-      "sourceCountry": "Russia",
-      "image": "/news/97fe2fb5f6418901.webp",
-      "original": "Abu Dhabi Talks Advance Diplomacy , Not Peace , As Russia Seeks Broader Security Bargain",
+      "url": "https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337",
+      "domain": "jpost.com",
+      "seenAt": "2026-11-18T17:30:00.000Z",
+      "sourceCountry": "Israel",
+      "image": "/news/e9f8ab14e229c938.webp",
+      "original": "Drone attacks nearly halve Russia November oil refining , sources say",
       "title": {
-        "uk": "Переговори в Абу-Дабі просунули дипломатію, але не мир, оскільки Росія прагне ширшої угоди з безпеки",
-        "en": "Abu Dhabi talks advance diplomacy, not peace, as Russia seeks broader security bargain",
-        "ru": "Переговоры в Абу-Даби продвинули дипломатию, но не мир, поскольку Россия добивается более широкой сделки по безопасности"
+        "uk": "Атаки дронів майже вдвічі скоротили обсяги нафтопереробки в Росії у листопаді — джерела",
+        "en": "Drone attacks nearly halve Russia November oil refining, sources say",
+        "ru": "Атаки дронов почти вдвое сократили объём нефтепереработки в России в ноябре — источники"
       }
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/13/russias-demands-come-from-different-reality-as-war-efforts-stagnates",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-11-13T18:00:00.000Z",
-      "sourceCountry": "United States",
-      "original": "Ukraine claims record 3 , 000 Russian casualties in one day as war drags on",
+      "url": "https://www.muensterschezeitung.de/nachrichten/politik/selenskyj-russland-mangelt-es-an-kraft-fuer-grossoffensive-3394414",
+      "domain": "muensterschezeitung.de",
+      "seenAt": "2026-11-20T00:45:00.000Z",
+      "sourceCountry": "Germany",
+      "image": "/news/d9103ecdb8616ebc.webp",
+      "original": "Selenskyj : Russland mangelt es an Kraft für Großoffensive",
       "title": {
-        "uk": "Україна заявляє про рекордні 3 000 російських втрат за один день, поки війна затягується",
-        "en": "Ukraine claims record 3,000 Russian casualties in one day as war drags on",
-        "ru": "Украина заявляет о рекордных 3 000 российских потерях за один день, пока война затягивается"
-      }
-    },
-    {
-      "url": "https://www.infobae.com/america/mundo/2026/11/14/emmanuel-macron-alerto-que-reducir-la-ayuda-a-ucrania-prepararia-el-terreno-para-otra-guerra-en-europa/",
-      "domain": "infobae.com",
-      "seenAt": "2026-11-14T21:00:00.000Z",
-      "sourceCountry": "Argentina",
-      "image": "/news/0a5f2861560440e2.webp",
-      "original": "Emmanuel Macron alertó que reducir la ayuda a Ucrania prepararía el terreno para otra guerra en Europa",
-      "title": {
-        "uk": "Еммануель Макрон попередив, що скорочення допомоги Україні готує ґрунт для нової війни в Європі",
-        "en": "Emmanuel Macron warned that reducing aid to Ukraine would pave the way for another war in Europe",
-        "ru": "Эммануэль Макрон предупредил, что сокращение помощи Украине подготовит почву для новой войны в Европе"
+        "uk": "Зеленський: Росії бракує сил для великого наступу",
+        "en": "Zelensky: Russia lacks the strength for a major offensive",
+        "ru": "Зеленский: России не хватает сил для крупного наступления"
       }
     },
     {
@@ -86,47 +113,22 @@
       "sourceCountry": "Turkey",
       "original": "Russian economy growth slows to 1 percent in third quarter",
       "title": {
-        "uk": "Зростання економіки Росії сповільнилося до 1% у третьому кварталі",
+        "uk": "Зростання економіки Росії у третьому кварталі сповільнилося до 1%",
         "en": "Russian economy growth slows to 1 percent in third quarter",
-        "ru": "Рост экономики России замедлился до 1 процента в третьем квартале"
+        "ru": "Рост российской экономики в третьем квартале замедлился до 1%"
       }
     },
     {
-      "url": "https://www.lifo.gr/now/world/esthonia-kleinei-ta-synora-tis-me-ti-rosia-meta-tin-epithesi-enantion-etaireias",
-      "domain": "lifo.gr",
-      "seenAt": "2026-11-16T08:15:00.000Z",
-      "sourceCountry": "Greece",
-      "original": "Εσθονία : Κλείνει τα σύνορά της με τη Ρωσία μετά την επίθεση εναντίον εταιρείας κατασκευής drones",
+      "url": "https://lb.ua/world/2026/11/19/782392_ievropi_sperechayutsya_schodo.html",
+      "domain": "lb.ua",
+      "seenAt": "2026-11-20T00:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/7d47c4432ba0affc.webp",
+      "original": "Переговори з Росією : Європа думає над своєю концепцією перемовин",
       "title": {
-        "uk": "Естонія закриває кордон з Росією після нападу на компанію з виробництва дронів",
-        "en": "Estonia closes its border with Russia after attack on drone manufacturing company",
-        "ru": "Эстония закрывает границу с Россией после нападения на компанию по производству дронов"
-      }
-    },
-    {
-      "url": "https://www.perthnow.com.au/news/conflict/ukraine-launches-nearly-1200-drones-at-russia-c-23161052",
-      "domain": "perthnow.com.au",
-      "seenAt": "2026-11-13T18:00:00.000Z",
-      "sourceCountry": "Australia",
-      "image": "/news/35df86d8f10cb203.webp",
-      "original": "Ukraine launches nearly 1200 drones at Russia",
-      "title": {
-        "uk": "Україна запустила майже 1 200 дронів по Росії",
-        "en": "Ukraine launches nearly 1,200 drones at Russia",
-        "ru": "Украина запустила почти 1 200 дронов по России"
-      }
-    },
-    {
-      "url": "https://abcnews.com/Business/wireStory/ireland-faces-pressure-stop-sending-russia-ingredient-vital-138069913",
-      "domain": "abcnews.com",
-      "seenAt": "2026-11-12T07:00:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/4e68ebd813d3a056.webp",
-      "original": "Ireland faces pressure to stop sending Russia an ingredient vital to its war on Ukraine",
-      "title": {
-        "uk": "Ірландія зазнає тиску щодо припинення постачання Росії компонента, важливого для її війни проти України",
-        "en": "Ireland faces pressure to stop sending Russia an ingredient vital to its war on Ukraine",
-        "ru": "Ирландия испытывает давление с требованием прекратить поставки России компонента, необходимого для её войны против Украины"
+        "uk": "Переговори з Росією: Європа думає над своєю концепцією перемовин",
+        "en": "Talks with Russia: Europe is working on its own negotiation concept",
+        "ru": "Переговоры с Россией: Европа думает над собственной концепцией переговоров"
       }
     }
   ]
