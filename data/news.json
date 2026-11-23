@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-21",
+  "asOf": "2026-11-23",
   "source": "gdelt",
   "articles": [
     {
@@ -11,34 +11,8 @@
       "original": "Лідери України , Німеччини , Франції та Британії закликали РФ до енергетичного перемир  я на зиму та узгодили принципи гарантій безпеки",
       "title": {
         "uk": "Лідери України, Німеччини, Франції та Британії закликали РФ до енергетичного перемир'я на зиму та узгодили принципи гарантій безпеки",
-        "en": "Leaders of Ukraine, Germany, France and Britain urged Russia to agree to a winter energy ceasefire and agreed on security guarantee principles",
-        "ru": "Лидеры Украины, Германии, Франции и Великобритании призвали РФ к энергетическому перемирию на зиму и согласовали принципы гарантий безопасности"
-      }
-    },
-    {
-      "url": "https://www.hngn.com/articles/273901/20261120/two-russian-missiles-drone-land-poland-nato-calls-it-violation.htm",
-      "domain": "hngn.com",
-      "seenAt": "2026-11-21T00:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/fedb715caa7e2771.webp",
-      "original": "Two Russian Missiles and a Drone Land in Poland as NATO Calls It a Violation",
-      "title": {
-        "uk": "Два російські ракети та дрон впали на території Польщі — НАТО назвало це порушенням",
-        "en": "Two Russian missiles and a drone land in Poland as NATO calls it a violation",
-        "ru": "Две российские ракеты и дрон упали на территории Польши — НАТО назвало это нарушением"
-      }
-    },
-    {
-      "url": "https://lancasteronline.com/news/world/ballistic-missile-attack-on-zelenskyys-hometown-in-central-ukraine-kills-2-and-wounds-scores/article_2e6030d9-20ce-5731-8736-d70212da54cc.html",
-      "domain": "lancasteronline.com",
-      "seenAt": "2026-11-21T12:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/90facdbedeac4b72.webp",
-      "original": "Ballistic missile attack on Zelenskyy hometown in central Ukraine kills 2 and wounds scores",
-      "title": {
-        "uk": "Удар балістичною ракетою по рідному місту Зеленського в центральній Україні: 2 загиблих, десятки поранених",
-        "en": "Ballistic missile attack on Zelenskyy's hometown in central Ukraine kills 2 and wounds scores",
-        "ru": "Удар баллистической ракетой по родному городу Зеленского в центральной Украине: 2 погибших, десятки раненых"
+        "en": "Leaders of Ukraine, Germany, France and Britain call on Russia for an energy ceasefire this winter and agree on security guarantee principles",
+        "ru": "Лидеры Украины, Германии, Франции и Великобритании призвали Россию к энергетическому перемирию на зиму и согласовали принципы гарантий безопасности"
       }
     },
     {
@@ -49,22 +23,9 @@
       "image": "/news/17b527656593f852.webp",
       "original": "Russia grasps US offer on European security to revive old demands",
       "title": {
-        "uk": "Росія використовує американську пропозицію щодо безпеки в Європі, щоб відновити старі вимоги",
+        "uk": "Росія використовує пропозицію США щодо безпеки в Європі, щоб відновити старі вимоги",
         "en": "Russia grasps US offer on European security to revive old demands",
-        "ru": "Россия использует американское предложение по безопасности в Европе, чтобы возобновить старые требования"
-      }
-    },
-    {
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/20/trump-says-he-putin-had-very-good-talks-on-ukraine",
-      "domain": "internazionale.it",
-      "seenAt": "2026-11-20T21:45:00.000Z",
-      "sourceCountry": "Italy",
-      "image": "/news/c34c385503a8d7a8.webp",
-      "original": "Trump cites good talks with Putin on Ukraine , holds back on security guarantees",
-      "title": {
-        "uk": "Трамп посилається на вдалі переговори з Путіним щодо України, утримуючись від гарантій безпеки",
-        "en": "Trump cites good talks with Putin on Ukraine, holds back on security guarantees",
-        "ru": "Трамп ссылается на удачные переговоры с Путиным по Украине, воздерживаясь от гарантий безопасности"
+        "ru": "Россия использует предложение США по европейской безопасности для возобновления прежних требований"
       }
     },
     {
@@ -75,9 +36,35 @@
       "image": "/news/d25dd127400ddc12.webp",
       "original": "Kushner says he believes Russia is  comfortable  with NATO - like security guarantees for Ukraine | World News",
       "title": {
-        "uk": "Кушнер заявив, що Росія, на його думку, готова прийняти гарантії безпеки для України на кшталт НАТО",
+        "uk": "Кушнер заявив, що вважає: Росія «комфортно» ставиться до гарантій безпеки для України на кшталт НАТО",
         "en": "Kushner says he believes Russia is comfortable with NATO-like security guarantees for Ukraine",
-        "ru": "Кушнер заявил, что, по его мнению, Россия готова принять гарантии безопасности для Украины по образцу НАТО"
+        "ru": "Кушнер заявил, что Россия «комфортно» воспринимает гарантии безопасности для Украины по образцу НАТО"
+      }
+    },
+    {
+      "url": "https://24tv.ua/ru/kreml-hochet-kontrolirovat-bolshuju-chast-ukrainy-vkljuchaja_n3212201",
+      "domain": "24tv.ua",
+      "seenAt": "2026-11-22T07:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/23dc0799a6e36324.webp",
+      "original": "Кремль хочет контролировать большую часть Украины , включая Киев , – это заявил Лавров",
+      "title": {
+        "uk": "Кремль хоче контролювати більшу частину України, включно з Києвом, — заявив Лавров",
+        "en": "Kremlin wants to control most of Ukraine, including Kyiv, Lavrov says",
+        "ru": "Кремль хочет контролировать большую часть Украины, включая Киев, — заявил Лавров"
+      }
+    },
+    {
+      "url": "https://www.hngn.com/articles/273901/20261120/two-russian-missiles-drone-land-poland-nato-calls-it-violation.htm",
+      "domain": "hngn.com",
+      "seenAt": "2026-11-21T00:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/fedb715caa7e2771.webp",
+      "original": "Two Russian Missiles and a Drone Land in Poland as NATO Calls It a Violation",
+      "title": {
+        "uk": "Дві російські ракети та дрон впали в Польщі — НАТО назвало це порушенням",
+        "en": "Two Russian missiles and a drone land in Poland as NATO calls it a violation",
+        "ru": "Две российские ракеты и дрон упали в Польше — НАТО назвало это нарушением"
       }
     },
     {
@@ -88,9 +75,48 @@
       "image": "/news/e0cdad1b3797664f.webp",
       "original": "Ukraine destruction of Crimean Bridge delivered major hit to Putin influence and Russia war effort",
       "title": {
-        "uk": "Знищення Кримського мосту завдало серйозного удару по впливу Путіна та воєнних зусиллях Росії",
-        "en": "Ukraine's destruction of Crimean Bridge delivered a major hit to Putin's influence and Russia's war effort",
-        "ru": "Уничтожение Крымского моста нанесло серьёзный удар по влиянию Путина и военным усилиям России"
+        "uk": "Знищення Кримського мосту Україною завдало серйозного удару по впливу Путіна та воєнним зусиллям Росії",
+        "en": "Ukraine's destruction of the Crimean Bridge dealt a major blow to Putin's influence and Russia's war effort",
+        "ru": "Уничтожение Крымского моста Украиной нанесло серьёзный удар по влиянию Путина и военным усилиям России"
+      }
+    },
+    {
+      "url": "https://lancasteronline.com/news/world/ballistic-missile-attack-on-zelenskyys-hometown-in-central-ukraine-kills-2-and-wounds-scores/article_2e6030d9-20ce-5731-8736-d70212da54cc.html",
+      "domain": "lancasteronline.com",
+      "seenAt": "2026-11-21T12:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/90facdbedeac4b72.webp",
+      "original": "Ballistic missile attack on Zelenskyy hometown in central Ukraine kills 2 and wounds scores",
+      "title": {
+        "uk": "Балістичний ракетний удар по рідному місту Зеленського в центральній Україні: 2 загиблих, десятки поранених",
+        "en": "Ballistic missile attack on Zelenskyy's hometown in central Ukraine kills 2 and wounds scores",
+        "ru": "Удар баллистической ракетой по родному городу Зеленского в центральной Украине: 2 погибших, десятки раненых"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/22/russian-cargo-ship-still-on-fire-off-finland-after-drone-attack",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-11-22T12:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/6b8408444122e96f.webp",
+      "original": "Russian cargo ship still on fire off Finland after drone attack",
+      "title": {
+        "uk": "Російське вантажне судно продовжує горіти біля берегів Фінляндії після атаки дрона",
+        "en": "Russian cargo ship still on fire off Finland after drone attack",
+        "ru": "Российское грузовое судно продолжает гореть у берегов Финляндии после атаки дрона"
+      }
+    },
+    {
+      "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
+      "domain": "foxnews.com",
+      "seenAt": "2026-11-23T03:30:00.000Z",
+      "sourceCountry": "United States",
+      "image": "/news/b8fe78185da104c5.webp",
+      "original": "Russian warship sinks in Libya after suspected Ukrainian sea drone attack",
+      "title": {
+        "uk": "Російський військовий корабель затонув у Лівії після імовірної атаки українського морського дрона",
+        "en": "Russian warship sinks in Libya after suspected Ukrainian sea drone attack",
+        "ru": "Российский военный корабль затонул у берегов Ливии после предполагаемой атаки украинского морского дрона"
       }
     },
     {
@@ -104,32 +130,6 @@
         "uk": "В Україні дрони летять швидше, ніж розвивається дипломатія",
         "en": "In Ukraine, the drones are flying faster than the diplomacy",
         "ru": "На Украине дроны летят быстрее, чем развивается дипломатия"
-      }
-    },
-    {
-      "url": "https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337",
-      "domain": "jpost.com",
-      "seenAt": "2026-11-18T17:30:00.000Z",
-      "sourceCountry": "Israel",
-      "image": "/news/e9f8ab14e229c938.webp",
-      "original": "Drone attacks nearly halve Russia November oil refining , sources say",
-      "title": {
-        "uk": "Удари дронів скоротили переробку нафти в Росії у листопаді майже вдвічі — джерела",
-        "en": "Drone attacks nearly halve Russia's November oil refining, sources say",
-        "ru": "Удары дронов сократили нефтепереработку в России в ноябре почти вдвое — источники"
-      }
-    },
-    {
-      "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/lavrovas-pareiske-kad-kyjivas-ir-pietryciu-ukraina-yra-nuo-seno-rusiskos-zemes-57-2811438",
-      "domain": "15min.lt",
-      "seenAt": "2026-11-21T11:30:00.000Z",
-      "sourceCountry": "Lithuania",
-      "image": "/news/8b99e5509e2e1d81.webp",
-      "original": "Lavrovas pareiškė , kad Kyjivas ir pietryčių Ukraina yra „ nuo seno rusiškos žemės",
-      "title": {
-        "uk": "Лавров заявив, що Київ і південний схід України є «споконвічно російськими землями»",
-        "en": "Lavrov declared that Kyiv and southeastern Ukraine are ancient Russian lands",
-        "ru": "Лавров заявил, что Киев и юго-восток Украины являются «исконно русскими землями»"
       }
     }
   ]
