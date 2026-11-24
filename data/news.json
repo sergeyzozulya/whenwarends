@@ -1,7 +1,31 @@
 {
-  "asOf": "2026-11-23",
+  "asOf": "2026-11-24",
   "source": "gdelt",
   "articles": [
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/24/ukraine-war-briefing-kyiv-strike-on-russian-ships-in-benghazi-condemned-by-un-backed-libya-government",
+      "domain": "theguardian.com",
+      "seenAt": "2026-11-24T01:30:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "original": "Ukraine war briefing : Kyiv strike on Russian ships in Benghazi condemned by Libya UN - backed government | Ukraine",
+      "title": {
+        "uk": "Зведення про війну в Україні: удар Києва по російських кораблях у Бенгазі засудив уряд Лівії, визнаний ООН",
+        "en": "Ukraine war briefing: Kyiv strike on Russian ships in Benghazi condemned by Libya's UN-backed government",
+        "ru": "Сводка о войне в Украине: удар Киева по российским кораблям в Бенгази осудило правительство Ливии, признанное ООН"
+      }
+    },
+    {
+      "url": "https://glavcom.ua/world/observe/vtrati-rf-u-vijni-proti-ukrajini-sjahnuli-majzhe-500-tis-zahiblikh-bloomberg-1157568.html",
+      "domain": "glavcom.ua",
+      "seenAt": "2026-11-24T00:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "original": "Втрати РФ у війні проти України сягнули майже 500 тис . загиблих – Bloomberg",
+      "title": {
+        "uk": "Втрати РФ у війні проти України сягнули майже 500 тис. загиблих — Bloomberg",
+        "en": "Russia's losses in the war against Ukraine have reached nearly 500,000 killed — Bloomberg",
+        "ru": "Потери РФ в войне против Украины достигли почти 500 тыс. погибших — Bloomberg"
+      }
+    },
     {
       "url": "https://interfax.com.ua/news/general/1239544.html",
       "domain": "interfax.com.ua",
@@ -11,86 +35,34 @@
       "original": "Лідери України , Німеччини , Франції та Британії закликали РФ до енергетичного перемир  я на зиму та узгодили принципи гарантій безпеки",
       "title": {
         "uk": "Лідери України, Німеччини, Франції та Британії закликали РФ до енергетичного перемир'я на зиму та узгодили принципи гарантій безпеки",
-        "en": "Leaders of Ukraine, Germany, France and Britain call on Russia for an energy ceasefire this winter and agree on security guarantee principles",
-        "ru": "Лидеры Украины, Германии, Франции и Великобритании призвали Россию к энергетическому перемирию на зиму и согласовали принципы гарантий безопасности"
+        "en": "Leaders of Ukraine, Germany, France and Britain called on Russia for a winter energy ceasefire and agreed on the principles of security guarantees",
+        "ru": "Лидеры Украины, Германии, Франции и Великобритании призвали РФ к энергетическому перемирию на зиму и согласовали принципы гарантий безопасности"
       }
     },
     {
-      "url": "https://lancasteronline.com/news/world/russia-grasps-us-offer-on-european-security-to-revive-old-demands/article_53e2251b-b0cc-576f-b3a2-586e3ef293bc.html",
-      "domain": "lancasteronline.com",
-      "seenAt": "2026-11-21T12:30:00.000Z",
+      "url": "https://www.politico.eu/article/ukraine-peace-wont-end-russian-sabotage-in-europe-poland-warns/",
+      "domain": "politico.eu",
+      "seenAt": "2026-11-24T04:45:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/17b527656593f852.webp",
-      "original": "Russia grasps US offer on European security to revive old demands",
+      "image": "/news/1a7479c6a211f7a7.webp",
+      "original": "Peace in Ukraine wont end Russian sabotage in Europe , Poland warns – POLITICO",
       "title": {
-        "uk": "Росія використовує пропозицію США щодо безпеки в Європі, щоб відновити старі вимоги",
-        "en": "Russia grasps US offer on European security to revive old demands",
-        "ru": "Россия использует предложение США по европейской безопасности для возобновления прежних требований"
+        "uk": "Мир в Україні не покладе край російському саботажу в Європі — попереджає Польща",
+        "en": "Peace in Ukraine won't end Russian sabotage in Europe, Poland warns",
+        "ru": "Мир на Украине не положит конец российскому саботажу в Европе — предупреждает Польша"
       }
     },
     {
-      "url": "https://lancasteronline.com/news/world/kushner-says-he-believes-russia-is-comfortable-with-nato-like-security-guarantees-for-ukraine/article_0b400996-8379-55cc-b8c9-6703468a032f.html",
-      "domain": "lancasteronline.com",
-      "seenAt": "2026-11-20T03:45:00.000Z",
+      "url": "https://www.politico.eu/article/5-ways-europe-could-revamp-its-security-architecture-to-please-russia-vladimir-putin-us-donald-trump/",
+      "domain": "politico.eu",
+      "seenAt": "2026-11-24T07:15:00.000Z",
       "sourceCountry": "United States",
-      "image": "/news/d25dd127400ddc12.webp",
-      "original": "Kushner says he believes Russia is  comfortable  with NATO - like security guarantees for Ukraine | World News",
+      "image": "/news/93254c79010d4c42.webp",
+      "original": "5 ways Europe could revamp its security architecture to please Putin and Trump",
       "title": {
-        "uk": "Кушнер заявив, що вважає: Росія «комфортно» ставиться до гарантій безпеки для України на кшталт НАТО",
-        "en": "Kushner says he believes Russia is comfortable with NATO-like security guarantees for Ukraine",
-        "ru": "Кушнер заявил, что Россия «комфортно» воспринимает гарантии безопасности для Украины по образцу НАТО"
-      }
-    },
-    {
-      "url": "https://24tv.ua/ru/kreml-hochet-kontrolirovat-bolshuju-chast-ukrainy-vkljuchaja_n3212201",
-      "domain": "24tv.ua",
-      "seenAt": "2026-11-22T07:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/23dc0799a6e36324.webp",
-      "original": "Кремль хочет контролировать большую часть Украины , включая Киев , – это заявил Лавров",
-      "title": {
-        "uk": "Кремль хоче контролювати більшу частину України, включно з Києвом, — заявив Лавров",
-        "en": "Kremlin wants to control most of Ukraine, including Kyiv, Lavrov says",
-        "ru": "Кремль хочет контролировать большую часть Украины, включая Киев, — заявил Лавров"
-      }
-    },
-    {
-      "url": "https://www.hngn.com/articles/273901/20261120/two-russian-missiles-drone-land-poland-nato-calls-it-violation.htm",
-      "domain": "hngn.com",
-      "seenAt": "2026-11-21T00:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/fedb715caa7e2771.webp",
-      "original": "Two Russian Missiles and a Drone Land in Poland as NATO Calls It a Violation",
-      "title": {
-        "uk": "Дві російські ракети та дрон впали в Польщі — НАТО назвало це порушенням",
-        "en": "Two Russian missiles and a drone land in Poland as NATO calls it a violation",
-        "ru": "Две российские ракеты и дрон упали в Польше — НАТО назвало это нарушением"
-      }
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-11-20/ukraine-crimean-bridge-destruction-significance-explained/107408488",
-      "domain": "abc.net.au",
-      "seenAt": "2026-11-20T06:45:00.000Z",
-      "sourceCountry": "Australia",
-      "image": "/news/e0cdad1b3797664f.webp",
-      "original": "Ukraine destruction of Crimean Bridge delivered major hit to Putin influence and Russia war effort",
-      "title": {
-        "uk": "Знищення Кримського мосту Україною завдало серйозного удару по впливу Путіна та воєнним зусиллям Росії",
-        "en": "Ukraine's destruction of the Crimean Bridge dealt a major blow to Putin's influence and Russia's war effort",
-        "ru": "Уничтожение Крымского моста Украиной нанесло серьёзный удар по влиянию Путина и военным усилиям России"
-      }
-    },
-    {
-      "url": "https://lancasteronline.com/news/world/ballistic-missile-attack-on-zelenskyys-hometown-in-central-ukraine-kills-2-and-wounds-scores/article_2e6030d9-20ce-5731-8736-d70212da54cc.html",
-      "domain": "lancasteronline.com",
-      "seenAt": "2026-11-21T12:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/90facdbedeac4b72.webp",
-      "original": "Ballistic missile attack on Zelenskyy hometown in central Ukraine kills 2 and wounds scores",
-      "title": {
-        "uk": "Балістичний ракетний удар по рідному місту Зеленського в центральній Україні: 2 загиблих, десятки поранених",
-        "en": "Ballistic missile attack on Zelenskyy's hometown in central Ukraine kills 2 and wounds scores",
-        "ru": "Удар баллистической ракетой по родному городу Зеленского в центральной Украине: 2 погибших, десятки раненых"
+        "uk": "5 способів, якими Європа може оновити архітектуру безпеки, щоб догодити Путіну і Трампу",
+        "en": "5 ways Europe could revamp its security architecture to please Putin and Trump",
+        "ru": "5 способов, которыми Европа могла бы обновить архитектуру безопасности, чтобы угодить Путину и Трампу"
       }
     },
     {
@@ -101,22 +73,9 @@
       "image": "/news/6b8408444122e96f.webp",
       "original": "Russian cargo ship still on fire off Finland after drone attack",
       "title": {
-        "uk": "Російське вантажне судно продовжує горіти біля берегів Фінляндії після атаки дрона",
+        "uk": "Російське вантажне судно досі горить біля берегів Фінляндії після атаки дрона",
         "en": "Russian cargo ship still on fire off Finland after drone attack",
         "ru": "Российское грузовое судно продолжает гореть у берегов Финляндии после атаки дрона"
-      }
-    },
-    {
-      "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
-      "domain": "foxnews.com",
-      "seenAt": "2026-11-23T03:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/b8fe78185da104c5.webp",
-      "original": "Russian warship sinks in Libya after suspected Ukrainian sea drone attack",
-      "title": {
-        "uk": "Російський військовий корабель затонув у Лівії після імовірної атаки українського морського дрона",
-        "en": "Russian warship sinks in Libya after suspected Ukrainian sea drone attack",
-        "ru": "Российский военный корабль затонул у берегов Ливии после предполагаемой атаки украинского морского дрона"
       }
     },
     {
@@ -130,6 +89,45 @@
         "uk": "В Україні дрони летять швидше, ніж розвивається дипломатія",
         "en": "In Ukraine, the drones are flying faster than the diplomacy",
         "ru": "На Украине дроны летят быстрее, чем развивается дипломатия"
+      }
+    },
+    {
+      "url": "https://adevarul.ro/stiri-externe/rusia/rachete-rusesti-au-patruns-in-polonia-langa-un-2573301.html",
+      "domain": "adevarul.ro",
+      "seenAt": "2026-11-21T13:30:00.000Z",
+      "sourceCountry": "Romania",
+      "image": "/news/08945602717010a2.webp",
+      "original": "Rachete rusești au pătruns în Polonia , lângă un exercițiu militar cu mii de soldați europeni . Varșovia acuză o provocare",
+      "title": {
+        "uk": "Російські ракети увійшли в повітряний простір Польщі поблизу військових навчань за участю тисяч європейських солдатів — Варшава звинуватила Росію у провокації",
+        "en": "Russian missiles entered Polish airspace near a military exercise with thousands of European soldiers — Warsaw accuses Russia of provocation",
+        "ru": "Российские ракеты вошли в воздушное пространство Польши вблизи военных учений с тысячами европейских солдат — Варшава обвиняет Россию в провокации"
+      }
+    },
+    {
+      "url": "https://www.ukrinform.ua/rubric-ato/4187358-sili-oboroni-za-tizden-urazili-visim-obektiv-naftovoi-infrastrukturi-rosian.html",
+      "domain": "ukrinform.ua",
+      "seenAt": "2026-11-22T12:30:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/a30b720c0799e8f4.webp",
+      "original": "Сили оборони за тиждень уразили вісім об  єктів нафтової інфраструктури росіян",
+      "title": {
+        "uk": "Сили оборони за тиждень уразили вісім об'єктів нафтової інфраструктури росіян",
+        "en": "Ukraine's defense forces struck eight Russian oil infrastructure facilities in one week",
+        "ru": "Силы обороны за неделю поразили восемь объектов нефтяной инфраструктуры россиян"
+      }
+    },
+    {
+      "url": "https://www.ibtimes.co.uk/rutte-warns-european-army-could-delay-response-1834286",
+      "domain": "ibtimes.co.uk",
+      "seenAt": "2026-11-24T06:30:00.000Z",
+      "sourceCountry": "United Kingdom",
+      "image": "/news/22452c1e168fbfc8.webp",
+      "original": "Putin Could Be in Rotterdam Before We Decide : Rutte Warns Against Separate European Army",
+      "title": {
+        "uk": "Путін може бути в Роттердамі, поки ми прийматимемо рішення: Рютте попереджає проти окремої європейської армії",
+        "en": "Putin could be in Rotterdam before we decide: Rutte warns against a separate European army",
+        "ru": "Путин может быть в Роттердаме, пока мы будем принимать решение: Рютте предупреждает против отдельной европейской армии"
       }
     }
   ]
