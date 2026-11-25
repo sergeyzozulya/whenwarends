@@ -1,17 +1,67 @@
 {
-  "asOf": "2026-11-24",
+  "asOf": "2026-11-25",
   "source": "gdelt",
   "articles": [
     {
-      "url": "https://www.theguardian.com/world/2026/nov/24/ukraine-war-briefing-kyiv-strike-on-russian-ships-in-benghazi-condemned-by-un-backed-libya-government",
-      "domain": "theguardian.com",
-      "seenAt": "2026-11-24T01:30:00.000Z",
-      "sourceCountry": "United Kingdom",
-      "original": "Ukraine war briefing : Kyiv strike on Russian ships in Benghazi condemned by Libya UN - backed government | Ukraine",
+      "url": "https://japantoday.com/category/world/ukraine-sinks-russian-warship-in-libya-as-conflict-spreads-beyond-europe2",
+      "domain": "japantoday.com",
+      "seenAt": "2026-11-24T00:30:00.000Z",
+      "sourceCountry": "Japan",
+      "original": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
       "title": {
-        "uk": "Зведення про війну в Україні: удар Києва по російських кораблях у Бенгазі засудив уряд Лівії, визнаний ООН",
-        "en": "Ukraine war briefing: Kyiv strike on Russian ships in Benghazi condemned by Libya's UN-backed government",
-        "ru": "Сводка о войне в Украине: удар Киева по российским кораблям в Бенгази осудило правительство Ливии, признанное ООН"
+        "uk": "Україна потопила російський військовий корабель у Лівії — конфлікт виходить за межі Європи",
+        "en": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
+        "ru": "Украина топит российский военный корабль в Ливии — конфликт выходит за пределы Европы"
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/putin-says-kyiv-hit-russian-oil-plants-despite-trump-plea-vows-retaliation",
+      "domain": "aljazeera.com",
+      "seenAt": "2026-11-24T21:30:00.000Z",
+      "sourceCountry": "United States",
+      "original": "Putin says retaliation  inevitable  after Ukraine hit Russian oil plants | Russia - Ukraine war News",
+      "title": {
+        "uk": "Путін заявив, що удар у відповідь «неминучий» після атак України на російські нафтопереробні заводи",
+        "en": "Putin says retaliation 'inevitable' after Ukraine hit Russian oil plants",
+        "ru": "Путин заявил, что ответный удар «неизбежен» после атак Украины на российские нефтезаводы"
+      }
+    },
+    {
+      "url": "https://home.nzcity.co.nz/news/article.aspx?id=458716",
+      "domain": "home.nzcity.co.nz",
+      "seenAt": "2026-11-25T02:30:00.000Z",
+      "sourceCountry": "New Zealand",
+      "original": "Inside Melania Trump - brokered evacuation of civilians from Russian - occupied Oleshky - 25 - Nov - 2026",
+      "title": {
+        "uk": "Подробиці евакуації мирних жителів з окупованих Росією Олешків за посередництва Меланії Трамп",
+        "en": "Inside Melania Trump-brokered evacuation of civilians from Russian-occupied Oleshky",
+        "ru": "Подробности эвакуации мирных жителей из оккупированных Россией Олешек при посредничестве Мелании Трамп"
+      }
+    },
+    {
+      "url": "https://www.kyivpost.com/post/91101",
+      "domain": "kyivpost.com",
+      "seenAt": "2026-11-25T02:15:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/bcac0b2e77035572.webp",
+      "original": "Zelensky Eyes Congress if Trump Peace Push Fails",
+      "title": {
+        "uk": "Зеленський розраховує на Конгрес, якщо мирна ініціатива Трампа зазнає невдачі",
+        "en": "Zelensky eyes Congress if Trump peace push fails",
+        "ru": "Зеленский рассчитывает на Конгресс, если мирная инициатива Трампа потерпит неудачу"
+      }
+    },
+    {
+      "url": "https://espreso.tv/viyna-z-rosiyeyu-rosiya-pide-na-pripinennya-vognyu-yakshcho-ne-prodavit-ukrainu-zelenskiy-nazvav-vid-chogo-tse-zalezhit",
+      "domain": "espreso.tv",
+      "seenAt": "2026-11-24T23:45:00.000Z",
+      "sourceCountry": "Ukraine",
+      "image": "/news/29872adff239c29d.webp",
+      "original": "Росія піде на припинення вогню , якщо Україна встоїть , – Зеленський",
+      "title": {
+        "uk": "Росія піде на припинення вогню, якщо Україна встоїть, — Зеленський",
+        "en": "Russia will agree to a ceasefire if Ukraine holds its ground — Zelensky",
+        "ru": "Россия пойдёт на прекращение огня, если Украина устоит, — Зеленский"
       }
     },
     {
@@ -22,21 +72,8 @@
       "original": "Втрати РФ у війні проти України сягнули майже 500 тис . загиблих – Bloomberg",
       "title": {
         "uk": "Втрати РФ у війні проти України сягнули майже 500 тис. загиблих — Bloomberg",
-        "en": "Russia's losses in the war against Ukraine have reached nearly 500,000 killed — Bloomberg",
-        "ru": "Потери РФ в войне против Украины достигли почти 500 тыс. погибших — Bloomberg"
-      }
-    },
-    {
-      "url": "https://interfax.com.ua/news/general/1239544.html",
-      "domain": "interfax.com.ua",
-      "seenAt": "2026-11-20T00:45:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/c15b78e35d6d114d.webp",
-      "original": "Лідери України , Німеччини , Франції та Британії закликали РФ до енергетичного перемир  я на зиму та узгодили принципи гарантій безпеки",
-      "title": {
-        "uk": "Лідери України, Німеччини, Франції та Британії закликали РФ до енергетичного перемир'я на зиму та узгодили принципи гарантій безпеки",
-        "en": "Leaders of Ukraine, Germany, France and Britain called on Russia for a winter energy ceasefire and agreed on the principles of security guarantees",
-        "ru": "Лидеры Украины, Германии, Франции и Великобритании призвали РФ к энергетическому перемирию на зиму и согласовали принципы гарантий безопасности"
+        "en": "Russia's losses in the war against Ukraine reach nearly 500,000 killed — Bloomberg",
+        "ru": "Потери России в войне против Украины достигли почти 500 тысяч убитых — Bloomberg"
       }
     },
     {
@@ -47,87 +84,47 @@
       "image": "/news/1a7479c6a211f7a7.webp",
       "original": "Peace in Ukraine wont end Russian sabotage in Europe , Poland warns – POLITICO",
       "title": {
-        "uk": "Мир в Україні не покладе край російському саботажу в Європі — попереджає Польща",
+        "uk": "Мир в Україні не покладе край російському саботажу в Європі — застереження Польщі",
         "en": "Peace in Ukraine won't end Russian sabotage in Europe, Poland warns",
-        "ru": "Мир на Украине не положит конец российскому саботажу в Европе — предупреждает Польша"
+        "ru": "Мир в Украине не положит конец российскому саботажу в Европе — предупреждение Польши"
       }
     },
     {
-      "url": "https://www.politico.eu/article/5-ways-europe-could-revamp-its-security-architecture-to-please-russia-vladimir-putin-us-donald-trump/",
-      "domain": "politico.eu",
-      "seenAt": "2026-11-24T07:15:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/93254c79010d4c42.webp",
-      "original": "5 ways Europe could revamp its security architecture to please Putin and Trump",
-      "title": {
-        "uk": "5 способів, якими Європа може оновити архітектуру безпеки, щоб догодити Путіну і Трампу",
-        "en": "5 ways Europe could revamp its security architecture to please Putin and Trump",
-        "ru": "5 способов, которыми Европа могла бы обновить архитектуру безопасности, чтобы угодить Путину и Трампу"
-      }
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/22/russian-cargo-ship-still-on-fire-off-finland-after-drone-attack",
-      "domain": "aljazeera.com",
-      "seenAt": "2026-11-22T12:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/6b8408444122e96f.webp",
-      "original": "Russian cargo ship still on fire off Finland after drone attack",
-      "title": {
-        "uk": "Російське вантажне судно досі горить біля берегів Фінляндії після атаки дрона",
-        "en": "Russian cargo ship still on fire off Finland after drone attack",
-        "ru": "Российское грузовое судно продолжает гореть у берегов Финляндии после атаки дрона"
-      }
-    },
-    {
-      "url": "https://foreignpolicy.com/2026/11/19/ukraine-drones-diplomacy-russian-strikes-putin-xi-trump-trilateral/",
-      "domain": "foreignpolicy.com",
-      "seenAt": "2026-11-20T01:30:00.000Z",
-      "sourceCountry": "United States",
-      "image": "/news/640efadee1cc2270.webp",
-      "original": "In Ukraine , the Drones Are Flying Faster Than the Diplomacy",
-      "title": {
-        "uk": "В Україні дрони летять швидше, ніж розвивається дипломатія",
-        "en": "In Ukraine, the drones are flying faster than the diplomacy",
-        "ru": "На Украине дроны летят быстрее, чем развивается дипломатия"
-      }
-    },
-    {
-      "url": "https://adevarul.ro/stiri-externe/rusia/rachete-rusesti-au-patruns-in-polonia-langa-un-2573301.html",
-      "domain": "adevarul.ro",
-      "seenAt": "2026-11-21T13:30:00.000Z",
-      "sourceCountry": "Romania",
-      "image": "/news/08945602717010a2.webp",
-      "original": "Rachete rusești au pătruns în Polonia , lângă un exercițiu militar cu mii de soldați europeni . Varșovia acuză o provocare",
-      "title": {
-        "uk": "Російські ракети увійшли в повітряний простір Польщі поблизу військових навчань за участю тисяч європейських солдатів — Варшава звинуватила Росію у провокації",
-        "en": "Russian missiles entered Polish airspace near a military exercise with thousands of European soldiers — Warsaw accuses Russia of provocation",
-        "ru": "Российские ракеты вошли в воздушное пространство Польши вблизи военных учений с тысячами европейских солдат — Варшава обвиняет Россию в провокации"
-      }
-    },
-    {
-      "url": "https://www.ukrinform.ua/rubric-ato/4187358-sili-oboroni-za-tizden-urazili-visim-obektiv-naftovoi-infrastrukturi-rosian.html",
-      "domain": "ukrinform.ua",
-      "seenAt": "2026-11-22T12:30:00.000Z",
-      "sourceCountry": "Ukraine",
-      "image": "/news/a30b720c0799e8f4.webp",
-      "original": "Сили оборони за тиждень уразили вісім об  єктів нафтової інфраструктури росіян",
-      "title": {
-        "uk": "Сили оборони за тиждень уразили вісім об'єктів нафтової інфраструктури росіян",
-        "en": "Ukraine's defense forces struck eight Russian oil infrastructure facilities in one week",
-        "ru": "Силы обороны за неделю поразили восемь объектов нефтяной инфраструктуры россиян"
-      }
-    },
-    {
-      "url": "https://www.ibtimes.co.uk/rutte-warns-european-army-could-delay-response-1834286",
-      "domain": "ibtimes.co.uk",
-      "seenAt": "2026-11-24T06:30:00.000Z",
+      "url": "https://www.lbc.co.uk/article/boris-johnson-attacks-putrid-trump-praise-for-putin-5HjdnWR_2/",
+      "domain": "lbc.co.uk",
+      "seenAt": "2026-11-25T04:15:00.000Z",
       "sourceCountry": "United Kingdom",
-      "image": "/news/22452c1e168fbfc8.webp",
-      "original": "Putin Could Be in Rotterdam Before We Decide : Rutte Warns Against Separate European Army",
+      "original": "Boris Johnson attacks  putrid  Trump praise for Putin and urges Nato troops in Ukraine",
       "title": {
-        "uk": "Путін може бути в Роттердамі, поки ми прийматимемо рішення: Рютте попереджає проти окремої європейської армії",
-        "en": "Putin could be in Rotterdam before we decide: Rutte warns against a separate European army",
-        "ru": "Путин может быть в Роттердаме, пока мы будем принимать решение: Рютте предупреждает против отдельной европейской армии"
+        "uk": "Борис Джонсон засудив «гнилі» похвали Трампа на адресу Путіна і закликав до розміщення військ НАТО в Україні",
+        "en": "Boris Johnson attacks 'putrid' Trump praise for Putin and urges NATO troops in Ukraine",
+        "ru": "Борис Джонсон осудил «гнусные» похвалы Трампа в адрес Путина и призвал разместить войска НАТО в Украине"
+      }
+    },
+    {
+      "url": "https://www.leparisien.fr/international/ukraine/guerre-en-ukraine-les-pays-de-lotan-doivent-preparer-leurs-civils-a-une-guerre-avec-la-russie-selon-le-secretaire-general-de-lalliance-24-11-2026-GHVDWLWSRZBXDPQHXDK2SKHTYU.php",
+      "domain": "leparisien.fr",
+      "seenAt": "2026-11-24T23:45:00.000Z",
+      "sourceCountry": "France",
+      "image": "/news/0bd7150536ce02b2.webp",
+      "original": "Guerre en Ukraine  : les pays de lOtan doivent préparer leurs civils à une guerre avec la Russie , selon le secrétaire général de lAlliance",
+      "title": {
+        "uk": "Країни НАТО повинні готувати своє цивільне населення до війни з Росією — генеральний секретар Альянсу",
+        "en": "NATO countries must prepare their civilians for war with Russia, says Alliance secretary general",
+        "ru": "Страны НАТО должны готовить мирное население к войне с Россией — генеральный секретарь Альянса"
+      }
+    },
+    {
+      "url": "https://www.delfi.lt/naujienos/uzsienyje/ziniasklaida-rusija-plecia-karine-baze-netoli-suomijos-sienos-120338728",
+      "domain": "delfi.lt",
+      "seenAt": "2026-11-24T20:15:00.000Z",
+      "sourceCountry": "Lithuania",
+      "image": "/news/b95d56cd69f93b81.webp",
+      "original": "Žiniasklaida : Rusija plečia karinę bazę netoli Suomijos sienos",
+      "title": {
+        "uk": "ЗМІ: Росія розширює військову базу поблизу кордону з Фінляндією",
+        "en": "Media: Russia expanding military base near Finnish border",
+        "ru": "СМИ: Россия расширяет военную базу вблизи границы с Финляндией"
       }
     }
   ]
